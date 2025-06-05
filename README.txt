@@ -60,8 +60,7 @@ fPickPocketMod					0.3 -> 0			This setting only changes max item price available
 ## Magic -- Lots of spell effects wasn't really useful because of better alternatives. Also it's worth trying elemental shield now, for fun of killing low level creatures.
 
 fElementalShieldMult			0.1 -> 1			1 point of damage for 1 point of magnitude.
-Demoralize Humanoid				Mysticism -> Illusion
-SlowFall -> Slowfall
+sEffectSlowFall					SlowFall -> Slowfall
 
 # Alteration -- Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting being 5x weaker in encumbrance gain. Same rule apply to Swift Swim.
 
@@ -83,6 +82,7 @@ Disintegrate Weapon				6 -> 1				Still it's better to kill opponent than using t
 
 Silence							40 -> 20			2x cheaper than Paralyze.
 Sound							3  -> 0.8			2x cheaper at 25% than Paralyze.
+Demoralize Humanoid				Mysticism -> Illusion
 
 # Mysticism -- Absorb spells were overpowered at the same cost as damage spells.
 
@@ -118,7 +118,7 @@ trap_shock_killer				5  -> 88
 trap_poison_killer				16 -> 75
 
 # Price
-sc_ondusisunhinging_en			73 -> 273			200gp more expensive.
+sc_ondusisunhinging				73 -> 273			200gp more expensive.
 
 # Magnitude
 sc_ekashslocksplitter_en		100 -> 80
