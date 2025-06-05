@@ -17,7 +17,7 @@ Security						Intelligence -> Agility
 
 ----------------------------------------------------------
 
-## Speed -- Just 25% speed boost for PC, NPCs and creatures.
+## Running -- Just 25% speed boost for PC, NPCs and creatures.
 
 fMinWalkSpeed					100 -> 125
 fMaxWalkSpeed					200 -> 250
@@ -44,7 +44,7 @@ fEnchantmentChanceMult			3 -> 0.6			5x easier self enchant.
 
 ----------------------------------------------------------
 
-## Economy -- Economy is broken because there is unlimited supply of money in the game,	so doing everything more expensive won't fix the problem. Real problem is a player mindset that want to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And only scenarios when you need cash, is to buy enchanted item or to train with trainer. There is already enought money on the market too suit those needs for one month. Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
+## Barter -- Economy is broken because there is unlimited supply of money in the game,	so doing everything more expensive won't fix the problem. Real problem is a player mindset that want to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And only scenarios when you need cash, is to buy enchanted item or to train with trainer. There is already enought money on the market too suit those needs for one month. Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
 
 fBarterGoldResetDelay			24 -> 720 			Less gold on the market should fix economy.
 
@@ -139,10 +139,6 @@ wild open						       1-100		Unchanged.
 - Warrior -- Take it on the chin.
 
 -----------------------------
-
-TODO:
-## Secret master apparatus prices
-## Faction requirements
 
 NOT TODO:
 ## Speechcraft -- It's not broken! It's a stat game between you and NPC. Boost your Speechcraft, Mercantile and reputation to get better results.
