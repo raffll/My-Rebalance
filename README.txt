@@ -13,11 +13,11 @@ My intention here is not to balance the game. It's impossible. Neither make it h
 ## Skills
 
 Armorer							Strength -> Endurance
-TODO: Security					Intelligence -> Agility
+Security						Intelligence -> Agility
 
 ----------------------------------------------------------
 
-## Movement -- Just 25% speed boost for PC, NPCs and creatures.
+## Speed -- Just 25% speed boost for PC, NPCs and creatures.
 
 fMinWalkSpeed					100 -> 125
 fMaxWalkSpeed					200 -> 250
@@ -96,9 +96,9 @@ Fortify Skill					1 -> 4				4x more expensive, because it's overpowered.
 
 ----------------------------------------------------------
 
-## Locks & Traps -- Main goal here is to make Security skill useful on higher levels and be better than Alteration. Also opening 100 pts locks should be possible only for higher level characters. Previously magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires mage skilled in Alteration to use existing or create useful open spells (Keep in mind that self made spells are 2x more expensive than standalones). For warriors there are still scrolls, but with price adjusted, because they are widely available. Also trap mechanics is restored, previously anyone could untrap any trap easly.
+## Lockpicking -- Main goal here is to make Security skill useful on higher levels and be better than Alteration. Also opening 100 pts locks should be possible only for higher level characters. Previously magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires mage skilled in Alteration to use existing or create useful open spells (Keep in mind that self made spells are 2x more expensive than standalones). For warriors there are still scrolls, but with price adjusted, because they are widely available. Also trap mechanics is restored, previously anyone could untrap any trap easly.
 
-fPickLockMult					-1 -> -1.25			Locks are harder to unlock to get any benefit from raising Security over 50.
+fPickLockMult					-1 -> -1.25			Locks are harder to unlock. To get any benefit from raising Security over 50.
 fTrapCostMult					 0 -> -1			Trap spell cost is taken into account on disarming, similar to lock level.
 
 # Spell Effect
