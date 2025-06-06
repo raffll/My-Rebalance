@@ -24,9 +24,10 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 ## Skills
 
+Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Security is based on Agility anyway.
 ```
-Armorer                         Strength -> Endurance       This is for easier Endurance training.
-Security                        Intelligence -> Agility     Security skill is based on Agility anyway.
+Armorer                         Strength -> Endurance
+Security                        Intelligence -> Agility     
 ```
 
 ------------------------------------------------------------
@@ -34,7 +35,6 @@ Security                        Intelligence -> Agility     Security skill is ba
 ## Running
 
 Just a 25% speed boost for PC, NPCs, and creatures.
-
 ```
 fMinWalkSpeed                   100 -> 125
 fMaxWalkSpeed                   200 -> 250
@@ -47,7 +47,6 @@ fMaxWalkSpeedCreature           300 -> 375
 ## Alchemy
 
 This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects. But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5). So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
-
 ```
 fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, duration and price.
 ```
@@ -57,16 +56,17 @@ fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, durati
 ## Enchant
 
 This is the worst skill in the game. Self-made enchantments are almost impossible to do. You don't need to recharge items because they are recharging by themselves. Also, the secret master will attack you on sight. Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter, you have to do better resource management or just buy the same item again.
-
 ```
 sMagicInsufficientCharge                            Removed annoing message.
-fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging. This change alone make Enchant skill useful.
+fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
 fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
 ------------------------------
 
-### How to enchant a 100pts/24s spell (with a magic effect base cost of 1):
+### How to enchant high-level spell
+
+100pts/24s spell (with a magic effect base cost of 1):
 - Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-Enchant -- 53% chance of making an item with Enchant 100 and average (50) attributes.
 
@@ -75,7 +75,6 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ## Barter
 
 The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenarios when you need cash are to buy an enchanted item or to train with a trainer. There is already enough money on the market to suit those needs for one month. Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
-
 ```
 fBarterGoldResetDelay           24 -> 720           Less gold on the market should fix economy.
 ```
@@ -85,10 +84,9 @@ fBarterGoldResetDelay           24 -> 720           Less gold on the market shou
 ## Pickpocket
 
 It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window. It's not even realistic to take item price into account, so I disabled that requirement.
-
 ```
 iPickMaxChance                  75  -> 95           5% chance of being caught anyway.
-fPickPocketMod                  0.3 -> 0            This setting only changes max item price available for you to steal. 0 means infinite.
+fPickPocketMod                  0.3 -> 0            Any item available to steal.
 ```
 
 ------------------------------------------------------------
@@ -96,7 +94,6 @@ fPickPocketMod                  0.3 -> 0            This setting only changes ma
 ## Magic
 
 Lots of spell effects weren't really useful because of better alternatives. Also, it's worth trying elemental shield now, for the fun of killing low-level creatures.
-
 ```
 fElementalShieldMult            0.1 -> 1            1 point of damage for 1 point of magnitude.
 sEffectSlowFall                 SlowFall -> Slowfall
@@ -107,7 +104,6 @@ sEffectSlowFall                 SlowFall -> Slowfall
 ### Alteration
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. The same rule applies to Swift Swim.
-
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
@@ -118,16 +114,15 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 ### Destruction
 
-Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
-
+Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 ```
 Fire Damage                          5              Unchanged.
 Frost Damage                    5 -> 5.2
 Shock Damage                    7 -> 5.4
 Damage Health                   8 -> 5.6
 Poison                          9 -> 5.8
-Disintegrate Armor              6 -> 1              It was only useful for stealing armor. Now it's easier.
-Disintegrate Weapon             6 -> 1              Still, it's better to kill an opponent than to use this.
+Disintegrate Armor              6 -> 1
+Disintegrate Weapon             6 -> 1
 ```
 
 ------------------------------
@@ -135,7 +130,6 @@ Disintegrate Weapon             6 -> 1              Still, it's better to kill a
 ### Illusion
 
 There was no point in using them instead of paralysis.
-
 ```
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3  -> 0.8           2x cheaper at 25% than Paralyze.
@@ -147,7 +141,6 @@ Demoralize Humanoid             Mysticism -> Illusion
 ### Mysticism
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
-
 ```
 Absorb Health                   8 -> 12             Damage Health (5.6) + Restore Health (5) = 10.6
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
@@ -158,7 +151,6 @@ Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore
 ### Restoration
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
-
 ```
 Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Intelligence.
 Fortify Skill                   1 -> 4              4x more expensive.
@@ -168,11 +160,10 @@ Fortify Skill                   1 -> 4              4x more expensive.
 
 ## Lockpicking
 
-The main goal here is to make Security skill useful on higher levels and better than Alteration. Also, opening 100-point locks should be possible only for higher-level characters. Previously, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires mage skilled in Alteration to use existing or create useful open spells (keep in mind that self-made spells are 2x more expensive than standalones). For warriors there are still scrolls, but with the price adjusted, because they are widely available. Also, trap mechanics are restored; previously, anyone could untrap any trap easily.
-
+The main goal here is to make Security skill useful on higher levels and better than Alteration. Previously there was no benefit from raising Security over 50. Also, opening 100-point locks should be possible only for higher-level characters. Previously, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires mage skilled in Alteration to use existing or create useful open spells (keep in mind that self-made spells are 2x more expensive than standalones). For warriors there are still scrolls, but with the price adjusted because they are widely available. Also, trap mechanics are restored; previously, anyone could untrap any trap easily. So, the trap spell cost is taken into account on disarming, similar to the lock level.
 ```
-fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. To get any benefit from raising Security over 50.
-fTrapCostMult                    0 -> -1            Trap spell cost is taken into account on disarming, similar to lock level.
+fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. 
+fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
 ------------------------------
@@ -185,8 +176,10 @@ Open                            6  -> 12            2x more expensive.
 ------------------------------
 
 ### Cost
+
+Trap spell costs re-calculated from new spell effect values.
 ```
-trap_poison00                   16 -> 36            Trap spell costs re-calculated from new spell effect values.
+trap_poison00                   16 -> 36            
 trap_fire00                     3  -> 8
 trap_health00                   8  -> 13
 trap_frost00                    3  -> 10
