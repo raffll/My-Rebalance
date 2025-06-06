@@ -57,7 +57,9 @@ fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, durati
 
 ## Enchant
 
-This is the worst skill in the game. Self-made enchantments are almost impossible to do. You don't need to recharge items because they are recharging by themselves. Also, the secret master will attack you on sight. Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter, you have to do better resource management or just buy the same item again.
+This is the worst skill in the game. Self-made enchantments are almost impossible to do. You don't need to recharge items because they are recharging by themselves (also, the secret master will attack you on sight).
+
+Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter or thief, you have to do better resource management or just buy the same item again.
 ```
 sMagicInsufficientCharge                            Removed annoing message.
 fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
@@ -76,7 +78,9 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 ## Barter
 
-The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenarios when you need cash are to buy an enchanted item or to train with a trainer. There is already enough money on the market to suit those needs for one month. Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
+The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenarios when you need cash are to buy an enchanted item or to train with a trainer.
+
+There is already enough money on the market to suit those needs for one month. Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
 ```
 fBarterGoldResetDelay           24 -> 720           Less gold on the market should fix economy.
 ```
