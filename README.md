@@ -2,19 +2,19 @@
 
 ------------------------------
 
-## Intentions
+### Intentions
 Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters.
 
 ------------------------------
 
-## Philosophy
+### Philosophy
 - Simplicity
 - Modularity
 - Purist Friendly
 
 ------------------------------
 
-## Assumptions
+### Assumptions
 - I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507. Where the skill cap is set to 150 and the attribute cap is set to 300. It's not a requirement but a reasonable limit.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
@@ -66,7 +66,7 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 ------------------------------
 
-# How to enchant a 100pts/24s spell (with a magic effect base cost of 1):
+### How to enchant a 100pts/24s spell (with a magic effect base cost of 1):
 - Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-Enchant -- 53% chance of making an item with Enchant 100 and average (50) attributes.
 
@@ -104,7 +104,7 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 ------------------------------
 
-# Alteration
+### Alteration
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. The same rule applies to Swift Swim.
 
@@ -116,7 +116,7 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 ------------------------------
 
-# Destruction
+### Destruction
 
 Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 
@@ -132,7 +132,7 @@ Disintegrate Weapon             6 -> 1              Still, it's better to kill a
 
 ------------------------------
 
-# Illusion
+### Illusion
 
 There was no point in using them instead of paralysis.
 
@@ -144,7 +144,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 ------------------------------
 
-# Mysticism
+### Mysticism
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 
@@ -155,7 +155,7 @@ Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore
 
 ------------------------------
 
-# Restoration
+### Restoration
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 
@@ -177,14 +177,14 @@ fTrapCostMult                    0 -> -1            Trap spell cost is taken int
 
 ------------------------------
 
-# Spell Effect
+### Spell Effect
 ```
 Open                            6  -> 12            2x more expensive.
 ```
 
 ------------------------------
 
-# Cost
+### Cost
 ```
 trap_poison00                   16 -> 36            Trap spell costs re-calculated from new spell effect values.
 trap_fire00                     3  -> 8
@@ -200,14 +200,14 @@ trap_poison_killer              16 -> 75
 ```
 ------------------------------
 
-# Price
+### Price
 ```
 sc_ondusisunhinging             73 -> 273           200gp more expensive.
 ```
 
 ------------------------------
 
-# Magnitude
+### Magnitude
 ```
 sc_ekashslocksplitter_en        100 -> 80
 open                                   20           Unchanged, unavailable in vanilla.
@@ -219,12 +219,14 @@ wild open                              1-100        Unchanged.
 
 ------------------------------
 
-# How to open a 100-point lock
+### How to open a 100-point lock
 - Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
 - Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
 - Warrior -- Enchanting Service -- 27000gp with Mercantile 50 and Disposition 100.
 
-# How to untrap 100-point spell
+------------------------------
+
+### How to untrap 100-point spell
 - Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
