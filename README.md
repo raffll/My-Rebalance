@@ -78,7 +78,7 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 ## Barter
 
-The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenarios when you need cash are to buy an enchanted item or to train with a trainer. There is already enough money on the market to suit those needs for one month.
+The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenarios when you need cash are to buy an enchanted item or to train with a trainer. Should be already enough money on the market to suit those needs for one month.
 
 Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
 ```
@@ -120,11 +120,10 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 ### Destruction
 
-Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway.
+Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. Damage
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. 
 
-Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 ```
 Fire Damage                          5              Unchanged.
 Frost Damage                    5 -> 5.2
@@ -160,9 +159,7 @@ Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore
 
 ### Restoration
 
-Fortify Magicka was doing less than Fortify Intelligence for the same price.
-
-Fortifying skill over 50 should be available only for the highest-level characters.
+Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 ```
 Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Intelligence.
 Fortify Skill                   1 -> 4              4x more expensive.
@@ -174,11 +171,11 @@ Fortify Skill                   1 -> 4              4x more expensive.
 
 The main goal here is to make Security useful on higher skill levels and, additionally, to be better than Alteration. Previously there was no benefit from raising Security over 50.
 
-The second goal is to make opening 100-point locks possible only for higher-level characters. Previously, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires mage skilled in Alteration to use existing or create useful open spells (keep in mind that self-made spells are 2x more expensive than standalones).
+The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires a mage skilled in Alteration to use existing open spells (or to create one, but keep in mind that self-made spells are 2x more expensive than standalones).
 
-For warriors, scrolls still exist, but with the price adjusted because they are widely available.
+For warriors, scrolls still exist, but they are nerfed or have the price adjusted because they are widely available.
 
-Also, trap mechanics are restored; previously, anyone could untrap any trap easily. So, the trap spell cost is taken into account on disarming, similar to the lock level.
+Also, trap mechanics are restored; formerly, anyone could untrap any trap easily. So, the trap spell cost is taken into account on disarming, similar to the lock level.
 ```
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. 
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
