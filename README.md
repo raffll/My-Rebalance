@@ -175,7 +175,7 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 
 For warriors, scrolls still exist, but they are nerfed or have the price adjusted because they are widely available.
 
-Also, trap mechanics are restored; formerly, anyone could untrap any trap easily. So, the trap spell cost is taken into account on disarming, similar to the lock level.
+Also, trap mechanics are restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level.
 ```
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. 
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
