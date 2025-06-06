@@ -46,7 +46,9 @@ fMaxWalkSpeedCreature           300 -> 375
 
 ## Alchemy
 
-This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects. But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5). So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
+This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects. But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5). 
+
+So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
 fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, duration and price.
 ```
