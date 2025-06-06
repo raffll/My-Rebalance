@@ -22,7 +22,7 @@ My intention here is not to balance the game. It's impossible. Neither make it h
 
 ## Skills
 
-Armorer							Strength -> Endurance				This is for easier training Endurance.
+Armorer							Strength -> Endurance				This is for easier Endurance training.
 Security						Intelligence -> Agility				Security skill is based on Agility anyway.
 
 ------------------------------------------------------------
@@ -96,9 +96,9 @@ Swift Swim						2 -> 0.5			2x faster swim than Fortify Speed.
 
 ------------------------------
 
-# Destruction - Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it.
+# Destruction - Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 
-Fire Damage						5 -> 5.0
+Fire Damage						     5				Unchanged.
 Frost Damage					5 -> 5.2
 Shock Damage					7 -> 5.4
 Damage Health					8 -> 5.6
@@ -116,10 +116,10 @@ Demoralize Humanoid				Mysticism -> Illusion
 
 ------------------------------
 
-# Mysticism - Absorb spells were overpowered at the same cost as damage spells. Now they are 50% more expensive.
+# Mysticism - Absorb spells were overpowered at the same cost as damage spells. Now they are 50% more expensive. A single effect has an advantage over two effects combined, so the cost will be higher.
 
-Absorb Health					8 -> 12				Damage Health (8) + Restore Health (5) = 13, but I've already lowered Damage Health cost. 
-Absorb Fatigue					4 -> 6				Damage Fatigue (4) + Restore Fatigue (1) = 5, but one effect has an advantage over two effects combined, so the cost will be higher.
+Absorb Health					8 -> 12				Damage Health (5.6) + Restore Health (5) = 10.6
+Absorb Fatigue					4 -> 6				Damage Fatigue (4) + Restore Fatigue (1) = 5
 
 ------------------------------
 
