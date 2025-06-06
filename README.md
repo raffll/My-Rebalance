@@ -31,10 +31,12 @@ Security                        Intelligence -> Agility             Security ski
 
 Just a 25% speed boost for PC, NPCs, and creatures.
 
+```
 fMinWalkSpeed                   100 -> 125
 fMaxWalkSpeed                   200 -> 250
 fMinWalkSpeedCreature             5 -> 6.25
 fMaxWalkSpeedCreature           300 -> 375
+```
 
 ------------------------------------------------------------
 
