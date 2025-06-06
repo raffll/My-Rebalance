@@ -25,8 +25,8 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ## Skills
 
 ```
-Armorer                         Strength -> Endurance               This is for easier Endurance training.
-Security                        Intelligence -> Agility             Security skill is based on Agility anyway.
+Armorer                         Strength -> Endurance       This is for easier Endurance training.
+Security                        Intelligence -> Agility     Security skill is based on Agility anyway.
 ```
 
 ------------------------------------------------------------
