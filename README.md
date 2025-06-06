@@ -1,18 +1,18 @@
 # Rebalanced Rebalance Redux
 
-------------------------------
+------------------------------------------------------------
 
 ### Intentions
 Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters.
 
-------------------------------
+------------------------------------------------------------
 
 ### Philosophy
 - Simplicity
 - Modularity
 - Purist Friendly
 
-------------------------------
+------------------------------------------------------------
 
 ### Assumptions
 - I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507. Where the skill cap is set to 150 and the attribute cap is set to 300. It's not a requirement but a reasonable limit.
@@ -62,7 +62,7 @@ fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
 fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### How to enchant high-level spell
 
@@ -99,7 +99,7 @@ fElementalShieldMult            0.1 -> 1            1 point of damage for 1 poin
 sEffectSlowFall                 SlowFall -> Slowfall
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Alteration
 
@@ -110,7 +110,7 @@ Burden                          1 -> 0.1            2x encumbrance lost than Dra
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Destruction
 
@@ -125,7 +125,7 @@ Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Illusion
 
@@ -136,7 +136,7 @@ Sound                           3  -> 0.8           2x cheaper at 25% than Paral
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Mysticism
 
@@ -146,7 +146,7 @@ Absorb Health                   8 -> 12             Damage Health (5.6) + Restor
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Restoration
 
@@ -160,20 +160,20 @@ Fortify Skill                   1 -> 4              4x more expensive.
 
 ## Lockpicking
 
-The main goal here is to make Security skill useful on higher levels and better than Alteration. Previously there was no benefit from raising Security over 50. Also, opening 100-point locks should be possible only for higher-level characters. Previously, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires mage skilled in Alteration to use existing or create useful open spells (keep in mind that self-made spells are 2x more expensive than standalones). For warriors there are still scrolls, but with the price adjusted because they are widely available. Also, trap mechanics are restored; previously, anyone could untrap any trap easily. So, the trap spell cost is taken into account on disarming, similar to the lock level.
+The main goal here is to make Security useful on higher skill levels and, additionally, to be better than Alteration. Previously there was no benefit from raising Security over 50. The second goal is to make opening 100-point locks possible only for higher-level characters. Previously, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires mage skilled in Alteration to use existing or create useful open spells (keep in mind that self-made spells are 2x more expensive than standalones). For warriors, scrolls still exist, but with the price adjusted because they are widely available. Also, trap mechanics are restored; previously, anyone could untrap any trap easily. So, the trap spell cost is taken into account on disarming, similar to the lock level.
 ```
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. 
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Spell Effect
 ```
 Open                            6  -> 12            2x more expensive.
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Cost
 
@@ -191,14 +191,14 @@ trap_frost_killer               3  -> 75
 trap_shock_killer               5  -> 88
 trap_poison_killer              16 -> 75
 ```
-------------------------------
+------------------------------------------------------------
 
 ### Price
 ```
 sc_ondusisunhinging             73 -> 273           200gp more expensive.
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### Magnitude
 ```
@@ -210,14 +210,14 @@ great open                      50  -> 80           Unavailable in vanilla.
 wild open                              1-100        Unchanged.
 ```
 
-------------------------------
+------------------------------------------------------------
 
 ### How to open a 100-point lock
 - Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
 - Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
 - Warrior -- Enchanting Service -- 27000gp with Mercantile 50 and Disposition 100.
 
-------------------------------
+------------------------------------------------------------
 
 ### How to untrap 100-point spell
 - Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
