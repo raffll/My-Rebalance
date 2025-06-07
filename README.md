@@ -1,18 +1,12 @@
 # Rebalanced Rebalance Redux
 
-------------------------------------------------------------
-
 ### Intentions
 Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters.
-
-------------------------------------------------------------
 
 ### Philosophy
 - Simplicity
 - Modularity
 - Purist friendly
-
-------------------------------------------------------------
 
 ### Assumptions
 - I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507. Where the skill cap is set to 150 and the attribute cap is set to 300. It's not a requirement but a reasonable limit.
