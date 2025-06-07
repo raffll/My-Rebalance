@@ -10,7 +10,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ### Philosophy
 - Simplicity
 - Modularity
-- Purist Friendly
+- Purist friendly
 
 ------------------------------------------------------------
 
@@ -130,6 +130,7 @@ Frost Damage                    5 -> 5.2
 Shock Damage                    7 -> 5.4
 Damage Health                   8 -> 5.6
 Poison                          9 -> 5.8
+
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
 ```
@@ -218,6 +219,7 @@ sc_ondusisunhinging             73 -> 273           200gp more expensive.
 ### Magnitude
 ```
 sc_ekashslocksplitter_en        100 -> 80
+
 open                                   20           Unchanged, unavailable in vanilla.
 ondusi's open door              50  -> 40
 strong open                     50  -> 60
