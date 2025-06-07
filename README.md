@@ -190,23 +190,17 @@ For warriors, scrolls still exist, but they are nerfed or have the price increas
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-------------------------------------------------------------
-
-### Spell Effect
+#### Spell Effect
 ```
 Open                            6 -> 12             2x more expensive.
 ```
 
-------------------------------------------------------------
-
-### Price
+#### Price
 ```
 sc_ondusisunhinging             73gp -> 273gp
 ```
 
-------------------------------------------------------------
-
-### Magnitude
+#### Magnitude
 ```
 sc_ekashslocksplitter_en        100 -> 80
 
@@ -231,7 +225,7 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-##### Cost
+#### Cost
 ```
 trap_fire00         (30)         3 -> 10
 trap_frost00        (30)         3 -> 15
