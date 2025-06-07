@@ -212,10 +212,10 @@ great open                       50 -> 80           Unavailable in vanilla.
 wild open                              1-100        Unchanged.
 ```
 
-#### How to open a 100-point lock
+#### How to open a 100-point lock:
 - Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
 - Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
-- Warrior -- Enchanting Service -- 27000gp with Mercantile 50 and Disposition 100.
+- Warrior -- Enchanting service -- 27000gp with Mercantile 50 and Disposition 100.
 
 ------------------------------------------------------------
 
@@ -241,7 +241,7 @@ trap_shock_killer   (200)        5 -> 70
 trap_poison_killer  (375)       16 -> 100
 ```
 
-#### How to untrap 100-point spell
+#### How to untrap 100-point spell:
 - Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
