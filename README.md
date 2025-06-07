@@ -14,6 +14,11 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - Tamriel Rebuilt is used, but not required.
 - Some kind of lua real time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
 
+### Inspirations
+- BTB's Game Improvements
+- Thief Experience Overhaul
+- Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
+
 ------------------------------------------------------------
 
 ## Skills
@@ -238,14 +243,9 @@ trap_poison_killer  (375)       16 -> 100
 
 ------------------------------------------------------------
 
-### Inspirations
-- BTB's Game Improvements
-- Thief Experience Overhaul
-- Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
-
-### History
-- 1.0
-    - Initial
+## History
+```
 - 1.1
     - Elemental damage costs increased
-    - Detect spells are 5x cheaper
+    - Detect spells 5x cheaper
+```
