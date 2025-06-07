@@ -189,21 +189,18 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-```
 Spell effect:
-
+```
 Open                            6 -> 12             2x more expensive.
 ```
 
-```
 Price:
-
+```
 sc_ondusisunhinging             73gp -> 273gp
 ```
 
-```
 Magnitude:
-
+```
 sc_ekashslocksplitter_en        100 -> 80
 
 open                                   20           Unchanged, unavailable in vanilla.
@@ -225,9 +222,8 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-```
 Cost:
-
+```
 trap_fire00         (30)         3 -> 10
 trap_frost00        (30)         3 -> 15
 trap_shock00        (30)         5 -> 20
