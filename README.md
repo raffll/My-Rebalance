@@ -18,7 +18,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507. Where the skill cap is set to 150 and the attribute cap is set to 300. It's not a requirement but a reasonable limit.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
-- Some kind of lua real time talking with NPC mod. This is mainly to prevent persuasion exploits.
+- Some kind of lua real time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
 
 ------------------------------------------------------------
 
@@ -129,11 +129,11 @@ Elemental damage doesn't make sense; there is no point in using spells other tha
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. 
 
 ```
-Fire Damage                          5.0              Unchanged.
-Frost Damage                    5 -> 5.2
-Shock Damage                    7 -> 5.4
-Damage Health                   8 -> 5.6
-Poison                          9 -> 5.8
+Fire Damage                          5.0            Unchanged.
+Frost Damage                    5 -> 5.25
+Shock Damage                    7 -> 5.5
+Damage Health                   8 -> 5.75
+Poison                          9 -> 6.0
 
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
@@ -156,7 +156,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 ```
-Absorb Health                   8 -> 12             Damage Health (5.6) + Restore Health (5) = 10.6
+Absorb Health                   8 -> 12             Damage Health (5.75) + Restore Health (5) = 10.75
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
@@ -197,26 +197,26 @@ Open                            6  -> 12            2x more expensive.
 
 ### Cost
 ```
-trap_fire00         (30)        3  -> 10  
-trap_frost00        (30)        3  -> 15  
-trap_shock00        (30)        5  -> 20  
-trap_health00       (30)        8  -> 25  
-trap_poison00       (150)       16 -> 50  
+trap_fire00         (30)        3  -> 10
+trap_frost00        (30)        3  -> 15
+trap_shock00        (30)        5  -> 20
+trap_health00       (30)        8  -> 25
+trap_poison00       (150)       16 -> 50
 
-trap_paralyze00     (10s)       13 -> 30  
-trap_silence00      (30s)       37 -> 35  
+trap_paralyze00     (10s)       13 -> 30
+trap_silence00      (30s)       37 -> 35
 
-trap_fire_killer    (200)       3  -> 60  
-trap_frost_killer   (200)       3  -> 65  
-trap_shock_killer   (200)       5  -> 70  
-trap_poison_killer  (375)       16 -> 100 
+trap_fire_killer    (200)       3  -> 60
+trap_frost_killer   (200)       3  -> 65
+trap_shock_killer   (200)       5  -> 70
+trap_poison_killer  (375)       16 -> 100
 ```
 
 ------------------------------------------------------------
 
 ### Price
 ```
-sc_ondusisunhinging             73 -> 273           200gp more expensive.
+sc_ondusisunhinging             73gp -> 273gp
 ```
 
 ------------------------------------------------------------
@@ -264,3 +264,11 @@ wild open                              1-100        Unchanged.
 - BTB's Game Improvements
 - Thief Experience Overhaul
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
+
+------------------------------------------------------------
+
+## History
+- 1.0
+	- Initial
+- 1.1
+	- Elemental damage costs increased
