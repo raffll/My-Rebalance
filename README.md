@@ -1,18 +1,18 @@
 # Rebalanced Rebalance Redux
 
-### Intentions
+#### Intentions
 Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters.
 
 ------------------------------------------------------------
 
-### Philosophy
+#### Philosophy
 - Simplicity
 - Modularity
 - Purist friendly
 
 ------------------------------------------------------------
 
-### Assumptions
+#### Assumptions
 - I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507. Where the skill cap is set to 150 and the attribute cap is set to 300. It's not a requirement but a reasonable limit.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
@@ -20,7 +20,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 ------------------------------------------------------------
 
-### Inspirations
+#### Inspirations
 - BTB's Game Improvements
 - Thief Experience Overhaul
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
@@ -189,17 +189,17 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-Spell effect:
+#### Spell Effect
 ```
 Open                            6 -> 12             2x more expensive.
 ```
 
-Price:
+#### Price
 ```
 sc_ondusisunhinging             73gp -> 273gp
 ```
 
-Magnitude:
+#### Magnitude
 ```
 sc_ekashslocksplitter_en        100 -> 80
 
@@ -222,7 +222,7 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-Cost:
+#### Cost
 ```
 trap_fire00         (30)         3 -> 10
 trap_frost00        (30)         3 -> 15
