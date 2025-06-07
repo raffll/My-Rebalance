@@ -62,8 +62,6 @@ fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
 fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
-------------------------------------------------------------
-
 #### How to enchant high-level spell
 100pts/24s spell (with a magic effect base cost of 1):
 - Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
@@ -204,6 +202,11 @@ great open                       50 -> 80           Unavailable in vanilla.
 wild open                              1-100        Unchanged.
 ```
 
+#### How to open a 100-point lock
+- Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
+- Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
+- Warrior -- Enchanting Service -- 27000gp with Mercantile 50 and Disposition 100.
+
 ------------------------------------------------------------
 
 Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
@@ -228,15 +231,6 @@ trap_shock_killer   (200)        5 -> 70
 trap_poison_killer  (375)       16 -> 100
 ```
 
-------------------------------------------------------------
-
-#### How to open a 100-point lock
-- Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
-- Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
-- Warrior -- Enchanting Service -- 27000gp with Mercantile 50 and Disposition 100.
-
-------------------------------------------------------------
-
 #### How to untrap 100-point spell
 - Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
 - Mage -- Telekinesis.
@@ -244,25 +238,12 @@ trap_poison_killer  (375)       16 -> 100
 
 ------------------------------------------------------------
 
-## TODO
-- Faction requirements - currently available mods are too harsh.
-- Secret Master's apparatus prices - they are lower than Grand Master's and available with TR.
-
-------------------------------------------------------------
-
-## NOT TODO
-- Speechcraft -- It's not broken! It's a stat game between you and NPC. Boost your Speechcraft, Mercantile, and reputation to get better results.
-
-------------------------------------------------------------
-
-## Inspirations
+### Inspirations
 - BTB's Game Improvements
 - Thief Experience Overhaul
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
 
-------------------------------------------------------------
-
-## History
+### History
 - 1.0
     - Initial
 - 1.1
