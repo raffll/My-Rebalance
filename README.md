@@ -46,7 +46,9 @@ fMaxWalkSpeedCreature           300 -> 375
 
 ## Alchemy
 
-This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects. But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5). 
+This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
+
+But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5). 
 
 So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
@@ -89,7 +91,9 @@ fBarterGoldResetDelay           24 -> 720           Less gold on the market shou
 
 ## Pickpocket
 
-It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window. It's not even realistic to take item price into account, so I disabled that requirement.
+It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window.
+
+It's not even realistic to take item price into account, so I disabled that requirement.
 ```
 iPickMaxChance                  75  -> 95           5% chance of being caught anyway.
 fPickPocketMod                  0.3 -> 0            Any item available to steal.
@@ -125,7 +129,7 @@ Elemental damage doesn't make sense; there is no point in using spells other tha
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. 
 
 ```
-Fire Damage                          5              Unchanged.
+Fire Damage                          5.0              Unchanged.
 Frost Damage                    5 -> 5.2
 Shock Damage                    7 -> 5.4
 Damage Health                   8 -> 5.6
