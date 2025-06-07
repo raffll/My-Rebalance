@@ -84,7 +84,7 @@ The economy is broken because there is an unlimited supply of money in the game,
 
 Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
 ```
-fBarterGoldResetDelay           24 -> 720           Less gold on the market should fix economy.
+fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
 ```
 
 ------------------------------------------------------------
