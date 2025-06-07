@@ -26,8 +26,8 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Security is based on Agility anyway.
 ```
-Armorer							Strength -> Endurance
-Security						Intelligence -> Agility		
+Armorer                         Strength -> Endurance
+Security                        Intelligence -> Agility     
 ```
 
 ------------------------------------------------------------
@@ -36,10 +36,10 @@ Security						Intelligence -> Agility
 
 Just a 25% speed boost for PC, NPCs, and creatures.
 ```
-fMinWalkSpeed					100 -> 125
-fMaxWalkSpeed					200 -> 250
-fMinWalkSpeedCreature			  5 -> 6.25
-fMaxWalkSpeedCreature			300 -> 375
+fMinWalkSpeed                   100 -> 125
+fMaxWalkSpeed                   200 -> 250
+fMinWalkSpeedCreature             5 -> 6.25
+fMaxWalkSpeedCreature           300 -> 375
 ```
 
 ------------------------------------------------------------
@@ -52,7 +52,7 @@ But the main problem is that you can successfully create excellent restore fatig
 
 So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
-fPotionStrengthMult				0.5 -> 0.1			5x smaller magnitude, duration and price.
+fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, duration and price.
 ```
 
 ------------------------------------------------------------
@@ -63,9 +63,9 @@ This is the worst skill in the game. Self-made enchantments are almost impossibl
 
 Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter or thief, you have to do better resource management or just buy the same item again.
 ```
-sMagicInsufficientCharge							Removed annoing message.
-fMagicItemRechargePerSecond		0.05 -> 0			Disabled idle recharging.
-fEnchantmentChanceMult			3 -> 0.6			5x easier self enchant.
+sMagicInsufficientCharge                            Removed annoing message.
+fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
+fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
 ------------------------------------------------------------
@@ -84,7 +84,7 @@ The economy is broken because there is an unlimited supply of money in the game,
 
 Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
 ```
-fBarterGoldResetDelay			24 -> 720			30 days to reset merchants gold.
+fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
 ```
 
 ------------------------------------------------------------
@@ -95,8 +95,8 @@ It's a stat game between you and NPC, but in vanilla your max chance was only 56
 
 It's not even realistic to take item price into account, so I disabled that requirement.
 ```
-iPickMaxChance					 75 -> 95			5% chance of being caught anyway.
-fPickPocketMod					0.3 -> 0			Any item available to steal.
+iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
+fPickPocketMod                  0.3 -> 0            Any item available to steal.
 ```
 
 ------------------------------------------------------------
@@ -105,8 +105,8 @@ fPickPocketMod					0.3 -> 0			Any item available to steal.
 
 Lots of spell effects weren't really useful because of better alternatives. Also, it's worth trying elemental shield now, for the fun of killing low-level creatures.
 ```
-fElementalShieldMult			0.1 -> 1			1 point of damage for 1 point of magnitude.
-sEffectSlowFall					SlowFall -> Slowfall
+fElementalShieldMult            0.1 -> 1            1 point of damage for 1 point of magnitude.
+sEffectSlowFall                 SlowFall -> Slowfall
 ```
 
 ------------------------------------------------------------
@@ -115,9 +115,9 @@ sEffectSlowFall					SlowFall -> Slowfall
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. The same rule applies to Swift Swim.
 ```
-Feather							1 -> 0.1			2x encumbrance gain than Fortify Strength.
-Burden							1 -> 0.1			2x encumbrance lost than Drain Strength.
-Swift Swim						2 -> 0.5			2x faster swim than Fortify Speed.
+Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
+Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
+Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
 ------------------------------------------------------------
@@ -125,18 +125,18 @@ Swift Swim						2 -> 0.5			2x faster swim than Fortify Speed.
 ### Destruction
 
 Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
+```
+Fire Damage                          5.0            Unchanged.
+Frost Damage                    5 -> 5.25
+Shock Damage                    7 -> 5.5
+Damage Health                   8 -> 5.75
+Poison                          9 -> 6.0
+```
 
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. 
-
 ```
-Fire Damage							 5.0			Unchanged.
-Frost Damage					5 -> 5.25
-Shock Damage					7 -> 5.5
-Damage Health					8 -> 5.75
-Poison							9 -> 6.0
-
-Disintegrate Armor				6 -> 1
-Disintegrate Weapon				6 -> 1
+Disintegrate Armor              6 -> 1
+Disintegrate Weapon             6 -> 1
 ```
 
 ------------------------------------------------------------
@@ -145,9 +145,9 @@ Disintegrate Weapon				6 -> 1
 
 There was no point in using them instead of paralysis.
 ```
-Silence							40 -> 20			2x cheaper than Paralyze.
-Sound							3  -> 0.8			2x cheaper at 25% than Paralyze.
-Demoralize Humanoid				Mysticism -> Illusion
+Silence                         40 -> 20            2x cheaper than Paralyze.
+Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
+Demoralize Humanoid             Mysticism -> Illusion
 ```
 
 ------------------------------------------------------------
@@ -156,12 +156,13 @@ Demoralize Humanoid				Mysticism -> Illusion
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 ```
-Absorb Health					8 -> 12				Damage Health (5.75) + Restore Health (5) = 10.75
-Absorb Fatigue					4 -> 6				Damage Fatigue (4) + Restore Fatigue (1) = 5
-
-Detect Animal					0.75 -> 0.15
-Detect Enchantment				   1 -> 0.2
-Detect Key						   1 -> 0.2
+Absorb Health                   8 -> 12             Damage Health (5.75) + Restore Health (5) = 10.75
+Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
+```
+```
+Detect Animal                   0.75 -> 0.15
+Detect Enchantment              1 -> 0.2
+Detect Key                      1 -> 0.2
 ```
 
 ------------------------------------------------------------
@@ -170,8 +171,8 @@ Detect Key						   1 -> 0.2
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 ```
-Fortify Magicka					1 -> 0.75			25% cheaper than Fortify Intelligence.
-Fortify Skill					1 -> 4				4x more expensive.
+Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Intelligence.
+Fortify Skill                   1 -> 4              4x more expensive.
 ```
 
 ------------------------------------------------------------
@@ -186,54 +187,54 @@ For warriors, scrolls still exist, but they are nerfed or have the price increas
 
 Also, trap mechanics are restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
-fPickLockMult					-1 -> -1.25			Locks are harder to unlock. 
-fTrapCostMult					 0 -> -1			Trap spell cost is taken into account.
+fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. 
+fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
 ------------------------------------------------------------
 
 ### Spell Effect
 ```
-Open							 6 -> 12			2x more expensive.
+Open                            6 -> 12             2x more expensive.
 ```
 
 ------------------------------------------------------------
 
 ### Cost
 ```
-trap_fire00			(30)		 3 -> 10
-trap_frost00		(30)		 3 -> 15
-trap_shock00		(30)		 5 -> 20
-trap_health00		(30)		 8 -> 25
-trap_poison00		(150)		16 -> 50
+trap_fire00         (30)         3 -> 10
+trap_frost00        (30)         3 -> 15
+trap_shock00        (30)         5 -> 20
+trap_health00       (30)         8 -> 25
+trap_poison00       (150)       16 -> 50
 
-trap_paralyze00		(10s)		13 -> 30
-trap_silence00		(30s)		37 -> 35
+trap_paralyze00     (10s)       13 -> 30
+trap_silence00      (30s)       37 -> 35
 
-trap_fire_killer	(200)		 3 -> 60
-trap_frost_killer	(200)		 3 -> 65
-trap_shock_killer	(200)		 5 -> 70
-trap_poison_killer	(375)		16 -> 100
+trap_fire_killer    (200)        3 -> 60
+trap_frost_killer   (200)        3 -> 65
+trap_shock_killer   (200)        5 -> 70
+trap_poison_killer  (375)       16 -> 100
 ```
 
 ------------------------------------------------------------
 
 ### Price
 ```
-sc_ondusisunhinging			   73gp -> 273gp
+sc_ondusisunhinging             73gp -> 273gp
 ```
 
 ------------------------------------------------------------
 
 ### Magnitude
 ```
-sc_ekashslocksplitter_en		100 -> 80
+sc_ekashslocksplitter_en        100 -> 80
 
-open								   20			Unchanged, unavailable in vanilla.
-ondusi's open door				 50 -> 40
-strong open						 50 -> 60
-great open						 50 -> 80			Unavailable in vanilla.
-wild open							   1-100		Unchanged.
+open                                   20           Unchanged, unavailable in vanilla.
+ondusi's open door               50 -> 40
+strong open                      50 -> 60
+great open                       50 -> 80           Unavailable in vanilla.
+wild open                              1-100        Unchanged.
 ```
 
 ------------------------------------------------------------
@@ -253,7 +254,6 @@ wild open							   1-100		Unchanged.
 ------------------------------------------------------------
 
 ## TODO
-- Detect spells
 - Faction requirements - currently available mods are too harsh.
 - Secret Master's apparatus prices - they are lower than Grand Master's and available with TR.
 
@@ -273,6 +273,7 @@ wild open							   1-100		Unchanged.
 
 ## History
 - 1.0
-	- Initial
+    - Initial
 - 1.1
-	- Elemental damage costs increased
+    - Elemental damage costs increased
+    - Detect spells 5x cheaper
