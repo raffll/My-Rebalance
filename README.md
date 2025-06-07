@@ -189,18 +189,21 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-Spell effect:
 ```
+Spell effect:
+
 Open                            6 -> 12             2x more expensive.
 ```
 
-Price:
 ```
+Price:
+
 sc_ondusisunhinging             73gp -> 273gp
 ```
 
-Magnitude:
 ```
+Magnitude:
+
 sc_ekashslocksplitter_en        100 -> 80
 
 open                                   20           Unchanged, unavailable in vanilla.
