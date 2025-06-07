@@ -207,6 +207,7 @@ trap_frost_killer   (200)       3  -> 65
 trap_shock_killer   (200)       5  -> 70  
 trap_poison_killer  (375)       16 -> 100 
 ```
+
 ------------------------------------------------------------
 
 ### Price
@@ -244,6 +245,7 @@ wild open                              1-100        Unchanged.
 ------------------------------------------------------------
 
 ## TODO
+- Detect spells
 - Faction requirements - currently available mods are too harsh.
 - Secret Master's apparatus prices - they are lower than Grand Master's and available with TR.
 
