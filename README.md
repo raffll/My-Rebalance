@@ -60,12 +60,12 @@ So after applying this patch, some potions will be much weaker (but others still
 fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, duration and price.
 ```
 
-Secret Master's apparatus prices were lower than Grandmaster's in some cases.
+Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
 ```
-apparatus_sm_alembic_01         1600 -> 8000        5x more expensive.
-apparatus_sm_calcinator_01      3200 -> 16000
-apparatus_sm_mortar_01          6000 -> 30000
-apparatus_sm_retort_01          1000 -> 5000
+apparatus_sm_alembic_01         1600gp -> 8000gp
+apparatus_sm_calcinator_01      3200gp -> 16000gp
+apparatus_sm_mortar_01          6000gp -> 30000gp
+apparatus_sm_retort_01          1000gp -> 5000gp
 ```
 
 ------------------------------------------------------------
