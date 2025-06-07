@@ -268,7 +268,7 @@ wild open                              1-100        Unchanged.
 ------------------------------------------------------------
 
 ## History
-- 1.0
-	- Initial
-- 1.1
-	- Elemental damage costs increased
+1.0
+- Initial
+1.1
+- Elemental damage costs increased
