@@ -94,7 +94,7 @@ fBarterGoldResetDelay           24 -> 720           30 days to reset merchants g
 
 It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window.
 
-It's not even realistic to take item price into account, so I disabled that requirement.
+Also, it's not even realistic to take item price into account, so I disabled that requirement.
 ```
 iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
 fPickPocketMod                  0.3 -> 0            Any item available to steal.
