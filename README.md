@@ -62,10 +62,10 @@ fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, durati
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
 ```
-apparatus_sm_alembic_01         1600gp -> 8000gp
-apparatus_sm_calcinator_01      3200gp -> 16000gp
-apparatus_sm_mortar_01          6000gp -> 30000gp
-apparatus_sm_retort_01          1000gp -> 5000gp
+apparatus_sm_alembic_01         1600 -> 8000
+apparatus_sm_calcinator_01      3200 -> 16000
+apparatus_sm_mortar_01          6000 -> 30000
+apparatus_sm_retort_01          1000 -> 5000
 ```
 
 ------------------------------------------------------------
@@ -199,12 +199,12 @@ fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 
 #### Spell Effect
 ```
-Open                            6 -> 12             2x more expensive.
+Open                            6 -> 12
 ```
 
 #### Price
 ```
-sc_ondusisunhinging             73gp -> 273gp
+sc_ondusisunhinging             73 -> 273			Available in stores.
 ```
 
 #### Magnitude
