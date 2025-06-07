@@ -62,7 +62,7 @@ fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, durati
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases.
 ```
-apparatus_sm_alembic_01         1600 -> 8000		5x more expensive.
+apparatus_sm_alembic_01         1600 -> 8000        5x more expensive.
 apparatus_sm_calcinator_01      3200 -> 16000
 apparatus_sm_mortar_01          6000 -> 30000
 apparatus_sm_retort_01          1000 -> 5000
@@ -259,5 +259,5 @@ trap_poison_killer  (375)       16 -> 100
 - 1.1
     - Elemental damage costs increased
     - Detect spells 5x cheaper
-	- Secret Master's apparatus 5x more expensive
+    - Secret Master's apparatus 5x more expensive
 ```
