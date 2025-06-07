@@ -222,8 +222,9 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-Cost:
 ```
+Cost:
+
 trap_fire00         (30)         3 -> 10
 trap_frost00        (30)         3 -> 15
 trap_shock00        (30)         5 -> 20
