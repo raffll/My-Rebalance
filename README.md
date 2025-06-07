@@ -70,7 +70,7 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 ------------------------------------------------------------
 
-### How to enchant high-level spell
+#### How to enchant high-level spell
 100pts/24s spell (with a magic effect base cost of 1):
 - Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-Enchant -- 53% chance of making an item with Enchant 100 and average (50) attributes.
@@ -110,7 +110,7 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 ------------------------------------------------------------
 
-### Alteration
+#### Alteration
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. The same rule applies to Swift Swim.
 ```
@@ -121,7 +121,7 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 ------------------------------------------------------------
 
-### Destruction
+#### Destruction
 
 Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 ```
@@ -140,7 +140,7 @@ Disintegrate Weapon             6 -> 1
 
 ------------------------------------------------------------
 
-### Illusion
+#### Illusion
 
 There was no point in using them instead of paralysis.
 ```
@@ -151,7 +151,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 ------------------------------------------------------------
 
-### Mysticism
+#### Mysticism
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 ```
@@ -168,7 +168,7 @@ Detect Key                      1 -> 0.2
 
 ------------------------------------------------------------
 
-### Restoration
+#### Restoration
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 ```
@@ -236,14 +236,14 @@ trap_poison_killer  (375)       16 -> 100
 
 ------------------------------------------------------------
 
-### How to open a 100-point lock
+#### How to open a 100-point lock
 - Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
 - Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
 - Warrior -- Enchanting Service -- 27000gp with Mercantile 50 and Disposition 100.
 
 ------------------------------------------------------------
 
-### How to untrap 100-point spell
+#### How to untrap 100-point spell
 - Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
