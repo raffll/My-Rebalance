@@ -27,7 +27,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Security is based on Agility anyway.
 ```
 Armorer                         Strength -> Endurance
-Security                        Intelligence -> Agility
+Security                        Intelligence -> Agility     
 ```
 
 ------------------------------------------------------------
@@ -48,7 +48,7 @@ fMaxWalkSpeedCreature           300 -> 375
 
 This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
 
-But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5).
+But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5). 
 
 So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
@@ -133,7 +133,7 @@ Damage Health                   8 -> 5.75
 Poison                          9 -> 6.0
 ```
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier.
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. 
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
@@ -183,9 +183,14 @@ Fortify Skill                   1 -> 4              4x more expensive.
 
 The main goal here is to make Security useful on higher skill levels and, additionally, to be better than Alteration. Previously there was no benefit from raising Security over 50.
 
-The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones. For warriors, scrolls still exist, but they are nerfed or have the price increased because they are widely available.
+The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones.
+
+For warriors, scrolls still exist, but they are nerfed or have the price increased because they are widely available.
+
+Also, trap mechanics are restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
-fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
+fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. 
+fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
 ------------------------------------------------------------
@@ -193,6 +198,25 @@ fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ### Spell Effect
 ```
 Open                            6 -> 12             2x more expensive.
+```
+
+------------------------------------------------------------
+
+### Cost
+```
+trap_fire00         (30)         3 -> 10
+trap_frost00        (30)         3 -> 15
+trap_shock00        (30)         5 -> 20
+trap_health00       (30)         8 -> 25
+trap_poison00       (150)       16 -> 50
+
+trap_paralyze00     (10s)       13 -> 30
+trap_silence00      (30s)       37 -> 35
+
+trap_fire_killer    (200)        3 -> 60
+trap_frost_killer   (200)        3 -> 65
+trap_shock_killer   (200)        5 -> 70
+trap_poison_killer  (375)       16 -> 100
 ```
 
 ------------------------------------------------------------
@@ -213,32 +237,6 @@ ondusi's open door               50 -> 40
 strong open                      50 -> 60
 great open                       50 -> 80           Unavailable in vanilla.
 wild open                              1-100        Unchanged.
-```
-
-------------------------------------------------------------
-
-Trap mechanics are restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
-```
-fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
-```
-
-------------------------------------------------------------
-
-### Cost
-```
-trap_fire00         (30)         3 -> 10
-trap_frost00        (30)         3 -> 15
-trap_shock00        (30)         5 -> 20
-trap_health00       (30)         8 -> 25
-trap_poison00       (150)       16 -> 50
-
-trap_paralyze00     (10s)       13 -> 30
-trap_silence00      (30s)       37 -> 35
-
-trap_fire_killer    (200)        3 -> 60
-trap_frost_killer   (200)        3 -> 65
-trap_shock_killer   (200)        5 -> 70
-trap_poison_killer  (375)       16 -> 100
 ```
 
 ------------------------------------------------------------
