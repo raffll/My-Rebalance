@@ -159,6 +159,8 @@ Absorb spells were overpowered at the same cost as damage spells. A single effec
 Absorb Health                   8 -> 12             Damage Health (5.75) + Restore Health (5) = 10.75
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
+
+Detect spells were just too expensive.
 ```
 Detect Animal                   0.75 -> 0.15
 Detect Enchantment              1 -> 0.2
@@ -184,11 +186,8 @@ The main goal here is to make Security useful on higher skill levels and, additi
 The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones.
 
 For warriors, scrolls still exist, but they are nerfed or have the price increased because they are widely available.
-
-Also, trap mechanics are restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock. 
-fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
 ------------------------------------------------------------
@@ -196,25 +195,6 @@ fTrapCostMult                    0 -> -1            Trap spell cost is taken int
 ### Spell Effect
 ```
 Open                            6 -> 12             2x more expensive.
-```
-
-------------------------------------------------------------
-
-### Cost
-```
-trap_fire00         (30)         3 -> 10
-trap_frost00        (30)         3 -> 15
-trap_shock00        (30)         5 -> 20
-trap_health00       (30)         8 -> 25
-trap_poison00       (150)       16 -> 50
-
-trap_paralyze00     (10s)       13 -> 30
-trap_silence00      (30s)       37 -> 35
-
-trap_fire_killer    (200)        3 -> 60
-trap_frost_killer   (200)        3 -> 65
-trap_shock_killer   (200)        5 -> 70
-trap_poison_killer  (375)       16 -> 100
 ```
 
 ------------------------------------------------------------
@@ -235,6 +215,32 @@ ondusi's open door               50 -> 40
 strong open                      50 -> 60
 great open                       50 -> 80           Unavailable in vanilla.
 wild open                              1-100        Unchanged.
+```
+
+------------------------------------------------------------
+
+Also, trap mechanics are restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
+```
+fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
+```
+
+------------------------------------------------------------
+
+### Cost
+```
+trap_fire00         (30)         3 -> 10
+trap_frost00        (30)         3 -> 15
+trap_shock00        (30)         5 -> 20
+trap_health00       (30)         8 -> 25
+trap_poison00       (150)       16 -> 50
+
+trap_paralyze00     (10s)       13 -> 30
+trap_silence00      (30s)       37 -> 35
+
+trap_fire_killer    (200)        3 -> 60
+trap_frost_killer   (200)        3 -> 65
+trap_shock_killer   (200)        5 -> 70
+trap_poison_killer  (375)       16 -> 100
 ```
 
 ------------------------------------------------------------
