@@ -73,8 +73,7 @@ fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
 fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
-#### How to enchant high-level spell
-100pts/24s spell (with a magic effect base cost of 1):
+#### How to enchant high-level spell - 100pts/24s spell (with a magic effect base cost of 1):
 - Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-Enchant -- 53% chance of making an item with Enchant 100 and average (50) attributes.
 
