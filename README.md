@@ -36,6 +36,7 @@ Armorer                         Strength -> Endurance
 Security                        Intelligence -> Agility
 ```
 
+Here is the list of all skills.
 ```
 Strength        (4)             Acrobatics, Axe, Blunt, Long Blade
 Intelligence    (4)             Alchemy, Conjuration, Enchant, Mysticism
@@ -95,29 +96,6 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 #### How to enchant high-level spell - 100pts/24s spell (with a magic effect base cost of 1):
 - Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-Enchant -- 53% chance of making an item with Enchant 100 and average (50) attributes.
-
-------------------------------------------------------------
-
-## Barter
-
-The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenario when you really need cash is to buy an enchanted item or to train with a trainer. There should already be enough money on the market to suit those needs for one month.
-
-Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
-```
-fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
-```
-
-------------------------------------------------------------
-
-## Pickpocket
-
-It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window.
-
-Also, it's not even realistic to take item price into account, so I disabled that requirement.
-```
-iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
-fPickPocketMod                  0.3 -> 0            Any item available to steal.
-```
 
 ------------------------------------------------------------
 
@@ -195,6 +173,29 @@ Fortify Magicka was doing less than Fortify Intelligence for the same price. For
 ```
 Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Intelligence.
 Fortify Skill                   1 -> 4
+```
+
+------------------------------------------------------------
+
+## Barter
+
+The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenario when you really need cash is to buy an enchanted item or to train with a trainer. There should already be enough money on the market to suit those needs for one month.
+
+Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices. Also, the side effect of this is you have more time to get back money you already invested in enchantments or training if this person also offers to buy things.
+```
+fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
+```
+
+------------------------------------------------------------
+
+## Pickpocket
+
+It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window.
+
+Also, it's not even realistic to take item price into account, so I disabled that requirement.
+```
+iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
+fPickPocketMod                  0.3 -> 0            Any item available to steal.
 ```
 
 ------------------------------------------------------------
