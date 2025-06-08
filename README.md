@@ -42,9 +42,9 @@ Here is the list of all skills.
 Strength        (4)             Acrobatics, Axe, Blunt, Long Blade
 Intelligence    (4)             Alchemy, Conjuration, Enchant, Mysticism
 Willpower       (3)             Alteration, Destruction, Restoration
-Agility         (5)             Block, Light Armor, Marksman, Sneak, SECURITY
+Agility         (5)             Block, Light Armor, Marksman, Sneak, *SECURITY*
 Speed           (4)             Athletics, Hand-to-Hand, Short Blade, Unarmored
-Endurance       (4)             Heavy Armor, Medium Armor, Spear, ARMORER
+Endurance       (4)             Heavy Armor, Medium Armor, Spear, *ARMORER*
 Personality     (3)             Illusion, Mercantile, Speechcraft
 ```
 
