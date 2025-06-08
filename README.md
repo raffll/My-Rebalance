@@ -17,6 +17,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
 - Some kind of lua real time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
+- "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
 ------------------------------------------------------------
 
@@ -187,6 +188,9 @@ fBarterGoldResetDelay           24 -> 720           30 days to reset merchants g
 ```
 
 The Mages Guild's teleportation price is increased. As an instant and modern style of transportation, it shouldn't be lower than other conventional travel options.
+```
+fMagesGuildTravel               10 -> 100
+```
 
 ------------------------------------------------------------
 
