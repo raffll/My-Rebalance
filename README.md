@@ -186,6 +186,8 @@ Additionally, it will force you to invest in Speechcraft and Mercantile to get b
 fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
 ```
 
+The Mages Guild's teleportation price is increased. As an instant and modern style of transportation, it shouldn't be lower than other conventional travel options.
+
 ------------------------------------------------------------
 
 ## Pickpocket
@@ -236,6 +238,8 @@ wild open                              1-100        Unchanged.
 - Warrior -- Enchanting service -- 27000gp with Mercantile 50 and Disposition 100.
 
 ------------------------------------------------------------
+
+## Traps
 
 Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
