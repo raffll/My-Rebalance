@@ -182,7 +182,7 @@ Fortify Skill                   1 -> 4
 
 The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenario when you really need cash is to buy an enchanted item or to train with a trainer. There should already be enough money on the market to suit those needs for one month.
 
-Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices. Also, the side effect of this is you have more time to get back money you already invested in enchantments or training if this person also offers to buy things.
+Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices. Also, the side effect of this is you have more time to get back money you already spent on enchantments or training if this person also offers to buy things.
 ```
 fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
 ```
