@@ -24,6 +24,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - BTB's Game Improvements
 - Thief Experience Overhaul
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
+- Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
 
 ------------------------------------------------------------
 
@@ -33,6 +34,16 @@ Armorer skill is better suited in Endurance, as this attribute lacks any non-com
 ```
 Armorer                         Strength -> Endurance
 Security                        Intelligence -> Agility
+```
+
+```
+Strength		(4)				Acrobatics, Axe, Blunt, Long Blade
+Intelligence	(4)				Alchemy, Conjuration, Enchant, Mysticism
+Willpower		(3)				Alteration, Destruction, Restoration
+Agility			(5)				Block, Light Armor, Marksman, Sneak, SECURITY
+Speed			(4)				Athletics, Hand-to-Hand, Short Blade, Unarmored
+Endurance		(4)				Heavy Armor, Medium Armor, Spear, ARMORER
+Personality		(3)				Illusion, Mercantile, Speechcraft
 ```
 
 ------------------------------------------------------------
