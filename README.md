@@ -17,6 +17,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
 - Some kind of lua real time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
+- "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
 ------------------------------------------------------------
 
@@ -24,6 +25,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - BTB's Game Improvements
 - Thief Experience Overhaul
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
+- Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
 
 ------------------------------------------------------------
 
@@ -33,6 +35,17 @@ Armorer skill is better suited in Endurance, as this attribute lacks any non-com
 ```
 Armorer                         Strength -> Endurance
 Security                        Intelligence -> Agility
+```
+
+Here is the list of all skills.
+```
+Strength        (4)             Acrobatics, Axe, Blunt, Long Blade
+Intelligence    (4)             Alchemy, Conjuration, Enchant, Mysticism
+Willpower       (3)             Alteration, Destruction, Restoration
+Agility         (5)             Block, Light Armor, Marksman, Sneak, SECURITY
+Speed           (4)             Athletics, Hand-to-Hand, Short Blade, Unarmored
+Endurance       (4)             Heavy Armor, Medium Armor, Spear, ARMORER
+Personality     (3)             Illusion, Mercantile, Speechcraft
 ```
 
 ------------------------------------------------------------
@@ -51,13 +64,13 @@ fMaxWalkSpeedCreature           300 -> 375
 
 ## Alchemy
 
-This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
+This is the best skill in the game. My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are crap. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
 
 But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5).
 
-So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
+So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
-fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, duration and price.
+fPotionStrengthMult             0.5 -> 0.25          2x smaller magnitude, duration and price.
 ```
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
@@ -84,29 +97,6 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 #### How to enchant high-level spell - 100pts/24s spell (with a magic effect base cost of 1):
 - Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-Enchant -- 53% chance of making an item with Enchant 100 and average (50) attributes.
-
-------------------------------------------------------------
-
-## Barter
-
-The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenario when you really need cash is to buy an enchanted item or to train with a trainer. There should already be enough money on the market to suit those needs for one month.
-
-Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices.
-```
-fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
-```
-
-------------------------------------------------------------
-
-## Pickpocket
-
-It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window.
-
-Also, it's not even realistic to take item price into account, so I disabled that requirement.
-```
-iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
-fPickPocketMod                  0.3 -> 0            Any item available to steal.
-```
 
 ------------------------------------------------------------
 
@@ -183,7 +173,35 @@ Detect Key                      1 -> 0.2
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 ```
 Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Intelligence.
-Fortify Skill                   1 -> 4              4x more expensive.
+Fortify Skill                   1 -> 4
+```
+
+------------------------------------------------------------
+
+## Barter
+
+The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenario when you really need cash is to buy an enchanted item or to train with a trainer. There should already be enough money on the market to suit those needs for one month.
+
+Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices. Also, the side effect of this is you have more time to get back money you already spent on enchantments or training if this person also offers to buy things.
+```
+fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
+```
+
+The Mages Guild's teleportation price is increased. As an instant and modern style of transportation, it shouldn't be lower than other conventional travel options.
+```
+fMagesGuildTravel               10 -> 100
+```
+
+------------------------------------------------------------
+
+## Pickpocket
+
+It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window.
+
+Also, it's not even realistic to take item price into account, so I disabled that requirement.
+```
+iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
+fPickPocketMod                  0.3 -> 0            Any item available to steal.
 ```
 
 ------------------------------------------------------------
@@ -225,6 +243,8 @@ wild open                              1-100        Unchanged.
 
 ------------------------------------------------------------
 
+## Traps
+
 Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
@@ -260,4 +280,8 @@ trap_poison_killer  (375)       16 -> 100
     - Elemental damage costs increased
     - Detect spells 5x cheaper
     - Secret Master's apparatus 5x more expensive
+- 1.2
+    - Lockpicking and traps split into separate esps
+    - Alchemy adjusted
+    - Mages Guild's travel 10x more expensive
 ```
