@@ -204,7 +204,7 @@ Open                            6 -> 12
 
 #### Price
 ```
-sc_ondusisunhinging             73 -> 273			Available in stores.
+sc_ondusisunhinging             73 -> 273           Available in stores.
 ```
 
 #### Magnitude
