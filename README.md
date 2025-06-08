@@ -62,13 +62,13 @@ fMaxWalkSpeedCreature           300 -> 375
 
 ## Alchemy
 
-This is the best skill in the game. It's impossible to compare it with buyable potions because they are using completely different formulas. Pre-made potions are made from templates, like in a factory. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
+This is the best skill in the game. My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are crap. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
 
 But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5).
 
-So after applying this patch, some potions will be much weaker (but others still not so much) than pre-made counterparts and spells. But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
+So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
-fPotionStrengthMult             0.5 -> 0.1          5x smaller magnitude, duration and price.
+fPotionStrengthMult             0.5 -> 0.25          2x smaller magnitude, duration and price.
 ```
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
@@ -271,4 +271,6 @@ trap_poison_killer  (375)       16 -> 100
     - Elemental damage costs increased
     - Detect spells 5x cheaper
     - Secret Master's apparatus 5x more expensive
+- 1.2
+    - Alchemy adjusted
 ```
