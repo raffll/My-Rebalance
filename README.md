@@ -194,7 +194,7 @@ Detect Key                      1 -> 0.2
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 ```
 Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Intelligence.
-Fortify Skill                   1 -> 4              4x more expensive.
+Fortify Skill                   1 -> 4
 ```
 
 ------------------------------------------------------------
