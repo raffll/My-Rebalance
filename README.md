@@ -281,5 +281,7 @@ trap_poison_killer  (375)       16 -> 100
     - Detect spells 5x cheaper
     - Secret Master's apparatus 5x more expensive
 - 1.2
+	- Lockpicking and traps split into separate esps
     - Alchemy adjusted
+	- Mages Guild's travel 10x more expensive
 ```
