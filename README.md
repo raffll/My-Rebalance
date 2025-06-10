@@ -33,7 +33,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ------------------------------------------------------------
 
 #### Compatibility
-- If you are using Morag Tong Polished, enable also Corrupted Crime - Morag Tong Polished.esp at the end.
+- If you are using Morag Tong Polished, enable also _Corrupted Crime - Morag Tong Polished.esp_ at the end.
 
 ------------------------------------------------------------
 
