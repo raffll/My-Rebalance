@@ -210,7 +210,7 @@ fBarterGoldResetDelay           24 -> 720           30 days to reset merchants g
 
 The Mages Guild's teleportation price is increased. As an instant and modern style of transportation, it shouldn't be lower than other conventional travel options.
 ```
-fMagesGuildTravel               10 -> 100
+fMagesGuildTravel               10 -> 100			10x more expensive.
 ```
 
 ------------------------------------------------------------
