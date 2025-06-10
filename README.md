@@ -38,7 +38,7 @@ This is because 100/1s spell is much more powerful than 1/100s spell at the same
 ------------------------------------------------------------
 
 #### Compatibility
-- If you are using Morag Tong Polished, enable also **Corrupted Crime - Morag Tong Polished.esp** at the end.
+- If you are using Morag Tong Polished, enable also "Corrupted Crime - Morag Tong Polished.esp" at the end.
 
 ------------------------------------------------------------
 
