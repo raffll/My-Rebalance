@@ -21,6 +21,11 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 - Overall, playing without save scumming or min-maxing.
 
+If you are using MCP, leave vanilla mechanics for creating spells
+- Max spell magnitude at 100 for 1440s
+- Self made spell with one additional second added while calculating cost
+This is because 100/1s spell is much more powerful than 1/100s spell at the same cost. In vanilla 100/1s spell will cost 2x more.
+
 ------------------------------------------------------------
 
 #### Inspirations
@@ -33,7 +38,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ------------------------------------------------------------
 
 #### Compatibility
-- If you are using Morag Tong Polished, enable also _Corrupted Crime - Morag Tong Polished.esp_ at the end.
+- If you are using Morag Tong Polished, enable also **Corrupted Crime - Morag Tong Polished.esp** at the end.
 
 ------------------------------------------------------------
 
