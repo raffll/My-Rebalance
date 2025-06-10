@@ -257,7 +257,7 @@ fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 
 #### Spell Effect
 ```
-Open                            6 -> 12
+Open                            6 -> 12             Spells are harder to cast.
 ```
 
 #### Price
@@ -267,7 +267,7 @@ sc_ondusisunhinging             73 -> 273           Available in stores.
 
 #### Magnitude
 ```
-sc_ekashslocksplitter_en        100 -> 80
+sc_ekashslocksplitter_en        100 -> 80           Available in randomm loot from level 10.
 
 open                                   20           Unchanged, unavailable in vanilla.
 ondusi's open door               50 -> 40
