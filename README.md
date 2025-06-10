@@ -6,7 +6,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ------------------------------------------------------------
 
 #### Philosophy
-- Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible with other mods.
+- Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
 - Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.
 
