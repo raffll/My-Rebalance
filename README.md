@@ -30,6 +30,9 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
 - Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
 
+#### Compatibility
+- If you are using Morag Tong Polished, enable also Corrupted Crime - Morag Tong Polished.esp at the end.
+
 ------------------------------------------------------------
 
 ## Skills
@@ -161,7 +164,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 ```
-Absorb Health                   8 -> 12             Damage Health (5.75) + Restore Health (5) = 10.75
+Absorb Health                   8 -> 12             Damage Health (~5) + Restore Health (5) = ~10
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
@@ -211,7 +214,8 @@ In reality, crime doesn't exist. You probably will load your previous save game.
 ```
 iCrimeKilling                   1000 -> 10000
 iCrimeAttack                      40 -> 1000
-iCrimeTresspass                    5 -> 500         Trespassing is a more serious crime than pickpocketing.
+iCrimeTresspass                    5 -> 500         Trespassing is a more serious crime
+                                                    than pickpocketing.
 iCrimePickPocket                  25 -> 250
 
 iCrimeThreshold                         1000        Unchanged.
