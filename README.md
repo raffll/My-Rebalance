@@ -226,9 +226,7 @@ iCrimeTresspass                    5 -> 500         Trespassing is a more seriou
 iCrimePickPocket                  25 -> 250
 
 iCrimeThreshold                         1000        Unchanged.
-
 iDaysinPrisonMod                 100 -> 1000        Days in prison will be the same as in vanilla.
-
 Death Warrant                   5000 -> 11001       You can kill only one person, instead of 4.
 ```
 
