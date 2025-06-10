@@ -30,6 +30,8 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
 - Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
 
+------------------------------------------------------------
+
 #### Compatibility
 - If you are using Morag Tong Polished, enable also Corrupted Crime - Morag Tong Polished.esp at the end.
 
