@@ -21,11 +21,9 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 - Overall, playing without save scumming or min-maxing.
 
-If you are using MCP, leave vanilla mechanics for creating spells
-- Max spell magnitude at 100 for 1440s
-- Self made spell with one additional second added while calculating cost
-
-This is because 100/1s spell is much more powerful than 1/100s spell at the same cost. In vanilla 100/1s spell will cost 2x more.
+If you are using MCP, leave vanilla mechanics for creating spells.
+- Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
+- Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
 
 ------------------------------------------------------------
 
