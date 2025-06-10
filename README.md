@@ -6,26 +6,38 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ------------------------------------------------------------
 
 #### Philosophy
-- Simplicity
-- Modularity
-- Purist friendly
+- Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
+- Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
+- Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.
 
 ------------------------------------------------------------
 
 #### Assumptions
+- Patch for Purists is applied.
 - I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507. Where the skill cap is set to 150 and the attribute cap is set to 300. It's not a requirement but a reasonable limit.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
-- Some kind of lua real time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
+- Some kind of Lua real-time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
+- Overall, playing without save scumming or min-maxing.
+
+If you are using MCP, leave vanilla mechanics for creating spells.
+- Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
+- Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
 
 ------------------------------------------------------------
 
 #### Inspirations
 - BTB's Game Improvements
 - Thief Experience Overhaul
+- HotFusion's Economy Adjuster
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
 - Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
+
+------------------------------------------------------------
+
+#### Compatibility
+- If you are using Morag Tong Polished, enable also "Corrupted Crime - Morag Tong Polished.esp" at the end.
 
 ------------------------------------------------------------
 
@@ -37,7 +49,7 @@ Armorer                         Strength -> Endurance
 Security                        Intelligence -> Agility
 ```
 
-Here is the list of all skills.
+Here is the list of all skills. In brackets is the number of skills assigned to a given attribute.
 ```
 Strength        (4)             Acrobatics, Axe, Blunt, Long Blade
 Intelligence    (4)             Alchemy, Conjuration, Enchant, Mysticism
@@ -56,7 +68,7 @@ Just a 25% speed boost for PC, NPCs, and creatures.
 ```
 fMinWalkSpeed                   100 -> 125
 fMaxWalkSpeed                   200 -> 250
-fMinWalkSpeedCreature             5 -> 6.25
+fMinWalkSpeedCreature           5 -> 6.25
 fMaxWalkSpeedCreature           300 -> 375
 ```
 
@@ -81,6 +93,9 @@ apparatus_sm_mortar_01          6000 -> 30000
 apparatus_sm_retort_01          1000 -> 5000
 ```
 
+#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
+- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
+
 ------------------------------------------------------------
 
 ## Enchant
@@ -94,9 +109,9 @@ fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
 fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
-#### How to enchant high-level spell - 100pts/24s spell (with a magic effect base cost of 1):
-- Enchanter -- 17000gp with Mercantile 100 and Disposition 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
-- Self-Enchant -- 53% chance of making an item with Enchant 100 and average (50) attributes.
+#### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
+- Enchanter -- 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
+- Self-enchant -- 53% chance of making an item with Enchant at 100 and average (50) attributes.
 
 ------------------------------------------------------------
 
@@ -146,6 +161,7 @@ There was no point in using them instead of paralysis.
 ```
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
+
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
@@ -155,7 +171,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 ```
-Absorb Health                   8 -> 12             Damage Health (5.75) + Restore Health (5) = 10.75
+Absorb Health                   8 -> 12             Damage Health (~5) + Restore Health (5) = ~10
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
@@ -176,6 +192,11 @@ Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Int
 Fortify Skill                   1 -> 4
 ```
 
+This looks like a typo to me, compared to other resistances.
+```
+Resist Paralysis                0.2 -> 2
+```
+
 ------------------------------------------------------------
 
 ## Barter
@@ -189,7 +210,24 @@ fBarterGoldResetDelay           24 -> 720           30 days to reset merchants g
 
 The Mages Guild's teleportation price is increased. As an instant and modern style of transportation, it shouldn't be lower than other conventional travel options.
 ```
-fMagesGuildTravel               10 -> 100
+fMagesGuildTravel               10 -> 100           10x more expensive.
+```
+
+------------------------------------------------------------
+
+## Crime
+
+In reality, crime doesn't exist. You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. The crime threshold is not changed, which means that the guard will be chasing you after one attack. And the death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
+```
+iCrimeKilling                   1000 -> 10000
+iCrimeAttack                      40 -> 1000
+iCrimeTresspass                    5 -> 500         Trespassing is a more serious crime
+                                                    than pickpocketing.
+iCrimePickPocket                  25 -> 250
+
+iCrimeThreshold                         1000        Unchanged.
+iDaysinPrisonMod                 100 -> 1000        Days in prison will be the same as in vanilla.
+Death Warrant                   5000 -> 11001       You can kill only one person, instead of 4.
 ```
 
 ------------------------------------------------------------
@@ -217,7 +255,7 @@ fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 
 #### Spell Effect
 ```
-Open                            6 -> 12
+Open                            6 -> 12             Spells are harder to cast.
 ```
 
 #### Price
@@ -227,7 +265,7 @@ sc_ondusisunhinging             73 -> 273           Available in stores.
 
 #### Magnitude
 ```
-sc_ekashslocksplitter_en        100 -> 80
+sc_ekashslocksplitter_en        100 -> 80           Available in random loot from level 10.
 
 open                                   20           Unchanged, unavailable in vanilla.
 ondusi's open door               50 -> 40
@@ -236,10 +274,10 @@ great open                       50 -> 80           Unavailable in vanilla.
 wild open                              1-100        Unchanged.
 ```
 
-#### How to open a 100-point lock:
-- Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
-- Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
-- Warrior -- Enchanting service -- 27000gp with Mercantile 50 and Disposition 100.
+#### How to open a 100-point lock
+- Thief -- Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
+- Mage -- Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
+- Warrior -- Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
 
 ------------------------------------------------------------
 
@@ -267,8 +305,8 @@ trap_shock_killer   (200)        5 -> 70
 trap_poison_killer  (375)       16 -> 100
 ```
 
-#### How to untrap 100-point spell:
-- Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
+#### How to untrap a 100-point spell
+- Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
 
@@ -284,4 +322,7 @@ trap_poison_killer  (375)       16 -> 100
     - Lockpicking and traps split into separate esps
     - Alchemy adjusted
     - Mages Guild's travel 10x more expensive
+- 1.3
+    - Resist Paralysis adjusted
+    - Crime module added
 ```
