@@ -24,6 +24,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 If you are using MCP, leave vanilla mechanics for creating spells
 - Max spell magnitude at 100 for 1440s
 - Self made spell with one additional second added while calculating cost
+
 This is because 100/1s spell is much more powerful than 1/100s spell at the same cost. In vanilla 100/1s spell will cost 2x more.
 
 ------------------------------------------------------------
