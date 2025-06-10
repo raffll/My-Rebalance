@@ -89,7 +89,7 @@ apparatus_sm_mortar_01          6000 -> 30000
 apparatus_sm_retort_01          1000 -> 5000
 ```
 
-#### How to create an exclusive potion - 20pts/60s spell (with a magic effect base cost of 1)
+#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
 - You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
 
 ------------------------------------------------------------
@@ -105,7 +105,7 @@ fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
 fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
-#### How to enchant a high-level spell - 100pts/24s spell (with a magic effect base cost of 1)
+#### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
 - Enchanter -- 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-enchant -- 53% chance of making an item with Enchant at 100 and average (50) attributes.
 
@@ -302,7 +302,7 @@ trap_shock_killer   (200)        5 -> 70
 trap_poison_killer  (375)       16 -> 100
 ```
 
-#### How to untrap 100-point spell
+#### How to untrap a 100-point spell
 - Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
