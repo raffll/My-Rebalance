@@ -6,9 +6,9 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ------------------------------------------------------------
 
 #### Philosophy
-- Simplicity
-- Modularity
-- Purist friendly
+- Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible with other mods.
+- Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
+- Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.
 
 ------------------------------------------------------------
 
@@ -161,6 +161,7 @@ There was no point in using them instead of paralysis.
 ```
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
+
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
@@ -216,7 +217,7 @@ fMagesGuildTravel               10 -> 100
 
 ## Crime
 
-In reality, crime doesn't exist. You probably will load your previous save game. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. The crime threshold is not changed, which means that the guard will be chasing you after one attack. And the death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
+In reality, crime doesn't exist. You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. The crime threshold is not changed, which means that the guard will be chasing you after one attack. And the death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
 ```
 iCrimeKilling                   1000 -> 10000
 iCrimeAttack                      40 -> 1000
@@ -276,9 +277,9 @@ wild open                              1-100        Unchanged.
 ```
 
 #### How to open a 100-point lock
-- Thief -- Security starting from level 60 (6% with pick quality 1.4 and average (50) attributes).
-- Mage -- Alteration starting from level 60 (spell costs 120 with an 8% chance on average (50) attributes).
-- Warrior -- Enchanting service -- 27000gp with Mercantile 50 and Disposition 100.
+- Thief -- Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
+- Mage -- Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
+- Warrior -- Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
 
 ------------------------------------------------------------
 
@@ -307,7 +308,7 @@ trap_poison_killer  (375)       16 -> 100
 ```
 
 #### How to untrap a 100-point spell
-- Thief -- Security starting from level 90 (8% with probe quality 1.25 and average (50) attributes).
+- Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
 
