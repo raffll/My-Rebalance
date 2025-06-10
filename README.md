@@ -265,7 +265,7 @@ sc_ondusisunhinging             73 -> 273           Available in stores.
 
 #### Magnitude
 ```
-sc_ekashslocksplitter_en        100 -> 80           Available in random loot from level 10.
+sc_ekashslocksplitter_en        100 -> 80           Available in random loot later in the game.
 
 open                                   20           Unchanged, unavailable in vanilla.
 ondusi's open door               50 -> 40
@@ -323,6 +323,6 @@ trap_poison_killer  (375)       16 -> 100
     - Alchemy adjusted
     - Mages Guild's travel 10x more expensive
 - 1.3
-    - Resist Paralysis adjusted
+    - Resist Paralysis spell 10x more expensive
     - Crime module added
 ```
