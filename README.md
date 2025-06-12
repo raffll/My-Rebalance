@@ -82,7 +82,7 @@ But the main problem is that you can successfully create excellent restore fatig
 
 So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
-fPotionStrengthMult             0.5 -> 0.25          2x smaller magnitude, duration and price.
+fPotionStrengthMult             0.5 -> 0.25         2x smaller magnitude, duration and price.
 ```
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
