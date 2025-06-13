@@ -82,7 +82,7 @@ But the main problem is that you can successfully create excellent restore fatig
 
 So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
-fPotionStrengthMult             0.5 -> 0.25          2x smaller magnitude, duration and price.
+fPotionStrengthMult             0.5 -> 0.25         2x smaller magnitude, duration and price.
 ```
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
@@ -253,17 +253,17 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-#### Spell Effect
+Spell Effect Cost
 ```
 Open                            6 -> 12             Spells are harder to cast.
 ```
 
-#### Price
+Scroll Price
 ```
 sc_ondusisunhinging             73 -> 273           Available in stores.
 ```
 
-#### Magnitude
+Scroll & Spell Magnitude
 ```
 sc_ekashslocksplitter_en        100 -> 80           Available in random loot from level 10.
 
@@ -283,12 +283,12 @@ wild open                              1-100        Unchanged.
 
 ## Traps
 
-Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
+Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. 
 ```
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-#### Cost
+Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
 trap_fire00         (30)         3 -> 10
 trap_frost00        (30)         3 -> 15
