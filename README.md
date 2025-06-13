@@ -253,17 +253,17 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-#### Spell Effect
+Spell effect cost:
 ```
 Open                            6 -> 12             Spells are harder to cast.
 ```
 
-#### Price
+Scroll price:
 ```
 sc_ondusisunhinging             73 -> 273           Available in stores.
 ```
 
-#### Magnitude
+Scrolls & spells magnitude:
 ```
 sc_ekashslocksplitter_en        100 -> 80           Available in random loot later in the game.
 
@@ -283,12 +283,12 @@ wild open                              1-100        Unchanged.
 
 ## Traps
 
-Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
+Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. 
 ```
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-#### Cost
+Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
 trap_fire00         (30)         3 -> 10
 trap_frost00        (30)         3 -> 15
