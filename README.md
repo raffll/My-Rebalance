@@ -177,7 +177,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 #### Mysticism
 
-Absorb spells were overpowered at the same cost as damage spells. $${\color{orange}\*\*}$$ You can cast them on area with multiple opponents or your minions to get massive health restoration $${\color{orange}\*\*}$$. And a single effect has an advantage over two effects combined, so the cost will be 50% higher.
+Absorb spells were overpowered at the same cost as damage spells. $${\color{orange}\*\*}$$ You can cast them on area with multiple opponents or your minions to get massive health restoration. $${\color{orange}\*\*}$$ And a single effect has an advantage over two effects combined, so the cost will be 50% higher.
 ```
 Absorb Health                   8 -> 12             Damage Health (~5) + Restore Health (5) = ~10
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
