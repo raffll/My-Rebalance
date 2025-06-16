@@ -51,13 +51,13 @@ Security                        Intelligence -> Agility
 
 Here is the list of all skills. In brackets is the number of skills assigned to a given attribute.
 ```
-Strength        (4)             Acrobatics, Axe, Blunt, Long Blade
-Intelligence    (4)             Alchemy, Conjuration, Enchant, Mysticism
-Willpower       (3)             Alteration, Destruction, Restoration
-Agility         (5)             Block, Light Armor, Marksman, Sneak, SECURITY
-Speed           (4)             Athletics, Hand-to-Hand, Short Blade, Unarmored
-Endurance       (4)             Heavy Armor, Medium Armor, Spear, ARMORER
-Personality     (3)             Illusion, Mercantile, Speechcraft
+Strength                    (4) Acrobatics, Axe, Blunt, Long Blade
+Intelligence                (4) Alchemy, Conjuration, Enchant, Mysticism
+Willpower                   (3) Alteration, Destruction, Restoration
+Agility                     (5) Block, Light Armor, Marksman, Sneak, SECURITY
+Speed                       (4) Athletics, Hand-to-Hand, Short Blade, Unarmored
+Endurance                   (4) Heavy Armor, Medium Armor, Spear, ARMORER
+Personality                 (3) Illusion, Mercantile, Speechcraft
 ```
 
 ------------------------------------------------------------
@@ -177,7 +177,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 #### Mysticism
 
-Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
+Absorb spells were overpowered at the same cost as damage spells. $${\color{orange}\*\*}$$You can cast them on area with multiple opponents or your minions to get massive health restoration$${\color{orange}\*\*}$$. And a single effect has an advantage over two effects combined, so the cost will be 50% higher.
 ```
 Absorb Health                   8 -> 12             Damage Health (~5) + Restore Health (5) = ~10
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
@@ -341,4 +341,4 @@ trap_poison_killer  (375)       16 -> 100
     - Crime module added
 ```
 
-$${\color{orange}\*\*}$$
+$${\color{orange}\*\*}$$ -- added in version 1.4
