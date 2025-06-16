@@ -193,7 +193,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 
-$${\color{orange}*1.4*}$$ Also, you can cast them on area with multiple opponents or your minions to get massive health restoration.
+$${\color{orange}*\1\.\4*}$$ Also, you can cast them on area with multiple opponents or your minions to get massive health restoration.
 $${\color{orange}\*\*}$$ Absorb Magicka added, but it's not used by any craftable spell in the vanilla game.
 ```
 Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
