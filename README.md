@@ -129,12 +129,12 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain.
 
-$${\color{orange}\*\*}$$ However, reducing encumbrance will speed you up better than adding extra encumbrance.
+$${\color{orange}\*\*}$$ However, reducing encumbrance will speed you up better than adding extra encumbrance. But because the custom spell cap is set to 100. Those effects never will be useful as is without further game changes. Except in alchemy, where feather potions will be much stronger and the burden's negative effects will be more visible.
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
 ```
-The same rule applies to Swift Swim.
+The same rule applies to Swift Swim. $${\color{orange}\*\*}$$ It's doing only one thing so should be better than Fortify Speed. 
 ```
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
@@ -144,12 +144,18 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 #### Destruction
 
 Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway.
+
+$${\color{orange}\*\*}$$ I switched Damage Health with Poison for more consistency.
 ```
-Fire Damage                          5.0            Unchanged.
+Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
-Shock Damage                    7 -> 5.5
-Damage Health                   8 -> 5.75
-Poison                          9 -> 6.0
+Shock Damage                    7 -> 5.50
+Poison                          9 -> 5.75
+Damage Health                   8 -> 6.00			
+```
+$${\color{orange}\*\*}$$ Damage Magicka lowered to be in pair with Damage Health and also lower in cost than Damage Intelligence.
+```
+Damage Magicka                  8 -> 6				25% cheaper than Damage Intelligence.
 ```
 Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 ```
@@ -159,6 +165,12 @@ Disintegrate would be better as an offensive skill in other schools; in Destruct
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
+```
+$${\color{orange}\*\*}$$ Drain spells lowered to be the same cost as fortify spells. The reason behind this is magnitude can be set to a maximum of 100 for those spells, so they are mostly useless. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing. 
+```
+Drain Health					  -> 1
+Drain Magicka	                  -> 0.75
+Drain Fatigue	                  -> 0.5
 ```
 
 ------------------------------------------------------------
@@ -182,8 +194,10 @@ Demoralize Humanoid             Mysticism -> Illusion
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 
 $${\color{orange}\*\*}$$ Also, you can cast them on area with multiple opponents or your minions to get massive health restoration.
+$${\color{orange}\*\*}$$ Absorb Magicka added, but it's not used by any craftable spell in the vanilla game.
 ```
-Absorb Health                   8 -> 12             Damage Health (~5) + Restore Health (5) = ~10
+Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
+Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
