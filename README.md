@@ -127,10 +127,13 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 #### Alteration
 
-Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. The same rule applies to Swift Swim.
+Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain.
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
+```
+The same rule applies to Swift Swim.
+```
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
@@ -138,7 +141,7 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 #### Destruction
 
-Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
+Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway.
 ```
 Fire Damage                          5.0            Unchanged.
 Frost Damage                    5 -> 5.25
@@ -146,7 +149,10 @@ Shock Damage                    7 -> 5.5
 Damage Health                   8 -> 5.75
 Poison                          9 -> 6.0
 ```
-
+Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
+```
+Damage Fatigue                       4              Unchanged.
+```
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier.
 ```
 Disintegrate Armor              6 -> 1
@@ -161,7 +167,9 @@ There was no point in using them instead of paralysis.
 ```
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
-
+```
+This is only forwarded bugfix.
+```
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
@@ -333,4 +341,4 @@ trap_poison_killer  (375)       16 -> 100
     - Crime module added
 ```
 
-$${\color{yellow}**}$$
+$${\orange{yellow}\*\*}$$
