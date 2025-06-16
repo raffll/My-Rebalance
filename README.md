@@ -333,4 +333,4 @@ trap_poison_killer  (375)       16 -> 100
     - Crime module added
 ```
 
-$${\color{yellow}\*\*}$$
+$${\color{yellow}**}$$
