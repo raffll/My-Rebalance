@@ -304,10 +304,10 @@ fTrapCostMult                    0 -> -1            Trap spell cost is taken int
 
 Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
-trap_fire00               (30)   3 -> 10
-trap_frost00              (30)   3 -> 15
-trap_shock00              (30)   5 -> 20
-trap_health00             (30)   8 -> 25
+trap_fire00                (30)  3 -> 10
+trap_frost00               (30)  3 -> 15
+trap_shock00               (30)  5 -> 20
+trap_health00              (30)  8 -> 25
 trap_poison00             (150) 16 -> 50
                     
 trap_paralyze00           (10s) 13 -> 30
