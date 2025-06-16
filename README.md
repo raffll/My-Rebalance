@@ -127,7 +127,7 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 #### Alteration
 
-Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain.
+Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. $${\color{orange}\*\*}$$ However, reducing encumbrance will speed you up better than adding extra encumbrance. $${\color{orange}\*\*}$$
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
