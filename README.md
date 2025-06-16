@@ -217,16 +217,22 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 
 ## Crime
 
-In reality, crime doesn't exist. You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. The crime threshold is not changed, which means that the guard will be chasing you after one attack. And the death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
+In reality, crime doesn't exist. You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. 
 ```
 iCrimeKilling                   1000 -> 10000
 iCrimeAttack                      40 -> 1000
+iCrimePickPocket                  25 -> 250
 iCrimeTresspass                    5 -> 500         Trespassing is a more serious crime
                                                     than pickpocketing.
-iCrimePickPocket                  25 -> 250
 
-iCrimeThreshold                         1000        Unchanged.
 iDaysinPrisonMod                 100 -> 1000        Days in prison will be the same as in vanilla.
+```
+The crime threshold is not changed, which means that the guard will be chasing you after one attack. 
+```
+iCrimeThreshold                         1000        Unchanged.
+```
+And the death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
+```
 Death Warrant                   5000 -> 11001       You can kill only one person, instead of 4.
 ```
 
