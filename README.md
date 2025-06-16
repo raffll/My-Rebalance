@@ -151,11 +151,11 @@ Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
 Shock Damage                    7 -> 5.50
 Poison                          9 -> 5.75
-Damage Health                   8 -> 6.00			
+Damage Health                   8 -> 6.00           
 ```
 $${\color{orange}\*\*}$$ Damage Magicka lowered to be in pair with Damage Health and also lower in cost than Damage Intelligence.
 ```
-Damage Magicka                  8 -> 6				25% cheaper than Damage Intelligence.
+Damage Magicka                  8 -> 6              25% cheaper than Damage Intelligence.
 ```
 Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 ```
@@ -168,9 +168,9 @@ Disintegrate Weapon             6 -> 1
 ```
 $${\color{orange}\*\*}$$ Drain spells lowered to be the same cost as fortify spells. The reason behind this is magnitude can be set to a maximum of 100 for those spells, so they are mostly useless. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing. 
 ```
-Drain Health					  -> 1
-Drain Magicka	                  -> 0.75
-Drain Fatigue	                  -> 0.5
+Drain Health                      -> 1
+Drain Magicka                     -> 0.75
+Drain Fatigue                     -> 0.5
 ```
 
 ------------------------------------------------------------
@@ -182,7 +182,7 @@ There was no point in using them instead of paralysis.
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
 ```
-This is only forwarded bugfix.
+This is only to forward bugfix.
 ```
 Demoralize Humanoid             Mysticism -> Illusion
 ```
@@ -194,6 +194,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher.
 
 $${\color{orange}\*\*}$$ Also, you can cast them on area with multiple opponents or your minions to get massive health restoration.
+
 $${\color{orange}\*\*}$$ Absorb Magicka added, but it's not used by any craftable spell in the vanilla game.
 ```
 Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
