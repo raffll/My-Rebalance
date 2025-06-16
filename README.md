@@ -332,3 +332,5 @@ trap_poison_killer  (375)       16 -> 100
     - Resist Paralysis spell 10x more expensive
     - Crime module added
 ```
+
+$${\color{red}Color \space your \space \color{green}.md \space file \space \color{blue}in \space Github}$$
