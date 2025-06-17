@@ -2,7 +2,7 @@
 
 #### Intentions
 
-Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters. So, this mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
 **You will be overpowered anyway! But the path to achieve that will be more fun!**
 
@@ -21,19 +21,18 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 - Patch for Purists is applied.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
-- Some kind of Lua real-time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
+- Some kind of real-time talking with NPC mod is recommended. This is mainly to prevent persuasion exploits.
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
-- Overall, playing without save scumming or min-maxing.
 
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
 - Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
 - $${\color{orange}\*\*}$$ Only one spell effect per spell. This can be used as a workaround for the cap on magnitude.
 
-$${\color{orange}\*\*}$$ Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have a duration of 1s, like Charm. And summon spells should allow summoning a couple of skeletons in one spell. But unless we have that, it's impossible to balance the spell system when those "cheats" are enabled.
+$${\color{orange}\*\*}$$ Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have 1s duration, like Charm. Summon spells should allow summoning a couple of skeletons in one spell. But until we have that, it's impossible to balance the spell system when those "cheats" are enabled.
 
 I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
-- Where the skill cap is set to 150 and the attribute cap is set to 300.
+- The skill cap is set to 150, and the attribute cap is set to 300.
 - $${\color{orange}\*\*}$$ Potion consumption is limited to prevent stacking too many effects.
 - $${\color{orange}\*\*}$$ Training limit is enabled. This just simply removes the leveling problem.
 
@@ -65,17 +64,6 @@ Armorer                         Strength -> Endurance
 Security                        Intelligence -> Agility
 ```
 
-Here is the list of all skills. In brackets is the number of skills assigned to a given attribute.
-```
-Strength                    (4) Acrobatics, Axe, Blunt, Long Blade
-Intelligence                (4) Alchemy, Conjuration, Enchant, Mysticism
-Willpower                   (3) Alteration, Destruction, Restoration
-Agility                     (5) Block, Light Armor, Marksman, Sneak, SECURITY
-Speed                       (4) Athletics, Hand-to-Hand, Short Blade, Unarmored
-Endurance                   (4) Heavy Armor, Medium Armor, Spear, ARMORER
-Personality                 (3) Illusion, Mercantile, Speechcraft
-```
-
 ------------------------------------------------------------
 
 ## Running
@@ -92,9 +80,9 @@ fMaxWalkSpeedCreature           300 -> 375
 
 ## Alchemy
 
-This is the best skill in the game. My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are crap. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
+My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are crap. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
 
-But the main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5).
+The main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5).
 
 So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment at average levels, and buyable potions will be useful much longer.
 ```
@@ -143,7 +131,7 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 #### Alteration
 
-Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. $${\color{orange}\*\*}$$ However, reducing encumbrance is more speed efficient than adding extra encumbrance, but I decided to keep them that low anyway because the custom spell cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
+Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. $${\color{orange}\*\*}$$ However, reducing encumbrance is more speed efficient than adding extra strength, but I decided to keep them that low anyway because the custom spell magnitude cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
@@ -182,20 +170,20 @@ $${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms al
 Damage Attribute                8 -> 24
 ```
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. $${\color{orange}\*\*}$$ Armor destruction always starts from shields with low-tier health at 100-200 and then cuirasses with health at 300-400. Also, low-tier weapons start from 300-400 hp. So, in both cases they can be destroyed by a 25-cost spell.
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. $${\color{orange}\*\*}$$ Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell.
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
 ```
 
-$${\color{orange}\*\*}$$ Drain spells are lowered to be at the same cost as Fortify spells. The reason behind this is, once again, the maximum magnitude of 100 for those spells, so they are mostly useless on higher levels. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing. Drain Health is unchanged because it will be too good on lower levels.
+$${\color{orange}\*\*}$$ Drain spells have been lowered to be at the same cost as fortify spells. The reason behind this is, once again, the maximum magnitude of 100 for those spells, so they are mostly useless on higher levels. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is that many potion ingredients have them as a negative effect, and now they will be stronger, which is a good thing. Drain Health is unchanged because it can be too strong on lower levels.
 ```
 Drain Health                         4              Unchanged.
 Drain Magicka                   4 -> 0.75
 Drain Fatigue                   2 -> 0.5
 ```
 
-$${\color{orange}\*\*}$$ Drain Skill is higher because it was overpowered, the same way as Fortify Skill. Compared to Drain Attribute, it has a lot bigger impact, and at a cost of 1, it was just as good in combat as Blind, but more versatile.
+$${\color{orange}\*\*}$$ Drain Skill is now more expensive because it can be overpowered, the same way as Fortify Skill. Compared to Drain Attribute, it has a lot bigger impact, and at a cost of 1, it was just as good in combat as Blind, but more versatile.
 ```
 Drain Skill                     1 -> 2
 ```
@@ -210,12 +198,12 @@ Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
 ```
 
-This is only to forward bugfix.
+This is only bugfix.
 ```
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
-Here I have a dilemma: in vanilla, 1s spell is enough. So, to fix that, I recommend some kind of Lua real-time dialogue mod instead. I leave Charm value untouched.
+$${\color{orange}\*\*}$$ Here I have a dilemma: in vanilla, a spell with 1s duration can be enough. So, to fix that, I recommend using some kind of real-time dialogue mod instead.
 ```
 Charm                           5                   Unchanged.
 ```
@@ -224,15 +212,15 @@ Charm                           5                   Unchanged.
 
 #### Mysticism
 
-Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher. $${\color{orange}\*\*}$$ Furthermore, you can cast them on an area with multiple opponents and your minions to get massive health restoration. I decided to also include Absorb Magicka, despite its not being used by any craftable spell in the vanilla game.
+Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost should be higher. $${\color{orange}\*\*}$$ Furthermore, you can cast them on an area with multiple opponents or your minions to get massive health restoration.
 ```
 Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
-Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
-This one is not used anywhere in vanilla but still should be adjusted to new Drain/Fortify values.
+$${\color{orange}\*\*}$$ I decided to also include those effects, despite they are not being used by any craftable spell in the vanilla game.
 ```
+Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
 Absorb Skill                    2 -> 6              Drain Skill (2) + Fortify Skill (4)
 ```
 
@@ -264,17 +252,17 @@ Resist Paralysis                0.2 -> 2
 
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
-Damage Intelligence     24      2 * 50s             Drop 100 Intelligence over 50s.
-Damage Magicka          6       4 * 100s            Drop 400 Magicka over 100s.
+Damage Intelligence     24      2 * 50s             Permanent drop 100 Intelligence over 50s.
+Damage Magicka          6       4 * 100s            Permanent drop 400 Magicka over 100s.
 ```
 
-Drain Intelligence is good if you don't have time and are not skilled in Illusion. Drain Magicka is the worst, even after adjustment. 
+Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.  
 ```
 Drain Intelligence      1       100 / 24s           Drop 100 Intelligence for 24s.
 Drain Magicka           0,75    100 / 32s           Drop 100 Magicka for 32s.
 ```
 
-Silence is 5x more effective than Drain Intelligence and also better if the opponent mage has more than 100 intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+Silence is 5x more effective than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
 Silence                 20      120s                Can't cast spells for 120s.
 Sound                   0,8     100% / 30s          100% to fail for 30s.
@@ -286,7 +274,7 @@ Sound                   0,8     100% / 30s          100% to fail for 30s.
 
 The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenario when you really need cash is to buy an enchanted item or to train with a trainer. There should already be enough money on the market to suit those needs for one month.
 
-Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices. Also, the side effect of this is you have more time to get back money you already spent on enchantments or training if this person also offers to buy things.
+Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices. Another side effect of this is you have more time to get back money you already spent on enchantments or training if this person also offers to buy things.
 ```
 fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
 ```
@@ -300,7 +288,7 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 
 ## Crime
 
-In reality, crime doesn't exist. You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
+You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
 ```
 iCrimeKilling                   1000 -> 10000
 iCrimeAttack                      40 -> 1000
@@ -314,7 +302,7 @@ The crime threshold is not changed, which means that the guard will be chasing y
 ```
 iCrimeThreshold                         1000        Unchanged.
 ```
-And the death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
+The death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
 ```
 Death Warrant                   5000 -> 11001       You can kill only one person, instead of 4.
 ```
@@ -327,7 +315,7 @@ It's a stat game between you and NPC, but in vanilla your max chance was only 56
 ```
 iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
 ```
-Also, it's not even realistic to take item price into account, so I disabled that requirement.
+It's not even realistic to take item price into account, so I disabled that requirement.
 ```
 fPickPocketMod                  0.3 -> 0            Any item available to steal.
 ```
