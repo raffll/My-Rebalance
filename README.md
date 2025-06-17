@@ -83,7 +83,7 @@ fMaxWalkSpeedCreature           300 -> 375
 
 My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are standardized. However, self-made potions depend heavily on spell effect base cost, which may differ from effect to effect, and also have this automatic magnitude-to-duration ratio. At the end we have useless pre-made potions and overpowered self-made ones, or vice versa.
 
-Another problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 magicka with a 9% chance at Restoration level 5).
+Another problem is that you can successfully create excellent Restore Fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., Restore Fatigue equivalent will cost you 15 Magicka with a 9% chance at Restoration level 5).
 
 So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment, and buyable potions will be useful much longer.
 ```
@@ -166,7 +166,7 @@ Damage Fatigue is almost useless or very powerful, depending on if you are using
 Damage Fatigue                       4              Unchanged.
 ```
 
-$${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms almost every other "utility" spell. For 40 magicka, you could drop the target's Strength or Intelligence to 0, leaving the opponent without the ability to walk, fight, or cast spells.
+$${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms almost every other "utility" spell. For 40 Magicka, you could drop the target's Strength or Intelligence to 0, leaving the opponent without the ability to walk, fight, or cast spells.
 ```
 Damage Attribute                8 -> 24
 ```
@@ -249,24 +249,31 @@ Resist Paralysis                0.2 -> 2
 
 ------------------------------------------------------------
 
-#### How to stop a mage with 100 Intelligence using a 120-cost spell
-
+#### How to stop a mage using a 120-cost spell
+```
+Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
+```
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
-Damage Intelligence             2pts/50s             Permanent drop 100 Intelligence over 50s.
+Damage Intelligence             2pts/50s             Permanent drop 150 Magicka over 50s.
 Damage Magicka                  4pts/100s            Permanent drop 400 Magicka over 100s.
+
+or
+
+Damage Intelligence             50pts/1s             Permanent drop 75 Magicka.
+Damage Magicka                  100pts/3s            Permanent drop 300 Magicka over 3s.
 ```
 
 Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.
 ```
-Drain Intelligence              100pts/24s           Drop 100 Intelligence for 24s.
+Drain Intelligence              100pts/24s           Drop 150 Magicka for 24s.
 Drain Magicka                   100pts/32s           Drop 100 Magicka for 32s.
 ```
 
-Silence is 5x more effective than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
-Silence                         120s                Can't cast spells for 120s.
-Sound                           100%/30s            100% to fail for 30s.
+Silence                         120s                 Can't cast any spells for 120s.
+Sound                           100%/30s             100% to fail cast for 30s.
 ```
 
 ------------------------------------------------------------
