@@ -369,19 +369,19 @@ fTrapCostMult                    0 -> -1            Trap spell cost is taken int
 
 Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
-trap_fire00         (30)         3 -> 10
-trap_frost00        (30)         3 -> 15
-trap_shock00        (30)         5 -> 20
-trap_health00       (30)         8 -> 25
-trap_poison00       (150)       16 -> 50
-
-trap_paralyze00     (10s)       13 -> 30
-trap_silence00      (30s)       37 -> 35
-
-trap_fire_killer    (200)        3 -> 60
-trap_frost_killer   (200)        3 -> 65
-trap_shock_killer   (200)        5 -> 70
-trap_poison_killer  (375)       16 -> 100
+trap_fire00                      3 -> 10            (30) 
+trap_frost00                     3 -> 15            (30) 
+trap_shock00                     5 -> 20            (30) 
+trap_health00                    8 -> 25            (30) 
+trap_poison00                   16 -> 50            (150)
+                                                    
+trap_paralyze00                 13 -> 30            (10s)
+trap_silence00                  37 -> 35            (30s)
+                                                    
+trap_fire_killer                 3 -> 60            (200)
+trap_frost_killer                3 -> 65            (200)
+trap_shock_killer                5 -> 70            (200)
+trap_poison_killer              16 -> 100           (375)
 ```
 
 #### How to untrap a 100-point spell
