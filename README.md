@@ -1,11 +1,13 @@
 # Rebalanced Rebalance Redux
 
 #### Intentions
+
 Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters.
 
 ------------------------------------------------------------
 
 #### Philosophy
+
 - Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
 - Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.
@@ -13,6 +15,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 ------------------------------------------------------------
 
 #### Assumptions
+
 - Patch for Purists is applied.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
@@ -34,6 +37,7 @@ It's not a requirement but a reasonable limit.
 ------------------------------------------------------------
 
 #### Inspirations
+
 - BTB's Game Improvements
 - Thief Experience Overhaul
 - HotFusion's Economy Adjuster
@@ -43,6 +47,7 @@ It's not a requirement but a reasonable limit.
 ------------------------------------------------------------
 
 #### Compatibility
+
 - If you are using Morag Tong Polished, enable also "Corrupted Crime - Morag Tong Polished.esp" at the end.
 
 ------------------------------------------------------------
@@ -138,9 +143,20 @@ Those weren't useful previously. Feather cost was the same as Fortify Strength, 
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
 ```
+
 The same rule applies to Swift Swim. $${\color{orange}\*\*}$$ It's doing only one thing, so it should do it better than Fortify Speed.
 ```
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
+```
+
+TODO
+```
+Jump	                        3 -> ?
+Slowfall	                    3 -> ?
+```
+
+```
+Shield                          2 -> ?
 ```
 
 ------------------------------------------------------------
@@ -155,19 +171,23 @@ Shock Damage                    7 -> 5.50
 Poison                          9 -> 5.75
 Damage Health                   8 -> 6.00
 ```
+
 $${\color{orange}\*\*}$$ Damage Magicka is lowered to be on par with Damage Health and also lower in cost than Damage Intelligence.
 ```
 Damage Magicka                  8 -> 6              25% cheaper than Damage Intelligence.
 ```
+
 Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 ```
 Damage Fatigue                       4              Unchanged.
 ```
+
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier.
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
 ```
+
 $${\color{orange}\*\*}$$ Drain spells are lowered to be at the same cost as Fortify spells. The reason behind this is once again maximum magnitude of 100 for those spells, so they are mostly useless. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing.
 ```
 Drain Health                    4 -> 1
@@ -184,9 +204,15 @@ There was no point in using them instead of paralysis.
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
 ```
+
 This is only to forward bugfix.
 ```
 Demoralize Humanoid             Mysticism -> Illusion
+```
+
+TODO:
+```
+Charm                           5
 ```
 
 ------------------------------------------------------------
@@ -205,6 +231,12 @@ Detect spells were just too expensive.
 Detect Animal                   0.75 -> 0.15
 Detect Enchantment              1 -> 0.2
 Detect Key                      1 -> 0.2
+```
+
+TODO
+```
+Reflect	                        10 -> ?
+Spell Absorption                10 -> ?
 ```
 
 ------------------------------------------------------------
