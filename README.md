@@ -28,14 +28,14 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
 - Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
-- $${\color{orange}\*\*}$$ Only one spell effect per spell. This can be a workaround for the cap on magnitude.
+- $${\color{orange}\*\*}$$ Only one spell effect per spell. This can be used as a workaround for the cap on magnitude.
 
 $${\color{orange}\*\*}$$ Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have a duration of 1s, like Charm. And summon spells should allow summoning a couple of skeletons in one spell. But unless we have that, it's impossible to balance the spell system when those "cheats" are enabled.
 
 I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
 - Where the skill cap is set to 150 and the attribute cap is set to 300.
-- $${\color{orange}\*\*}$$ Potion consumption is limited to prevent the most common exploits.
-- $${\color{orange}\*\*}$$ Training limit is implemented. This just simply removes the leveling problem.
+- $${\color{orange}\*\*}$$ Potion consumption is limited to prevent stacking too many effects.
+- $${\color{orange}\*\*}$$ Training limit is enabled. This just simply removes the leveling problem.
 
 It's not a requirement but a reasonable limit.
 
@@ -143,7 +143,7 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 #### Alteration
 
-Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. $${\color{orange}\*\*}$$ However, reducing encumbrance is more speed efficient than adding extra encumbrance. But I decided to keep them that low because the custom spell cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
+Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. $${\color{orange}\*\*}$$ However, reducing encumbrance is more speed efficient than adding extra encumbrance, but I decided to keep them that low anyway because the custom spell cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
@@ -154,22 +154,11 @@ The same rule applies to Swift Swim. $${\color{orange}\*\*}$$ It's doing only on
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
-TODO
-```
-Jump                            3 -> 2
-Slowfall                        3 -> 2
-```
-
-TODO
-```
-Shield                          2 -> 1
-```
-
 ------------------------------------------------------------
 
 #### Destruction
 
-Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. $${\color{orange}\*\*}$$ Finally, I decided to switch Damage Health with Poison for more consistency.
+Elemental damage doesn't make sense; there was no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. $${\color{orange}\*\*}$$ Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
@@ -178,7 +167,7 @@ Poison                          9 -> 5.75
 Damage Health                   8 -> 6.00
 ```
 
-$${\color{orange}\*\*}$$ Damage Magicka is lowered to be on par with Damage Health.
+$${\color{orange}\*\*}$$ Damage Magicka has been lowered to be on par with Damage Health.
 ```
 Damage Magicka                  8 -> 6
 ```
@@ -188,7 +177,7 @@ Damage Fatigue is almost useless or very powerful, depending on if you are using
 Damage Fatigue                       4              Unchanged.
 ```
 
-Damage Attribute was so powerful that outperform almost every other "utility" spell. For 40 magicka spell you could drop target Strength or Intelligence to 0, leaving opponent without ability to walk, fight or cast spells.
+$${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms almost every other "utility" spell. For 40 magicka, you could drop the target's Strength or Intelligence to 0, leaving the opponent without the ability to walk, fight, or cast spells.
 ```
 Damage Attribute                8 -> 24
 ```
@@ -252,12 +241,6 @@ Detect spells were just too expensive.
 Detect Animal                   0.75 -> 0.15
 Detect Enchantment              1 -> 0.2
 Detect Key                      1 -> 0.2
-```
-
-TODO
-```
-Reflect                         10 -> ?
-Spell Absorption                10 -> ?
 ```
 
 ------------------------------------------------------------
@@ -436,4 +419,4 @@ trap_poison_killer  (375)       16 -> 100
     - Magic module revisited
 ```
 
-** -- added in version 1.4
+$${\color{orange}\*\*}$$ -- added in version 1.4
