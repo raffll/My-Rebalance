@@ -178,9 +178,9 @@ Poison                          9 -> 5.75
 Damage Health                   8 -> 6.00
 ```
 
-$${\color{orange}\*\*}$$ Damage Magicka is lowered to be on par with Damage Health and also lower in cost than Damage Intelligence.
+$${\color{orange}\*\*}$$ Damage Magicka is lowered to be on par with Damage Health.
 ```
-Damage Magicka                  8 -> 6              25% cheaper than Damage Intelligence.
+Damage Magicka                  8 -> 6
 ```
 
 Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
@@ -277,19 +277,21 @@ Resist Paralysis                0.2 -> 2
 
 ------------------------------------------------------------
 
-#### How to stop a mage with 100 Intelligence using 120-cost spell
+#### How to stop a mage with 100 Intelligence using a 120-cost spell
 
-Damage spells are most powerful but needs time to kick in, otherwise they will cost 2x more.
+Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
 Damage Intelligence     24      2 * 50s             Drop 100 Intelligence over 50s.
-Damage Magicka          6       4 * 100s            Drop 400 magicka over 100s.
+Damage Magicka          6       4 * 100s            Drop 400 Magicka over 100s.
 ```
-Drain Intelligence is good if you don't have time and not skilled in Illusion. Drain Magicka is the worst because of magnitude cap.
+
+Drain Intelligence is good if you don't have time and are not skilled in Illusion. Drain Magicka is the worst, even after adjustment. 
 ```
 Drain Intelligence      1       100 / 24s           Drop 100 Intelligence for 24s.
-Drain Magicka           0,75    100 / 32s           Drop 100 magicka for 32s.
+Drain Magicka           0,75    100 / 32s           Drop 100 Magicka for 32s.
 ```
-Silence is 5x more effective than Drain Intelligence and also better if opponent mage has more than 100 intelligence. Sound amy be 4x less efficient but opponent still casting wasting time and magicka.
+
+Silence is 5x more effective than Drain Intelligence and also better if the opponent mage has more than 100 intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
 Silence                 20      120s                Can't cast spells for 120s.
 Sound                   0,8     100% / 30s          100% to fail for 30s.
