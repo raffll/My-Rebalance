@@ -27,8 +27,8 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
-- $${\color{orange}\*\*}$$ Only one spell effect per spell. This is a workaround for the cap on magnitude. 
 - Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
+- $${\color{orange}\*\*}$$ Only one spell effect per spell. This can be a workaround for the cap on magnitude.
 
 $${\color{orange}\*\*}$$ Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have a duration of 1s, like Charm. And summon spells should allow summoning a couple of skeletons in one spell. But unless we have that, it's impossible to balance the spell system when those "cheats" are enabled.
 
@@ -190,20 +190,20 @@ Damage Fatigue                       4              Unchanged.
 
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. $${\color{orange}\*\*}$$ Armor destruction always starts from shields with low-tier health at 100-200 and then cuirasses with health at 300-400. Also, low-tier weapons start from 300-400 hp. So, in both cases they can be destroyed by a 25-cost spell.
 ```
-Disintegrate Armor              6 -> 1				
-Disintegrate Weapon             6 -> 1				
+Disintegrate Armor              6 -> 1
+Disintegrate Weapon             6 -> 1
 ```
 
-$${\color{orange}\*\*}$$ Drain spells are lowered to be at the same cost as Fortify spells. The reason behind this is once again maximum magnitude of 100 for those spells, so they are mostly useless. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing.
+$${\color{orange}\*\*}$$ Drain spells are lowered to be at the same cost as Fortify spells. The reason behind this is, once again, the maximum magnitude of 100 for those spells, so they are mostly useless on higher levels. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing. Drain Health is unchanged because it will be too good on lower levels.
 ```
-Drain Health                    4 -> 1
+Drain Health                         4              Unchanged.
 Drain Magicka                   4 -> 0.75
 Drain Fatigue                   2 -> 0.5
 ```
 
-$${\color{orange}\*\*}$$ Drain Skill is higher because it was overpowered, the same way as Fortify Skill. Compared to Drain Attribute it has a lot bigger impact, and at cost of 1 it was just as good as Chameleon, Blind or Sanctuary.
+$${\color{orange}\*\*}$$ Drain Skill is higher because it was overpowered, the same way as Fortify Skill. Compared to Drain Attribute, it has a lot bigger impact, and at a cost of 1, it was just as good in combat as Blind, but more versatile.
 ```
-Drain Skill                     1 -> 4
+Drain Skill                     1 -> 2
 ```
 
 ------------------------------------------------------------
@@ -221,9 +221,9 @@ This is only to forward bugfix.
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
-Here i have dillemma, in vanilla 1s spell is enougth. so, to fix that I recommend some kind of Lua real-time dialogue mod instead. i leave Charm untouched.
+Here I have a dilemma: in vanilla, 1s spell is enough. So, to fix that, I recommend some kind of Lua real-time dialogue mod instead. I leave Charm value untouched.
 ```
-Charm                           5
+Charm                           5                   Unchanged.
 ```
 
 ------------------------------------------------------------
@@ -239,7 +239,7 @@ Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore
 
 This one is not used anywhere in vanilla but still should be adjusted to new Drain/Fortify values.
 ```
-Absorb Skill                    2 -> 8
+Absorb Skill                    2 -> 6              Drain Skill (2) + Fortify Skill (4)
 ```
 
 Detect spells were just too expensive.
@@ -268,6 +268,20 @@ Fortify Skill                   1 -> 4
 This looks like a typo to me, compared to other resistances.
 ```
 Resist Paralysis                0.2 -> 2
+```
+
+------------------------------------------------------------
+
+#### How to stop a mage
+```
+Damage Attribute	8,00	5	20	40,00	42,00		<- delpeted all over 20s -- for 40c	<- this is overpowered,
+Damage Magicka	    6,00	5	60	90,00 				<- depletes 300 over 60s -- for 90c <- 
+	
+Drain Attribute	    1,00	100	20	100,00	105,00		<- depletes all for 20s -- for 100c <- this is 5x worse than silence
+Drain Magicka	    0,75	100	24	90,00	93,75		<- depletes 100 for 24s -- for 90c <- worst one 
+
+Silence				20		1	100	100,00	101,00		<- cant cast for 100s   -- for 100c
+Sound				0,8		100	25	100,00	104,00		<- 100% to fail for 25s -- for 100c <- depletes at least some -- this is pointles
 ```
 
 ------------------------------------------------------------
