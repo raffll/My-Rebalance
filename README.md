@@ -14,7 +14,6 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 #### Assumptions
 - Patch for Purists is applied.
-- I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507. Where the skill cap is set to 150 and the attribute cap is set to 300. It's not a requirement but a reasonable limit.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
 - Some kind of Lua real-time talking with NPC mod is used. This is mainly to prevent persuasion exploits.
@@ -24,6 +23,13 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
 - Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
+
+I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
+- Where the skill cap is set to 150 and the attribute cap is set to 300.
+- Potion consumption is limited to prevent the most visible exploits.
+- Training limit is implemented. This just removes the leveling problem.
+
+It's not a requirement but a reasonable limit.
 
 ------------------------------------------------------------
 
@@ -127,14 +133,12 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 #### Alteration
 
-Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain.
-
-$${\color{orange}\*\*}$$ However, reducing encumbrance will speed you up better than adding extra encumbrance. But because the custom spell cap is set to 100. Those effects never will be useful as is without further game changes. Except in alchemy, where feather potions will be much stronger and the burden's negative effects will be more visible.
+Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. $${\color{orange}\*\*}$$ However, reducing encumbrance is more speed efficient than adding extra encumbrance. But I decided to keep them that low because the custom spell cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
 ```
-The same rule applies to Swift Swim. $${\color{orange}\*\*}$$ It's doing only one thing so should be better than Fortify Speed. 
+The same rule applies to Swift Swim. $${\color{orange}\*\*}$$ It's doing only one thing, so it should do it better than Fortify Speed.
 ```
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
@@ -143,17 +147,15 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 #### Destruction
 
-Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway.
-
-$${\color{orange}\*\*}$$ I switched Damage Health with Poison for more consistency.
+Elemental damage doesn't make sense; there is no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. $${\color{orange}\*\*}$$ Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
 Shock Damage                    7 -> 5.50
 Poison                          9 -> 5.75
-Damage Health                   8 -> 6.00           
+Damage Health                   8 -> 6.00
 ```
-$${\color{orange}\*\*}$$ Damage Magicka lowered to be in pair with Damage Health and also lower in cost than Damage Intelligence.
+$${\color{orange}\*\*}$$ Damage Magicka is lowered to be on par with Damage Health and also lower in cost than Damage Intelligence.
 ```
 Damage Magicka                  8 -> 6              25% cheaper than Damage Intelligence.
 ```
@@ -166,11 +168,11 @@ Disintegrate would be better as an offensive skill in other schools; in Destruct
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
 ```
-$${\color{orange}\*\*}$$ Drain spells lowered to be the same cost as fortify spells. The reason behind this is magnitude can be set to a maximum of 100 for those spells, so they are mostly useless. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing. 
+$${\color{orange}\*\*}$$ Drain spells are lowered to be at the same cost as Fortify spells. The reason behind this is once again maximum magnitude of 100 for those spells, so they are mostly useless. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing.
 ```
-Drain Health                      -> 1
-Drain Magicka                     -> 0.75
-Drain Fatigue                     -> 0.5
+Drain Health                    4 -> 1
+Drain Magicka                   4 -> 0.75
+Drain Fatigue                   2 -> 0.5
 ```
 
 ------------------------------------------------------------
@@ -191,7 +193,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 #### Mysticism
 
-Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher. $${\color{orange}\*\*}$$ Furthermore, you can cast them on an area with multiple opponents and your minions to get massive health restoration. I decided to include Absorb Magicka, despite its not being used by any craftable spell in the vanilla game.
+Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher. $${\color{orange}\*\*}$$ Furthermore, you can cast them on an area with multiple opponents and your minions to get massive health restoration. I decided to also include Absorb Magicka, despite its not being used by any craftable spell in the vanilla game.
 ```
 Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
 Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
@@ -240,7 +242,7 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 
 ## Crime
 
-In reality, crime doesn't exist. You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. 
+In reality, crime doesn't exist. You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
 ```
 iCrimeKilling                   1000 -> 10000
 iCrimeAttack                      40 -> 1000
@@ -250,7 +252,7 @@ iCrimeTresspass                    5 -> 500         Trespassing is a more seriou
 
 iDaysinPrisonMod                 100 -> 1000        Days in prison will be the same as in vanilla.
 ```
-The crime threshold is not changed, which means that the guard will be chasing you after one attack. 
+The crime threshold is not changed, which means that the guard will be chasing you after one attack.
 ```
 iCrimeThreshold                         1000        Unchanged.
 ```
@@ -313,7 +315,7 @@ wild open                              1-100        Unchanged.
 
 ## Traps
 
-Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level. 
+Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level.
 ```
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
