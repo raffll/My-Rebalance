@@ -257,7 +257,7 @@ Damage Intelligence             2 * 50s             Permanent drop 100 Intellige
 Damage Magicka                  4 * 100s            Permanent drop 400 Magicka over 100s.
 ```
 
-Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.  
+Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.
 ```
 Drain Intelligence              100 / 24s           Drop 100 Intelligence for 24s.
 Drain Magicka                   100 / 32s           Drop 100 Magicka for 32s.
@@ -369,19 +369,19 @@ fTrapCostMult                    0 -> -1            Trap spell cost is taken int
 
 Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
 ```
-trap_fire00                      3 -> 10            (30) 
-trap_frost00                     3 -> 15            (30) 
-trap_shock00                     5 -> 20            (30) 
-trap_health00                    8 -> 25            (30) 
-trap_poison00                   16 -> 50            (150)
-                                                    
-trap_paralyze00                 13 -> 30            (10s)
-trap_silence00                  37 -> 35            (30s)
-                                                    
-trap_fire_killer                 3 -> 60            (200)
-trap_frost_killer                3 -> 65            (200)
-trap_shock_killer                5 -> 70            (200)
-trap_poison_killer              16 -> 100           (375)
+trap_fire00                      3 -> 10            [30]
+trap_frost00                     3 -> 15            [30]
+trap_shock00                     5 -> 20            [30]
+trap_health00                    8 -> 25            [30]
+trap_poison00                   16 -> 50            [150]
+
+trap_paralyze00                 13 -> 30            [10s]
+trap_silence00                  37 -> 35            [30s]
+
+trap_fire_killer                 3 -> 60            [200]
+trap_frost_killer                3 -> 65            [200]
+trap_shock_killer                5 -> 70            [200]
+trap_poison_killer              16 -> 100           [375]
 ```
 
 #### How to untrap a 100-point spell
