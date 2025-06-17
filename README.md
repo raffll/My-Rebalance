@@ -80,7 +80,7 @@ fMaxWalkSpeedCreature           300 -> 375
 
 ## Alchemy
 
-My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are crap. However, self-made potions all have the same magnitude and duration at the same spell effect base cost. Those mechanics are not quite suitable for some spell effects.
+My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are crap. Self-made potions also have the same magnitude-to-duration ratio, but the end effect heavily depends on the spell effect base cost, Alchemy skill, and equipment. Which is not quite suitable for some spell effects.
 
 The main problem is that you can successfully create excellent restore fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., restore fatigue equivalent will cost you 15 mana with a 9% chance at Restoration level 5).
 
