@@ -146,7 +146,7 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 #### Destruction
 
-Elemental damage doesn't make sense; there was no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
+$${\color{orange}\*\*}$$ Elemental damage doesn't make sense; there was no point in using spells other than fire or frost damage. So I lowered them to almost the same levels. However, I want to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
@@ -407,4 +407,4 @@ trap_poison_killer  (375)       16 -> 100
     - Magic module revisited
 ```
 
-$${\color{orange}\*\*}$$ -- added in version 1.4
+$${\color{orange}\*\*}$$ -- added or changed in version 1.4
