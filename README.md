@@ -392,8 +392,8 @@ trap_poison_killer              16 -> 100           [375]
 ```
 
 #### How to untrap a 100-point spell
-- Thief   -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
-- Mage    -- Telekinesis.
+- Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
+- Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
 
 ------------------------------------------------------------
