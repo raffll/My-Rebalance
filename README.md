@@ -27,14 +27,14 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
 - Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
-- $${\color{orange}\*\*}$$ Only one spell effect per spell. This can be used as a workaround for the cap on magnitude.
+- Only one spell effect per spell. This can be used as a workaround for the cap on magnitude.
 
-$${\color{orange}\*\*}$$ Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have 1s duration, like Charm. Summon spells should allow summoning a couple of skeletons in one spell. But until we have that, it's impossible to balance the spell system when those "cheats" are enabled.
+Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have 1s duration, like Charm. Summon spells should allow summoning a couple of skeletons in one spell. But until we have that, it's impossible to balance the spell system when those "cheats" are enabled.
 
 I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
 - The skill cap is set to 150, and the attribute cap is set to 300.
-- $${\color{orange}\*\*}$$ Potion consumption is limited to prevent stacking too many effects.
-- $${\color{orange}\*\*}$$ Training limit is enabled. This just simply removes the leveling problem.
+- Potion consumption is limited to prevent stacking too many effects.
+- Training limit is enabled. This just simply removes the leveling problem.
 
 It's not a requirement but a reasonable limit.
 
@@ -131,13 +131,13 @@ sEffectSlowFall                 SlowFall -> Slowfall
 
 #### Alteration
 
-Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. $${\color{orange}\*\*}$$ However, reducing encumbrance is more speed efficient than adding extra strength, but I decided to keep them that low anyway because the custom spell magnitude cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
+Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. However, reducing encumbrance is more speed efficient than adding extra strength, but I decided to keep them that low anyway because the custom spell magnitude cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
 ```
 Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
 Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
 ```
 
-The same rule applies to Swift Swim. $${\color{orange}\*\*}$$ It's doing only one thing, so it should do it better than Fortify Speed.
+The same rule applies to Swift Swim. It's doing only one thing, so it should do it better than Fortify Speed.
 ```
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
@@ -146,7 +146,7 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 #### Destruction
 
-Elemental damage doesn't make sense; there was no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. $${\color{orange}\*\*}$$ Finally, I decided to switch Damage Health with Poison for more consistency.
+Elemental damage doesn't make sense; there was no point in using spells other than fire or frost damage. However, I want to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
@@ -170,7 +170,7 @@ $${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms al
 Damage Attribute                8 -> 24
 ```
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. $${\color{orange}\*\*}$$ Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell.
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell.
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
@@ -212,7 +212,7 @@ Charm                           5                   Unchanged.
 
 #### Mysticism
 
-Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost should be higher. $${\color{orange}\*\*}$$ Furthermore, you can cast them on an area with multiple opponents or your minions to get massive health restoration.
+Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost should be higher. Furthermore, you can cast them on an area with multiple opponents or your minions to get massive health restoration.
 ```
 Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
@@ -248,7 +248,7 @@ Resist Paralysis                0.2 -> 2
 
 ------------------------------------------------------------
 
-$${\color{orange}\*\*}$$ #### How to stop a mage with 100 Intelligence using a 120-cost spell
+#### How to stop a mage with 100 Intelligence using a 120-cost spell
 
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
@@ -331,17 +331,17 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-Spell effect cost:
+#### Spell effect cost
 ```
 Open                            6 -> 12             Spells are harder to cast.
 ```
 
-Scroll price:
+#### Scroll price
 ```
 sc_ondusisunhinging             73 -> 273           Available in stores.
 ```
 
-Scrolls & spells magnitude:
+#### Scrolls & spells magnitude
 ```
 sc_ekashslocksplitter_en        100 -> 80           Available in random loot later in the game.
 
