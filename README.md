@@ -151,8 +151,8 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 TODO
 ```
-Jump	                        3 -> ?
-Slowfall	                    3 -> ?
+Jump                            3 -> ?
+Slowfall                        3 -> ?
 ```
 
 ```
@@ -235,7 +235,7 @@ Detect Key                      1 -> 0.2
 
 TODO
 ```
-Reflect	                        10 -> ?
+Reflect                         10 -> ?
 Spell Absorption                10 -> ?
 ```
 
