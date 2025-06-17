@@ -248,7 +248,7 @@ Resist Paralysis                0.2 -> 2
 
 ------------------------------------------------------------
 
-#### How to stop a mage with 100 Intelligence using a 120-cost spell
+$${\color{orange}\*\*}$$ #### How to stop a mage with 100 Intelligence using a 120-cost spell
 
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
