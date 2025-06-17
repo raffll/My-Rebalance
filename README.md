@@ -156,13 +156,13 @@ Swift Swim                      2 -> 0.5            2x faster swim than Fortify 
 
 TODO
 ```
-Jump                            3 -> ?
-Slowfall                        3 -> ?
+Jump                            3 -> 2
+Slowfall                        3 -> 2
 ```
 
 TODO
 ```
-Shield                          2 -> ?
+Shield                          2 -> 1
 ```
 
 ------------------------------------------------------------
@@ -436,4 +436,4 @@ trap_poison_killer  (375)       16 -> 100
     - Magic module revisited
 ```
 
-$${\color{orange}\*\*}$$ -- added in version 1.4
+** -- added in version 1.4
