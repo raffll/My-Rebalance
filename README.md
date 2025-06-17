@@ -12,7 +12,8 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 - Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
-- Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.
+- <s>Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.</s>
+- Math-driven -- Seriously, I'm doing serious calculations here.
 
 ------------------------------------------------------------
 
@@ -252,20 +253,20 @@ Resist Paralysis                0.2 -> 2
 
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
-Damage Intelligence     24      2 * 50s             Permanent drop 100 Intelligence over 50s.
-Damage Magicka          6       4 * 100s            Permanent drop 400 Magicka over 100s.
+Damage Intelligence             2 * 50s             Permanent drop 100 Intelligence over 50s.
+Damage Magicka                  4 * 100s            Permanent drop 400 Magicka over 100s.
 ```
 
 Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.  
 ```
-Drain Intelligence      1       100 / 24s           Drop 100 Intelligence for 24s.
-Drain Magicka           0,75    100 / 32s           Drop 100 Magicka for 32s.
+Drain Intelligence              100 / 24s           Drop 100 Intelligence for 24s.
+Drain Magicka                   100 / 32s           Drop 100 Magicka for 32s.
 ```
 
 Silence is 5x more effective than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
-Silence                 20      120s                Can't cast spells for 120s.
-Sound                   0,8     100% / 30s          100% to fail for 30s.
+Silence                         120s                Can't cast spells for 120s.
+Sound                           100% / 30s          100% to fail for 30s.
 ```
 
 ------------------------------------------------------------
