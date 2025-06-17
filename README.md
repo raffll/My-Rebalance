@@ -188,6 +188,11 @@ Damage Fatigue is almost useless or very powerful, depending on if you are using
 Damage Fatigue                       4              Unchanged.
 ```
 
+Damage Attribute was so powerful that outperform almost every other "utility" spell. For 40 magicka spell you could drop target Strength or Intelligence to 0, leaving opponent without ability to walk, fight or cast spells.
+```
+Damage Attribute                8 -> 24
+```
+
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. $${\color{orange}\*\*}$$ Armor destruction always starts from shields with low-tier health at 100-200 and then cuirasses with health at 300-400. Also, low-tier weapons start from 300-400 hp. So, in both cases they can be destroyed by a 25-cost spell.
 ```
 Disintegrate Armor              6 -> 1
@@ -272,16 +277,22 @@ Resist Paralysis                0.2 -> 2
 
 ------------------------------------------------------------
 
-#### How to stop a mage
-```
-Damage Attribute	8,00	5	20	40,00	42,00		<- delpeted all over 20s -- for 40c	<- this is overpowered,
-Damage Magicka	    6,00	5	60	90,00 				<- depletes 300 over 60s -- for 90c <- 
-	
-Drain Attribute	    1,00	100	20	100,00	105,00		<- depletes all for 20s -- for 100c <- this is 5x worse than silence
-Drain Magicka	    0,75	100	24	90,00	93,75		<- depletes 100 for 24s -- for 90c <- worst one 
+#### How to stop a mage with 100 Intelligence using 120-cost spell
 
-Silence				20		1	100	100,00	101,00		<- cant cast for 100s   -- for 100c
-Sound				0,8		100	25	100,00	104,00		<- 100% to fail for 25s -- for 100c <- depletes at least some -- this is pointles
+Damage spells are most powerful but needs time to kick in, otherwise they will cost 2x more.
+```
+Damage Intelligence     24      2 * 50s             Drop 100 Intelligence over 50s.
+Damage Magicka          6       4 * 100s            Drop 400 magicka over 100s.
+```
+Drain Intelligence is good if you don't have time and not skilled in Illusion. Drain Magicka is the worst because of magnitude cap.
+```
+Drain Intelligence      1       100 / 24s           Drop 100 Intelligence for 24s.
+Drain Magicka           0,75    100 / 32s           Drop 100 magicka for 32s.
+```
+Silence is 5x more effective than Drain Intelligence and also better if opponent mage has more than 100 intelligence. Sound amy be 4x less efficient but opponent still casting wasting time and magicka.
+```
+Silence                 20      120s                Can't cast spells for 120s.
+Sound                   0,8     100% / 30s          100% to fail for 30s.
 ```
 
 ------------------------------------------------------------
