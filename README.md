@@ -27,15 +27,15 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
-- Only one spell effect per spell. This is a workaround for the cap on magnitude. 
+- $${\color{orange}\*\*}$$ Only one spell effect per spell. This is a workaround for the cap on magnitude. 
 - Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
 
-Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have a duration of 1s, like Charm. And summon spells should allow summoning a couple of skeletons in one spell. But unless we have that, it's impossible to balance the spell system when those "cheats" are enabled.
+$${\color{orange}\*\*}$$ Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have a duration of 1s, like Charm. And summon spells should allow summoning a couple of skeletons in one spell. But unless we have that, it's impossible to balance the spell system when those "cheats" are enabled.
 
 I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
 - Where the skill cap is set to 150 and the attribute cap is set to 300.
-- Potion consumption is limited to prevent the most common exploits.
-- Training limit is implemented. This just simply removes the leveling problem.
+- $${\color{orange}\*\*}$$ Potion consumption is limited to prevent the most common exploits.
+- $${\color{orange}\*\*}$$ Training limit is implemented. This just simply removes the leveling problem.
 
 It's not a requirement but a reasonable limit.
 
