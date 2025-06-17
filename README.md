@@ -2,7 +2,9 @@
 
 #### Intentions
 
-Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters.
+Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters. So, this mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+
+**You will be overpowered anyway! But the path to achieve that will be more fun!**
 
 ------------------------------------------------------------
 
@@ -25,12 +27,15 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
+- Only one spell effect per spell. This is a workaround for the cap on magnitude. 
 - Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
+
+Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have a duration of 1s, like Charm. And summon spells should allow summoning a couple of skeletons in one spell. But unless we have that, it's impossible to balance the spell system when those "cheats" are enabled.
 
 I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
 - Where the skill cap is set to 150 and the attribute cap is set to 300.
-- Potion consumption is limited to prevent the most visible exploits.
-- Training limit is implemented. This just removes the leveling problem.
+- Potion consumption is limited to prevent the most common exploits.
+- Training limit is implemented. This just simply removes the leveling problem.
 
 It's not a requirement but a reasonable limit.
 
@@ -155,6 +160,7 @@ Jump                            3 -> ?
 Slowfall                        3 -> ?
 ```
 
+TODO
 ```
 Shield                          2 -> ?
 ```
@@ -182,10 +188,10 @@ Damage Fatigue is almost useless or very powerful, depending on if you are using
 Damage Fatigue                       4              Unchanged.
 ```
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier.
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it. It was only useful for stealing armor, and now it's easier. $${\color{orange}\*\*}$$ Armor destruction always starts from shields with low-tier health at 100-200 and then cuirasses with health at 300-400. Also, low-tier weapons start from 300-400 hp. So, in both cases they can be destroyed by a 25-cost spell.
 ```
-Disintegrate Armor              6 -> 1
-Disintegrate Weapon             6 -> 1
+Disintegrate Armor              6 -> 1				
+Disintegrate Weapon             6 -> 1				
 ```
 
 $${\color{orange}\*\*}$$ Drain spells are lowered to be at the same cost as Fortify spells. The reason behind this is once again maximum magnitude of 100 for those spells, so they are mostly useless. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is many potion ingredients have this as a negative effect, and now they will be stronger, which is a good thing.
@@ -193,6 +199,11 @@ $${\color{orange}\*\*}$$ Drain spells are lowered to be at the same cost as Fort
 Drain Health                    4 -> 1
 Drain Magicka                   4 -> 0.75
 Drain Fatigue                   2 -> 0.5
+```
+
+$${\color{orange}\*\*}$$ Drain Skill is higher because it was overpowered, the same way as Fortify Skill. Compared to Drain Attribute it has a lot bigger impact, and at cost of 1 it was just as good as Chameleon, Blind or Sanctuary.
+```
+Drain Skill                     1 -> 4
 ```
 
 ------------------------------------------------------------
@@ -210,7 +221,7 @@ This is only to forward bugfix.
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
-TODO:
+Here i have dillemma, in vanilla 1s spell is enougth. so, to fix that I recommend some kind of Lua real-time dialogue mod instead. i leave Charm untouched.
 ```
 Charm                           5
 ```
@@ -224,6 +235,11 @@ Absorb spells were overpowered at the same cost as damage spells. A single effec
 Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
 Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
+```
+
+This one is not used anywhere in vanilla but still should be adjusted to new Drain/Fortify values.
+```
+Absorb Skill                    2 -> 8
 ```
 
 Detect spells were just too expensive.
@@ -389,6 +405,8 @@ trap_poison_killer  (375)       16 -> 100
 - 1.3
     - Resist Paralysis spell 10x more expensive
     - Crime module added
+- 1.4
+    - Magic module revisited
 ```
 
 $${\color{orange}\*\*}$$ -- added in version 1.4
