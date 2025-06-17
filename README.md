@@ -191,7 +191,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 #### Mysticism
 
-Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher. **Also, you can cast them on area with multiple opponents or your minions to get massive health restoration. Absorb Magicka added, but it's not used by any craftable spell in the vanilla game.**
+Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost will be 50% higher. $${\color{orange}\*\*}$$ Furthermore, you can cast them on an area with multiple opponents and your minions to get massive health restoration. I decided to include Absorb Magicka, despite its not being used by any craftable spell in the vanilla game.
 ```
 Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
 Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
