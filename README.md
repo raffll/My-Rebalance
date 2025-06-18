@@ -143,7 +143,7 @@ The same rule applies to Swift Swim. It's doing only one thing, so it should do 
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
-$${\color{red}\*\*}$$ Jump and Slowfall is generally worse than Levitate.
+$${\color{red}\*\*}$$ Jump and Slowfall are generally worse than Levitate.
 ```
 Jump                            3 -> 1
 Slowfall                        3 -> 1
@@ -153,7 +153,7 @@ Slowfall                        3 -> 1
 
 #### Destruction
 
-$${\color{orange}\*\*}$$ Elemental damage doesn't make sense; there was no point in using spells other than fire or frost damage. So I lowered them to almost the same levels. However, I want to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
+$${\color{orange}\*\*}$$ Elemental damage didn't make sense; there was no point in using spells other than fire or frost damage. So I lowered them all to almost the same levels. However, I want to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
@@ -259,6 +259,7 @@ Resist Paralysis                0.2 -> 2
 ```
 Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
 ```
+
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
 Damage Intelligence             2pts/50s             Permanent drop 150 Magicka over 50s.
@@ -312,10 +313,12 @@ iCrimeTresspass                    5 -> 500         Trespassing is a more seriou
 
 iDaysinPrisonMod                 100 -> 1000        Days in prison will be the same as in vanilla.
 ```
+
 The crime threshold is not changed, which means that the guard will be chasing you after one attack.
 ```
 iCrimeThreshold                         1000        Unchanged.
 ```
+
 The death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
 ```
 Death Warrant                   5000 -> 11001       You can kill only one person, instead of 4.
@@ -329,6 +332,7 @@ It's a stat game between you and NPC, but in vanilla your max chance was only 56
 ```
 iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
 ```
+
 It's not even realistic to take item price into account, so I disabled that requirement.
 ```
 fPickPocketMod                  0.3 -> 0            Any item available to steal.
