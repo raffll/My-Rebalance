@@ -47,6 +47,7 @@ It's not a requirement but a reasonable limit.
 - Thief Experience Overhaul
 - HotFusion's Economy Adjuster
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
+- Magicka Awakening - Magicka Costs Adjustments: https://www.nexusmods.com/morrowind/mods/51723
 - Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
 
 ------------------------------------------------------------
@@ -149,6 +150,11 @@ Jump                            3 -> 1
 Slowfall                        3 -> 1
 ```
 
+$${\color{red}\*\*}$$ TODO
+```
+Shield                          2 -> 1
+```
+
 ------------------------------------------------------------
 
 #### Destruction
@@ -236,6 +242,12 @@ Detect spells were just too expensive.
 Detect Animal                   0.75 -> 0.15
 Detect Enchantment              1 -> 0.2
 Detect Key                      1 -> 0.2
+```
+
+$${\color{red}\*\*}$$ TODO
+```
+Reflect                         10 -> 4
+Spell Absorption                10 -> 4
 ```
 
 ------------------------------------------------------------
