@@ -143,6 +143,12 @@ The same rule applies to Swift Swim. It's doing only one thing, so it should do 
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
+$${\color{purple}\*\*}$$ Jump and Slowfall is generally worse than Levitate.
+```
+Jump                            3 -> 1
+Slowfall                        3 -> 1
+```
+
 ------------------------------------------------------------
 
 #### Destruction
@@ -416,3 +422,4 @@ trap_poison_killer              16 -> 100           [375]
 ```
 
 $${\color{orange}\*\*}$$ -- added or changed in version 1.4
+$${\color{purple}\*\*}$$ -- added or changed in version 1.5
