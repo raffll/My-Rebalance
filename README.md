@@ -406,20 +406,22 @@ trap_poison_killer              16 -> 100           [375]
 
 ## History
 ```
-- 1.1
-    - Elemental damage costs increased
-    - Detect spells 5x cheaper
-    - Secret Master's apparatus 5x more expensive
-- 1.2
-    - Lockpicking and traps split into separate esps
-    - Alchemy adjusted
-    - Mages Guild's travel 10x more expensive
-- 1.3
-    - Resist Paralysis spell 10x more expensive
-    - Crime module added
-- 1.4
-    - Magic module revisited
+1.1
+  - Elemental damage costs increased
+  - Detect spells 5x cheaper
+  - Secret Master's apparatus 5x more expensive
+1.2
+  - Lockpicking and traps split into separate esps
+  - Alchemy adjusted
+  - Mages Guild's travel 10x more expensive
+1.3
+  - Resist Paralysis spell 10x more expensive
+  - Crime module added
+1.4
+  - Magic module revisited
+1.5
+  - Magic module revisited 2
 ```
 
 $${\color{orange}\*\*}$$ -- added or changed in version 1.4
-$${\color{purple}\*\*}$$ -- added or changed in version 1.5
+$${\color{red}\*\*}$$ -- added or changed in version 1.5
