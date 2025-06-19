@@ -126,6 +126,7 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 Lots of spell effects weren't really useful because of better alternatives.
 ```
 sEffectSlowFall                 SlowFall -> Slowfall
+Demoralize Humanoid             Mysticism -> Illusion
 ```
 
 ------------------------------------------------------------
@@ -163,7 +164,7 @@ Shield                          2 -> 1
 
 #### Destruction
 
-$${\color{orange}\*\*}$$ Elemental damage didn't make sense; there was no point in using spells other than fire or frost damage. So I lowered them all to almost the same levels. However, I want to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
+$${\color{orange}\*\*}$$ Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
@@ -187,7 +188,7 @@ $${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms al
 Damage Attribute                8 -> 24
 ```
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell. It's a equivalent of Fire Damage 100pts spell.
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell. It's a equivalent of 100pts Fire Damage.
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
@@ -213,11 +214,6 @@ There was no point in using them instead of paralysis.
 ```
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
-```
-
-This is only bugfix.
-```
-Demoralize Humanoid             Mysticism -> Illusion
 ```
 
 $${\color{orange}\*\*}$$ Here I have a dilemma: in vanilla, a spell with 1s duration can be enough. So, to fix that, I recommend using some kind of real-time dialogue mod instead.
