@@ -396,7 +396,7 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
+Common trap costs didn't make any sense, so I readjusted them to give a better challenge. You can see average damage in the brackets.
 ```
 trap_fire00                      3 -> 10            [30]
 trap_frost00                     3 -> 15            [30]
@@ -436,9 +436,8 @@ trap_poison_killer              16 -> 100           [375]
 1.4
   - Magic module revisited
 1.5
-  - Magic module revisited 2
+  - Magic module revisited 2.0
 ```
 
-$${\color{orange}\*\*}$$ -- added or changed in version 1.4
-
-$${\color{red}\*\*}$$ -- added or changed in version 1.5
+* $${\color{orange}\*\*}$$ -- added or changed in version 1.4
+* $${\color{red}\*\*}$$ -- added or changed in version 1.5
