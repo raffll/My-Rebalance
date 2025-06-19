@@ -244,7 +244,7 @@ Detect Enchantment              1 -> 0.2
 Detect Key                      1 -> 0.2
 ```
 
-$${\color{red}\*\*}$$ TODO
+$${\color{red}\*\*}$$ Those are just more powerful variants of resists spells.
 ```
 Reflect                         10 -> 4
 Spell Absorption                10 -> 4
@@ -274,25 +274,25 @@ Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
 
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
-Damage Intelligence             2pts/50s             Permanent drop 150 Magicka over 50s.
-Damage Magicka                  4pts/100s            Permanent drop 400 Magicka over 100s.
+Damage Intelligence             2pts/50s            Permanent drop 150 Magicka over 50s.
+Damage Magicka                  4pts/100s           Permanent drop 400 Magicka over 100s.
 
 or
 
-Damage Intelligence             50pts/1s             Permanent drop 75 Magicka.
-Damage Magicka                  100pts/3s            Permanent drop 300 Magicka over 3s.
+Damage Intelligence             50pts/1s            Permanent drop 75 Magicka.
+Damage Magicka                  100pts/3s           Permanent drop 300 Magicka over 3s.
 ```
 
 Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.
 ```
-Drain Intelligence              100pts/24s           Drop 150 Magicka for 24s.
-Drain Magicka                   100pts/32s           Drop 100 Magicka for 32s.
+Drain Intelligence              100pts/24s          Drop 150 Magicka for 24s.
+Drain Magicka                   100pts/32s          Drop 100 Magicka for 32s.
 ```
 
 Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
-Silence                         120s                 Can't cast any spells for 120s.
-Sound                           100%/30s             100% to fail cast for 30s.
+Silence                         120s                Can't cast any spells for 120s.
+Sound                           100%/30s            100% to fail cast for 30s.
 ```
 
 ------------------------------------------------------------
