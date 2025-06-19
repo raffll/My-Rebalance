@@ -123,15 +123,19 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 ## Magic
 
-Lots of spell effects weren't really useful because of better alternatives. Also, it's worth trying elemental shield now, for the fun of killing low-level creatures.
+Lots of spell effects weren't really useful because of better alternatives.
 ```
-fElementalShieldMult            0.1 -> 1            1 point of damage for 1 point of magnitude.
 sEffectSlowFall                 SlowFall -> Slowfall
 ```
 
 ------------------------------------------------------------
 
 #### Alteration
+
+It's worth trying elemental shields now, for the fun of killing low-level creatures. Cost is not changed, as it does two things: resist the element and damage the opponent that hits you. But even now with 10x more damage, it's just a gimmick compared to real damage spells.
+```
+fElementalShieldMult            0.1 -> 1            1 point of damage for 1 point of magnitude.
+```
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. However, reducing encumbrance is more speed efficient than adding extra strength, but I decided to keep them that low anyway because the custom spell magnitude cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
 ```
@@ -150,7 +154,7 @@ Jump                            3 -> 1
 Slowfall                        3 -> 1
 ```
 
-$${\color{red}\*\*}$$ TODO
+$${\color{red}\*\*}$$ Shield even with this adjustment is worse than Sanctuary.
 ```
 Shield                          2 -> 1
 ```
@@ -183,7 +187,7 @@ $${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms al
 Damage Attribute                8 -> 24
 ```
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell.
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell. It's a equivalent of Fire Damage 100pts spell.
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
