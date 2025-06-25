@@ -47,6 +47,7 @@ It's not a requirement but a reasonable limit.
 - Thief Experience Overhaul
 - HotFusion's Economy Adjuster
 - Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
+- Magicka Awakening - Magicka Costs Adjustments: https://www.nexusmods.com/morrowind/mods/51723
 - Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
 
 ------------------------------------------------------------
@@ -54,6 +55,30 @@ It's not a requirement but a reasonable limit.
 #### Compatibility
 
 - If you are using Morag Tong Polished, enable also "Corrupted Crime - Morag Tong Polished.esp" at the end.
+
+------------------------------------------------------------
+
+#### History
+```
+1.1
+  - Elemental damage costs increased
+  - Detect spells 5x cheaper
+  - Secret Master's apparatus 5x more expensive
+1.2
+  - Lockpicking and traps split into separate esps
+  - Alchemy adjusted
+  - Mages Guild's travel 10x more expensive
+1.3
+  - Resist Paralysis spell 10x more expensive
+  - Crime module added
+1.4
+  - Magic module revisited
+1.5
+  - Magic module remastered
+```
+
+* $${\color{orange}\*\*}$$ -- added or changed in version 1.4
+* $${\color{red}\*\*}$$ -- added or changed in version 1.5
 
 ------------------------------------------------------------
 
@@ -122,15 +147,20 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 ## Magic
 
-Lots of spell effects weren't really useful because of better alternatives. Also, it's worth trying elemental shield now, for the fun of killing low-level creatures.
+Fixes.
 ```
-fElementalShieldMult            0.1 -> 1            1 point of damage for 1 point of magnitude.
 sEffectSlowFall                 SlowFall -> Slowfall
+Demoralize Humanoid             Mysticism -> Illusion
 ```
 
 ------------------------------------------------------------
 
 #### Alteration
+
+It's worth trying elemental shields now, for the fun of killing low-level creatures. Cost is not changed, as it does two things: resist the element and damage the opponent that hits you. But even now with 10x more damage, it's just a gimmick compared to real damage spells.
+```
+fElementalShieldMult            0.1 -> 1            1 point of damage for 1 point of magnitude.
+```
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. However, reducing encumbrance is more speed efficient than adding extra strength, but I decided to keep them that low anyway because the custom spell magnitude cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
 ```
@@ -143,11 +173,22 @@ The same rule applies to Swift Swim. It's doing only one thing, so it should do 
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
+$${\color{red}\*\*}$$ Jump and Slowfall are generally worse than Levitate.
+```
+Jump                            3 -> 1
+Slowfall                        3 -> 1
+```
+
+$${\color{red}\*\*}$$ Shield even with this adjustment is worse than Sanctuary.
+```
+Shield                          2 -> 1
+```
+
 ------------------------------------------------------------
 
 #### Destruction
 
-$${\color{orange}\*\*}$$ Elemental damage doesn't make sense; there was no point in using spells other than fire or frost damage. So I lowered them to almost the same levels. However, I want to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
+$${\color{orange}\*\*}$$ Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
@@ -171,7 +212,7 @@ $${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms al
 Damage Attribute                8 -> 24
 ```
 
-Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell.
+Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell. It's a equivalent of 100pts Fire Damage.
 ```
 Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
@@ -197,11 +238,6 @@ There was no point in using them instead of paralysis.
 ```
 Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
-```
-
-This is only bugfix.
-```
-Demoralize Humanoid             Mysticism -> Illusion
 ```
 
 $${\color{orange}\*\*}$$ Here I have a dilemma: in vanilla, a spell with 1s duration can be enough. So, to fix that, I recommend using some kind of real-time dialogue mod instead.
@@ -232,6 +268,12 @@ Detect Enchantment              1 -> 0.2
 Detect Key                      1 -> 0.2
 ```
 
+$${\color{red}\*\*}$$ Those are just more powerful variants of resist spells. Too expensive on lower levels and not very useful anymore on higher levels.
+```
+Reflect                         10 -> 4
+Spell Absorption                10 -> 4
+```
+
 ------------------------------------------------------------
 
 #### Restoration
@@ -253,27 +295,28 @@ Resist Paralysis                0.2 -> 2
 ```
 Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
 ```
+
 Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
 ```
-Damage Intelligence             2pts/50s             Permanent drop 150 Magicka over 50s.
-Damage Magicka                  4pts/100s            Permanent drop 400 Magicka over 100s.
+Damage Intelligence             2pts/50s            Permanent drop 150 Magicka over 50s.
+Damage Magicka                  4pts/100s           Permanent drop 400 Magicka over 100s.
 
 or
 
-Damage Intelligence             50pts/1s             Permanent drop 75 Magicka.
-Damage Magicka                  100pts/3s            Permanent drop 300 Magicka over 3s.
+Damage Intelligence             50pts/1s            Permanent drop 75 Magicka.
+Damage Magicka                  100pts/3s           Permanent drop 300 Magicka over 3s.
 ```
 
 Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.
 ```
-Drain Intelligence              100pts/24s           Drop 150 Magicka for 24s.
-Drain Magicka                   100pts/32s           Drop 100 Magicka for 32s.
+Drain Intelligence              100pts/24s          Drop 150 Magicka for 24s.
+Drain Magicka                   100pts/32s          Drop 100 Magicka for 32s.
 ```
 
 Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
-Silence                         120s                 Can't cast any spells for 120s.
-Sound                           100%/30s             100% to fail cast for 30s.
+Silence                         120s                Can't cast any spells for 120s.
+Sound                           100%/30s            100% to fail cast for 30s.
 ```
 
 ------------------------------------------------------------
@@ -306,10 +349,12 @@ iCrimeTresspass                    5 -> 500         Trespassing is a more seriou
 
 iDaysinPrisonMod                 100 -> 1000        Days in prison will be the same as in vanilla.
 ```
+
 The crime threshold is not changed, which means that the guard will be chasing you after one attack.
 ```
 iCrimeThreshold                         1000        Unchanged.
 ```
+
 The death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
 ```
 Death Warrant                   5000 -> 11001       You can kill only one person, instead of 4.
@@ -323,6 +368,7 @@ It's a stat game between you and NPC, but in vanilla your max chance was only 56
 ```
 iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
 ```
+
 It's not even realistic to take item price into account, so I disabled that requirement.
 ```
 fPickPocketMod                  0.3 -> 0            Any item available to steal.
@@ -374,7 +420,7 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-Common trap costs don't make any sense, so I readjusted them to give a better challenge (you can see average damage in the brackets).
+Common trap costs didn't make any sense, so I readjusted them to give a better challenge. You can see average damage in the brackets.
 ```
 trap_fire00                      3 -> 10            [30]
 trap_frost00                     3 -> 15            [30]
@@ -395,24 +441,3 @@ trap_poison_killer              16 -> 100           [375]
 - Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
-
-------------------------------------------------------------
-
-## History
-```
-- 1.1
-    - Elemental damage costs increased
-    - Detect spells 5x cheaper
-    - Secret Master's apparatus 5x more expensive
-- 1.2
-    - Lockpicking and traps split into separate esps
-    - Alchemy adjusted
-    - Mages Guild's travel 10x more expensive
-- 1.3
-    - Resist Paralysis spell 10x more expensive
-    - Crime module added
-- 1.4
-    - Magic module revisited
-```
-
-$${\color{orange}\*\*}$$ -- added or changed in version 1.4
