@@ -1,0 +1,85 @@
+[b][center][size=5]Rebalanced Rebalance Redux[/size][/center][/b]
+
+[size=4]Detailed readme here: [url=https://github.com/raffll/My-Rebalance]https://github.com/raffll/My-Rebalance[/url][/size]
+
+[size=4]Thanks![/size]
+
+#### Intentions
+
+Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+
+[b]**You will be overpowered anyway! But the path to achieve that will be more fun!**[/b]
+
+------------------------------------------------------------
+
+#### Philosophy
+
+- Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
+- Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
+- [s]Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.[/s]
+- Math-driven -- Seriously, I'm doing serious calculations here.
+
+------------------------------------------------------------
+
+#### Assumptions
+
+- Patch for Purists is applied.
+- OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
+- Tamriel Rebuilt is used, but not required.
+- Some kind of real-time talking with NPC mod is recommended. This is mainly to prevent persuasion exploits.
+- "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
+
+If you are using MCP, leave vanilla mechanics for creating spells.
+- Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
+- Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
+- Only one spell effect per spell. This can be used as a workaround for the cap on magnitude.
+
+Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have 1s duration, like Charm. Summon spells should allow summoning a couple of skeletons in one spell. But until we have that, it's impossible to balance the spell system when those "cheats" are enabled.
+
+I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
+- The skill cap is set to 150, and the attribute cap is set to 300.
+- Potion consumption is limited to prevent stacking too many effects.
+- Training limit is enabled. This just simply removes the leveling problem.
+
+It's not a requirement but a reasonable limit.
+
+------------------------------------------------------------
+
+#### Inspirations
+
+- BTB's Game Improvements
+- Thief Experience Overhaul
+- HotFusion's Economy Adjuster
+- Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
+- Magicka Awakening - Magicka Costs Adjustments: https://www.nexusmods.com/morrowind/mods/51723
+- Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
+
+------------------------------------------------------------
+
+#### Compatibility
+
+- If you are using Morag Tong Polished, enable also "Corrupted Crime - Morag Tong Polished.esp" at the end.
+
+------------------------------------------------------------
+
+#### History
+```
+1.1
+  - Elemental damage costs increased
+  - Detect spells 5x cheaper
+  - Secret Master's apparatus 5x more expensive
+1.2
+  - Lockpicking and traps split into separate esps
+  - Alchemy adjusted
+  - Mages Guild's travel 10x more expensive
+1.3
+  - Resist Paralysis spell 10x more expensive
+  - Crime module added
+1.4
+  - Magic module revisited
+1.5
+  - Magic module remastered
+```
+
+[color=#ff7700]**[/color] -- added or changed in version 1.4
+[color=#ff0000]**[/color] -- added or changed in version 1.5
