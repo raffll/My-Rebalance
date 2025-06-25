@@ -244,7 +244,7 @@ Detect Enchantment              1 -> 0.2
 Detect Key                      1 -> 0.2
 ```
 
-$${\color{red}\*\*}$$ Those are just more powerful variants of resists spells.
+$${\color{red}\*\*}$$ Those are just more powerful variants of resist spells. Too expensive on lower levels and not very useful anymore on higher levels.
 ```
 Reflect                         10 -> 4
 Spell Absorption                10 -> 4
