@@ -58,6 +58,30 @@ It's not a requirement but a reasonable limit.
 
 ------------------------------------------------------------
 
+#### History
+```
+1.1
+  - Elemental damage costs increased
+  - Detect spells 5x cheaper
+  - Secret Master's apparatus 5x more expensive
+1.2
+  - Lockpicking and traps split into separate esps
+  - Alchemy adjusted
+  - Mages Guild's travel 10x more expensive
+1.3
+  - Resist Paralysis spell 10x more expensive
+  - Crime module added
+1.4
+  - Magic module revisited
+1.5
+  - Magic module remastered
+```
+
+* $${\color{orange}\*\*}$$ -- added or changed in version 1.4
+* $${\color{red}\*\*}$$ -- added or changed in version 1.5
+
+------------------------------------------------------------
+
 ## Skills
 
 Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Security is based on Agility anyway.
@@ -417,27 +441,3 @@ trap_poison_killer              16 -> 100           [375]
 - Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
-
-------------------------------------------------------------
-
-## History
-```
-1.1
-  - Elemental damage costs increased
-  - Detect spells 5x cheaper
-  - Secret Master's apparatus 5x more expensive
-1.2
-  - Lockpicking and traps split into separate esps
-  - Alchemy adjusted
-  - Mages Guild's travel 10x more expensive
-1.3
-  - Resist Paralysis spell 10x more expensive
-  - Crime module added
-1.4
-  - Magic module revisited
-1.5
-  - Magic module remastered
-```
-
-* $${\color{orange}\*\*}$$ -- added or changed in version 1.4
-* $${\color{red}\*\*}$$ -- added or changed in version 1.5
