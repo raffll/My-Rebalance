@@ -123,7 +123,7 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 ## Magic
 
-Lots of spell effects weren't really useful because of better alternatives.
+Fixes.
 ```
 sEffectSlowFall                 SlowFall -> Slowfall
 Demoralize Humanoid             Mysticism -> Illusion
@@ -436,7 +436,7 @@ trap_poison_killer              16 -> 100           [375]
 1.4
   - Magic module revisited
 1.5
-  - Magic module revisited 2.0
+  - Magic module remastered
 ```
 
 * $${\color{orange}\*\*}$$ -- added or changed in version 1.4
