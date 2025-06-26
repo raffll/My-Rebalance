@@ -146,8 +146,8 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
 #### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
-- _Enchanter -- 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
-- _Self-enchant -- 53% chance of making an item with Enchant at 100 and average (50) attributes._
+- _Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
+- _Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes._
 
 ------------------------------------------------------------
 
