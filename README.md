@@ -153,13 +153,13 @@ fEnchantmentChanceMult             3 -> 0.6            5x easier self enchant
 
 ## Magic
 
-Fixes.
+Just fixes.
 ```
 sEffectSlowFall                    SlowFall -> Slowfall
 Demoralize Humanoid                Mysticism -> Illusion
 ```
 
-#### _How to stop a mage using a 120-cost spell (Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)_
+#### _How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)_
 
 - _Damage spells are most powerful but need time to kick in._
 ```
