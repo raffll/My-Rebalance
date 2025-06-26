@@ -82,7 +82,6 @@ It's not a requirement but a reasonable limit.
   - Spell module added
 ```
 
-* $${\color{red}\*1.5\*}$$ -- added or changed in version 1.5
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
 
 ------------------------------------------------------------
@@ -206,13 +205,13 @@ The same rule applies to Swift Swim. It's doing only one thing, so it should do 
 Swift Swim                         2 -> 0.5            2x faster swim than Fortify Speed
 ```
 
-$${\color{red}\*1.5\*}$$ Jump and Slowfall are generally worse than Levitate. But using them together, they can be a cheaper alternative.
+Jump and Slowfall are generally worse than Levitate. But using them together, they can be a cheaper alternative.
 ```
 Jump                               3 -> 1
 Slowfall                           3 -> 1
 ```
 
-$${\color{red}\*1.5\*}$$ Shield even with this adjustment is worse than Sanctuary.
+Shield even with this adjustment is worse than Sanctuary.
 ```
 Shield                             2 -> 1
 ```
@@ -301,7 +300,7 @@ Detect Enchantment                 1 -> 0.2
 Detect Key                         1 -> 0.2
 ```
 
-$${\color{red}\*1.5\*}$$ Those are just more powerful variants of resist spells. Too expensive on lower levels and not very useful anymore on higher levels.
+Those are just more powerful variants of resist spells. Too expensive on lower levels and not very useful anymore on higher levels.
 ```
 Reflect                            10 -> 4
 Spell Absorption                   10 -> 4
