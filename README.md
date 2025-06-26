@@ -83,7 +83,7 @@ It's not a requirement but a reasonable limit.
 ```
 
 * $${\color{red}\*\*}$$ -- added or changed in version 1.5
-* $${\color{yellow}\*\*}$$ -- added or changed in version 1.6
+* $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
 
 ------------------------------------------------------------
 
