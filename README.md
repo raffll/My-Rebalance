@@ -425,23 +425,20 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 ```
 
-#### Spell effect cost
+#### Cost
 ```
 Open                            6 -> 12             Spells are harder to cast.
 ```
 
-#### Scrolls price
+#### Price
 ```
 sc_ondusisunhinging             73gp -> 273gp       Available in stores.
 ```
 
-#### Scrolls magnitude
+#### Magnitude
 ```
 sc_ekashslocksplitter_en        100pts -> 80pts     Available in random loot later in the game.
-```
 
-#### Spells magnitude
-```
 open                                     20pts      Unchanged, unavailable in vanilla.
 ondusi's open door              50pts -> 40pts
 strong open                     50pts -> 60pts
