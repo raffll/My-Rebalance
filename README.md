@@ -328,20 +328,20 @@ Resist Paralysis                   0.2 -> 2
 $${\color{yellow}\*1.6\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
-Bargain Potion of Burden           5pts/8s -> 50pts/80s              
-Cheap Potion of Burden             8pts/15s -> 80pts/150s            
-Standard Potion of Burden          10pts/30s -> 100pts/300s          
-Quality Potion of Burden           15pts/45s -> 150pts/450s          
-Exclusive Potion of Burden         20pts/60s -> 200pts/600s          
-								   	      
-Bargain Potion of Feather          5pts/8s -> 50pts/80s              
-Cheap Potion of Feather            8pts/15s -> 80pts/150s            
-Quality Potion of Feather          15pts/45s -> 150pts/450s          
-Exclusive Potion of Feather        20pts/60s -> 200pts/600s          
-								   	      
-Potion of Detect Creatures         10pts/15s -> 100pts/150s          
-Potion of Detect Key               10pts/15s -> 100pts/150s          
-Potion of Detect Enchantments      10pts/15s -> 100pts/150s          
+Bargain Potion of Burden           5pts/8s -> 50pts/80s
+Cheap Potion of Burden             8pts/15s -> 80pts/150s
+Standard Potion of Burden          10pts/30s -> 100pts/300s
+Quality Potion of Burden           15pts/45s -> 150pts/450s
+Exclusive Potion of Burden         20pts/60s -> 200pts/600s
+
+Bargain Potion of Feather          5pts/8s -> 50pts/80s
+Cheap Potion of Feather            8pts/15s -> 80pts/150s
+Quality Potion of Feather          15pts/45s -> 150pts/450s
+Exclusive Potion of Feather        20pts/60s -> 200pts/600s
+
+Potion of Detect Creatures         10pts/15s -> 100pts/150s
+Potion of Detect Key               10pts/15s -> 100pts/150s
+Potion of Detect Enchantments      10pts/15s -> 100pts/150s
 ```
 
 ------------------------------------------------------------
@@ -383,7 +383,7 @@ iCrimeKilling                      1000 -> 5000
 iCrimeAttack                       40 -> 200
 iCrimePickPocket                   25 -> 100
 iCrimeTresspass                    5 -> 25
-								   
+
 iDaysinPrisonMod                   100 -> 500          Days in prison will be the same as in vanilla
 ```
 
@@ -425,7 +425,7 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 Open                               6 -> 12             2x increased base cost
 ```
 
-Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones. 
+Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones.
 ```
 Open                                        20pts      Unchanged, unavailable in vanilla
 Ondusi's Open Door                 50pts -> 40pts
@@ -464,10 +464,10 @@ trap_frost00                       3 -> 9              2-20pts/3s
 trap_shock00                       5 -> 9              2-20pts/3s
 trap_health00                      8 -> 10             2-20pts/3s
 trap_poison00                      16 -> 52            1-5pts/60s
-								   
+
 trap_paralyze00                    13 -> 21            10s
 trap_silence00                     37 -> 31            30s
-								   
+
 trap_fire_killer                   3 -> 63             20-30pts/10s
 trap_frost_killer                  3 -> 66             20-30pts/10s
 trap_shock_killer                  5 -> 69             20-30pts/10s
