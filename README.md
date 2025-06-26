@@ -81,7 +81,6 @@ It's not a requirement but a reasonable limit.
   - Potion module added
 ```
 
-* $${\color{orange}\*\*}$$ -- added or changed in version 1.4
 * $${\color{red}\*\*}$$ -- added or changed in version 1.5
 * $${\color{yellow}\*\*}$$ -- added or changed in version 1.6
 
@@ -122,10 +121,10 @@ fPotionStrengthMult             0.5 -> 0.25         2x smaller magnitude, durati
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
 ```
-apparatus_sm_alembic_01         1600 -> 8000
-apparatus_sm_calcinator_01      3200 -> 16000
-apparatus_sm_mortar_01          6000 -> 30000
-apparatus_sm_retort_01          1000 -> 5000
+apparatus_sm_alembic_01         1600gp -> 8000gp
+apparatus_sm_calcinator_01      3200gp -> 16000gp
+apparatus_sm_mortar_01          6000gp -> 30000gp
+apparatus_sm_retort_01          1000gp -> 5000gp
 ```
 
 #### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
@@ -193,7 +192,7 @@ Shield                          2 -> 1
 
 #### Destruction
 
-$${\color{orange}\*\*}$$ Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
+Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
 Fire Damage                          5.00           Unchanged.
 Frost Damage                    5 -> 5.25
@@ -202,7 +201,7 @@ Poison                          9 -> 5.75
 Damage Health                   8 -> 6.00
 ```
 
-$${\color{orange}\*\*}$$ Damage Magicka has been lowered to be on par with Damage Health.
+Damage Magicka has been lowered to be on par with Damage Health.
 ```
 Damage Magicka                  8 -> 6
 ```
@@ -212,7 +211,7 @@ Damage Fatigue is almost useless or very powerful, depending on if you are using
 Damage Fatigue                       4              Unchanged.
 ```
 
-$${\color{orange}\*\*}$$ Damage Attribute was so powerful that it outperforms almost every other "utility" spell. For 40 Magicka, you could drop the target's Strength or Intelligence to 0, leaving the opponent without the ability to walk, fight, or cast spells.
+Damage Attribute was so powerful that it outperforms almost every other "utility" spell. For 40 Magicka, you could drop the target's Strength or Intelligence to 0, leaving the opponent without the ability to walk, fight, or cast spells.
 ```
 Damage Attribute                8 -> 24
 ```
@@ -223,14 +222,14 @@ Disintegrate Armor              6 -> 1
 Disintegrate Weapon             6 -> 1
 ```
 
-$${\color{orange}\*\*}$$ Drain spells have been lowered to be at the same cost as fortify spells. The reason behind this is, once again, the maximum magnitude of 100 for those spells, so they are mostly useless on higher levels. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is that many potion ingredients have them as a negative effect, and now they will be stronger, which is a good thing. Drain Health is unchanged because it can be too strong on lower levels.
+Drain spells have been lowered to be at the same cost as fortify spells. The reason behind this is, once again, the maximum magnitude of 100 for those spells, so they are mostly useless on higher levels. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is that many potion ingredients have them as a negative effect, and now they will be stronger, which is a good thing. Drain Health is unchanged because it can be too strong on lower levels.
 ```
-Drain Health                         4              Unchanged.
+Drain Health                         4.00           Unchanged.
 Drain Magicka                   4 -> 0.75
-Drain Fatigue                   2 -> 0.5
+Drain Fatigue                   2 -> 0.50
 ```
 
-$${\color{orange}\*\*}$$ Drain Skill is now more expensive because it can be overpowered, the same way as Fortify Skill. Compared to Drain Attribute, it has a lot bigger impact, and at a cost of 1, it was just as good in combat as Blind, but more versatile.
+Drain Skill is now more expensive because it can be overpowered, the same way as Fortify Skill. Compared to Drain Attribute, it has a lot bigger impact, and at a cost of 1, it was just as good in combat as Blind, but more versatile.
 ```
 Drain Skill                     1 -> 2
 ```
@@ -245,7 +244,7 @@ Silence                         40 -> 20            2x cheaper than Paralyze.
 Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
 ```
 
-$${\color{orange}\*\*}$$ Here I have a dilemma: in vanilla, a spell with 1s duration can be enough. So, to fix that, I recommend using some kind of real-time dialogue mod instead.
+Here I have a dilemma: in vanilla, a spell with 1s duration can be enough. So, to fix that, I recommend using some kind of real-time dialogue mod instead.
 ```
 Charm                           5                   Unchanged.
 ```
@@ -260,7 +259,7 @@ Absorb Health                   8 -> 12             Damage Health (6) + Restore 
 Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
-$${\color{orange}\*\*}$$ I decided to also include those effects, despite they are not being used by any craftable spell in the vanilla game.
+I decided to also include those effects, despite they are not being used by any craftable spell in the vanilla game.
 ```
 Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
 Absorb Skill                    2 -> 6              Drain Skill (2) + Fortify Skill (4)
@@ -421,18 +420,18 @@ Open                            6 -> 12             Spells are harder to cast.
 
 #### Scroll price
 ```
-sc_ondusisunhinging             73 -> 273           Available in stores.
+sc_ondusisunhinging             73gp -> 273gp       Available in stores.
 ```
 
 #### Scrolls & spells magnitude
 ```
-sc_ekashslocksplitter_en        100 -> 80           Available in random loot later in the game.
+sc_ekashslocksplitter_en        100pts -> 80pts     Available in random loot later in the game.
 
-open                                   20           Unchanged, unavailable in vanilla.
-ondusi's open door               50 -> 40
-strong open                      50 -> 60
-great open                       50 -> 80           Unavailable in vanilla.
-wild open                              1-100        Unchanged.
+open                                      20pts     Unchanged, unavailable in vanilla.
+ondusi's open door               50pts -> 40pts
+strong open                      50pts -> 60pts
+great open                       50pts -> 80pts     Unavailable in vanilla.
+wild open                                 1-100pts  Unchanged.
 ```
 
 #### How to open a 100-point lock
