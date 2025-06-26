@@ -12,7 +12,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 - Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
-- <s>Purist friendly -- Changes done here are carefully implemented as if they were in the game from the beginning.</s>
+- Purist friendly -- I'm trying not to make many arbitrary decisions. Most of the changes are multipliers or additions to existing values.
 - Math-driven -- Seriously, I'm doing serious calculations here.
 
 ------------------------------------------------------------
@@ -75,10 +75,14 @@ It's not a requirement but a reasonable limit.
   - Magic module revisited
 1.5
   - Magic module remastered
+1.6
+  - Trap costs readjusted 
+  - Potion module added
 ```
 
 * $${\color{orange}\*\*}$$ -- added or changed in version 1.4
 * $${\color{red}\*\*}$$ -- added or changed in version 1.5
+* $${\color{yellow}\*\*}$$ -- added or changed in version 1.6
 
 ------------------------------------------------------------
 
@@ -420,7 +424,7 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-Common trap costs didn't make any sense, so I readjusted them to give a better challenge. You can see average damage in the brackets.
+$${\color{yellow}\*\*}$$ Common trap costs didn't make any sense, so I readjusted them to give a better challenge.
 ```
 trap_fire00                      3 -> 10            [30]
 trap_frost00                     3 -> 15            [30]
@@ -446,19 +450,21 @@ trap_poison_killer              16 -> 100           [375]
 
 ## Items - Potions
 
+$${\color{yellow}\*\*}$$
+
 ```
-p_burden_b                      5pts/8s   -> 50pts/80s              Bargain Potion of Burden
-p_burden_c                      8pts/15s  -> 80pts/150s             Cheap Potion of Burden
-p_burden_s                      10pts/30s -> 100pts/300s            Standard Potion of Burden
-p_burden_q                      15pts/45s -> 150pts/450s            Quality Potion of Burden
-p_burden_e                      20pts/60s -> 200pts/600s            Exclusive Potion of Burden
+p_burden_b                      5pts/8s   -> 50pts/80s  
+p_burden_c                      8pts/15s  -> 80pts/150s 
+p_burden_s                      10pts/30s -> 100pts/300s
+p_burden_q                      15pts/45s -> 150pts/450s
+p_burden_e                      20pts/60s -> 200pts/600s
 
-p_feather_b                     5pts/8s   -> 50pts/80s              Bargain Potion of Feather
-p_feather_c                     8pts/15s  -> 80pts/150s             Cheap Potion of Feather
-p_feather_q                     15pts/45s -> 150pts/450s            Quality Potion of Feather
-p_feather_e                     20pts/60s -> 200pts/600s            Exclusive Potion of Feather
+p_feather_b                     5pts/8s   -> 50pts/80s  
+p_feather_c                     8pts/15s  -> 80pts/150s 
+p_feather_q                     15pts/45s -> 150pts/450s
+p_feather_e                     20pts/60s -> 200pts/600s
 
-p_detect_creatures_s            10pts/15s -> 100pts/150s            Potion of Detect Creatures
-p_detect_key_s                  10pts/15s -> 100pts/150s            Potion of Detect Key
-p_detect_enchantment_s          10pts/15s -> 100pts/150s            Potion of Detect Enchantments
+p_detect_creatures_s            10pts/15s -> 100pts/150s
+p_detect_key_s                  10pts/15s -> 100pts/150s
+p_detect_enchantment_s          10pts/15s -> 100pts/150s
 ```
