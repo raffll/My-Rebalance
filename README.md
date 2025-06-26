@@ -179,7 +179,7 @@ The same rule applies to Swift Swim. It's doing only one thing, so it should do 
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
-$${\color{red}\*1.5\*}$$ Jump and Slowfall are generally worse than Levitate.
+$${\color{red}\*1.5\*}$$ Jump and Slowfall are generally worse than Levitate. But using them together, they can be a cheaper alternative.
 ```
 Jump                            3 -> 1
 Slowfall                        3 -> 1
@@ -448,11 +448,10 @@ wild open                                1-100pts   Unchanged.
 ```
 
 #### _How to open a 100-point lock_
-__
-- Thief -- Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
-- Mage -- Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
-- Warrior -- Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
-__
+
+- _Thief -- Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
+- _Mage -- Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
+- _Warrior -- Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
 
 ------------------------------------------------------------
 
@@ -480,7 +479,7 @@ trap_shock_killer               5 -> 69             20-30pts/10s
 trap_poison_killer              16 -> 108           5-10pts/50s
 ```
 
-#### How to untrap a 100-point spell
-- Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
-- Mage -- Telekinesis.
-- Warrior -- Take it on the chin.
+#### _How to untrap a 100-point spell_
+- _Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes._
+- _Mage -- Telekinesis._
+- _Warrior -- Take it on the chin._
