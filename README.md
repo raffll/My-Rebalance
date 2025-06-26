@@ -351,7 +351,7 @@ p_detect_enchantment_s          10pts/15s -> 100pts/150s
 
 ## Magic - Spells & Scrolls
 
-$${\color{yellow}\*1.6\*}$$
+$${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive.
 
 ```
 armor eater                     10-30pts -> 100-300pts
@@ -378,7 +378,7 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 
 ## Crime
 
-You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. $${\color{yellow}\*1.6\*}$$ Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
+$${\color{yellow}\*1.6\*}$$ You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
 ```
 iCrimeKilling                   1000 -> 5000
 iCrimeAttack                    40 -> 200
@@ -458,7 +458,7 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                   0 -> -1             Trap spell cost is taken into account.
 ```
 
-Common trap costs didn't make any sense, so I readjusted them to give a better challenge. $${\color{yellow}\*1.6\*}$$ They are now auto-calculated from the new magic effect costs.
+$${\color{yellow}\*1.6\*}$$ Common trap costs didn't make any sense, so I readjusted them to give a better challenge. They are now auto-calculated from the new magic effect costs.
 ```
 trap_fire00                     3 -> 8              2-20pts/3s
 trap_frost00                    3 -> 9              2-20pts/3s
