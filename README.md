@@ -128,8 +128,8 @@ apparatus_sm_mortar_01          6000gp -> 30000gp
 apparatus_sm_retort_01          1000gp -> 5000gp
 ```
 
-#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
-- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
+__#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
+__- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
 
 ------------------------------------------------------------
 
