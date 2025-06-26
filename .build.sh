@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="Rebalanced Rebalance Redux"
+NAME="Remastered Rebalance Redux"
 
 if [ -e "$NAME.zip" ]; then
 	rm "$NAME.zip"
