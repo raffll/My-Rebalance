@@ -161,7 +161,7 @@ Demoralize Humanoid             Mysticism -> Illusion
 
 ------------------------------------------------------------
 
-#### Alteration
+### Alteration
 
 It's worth trying elemental shields now, for the fun of killing low-level creatures. Cost is not changed, as it does two things: resist the element and damage the opponent that hits you. But even now with 10x more damage, it's just a gimmick compared to real damage spells.
 ```
@@ -192,7 +192,7 @@ Shield                          2 -> 1
 
 ------------------------------------------------------------
 
-#### Destruction
+### Destruction
 
 Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
@@ -238,7 +238,7 @@ Drain Skill                     1 -> 2
 
 ------------------------------------------------------------
 
-#### Illusion
+### Illusion
 
 There was no point in using them instead of paralysis.
 ```
@@ -253,7 +253,7 @@ Charm                           5                   Unchanged.
 
 ------------------------------------------------------------
 
-#### Mysticism
+### Mysticism
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost should be higher. Furthermore, you can cast them on an area with multiple opponents or your minions to get massive health restoration.
 ```
@@ -282,7 +282,7 @@ Spell Absorption                10 -> 4
 
 ------------------------------------------------------------
 
-#### Restoration
+### Restoration
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 ```
