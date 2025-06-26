@@ -332,20 +332,20 @@ Sound                           100%/30s            100% to fail cast for 30s.
 $${\color{yellow}\*1.6\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
-p_burden_b                      5pts/8s -> 50pts/80s
-p_burden_c                      8pts/15s -> 80pts/150s
-p_burden_s                      10pts/30s -> 100pts/300s
-p_burden_q                      15pts/45s -> 150pts/450s
-p_burden_e                      20pts/60s -> 200pts/600s
-
-p_feather_b                     5pts/8s -> 50pts/80s
-p_feather_c                     8pts/15s -> 80pts/150s
-p_feather_q                     15pts/45s -> 150pts/450s
-p_feather_e                     20pts/60s -> 200pts/600s
-
-p_detect_creatures_s            10pts/15s -> 100pts/150s
-p_detect_key_s                  10pts/15s -> 100pts/150s
-p_detect_enchantment_s          10pts/15s -> 100pts/150s
+p_burden_b                      5pts/8s -> 50pts/80s         Bargain Potion of Burden
+p_burden_c                      8pts/15s -> 80pts/150s       Cheap Potion of Burden
+p_burden_s                      10pts/30s -> 100pts/300s     Standard Potion of Burden
+p_burden_q                      15pts/45s -> 150pts/450s     Quality Potion of Burden
+p_burden_e                      20pts/60s -> 200pts/600s     Exclusive Potion of Burden
+														     
+p_feather_b                     5pts/8s -> 50pts/80s         Bargain Potion of Feather
+p_feather_c                     8pts/15s -> 80pts/150s       Cheap Potion of Feather
+p_feather_q                     15pts/45s -> 150pts/450s     Quality Potion of Feather
+p_feather_e                     20pts/60s -> 200pts/600s     Exclusive Potion of Feather
+														     
+p_detect_creatures_s            10pts/15s -> 100pts/150s     Potion of Detect Creatures
+p_detect_key_s                  10pts/15s -> 100pts/150s     Potion of Detect Key
+p_detect_enchantment_s          10pts/15s -> 100pts/150s     Potion of Detect Enchantments
 ```
 
 ------------------------------------------------------------
