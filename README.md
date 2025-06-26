@@ -91,8 +91,8 @@ It's not a requirement but a reasonable limit.
 
 Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Security is based on Agility anyway.
 ```
-Armorer                         Strength -> Endurance
-Security                        Intelligence -> Agility
+Armorer                            Strength -> Endurance
+Security                           Intelligence -> Agility
 ```
 
 ------------------------------------------------------------
@@ -101,10 +101,10 @@ Security                        Intelligence -> Agility
 
 Just a 25% speed boost for PC, NPCs, and creatures.
 ```
-fMinWalkSpeed                   100 -> 125
-fMaxWalkSpeed                   200 -> 250
-fMinWalkSpeedCreature           5 -> 6.25
-fMaxWalkSpeedCreature           300 -> 375
+fMinWalkSpeed                      100 -> 125
+fMaxWalkSpeed                      200 -> 250
+fMinWalkSpeedCreature              5 -> 6.25
+fMaxWalkSpeedCreature              300 -> 375
 ```
 
 ------------------------------------------------------------
@@ -117,15 +117,15 @@ Another problem is that you can successfully create excellent Restore Fatigue po
 
 So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment, and buyable potions will be useful much longer.
 ```
-fPotionStrengthMult             0.5 -> 0.25         2x smaller magnitude, duration and price.
+fPotionStrengthMult                0.5 -> 0.25         2x smaller magnitude, duration and price.
 ```
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
 ```
-apparatus_sm_alembic_01         1600gp -> 8000gp
-apparatus_sm_calcinator_01      3200gp -> 16000gp
-apparatus_sm_mortar_01          6000gp -> 30000gp
-apparatus_sm_retort_01          1000gp -> 5000gp
+apparatus_sm_alembic_01            1600gp -> 8000gp
+apparatus_sm_calcinator_01         3200gp -> 16000gp
+apparatus_sm_mortar_01             6000gp -> 30000gp
+apparatus_sm_retort_01             1000gp -> 5000gp
 ```
 
 #### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
@@ -140,9 +140,9 @@ This is the worst skill in the game. Self-made enchantments are almost impossibl
 
 Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter or thief, you have to do better resource management or just buy the same item again.
 ```
-sMagicInsufficientCharge                            Removed annoing message.
-fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
-fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
+sMagicInsufficientCharge                               Removed annoing message.
+fMagicItemRechargePerSecond        0.05 -> 0           Disabled idle recharging.
+fEnchantmentChanceMult             3 -> 0.6            5x easier self enchant.
 ```
 
 #### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
@@ -155,8 +155,8 @@ fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 
 Fixes.
 ```
-sEffectSlowFall                 SlowFall -> Slowfall
-Demoralize Humanoid             Mysticism -> Illusion
+sEffectSlowFall                    SlowFall -> Slowfall
+Demoralize Humanoid                Mysticism -> Illusion
 ```
 
 #### _How to stop a mage using a 120-cost spell_
@@ -166,27 +166,27 @@ Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
 
 - _Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more._
 ```
-Damage Intelligence             2pts/50s            Permanent drop 150 Magicka over 50s.
-Damage Magicka                  4pts/100s           Permanent drop 400 Magicka over 100s.
+Damage Intelligence                2pts/50s            Permanent drop 150 Magicka over 50s.
+Damage Magicka                     4pts/100s           Permanent drop 400 Magicka over 100s.
 
 or
 
-Damage Intelligence             50pts/1s            Permanent drop 75 Magicka.
-Damage Magicka                  100pts/3s           Permanent drop 300 Magicka over 3s.
+Damage Intelligence                50pts/1s            Permanent drop 75 Magicka.
+Damage Magicka                     100pts/3s           Permanent drop 300 Magicka over 3s.
 ```
 
 - _Drain Intelligence is good if you don't have time or you're not skilled in Illusion._
 - _Drain Magicka is the worst, even after adjustment._
 ```
-Drain Intelligence              100pts/24s          Drop 150 Magicka for 24s.
-Drain Magicka                   100pts/32s          Drop 100 Magicka for 32s.
+Drain Intelligence                 100pts/24s          Drop 150 Magicka for 24s.
+Drain Magicka                      100pts/32s          Drop 100 Magicka for 32s.
 ```
 
 - _Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence._
 - _Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka._
 ```
-Silence                         120s                Can't cast any spells for 120s.
-Sound                           100%/30s            100% to fail cast for 30s.
+Silence                            120s                Can't cast any spells for 120s.
+Sound                              100%/30s            100% to fail cast for 30s.
 ```
 
 ------------------------------------------------------------
@@ -195,29 +195,29 @@ Sound                           100%/30s            100% to fail cast for 30s.
 
 It's worth trying elemental shields now, for the fun of killing low-level creatures. Cost is not changed, as it does two things: resist the element and damage the opponent that hits you. But even now with 10x more damage, it's just a gimmick compared to real damage spells.
 ```
-fElementalShieldMult            0.1 -> 1            1 point of damage for 1 point of magnitude.
+fElementalShieldMult               0.1 -> 1            1 point of damage for 1 point of magnitude.
 ```
 
 Those weren't useful previously. Feather cost was the same as Fortify Strength, resulting in being 5x weaker in encumbrance gain. However, reducing encumbrance is more speed efficient than adding extra strength, but I decided to keep them that low anyway because the custom spell magnitude cap is set to 100, and those effects never will be fully useful without further game changes. Except in alchemy, where potions with those effects will be much stronger.
 ```
-Feather                         1 -> 0.1            2x encumbrance gain than Fortify Strength.
-Burden                          1 -> 0.1            2x encumbrance lost than Drain Strength.
+Feather                            1 -> 0.1            2x encumbrance gain than Fortify Strength.
+Burden                             1 -> 0.1            2x encumbrance lost than Drain Strength.
 ```
 
 The same rule applies to Swift Swim. It's doing only one thing, so it should do it better than Fortify Speed.
 ```
-Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
+Swift Swim                         2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
 $${\color{red}\*1.5\*}$$ Jump and Slowfall are generally worse than Levitate. But using them together, they can be a cheaper alternative.
 ```
-Jump                            3 -> 1
-Slowfall                        3 -> 1
+Jump                               3 -> 1
+Slowfall                           3 -> 1
 ```
 
 $${\color{red}\*1.5\*}$$ Shield even with this adjustment is worse than Sanctuary.
 ```
-Shield                          2 -> 1
+Shield                             2 -> 1
 ```
 
 ------------------------------------------------------------
@@ -226,44 +226,44 @@ Shield                          2 -> 1
 
 Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
 ```
-Fire Damage                          5.00           Unchanged.
-Frost Damage                    5 -> 5.25
-Shock Damage                    7 -> 5.50
-Poison                          9 -> 5.75
-Damage Health                   8 -> 6.00
+Fire Damage                             5.00           Unchanged.
+Frost Damage                       5 -> 5.25
+Shock Damage                       7 -> 5.50
+Poison                             9 -> 5.75
+Damage Health                      8 -> 6.00
 ```
 
 Damage Magicka has been lowered to be on par with Damage Health.
 ```
-Damage Magicka                  8 -> 6
+Damage Magicka                     8 -> 6
 ```
 
 Damage Fatigue is almost useless or very powerful, depending on if you are using the "Uncapped Damage Fatigue" setting. So I leave it untouched.
 ```
-Damage Fatigue                       4              Unchanged.
+Damage Fatigue                          4              Unchanged.
 ```
 
 Damage Attribute was so powerful that it outperforms almost every other "utility" spell. For 40 Magicka, you could drop the target's Strength or Intelligence to 0, leaving the opponent without the ability to walk, fight, or cast spells.
 ```
-Damage Attribute                8 -> 24
+Damage Attribute                   8 -> 24
 ```
 
 Disintegrate would be better as an offensive skill in other schools; in Destruction, there is no point in using it, other than for stealing armor, and now it's easier. Low-tier armor or weapons have durability around 300-500. With those adjustments, they can be destroyed by a 25-cost spell. It's a equivalent of 100pts Fire Damage.
 ```
-Disintegrate Armor              6 -> 1
-Disintegrate Weapon             6 -> 1
+Disintegrate Armor                 6 -> 1
+Disintegrate Weapon                6 -> 1
 ```
 
 Drain spells have been lowered to be at the same cost as fortify spells. The reason behind this is, once again, the maximum magnitude of 100 for those spells, so they are mostly useless on higher levels. Also, Drain Magicka was 4x more expensive than Drain Intelligence. Now it's 25% cheaper. The side effect of this is that many potion ingredients have them as a negative effect, and now they will be stronger, which is a good thing. Drain Health is unchanged because it can be too strong on lower levels.
 ```
-Drain Health                         4.00           Unchanged.
-Drain Magicka                   4 -> 0.75
-Drain Fatigue                   2 -> 0.50
+Drain Health                            4.00           Unchanged.
+Drain Magicka                      4 -> 0.75
+Drain Fatigue                      2 -> 0.50
 ```
 
 Drain Skill is now more expensive because it can be overpowered, the same way as Fortify Skill. Compared to Drain Attribute, it has a lot bigger impact, and at a cost of 1, it was just as good in combat as Blind, but more versatile.
 ```
-Drain Skill                     1 -> 2
+Drain Skill                        1 -> 2
 ```
 
 ------------------------------------------------------------
@@ -272,13 +272,13 @@ Drain Skill                     1 -> 2
 
 There was no point in using them instead of paralysis.
 ```
-Silence                         40 -> 20            2x cheaper than Paralyze.
-Sound                           3 -> 0.8            2x cheaper at 25% than Paralyze.
+Silence                            40 -> 20            2x cheaper than Paralyze.
+Sound                              3 -> 0.8            2x cheaper at 25% than Paralyze.
 ```
 
 Here I have a dilemma: in vanilla, a spell with 1s duration can be enough. So, to fix that, I recommend using some kind of real-time dialogue mod instead.
 ```
-Charm                           5                   Unchanged.
+Charm                              5                   Unchanged.
 ```
 
 ------------------------------------------------------------
@@ -287,27 +287,27 @@ Charm                           5                   Unchanged.
 
 Absorb spells were overpowered at the same cost as damage spells. A single effect has an advantage over two effects combined, so the cost should be higher. Furthermore, you can cast them on an area with multiple opponents or your minions to get massive health restoration.
 ```
-Absorb Health                   8 -> 12             Damage Health (6) + Restore Health (5) = 11
-Absorb Fatigue                  4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
+Absorb Health                      8 -> 12             Damage Health (6) + Restore Health (5) = 11
+Absorb Fatigue                     4 -> 6              Damage Fatigue (4) + Restore Fatigue (1) = 5
 ```
 
 I decided to also include those effects, despite they are not being used by any craftable spell in the vanilla game.
 ```
-Absorb Magicka                  8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
-Absorb Skill                    2 -> 6              Drain Skill (2) + Fortify Skill (4)
+Absorb Magicka                     8 -> 12             Damage Magicka (6) + Restore Magicka (5) = 11
+Absorb Skill                       2 -> 6              Drain Skill (2) + Fortify Skill (4)
 ```
 
 Detect spells were just too expensive.
 ```
-Detect Animal                   0.75 -> 0.15
-Detect Enchantment              1 -> 0.2
-Detect Key                      1 -> 0.2
+Detect Animal                      0.75 -> 0.15
+Detect Enchantment                 1 -> 0.2
+Detect Key                         1 -> 0.2
 ```
 
 $${\color{red}\*1.5\*}$$ Those are just more powerful variants of resist spells. Too expensive on lower levels and not very useful anymore on higher levels.
 ```
-Reflect                         10 -> 4
-Spell Absorption                10 -> 4
+Reflect                            10 -> 4
+Spell Absorption                   10 -> 4
 ```
 
 ------------------------------------------------------------
@@ -316,13 +316,13 @@ Spell Absorption                10 -> 4
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Fortifying skill over 50 should be available only for the highest-level characters.
 ```
-Fortify Magicka                 1 -> 0.75           25% cheaper than Fortify Intelligence.
-Fortify Skill                   1 -> 4
+Fortify Magicka                    1 -> 0.75           25% cheaper than Fortify Intelligence.
+Fortify Skill                      1 -> 4
 ```
 
 This looks like a typo to me, compared to other resistances.
 ```
-Resist Paralysis                0.2 -> 2
+Resist Paralysis                   0.2 -> 2
 ```
 
 ------------------------------------------------------------
@@ -332,20 +332,20 @@ Resist Paralysis                0.2 -> 2
 $${\color{yellow}\*1.6\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
-Bargain Potion of Burden          5pts/8s -> 50pts/80s              
-Cheap Potion of Burden          8pts/15s -> 80pts/150s            
+Bargain Potion of Burden           5pts/8s -> 50pts/80s              
+Cheap Potion of Burden             8pts/15s -> 80pts/150s            
 Standard Potion of Burden          10pts/30s -> 100pts/300s          
-Quality Potion of Burden          15pts/45s -> 150pts/450s          
-Exclusive Potion of Burden          20pts/60s -> 200pts/600s          
-									      
-Bargain Potion of Feather       5pts/8s -> 50pts/80s              
-Cheap Potion of Feather         8pts/15s -> 80pts/150s            
-Quality Potion of Feather       15pts/45s -> 150pts/450s          
-Exclusive Potion of Feather     20pts/60s -> 200pts/600s          
-									      
-Potion of Detect Creatures      10pts/15s -> 100pts/150s          
-Potion of Detect Key            10pts/15s -> 100pts/150s          
-Potion of Detect Enchantments   10pts/15s -> 100pts/150s          
+Quality Potion of Burden           15pts/45s -> 150pts/450s          
+Exclusive Potion of Burden         20pts/60s -> 200pts/600s          
+								   	      
+Bargain Potion of Feather          5pts/8s -> 50pts/80s              
+Cheap Potion of Feather            8pts/15s -> 80pts/150s            
+Quality Potion of Feather          15pts/45s -> 150pts/450s          
+Exclusive Potion of Feather        20pts/60s -> 200pts/600s          
+								   	      
+Potion of Detect Creatures         10pts/15s -> 100pts/150s          
+Potion of Detect Key               10pts/15s -> 100pts/150s          
+Potion of Detect Enchantments      10pts/15s -> 100pts/150s          
 ```
 
 ------------------------------------------------------------
@@ -355,8 +355,8 @@ Potion of Detect Enchantments   10pts/15s -> 100pts/150s
 $${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs.
 
 ```
-armor eater                     10-30pts -> 100-300pts
-weapon eater                    6-25pts  -> 60-250pts
+armor eater                        10-30pts -> 100-300pts
+weapon eater                       6-25pts  -> 60-250pts
 ```
 
 ------------------------------------------------------------
@@ -367,12 +367,12 @@ The economy is broken because there is an unlimited supply of money in the game,
 
 Additionally, it will force you to invest in Speechcraft and Mercantile to get better prices. Another side effect of this is you have more time to get back money you already spent on enchantments or training if this person also offers to buy things.
 ```
-fBarterGoldResetDelay           24 -> 720           30 days to reset merchants gold.
+fBarterGoldResetDelay              24 -> 720           30 days to reset merchants gold.
 ```
 
 The Mages Guild's teleportation price is increased. As an instant and modern style of transportation, it shouldn't be lower than other conventional travel options.
 ```
-fMagesGuildTravel               10 -> 100           10x more expensive.
+fMagesGuildTravel                  10 -> 100           10x more expensive.
 ```
 
 ------------------------------------------------------------
@@ -383,22 +383,22 @@ You probably prefer to load your previous save game instead of accepting the pun
 
 $${\color{yellow}\*1.6\*}$$ Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
 ```
-iCrimeKilling                   1000 -> 5000
-iCrimeAttack                    40 -> 200
-iCrimePickPocket                25 -> 100
-iCrimeTresspass                 5 -> 25
-
-iDaysinPrisonMod                100 -> 500          Days in prison will be the same as in vanilla.
+iCrimeKilling                      1000 -> 5000
+iCrimeAttack                       40 -> 200
+iCrimePickPocket                   25 -> 100
+iCrimeTresspass                    5 -> 25
+								   
+iDaysinPrisonMod                   100 -> 500          Days in prison will be the same as in vanilla.
 ```
 
 The crime threshold lowered, which means that the guard will be chasing you after one attack.
 ```
-iCrimeThreshold                 1000 -> 200
+iCrimeThreshold                    1000 -> 200
 ```
 
 The death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
 ```
-Death Warrant                   5000 -> 5201        You can kill only one person, instead of 4.
+Death Warrant                      5000 -> 5201        You can kill only one person, instead of 4.
 ```
 
 ------------------------------------------------------------
@@ -407,12 +407,12 @@ Death Warrant                   5000 -> 5201        You can kill only one person
 
 It's a stat game between you and NPC, but in vanilla your max chance was only 56% regardless of stats, because the cap was set to 75% and the check is done twice, on picking an item and on closing the pickpocket window.
 ```
-iPickMaxChance                  75 -> 95            5% chance of being caught anyway.
+iPickMaxChance                     75 -> 95            5% chance of being caught anyway.
 ```
 
 It's not even realistic to take item price into account, so I disabled that requirement.
 ```
-fPickPocketMod                  0.3 -> 0            Any item available to steal.
+fPickPocketMod                     0.3 -> 0            Any item available to steal.
 ```
 
 ------------------------------------------------------------
@@ -423,12 +423,12 @@ The main goal here is to make Security useful on higher skill levels and, additi
 
 The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones. For warriors, scrolls still exist, but they are nerfed or have the price increased because they are widely available.
 ```
-fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
+fPickLockMult                      -1 -> -1.25         Locks are harder to unlock.
 ```
 
 #### Cost
 ```
-Open                            6 -> 12             Spells are harder to cast.
+Open                               6 -> 12             Spells are harder to cast.
 ```
 
 #### Price
