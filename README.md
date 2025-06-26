@@ -82,7 +82,7 @@ It's not a requirement but a reasonable limit.
   - Spell module added
 ```
 
-* $${\color{red}\*\*}$$ -- added or changed in version 1.5
+* $${\color{red}\*1.5\*}$$ -- added or changed in version 1.5
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
 
 ------------------------------------------------------------
@@ -178,13 +178,13 @@ The same rule applies to Swift Swim. It's doing only one thing, so it should do 
 Swift Swim                      2 -> 0.5            2x faster swim than Fortify Speed.
 ```
 
-$${\color{red}\*\*}$$ Jump and Slowfall are generally worse than Levitate.
+$${\color{red}\*1.5\*}$$ Jump and Slowfall are generally worse than Levitate.
 ```
 Jump                            3 -> 1
 Slowfall                        3 -> 1
 ```
 
-$${\color{red}\*\*}$$ Shield even with this adjustment is worse than Sanctuary.
+$${\color{red}\*1.5\*}$$ Shield even with this adjustment is worse than Sanctuary.
 ```
 Shield                          2 -> 1
 ```
@@ -273,7 +273,7 @@ Detect Enchantment              1 -> 0.2
 Detect Key                      1 -> 0.2
 ```
 
-$${\color{red}\*\*}$$ Those are just more powerful variants of resist spells. Too expensive on lower levels and not very useful anymore on higher levels.
+$${\color{red}\*1.5\*}$$ Those are just more powerful variants of resist spells. Too expensive on lower levels and not very useful anymore on higher levels.
 ```
 Reflect                         10 -> 4
 Spell Absorption                10 -> 4
@@ -328,7 +328,7 @@ Sound                           100%/30s            100% to fail cast for 30s.
 
 ## Magic - Potions
 
-$${\color{yellow}\*\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now 10x stronger.
+$${\color{yellow}\*1.6\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
 p_burden_b                      5pts/8s -> 50pts/80s
@@ -351,7 +351,7 @@ p_detect_enchantment_s          10pts/15s -> 100pts/150s
 
 ## Magic - Spells & Scrolls
 
-$${\color{yellow}\*\*}$$
+$${\color{yellow}\*1.6\*}$$
 
 ```
 armor eater                     10-30pts -> 100-300pts
@@ -378,7 +378,7 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 
 ## Crime
 
-You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
+You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. $${\color{yellow}\*1.6\*}$$ Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
 ```
 iCrimeKilling                   1000 -> 5000
 iCrimeAttack                    40 -> 200
@@ -397,8 +397,6 @@ The death penalty will be set after one killing, one attack, and any other crime
 ```
 Death Warrant                   5000 -> 5201        You can kill only one person, instead of 4.
 ```
-
-$${\color{yellow}\*\*}$$ Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
 
 ------------------------------------------------------------
 
@@ -460,7 +458,7 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                   0 -> -1             Trap spell cost is taken into account.
 ```
 
-$${\color{yellow}\*\*}$$ Common trap costs didn't make any sense, so I readjusted them to give a better challenge. They are now auto-calculated from the new magic effect costs.
+Common trap costs didn't make any sense, so I readjusted them to give a better challenge. $${\color{yellow}\*1.6\*}$$ They are now auto-calculated from the new magic effect costs.
 ```
 trap_fire00                     3 -> 8              2-20pts/3s
 trap_frost00                    3 -> 9              2-20pts/3s
