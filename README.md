@@ -122,10 +122,10 @@ fPotionStrengthMult                0.5 -> 0.25         2x smaller magnitude, dur
 
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
 ```
-apparatus_sm_alembic_01            1600gp -> 8000gp
-apparatus_sm_calcinator_01         3200gp -> 16000gp
-apparatus_sm_mortar_01             6000gp -> 30000gp
-apparatus_sm_retort_01             1000gp -> 5000gp
+Secret Master's Alembic            1600gp -> 8000gp
+Secret Master's Calcinator         3200gp -> 16000gp
+Secret Master's Mortar & Pestle    6000gp -> 30000gp
+Secret Master's Retort             1000gp -> 5000gp
 ```
 
 #### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
@@ -164,13 +164,13 @@ Demoralize Humanoid                Mysticism -> Illusion
 Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
 ```
 
-- _Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more._
+- _Damage spells are most powerful but need time to kick in._
 ```
 Damage Intelligence                2pts/50s            Permanent drop 150 Magicka over 50s
 Damage Magicka                     4pts/100s           Permanent drop 400 Magicka over 100s
-
-or
-
+```
+- _Otherwise, they will cost 2x more._
+```
 Damage Intelligence                50pts/1s            Permanent drop 75 Magicka
 Damage Magicka                     100pts/3s           Permanent drop 300 Magicka over 3s
 ```
@@ -355,8 +355,8 @@ Potion of Detect Enchantments      10pts/15s -> 100pts/150s
 $${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs.
 
 ```
-armor eater                        10-30pts -> 100-300pts
-weapon eater                       6-25pts  -> 60-250pts
+Armor Eater                        10-30pts -> 100-300pts
+Weapon Eater                       6-25pts -> 60-250pts
 ```
 
 ------------------------------------------------------------
@@ -426,21 +426,18 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                      -1 -> -1.25         Locks are harder to unlock
 ```
 
-#### Spell effect base cost
+#### Spell effect
 ```
 Open                               6 -> 12             Spells are harder to cast
 ```
 
-#### Scroll price
+#### Scrolls
 ```
 Scroll of Ondusi's Unhinging       73gp -> 273gp       Available in stores
-```
-
-#### Scroll magnitude
-```
 Scroll of Ekash's Lock Splitter    100pts -> 80pts     Available in random loot later in the game
 ```
-#### Spell magnitude
+
+#### Spells
 ```
 Open                                        20pts      Unchanged, unavailable in vanilla
 Ondusi's Open Door                 50pts -> 40pts
