@@ -139,7 +139,7 @@ This is the worst skill in the game. Self-made enchantments are almost impossibl
 
 Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter or thief, you have to do better resource management or just buy the same item again.
 ```
-sMagicInsufficientCharge           "Item does not have enough charge." -> Removed
+sMagicInsufficientCharge           "Item does not have enough charge." -> Removed message
 fMagicItemRechargePerSecond        0.05 -> 0           Disabled idle recharging
 fEnchantmentChanceMult             3 -> 0.6            5x easier self enchant
 ```
