@@ -159,6 +159,34 @@ sEffectSlowFall                 SlowFall -> Slowfall
 Demoralize Humanoid             Mysticism -> Illusion
 ```
 
+#### _How to stop a mage using a 120-cost spell_
+```
+Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
+```
+
+_Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more._
+```
+Damage Intelligence             2pts/50s            Permanent drop 150 Magicka over 50s.
+Damage Magicka                  4pts/100s           Permanent drop 400 Magicka over 100s.
+
+or
+
+Damage Intelligence             50pts/1s            Permanent drop 75 Magicka.
+Damage Magicka                  100pts/3s           Permanent drop 300 Magicka over 3s.
+```
+
+_Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment._
+```
+Drain Intelligence              100pts/24s          Drop 150 Magicka for 24s.
+Drain Magicka                   100pts/32s          Drop 100 Magicka for 32s.
+```
+
+_Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka._
+```
+Silence                         120s                Can't cast any spells for 120s.
+Sound                           100%/30s            100% to fail cast for 30s.
+```
+
 ------------------------------------------------------------
 
 ### Alteration
@@ -293,36 +321,6 @@ Fortify Skill                   1 -> 4
 This looks like a typo to me, compared to other resistances.
 ```
 Resist Paralysis                0.2 -> 2
-```
-
-------------------------------------------------------------
-
-#### _How to stop a mage using a 120-cost spell_
-```
-Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
-```
-
-_Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more._
-```
-Damage Intelligence             2pts/50s            Permanent drop 150 Magicka over 50s.
-Damage Magicka                  4pts/100s           Permanent drop 400 Magicka over 100s.
-
-or
-
-Damage Intelligence             50pts/1s            Permanent drop 75 Magicka.
-Damage Magicka                  100pts/3s           Permanent drop 300 Magicka over 3s.
-```
-
-_Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment._
-```
-Drain Intelligence              100pts/24s          Drop 150 Magicka for 24s.
-Drain Magicka                   100pts/32s          Drop 100 Magicka for 32s.
-```
-
-_Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka._
-```
-Silence                         120s                Can't cast any spells for 120s.
-Sound                           100%/30s            100% to fail cast for 30s.
 ```
 
 ------------------------------------------------------------
