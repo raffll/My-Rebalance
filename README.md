@@ -159,9 +159,7 @@ sEffectSlowFall                    SlowFall -> Slowfall
 Demoralize Humanoid                Mysticism -> Illusion
 ```
 
-#### _How to stop a mage using a 120-cost spell_
-
-_Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka_
+#### _How to stop a mage using a 120-cost spell (Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)_
 
 - _Damage spells are most powerful but need time to kick in._
 ```
