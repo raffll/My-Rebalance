@@ -462,7 +462,9 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                   0 -> -1             Trap spell cost is taken into account.
 ```
 
-$${\color{yellow}\*1.6\*}$$ Common trap costs didn't make any sense, so I readjusted them to give a better challenge. They are now auto-calculated from the new magic effect costs.
+Common trap costs didn't make any sense, so I readjusted them to give a better challenge.
+
+$${\color{yellow}\*1.6\*}$$ They are now auto-calculated from the new magic effect costs.
 ```
 trap_fire00                     3 -> 8              2-20pts/3s
 trap_frost00                    3 -> 9              2-20pts/3s
