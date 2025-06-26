@@ -419,30 +419,28 @@ fPickPocketMod                     0.3 -> 0            Any item available to ste
 ## Lockpicking
 
 The main goal here is to make Security useful on higher skill levels and, additionally, to be better than Alteration. Previously there was no benefit from raising Security over 50.
-
-The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls. Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones. For warriors, scrolls still exist, but they are nerfed or have the price increased because they are widely available.
 ```
 fPickLockMult                      -1 -> -1.25         Locks are harder to unlock
 ```
 
-#### Spell Effect
+The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls.
 ```
 Open                               6 -> 12             Spells are harder to cast
 ```
 
-#### Scrolls
-```
-Scroll of Ondusi's Unhinging       73gp -> 273gp       Available in stores
-Scroll of Ekash's Lock Splitter    100pts -> 80pts     Available in random loot later in the game
-```
-
-#### Spells
+Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones. 
 ```
 Open                                        20pts      Unchanged, unavailable in vanilla
 Ondusi's Open Door                 50pts -> 40pts
 Strong Open                        50pts -> 60pts
 Great Open                         50pts -> 80pts      Unavailable in vanilla
 Wild Open                                   1-100pts   Unchanged
+```
+
+For warriors, scrolls still exist, but they are nerfed or have the price increased because they are widely available.
+```
+Scroll of Ondusi's Unhinging       73gp -> 273gp       Available in stores
+Scroll of Ekash's Lock Splitter    100pts -> 80pts     Available in random loot later in the game
 ```
 
 #### _How to open a 100-point lock_
