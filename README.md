@@ -160,9 +160,8 @@ Demoralize Humanoid                Mysticism -> Illusion
 ```
 
 #### _How to stop a mage using a 120-cost spell_
-```
+
 Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
-```
 
 - _Damage spells are most powerful but need time to kick in._
 ```
