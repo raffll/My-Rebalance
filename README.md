@@ -426,21 +426,21 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                      -1 -> -1.25         Locks are harder to unlock
 ```
 
-#### Spell Effect Base Cost
+#### Spell effect base cost
 ```
 Open                               6 -> 12             Spells are harder to cast
 ```
 
-#### Scroll Price
+#### Scroll price
 ```
 Scroll of Ondusi's Unhinging       73gp -> 273gp       Available in stores
 ```
 
-#### Scroll Magnitude
+#### Scroll magnitude
 ```
 Scroll of Ekash's Lock Splitter    100pts -> 80pts     Available in random loot later in the game
 ```
-#### Spell Magnitude
+#### Spell magnitude
 ```
 Open                                        20pts      Unchanged, unavailable in vanilla
 Ondusi's Open Door                 50pts -> 40pts
