@@ -332,20 +332,20 @@ Resist Paralysis                0.2 -> 2
 $${\color{yellow}\*1.6\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
-p_burden_b                      5pts/8s -> 50pts/80s         Bargain Potion of Burden
-p_burden_c                      8pts/15s -> 80pts/150s       Cheap Potion of Burden
-p_burden_s                      10pts/30s -> 100pts/300s     Standard Potion of Burden
-p_burden_q                      15pts/45s -> 150pts/450s     Quality Potion of Burden
-p_burden_e                      20pts/60s -> 200pts/600s     Exclusive Potion of Burden
-
-p_feather_b                     5pts/8s -> 50pts/80s         Bargain Potion of Feather
-p_feather_c                     8pts/15s -> 80pts/150s       Cheap Potion of Feather
-p_feather_q                     15pts/45s -> 150pts/450s     Quality Potion of Feather
-p_feather_e                     20pts/60s -> 200pts/600s     Exclusive Potion of Feather
-
-p_detect_creatures_s            10pts/15s -> 100pts/150s     Potion of Detect Creatures
-p_detect_key_s                  10pts/15s -> 100pts/150s     Potion of Detect Key
-p_detect_enchantment_s          10pts/15s -> 100pts/150s     Potion of Detect Enchantments
+p_burden_b                      5pts/8s -> 50pts/80s              Bargain Potion of Burden
+p_burden_c                      8pts/15s -> 80pts/150s            Cheap Potion of Burden
+p_burden_s                      10pts/30s -> 100pts/300s          Standard Potion of Burden
+p_burden_q                      15pts/45s -> 150pts/450s          Quality Potion of Burden
+p_burden_e                      20pts/60s -> 200pts/600s          Exclusive Potion of Burden
+															      
+p_feather_b                     5pts/8s -> 50pts/80s              Bargain Potion of Feather
+p_feather_c                     8pts/15s -> 80pts/150s            Cheap Potion of Feather
+p_feather_q                     15pts/45s -> 150pts/450s          Quality Potion of Feather
+p_feather_e                     20pts/60s -> 200pts/600s          Exclusive Potion of Feather
+															      
+p_detect_creatures_s            10pts/15s -> 100pts/150s          Potion of Detect Creatures
+p_detect_key_s                  10pts/15s -> 100pts/150s          Potion of Detect Key
+p_detect_enchantment_s          10pts/15s -> 100pts/150s          Potion of Detect Enchantments
 ```
 
 ------------------------------------------------------------
@@ -449,9 +449,9 @@ wild open                                1-100pts   Unchanged.
 
 #### _How to open a 100-point lock_
 
-- _Thief -- Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
-- _Mage -- Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
-- _Warrior -- Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
+- _Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
+- _Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
+- _Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
 
 ------------------------------------------------------------
 
@@ -482,6 +482,6 @@ trap_poison_killer              16 -> 108           5-10pts/50s
 ```
 
 #### _How to untrap a 100-point spell_
-- _Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes._
-- _Mage -- Telekinesis._
-- _Warrior -- Take it on the chin._
+- _Thief - Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes._
+- _Mage - Telekinesis._
+- _Warrior - Take it on the chin._
