@@ -425,7 +425,7 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 fPickLockMult                      -1 -> -1.25         Locks are harder to unlock
 ```
 
-#### Spell effect
+#### Spell Effect
 ```
 Open                               6 -> 12             Spells are harder to cast
 ```
