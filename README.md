@@ -79,6 +79,7 @@ It's not a requirement but a reasonable limit.
   - Name reinvented
   - Trap costs readjusted
   - Potion module added
+  - Spell module added
 ```
 
 * $${\color{red}\*\*}$$ -- added or changed in version 1.5
@@ -330,20 +331,31 @@ Sound                           100%/30s            100% to fail cast for 30s.
 $${\color{yellow}\*\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
-p_burden_b                      5pts/8s   -> 50pts/80s
-p_burden_c                      8pts/15s  -> 80pts/150s
+p_burden_b                      5pts/8s -> 50pts/80s
+p_burden_c                      8pts/15s -> 80pts/150s
 p_burden_s                      10pts/30s -> 100pts/300s
 p_burden_q                      15pts/45s -> 150pts/450s
 p_burden_e                      20pts/60s -> 200pts/600s
 
-p_feather_b                     5pts/8s   -> 50pts/80s
-p_feather_c                     8pts/15s  -> 80pts/150s
+p_feather_b                     5pts/8s -> 50pts/80s
+p_feather_c                     8pts/15s -> 80pts/150s
 p_feather_q                     15pts/45s -> 150pts/450s
 p_feather_e                     20pts/60s -> 200pts/600s
 
 p_detect_creatures_s            10pts/15s -> 100pts/150s
 p_detect_key_s                  10pts/15s -> 100pts/150s
 p_detect_enchantment_s          10pts/15s -> 100pts/150s
+```
+
+------------------------------------------------------------
+
+## Magic - Spells & Scrolls
+
+$${\color{yellow}\*\*}$$
+
+```
+armor eater                     10-30pts -> 100-300pts
+weapon eater                    6-25pts  -> 60-250pts
 ```
 
 ------------------------------------------------------------
@@ -369,11 +381,11 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
 ```
 iCrimeKilling                   1000 -> 5000
-iCrimeAttack                      40 -> 200
-iCrimePickPocket                  25 -> 100
-iCrimeTresspass                    5 -> 25
+iCrimeAttack                    40 -> 200
+iCrimePickPocket                25 -> 100
+iCrimeTresspass                 5 -> 25
 
-iDaysinPrisonMod                 100 -> 500         Days in prison will be the same as in vanilla.
+iDaysinPrisonMod                100 -> 500          Days in prison will be the same as in vanilla.
 ```
 
 The crime threshold lowered, which means that the guard will be chasing you after one attack.
@@ -418,20 +430,23 @@ fPickLockMult                   -1 -> -1.25         Locks are harder to unlock.
 Open                            6 -> 12             Spells are harder to cast.
 ```
 
-#### Scroll price
+#### Scrolls price
 ```
 sc_ondusisunhinging             73gp -> 273gp       Available in stores.
 ```
 
-#### Scrolls & spells magnitude
+#### Scrolls magnitude
 ```
 sc_ekashslocksplitter_en        100pts -> 80pts     Available in random loot later in the game.
+```
 
-open                                      20pts     Unchanged, unavailable in vanilla.
-ondusi's open door               50pts -> 40pts
-strong open                      50pts -> 60pts
-great open                       50pts -> 80pts     Unavailable in vanilla.
-wild open                                 1-100pts  Unchanged.
+#### Spells magnitude
+```
+open                                     20pts      Unchanged, unavailable in vanilla.
+ondusi's open door              50pts -> 40pts
+strong open                     50pts -> 60pts
+great open                      50pts -> 80pts      Unavailable in vanilla.
+wild open                                1-100pts   Unchanged.
 ```
 
 #### How to open a 100-point lock
@@ -445,23 +460,23 @@ wild open                                 1-100pts  Unchanged.
 
 Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level.
 ```
-fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
+fTrapCostMult                   0 -> -1             Trap spell cost is taken into account.
 ```
 
 $${\color{yellow}\*\*}$$ Common trap costs didn't make any sense, so I readjusted them to give a better challenge. They are now auto-calculated from the new magic effect costs.
 ```
-trap_fire00                      3 -> 8             2-20pts/3s
-trap_frost00                     3 -> 9             2-20pts/3s
-trap_shock00                     5 -> 9             2-20pts/3s
-trap_health00                    8 -> 10            2-20pts/3s
+trap_fire00                     3 -> 8              2-20pts/3s
+trap_frost00                    3 -> 9              2-20pts/3s
+trap_shock00                    5 -> 9              2-20pts/3s
+trap_health00                   8 -> 10             2-20pts/3s
 trap_poison00                   16 -> 52            1-5pts/60s
 
 trap_paralyze00                 13 -> 21            10s
 trap_silence00                  37 -> 31            30s
 
-trap_fire_killer                 3 -> 63            20-30pts/10s
-trap_frost_killer                3 -> 66            20-30pts/10s
-trap_shock_killer                5 -> 69            20-30pts/10s
+trap_fire_killer                3 -> 63             20-30pts/10s
+trap_frost_killer               3 -> 66             20-30pts/10s
+trap_shock_killer               5 -> 69             20-30pts/10s
 trap_poison_killer              16 -> 108           5-10pts/50s
 ```
 
