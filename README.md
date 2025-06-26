@@ -329,7 +329,7 @@ Sound                           100%/30s            100% to fail cast for 30s.
 
 ## Magic - Potions
 
-$${\color{yellow}\*1.6\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now 10x stronger.
+$${\color{yellow}\*1.6\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
 p_burden_b                      5pts/8s -> 50pts/80s
@@ -352,7 +352,7 @@ p_detect_enchantment_s          10pts/15s -> 100pts/150s
 
 ## Magic - Spells & Scrolls
 
-$${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive.
+$${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs.
 
 ```
 armor eater                     10-30pts -> 100-300pts
@@ -379,7 +379,9 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 
 ## Crime
 
-$${\color{yellow}\*1.6\*}$$ You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased. Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
+You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
+
+$${\color{yellow}\*1.6\*}$$ Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
 ```
 iCrimeKilling                   1000 -> 5000
 iCrimeAttack                    40 -> 200
@@ -445,10 +447,12 @@ great open                      50pts -> 80pts      Unavailable in vanilla.
 wild open                                1-100pts   Unchanged.
 ```
 
-#### How to open a 100-point lock
+#### _How to open a 100-point lock_
+__
 - Thief -- Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
 - Mage -- Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
 - Warrior -- Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
+__
 
 ------------------------------------------------------------
 
