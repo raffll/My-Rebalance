@@ -1,4 +1,4 @@
-# Rebalanced Rebalance Redux
+# Remastered Rebalance Redux
 
 #### Intentions
 
@@ -12,7 +12,7 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 - Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
-- Purist friendly -- I'm trying not to make many arbitrary decisions. Most of the changes are multipliers or additions to existing values.
+- Purist friendly -- I'm trying to not make many arbitrary decisions. Most of the changes are multipliers or additions to existing values.
 - Math-driven -- Seriously, I'm doing serious calculations here.
 
 ------------------------------------------------------------
@@ -76,7 +76,8 @@ It's not a requirement but a reasonable limit.
 1.5
   - Magic module remastered
 1.6
-  - Trap costs readjusted 
+  - Name reinvented
+  - Trap costs readjusted
   - Potion module added
 ```
 
@@ -325,6 +326,29 @@ Sound                           100%/30s            100% to fail cast for 30s.
 
 ------------------------------------------------------------
 
+## Magic - Potions
+
+$${\color{yellow}\*\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now 10x stronger.
+
+```
+p_burden_b                      5pts/8s   -> 50pts/80s
+p_burden_c                      8pts/15s  -> 80pts/150s
+p_burden_s                      10pts/30s -> 100pts/300s
+p_burden_q                      15pts/45s -> 150pts/450s
+p_burden_e                      20pts/60s -> 200pts/600s
+
+p_feather_b                     5pts/8s   -> 50pts/80s
+p_feather_c                     8pts/15s  -> 80pts/150s
+p_feather_q                     15pts/45s -> 150pts/450s
+p_feather_e                     20pts/60s -> 200pts/600s
+
+p_detect_creatures_s            10pts/15s -> 100pts/150s
+p_detect_key_s                  10pts/15s -> 100pts/150s
+p_detect_enchantment_s          10pts/15s -> 100pts/150s
+```
+
+------------------------------------------------------------
+
 ## Barter
 
 The economy is broken because there is an unlimited supply of money in the game, so making everything more expensive won't fix the problem. The real problem is a player mindset that wants to just replace all garbage with money as quickly as possible. You don't need to do that. Pick only valuable items and sell them when you really need cash. And the only scenario when you really need cash is to buy an enchanted item or to train with a trainer. There should already be enough money on the market to suit those needs for one month.
@@ -345,24 +369,25 @@ fMagesGuildTravel               10 -> 100           10x more expensive.
 
 You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
 ```
-iCrimeKilling                   1000 -> 10000
-iCrimeAttack                      40 -> 1000
-iCrimePickPocket                  25 -> 250
-iCrimeTresspass                    5 -> 500         Trespassing is a more serious crime
-                                                    than pickpocketing.
+iCrimeKilling                   1000 -> 5000
+iCrimeAttack                      40 -> 200
+iCrimePickPocket                  25 -> 100
+iCrimeTresspass                    5 -> 25
 
-iDaysinPrisonMod                 100 -> 1000        Days in prison will be the same as in vanilla.
+iDaysinPrisonMod                 100 -> 500         Days in prison will be the same as in vanilla.
 ```
 
-The crime threshold is not changed, which means that the guard will be chasing you after one attack.
+The crime threshold lowered, which means that the guard will be chasing you after one attack.
 ```
-iCrimeThreshold                         1000        Unchanged.
+iCrimeThreshold                 1000 -> 200
 ```
 
 The death penalty will be set after one killing, one attack, and any other crime. That means you have to be perfectly clean while doing MT's Writs.
 ```
-Death Warrant                   5000 -> 11001       You can kill only one person, instead of 4.
+Death Warrant                   5000 -> 5201        You can kill only one person, instead of 4.
 ```
+
+$${\color{yellow}\*\*}$$ Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
 
 ------------------------------------------------------------
 
@@ -424,47 +449,24 @@ Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, fr
 fTrapCostMult                    0 -> -1            Trap spell cost is taken into account.
 ```
 
-$${\color{yellow}\*\*}$$ Common trap costs didn't make any sense, so I readjusted them to give a better challenge.
+$${\color{yellow}\*\*}$$ Common trap costs didn't make any sense, so I readjusted them to give a better challenge. They are now auto-calculated from the new magic effect costs.
 ```
-trap_fire00                      3 -> 10            [30]
-trap_frost00                     3 -> 15            [30]
-trap_shock00                     5 -> 20            [30]
-trap_health00                    8 -> 25            [30]
-trap_poison00                   16 -> 50            [150]
+trap_fire00                      3 -> 8             2-20pts/3s
+trap_frost00                     3 -> 9             2-20pts/3s
+trap_shock00                     5 -> 9             2-20pts/3s
+trap_health00                    8 -> 10            2-20pts/3s
+trap_poison00                   16 -> 52            1-5pts/60s
 
-trap_paralyze00                 13 -> 30            [10s]
-trap_silence00                  37 -> 35            [30s]
+trap_paralyze00                 13 -> 21            10s
+trap_silence00                  37 -> 31            30s
 
-trap_fire_killer                 3 -> 60            [200]
-trap_frost_killer                3 -> 65            [200]
-trap_shock_killer                5 -> 70            [200]
-trap_poison_killer              16 -> 100           [375]
+trap_fire_killer                 3 -> 63            20-30pts/10s
+trap_frost_killer                3 -> 66            20-30pts/10s
+trap_shock_killer                5 -> 69            20-30pts/10s
+trap_poison_killer              16 -> 108           5-10pts/50s
 ```
 
 #### How to untrap a 100-point spell
 - Thief -- Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
 - Mage -- Telekinesis.
 - Warrior -- Take it on the chin.
-
-------------------------------------------------------------
-
-## Items - Potions
-
-$${\color{yellow}\*\*}$$
-
-```
-p_burden_b                      5pts/8s   -> 50pts/80s  
-p_burden_c                      8pts/15s  -> 80pts/150s 
-p_burden_s                      10pts/30s -> 100pts/300s
-p_burden_q                      15pts/45s -> 150pts/450s
-p_burden_e                      20pts/60s -> 200pts/600s
-
-p_feather_b                     5pts/8s   -> 50pts/80s  
-p_feather_c                     8pts/15s  -> 80pts/150s 
-p_feather_q                     15pts/45s -> 150pts/450s
-p_feather_e                     20pts/60s -> 200pts/600s
-
-p_detect_creatures_s            10pts/15s -> 100pts/150s
-p_detect_key_s                  10pts/15s -> 100pts/150s
-p_detect_enchantment_s          10pts/15s -> 100pts/150s
-```
