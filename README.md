@@ -128,9 +128,9 @@ apparatus_sm_mortar_01          6000gp -> 30000gp
 apparatus_sm_retort_01          1000gp -> 5000gp
 ```
 
-#### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
-- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1.
-- Previously this was possible with Alchemy at 40._
+#### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
+- _You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1._
+- _Previously this was possible with Alchemy at 40._
 
 ------------------------------------------------------------
 
@@ -145,9 +145,9 @@ fMagicItemRechargePerSecond     0.05 -> 0           Disabled idle recharging.
 fEnchantmentChanceMult          3 -> 0.6            5x easier self enchant.
 ```
 
-#### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
-- Enchanter -- 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
-- Self-enchant -- 53% chance of making an item with Enchant at 100 and average (50) attributes.
+#### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
+- _Enchanter -- 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
+- _Self-enchant -- 53% chance of making an item with Enchant at 100 and average (50) attributes._
 
 ------------------------------------------------------------
 
@@ -297,12 +297,12 @@ Resist Paralysis                0.2 -> 2
 
 ------------------------------------------------------------
 
-#### How to stop a mage using a 120-cost spell
+#### _How to stop a mage using a 120-cost spell_
 ```
 Mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka
 ```
 
-Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more.
+_Damage spells are most powerful but need time to kick in; otherwise, they will cost 2x more._
 ```
 Damage Intelligence             2pts/50s            Permanent drop 150 Magicka over 50s.
 Damage Magicka                  4pts/100s           Permanent drop 400 Magicka over 100s.
@@ -313,13 +313,13 @@ Damage Intelligence             50pts/1s            Permanent drop 75 Magicka.
 Damage Magicka                  100pts/3s           Permanent drop 300 Magicka over 3s.
 ```
 
-Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment.
+_Drain Intelligence is good if you don't have time or you're not skilled in Illusion. Drain Magicka is the worst, even after adjustment._
 ```
 Drain Intelligence              100pts/24s          Drop 150 Magicka for 24s.
 Drain Magicka                   100pts/32s          Drop 100 Magicka for 32s.
 ```
 
-Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+_Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence. Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka._
 ```
 Silence                         120s                Can't cast any spells for 120s.
 Sound                           100%/30s            100% to fail cast for 30s.
