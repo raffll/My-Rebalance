@@ -332,20 +332,20 @@ Resist Paralysis                0.2 -> 2
 $${\color{yellow}\*1.6\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now 10x stronger.
 
 ```
-p_burden_b                      5pts/8s -> 50pts/80s              Bargain Potion of Burden
-p_burden_c                      8pts/15s -> 80pts/150s            Cheap Potion of Burden
-p_burden_s                      10pts/30s -> 100pts/300s          Standard Potion of Burden
-p_burden_q                      15pts/45s -> 150pts/450s          Quality Potion of Burden
-p_burden_e                      20pts/60s -> 200pts/600s          Exclusive Potion of Burden
-															      
-p_feather_b                     5pts/8s -> 50pts/80s              Bargain Potion of Feather
-p_feather_c                     8pts/15s -> 80pts/150s            Cheap Potion of Feather
-p_feather_q                     15pts/45s -> 150pts/450s          Quality Potion of Feather
-p_feather_e                     20pts/60s -> 200pts/600s          Exclusive Potion of Feather
-															      
-p_detect_creatures_s            10pts/15s -> 100pts/150s          Potion of Detect Creatures
-p_detect_key_s                  10pts/15s -> 100pts/150s          Potion of Detect Key
-p_detect_enchantment_s          10pts/15s -> 100pts/150s          Potion of Detect Enchantments
+Bargain Potion of Burden          5pts/8s -> 50pts/80s              
+Cheap Potion of Burden          8pts/15s -> 80pts/150s            
+Standard Potion of Burden          10pts/30s -> 100pts/300s          
+Quality Potion of Burden          15pts/45s -> 150pts/450s          
+Exclusive Potion of Burden          20pts/60s -> 200pts/600s          
+									      
+Bargain Potion of Feather       5pts/8s -> 50pts/80s              
+Cheap Potion of Feather         8pts/15s -> 80pts/150s            
+Quality Potion of Feather       15pts/45s -> 150pts/450s          
+Exclusive Potion of Feather     20pts/60s -> 200pts/600s          
+									      
+Potion of Detect Creatures      10pts/15s -> 100pts/150s          
+Potion of Detect Key            10pts/15s -> 100pts/150s          
+Potion of Detect Enchantments   10pts/15s -> 100pts/150s          
 ```
 
 ------------------------------------------------------------
@@ -433,18 +433,18 @@ Open                            6 -> 12             Spells are harder to cast.
 
 #### Price
 ```
-sc_ondusisunhinging             73gp -> 273gp       Available in stores.
+Scroll of Ondusi's Unhinging       73gp -> 273gp       Available in stores.
 ```
 
 #### Magnitude
 ```
-sc_ekashslocksplitter_en        100pts -> 80pts     Available in random loot later in the game.
+Scroll of Ekash's Lock Splitter    100pts -> 80pts     Available in random loot later in the game.
 
-open                                     20pts      Unchanged, unavailable in vanilla.
-ondusi's open door              50pts -> 40pts
-strong open                     50pts -> 60pts
-great open                      50pts -> 80pts      Unavailable in vanilla.
-wild open                                1-100pts   Unchanged.
+open                                        20pts      Unchanged, unavailable in vanilla.
+ondusi's open door                 50pts -> 40pts
+strong open                        50pts -> 60pts
+great open                         50pts -> 80pts      Unavailable in vanilla.
+wild open                                   1-100pts   Unchanged.
 ```
 
 #### _How to open a 100-point lock_
@@ -459,26 +459,26 @@ wild open                                1-100pts   Unchanged.
 
 Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level.
 ```
-fTrapCostMult                   0 -> -1             Trap spell cost is taken into account.
+fTrapCostMult                      0 -> -1             Trap spell cost is taken into account.
 ```
 
 Common trap costs didn't make any sense, so I readjusted them to give a better challenge.
 
 $${\color{yellow}\*1.6\*}$$ They are now auto-calculated from the new magic effect costs.
 ```
-trap_fire00                     3 -> 8              2-20pts/3s
-trap_frost00                    3 -> 9              2-20pts/3s
-trap_shock00                    5 -> 9              2-20pts/3s
-trap_health00                   8 -> 10             2-20pts/3s
-trap_poison00                   16 -> 52            1-5pts/60s
-
-trap_paralyze00                 13 -> 21            10s
-trap_silence00                  37 -> 31            30s
-
-trap_fire_killer                3 -> 63             20-30pts/10s
-trap_frost_killer               3 -> 66             20-30pts/10s
-trap_shock_killer               5 -> 69             20-30pts/10s
-trap_poison_killer              16 -> 108           5-10pts/50s
+trap_fire00                        3 -> 8              2-20pts/3s
+trap_frost00                       3 -> 9              2-20pts/3s
+trap_shock00                       5 -> 9              2-20pts/3s
+trap_health00                      8 -> 10             2-20pts/3s
+trap_poison00                      16 -> 52            1-5pts/60s
+								   
+trap_paralyze00                    13 -> 21            10s
+trap_silence00                     37 -> 31            30s
+								   
+trap_fire_killer                   3 -> 63             20-30pts/10s
+trap_frost_killer                  3 -> 66             20-30pts/10s
+trap_shock_killer                  5 -> 69             20-30pts/10s
+trap_poison_killer                 16 -> 108           5-10pts/50s
 ```
 
 #### _How to untrap a 100-point spell_
