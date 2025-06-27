@@ -459,19 +459,19 @@ Common trap costs didn't make any sense, so I readjusted them to give a better c
 
 $${\color{yellow}\*1.6\*}$$ They are now auto-calculated from the new magic effect costs.
 ```
-trap_fire00                        3 -> 8              2-20pts/3s
-trap_frost00                       3 -> 9              2-20pts/3s
-trap_shock00                       5 -> 9              2-20pts/3s
-trap_health00                      8 -> 10             2-20pts/3s
-trap_poison00                      16 -> 52            1-5pts/60s
-
-trap_paralyze00                    13 -> 21            10s
-trap_silence00                     37 -> 31            30s
-
-trap_fire_killer                   3 -> 63             20-30pts/10s
-trap_frost_killer                  3 -> 66             20-30pts/10s
-trap_shock_killer                  5 -> 69             20-30pts/10s
-trap_poison_killer                 16 -> 108           5-10pts/50s
+Fire Trap                          3 -> 8              2-20pts/3s
+Frost Trap                         3 -> 9              2-20pts/3s
+Shock Trap                         5 -> 9              2-20pts/3s
+Lifeforce Trap                     8 -> 10             2-20pts/3s
+Poison Trap                        16 -> 52            1-5pts/60s
+								   
+Paralysis Trap                     13 -> 21            10s
+Silence Trap                       37 -> 31            30s
+			   
+Master Fire Trap                   3 -> 63             20-30pts/10s
+Master Frost Trap                  3 -> 66             20-30pts/10s
+Master Shock Trap                  5 -> 69             20-30pts/10s
+Master Poison Trap                 16 -> 108           5-10pts/50s
 ```
 
 #### _How to untrap a 100-point spell_
