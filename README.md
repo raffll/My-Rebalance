@@ -83,6 +83,7 @@ It's not a requirement but a reasonable limit.
 ```
 
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
+* $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 
 ------------------------------------------------------------
 
@@ -139,9 +140,9 @@ This is the worst skill in the game. Self-made enchantments are almost impossibl
 
 Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter or thief, you have to do better resource management or just buy the same item again.
 ```
-sMagicInsufficientCharge           "Item does not have enough charge." -> Removed message
-fMagicItemRechargePerSecond        0.05 -> 0                              Disabled idle recharging
-fEnchantmentChanceMult             3 -> 0.6                               5x easier self enchant
+sMagicInsufficientCharge           Removed message: "Item does not have enough charge."
+fMagicItemRechargePerSecond        0.05 -> 0           Disabled idle recharging
+fEnchantmentChanceMult             3 -> 0.6            5x easier self enchant
 ```
 
 #### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
@@ -325,7 +326,7 @@ Resist Paralysis                   0.2 -> 2
 
 ## Magic - Potions
 
-$${\color{yellow}\*1.6\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now 10x stronger.
+$${\color{orange}\*1.7\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now adjusted.
 
 ```
 Bargain Potion of Burden           5pts/8s -> 50pts/80s
@@ -354,6 +355,12 @@ $${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too e
 Armor Eater                        10-30pts -> 100-300pts
 Weapon Eater                       6-25pts -> 60-250pts
 ```
+
+------------------------------------------------------------
+
+## Magic - Enchantments
+
+$${\color{orange}\*1.7\*}$$ TODO
 
 ------------------------------------------------------------
 
