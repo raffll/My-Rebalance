@@ -326,10 +326,11 @@ Resist Paralysis                   0.2 -> 2
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now adjusted.
+$${\color{orange}\*1.7\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now adjusted. 
+To compare self made potion with pre-existed I took exclusive potion 20pts/60s For the self_made potion template I get potion created with 100 Alchemy	100 Intelligence 100 pcLuck	using only mortarQuality of 1 and 	fPotionStrengthMult at 0.25.
 
 ```
-Bargain Potion of Burden           5pts/8s -> 50pts/80s
+Bargain Potion of Burden           5pts/8s -> 50pts/80s              10x	
 Cheap Potion of Burden             8pts/15s -> 80pts/150s
 Standard Potion of Burden          10pts/30s -> 100pts/300s
 Quality Potion of Burden           15pts/45s -> 150pts/450s
@@ -340,20 +341,34 @@ Cheap Potion of Feather            8pts/15s -> 80pts/150s
 Quality Potion of Feather          15pts/45s -> 150pts/450s
 Exclusive Potion of Feather        20pts/60s -> 200pts/600s
 
-Potion of Detect Creatures         10pts/15s -> 100pts/150s
-Potion of Detect Key               10pts/15s -> 100pts/150s
-Potion of Detect Enchantments      10pts/15s -> 100pts/150s
+Potion of Detect Creatures         10pts/15s -> 100pts/300s          10x/20x
+Potion of Detect Key               10pts/15s -> 100pts/300s
+Potion of Detect Enchantments      10pts/15s -> 100pts/300s
+
+Bargain Potion of Night-Eye 	   5pts/8s -> 25/40s                 5x
+Cheap Potion of Night-Eye 	       8pts/15s -> 40pts/75s
+Standard Potion of Night-Eye 	   10pts/30s -> 50pts/150s
+Quality Potion of Night-Eye 	   15pts/45s -> 75pts/225s
+Exclusive Potion of Night-Eye 	   20pts/60s -> 100pts/300s
+
+Bargain Potion of Swift Swim 	   1pts/8s -> 5pts/8s
+
+Potion of Slowfalling 	           10pts/15s -> 10pts/30s
+
+Potion of Telekinesis 	           10pts/15s -> 10pts/30s
+
+Spoiled SlowFall Potion 	       (Slowfall) 10pts/15s -> 1pts/15s
 ```
 
 ------------------------------------------------------------
 
-## Magic - Spells & Scrolls
+## Magic - Spells
 
 $${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs.
 
 ```
-Armor Eater                        10-30pts -> 100-300pts
-Weapon Eater                       6-25pts -> 60-250pts
+Armor Eater                        10-30pts -> 10-30pts/10s
+Weapon Eater                       6-25pts -> 6-25pts/10s
 ```
 
 ------------------------------------------------------------
