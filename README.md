@@ -119,7 +119,7 @@ So after applying this patch, some potions will be much weaker (up to 4x, but it
 ```
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
-                                                        
+
 Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
 ```
 Secret Master's Alembic             1600gp -> 8000gp
@@ -229,7 +229,7 @@ Shock Damage                        7 -> 5.50
 Poison                              9 -> 5.75
 Damage Health                       8 -> 6.00
 ```
-                                    
+
 Damage Magicka has been lowered to be on par with Damage Health.
 ```
 Damage Magicka                      8 -> 6
@@ -350,7 +350,7 @@ iCrimeKilling                       1000 -> 5000
 iCrimeAttack                        40 -> 200
 iCrimePickPocket                    25 -> 100
 iCrimeTresspass                     5 -> 25
-                                    
+
 iDaysinPrisonMod                    100 -> 500          Days in prison will be the same as in vanilla
 ```
 
@@ -431,16 +431,16 @@ Frost Trap                          3 -> 9              2-20pts/3s
 Shock Trap                          5 -> 9              2-20pts/3s
 Lifeforce Trap                      8 -> 10             2-20pts/3s
 Poison Trap                         16 -> 52            1-5pts/60s
-    
+
 Paralysis Trap                      13 -> 21            10s
 Silence Trap                        37 -> 31            30s
-    
+
 Master Fire Trap                    3 -> 63             20-30pts/10s
 Master Frost Trap                   3 -> 66             20-30pts/10s
 Master Shock Trap                   5 -> 69             20-30pts/10s
 Master Poison Trap                  16 -> 108           5-10pts/50s
 ```
-                                                        
+
 #### _How to untrap a 100-point spell_
 - _Thief - Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes._
 - _Mage - Telekinesis._
@@ -458,35 +458,35 @@ Cheap Potion of Burden              8pts/15s -> 80pts/150s
 Standard Potion of Burden           10pts/30s -> 100pts/300s
 Quality Potion of Burden            15pts/45s -> 150pts/450s
 Exclusive Potion of Burden          20pts/60s -> 200pts/600s
-                                    
+
 Bargain Potion of Feather           5pts/8s -> 50pts/80s
 Cheap Potion of Feather             8pts/15s -> 80pts/150s
 Quality Potion of Feather           15pts/45s -> 150pts/450s
 Exclusive Potion of Feather         20pts/60s -> 200pts/600s
 ```
 
-```                         
+```
 Potion of Detect Creatures          10pts/15s -> 50pts/150s             5x/10x (cost 0.2)
 Potion of Detect Key                10pts/15s -> 50pts/150s
 Potion of Detect Enchantments       10pts/15s -> 50pts/150s
 ```
 
-```                                 
+```
 Bargain Potion of Light             5pts/8s -> 25/40s                   5x/5x (cost 0.2)
 Cheap Potion of Light               8pts/15s -> 40pts/75s
 Standard Potion of Light            10pts/30s -> 50pts/150s
 Quality Potion of Light             15pts/45s -> 75pts/225s
 Exclusive Potion of Light           20pts/60s -> 100pts/300s
-                                    
+
 Bargain Potion of Night-Eye         5pts/8s -> 25/40s
 Cheap Potion of Night-Eye           8pts/15s -> 40pts/75s
 Standard Potion of Night-Eye        10pts/30s -> 50pts/150s
 Quality Potion of Night-Eye         15pts/45s -> 75pts/225s
 Exclusive Potion of Night-Eye       20pts/60s -> 100pts/300s
-```                                 
-                                    
-Typos and bug fixes.                
-```                                 
+```
+
+Typos and bug fixes.
+```
 Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 ```
@@ -498,18 +498,18 @@ Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 $${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs. ~~As a rule, I don't want to raise the magnitude over 100.~~
 
 ### Alteration
-            
+
 ```
 Burden Touch                        20/10s/Touch -> 100/20s             5x/2x
 Burden                              20/10s/Target -> 100/20s
-                                                                        
+
 Heavy Burden Touch                  40/10s/Touch -> 200/20s
 Heavy Burden                        40/10s/Target -> 200/20s
 
 Crushing Burden Touch               60/10s/Touch -> 300/20s
 Crushing Burden                     60/10s/Target -> 300/20s
 
-Weary		                        30-60/10s/Target -> 150-300/20s     5x/2x
+Weary                               30-60/10s/Target -> 150-300/20s     5x/2x
 Cruel Weary                         50-70/10s/Target -> 250-350/20s
 Dire Weary                          60-90/10s/Target -> 300-450/20s
 
@@ -524,20 +524,20 @@ Crushing Burden of Sin              60-80/30s/Target -> 600-800/30s
 Feather                             20/10s/Self -> 50/40s               2.5x/4x
 Strong Feather                      50/10s/Self -> 125/40s              2.5x/4x
 Great Feather                       100/10s/Self -> 250/40s             2.5x/4x
-    
+
 Ulms's Juicedaw's Feather           50/10s/Self -> 500/10s              10x/1x
-``` 
-    
-``` 
-Armor Eater                         10-30/Touch -> 10-30/6s          	1x/6x
+```
+
+```
+Armor Eater                         10-30/Touch -> 10-30/6s             1x/6x
 Weapon Eater                        6-25/Touch -> 6-25/6s
 
-*Disintegrate Armor					6-25/Target	-> 36-150            	6x/1x
-*Disintegrate Weapon				6-25/Target -> 36-150
+*Disintegrate Armor                 6-25/Target -> 36-150               6x/1x
+*Disintegrate Weapon                6-25/Target -> 36-150
 
 * used by hungers, unavailable in vanilla
 ```
-                                    
+
 ------------------------------------------------------------
 
 ## Magic - Enchantments
