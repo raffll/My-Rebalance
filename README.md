@@ -466,9 +466,9 @@ Exclusive Potion of Feather         20pts/60s -> 200pts/600s
 ```
 
 ```                         
-Potion of Detect Creatures          10pts/15s -> 50pts/75s              5x/5x (cost 0.2)
-Potion of Detect Key                10pts/15s -> 50pts/75s
-Potion of Detect Enchantments       10pts/15s -> 50pts/75s
+Potion of Detect Creatures          10pts/15s -> 50pts/150s             5x/10x (cost 0.2)
+Potion of Detect Key                10pts/15s -> 50pts/150s
+Potion of Detect Enchantments       10pts/15s -> 50pts/150s
 ```
 
 ```                                 
@@ -509,26 +509,33 @@ Heavy Burden                        40/10s/Target -> 200/20s
 Crushing Burden Touch               60/10s/Touch -> 300/20s
 Crushing Burden                     60/10s/Target -> 300/20s
 
-Weary                               30-60/10s/Target -> 60-120/50s      2x/5x
-Cruel Weary                         50-70/10s/Target -> 100-140/50s
-Dire Weary                          60-90/10s/Target -> 120-180/50s
+Weary		                        30-60/10s/Target -> 150-300/20s     5x/2x
+Cruel Weary                         50-70/10s/Target -> 250-350/20s
+Dire Weary                          60-90/10s/Target -> 300-450/20s
 
 *Burden of Sin                      40/10s/Target -> 400/10s            10x/1x
 *Great Burden of Sin                40-60/20s/Touch -> 400-600/20s
 Crushing Burden of Sin              60-80/30s/Target -> 600-800/30s
+
+* swapped names
 ```
 
 ```
-Feather                             20/10s/Self -> 40/50s               2x/5x
-Strong Feather                      50/10s/Self -> 100/50s              2x/5x
-Great Feather                       100/10s/Self -> 200/50s             2x/5x
+Feather                             20/10s/Self -> 50/40s               2.5x/4x
+Strong Feather                      50/10s/Self -> 125/40s              2.5x/4x
+Great Feather                       100/10s/Self -> 250/40s             2.5x/4x
     
-Ulms's Juicedaw's Feather           50/10s/Self -> 250/20s              5x/2x
+Ulms's Juicedaw's Feather           50/10s/Self -> 500/10s              10x/1x
 ``` 
     
 ``` 
-Armor Eater                         10-30 -> 10-30/6s                   1x/6x
-Weapon Eater                        6-25 -> 6-25/6s
+Armor Eater                         10-30/Touch -> 10-30/6s          	1x/6x
+Weapon Eater                        6-25/Touch -> 6-25/6s
+
+*Disintegrate Armor					6-25/Target	-> 36-150            	6x/1x
+*Disintegrate Weapon				6-25/Target -> 36-150
+
+* used by hungers, unavailable in vanilla
 ```
                                     
 ------------------------------------------------------------
