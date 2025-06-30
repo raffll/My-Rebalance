@@ -516,6 +516,8 @@ Dire Weary                          60-90/10s/Target -> 120-180/50s
 *Burden of Sin                      40/10s/Target -> 400/10s            10x/1x
 *Great Burden of Sin                40-60/20s/Touch -> 400-600/20s
 Crushing Burden of Sin              60-80/30s/Target -> 600-800/30s
+
+* Swapped names
 ```
 
 ```
