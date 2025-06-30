@@ -495,10 +495,36 @@ $${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too e
 
 ### Alteration
 
+```
+Burden Touch                        20pts/10s/Touch
+Burden                              20pts/10s/Target
+
+Heavy Burden Touch                  40pts/10s/Touch
+Heavy Burden                        40pts/10s/Target
+
+Crushing Burden Touch               60pts/10s/Touch
+Crushing Burden                     60pts/10s/Target
+
+Weary Burden                        30-60pts/10s/Target
+Cruel Weary                         50-70pts/10s/Target
+Dire Weary                          60-90pts/10s/Target
+
+Burden of Sin                       40-60pts/20s/Touch
+Great Burden of Sin                 40pts/10s/Target
+Crushing Burden of Sin              60-80pts/30s/Target
+```
 
 ```
-Armor Eater                        10-30pts -> 10-30pts/6s
-Weapon Eater                       6-25pts -> 6-25pts/6s
+Feather                             20 /10/Self
+Strong Feather                      50 /10/Self
+Great Feather                       100/10/Self
+
+Ulms's Juicedaw's Feather           50 /10/Self
+```
+
+```
+Armor Eater                         10-30pts -> 10-30pts/6s
+Weapon Eater                        6-25pts -> 6-25pts/6s
 ```
 
 ------------------------------------------------------------
