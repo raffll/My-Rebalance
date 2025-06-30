@@ -326,11 +326,16 @@ Resist Paralysis                   0.2 -> 2
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now adjusted. 
-To compare self made potion with pre-existed I took exclusive potion 20pts/60s For the self_made potion template I get potion created with 100 Alchemy	100 Intelligence 100 pcLuck	using only mortarQuality of 1 and 	fPotionStrengthMult at 0.25.
+$${\color{orange}\*1.7\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now adjusted. 
+- To compare the self-made potion with the pre-existing one, I took the exclusive potion 20pts/60s.
+- For the self-made potion template I get a potion created with 100 Alchemy, 100 Intelligence, and 100 Luck	using only mortar with quality of 1 and fPotionStrengthMult at 0.25.
+- The result should be the same for effect base cost of 1.
+- However if spell effect have base cost of 0.2 or 0.1 differences are just too visible.
+- Same thing happen opposite side when base cost is high, like Paralyze, but I don't want to nerf those potions. There are just extremely hard to create by ourselves.
+- I'm also trying to keep this 1x/3x ratio.
 
 ```
-Bargain Potion of Burden           5pts/8s -> 50pts/80s              10x	
+Bargain Potion of Burden           5pts/8s -> 50pts/80s              10x/10x	
 Cheap Potion of Burden             8pts/15s -> 80pts/150s
 Standard Potion of Burden          10pts/30s -> 100pts/300s
 Quality Potion of Burden           15pts/45s -> 150pts/450s
@@ -345,19 +350,20 @@ Potion of Detect Creatures         10pts/15s -> 100pts/300s          10x/20x
 Potion of Detect Key               10pts/15s -> 100pts/300s
 Potion of Detect Enchantments      10pts/15s -> 100pts/300s
 
-Bargain Potion of Night-Eye 	   5pts/8s -> 25/40s                 5x
+Bargain Potion of Night-Eye 	   5pts/8s -> 25/40s                 5x/5x
 Cheap Potion of Night-Eye 	       8pts/15s -> 40pts/75s
 Standard Potion of Night-Eye 	   10pts/30s -> 50pts/150s
 Quality Potion of Night-Eye 	   15pts/45s -> 75pts/225s
 Exclusive Potion of Night-Eye 	   20pts/60s -> 100pts/300s
 
-Bargain Potion of Swift Swim 	   1pts/8s -> 5pts/8s
-
-Potion of Slowfalling 	           10pts/15s -> 10pts/30s
-
+Potion of Slowfalling 	           10pts/15s -> 10pts/30s			 1x/2x
 Potion of Telekinesis 	           10pts/15s -> 10pts/30s
+```
 
-Spoiled SlowFall Potion 	       (Slowfall) 10pts/15s -> 1pts/15s
+Typos and bugfixes.
+```
+Bargain Potion of Swift Swim 	   1pts/8s -> 5pts/8s
+Spoiled Slowfall Potion 	       10pts/15s -> 1pts/15s
 ```
 
 ------------------------------------------------------------
@@ -365,6 +371,7 @@ Spoiled SlowFall Potion 	       (Slowfall) 10pts/15s -> 1pts/15s
 ## Magic - Spells
 
 $${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs.
+- As a rule I don't want to raise magnitude over 100.
 
 ```
 Armor Eater                        10-30pts -> 10-30pts/10s
@@ -376,6 +383,7 @@ Weapon Eater                       6-25pts -> 6-25pts/10s
 ## Magic - Enchantments
 
 $${\color{orange}\*1.7\*}$$ TODO
+- 
 
 ------------------------------------------------------------
 
