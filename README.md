@@ -398,7 +398,7 @@ The second goal is to make opening 100-point locks possible only for higher-leve
 $${\color{orange}\*1.7\*}$$ TODO
 ```
 Open                                6 -> 12             2x increased base cost
-Lock								2 -> ?				TODO
+Lock                                2 -> ?              TODO
 ```
 
 Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones.
