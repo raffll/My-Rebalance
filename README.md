@@ -395,10 +395,10 @@ fPickLockMult                       -1 -> -1.25         Locks are harder to unlo
 
 The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls.
 
-$${\color{orange}\*1.7\*}$$ TODO
+$${\color{orange}\*1.7\*}$$ Locking doors with 1 point of magnitude was useful for training. Now at least it will cost something.
 ```
 Open                                6 -> 12             2x increased base cost
-Lock                                2 -> ?              TODO
+Lock                                2 -> 60
 ```
 
 Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones.
