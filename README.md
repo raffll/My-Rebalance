@@ -450,7 +450,7 @@ Master Poison Trap                  16 -> 108           5-10pts/50s
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now adjusted. After my changes to Alchemy, the pre-existing exclusive potion 20pts/60s is equivalent to a self-made potion created with 100 Alchemy, 100 Intelligence, and 100 Luck using only mortar with a quality of 1, fPotionStrengthMult at 0.25, and effect base cost at 1. However, if spell effect have a base cost of 0.2 or 0.1, differences are just too visible. The same thing happens on the opposite side when the base cost is high, like with Paralyze, but I don't want to nerf those potions because creating them is just extremely difficult.
+$${\color{orange}\*1.7\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now adjusted. After my changes to Alchemy, the pre-existing exclusive potion 20pts/60s is equivalent to a self-made potion created with 100 Alchemy, 100 Intelligence, and 100 Luck using only mortar with a quality of 1, fPotionStrengthMult at 0.25, and effect base cost at 1. However, if spell effect have a base cost of 0.2 or 0.1, differences are just too visible. The same thing happens on the opposite side when the base cost is high, like with Paralyze or Invisibility, but I don't want to nerf those potions because creating them is just extremely difficult. Also I want to preserve this 1x/3x ratio.
 
 ```
 Bargain Potion of Burden            5pts/8s -> 50pts/80s                10x/10x (cost 0.1)
@@ -485,6 +485,14 @@ Quality Potion of Night-Eye         15pts/45s -> 75pts/225s
 Exclusive Potion of Night-Eye       20pts/60s -> 100pts/300s
 ```
 
+Those potions are standard so should have standard duration.
+```
+Potion of Slowfalling               10pts/15s -> 10pts/30s              1x/2x
+Potion of Telekinesis               10pts/15s -> 10pts/30s
+Potion of Water Breathing           15s -> 30s
+Potion of Water Walking             15s -> 30s
+```
+
 Typos and bug fixes.
 ```
 Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
@@ -495,7 +503,7 @@ Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 
 ## Magic - Spells
 
-$${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs. ~~As a rule, I don't want to raise the magnitude over 100.~~
+$${\color{orange}\*1.7\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs. ~~As a rule, I don't want to raise the magnitude over 100.~~
 
 ### Alteration
 
