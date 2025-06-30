@@ -450,7 +450,7 @@ Master Poison Trap                  16 -> 108           5-10pts/50s
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now adjusted. After my changes to Alchemy, the pre-existing exclusive potion 20pts/60s is equivalent to a self-made potion created with 100 Alchemy, 100 Intelligence, and 100 Luck using only mortar with a quality of 1, fPotionStrengthMult at 0.25, and effect base cost at 1. However, if spell effect have a base cost of 0.2 or 0.1, differences are just too visible. The same thing happens on the opposite side when the base cost is high, like with Paralyze or Invisibility, but I don't want to nerf those potions because creating them is just extremely difficult. Also I want to preserve this 1x/3x ratio.
+$${\color{orange}\*1.7\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now adjusted. After my changes to Alchemy, the pre-existing exclusive potion 20pts/60s is equivalent to a self-made potion created with 100 Alchemy, 100 Intelligence, and 100 Luck using only mortar with a quality of 1, fPotionStrengthMult at 0.25, and effect base cost at 1. However, if spell effect have a base cost of 0.2 or 0.1, differences are just too visible. The same thing happens on the opposite side when the base cost is high, like with Paralyze or Invisibility, but I don't want to nerf those potions because creating them is just extremely difficult. Also I want to preserve this 1x/3x ratio at least for standard potions.
 
 ```
 Bargain Potion of Burden            5pts/8s -> 50pts/80s                10x/10x (cost 0.1)
