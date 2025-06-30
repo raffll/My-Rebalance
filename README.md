@@ -166,7 +166,7 @@ Demoralize Humanoid                Mysticism -> Illusion
 Damage Intelligence                2pts/50s            Permanent drop 150 Magicka over 50s
 Damage Magicka                     4pts/100s           Permanent drop 400 Magicka over 100s
 ```
-- _Otherwise, they will cost 2x more._
+- _Otherwise, they will cost more._
 ```
 Damage Intelligence                50pts/1s            Permanent drop 75 Magicka
 Damage Magicka                     100pts/3s           Permanent drop 300 Magicka over 3s
@@ -450,7 +450,7 @@ Master Poison Trap                 16 -> 108           5-10pts/50s
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ Using new spell effect costs those potions that were too different from their self-made counterparts are now adjusted. To compare the self-made potion with the pre-existing one, I took the exclusive potion 20pts/60s. For the self-made potion template, I get a potion created with 100 Alchemy, 100 Intelligence, and 100 Luck using only mortar with a quality of 1 and fPotionStrengthMult at 0.25. The result should be the same for both when effect base cost is 1. However, if spell effect have a base cost of 0.2 or 0.1, differences are just too visible. The same thing happens on the opposite side when the base cost is high, like with Paralyze, but I don't want to nerf those potions. Creating them by ourselves is just extremely difficult.
+$${\color{orange}\*1.7\*}$$ Using new spell effects costs those potions that were too different from their self-made counterparts are now adjusted. After my changes to Alchemy, the pre-existing exclusive potion 20pts/60s is equivalent to a self-made potion created with 100 Alchemy, 100 Intelligence, and 100 Luck using only mortar with a quality of 1, fPotionStrengthMult at 0.25, and effect base cost at 1. However, if spell effect have a base cost of 0.2 or 0.1, differences are just too visible. The same thing happens on the opposite side when the base cost is high, like with Paralyze, but I don't want to nerf those potions because creating them is just extremely difficult.
 
 ```
 Bargain Potion of Burden           5pts/8s -> 50pts/80s              10x because base cost of 0.1
@@ -481,7 +481,7 @@ Quality Potion of Night-Eye        15pts/45s -> 75pts/225s
 Exclusive Potion of Night-Eye      20pts/60s -> 100pts/300s
 ```
 
-Typos and bugfixes.
+Typos and bug fixes.
 ```
 Bargain Potion of Swift Swim       1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion            10pts/15s -> 1pts/15s
@@ -491,11 +491,14 @@ Spoiled Slowfall Potion            10pts/15s -> 1pts/15s
 
 ## Magic - Spells
 
-$${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs. As a rule, I don't want to raise the magnitude over 100.
+$${\color{yellow}\*1.6\*}$$ Spells are adjusted when they are too cheap or too expensive using new spell effect costs. ~~As a rule, I don't want to raise the magnitude over 100.~~
+
+### Alteration
+
 
 ```
-Armor Eater                        10-30pts -> 10-30pts/10s
-Weapon Eater                       6-25pts -> 6-25pts/10s
+Armor Eater                        10-30pts -> 10-30pts/6s
+Weapon Eater                       6-25pts -> 6-25pts/6s
 ```
 
 ------------------------------------------------------------
