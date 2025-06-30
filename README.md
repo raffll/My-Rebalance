@@ -219,6 +219,12 @@ Shield                              2 -> 1
 
 ------------------------------------------------------------
 
+### Conjuration
+
+$${\color{orange}\*1.7\*}$$ TODO
+
+------------------------------------------------------------
+
 ### Destruction
 
 Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
@@ -388,8 +394,11 @@ fPickLockMult                       -1 -> -1.25         Locks are harder to unlo
 ```
 
 The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls.
+
+$${\color{orange}\*1.7\*}$$ TODO
 ```
 Open                                6 -> 12             2x increased base cost
+Lock								2 -> ?				TODO
 ```
 
 Now it requires a mage skilled in Alteration to use existing open spells. Or even a well-trained mage to create one, because self-made spells are 2x more expensive than standalones.
