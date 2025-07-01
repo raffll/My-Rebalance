@@ -2,7 +2,7 @@
 
 #### Intentions
 
-Regardless of the name, my intention here is not to balance the game. It's impossible. Neither make it harder nor easier. The reason behind this is to make more options useful for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+Despite the name, my intention here is not to balance the game. That’s impossible. Nor is it to make it harder or easier. The idea is to make more options viable for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
 **You will be overpowered anyway! But the path to achieve that will be more fun!**
 
@@ -10,10 +10,10 @@ Regardless of the name, my intention here is not to balance the game. It's impos
 
 #### Philosophy
 
-- Simplicity -- I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
-- Modularity -- Everything is divided into separate modules, so you can mix and match with other mods.
-- Purist friendly -- I'm trying to not make many arbitrary decisions. Most of the changes are multipliers or additions to existing values.
-- Math-driven -- Seriously, I'm doing serious calculations here.
+- Simplicity - I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
+- Modularity - Everything is divided into separate modules, so you can mix and match with other mods.
+- Purist friendly - I'm trying to not make many arbitrary decisions. Most of the changes are multipliers or additions to existing values.
+- Math-driven - Seriously, I’m doing real calculations here.
 
 ------------------------------------------------------------
 
@@ -32,7 +32,11 @@ If you are using MCP, leave vanilla mechanics for creating spells.
 
 Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have 1s duration, like Charm. Summon spells should allow summoning a couple of skeletons in one spell. But until we have that, it's impossible to balance the spell system when those "cheats" are enabled.
 
-I highly recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
+------------------------------------------------------------
+
+#### Recommendations
+
+I recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
 - The skill cap is set to 150, and the attribute cap is set to 300.
 - Potion consumption is limited to prevent stacking too many effects.
 - Training limit is enabled. This just simply removes the leveling problem.
@@ -54,36 +58,39 @@ It's not a requirement but a reasonable limit.
 
 #### Compatibility
 
-- If you are using Morag Tong Polished, enable also "Corrupted Crime - Morag Tong Polished.esp" at the end.
+If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Crime - Morag Tong Polished.esp**" at the end of your load order.
 
 ------------------------------------------------------------
 
 #### History
+
+* $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
+* $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
 ```
-1.1
-  - Elemental damage costs increased
-  - Detect spells 5x cheaper
-  - Secret Master's apparatus 5x more expensive
-1.2
-  - Lockpicking and traps split into separate esps
-  - Alchemy adjusted
-  - Mages Guild's travel 10x more expensive
-1.3
-  - Resist Paralysis spell 10x more expensive
-  - Crime module added
-1.4
-  - Magic module revisited
-1.5
-  - Magic module remastered
+1.7
+  - Potions & Spells modules in progress...
+  - Lock cost raised
 1.6
   - Name reinvented
   - Trap costs readjusted
   - Potion module added
   - Spell module added
+1.5
+  - Magic module remastered
+1.4
+  - Magic module revisited
+1.3
+  - Resist Paralysis spell 10x more expensive
+  - Crime module added
+1.2
+  - Lockpicking and traps split into separate esps
+  - Alchemy adjusted
+  - Mages Guild's travel 10x more expensive
+1.1
+  - Elemental damage costs increased
+  - Detect spells 5x cheaper
+  - Secret Master's apparatus 5x more expensive
 ```
-
-* $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
-* $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 
 ------------------------------------------------------------
 
