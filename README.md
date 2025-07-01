@@ -298,7 +298,7 @@ Resist Paralysis                    0.2 -> 2
 
 ## Barter
 
-The economy is broken because there is an unlimited supply of money in the game, so simply making everything more expensive won’t fix the problem. The real issue is a player mindset focused on quickly replacing all items with money. You don’t need to do that. Instead, pick only valuable items and sell them when you truly need cash. Typically, the only times you’ll really need money are to purchase enchanted items or pay for training. There should already be enough money circulating in the market to cover those needs for about a month.
+The economy is broken because there is an unlimited supply of money in the game, so simply making everything more expensive won’t fix the problem. The real issue is a player mindset focused on quickly replacing all items with gold. You don’t need to do that. Instead, pick only valuable items and sell them when you truly need cash. Typically, the only times you’ll really need cash are to purchase enchanted items or pay for training. There should already be enough money circulating in the market to cover those needs for about a month.
 
 Additionally, this encourages investing in Speechcraft and Mercantile to secure better prices. A beneficial side effect is having more time to recover money spent on enchantments or training, especially if the merchant also buys your items.
 ```
