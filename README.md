@@ -330,7 +330,7 @@ iCrimeAttack                        40 -> 200
 iCrimePickPocket                    25 -> 100
 iCrimeTresspass                     5 -> 25
 
-iDaysinPrisonMod                    100 -> 500          Days in prison will be the same as in vanilla
+iDaysinPrisonMod                    100 -> 500          Days in prison stays the same as in vanilla
 ```
 
 The crime threshold lowered, which means that the guard will be chasing you after one attack.
