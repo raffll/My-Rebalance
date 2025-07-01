@@ -11,7 +11,7 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 - Simplicity - I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity - Everything is divided into separate modules, so you can mix and match with other mods.
 - Purist friendly - I try to avoid arbitrary decisions. Most changes are multipliers or additions to existing values.
-- Math-driven - Seriously, I’m doing real calculations here.
+- Math-driven - Seriously, I'm doing real calculations here.
 
 ------------------------------------------------------------
 
