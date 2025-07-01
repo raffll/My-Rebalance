@@ -321,9 +321,9 @@ fMagesGuildTravel                   10 -> 100           10x more expensive
 
 ## Crime
 
-You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
-
 $${\color{yellow}\*1.6\*}$$ Crime bounties lowered from previous version. This time they are only 5x higher than vanilla.
+
+You probably prefer to load your previous save game instead of accepting the punishment. But, if you don't, you'll realize that bounties are ridiculously small and just unrealistic. That's why the penalties for crime have been increased.
 ```
 iCrimeKilling                       1000 -> 5000
 iCrimeAttack                        40 -> 200
@@ -400,14 +400,14 @@ Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot
 
 ## Traps
 
+$${\color{yellow}\*1.6\*}$$ Trap costs recalculated from the new magic effect costs.
+
 Trap mechanic is restored; formerly, anyone could untrap any trap easily. So, from now on, the trap spell cost will be taken into account on disarming, similar to the lock level.
 ```
 fTrapCostMult                       0 -> -1             Trap spell cost is taken into account
 ```
 
 Common trap costs didn't make any sense, so I readjusted them to give a better challenge.
-
-$${\color{yellow}\*1.6\*}$$ They are now auto-calculated from the new magic effect costs.
 ```
 Fire Trap                           3 -> 8              2-20pts/3s
 Frost Trap                          3 -> 9              2-20pts/3s
