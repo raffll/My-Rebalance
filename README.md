@@ -20,26 +20,24 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 - Patch for Purists is applied.
 - OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
-- Some kind of real-time talking with NPC mod is recommended. This is mainly to prevent persuasion exploits.
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
 If you are using MCP, leave vanilla mechanics for creating spells.
-- Max spell magnitude at 100 for 1440s. Creating spells with a magnitude over 100 is overpowered in most cases.
-- Self-made spell with one additional second added while calculating cost. This is because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell will cost 2x more.
-- Only one spell effect per spell. This can be used as a workaround for the cap on magnitude.
+- Maximum spell magnitude is set to 100 for 1440 seconds. Creating spells with a magnitude over 100 is generally overpowered.
+- Self-made spells have one additional second added when calculating cost, because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
+- Only one spell effect per spell is allowed, which can serve as a workaround for the magnitude cap.
 
-Ideally we need a mod that allows a bigger magnitude cap for some effects like Feather. Some spells shouldn't be allowed to have 1s duration, like Charm. Summon spells should allow summoning a couple of skeletons in one spell. But until we have that, it's impossible to balance the spell system when those "cheats" are enabled.
+Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn’t be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these “cheats” are enabled.
 
 ------------------------------------------------------------
 
 #### Recommendations
 
-I recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
-- The skill cap is set to 150, and the attribute cap is set to 300.
-- Potion consumption is limited to prevent stacking too many effects.
-- Training limit is enabled. This just simply removes the leveling problem.
-
-It's not a requirement but a reasonable limit.
+- Some kind of real-time talking with NPC mod is recommended. This is mainly to prevent persuasion exploits.
+- I recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
+  - The skill cap is set to 150, and the attribute cap is set to 300.
+  - Potion consumption is limited to prevent stacking too many effects.
+  - Training limit is enabled. This just simply removes the leveling problem.
 
 ------------------------------------------------------------
 
@@ -307,7 +305,7 @@ The economy is broken because there is an unlimited supply of money in the game,
 
 Additionally, this encourages investing in Speechcraft and Mercantile to secure better prices. A beneficial side effect is having more time to recover money spent on enchantments or training, especially if the merchant also buys your items.
 ```
-fBarterGoldResetDelay               24 -> 720           30 days to reset merchants gold
+fBarterGoldResetDelay               24 -> 720           30 days to reset merchants' gold
 ```
 
 The Mages Guild’s teleportation price has been increased. As a fast, modern form of travel, it shouldn’t be cheaper than traditional methods.
@@ -326,7 +324,7 @@ iCrimeAttack                        40 -> 200
 iCrimePickPocket                    25 -> 100
 iCrimeTresspass                     5 -> 25
 
-iDaysinPrisonMod                    100 -> 500          Days in prison stays the same as in vanilla
+iDaysinPrisonMod                    100 -> 500          Days in prison same as in vanilla
 ```
 
 The crime threshold is lowered, so guards will pursue you after just one attack.
@@ -361,7 +359,7 @@ fPickPocketMod                      0.3 -> 0            Any item available to st
 
 The primary goal is to make the Security skill more valuable at higher levels and to ensure it’s more effective than Alteration for lock-related tasks. Previously, raising Security above 50 provided no real benefit.
 ```
-fPickLockMult                       -1 -> -1.25         Locks are harder to unlock
+fPickLockMult                       -1 -> -1.25         Locks harder to unlock
 ```
 
 The second goal is to ensure that unlocking 100-point locks is only achievable by higher-level characters. Previously, cheap Alteration spells and scrolls made magic a better option for unlocking doors at any level.
@@ -394,7 +392,7 @@ $${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased
 
 The trap mechanic has been restored; previously, anyone could disarm any trap with ease. Now, the trap spell cost will be factored into disarming difficulty, similar to how lock levels work.
 ```
-fTrapCostMult                       0 -> -1             Trap spell cost is now taken into account
+fTrapCostMult                       0 -> -1             Trap spell cost taken into account
 ```
 
 Common trap costs were previously inconsistent, so they have been adjusted to present a greater challenge.
@@ -533,14 +531,14 @@ $${\color{orange}\*1.7\*}$$ TODO
 - You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1.
 - Previously this was possible with Alchemy at 40.
 
-----
+------------------------------------------------------------
 
 #### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
 
 - Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes.
 
-----
+------------------------------------------------------------
 
 #### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
 
@@ -569,7 +567,7 @@ Silence                             120s                Can't cast any spells fo
 Sound                               100%/30s            100% to fail cast for 30s
 ```
 
-----
+------------------------------------------------------------
 
 #### How to open a 100-point lock
 
@@ -577,7 +575,7 @@ Sound                               100%/30s            100% to fail cast for 30
 - Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
 - Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
 
-----
+------------------------------------------------------------
 
 #### How to untrap a 100-point spell
 
