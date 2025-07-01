@@ -314,8 +314,6 @@ fMagesGuildTravel                   10 -> 100           10x more expensive
 
 ## Crime
 
-$${\color{yellow}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
-
 You might prefer loading a previous save rather than facing the consequences. But if you don’t, you’ll quickly see that bounties were previously unrealistically low. That’s why crime penalties have been increased significantly.
 ```
 iCrimeKilling                       1000 -> 5000
@@ -336,6 +334,8 @@ The death warrant will be triggered after a combination of one killing, one atta
 Death Warrant                       5000 -> 5201        You can kill only one person, instead of 4
 ```
 
+$${\color{yellow}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
+
 ------------------------------------------------------------
 
 ## Pickpocket
@@ -353,8 +353,6 @@ fPickPocketMod                      0.3 -> 0            Any item available to st
 ------------------------------------------------------------
 
 ## Lockpicking
-
-$${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased to 60.
 
 The primary goal is to make the Security skill more valuable at higher levels and to ensure it’s more effective than Alteration for lock-related tasks. Previously, raising Security above 50 provided no real benefit.
 ```
@@ -383,11 +381,11 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
+$${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased to 60.
+
 ------------------------------------------------------------
 
 ## Traps
-
-$${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the updated magic effect costs.
 
 The trap mechanic has been restored; previously, anyone could disarm any trap with ease. Now, the trap spell cost will be factored into disarming difficulty, similar to how lock levels work.
 ```
@@ -410,6 +408,8 @@ Master Frost Trap                   3 -> 66             20-30pts/10s
 Master Shock Trap                   5 -> 69             20-30pts/10s
 Master Poison Trap                  16 -> 108           5-10pts/50s
 ```
+
+$${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the updated magic effect costs.
 
 ------------------------------------------------------------
 
@@ -528,14 +528,14 @@ $${\color{orange}\*1.7\*}$$ TODO
 - You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1.
 - Previously this was possible with Alchemy at 40.
 
---
+----
 
 #### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
 
 - Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes.
 
---
+----
 
 #### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
 
@@ -564,7 +564,7 @@ Silence                             120s                Can't cast any spells fo
 Sound                               100%/30s            100% to fail cast for 30s
 ```
 
---
+----
 
 #### How to open a 100-point lock
 
@@ -572,7 +572,7 @@ Sound                               100%/30s            100% to fail cast for 30
 - Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
 - Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
 
---
+----
 
 #### How to untrap a 100-point spell
 
