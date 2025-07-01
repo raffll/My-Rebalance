@@ -27,7 +27,7 @@ If you are using MCP, leave vanilla mechanics for creating spells.
 - Self-made spells have one additional second added when calculating cost, because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
 - Only one spell effect per spell is allowed.
 
-Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn’t be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these “cheats” are enabled.
+Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn’t be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these "cheats" are enabled.
 
 ------------------------------------------------------------
 
@@ -279,7 +279,7 @@ Spell Absorption                    10 -> 4
 
 ### Restoration
 
-Fortify Magicka was doing less than Fortify Intelligence for the same price. 
+Fortify Magicka was doing less than Fortify Intelligence for the same price.
 ```
 Fortify Magicka                     1 -> 0.75           25% cheaper than Fortify Intelligence
 ```
@@ -494,9 +494,9 @@ Crushing Burden of Sin              60-80/30s/Target -> 600-800/30s
 ```
 
 ```
-Feather                             20/10s/Self -> 50/40s               2.5x/4x
-Strong Feather                      50/10s/Self -> 125/40s              2.5x/4x
-Great Feather                       100/10s/Self -> 250/40s             2.5x/4x
+Feather                             20/10s/Self -> 100/20s              5x/2x
+Strong Feather                      50/10s/Self -> 250/20s              5x/2x
+Great Feather                       100/10s/Self -> 500/20s             5x/2x
 
 Ulms's Juicedaw's Feather           50/10s/Self -> 500/10s              10x/1x
 ```
