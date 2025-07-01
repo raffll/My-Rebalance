@@ -61,7 +61,7 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
 ```
 1.7
-  - Potions & Spells modules in progress...
+  - Potions and Spells modules in progress...
   - Lock cost raised
 1.6
   - Name reinvented
@@ -76,7 +76,7 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
   - Resist Paralysis spell 10x more expensive
   - Crime module added
 1.2
-  - Lockpicking and traps split into separate esps
+  - Lockpicking and Traps split into separate esps
   - Alchemy adjusted
   - Mages Guild's travel 10x more expensive
 1.1
