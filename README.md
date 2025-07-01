@@ -10,7 +10,7 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 
 - Simplicity - I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity - Everything is divided into separate modules, so you can mix and match with other mods.
-- Purist friendly - I'm trying to not make many arbitrary decisions. Most of the changes are multipliers or additions to existing values.
+- Purist friendly - I try to avoid arbitrary decisions. Most changes are multipliers or additions to existing values.
 - Math-driven - Seriously, I’m doing real calculations here.
 
 ------------------------------------------------------------
@@ -25,7 +25,7 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 If you are using MCP, leave vanilla mechanics for creating spells.
 - Maximum spell magnitude is set to 100 for 1440 seconds. Creating spells with a magnitude over 100 is generally overpowered.
 - Self-made spells have one additional second added when calculating cost, because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
-- Only one spell effect per spell is allowed, which can serve as a workaround for the magnitude cap.
+- Only one spell effect per spell is allowed.
 
 Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn’t be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these “cheats” are enabled.
 
@@ -33,11 +33,8 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 
 #### Recommendations
 
-- Some kind of real-time talking with NPC mod is recommended. This is mainly to prevent persuasion exploits.
-- I recommend using my other mod: https://www.nexusmods.com/morrowind/mods/55507.
-  - The skill cap is set to 150, and the attribute cap is set to 300.
-  - Potion consumption is limited to prevent stacking too many effects.
-  - Training limit is enabled. This just simply removes the leveling problem.
+- Using some form of real-time dialogue mod with NPCs is recommended, primarily to prevent persuasion exploits.
+- I also recommend my other mod: https://www.nexusmods.com/morrowind/mods/55507, which sets the skill cap to 150 and the attribute cap to 300, limits potion consumption, and enables a training limit per level.
 
 ------------------------------------------------------------
 
