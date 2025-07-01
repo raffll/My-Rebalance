@@ -528,10 +528,14 @@ $${\color{orange}\*1.7\*}$$ TODO
 - You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1.
 - Previously this was possible with Alchemy at 40.
 
+--
+
 #### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
 
 - Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
 - Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes.
+
+--
 
 #### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
 
@@ -560,11 +564,15 @@ Silence                             120s                Can't cast any spells fo
 Sound                               100%/30s            100% to fail cast for 30s
 ```
 
+--
+
 #### How to open a 100-point lock
 
 - Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
 - Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
 - Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
+
+--
 
 #### How to untrap a 100-point spell
 
