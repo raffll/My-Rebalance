@@ -4,8 +4,6 @@
 
 Despite the name, my intention here is not to balance the game. That’s impossible. Nor is it to make it harder or easier. The idea is to make more options viable for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
-**You will be overpowered anyway! But the path to achieve that will be more fun!**
-
 ------------------------------------------------------------
 
 #### Philosophy
