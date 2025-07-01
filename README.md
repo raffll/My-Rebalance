@@ -545,25 +545,7 @@ Great Feather                       100/10s/Self -> 250/40s             2.5x/4x
 Ulms's Juicedaw's Feather           50/10s/Self -> 500/10s              10x/1x
 ```
 
-```
-Fire Barrier                        1-10/10s/Self
-Fire Barrier (fire_fathasa_unique)  1-10/10s/Self                       -> Weak Fire Shield
-Fire Shield                         10/30s/Self
-Strong Fire Shield                  12/30s/Self
-Fierce Fire Shield                  5-11/10s/Self
-
-Frost Barrier                       3/10s/Self
-Frost Shield (frost_shield)         6/30s/Self                          -> Weak Frost Shield
-Frost Shield                        10/30s/Self
-Strong Frost Shield                 12/30s/Self
-Fierce Frost Shield                 5-11/10s/Self
-
-Shock Barrier                       1-10/10s/Self
-Shock Shield (shock shield)         3/20s/Self                          -> Weak Shock Shield
-Lightning Shield                    10/30s/Self                         -> Shock Shield
-Strong Shock Shield                 12/30s/Self
-Fierce Shock Shield                 5-11/10s/Self
-```
+### Destruction
 
 ```
 Armor Eater                         10-30/Touch -> 10-30/6s             1x/6x
