@@ -538,7 +538,7 @@ $${\color{orange}\*1.7\*}$$ TODO
 
 ------------------------------------------------------------
 
-## Appendix
+## Appendix A
 
 #### _How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)_
 
