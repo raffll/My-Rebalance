@@ -361,6 +361,8 @@ fPickPocketMod                      0.3 -> 0            Any item available to st
 
 ## Lockpicking
 
+$${\color{orange}\*1.7\*}$$ Lock spell effect cost increased to 60. Locking doors with 1 point of magnitude was useful for training. Now at least it will cost something.
+
 The main goal here is to make Security useful on higher skill levels and, additionally, to be better than Alteration. Previously there was no benefit from raising Security over 50.
 ```
 fPickLockMult                       -1 -> -1.25         Locks are harder to unlock
@@ -368,7 +370,6 @@ fPickLockMult                       -1 -> -1.25         Locks are harder to unlo
 
 The second goal is to make opening 100-point locks possible only for higher-level characters. Earlier, magic was a better option to unlock the door at any level with cheap spells and scrolls.
 
-$${\color{orange}\*1.7\*}$$ Locking doors with 1 point of magnitude was useful for training. Now at least it will cost something.
 ```
 Open                                6 -> 12             2x increased base cost
 Lock                                2 -> 60
