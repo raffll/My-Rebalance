@@ -498,7 +498,7 @@ Feather                             20/10s/Self -> 100/20s              5x/2x
 Strong Feather                      50/10s/Self -> 250/20s              5x/2x
 Great Feather                       100/10s/Self -> 500/20s             5x/2x
 
-Ulms's Juicedaw's Feather           50/10s/Self -> 500/10s              10x/1x
+Ulms' Juicedaw Feather              50/10s/Self -> 500/10s              10x/1x
 ```
 
 ### Destruction
