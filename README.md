@@ -59,28 +59,31 @@ It's not a requirement but a reasonable limit.
 ------------------------------------------------------------
 
 #### History
-
-- 1.1
+```
+1.1
   - Elemental damage costs increased
   - Detect spells 5x cheaper
   - Secret Master's apparatus 5x more expensive
-- 1.2
+1.2
   - Lockpicking and traps split into separate esps
   - Alchemy adjusted
   - Mages Guild's travel 10x more expensive
-- 1.3
+1.3
   - Resist Paralysis spell 10x more expensive
   - Crime module added
-- 1.4
+1.4
   - Magic module revisited
-- 1.5
+1.5
   - Magic module remastered
-- 1.6 $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
+1.6
   - Name reinvented
   - Trap costs readjusted
   - Potion module added
   - Spell module added
-- 1.7 $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
+```
+
+* $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
+* $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 
 ------------------------------------------------------------
 
