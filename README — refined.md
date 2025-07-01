@@ -59,7 +59,7 @@ It's not a requirement but a reasonable limit.
 ------------------------------------------------------------
 
 #### History
-
+```
 1.1
   - Elemental damage costs increased
   - Detect spells 5x cheaper
@@ -75,18 +75,21 @@ It's not a requirement but a reasonable limit.
   - Magic module revisited
 1.5
   - Magic module remastered
-1.6 $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
+1.6
   - Name reinvented
   - Trap costs readjusted
   - Potion module added
   - Spell module added
-1.7 $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
+```
+
+* $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
+* $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 
 ------------------------------------------------------------
 
 ## Skills
 
-Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Security is based on Agility anyway.
+Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Meanwhile, Security is based on Agility anyway.
 ```
 Armorer                             Strength -> Endurance
 Security                            Intelligence -> Agility
@@ -96,7 +99,7 @@ Security                            Intelligence -> Agility
 
 ## Running
 
-Just a 25% speed boost for PC, NPCs, and creatures.
+Applies a simple 25% speed boost to the player, NPCs, and creatures.
 ```
 fMinWalkSpeed                       100 -> 125
 fMaxWalkSpeed                       200 -> 250
@@ -108,16 +111,18 @@ fMaxWalkSpeedCreature               300 -> 375
 
 ## Alchemy
 
-My main goal here is to adjust potion creation to be more in line with what we have in stores. It's a difficult task to compare it with buyable potions because they are using entirely different formulas. Pre-made potions are made from templates, like in a factory. And that's fine; in real life, most things are standardized. However, self-made potions depend heavily on spell effect base cost, which may differ from effect to effect, and also have this automatic magnitude-to-duration ratio. At the end we have useless pre-made potions and overpowered self-made ones, or vice versa.
+My main goal with this change is to bring self-made potions more in line with the ones you can buy in stores. This task is tricky, since pre-made potions and crafted potions follow entirely different rules. Store-bought potions are based on fixed templates—like standardized products in a factory—which makes sense, since most things in real life follow some standardization.
 
-Another problem is that you can successfully create excellent Restore Fatigue potions (200 pts) with Alchemy at 5, making other choices garbage on the same level (e.g., Restore Fatigue equivalent will cost you 15 Magicka with a 9% chance at Restoration level 5).
+In contrast, self-made potions rely on the base cost of spell effects, which can vary widely, and they're also subject to automatic magnitude-to-duration scaling. The result is often a mismatch: pre-made potions that are too weak to be useful and crafted potions that are vastly overpowered—or sometimes the other way around.
 
-So after applying this patch, some potions will be much weaker (up to 4x, but it depends on the spell effect). But overall, you can get good results with decent stats and equipment, and buyable potions will be useful much longer.
+Another issue is imbalance at low skill levels. For example, you can easily make highly effective Restore Fatigue potions (e.g., 200 points) with only 5 Alchemy, while a similar Restore Fatigue spell at Restoration level 5 would cost 15 Magicka and have just a 9% success rate. This makes some choices clearly superior to others with little effort.
+
+After this patch, some potion effects—depending on the underlying spell effect—may be up to four times weaker. However, the system as a whole should feel more balanced. Crafted potions will still scale well with better stats and equipment, while store-bought potions will remain useful for much longer.
 ```
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
 
-Secret Master's apparatus prices were lower than Grandmaster's in some cases. Now they are 5x more expensive.
+Secret Master's apparatuses were cheaper than Grandmaster's versions in some cases. Now they are 5x more expensive.
 ```
 Secret Master's Alembic             1600gp -> 8000gp
 Secret Master's Calcinator          3200gp -> 16000gp
@@ -133,9 +138,9 @@ Secret Master's Retort              1000gp -> 5000gp
 
 ## Enchant
 
-This is the worst skill in the game. Self-made enchantments are almost impossible to do. You don't need to recharge items because they are recharging by themselves. And at the end, the secret master will attack you on sight.
+This was one of the weakest skills in the game. Creating your own enchantments was nearly impossible, and you didn’t even need to recharge enchanted items—they recharged automatically. To make things worse, the Secret Master would attack you on sight.
 
-Those changes are trying to make self-enchanting as good as an enchanter service but forcing you to go and hunt for soulgems to keep your equipment useful. As a fighter or thief, you have to do better resource management or just buy the same item again.
+These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully—or just buy a replacement item when needed.
 ```
 sMagicInsufficientCharge            "Item does not have enough charge." -> ""
 fMagicItemRechargePerSecond         0.05 -> 0           Disabled idle recharging
@@ -160,7 +165,7 @@ Demoralize Humanoid                 Mysticism -> Illusion
 
 ### Alteration
 
-It's worth trying elemental shields now, for the fun of killing low-level creatures. Cost is not changed, as it does two things: resist the element and damage the opponent that hits you. But even now with 10x more damage, it's just a gimmick compared to real damage spells.
+Elemental shields are now worth experimenting with—especially for the fun of killing low-level creatures. Their cost hasn’t changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers. Even with 10x more damage, though, they remain more of a gimmick than a true alternative to direct damage spells.
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
 ```
@@ -176,7 +181,7 @@ The same rule applies to Swift Swim. It's doing only one thing, so it should do 
 Swift Swim                          2 -> 0.5            2x faster swim than Fortify Speed
 ```
 
-Jump and Slowfall are generally worse than Levitate. But using them together, they can be a cheaper alternative.
+Jump and Slowfall are generally worse than Levitate. But using them together, they can offer a cheaper alternative.
 ```
 Jump                                3 -> 1
 Slowfall                            3 -> 1
@@ -197,7 +202,7 @@ $${\color{orange}\*1.7\*}$$ TODO
 
 ### Destruction
 
-Elemental damage didn't make sense; there was no point in using spells other than Fire or Frost Damage. So I lowered them all to almost the same levels. However, I wanted to preserve some flavor here anyway. Finally, I decided to switch Damage Health with Poison for more consistency.
+Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I lowered all elemental damage types to roughly the same level. Still, I wanted to preserve some of their unique flavor. Finally, I replaced Damage Health with Poison to make things more consistent.
 ```
 Fire Damage                              5.00           Unchanged
 Frost Damage                        5 -> 5.25
