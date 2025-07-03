@@ -59,31 +59,6 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 * $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
-```
-1.7
-  - Potions and Spells modules in progress...
-  - Lock cost raised
-1.6
-  - Name reinvented
-  - Trap costs readjusted
-  - Potion module added
-  - Spell module added
-1.5
-  - Magic module remastered
-1.4
-  - Magic module revisited
-1.3
-  - Resist Paralysis spell 10x more expensive
-  - Crime module added
-1.2
-  - Lockpicking and Traps split into separate esps
-  - Alchemy adjusted
-  - Mages Guild's travel 10x more expensive
-1.1
-  - Elemental damage costs increased
-  - Detect spells 5x cheaper
-  - Secret Master's apparatus 5x more expensive
-```
 
 ------------------------------------------------------------
 
@@ -111,11 +86,7 @@ fMaxWalkSpeedCreature               300 -> 375
 
 ## Alchemy
 
-My main goal with this change is to bring self-made potions more in line with the ones you can buy in stores. This task is tricky, since pre-made potions and crafted potions follow entirely different rules. Store-bought potions are based on fixed templates—like standardized products in a factory—which makes sense, since most things in real life follow some standardization.
-
-In contrast, self-made potions rely on the base cost of spell effects, which can vary widely, and they're also subject to automatic magnitude-to-duration scaling. The result is often a mismatch: pre-made potions that are too weak to be useful and crafted potions that are vastly overpowered—or sometimes the other way around.
-
-Another issue is imbalance at low skill levels. For example, you can easily make highly effective Restore Fatigue potions (e.g., 200 points) with only 5 Alchemy, while a similar Restore Fatigue spell at Restoration level 5 would cost 15 Magicka and have just a 9% success rate. This makes some choices clearly superior to others with little effort.
+The main goal here is to fix the imbalance at low skill levels. For example, you can easily make highly effective Restore Fatigue potions (e.g., 200 points) with only 5 Alchemy, while a similar Restore Fatigue spell at Restoration level 5 would cost 15 Magicka and have just a 9% success rate. This makes some choices clearly superior to others with little effort.
 
 After this patch, some potion effects—depending on the underlying spell effect—may be up to four times weaker. However, the system as a whole should feel more balanced. Crafted potions will still scale well with better stats and equipment, while store-bought potions will remain useful for much longer.
 ```
@@ -151,7 +122,7 @@ fEnchantmentChanceMult              3 -> 0.6            5x easier self enchant
 
 ### Alteration
 
-Elemental shields are now worth experimenting with—especially for the fun of taking down low-level creatures. Their cost hasn’t changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers. Even with 10x more damage, though, they remain more of a gimmick than a true alternative to direct damage spells.
+Elemental shields are now worth experimenting with—especially for the fun of killing low-level creatures. Their cost hasn’t changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers. Even with 10x more damage, though, they remain more of a gimmick than a true alternative to direct damage spells.
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
 ```
@@ -167,7 +138,7 @@ The same logic applies to Swift Swim, which affects only swimming speed and shou
 Swift Swim                          2 -> 0.5            2x faster swim than Fortify Speed
 ```
 
-Jump and Slowfall are generally harder to use than Levitate, but used together, they offer a more affordable alternative.
+Jump and Slowfall are generally harder to use than Levitate, but used together, they should offer a more affordable alternative.
 ```
 Jump                                3 -> 1
 Slowfall                            3 -> 1
@@ -235,7 +206,7 @@ Drain Skill                         1 -> 2
 
 ### Illusion
 
-Previously, there was little reason to use these effects over paralysis.
+Previously, there was little reason to use these effects over Paralyze.
 ```
 Silence                             40 -> 20            2x cheaper than Paralyze
 Sound                               3 -> 0.8            2x cheaper at 25% than Paralyze
@@ -298,7 +269,7 @@ Resist Paralysis                    0.2 -> 2
 
 ## Barter
 
-The economy is broken because there is an unlimited supply of money in the game, so simply making everything more expensive won’t fix the problem. The real issue is a player mindset focused on quickly replacing all items with gold. You don’t need to do that. Instead, pick only valuable items and sell them when you truly need cash. Typically, the only times you’ll really need cash are to purchase enchanted items or pay for training. There should already be enough money circulating in the market to cover those needs for about a month.
+The economy is broken because there is an unlimited supply of money in the game, so simply making everything more expensive won’t fix the problem. The real issue is a player mindset focused on quickly replacing all items with gold. You don’t need to do that. Instead, pick only valuable items and sell them when you truly need cash. Typically, the only times you’ll really need cash are to purchase enchanted items or pay for training. There should already be enough money in the market to cover those needs for about a month.
 
 Additionally, this encourages investing in Speechcraft and Mercantile to secure better prices. A beneficial side effect is having more time to recover money spent on enchantments or training, especially if the merchant also buys your items.
 ```
@@ -415,7 +386,7 @@ $${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the u
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ With the new spell effect costs, potions that used to be very different from their self-made versions have now been adjusted. I also want to keep this magnitude-to-duration ratio, at least for the standard potions.
+$${\color{orange}\*1.7\*}$$ With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
 
 ```
 Bargain Potion of Burden            5pts/8s -> 50pts/80s                10x/10x (cost 0.1)
