@@ -443,6 +443,12 @@ Potion of Dispel                    10% -> 100%
 
 ------------------------------------------------------------
 
+## Magic - Potions TR
+
+$${\color{red}\*TODO\*}$$ TODO
+
+------------------------------------------------------------
+
 ## Magic - Spells
 
 $${\color{orange}\*1.7\*}$$ Spells have been tweaked to stay useful following the changes to spell effect costs.
