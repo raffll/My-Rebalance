@@ -18,13 +18,13 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 #### Assumptions
 
 - Patch for Purists is applied.
-- OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
+- OpenMW is preferred (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
 If you are using MCP, leave vanilla mechanics for creating spells:
 - Maximum spell magnitude is set to 100 for 1440 seconds. Creating spells with a magnitude over 100 is generally overpowered.
-- Self-made spells have one additional second added when calculating cost, because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
+- Self-made spells have one additional second added when calculating cost. A 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
 - Only one spell effect per spell is allowed.
 
 Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn’t be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these "cheats" are enabled.
