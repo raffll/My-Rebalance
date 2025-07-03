@@ -153,6 +153,12 @@ Even with this adjustment, Shield remains less effective than Sanctuary.
 Shield                              2 -> 1
 ```
 
+$${\color{lime}\*1.8\*}$$ TODO
+```
+Open                                6 -> 12
+Lock                                2 -> 60
+```
+
 ------------------------------------------------------------
 
 ### Conjuration
@@ -444,7 +450,7 @@ Potion of Dispel                    10% -> 100%
 
 ------------------------------------------------------------
 
-## Magic - Potions TR
+## Magic - Potions - Tamriel Data
 
 $${\color{lime}\*1.8\*}$$ Following potions from Tamriel Data has been updated.
 ```
@@ -523,6 +529,12 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 * used by hungers, unavailable in vanilla
 ```
+
+------------------------------------------------------------
+
+## Magic - Spells - Tamriel Data
+
+$${\color{lime}\*1.8\*}$$ The spells from Tamriel Data supposed to be cheaper than vanilla.
 
 ------------------------------------------------------------
 
