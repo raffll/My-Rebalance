@@ -2,7 +2,7 @@
 
 #### Intentions
 
-Despite the name, my intention here is not to balance the game. That’s impossible. Nor is it to make it harder or easier. The idea is to make more options viable for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+Despite the name, my intention here is not to balance the game. That’s impossible. Nor is it to make it harder or easier. The idea is to make more options usable, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
 ------------------------------------------------------------
 
@@ -22,7 +22,7 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 - Tamriel Rebuilt is used, but not required.
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
-If you are using MCP, leave vanilla mechanics for creating spells.
+If you are using MCP, leave vanilla mechanics for creating spells:
 - Maximum spell magnitude is set to 100 for 1440 seconds. Creating spells with a magnitude over 100 is generally overpowered.
 - Self-made spells have one additional second added when calculating cost, because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
 - Only one spell effect per spell is allowed.
