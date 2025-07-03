@@ -60,6 +60,7 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 * $${\color{lime}\*1.8\*}$$ -- added or changed in version 1.8
 * $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
+* $${\color{red}\*?\*}$$ -- will be added in the future
 
 ------------------------------------------------------------
 
@@ -156,7 +157,7 @@ Shield                              2 -> 1
 
 ### Conjuration
 
-$${\color{orange}\*1.7\*}$$ TODO
+$${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
@@ -500,7 +501,7 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 ## Magic - Enchantments
 
-$${\color{orange}\*1.7\*}$$ TODO
+$${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
