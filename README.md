@@ -445,7 +445,7 @@ Potion of Dispel                    10% -> 100%
 
 ## Magic - Potions TR
 
-$${\color{red}\*?.?\*}$$ TODO
+$${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
