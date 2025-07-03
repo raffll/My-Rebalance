@@ -446,7 +446,28 @@ Potion of Dispel                    10% -> 100%
 
 ## Magic - Potions TR
 
-$${\color{red}\*?\*}$$ TODO
+$${\color{lime}\*1.8\*}$$ Following potions from Tamriel Data has been updated.
+```
+Standard Potion of Feather          10pts/30s -> 100pts/300s            T_Com_Potion_Feather_S
+
+Cheap Potion of Burden              8pts/15s -> 50pts/80s               T_Nor_Potion_Burden_C
+Quality Potion of Burden            15pts/45s -> 150pts/450s            T_Nor_Potion_Burden_Q
+
+Cheap Potion of Feather             8pts/15s -> 50pts/80s               T_Nor_Potion_Feather_C
+Quality Potion of Feather           15pts/45s -> 150pts/450s            T_Nor_Potion_Feather_Q
+```
+
+```
+Cheap Potion of Light               8pts/15s -> 40pts/75s               T_Nor_Potion_Light_C
+Quality Potion of Light             15pts/45s -> 75pts/225s             T_Nor_Potion_Light_Q
+
+Cheap Potion of Night-Eye           8pts/15s -> 40pts/75s               T_Nor_Potion_NightEye_C
+Quality Potion of Night-Eye         15pts/45s -> 75pts/225s             T_Nor_Potion_NightEye_Q
+```
+
+```
+Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Potion_DrainEndurance_Q
+```
 
 ------------------------------------------------------------
 
