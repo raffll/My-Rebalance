@@ -57,6 +57,7 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 #### History
 
+* $${\color{lime}\*1.8\*}$$ -- added or changed in version 1.8
 * $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
 
@@ -435,6 +436,11 @@ Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 ```
 
+$${\color{lime}\*1.8\*}$$ TODO
+```
+Potion of Dispel                    10% -> 100%
+```
+
 ------------------------------------------------------------
 
 ## Magic - Spells
@@ -496,8 +502,7 @@ $${\color{orange}\*1.7\*}$$ TODO
 
 #### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
 
-- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1.
-- Previously this was possible with Alchemy at 40.
+You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
 
 ------------------------------------------------------------
 
@@ -510,26 +515,26 @@ $${\color{orange}\*1.7\*}$$ TODO
 
 #### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
 
-- Damage spells are most powerful but need time to kick in.
+Damage spells are most powerful but need time to kick in.
 ```
 Damage Intelligence                 2pts/50s            Permanent drop 150 Magicka over 50s
 Damage Magicka                      4pts/100s           Permanent drop 400 Magicka over 100s
 ```
-- Otherwise, they will cost more.
+Otherwise, they will cost more.
 ```
 Damage Intelligence                 50pts/1s            Permanent drop 75 Magicka
 Damage Magicka                      100pts/3s           Permanent drop 300 Magicka over 3s
 ```
 
-- Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
-- Drain Magicka is the worst, even after adjustment.
+Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
+Drain Magicka is the worst, even after adjustment.
 ```
 Drain Intelligence                  100pts/24s          Drop 150 Magicka for 24s
 Drain Magicka                       100pts/32s          Drop 100 Magicka for 32s
 ```
 
-- Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
-- Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
+Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
 Silence                             120s                Can't cast any spells for 120s
 Sound                               100%/30s            100% to fail cast for 30s
