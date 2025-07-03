@@ -182,7 +182,7 @@ Damage Fatigue remains unchanged, as it is either nearly useless or very powerfu
 Damage Fatigue                           4              Unchanged
 ```
 
-Damage Attribute was so powerful it outperformed almost every other “utility” spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
+Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
 ```
 Damage Attribute                    8 -> 24
 ```
@@ -455,6 +455,12 @@ Quality Potion of Burden            15pts/45s -> 150pts/450s            T_Nor_Po
 
 Cheap Potion of Feather             8pts/15s -> 50pts/80s               T_Nor_Potion_Feather_C
 Quality Potion of Feather           15pts/45s -> 150pts/450s            T_Nor_Potion_Feather_Q
+```
+
+```
+Potion of Detect Key                10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Invisib_S
+Potion of Detect Creatures          10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Humanoid_S
+Potion of Detect Enchantments       10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Enemy_S
 ```
 
 ```
