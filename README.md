@@ -371,7 +371,7 @@ The trap mechanic has been restored; previously, anyone could disarm any trap wi
 fTrapCostMult                       0 -> -0.75          Trap spell cost taken into account
 ```
 
-Common trap costs were previously too low, so they have been adjusted to present a greater challenge.
+Common trap costs were previously too low, so they have been adjusted to present a greater challenge. They are roughly 50% of all traps in the game, and most of the others are under 20 points.
 ```
 Fire Trap                           3 -> 30             2-20pts/3s
 Frost Trap                          3 -> 35             2-20pts/3s
@@ -389,8 +389,8 @@ Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
 
 $${\color{lime}\*1.8\*}$$ Changes:
-* fTrapCostMult settings has been changed from -1 to -0.75. Now it scale more like lockpicking.
-* Trap costs have been revisited. Doesn't make sense to auto calculate them, values were too low anyway, and trap difficulty can be independent from spell power.
+* The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
+* Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
