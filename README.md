@@ -360,9 +360,8 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-$${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased to 60.
-
-$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been decreased to 24.
+* $${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased to 60.
+* $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been decreased to 24.
 
 ------------------------------------------------------------
 
