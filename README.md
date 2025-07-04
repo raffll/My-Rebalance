@@ -360,7 +360,7 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed to 24.
+$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
 ------------------------------------------------------------
 
@@ -388,9 +388,11 @@ Master Shock Trap                   5 -> 69             20-30pts/10s
 Master Poison Trap                  16 -> 108           5-10pts/50s
 ```
 
-$${\color{yellow}\*1.6\*}$$ * Trap costs have been recalculated according to the updated magic effect costs.
+$${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the updated magic effect costs.
 
-$${\color{lime}\*1.8\*}$$ * dd
+$${\color{lime}\*1.8\*}$$ Changes:
+* fTrapCostMult settings has been changed from -1 to -0.75. Now it scale more like lockpicking.
+* Trap costs have been revisited 
 
 ------------------------------------------------------------
 
