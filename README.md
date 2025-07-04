@@ -153,10 +153,10 @@ Even with this adjustment, Shield remains less effective than Sanctuary.
 Shield                              2 -> 1
 ```
 
-$${\color{lime}\*1.8\*}$$ TODO
+$${\color{lime}\*1.8\*}$$ The cost of these spell effects has been changed to be on par with Lockpicking.
 ```
 Open                                6 -> 12
-Lock                                2 -> 60
+Lock                                2 -> 24
 ```
 
 ------------------------------------------------------------
@@ -342,7 +342,7 @@ The second goal is to ensure that unlocking 100-point locks is only achievable b
 
 ```
 Open                                6 -> 12             2x increased base cost
-Lock                                2 -> 60
+Lock                                2 -> 24
 ```
 
 Now, using existing open spells requires a mage skilled in Alteration, or even a master mage to create new ones, since self-made spells cost twice as much as standalone spells.
@@ -361,6 +361,8 @@ Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot
 ```
 
 $${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased to 60.
+
+$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been decreased to 24.
 
 ------------------------------------------------------------
 
@@ -395,6 +397,40 @@ $${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the u
 ## Traps - Tamriel Data
 
 $${\color{red}\*?\*}$$ TODO
+```
+Acid Trap                           25 -> 23
+    Disintegrate Armor              20-40pts -> 20-40pts/6s
+    Disintegrate Weapon             20-40pts -> 20-40pts/6s
+
+Master Acid Trap                    25 -> 157
+    Disintegrate Armor              150-300pts -> 150-300pts/6s
+    Disintegrate Weapon             150-300pts -> 150-300pts/6s
+
+*Burglar's Bane Trap                10 -> 10
+Burnout Trap                        22 -> 19
+
+Agility Ravager Trap                39 -> 16
+Endurance Ravager Trap              39 -> 16
+Intelligence Ravager Trap           39 -> 16
+Luck Ravager Trap                   39 -> 16
+Personality Ravager Trap            39 -> 16
+Speed Ravager Trap                  39 -> 16
+Strength Ravager Trap               39 -> 16
+Willpower Ravager Trap              39 -> 16
+
+Flash Trap                          39 -> 31
+Hailstone Trap                      12 -> 13
+Toxic Shock Trap                    39 -> 33
+
+Mild Shock Trap                     94 -> 1
+
+*Grandmaster Fire Trap              94 -> 94
+Grandmaster Frost Trap              94 -> 99
+Grandmaster Shock Trap              94 -> 103
+Grandmaster Poison Trap             225 -> 144
+
+* unchanged
+```
 
 ------------------------------------------------------------
 
@@ -447,11 +483,6 @@ Additionally, potion inconsistencies have been fixed.
 ```
 Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
-```
-
-$${\color{lime}\*1.8\*}$$ TODO
-```
-Potion of Dispel                    10% -> 100%
 ```
 
 ------------------------------------------------------------
