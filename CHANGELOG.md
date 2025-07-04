@@ -1,9 +1,8 @@
 #### History
 ```
 1.8
-  - Potions: Potion of Dispel magnitude increased
-  - Potions TR: module added
-  - Spells TR: module added
+  - Potions TD: module added
+  - Spells TD: module added
 1.7
   - Potions and Spells: modules in progress...
   - Lockpicking: Lock spell effect 30x more expensive
