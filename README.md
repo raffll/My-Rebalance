@@ -392,7 +392,7 @@ $${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the u
 
 $${\color{lime}\*1.8\*}$$ Changes:
 * fTrapCostMult settings has been changed from -1 to -0.75. Now it scale more like lockpicking.
-* Trap costs have been revisited 
+* Trap costs have been revisited to change only necessary/broken traps.
 
 ------------------------------------------------------------
 
