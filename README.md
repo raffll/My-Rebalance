@@ -392,6 +392,12 @@ $${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the u
 
 ------------------------------------------------------------
 
+## Traps - Tamriel Data
+
+$${\color{red}\*?\*}$$ TODO
+
+------------------------------------------------------------
+
 ## Magic - Potions
 
 $${\color{orange}\*1.7\*}$$ With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
