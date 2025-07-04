@@ -368,71 +368,29 @@ $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed fro
 
 The trap mechanic has been restored; previously, anyone could disarm any trap with ease. Now, the trap spell cost will be factored into disarming difficulty, similar to how lock levels work.
 ```
-fTrapCostMult                       0 -> -1             Trap spell cost taken into account
+fTrapCostMult                       0 -> -0.75          Trap spell cost taken into account
 ```
 
-Common trap costs were previously inconsistent, so they have been adjusted to present a greater challenge.
+Common trap costs were previously too low, so they have been adjusted to present a greater challenge.
 ```
-Fire Trap                           3 -> 8              2-20pts/3s
-Frost Trap                          3 -> 9              2-20pts/3s
-Shock Trap                          5 -> 9              2-20pts/3s
-Lifeforce Trap                      8 -> 10             2-20pts/3s
-Poison Trap                         16 -> 52            1-5pts/60s
+Fire Trap                           3 -> 30             2-20pts/3s
+Frost Trap                          3 -> 35             2-20pts/3s
+Shock Trap                          5 -> 40             2-20pts/3s
+Lifeforce Trap                      8 -> 45             2-20pts/3s
+Poison Trap                         16 -> 50            1-5pts/60s
 
-Paralysis Trap                      13 -> 21            10s
-Silence Trap                        37 -> 31            30s
+Paralysis Trap                      13 -> 55            10s
+Silence Trap                        37 -> 60            30s
 
-Master Fire Trap                    3 -> 63             20-30pts/10s
-Master Frost Trap                   3 -> 66             20-30pts/10s
-Master Shock Trap                   5 -> 69             20-30pts/10s
-Master Poison Trap                  16 -> 108           5-10pts/50s
+Master Fire Trap                    3 -> 65             20-30pts/10s
+Master Frost Trap                   3 -> 70             20-30pts/10s
+Master Shock Trap                   5 -> 75             20-30pts/10s
+Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
-
-$${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the updated magic effect costs.
 
 $${\color{lime}\*1.8\*}$$ Changes:
 * fTrapCostMult settings has been changed from -1 to -0.75. Now it scale more like lockpicking.
-* Trap costs have been revisited to change only necessary/broken traps.
-
-------------------------------------------------------------
-
-## Traps - Tamriel Data
-
-$${\color{red}\*?\*}$$ TODO
-```
-Acid Trap                           25 -> 23
-    Disintegrate Armor              20-40pts -> 20-40pts/6s
-    Disintegrate Weapon             20-40pts -> 20-40pts/6s
-
-Master Acid Trap                    25 -> 157
-    Disintegrate Armor              150-300pts -> 150-300pts/6s
-    Disintegrate Weapon             150-300pts -> 150-300pts/6s
-
-*Burglar's Bane Trap                10 -> 10
-Burnout Trap                        22 -> 19
-
-Agility Ravager Trap                39 -> 16
-Endurance Ravager Trap              39 -> 16
-Intelligence Ravager Trap           39 -> 16
-Luck Ravager Trap                   39 -> 16
-Personality Ravager Trap            39 -> 16
-Speed Ravager Trap                  39 -> 16
-Strength Ravager Trap               39 -> 16
-Willpower Ravager Trap              39 -> 16
-
-Flash Trap                          39 -> 31
-Hailstone Trap                      12 -> 13
-Toxic Shock Trap                    39 -> 33
-
-Mild Shock Trap                     94 -> 1
-
-*Grandmaster Fire Trap              94 -> 94
-Grandmaster Frost Trap              94 -> 99
-Grandmaster Shock Trap              94 -> 103
-Grandmaster Poison Trap             225 -> 144
-
-* unchanged
-```
+* Trap costs have been revisited. Doesn't make sense to auto calculate them, values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
