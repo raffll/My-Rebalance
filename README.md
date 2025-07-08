@@ -377,11 +377,11 @@ Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot
 
 $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
-#### How to open a 100-point lock
+#### _How to open a 100-point lock_
 
-- Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
-- Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
-- Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
+- _Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
+- _Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
+- _Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
 
 ------------------------------------------------------------
 
@@ -413,11 +413,11 @@ $${\color{lime}\*1.8\*}$$ Changes:
 * The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
 * Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
-#### How to untrap a 100-point spell
+#### _How to untrap a 100-point spell_
 
-- Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes.
-- Mage - Telekinesis.
-- Warrior - Take it on the chin.
+- _Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes._
+- _Mage - Telekinesis._
+- _Warrior - Take it on the chin._
 
 ------------------------------------------------------------
 
