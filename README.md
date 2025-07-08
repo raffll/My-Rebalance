@@ -103,10 +103,6 @@ Secret Master's Mortar & Pestle     6000gp -> 30000gp
 Secret Master's Retort              1000gp -> 5000gp
 ```
 
-#### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
-
-_You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40._
-
 ------------------------------------------------------------
 
 ## Enchant
@@ -119,11 +115,6 @@ sMagicInsufficientCharge            "Item does not have enough charge." -> ""
 fMagicItemRechargePerSecond         0.05 -> 0           Disabled idle recharging
 fEnchantmentChanceMult              3 -> 0.6            5x easier self enchant
 ```
-
-#### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
-
-- _Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
-- _Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes._
 
 ------------------------------------------------------------
 
@@ -375,12 +366,6 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-#### _How to open a 100-point lock_
-
-- _Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
-- _Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
-- _Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
-
 $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
 ------------------------------------------------------------
@@ -408,12 +393,6 @@ Master Frost Trap                   3 -> 70             20-30pts/10s
 Master Shock Trap                   5 -> 75             20-30pts/10s
 Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
-
-#### _How to untrap a 100-point spell_
-
-- _Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes._
-- _Mage - Telekinesis._
-- _Warrior - Take it on the chin._
 
 $${\color{lime}\*1.8\*}$$ Changes:
 * The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
@@ -565,3 +544,28 @@ $${\color{red}\*?\*}$$ TODO
 ## Magic - Enchantments
 
 $${\color{red}\*?\*}$$ TODO
+
+------------------------------------------------------------
+
+## Appendix A
+
+#### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
+
+_You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40._
+
+#### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
+
+- _Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
+- _Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes._
+
+#### _How to open a 100-point lock_
+
+- _Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
+- _Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
+- _Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
+
+#### _How to untrap a 100-point spell_
+
+- _Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes._
+- _Mage - Telekinesis._
+- _Warrior - Take it on the chin._
