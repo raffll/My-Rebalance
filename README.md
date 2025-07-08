@@ -219,7 +219,7 @@ $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exact
 Previously, there was little reason to use these effects over Paralyze.
 ```
 Silence                             40 -> 20            2x cheaper than Paralyze
-Sound                               3 -> 0.5            2x cheaper at 40% than Paralyze
+Sound                               3 -> 1              2x cheaper at 20% than Paralyze
 ```
 
 Additionally, a bugfix related to Illusion has been included.
@@ -227,7 +227,7 @@ Additionally, a bugfix related to Illusion has been included.
 Demoralize Humanoid                 Mysticism -> Illusion
 ```
 
-$${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 0.5. Now it's exactly 6x cheaper.
+$${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
 
 ------------------------------------------------------------
 
