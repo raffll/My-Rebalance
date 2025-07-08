@@ -375,13 +375,13 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
-
 #### _How to open a 100-point lock_
 
 - _Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
 - _Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
 - _Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
+
+$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
 ------------------------------------------------------------
 
@@ -409,15 +409,15 @@ Master Shock Trap                   5 -> 75             20-30pts/10s
 Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
 
-$${\color{lime}\*1.8\*}$$ Changes:
-* The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
-* Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
-
 #### _How to untrap a 100-point spell_
 
 - _Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes._
 - _Mage - Telekinesis._
 - _Warrior - Take it on the chin._
+
+$${\color{lime}\*1.8\*}$$ Changes:
+* The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
+* Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
