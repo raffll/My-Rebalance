@@ -103,6 +103,10 @@ Secret Master's Mortar & Pestle     6000gp -> 30000gp
 Secret Master's Retort              1000gp -> 5000gp
 ```
 
+#### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
+
+_You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40._
+
 ------------------------------------------------------------
 
 ## Enchant
@@ -115,6 +119,11 @@ sMagicInsufficientCharge            "Item does not have enough charge." -> ""
 fMagicItemRechargePerSecond         0.05 -> 0           Disabled idle recharging
 fEnchantmentChanceMult              3 -> 0.6            5x easier self enchant
 ```
+
+#### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
+
+- _Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
+- _Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes._
 
 ------------------------------------------------------------
 
@@ -199,16 +208,18 @@ Disintegrate Armor                  6 -> 1
 Disintegrate Weapon                 6 -> 1
 ```
 
-Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it’s 25% cheaper. As a side effect, many potions with these negative effects will become stronger.
+Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it’s 20% cheaper. As a side effect, many potions with these negative effects will become stronger.
 ```
-Drain Magicka                       4 -> 0.75
-Drain Fatigue                       2 -> 0.50
+Drain Magicka                       4 -> 0.8
+Drain Fatigue                       2 -> 0.5
 ```
 
 Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
 ```
 Drain Skill                         1 -> 2
 ```
+
+$${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
 
 ------------------------------------------------------------
 
@@ -217,13 +228,15 @@ Drain Skill                         1 -> 2
 Previously, there was little reason to use these effects over Paralyze.
 ```
 Silence                             40 -> 20            2x cheaper than Paralyze
-Sound                               3 -> 0.8            2x cheaper at 25% than Paralyze
+Sound                               3 -> 0.5            2x cheaper at 40% than Paralyze
 ```
 
 Additionally, a bugfix related to Illusion has been included.
 ```
 Demoralize Humanoid                 Mysticism -> Illusion
 ```
+
+$${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 0.5. Now it's exactly 6x cheaper.
 
 ------------------------------------------------------------
 
@@ -260,7 +273,7 @@ Spell Absorption                    10 -> 4
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price.
 ```
-Fortify Magicka                     1 -> 0.75           25% cheaper than Fortify Intelligence
+Fortify Magicka                     1 -> 0.8            20% cheaper than Fortify Intelligence
 ```
 
 Fortifying skill over 50 should be available only for the highest-level characters.
@@ -272,6 +285,8 @@ This looks like a typo compared to other resistances.
 ```
 Resist Paralysis                    0.2 -> 2
 ```
+
+$${\color{lime}\*1.8\*}$$ Fortify Magicka changed from 0.75 to 0.8. To be on par with Drain Magicka.
 
 ------------------------------------------------------------
 
@@ -362,6 +377,12 @@ Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot
 
 $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
+#### How to open a 100-point lock
+
+- Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
+- Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
+- Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
+
 ------------------------------------------------------------
 
 ## Traps
@@ -371,7 +392,7 @@ The trap mechanic has been restored; previously, anyone could disarm any trap wi
 fTrapCostMult                       0 -> -0.75          Trap spell cost taken into account
 ```
 
-Common trap costs were previously too low, so they have been adjusted to present a greater challenge. They are roughly 50% of all traps in the game, and most of the others are under 20 points.
+Common trap costs were previously too low, so they have been adjusted to present a greater challenge. These spells are roughly 50% of all traps in the game, and most of the others are under 20 points.
 ```
 Fire Trap                           3 -> 30             2-20pts/3s
 Frost Trap                          3 -> 35             2-20pts/3s
@@ -391,6 +412,12 @@ Master Poison Trap                  16 -> 100           5-10pts/50s
 $${\color{lime}\*1.8\*}$$ Changes:
 * The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
 * Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
+
+#### How to untrap a 100-point spell
+
+- Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes.
+- Mage - Telekinesis.
+- Warrior - Take it on the chin.
 
 ------------------------------------------------------------
 
@@ -531,70 +558,10 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 ## Magic - Spells - Tamriel Data
 
-$${\color{lime}\*1.8\*}$$ The spells from Tamriel Data supposed to be cheaper than vanilla.
+$${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
 ## Magic - Enchantments
 
 $${\color{red}\*?\*}$$ TODO
-
-------------------------------------------------------------
-
-## Appendix A
-
-#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
-
-You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
-
-------------------------------------------------------------
-
-#### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
-
-- Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
-- Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes.
-
-------------------------------------------------------------
-
-#### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
-
-Damage spells are most powerful but need time to kick in.
-```
-Damage Intelligence                 2pts/50s            Permanent drop 150 Magicka over 50s
-Damage Magicka                      4pts/100s           Permanent drop 400 Magicka over 100s
-```
-Otherwise, they will cost more.
-```
-Damage Intelligence                 50pts/1s            Permanent drop 75 Magicka
-Damage Magicka                      100pts/3s           Permanent drop 300 Magicka over 3s
-```
-
-Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
-Drain Magicka is the worst, even after adjustment.
-```
-Drain Intelligence                  100pts/24s          Drop 150 Magicka for 24s
-Drain Magicka                       100pts/32s          Drop 100 Magicka for 32s
-```
-
-Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
-Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
-```
-Silence                             120s                Can't cast any spells for 120s
-Sound                               100%/30s            100% to fail cast for 30s
-```
-
-------------------------------------------------------------
-
-#### How to open a 100-point lock
-
-- Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
-- Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
-- Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
-
-------------------------------------------------------------
-
-#### How to untrap a 100-point spell
-
-- Thief - Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
-- Mage - Telekinesis.
-- Warrior - Take it on the chin.
