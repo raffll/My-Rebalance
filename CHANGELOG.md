@@ -1,8 +1,14 @@
 #### History
 ```
 1.8
+  - Magic: Lock and Open added
+  - Magic: Drain Magicka 0.75 to 0.8
+  - Magic: Sound 0.8 to 1
+  - Magic: Fortify Magicka 0.75 to 0.8
+  - Lockpicking: Lock 60 to 24
+  - Traps: fTrapCostMult -1 to -0.75
+  - Traps: Trap costs revisited
   - Potions TD: module added
-  - Spells TD: module added
 1.7
   - Potions and Spells: modules in progress...
   - Lockpicking: Lock spell effect 30x more expensive
