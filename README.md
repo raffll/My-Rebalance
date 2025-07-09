@@ -57,6 +57,7 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 #### History
 
+* $${\color{green}\*1.9\*}$$ -- added or changed in version 1.9
 * $${\color{lime}\*1.8\*}$$ -- added or changed in version 1.8
 * $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
@@ -537,7 +538,7 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 ## Magic - Spells - Tamriel Data
 
-$${\color{red}\*?\*}$$ TODO
+$${\color{green}\*1.9\*}$$ TODO
 
 ### Alteration
 
@@ -554,6 +555,8 @@ Dalgor's Entwining                  [8 -> 96]                           [12x]
 Falling First Barrier               [42 -> 21]                          [0.5x]
 Tsun's Ward                         [40 -> 20]                          [0.5x]
 ```
+
+### Destruction
 
 ```
 Fracture Armor                      100/2s -> 100/20s
