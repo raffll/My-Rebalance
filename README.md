@@ -539,6 +539,43 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 $${\color{red}\*?\*}$$ TODO
 
+### Alteration
+
+```
+Shadow Rust     Burden              1-15/20s -> 10-150/20s              10x/1x
+                Disintegrate Armor  1-5/20s -> 6-30/20s                 6x/1x
+Weight of Guilt                     500/3s -> 500/30s                   1x/10x
+Fling                               500/3s -> 500/30s                   1x/10x
+To the ja-Kha'jay                   50/20s -> 50/60s                    1x/3x
+Fuchon Cire's Gentle Descent        10/20s -> 10/60s                    1x/3x
+Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
+
+Dalgor's Entwining                  [8 -> 96]                           [12x]
+Falling First Barrier               [42 -> 21]                          [0.5x]
+Tsun's Ward                         [40 -> 20]                          [0.5x]
+```
+
+```
+Fracture Armor                      100/2s -> 100/20s
+Iron Eater                          1-25/2s -> 1-25/12s
+Steel Eater                         5-30/3s -> 5-30/18s
+
+Kirhnarva's Leg-Breaker             [7 - 21]
+Meat Rot                            [11 - 14]
+Mind Rot                            [14 - 20]
+Jogvir's Soul Theft                 [24 -> 19]
+Sload Spell                         [20 -> 15]
+
+*Hairdoch's Extinguisher
+*Meridians Burning Light
+*Pinprick
+*Vampire's Touch
+
+* unchanged
+
+Duck                                [40 -> 10]
+```
+
 ------------------------------------------------------------
 
 ## Magic - Enchantments
