@@ -2,7 +2,7 @@
 
 #### Intentions
 
-Despite the name, my intention here is not to balance the game. That’s impossible. Nor is it to make it harder or easier. The idea is to make more options viable for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+Despite the name, my intention here is not to balance the game. That’s impossible. Nor is it to make it harder or easier. The idea is to make more options usable, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
 ------------------------------------------------------------
 
@@ -18,13 +18,13 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 #### Assumptions
 
 - Patch for Purists is applied.
-- OpenMW is used (vanilla may have different calculations, and MCP can fix some issues).
+- OpenMW is preferred (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
-If you are using MCP, leave vanilla mechanics for creating spells.
+If you are using MCP, leave vanilla mechanics for creating spells:
 - Maximum spell magnitude is set to 100 for 1440 seconds. Creating spells with a magnitude over 100 is generally overpowered.
-- Self-made spells have one additional second added when calculating cost, because a 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
+- Self-made spells have one additional second added when calculating cost. A 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
 - Only one spell effect per spell is allowed.
 
 Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn’t be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these "cheats" are enabled.
@@ -57,8 +57,10 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 #### History
 
+* $${\color{lime}\*1.8\*}$$ -- added or changed in version 1.8
 * $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
 * $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
+* $${\color{red}\*?\*}$$ -- will be added in the future
 
 ------------------------------------------------------------
 
@@ -151,11 +153,17 @@ Even with this adjustment, Shield remains less effective than Sanctuary.
 Shield                              2 -> 1
 ```
 
+$${\color{lime}\*1.8\*}$$ The cost of these spell effects has been changed to be on par with Lockpicking.
+```
+Open                                6 -> 12
+Lock                                2 -> 24
+```
+
 ------------------------------------------------------------
 
 ### Conjuration
 
-$${\color{orange}\*1.7\*}$$ TODO
+$${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
@@ -180,7 +188,7 @@ Damage Fatigue remains unchanged, as it is either nearly useless or very powerfu
 Damage Fatigue                           4              Unchanged
 ```
 
-Damage Attribute was so powerful it outperformed almost every other “utility” spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
+Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
 ```
 Damage Attribute                    8 -> 24
 ```
@@ -191,16 +199,18 @@ Disintegrate Armor                  6 -> 1
 Disintegrate Weapon                 6 -> 1
 ```
 
-Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it’s 25% cheaper. As a side effect, many potions with these negative effects will become stronger.
+Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it’s 20% cheaper. As a side effect, many potions with these negative effects will become stronger.
 ```
-Drain Magicka                       4 -> 0.75
-Drain Fatigue                       2 -> 0.50
+Drain Magicka                       4 -> 0.8
+Drain Fatigue                       2 -> 0.5
 ```
 
 Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
 ```
 Drain Skill                         1 -> 2
 ```
+
+$${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
 
 ------------------------------------------------------------
 
@@ -209,13 +219,15 @@ Drain Skill                         1 -> 2
 Previously, there was little reason to use these effects over Paralyze.
 ```
 Silence                             40 -> 20            2x cheaper than Paralyze
-Sound                               3 -> 0.8            2x cheaper at 25% than Paralyze
+Sound                               3 -> 1              2x cheaper at 20% than Paralyze
 ```
 
 Additionally, a bugfix related to Illusion has been included.
 ```
 Demoralize Humanoid                 Mysticism -> Illusion
 ```
+
+$${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
 
 ------------------------------------------------------------
 
@@ -252,7 +264,7 @@ Spell Absorption                    10 -> 4
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price.
 ```
-Fortify Magicka                     1 -> 0.75           25% cheaper than Fortify Intelligence
+Fortify Magicka                     1 -> 0.8            20% cheaper than Fortify Intelligence
 ```
 
 Fortifying skill over 50 should be available only for the highest-level characters.
@@ -264,6 +276,8 @@ This looks like a typo compared to other resistances.
 ```
 Resist Paralysis                    0.2 -> 2
 ```
+
+$${\color{lime}\*1.8\*}$$ Fortify Magicka changed from 0.75 to 0.8. To be on par with Drain Magicka.
 
 ------------------------------------------------------------
 
@@ -334,7 +348,7 @@ The second goal is to ensure that unlocking 100-point locks is only achievable b
 
 ```
 Open                                6 -> 12             2x increased base cost
-Lock                                2 -> 60
+Lock                                2 -> 24
 ```
 
 Now, using existing open spells requires a mage skilled in Alteration, or even a master mage to create new ones, since self-made spells cost twice as much as standalone spells.
@@ -352,7 +366,7 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-$${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased to 60.
+$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
 ------------------------------------------------------------
 
@@ -360,27 +374,29 @@ $${\color{orange}\*1.7\*}$$ The cost of the Lock spell effect has been increased
 
 The trap mechanic has been restored; previously, anyone could disarm any trap with ease. Now, the trap spell cost will be factored into disarming difficulty, similar to how lock levels work.
 ```
-fTrapCostMult                       0 -> -1             Trap spell cost taken into account
+fTrapCostMult                       0 -> -0.75          Trap spell cost taken into account
 ```
 
-Common trap costs were previously inconsistent, so they have been adjusted to present a greater challenge.
+Common trap costs were previously too low, so they have been adjusted to present a greater challenge. These spells are roughly 50% of all traps in the game, and most of the others are under 20 points.
 ```
-Fire Trap                           3 -> 8              2-20pts/3s
-Frost Trap                          3 -> 9              2-20pts/3s
-Shock Trap                          5 -> 9              2-20pts/3s
-Lifeforce Trap                      8 -> 10             2-20pts/3s
-Poison Trap                         16 -> 52            1-5pts/60s
+Fire Trap                           3 -> 30             2-20pts/3s
+Frost Trap                          3 -> 35             2-20pts/3s
+Shock Trap                          5 -> 40             2-20pts/3s
+Lifeforce Trap                      8 -> 45             2-20pts/3s
+Poison Trap                         16 -> 50            1-5pts/60s
 
-Paralysis Trap                      13 -> 21            10s
-Silence Trap                        37 -> 31            30s
+Paralysis Trap                      13 -> 55            10s
+Silence Trap                        37 -> 60            30s
 
-Master Fire Trap                    3 -> 63             20-30pts/10s
-Master Frost Trap                   3 -> 66             20-30pts/10s
-Master Shock Trap                   5 -> 69             20-30pts/10s
-Master Poison Trap                  16 -> 108           5-10pts/50s
+Master Fire Trap                    3 -> 65             20-30pts/10s
+Master Frost Trap                   3 -> 70             20-30pts/10s
+Master Shock Trap                   5 -> 75             20-30pts/10s
+Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
 
-$${\color{yellow}\*1.6\*}$$ Trap costs have been recalculated according to the updated magic effect costs.
+$${\color{lime}\*1.8\*}$$ Changes:
+* The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
+* Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
@@ -437,6 +453,39 @@ Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 
 ------------------------------------------------------------
 
+## Magic - Potions - Tamriel Data
+
+$${\color{lime}\*1.8\*}$$ Following potions from Tamriel Data has been updated.
+```
+Standard Potion of Feather          10pts/30s -> 100pts/300s            T_Com_Potion_Feather_S
+
+Cheap Potion of Burden              8pts/15s -> 50pts/80s               T_Nor_Potion_Burden_C
+Quality Potion of Burden            15pts/45s -> 150pts/450s            T_Nor_Potion_Burden_Q
+
+Cheap Potion of Feather             8pts/15s -> 50pts/80s               T_Nor_Potion_Feather_C
+Quality Potion of Feather           15pts/45s -> 150pts/450s            T_Nor_Potion_Feather_Q
+```
+
+```
+Potion of Detect Key                10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Invisib_S
+Potion of Detect Creatures          10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Humanoid_S
+Potion of Detect Enchantments       10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Enemy_S
+```
+
+```
+Cheap Potion of Light               8pts/15s -> 40pts/75s               T_Nor_Potion_Light_C
+Quality Potion of Light             15pts/45s -> 75pts/225s             T_Nor_Potion_Light_Q
+
+Cheap Potion of Night-Eye           8pts/15s -> 40pts/75s               T_Nor_Potion_NightEye_C
+Quality Potion of Night-Eye         15pts/45s -> 75pts/225s             T_Nor_Potion_NightEye_Q
+```
+
+```
+Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Potion_DrainEndurance_Q
+```
+
+------------------------------------------------------------
+
 ## Magic - Spells
 
 $${\color{orange}\*1.7\*}$$ Spells have been tweaked to stay useful following the changes to spell effect costs.
@@ -486,67 +535,37 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 ------------------------------------------------------------
 
+## Magic - Spells - Tamriel Data
+
+$${\color{red}\*?\*}$$ TODO
+
+------------------------------------------------------------
+
 ## Magic - Enchantments
 
-$${\color{orange}\*1.7\*}$$ TODO
+$${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
 ## Appendix A
 
-#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
+#### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
 
-- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1.
-- Previously this was possible with Alchemy at 40.
+- _You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40._
 
-------------------------------------------------------------
+#### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
 
-#### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
+- _Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
+- _Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes._
 
-- Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
-- Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes.
+#### _How to open a 100-point lock_
 
-------------------------------------------------------------
+- _Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
+- _Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
+- _Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
 
-#### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
+#### _How to untrap a 100-point spell_
 
-- Damage spells are most powerful but need time to kick in.
-```
-Damage Intelligence                 2pts/50s            Permanent drop 150 Magicka over 50s
-Damage Magicka                      4pts/100s           Permanent drop 400 Magicka over 100s
-```
-- Otherwise, they will cost more.
-```
-Damage Intelligence                 50pts/1s            Permanent drop 75 Magicka
-Damage Magicka                      100pts/3s           Permanent drop 300 Magicka over 3s
-```
-
-- Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
-- Drain Magicka is the worst, even after adjustment.
-```
-Drain Intelligence                  100pts/24s          Drop 150 Magicka for 24s
-Drain Magicka                       100pts/32s          Drop 100 Magicka for 32s
-```
-
-- Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
-- Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
-```
-Silence                             120s                Can't cast any spells for 120s
-Sound                               100%/30s            100% to fail cast for 30s
-```
-
-------------------------------------------------------------
-
-#### How to open a 100-point lock
-
-- Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
-- Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
-- Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
-
-------------------------------------------------------------
-
-#### How to untrap a 100-point spell
-
-- Thief - Security starting from level 90; 8% with probe quality 1.25 and average (50) attributes.
-- Mage - Telekinesis.
-- Warrior - Take it on the chin.
+- _Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes._
+- _Mage - Telekinesis._
+- _Warrior - Take it on the chin._
