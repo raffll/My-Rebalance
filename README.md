@@ -559,13 +559,13 @@ Tsun's Ward                         [40 -> 20]                          [0.5x]
 ### Destruction
 
 ```
-Fracture Armor                      100/2s -> 100/20s
-Iron Eater                          1-25/2s -> 1-25/12s
-Steel Eater                         5-30/3s -> 5-30/18s
+Fracture Armor                      100/2s -> 100/20s					1x/10x
+Iron Eater                          1-25/2s -> 1-25/12s					1x/6x
+Steel Eater                         5-30/3s -> 5-30/18s					1x/6x
 
-Kirhnarva's Leg-Breaker             [7 - 21]
-Meat Rot                            [11 - 14]
-Mind Rot                            [14 - 20]
+Kirhnarva's Leg-Breaker             [7 -> 22]
+Meat Rot                            [11 -> 14]
+Mind Rot                            [14 -> 20]
 Jogvir's Soul Theft                 [24 -> 19]
 Sload Spell                         [20 -> 15]
 
@@ -577,6 +577,12 @@ Sload Spell                         [20 -> 15]
 * unchanged
 
 Duck                                [40 -> 10]
+```
+
+### Illusion
+
+```
+Voices								50/20s -> 50/60s 					1x/3x
 ```
 
 ------------------------------------------------------------

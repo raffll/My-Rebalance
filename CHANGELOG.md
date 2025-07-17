@@ -1,5 +1,7 @@
 #### History
 ```
+1.9
+  - Spells TD: module added
 1.8
   - Magic: Lock and Open added
   - Magic: Drain Magicka 0.75 to 0.8
