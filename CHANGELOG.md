@@ -1,7 +1,9 @@
 #### History
 ```
 1.9
+  - Magic: elemental damage effects costs set to 6
   - Spells TD: module added
+  - Enchantments: module added
 1.8
   - Magic: Lock and Open added
   - Magic: Drain Magicka 0.75 to 0.8

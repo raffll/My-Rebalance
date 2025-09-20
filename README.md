@@ -96,7 +96,7 @@ After this patch, some potion effects—depending on the underlying spell effect
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
 
-In some cases, Secret Master's apparatuses were cheaper than Grandmaster versions. They are now five times more expensive.
+Some Secret Master's apparatuses were cheaper than Grandmaster versions. They all are now five times more expensive.
 ```
 Secret Master's Alembic             1600gp -> 8000gp
 Secret Master's Calcinator          3200gp -> 16000gp
@@ -170,13 +170,13 @@ $${\color{red}\*?\*}$$ TODO
 
 ### Destruction
 
-Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I lowered all elemental damage types to roughly the same level. Still, I wanted to preserve some of their unique flavor. Finally, I replaced Damage Health with Poison to make things more consistent.
+Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
 ```
-Fire Damage                              5.00           Unchanged
-Frost Damage                        5 -> 5.25
-Shock Damage                        7 -> 5.50
-Poison                              9 -> 5.75
-Damage Health                       8 -> 6.00
+Fire Damage                         5 -> 6
+Frost Damage                        5 -> 6
+Shock Damage                        7 -> 6
+Poison                              9 -> 6
+Damage Health                       8 -> 6
 ```
 
 Damage Magicka has been reduced to align with Damage Health.
@@ -212,6 +212,7 @@ Drain Skill                         1 -> 2
 ```
 
 $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
+$${\color{green}\*1.9\*}$$ All elemental damage costs changed to 6. **TODO**
 
 ------------------------------------------------------------
 
@@ -538,43 +539,31 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 ## Magic - Spells - Tamriel Data
 
-$${\color{green}\*1.9\*}$$ TODO
+$${\color{green}\*1.9\*}$$ Following spells from Tamriel Data has been updated.
 
 ### Alteration
 
 ```
-Shadow Rust     Burden              1-15/20s -> 10-150/20s              10x/1x
-                Disintegrate Armor  1-5/20s -> 6-30/20s                 6x/1x
+Shadow Rust
+	Burden              			1-15/20s -> 10-150/20s              10x/1x
+    Disintegrate Armor  			1-5/20s -> 6-30/20s                 6x/1x
 Weight of Guilt                     500/3s -> 500/30s                   1x/10x
 Fling                               500/3s -> 500/30s                   1x/10x
 To the ja-Kha'jay                   50/20s -> 50/60s                    1x/3x
 Fuchon Cire's Gentle Descent        10/20s -> 10/60s                    1x/3x
 Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
 
-Dalgor's Entwining                  [8 -> 96]                           [12x]
-Falling First Barrier               [42 -> 21]                          [0.5x]
-Tsun's Ward                         [40 -> 20]                          [0.5x]
+Dalgor's Entwining                  [8 -> 96]
+Falling First Barrier               [42 -> 21]
+Tsun's Ward                         [40 -> 20]
 ```
 
 ### Destruction
 
 ```
-Fracture Armor                      100/2s -> 100/20s					1x/10x
-Iron Eater                          1-25/2s -> 1-25/12s					1x/6x
-Steel Eater                         5-30/3s -> 5-30/18s					1x/6x
-
-Kirhnarva's Leg-Breaker             [7 -> 22]
-Meat Rot                            [11 -> 14]
-Mind Rot                            [14 -> 20]
-Jogvir's Soul Theft                 [24 -> 19]
-Sload Spell                         [20 -> 15]
-
-*Hairdoch's Extinguisher
-*Meridians Burning Light
-*Pinprick
-*Vampire's Touch
-
-* unchanged
+Fracture Armor                      100/2s -> 100/20s                   1x/10x
+Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
+Steel Eater                         5-30/3s -> 5-30/18s                 1x/6x
 
 Duck                                [40 -> 10]
 ```
@@ -582,14 +571,20 @@ Duck                                [40 -> 10]
 ### Illusion
 
 ```
-Voices								50/20s -> 50/60s 					1x/3x
+Voices                              50/20s -> 50/60s                    1x/3x
 ```
 
 ------------------------------------------------------------
 
 ## Magic - Enchantments
 
-$${\color{red}\*?\*}$$ TODO
+$${\color{green}\*1.9\*}$$ Following enchantments has been updated.
+
+```
+shadowstrike_en
+	Chameleon						200-100 -> 100
+slave_bracer_en                     Drain Magicka -> Damage Magicka
+```
 
 ------------------------------------------------------------
 
