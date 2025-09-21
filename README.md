@@ -211,8 +211,8 @@ Drain Skill is now more expensive due to its potential for being overpowered—s
 Drain Skill                         1 -> 2
 ```
 
-$${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
-$${\color{green}\*1.9\*}$$ All elemental damage costs changed to 6. **TODO**
+* $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
+* $${\color{green}\*1.9\*}$$ All elemental damage costs changed to 6. **TODO**
 
 ------------------------------------------------------------
 
@@ -229,7 +229,7 @@ Additionally, a bugfix related to Illusion has been included.
 Demoralize Humanoid                 Mysticism -> Illusion
 ```
 
-$${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
+* $${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
 
 ------------------------------------------------------------
 
