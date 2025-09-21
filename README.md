@@ -214,7 +214,7 @@ Drain Skill                         1 -> 2
 ```
 
 * $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
-* $${\color{green}\*1.9\*}$$ All elemental damage costs changed to 6. **TODO**
+* $${\color{green}\*1.9\*}$$ All elemental damage costs changed to 6.
 
 ------------------------------------------------------------
 
@@ -413,7 +413,7 @@ Master Poison Trap                  16 -> 100           5-10pts/50s
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
+With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
 
 ```
 Bargain Potion of Burden            5pts/8s -> 50pts/80s                10x/10x (cost 0.1)
@@ -462,11 +462,13 @@ Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 ```
 
+$${\color{orange}\*1.7\*}$$ Module added.
+
 ------------------------------------------------------------
 
 ## Magic - Potions - Tamriel Data
 
-$${\color{lime}\*1.8\*}$$ Following potions from Tamriel Data has been updated.
+Following potions from Tamriel Data has been updated.
 ```
 Standard Potion of Feather          10pts/30s -> 100pts/300s            T_Com_Potion_Feather_S
 
@@ -495,11 +497,13 @@ Quality Potion of Night-Eye         15pts/45s -> 75pts/225s             T_Nor_Po
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Potion_DrainEndurance_Q
 ```
 
+$${\color{lime}\*1.8\*}$$ Module added.
+
 ------------------------------------------------------------
 
 ## Magic - Spells
 
-$${\color{orange}\*1.7\*}$$ Spells have been tweaked to stay useful following the changes to spell effect costs.
+Spells have been tweaked to stay useful following the changes to spell effect costs.
 
 ### Alteration
 
@@ -544,11 +548,13 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 * used by hungers, unavailable in vanilla
 ```
 
+$${\color{orange}\*1.7\*}$$ Module added.
+
 ------------------------------------------------------------
 
 ## Magic - Spells - Tamriel Data
 
-$${\color{green}\*1.9\*}$$ Following spells from Tamriel Data has been updated.
+Following spells from Tamriel Data has been updated.
 
 ### Alteration
 
@@ -583,17 +589,21 @@ Duck                                [40 -> 10]
 Voices                              50/20s -> 50/60s                    1x/3x
 ```
 
+$${\color{green}\*1.9\*}$$ Module added.
+
 ------------------------------------------------------------
 
 ## Magic - Enchantments
 
-$${\color{green}\*1.9\*}$$ Following enchantments has been updated.
+Following enchantments has been updated.
 
 ```
 Shadowsting
     Chameleon                       200-100 -> 100
 Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 ```
+
+$${\color{green}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
