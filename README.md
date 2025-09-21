@@ -96,7 +96,7 @@ After this patch, some potion effects—depending on the underlying spell effect
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
 
-Some Secret Master's apparatuses were cheaper than Grandmaster versions. They all are now five times more expensive.
+Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
 ```
 Secret Master's Alembic             1600gp -> 8000gp
 Secret Master's Calcinator          3200gp -> 16000gp
@@ -154,17 +154,19 @@ Even with this adjustment, Shield remains less effective than Sanctuary.
 Shield                              2 -> 1
 ```
 
-$${\color{lime}\*1.8\*}$$ The cost of these spell effects has been changed to be on par with Lockpicking.
+The cost of these spell effects has been changed to be on par with Lockpicking.
 ```
 Open                                6 -> 12
 Lock                                2 -> 24
 ```
 
+* $${\color{lime}\*1.8\*}$$ Open and Lock spell effects added.
+
 ------------------------------------------------------------
 
 ### Conjuration
 
-$${\color{red}\*?\*}$$ TODO
+* $${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
@@ -279,7 +281,7 @@ This looks like a typo compared to other resistances.
 Resist Paralysis                    0.2 -> 2
 ```
 
-$${\color{lime}\*1.8\*}$$ Fortify Magicka changed from 0.75 to 0.8. To be on par with Drain Magicka.
+* $${\color{lime}\*1.8\*}$$ Fortify Magicka changed from 0.75 to 0.8. To be on par with Drain Magicka.
 
 ------------------------------------------------------------
 
@@ -296,6 +298,14 @@ The Mages Guild’s teleportation price has been increased. As a fast, modern fo
 ```
 fMagesGuildTravel                   10 -> 100           10x more expensive
 ```
+
+Merchant creatures gold has been reduced.
+```
+Creeper                             5000 -> 500
+Mudcrab                             10000 -> 1000
+```
+
+* $${\color{green}\*1.9\*}$$ Reduced merchant creatures gold.
 
 ------------------------------------------------------------
 
@@ -321,7 +331,7 @@ The death warrant will be triggered after a combination of one killing, one atta
 Death Warrant                       5000 -> 5201        You can kill only one person, instead of 4
 ```
 
-$${\color{yellow}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
+* $${\color{yellow}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
 
 ------------------------------------------------------------
 
@@ -368,7 +378,7 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
+* $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
 ------------------------------------------------------------
 
@@ -396,9 +406,8 @@ Master Shock Trap                   5 -> 75             20-30pts/10s
 Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
 
-$${\color{lime}\*1.8\*}$$ Changes:
-* The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
-* Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
+* $${\color{lime}\*1.8\*}$$ The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
+* $${\color{lime}\*1.8\*}$$ Trap costs h$${\color{lime}\*1.8\*}$$ ave been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
@@ -545,8 +554,8 @@ $${\color{green}\*1.9\*}$$ Following spells from Tamriel Data has been updated.
 
 ```
 Shadow Rust
-	Burden              			1-15/20s -> 10-150/20s              10x/1x
-    Disintegrate Armor  			1-5/20s -> 6-30/20s                 6x/1x
+    Burden                          1-15/20s -> 10-150/20s              10x/1x
+    Disintegrate Armor              1-5/20s -> 6-30/20s                 6x/1x
 Weight of Guilt                     500/3s -> 500/30s                   1x/10x
 Fling                               500/3s -> 500/30s                   1x/10x
 To the ja-Kha'jay                   50/20s -> 50/60s                    1x/3x
@@ -581,9 +590,9 @@ Voices                              50/20s -> 50/60s                    1x/3x
 $${\color{green}\*1.9\*}$$ Following enchantments has been updated.
 
 ```
-shadowstrike_en
-	Chameleon						200-100 -> 100
-slave_bracer_en                     Drain Magicka -> Damage Magicka
+Shadowsting
+    Chameleon                       200-100 -> 100
+Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 ```
 
 ------------------------------------------------------------
