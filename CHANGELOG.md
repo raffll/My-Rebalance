@@ -1,6 +1,7 @@
 #### History
 ```
 1.9
+  - Barter: merchant creatures gold decreased 10x
   - Magic: elemental damage effects costs set to 6
   - Spells TD: module added
   - Enchantments: module added

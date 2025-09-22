@@ -55,16 +55,6 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 ------------------------------------------------------------
 
-#### History
-
-* $${\color{green}\*1.9\*}$$ -- added or changed in version 1.9
-* $${\color{lime}\*1.8\*}$$ -- added or changed in version 1.8
-* $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
-* $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
-* $${\color{red}\*?\*}$$ -- will be added in the future
-
-------------------------------------------------------------
-
 ## Skills
 
 Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Meanwhile, Security is based on Agility anyway.
@@ -214,7 +204,7 @@ Drain Skill                         1 -> 2
 ```
 
 * $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
-* $${\color{green}\*1.9\*}$$ All elemental damage costs changed to 6.
+* $${\color{orange}\*1.9\*}$$ All elemental damage costs changed to 6.
 
 ------------------------------------------------------------
 
@@ -305,7 +295,7 @@ Creeper                             5000 -> 500
 Mudcrab                             10000 -> 1000
 ```
 
-* $${\color{green}\*1.9\*}$$ Reduced merchant creatures gold.
+* $${\color{orange}\*1.9\*}$$ Reduced merchant creatures gold.
 
 ------------------------------------------------------------
 
@@ -331,7 +321,7 @@ The death warrant will be triggered after a combination of one killing, one atta
 Death Warrant                       5000 -> 5201        You can kill only one person, instead of 4
 ```
 
-* $${\color{yellow}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
+* $${\color{lime}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
 
 ------------------------------------------------------------
 
@@ -407,7 +397,7 @@ Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
 
 * $${\color{lime}\*1.8\*}$$ The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
-* $${\color{lime}\*1.8\*}$$ Trap costs h$${\color{lime}\*1.8\*}$$ ave been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
+* $${\color{lime}\*1.8\*}$$ Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
@@ -462,7 +452,7 @@ Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 ```
 
-$${\color{orange}\*1.7\*}$$ Module added.
+$${\color{lime}\*1.7\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -548,7 +538,7 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 * used by hungers, unavailable in vanilla
 ```
 
-$${\color{orange}\*1.7\*}$$ Module added.
+$${\color{lime}\*1.7\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -589,7 +579,7 @@ Duck                                [40 -> 10]
 Voices                              50/20s -> 50/60s                    1x/3x
 ```
 
-$${\color{green}\*1.9\*}$$ Module added.
+$${\color{orange}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -603,7 +593,7 @@ Shadowsting
 Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 ```
 
-$${\color{green}\*1.9\*}$$ Module added.
+$${\color{orange}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
