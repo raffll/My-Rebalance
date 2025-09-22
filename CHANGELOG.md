@@ -1,8 +1,9 @@
 #### History
 ```
 1.9
+  - Barter: Mages Guild’s travel cost changed from 10x to 5x
   - Barter: merchant creatures gold decreased 10x
-  - Magic: elemental damage effects costs set to 6
+  - Magic: all elemental damage effects costs set to 6
   - Spells TD: module added
   - Enchantments: module added
 1.8

@@ -204,7 +204,7 @@ Drain Skill                         1 -> 2
 ```
 
 * $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
-* $${\color{orange}\*1.9\*}$$ All elemental damage costs changed to 6.
+* $${\color{orange}\*1.9\*}$$ All elemental damage costs changed to 6. Now they are slightly harder to cast.
 
 ------------------------------------------------------------
 
@@ -286,7 +286,7 @@ fBarterGoldResetDelay               24 -> 720           30 days to reset merchan
 
 The Mages Guild’s teleportation price has been increased. As a fast, modern form of travel, it shouldn’t be cheaper than traditional methods.
 ```
-fMagesGuildTravel                   10 -> 100           10x more expensive
+fMagesGuildTravel                   10 -> 50            5x more expensive
 ```
 
 Merchant creatures gold has been reduced.
@@ -295,7 +295,8 @@ Creeper                             5000 -> 500
 Mudcrab                             10000 -> 1000
 ```
 
-* $${\color{orange}\*1.9\*}$$ Reduced merchant creatures gold.
+* $${\color{orange}\*1.9\*}$$ Reduced merchant creatures gold 10x.
+* $${\color{orange}\*1.9\*}$$ Mages Guild’s travel cost changed to 5x vanilla.
 
 ------------------------------------------------------------
 
