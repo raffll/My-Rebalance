@@ -55,15 +55,6 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 ------------------------------------------------------------
 
-#### History
-
-* $${\color{lime}\*1.8\*}$$ -- added or changed in version 1.8
-* $${\color{orange}\*1.7\*}$$ -- added or changed in version 1.7
-* $${\color{yellow}\*1.6\*}$$ -- added or changed in version 1.6
-* $${\color{red}\*?\*}$$ -- will be added in the future
-
-------------------------------------------------------------
-
 ## Skills
 
 Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Meanwhile, Security is based on Agility anyway.
@@ -95,7 +86,7 @@ After this patch, some potion effects—depending on the underlying spell effect
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
 
-In some cases, Secret Master's apparatuses were cheaper than Grandmaster versions. They are now five times more expensive.
+Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
 ```
 Secret Master's Alembic             1600gp -> 8000gp
 Secret Master's Calcinator          3200gp -> 16000gp
@@ -153,29 +144,31 @@ Even with this adjustment, Shield remains less effective than Sanctuary.
 Shield                              2 -> 1
 ```
 
-$${\color{lime}\*1.8\*}$$ The cost of these spell effects has been changed to be on par with Lockpicking.
+The cost of these spell effects has been changed to be on par with Lockpicking.
 ```
 Open                                6 -> 12
 Lock                                2 -> 24
 ```
 
+* $${\color{lime}\*1.8\*}$$ Open and Lock spell effects added.
+
 ------------------------------------------------------------
 
 ### Conjuration
 
-$${\color{red}\*?\*}$$ TODO
+* $${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
 ### Destruction
 
-Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I lowered all elemental damage types to roughly the same level. Still, I wanted to preserve some of their unique flavor. Finally, I replaced Damage Health with Poison to make things more consistent.
+Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
 ```
-Fire Damage                              5.00           Unchanged
-Frost Damage                        5 -> 5.25
-Shock Damage                        7 -> 5.50
-Poison                              9 -> 5.75
-Damage Health                       8 -> 6.00
+Fire Damage                         5 -> 6
+Frost Damage                        5 -> 6
+Shock Damage                        7 -> 6
+Poison                              9 -> 6
+Damage Health                       8 -> 6
 ```
 
 Damage Magicka has been reduced to align with Damage Health.
@@ -210,7 +203,8 @@ Drain Skill is now more expensive due to its potential for being overpowered—s
 Drain Skill                         1 -> 2
 ```
 
-$${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
+* $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
+* $${\color{orange}\*1.9\*}$$ All elemental damage costs changed to 6. Now they are slightly harder to cast.
 
 ------------------------------------------------------------
 
@@ -227,7 +221,7 @@ Additionally, a bugfix related to Illusion has been included.
 Demoralize Humanoid                 Mysticism -> Illusion
 ```
 
-$${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
+* $${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
 
 ------------------------------------------------------------
 
@@ -277,7 +271,7 @@ This looks like a typo compared to other resistances.
 Resist Paralysis                    0.2 -> 2
 ```
 
-$${\color{lime}\*1.8\*}$$ Fortify Magicka changed from 0.75 to 0.8. To be on par with Drain Magicka.
+* $${\color{lime}\*1.8\*}$$ Fortify Magicka changed from 0.75 to 0.8. To be on par with Drain Magicka.
 
 ------------------------------------------------------------
 
@@ -292,8 +286,17 @@ fBarterGoldResetDelay               24 -> 720           30 days to reset merchan
 
 The Mages Guild’s teleportation price has been increased. As a fast, modern form of travel, it shouldn’t be cheaper than traditional methods.
 ```
-fMagesGuildTravel                   10 -> 100           10x more expensive
+fMagesGuildTravel                   10 -> 50            5x more expensive
 ```
+
+Merchant creatures gold has been reduced.
+```
+Creeper                             5000 -> 500
+Mudcrab                             10000 -> 1000
+```
+
+* $${\color{orange}\*1.9\*}$$ Reduced merchant creatures gold 10x.
+* $${\color{orange}\*1.9\*}$$ Mages Guild’s travel cost changed to 5x vanilla.
 
 ------------------------------------------------------------
 
@@ -319,7 +322,7 @@ The death warrant will be triggered after a combination of one killing, one atta
 Death Warrant                       5000 -> 5201        You can kill only one person, instead of 4
 ```
 
-$${\color{yellow}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
+* $${\color{lime}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
 
 ------------------------------------------------------------
 
@@ -366,7 +369,7 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-$${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
+* $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
 
 ------------------------------------------------------------
 
@@ -394,15 +397,14 @@ Master Shock Trap                   5 -> 75             20-30pts/10s
 Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
 
-$${\color{lime}\*1.8\*}$$ Changes:
-* The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
-* Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
+* $${\color{lime}\*1.8\*}$$ The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
+* $${\color{lime}\*1.8\*}$$ Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
 ## Magic - Potions
 
-$${\color{orange}\*1.7\*}$$ With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
+With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
 
 ```
 Bargain Potion of Burden            5pts/8s -> 50pts/80s                10x/10x (cost 0.1)
@@ -451,11 +453,13 @@ Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 ```
 
+* $${\color{lime}\*1.7\*}$$ Module added.
+
 ------------------------------------------------------------
 
 ## Magic - Potions - Tamriel Data
 
-$${\color{lime}\*1.8\*}$$ Following potions from Tamriel Data has been updated.
+Following potions from Tamriel Data has been updated.
 ```
 Standard Potion of Feather          10pts/30s -> 100pts/300s            T_Com_Potion_Feather_S
 
@@ -484,11 +488,13 @@ Quality Potion of Night-Eye         15pts/45s -> 75pts/225s             T_Nor_Po
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Potion_DrainEndurance_Q
 ```
 
+* $${\color{lime}\*1.8\*}$$ Module added.
+
 ------------------------------------------------------------
 
 ## Magic - Spells
 
-$${\color{orange}\*1.7\*}$$ Spells have been tweaked to stay useful following the changes to spell effect costs.
+Spells have been tweaked to stay useful following the changes to spell effect costs.
 
 ### Alteration
 
@@ -533,17 +539,62 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 * used by hungers, unavailable in vanilla
 ```
 
+* $${\color{lime}\*1.7\*}$$ Module added.
+
 ------------------------------------------------------------
 
 ## Magic - Spells - Tamriel Data
 
-$${\color{red}\*?\*}$$ TODO
+Following spells from Tamriel Data has been updated.
+
+### Alteration
+
+```
+Shadow Rust
+    Burden                          1-15/20s -> 10-150/20s              10x/1x
+    Disintegrate Armor              1-5/20s -> 6-30/20s                 6x/1x
+Weight of Guilt                     500/3s -> 500/30s                   1x/10x
+Fling                               500/3s -> 500/30s                   1x/10x
+To the ja-Kha'jay                   50/20s -> 50/60s                    1x/3x
+Fuchon Cire's Gentle Descent        10/20s -> 10/60s                    1x/3x
+Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
+
+Dalgor's Entwining                  [8 -> 96]
+Falling First Barrier               [42 -> 21]
+Tsun's Ward                         [40 -> 20]
+```
+
+### Destruction
+
+```
+Fracture Armor                      100/2s -> 100/20s                   1x/10x
+Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
+Steel Eater                         5-30/3s -> 5-30/18s                 1x/6x
+
+Duck                                [40 -> 10]
+```
+
+### Illusion
+
+```
+Voices                              50/20s -> 50/60s                    1x/3x
+```
+
+* $${\color{orange}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
 ## Magic - Enchantments
 
-$${\color{red}\*?\*}$$ TODO
+Following enchantments has been updated.
+
+```
+Shadowsting
+    Chameleon                       200-100 -> 100
+Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
+```
+
+* $${\color{orange}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
