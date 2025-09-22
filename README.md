@@ -452,7 +452,7 @@ Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 ```
 
-$${\color{lime}\*1.7\*}$$ Module added.
+* $${\color{lime}\*1.7\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -487,7 +487,7 @@ Quality Potion of Night-Eye         15pts/45s -> 75pts/225s             T_Nor_Po
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Potion_DrainEndurance_Q
 ```
 
-$${\color{lime}\*1.8\*}$$ Module added.
+* $${\color{lime}\*1.8\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -538,7 +538,7 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 * used by hungers, unavailable in vanilla
 ```
 
-$${\color{lime}\*1.7\*}$$ Module added.
+* $${\color{lime}\*1.7\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -579,7 +579,7 @@ Duck                                [40 -> 10]
 Voices                              50/20s -> 50/60s                    1x/3x
 ```
 
-$${\color{orange}\*1.9\*}$$ Module added.
+* $${\color{orange}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -593,7 +593,7 @@ Shadowsting
 Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 ```
 
-$${\color{orange}\*1.9\*}$$ Module added.
+* $${\color{orange}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
