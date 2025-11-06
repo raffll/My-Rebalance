@@ -287,7 +287,7 @@ Drain Skill                         1 -> 2
 
 ### Illusion
 
-Previously, there was little reason to use these effects over Paralyze. $${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
+Previously, there was little reason to use these effects over Paralyze.
 ```
 Silence                             40 -> 20            2x cheaper than Paralyze
 Sound                               3 -> 1              2x cheaper at 20% than Paralyze
