@@ -64,12 +64,12 @@ Armorer                             Strength -> Endurance
 
 And this is how table looks now.
 ```
-Strength        5 -> 4              Acrobatics, ~~Armorer~~, Axe, Blunt, Long Blade
+Strength        5 -> 4              Acrobatics, --Armorer--, Axe, Blunt, Long Blade
 Intelligence    4                   Alchemy, Conjuration, Enchant, Security
 Willpower       4                   Alteration, Destruction, Mysticism, Restoration
 Agility         4                   Block, Light Armor, Marksman, Sneak
 Speed           4                   Athletics, Hand-to-Hand, Short Blade, Unarmored
-Endurance       3 -> 4              Heavy Armor, Medium Armor, Spear, ~~Armorer~~
+Endurance       3 -> 4              Heavy Armor, Medium Armor, Spear, ++Armorer++
 Personality     3                   Illusion, Mercantile, Speechcraft
 ```
 

@@ -1,11 +1,14 @@
 #### History
 ```
+1.10
+  - Magic: Minor PfP fixes forwarded
+  - Skills: Security change reverted
 1.9
   - Barter: Mages Guild’s travel cost changed from 10x to 5x
-  - Barter: merchant creatures gold decreased 10x
-  - Magic: all elemental damage effects costs set to 6
-  - Spells TD: module added
-  - Enchantments: module added
+  - Barter: Merchant creatures gold decreased 10x
+  - Magic: All elemental damage effects costs set to 6
+  - Spells TD: Module added
+  - Enchantments: Module added
 1.8
   - Magic: Lock and Open added
   - Magic: Drain Magicka 0.75 to 0.8
@@ -13,29 +16,29 @@
   - Magic: Fortify Magicka 0.75 to 0.8
   - Lockpicking: Lock 60 to 24
   - Traps: fTrapCostMult -1 to -0.75
-  - Traps: Trap costs revisited
-  - Potions TD: module added
+  - Traps: Trap Costs revisited
+  - Potions TD: Module added
 1.7
-  - Potions and Spells: modules in progress...
+  - Potions and Spells: Modules in progress...
   - Lockpicking: Lock spell effect 30x more expensive
 1.6
-  - Traps: costs readjusted
-  - Crime: bounties reduced
-  - Potions: module added
-  - Spells: module added
+  - Traps: Costs readjusted
+  - Crime: Bounties reduced
+  - Potions: Module added
+  - Spells: Module added
 1.5
-  - Magic: module remastered
+  - Magic: Module remastered
 1.4
-  - Magic: module revisited
+  - Magic: Module revisited
 1.3
   - Magic: Resist Paralysis spell effect 10x more expensive
-  - Crime: module added
+  - Crime: Module added
 1.2
-  - Lockpicking and Traps: split into separate esps
-  - Alchemy: adjusted
+  - Lockpicking and Traps: Split into separate esps
+  - Alchemy: Adjusted
   - Barter: Mages Guild's travel 10x more expensive
 1.1
-  - Magic: elemental damage effects costs increased
-  - Magic: detect spells effects 5x cheaper
+  - Magic: Elemental damage effects costs increased
+  - Magic: Detect spells effects 5x cheaper
   - Alchemy: Secret Master's apparatuses 5x more expensive
 ```
