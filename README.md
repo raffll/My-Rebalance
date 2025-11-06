@@ -54,12 +54,13 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Crime - Morag Tong Polished.esp**" at the end of your load order.
 
 ------------------------------------------------------------
-
+* $${\color{lime}\*1.8\*}$$ The fTrapCostMult setting has been changed from -1 to -0.75. .
+* $${\color{lime}\*1.8\*}$$ 
 #### History
-```
+
 1.10
   - Magic: Minor PfP fixes forwarded
-  - Skills: Security change reverted
+  - Skills: Security reverted back to Intelligence
 1.9
   - Barter: Mages Guild’s travel cost changed from 10x to 5x
   - Barter: Merchant creatures gold decreased 10x
@@ -67,20 +68,20 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
   - Spells TD: Module added
   - Enchantments: Module added
 1.8
-  - Magic: Lock and Open added
-  - Magic: Drain Magicka 0.75 to 0.8
-  - Magic: Sound 0.8 to 1
-  - Magic: Fortify Magicka 0.75 to 0.8
-  - Lockpicking: Lock 60 to 24
-  - Traps: fTrapCostMult -1 to -0.75
-  - Traps: Trap Costs revisited
+  - Magic: Open and Lock spell effects added
+  - Magic: Drain Magicka changed from 0.75 to 0.8 (now it's exactly 5x cheaper)
+  - Magic: Sound changed from 0.8 to 1 (now it's exactly 3x cheaper)
+  - Magic: Fortify Magicka changed from 0.75 to 0.8 (to be on par with Drain Magicka)
+  - Lockpicking: Lock changed from 60 to 24
+  - Traps: fTrapCostMult changed from -1 to -0.75 (now it scales more like lockpicking)
+  - Traps: Trap costs have been revisited (it doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power)
   - Potions TD: Module added
 1.7
   - Potions and Spells: Modules in progress...
   - Lockpicking: Lock spell effect 30x more expensive
 1.6
   - Traps: Costs readjusted
-  - Crime: Bounties reduced
+  - Crime: Bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values
   - Potions: Module added
   - Spells: Module added
 1.5
@@ -98,7 +99,6 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
   - Magic: Elemental damage effects costs increased
   - Magic: Detect spells effects 5x cheaper
   - Alchemy: Secret Master's apparatuses 5x more expensive
-```
 
 ------------------------------------------------------------
 
@@ -119,8 +119,6 @@ Speed           4                   Athletics, Hand-to-Hand, Short Blade, Unarmo
 Endurance       3 -> 4              Heavy Armor, Medium Armor, Spear, ~~Armorer~~
 Personality     3                   Illusion, Mercantile, Speechcraft
 ```
-
-* $${\color{orange}\*1.10\*}$$ Security reverted back to Intelligence.
 
 ------------------------------------------------------------
 
@@ -227,8 +225,6 @@ Open                                6 -> 12
 Lock                                2 -> 24
 ```
 
-* $${\color{lime}\*1.8\*}$$ Open and Lock spell effects added.
-
 ------------------------------------------------------------
 
 ### Conjuration
@@ -280,9 +276,6 @@ Drain Skill is now more expensive due to its potential for being overpowered—s
 Drain Skill                         1 -> 2
 ```
 
-* $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
-* $${\color{lime}\*1.9\*}$$ All elemental damage costs changed to 6. Now they are slightly harder to cast.
-
 ------------------------------------------------------------
 
 ### Illusion
@@ -297,8 +290,6 @@ Additionally, a bugfix related to Illusion has been included.
 ```
 Demoralize Humanoid                 Mysticism -> Illusion
 ```
-
-* $${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
 
 ------------------------------------------------------------
 
@@ -348,8 +339,6 @@ This looks like a typo compared to other resistances.
 Resist Paralysis                    0.2 -> 2
 ```
 
-* $${\color{lime}\*1.8\*}$$ Fortify Magicka changed from 0.75 to 0.8. To be on par with Drain Magicka.
-
 ------------------------------------------------------------
 
 ## Barter
@@ -371,9 +360,6 @@ Merchant creatures gold has been reduced.
 Creeper                             5000gp -> 500gp
 Mudcrab                             10000gp -> 1000gp
 ```
-
-* $${\color{lime}\*1.9\*}$$ Reduced merchant creatures gold 10x.
-* $${\color{lime}\*1.9\*}$$ Mages Guild’s travel cost changed to 5x vanilla.
 
 ------------------------------------------------------------
 
@@ -398,8 +384,6 @@ The death warrant will be triggered after a combination of one killing, one atta
 ```
 Death Warrant                       5000 -> 5201        You can kill only one person, instead of 4
 ```
-
-* $${\color{lime}\*1.6\*}$$ Crime bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values.
 
 ------------------------------------------------------------
 
@@ -446,8 +430,6 @@ Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
 ```
 
-* $${\color{lime}\*1.8\*}$$ The cost of the Lock spell effect has been changed from 60 to 24.
-
 ------------------------------------------------------------
 
 ## Traps
@@ -473,9 +455,6 @@ Master Frost Trap                   3 -> 70             20-30pts/10s
 Master Shock Trap                   5 -> 75             20-30pts/10s
 Master Poison Trap                  16 -> 100           5-10pts/50s
 ```
-
-* $${\color{lime}\*1.8\*}$$ The fTrapCostMult setting has been changed from -1 to -0.75. Now it scales more like lockpicking.
-* $${\color{lime}\*1.8\*}$$ Trap costs have been revisited. It doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power.
 
 ------------------------------------------------------------
 
@@ -530,8 +509,6 @@ Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 ```
 
-* $${\color{lime}\*1.7\*}$$ Module added.
-
 ------------------------------------------------------------
 
 ## Magic - Potions - Tamriel Data
@@ -564,8 +541,6 @@ Quality Potion of Night-Eye         15pts/45s -> 75pts/225s             T_Nor_Po
 ```
 Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Potion_DrainEndurance_Q
 ```
-
-* $${\color{lime}\*1.8\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -616,8 +591,6 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 * used by hungers, unavailable in vanilla
 ```
 
-* $${\color{lime}\*1.7\*}$$ Module added.
-
 ------------------------------------------------------------
 
 ## Magic - Spells - Tamriel Data
@@ -657,8 +630,6 @@ Duck                                [40 -> 10]
 Voices                              50/20s -> 50/60s                    1x/3x
 ```
 
-* $${\color{lime}\*1.9\*}$$ Module added.
-
 ------------------------------------------------------------
 
 ## Magic - Enchantments
@@ -668,10 +639,9 @@ Following enchantments has been updated.
 ```
 Shadowsting
     Chameleon                       200-100 -> 100
+	Poison                          Unchanged
 Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 ```
-
-* $${\color{lime}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
