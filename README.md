@@ -612,26 +612,26 @@ Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 
 ## Appendix A
 
-#### _How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)_
+#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
 
-- _You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40._
+- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
 
-#### _How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)_
+#### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
 
-- _Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100._
-- _Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes._
+- Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
+- Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes.
 
-#### _How to open a 100-point lock_
+#### How to open a 100-point lock
 
-- _Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes._
-- _Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes._
-- _Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100._
+- Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
+- Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
+- Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
 
-#### _How to untrap a 100-point spell_
+#### How to untrap a 100-point spell
 
-- _Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes._
-- _Mage - Telekinesis._
-- _Warrior - Take it on the chin._
+- Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes.
+- Mage - Telekinesis.
+- Warrior - Take it on the chin.
 
 ------------------------------------------------------------
 
