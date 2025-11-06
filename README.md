@@ -57,11 +57,23 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 ## Skills
 
-Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill. Meanwhile, Security is based on Agility anyway.
+Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill.
 ```
 Armorer                             Strength -> Endurance
-Security                            Intelligence -> Agility
 ```
+
+And this is how table looks now.
+```
+Strength        5 -> 4              Acrobatics, ~~Armorer~~, Axe, Blunt, Long Blade
+Intelligence    4                   Alchemy, Conjuration, Enchant, Security
+Willpower       4                   Alteration, Destruction, Mysticism, Restoration
+Agility         4                   Block, Light Armor, Marksman, Sneak
+Speed           4                   Athletics, Hand-to-Hand, Short Blade, Unarmored
+Endurance       3 -> 4              Heavy Armor, Medium Armor, Spear, ~~Armorer~~
+Personality     3                   Illusion, Mercantile, Speechcraft
+```
+
+* $${\color{orange}\*1.10\*}$$ Security reverted to Intelligence.
 
 ------------------------------------------------------------
 
@@ -167,8 +179,8 @@ Elemental damage felt unbalanced—there was little reason to use anything other
 Fire Damage                         5 -> 6
 Frost Damage                        5 -> 6
 Shock Damage                        7 -> 6
-Poison                              9 -> 6
 Damage Health                       8 -> 6
+Poison                              9 -> 6
 ```
 
 Damage Magicka has been reduced to align with Damage Health.
@@ -204,7 +216,7 @@ Drain Skill                         1 -> 2
 ```
 
 * $${\color{lime}\*1.8\*}$$ Drain Magicka changed from 0.75 to 0.8. Now it's exactly 5x cheaper.
-* $${\color{orange}\*1.9\*}$$ All elemental damage costs changed to 6. Now they are slightly harder to cast.
+* $${\color{lime}\*1.9\*}$$ All elemental damage costs changed to 6. Now they are slightly harder to cast.
 
 ------------------------------------------------------------
 
@@ -291,12 +303,12 @@ fMagesGuildTravel                   10 -> 50            5x more expensive
 
 Merchant creatures gold has been reduced.
 ```
-Creeper                             5000 -> 500
-Mudcrab                             10000 -> 1000
+Creeper                             5000gp -> 500gp
+Mudcrab                             10000gp -> 1000gp
 ```
 
-* $${\color{orange}\*1.9\*}$$ Reduced merchant creatures gold 10x.
-* $${\color{orange}\*1.9\*}$$ Mages Guild’s travel cost changed to 5x vanilla.
+* $${\color{lime}\*1.9\*}$$ Reduced merchant creatures gold 10x.
+* $${\color{lime}\*1.9\*}$$ Mages Guild’s travel cost changed to 5x vanilla.
 
 ------------------------------------------------------------
 
@@ -330,7 +342,7 @@ Death Warrant                       5000 -> 5201        You can kill only one pe
 
 Pickpocketing is essentially a stat-based contest between you and the NPC. However, in vanilla, your maximum success chance was capped at just 56%, no matter your stats, because the cap was set to 75% and the check happens twice—once when picking the item and again when closing the pickpocket window.
 ```
-iPickMaxChance                      75 -> 95            5% chance of being caught anyway
+iPickMaxChance                      75 -> 95            ~10% chance of being caught anyway
 ```
 
 It also didn’t make much sense to factor in the item’s value when determining success, so I removed that requirement.
@@ -580,7 +592,7 @@ Duck                                [40 -> 10]
 Voices                              50/20s -> 50/60s                    1x/3x
 ```
 
-* $${\color{orange}\*1.9\*}$$ Module added.
+* $${\color{lime}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -594,7 +606,7 @@ Shadowsting
 Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 ```
 
-* $${\color{orange}\*1.9\*}$$ Module added.
+* $${\color{lime}\*1.9\*}$$ Module added.
 
 ------------------------------------------------------------
 
@@ -620,3 +632,34 @@ Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 - _Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes._
 - _Mage - Telekinesis._
 - _Warrior - Take it on the chin._
+
+------------------------------------------------------------
+
+## Appendix B
+
+#### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
+
+Damage spells are most powerful but need time to kick in.
+```
+Damage Intelligence                 2pts/50s            Permanent drop 150 Magicka over 50s
+Damage Magicka                      4pts/100s           Permanent drop 400 Magicka over 100s
+```
+Otherwise, they will cost more.
+```
+Damage Intelligence                 50pts/1s            Permanent drop 75 Magicka
+Damage Magicka                      100pts/3s           Permanent drop 300 Magicka over 3s
+```
+
+Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
+Drain Magicka is the worst, even after adjustment.
+```
+Drain Intelligence                  100pts/24s          Drop 150 Magicka for 24s
+Drain Magicka                       100pts/32s          Drop 100 Magicka for 32s
+```
+
+Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
+Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+```
+Silence                             120s                Can't cast any spells for 120s
+Sound                               100%/24s            100% to fail cast for 30s
+```
