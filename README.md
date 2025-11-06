@@ -608,9 +608,9 @@ To the ja-Kha'jay                   50/20s -> 50/60s                    1x/3x
 Fuchon Cire's Gentle Descent        10/20s -> 10/60s                    1x/3x
 Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
 
-Dalgor's Entwining                  [8 -> 96]
-Falling First Barrier               [42 -> 21]
-Tsun's Ward                         [40 -> 20]
+Dalgor's Entwining                  cost 8 -> 96
+Falling First Barrier               cost 42 -> 21
+Tsun's Ward                         cost 40 -> 20
 ```
 
 ### Destruction
@@ -620,7 +620,7 @@ Fracture Armor                      100/2s -> 100/20s                   1x/10x
 Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
 Steel Eater                         5-30/3s -> 5-30/18s                 1x/6x
 
-Duck                                [40 -> 10]
+Duck                                cost 40 -> 10
 ```
 
 ### Illusion
@@ -673,27 +673,29 @@ Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 
 #### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
 
-- Damage spells are most powerful but need time to kick in.
+Damage spells are most powerful but need time to kick in.
 ```
 Damage Intelligence                 2pts/50s            Permanent drop 150 Magicka over 50s
 Damage Magicka                      4pts/100s           Permanent drop 400 Magicka over 100s
 ```
-- Otherwise, they will cost more.
+Otherwise, they will cost more.
 ```
 Damage Intelligence                 50pts/1s            Permanent drop 75 Magicka
 Damage Magicka                      100pts/3s           Permanent drop 300 Magicka over 3s
 ```
-
-- Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
-- Drain Magicka is the worst, even after adjustment.
+Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
 ```
 Drain Intelligence                  100pts/24s          Drop 150 Magicka for 24s
+```
+Drain Magicka is the worst, even after adjustment.
+```
 Drain Magicka                       100pts/32s          Drop 100 Magicka for 32s
 ```
-
-- Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
-- Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
 ```
 Silence                             120s                Can't cast any spells for 120s
+```
+Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+```
 Sound                               100%/24s            100% to fail cast for 30s
 ```
