@@ -18,8 +18,8 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 #### Assumptions
 
 - Patch for Purists is applied.
-- OpenMW is preferred (vanilla may have different calculations, and MCP can fix some issues).
 - Tamriel Rebuilt is used, but not required.
+- OpenMW is preferred (vanilla may have different calculations, and MCP can fix some issues).
 - "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
 If you are using MCP, leave vanilla mechanics for creating spells:
@@ -51,15 +51,15 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 
 #### Compatibility
 
-If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Crime - Morag Tong Polished.esp**" at the end of your load order.
+- If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Crime - Morag Tong Polished.esp**" at the end of your load order.
 
 ------------------------------------------------------------
 
 #### History
 
 - 1.10
-	- Magic: Minor PfP fixes forwarded
-	- Skills: Security reverted back to Intelligence
+  - Magic: Minor PfP fixes forwarded
+  - Skills: Security reverted back to Intelligence
 - 1.9
   - Barter: Mages Guild’s travel cost changed from 10x to 5x
   - Barter: Merchant creatures gold decreased 10x
