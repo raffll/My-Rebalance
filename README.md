@@ -671,7 +671,7 @@ Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 
 ## Appendix B
 
-#### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
+#### How to stop a mage using a 120-cost spell (assuming mage is high level with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
 
 Damage spells are most powerful but need time to kick in.
 ```
@@ -698,4 +698,8 @@ Silence                             120s                Can't cast any spells fo
 Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
 Sound                               100%/24s            100% to fail cast for 30s
+```
+Or... just use Destruction.
+```
+Damage Health                       100pts/3s           Permanent drop 300 Health over 3s
 ```
