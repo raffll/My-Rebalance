@@ -372,8 +372,8 @@ Creeper                             5000gp -> 500gp
 Mudcrab                             10000gp -> 1000gp
 ```
 
-* 1.9 Reduced merchant creatures gold 10x.
-* 1.9 Mages Guild’s travel cost changed to 5x vanilla.
+* $${\color{lime}\*1.9\*}$$ Reduced merchant creatures gold 10x.
+* $${\color{lime}\*1.9\*}$$ Mages Guild’s travel cost changed to 5x vanilla.
 
 ------------------------------------------------------------
 
