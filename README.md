@@ -250,7 +250,7 @@ Damage Magicka                      8 -> 6
 
 Damage Fatigue remains unchanged, as it is either nearly useless or very powerful depending on the "Uncapped Damage Fatigue" setting.
 ```
-Damage Fatigue                           4              Unchanged
+Damage Fatigue                      4                   Unchanged
 ```
 
 Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
@@ -638,7 +638,7 @@ Following enchantments has been updated.
 ```
 Shadowsting
     Chameleon                       200-100 -> 100
-	Poison                          Unchanged
+    Poison                          Unchanged
 Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 ```
 
@@ -673,26 +673,26 @@ Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 
 #### How to stop a mage using a 120-cost spell (mage with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
 
-Damage spells are most powerful but need time to kick in.
+- Damage spells are most powerful but need time to kick in.
 ```
 Damage Intelligence                 2pts/50s            Permanent drop 150 Magicka over 50s
 Damage Magicka                      4pts/100s           Permanent drop 400 Magicka over 100s
 ```
-Otherwise, they will cost more.
+- Otherwise, they will cost more.
 ```
 Damage Intelligence                 50pts/1s            Permanent drop 75 Magicka
 Damage Magicka                      100pts/3s           Permanent drop 300 Magicka over 3s
 ```
 
-Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
-Drain Magicka is the worst, even after adjustment.
+- Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
+- Drain Magicka is the worst, even after adjustment.
 ```
 Drain Intelligence                  100pts/24s          Drop 150 Magicka for 24s
 Drain Magicka                       100pts/32s          Drop 100 Magicka for 32s
 ```
 
-Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
-Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
+- Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
+- Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
 ```
 Silence                             120s                Can't cast any spells for 120s
 Sound                               100%/24s            100% to fail cast for 30s
