@@ -54,13 +54,12 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Crime - Morag Tong Polished.esp**" at the end of your load order.
 
 ------------------------------------------------------------
-* $${\color{lime}\*1.8\*}$$ The fTrapCostMult setting has been changed from -1 to -0.75. .
-* $${\color{lime}\*1.8\*}$$ 
+
 #### History
 
-1.10
-  - Magic: Minor PfP fixes forwarded
-  - Skills: Security reverted back to Intelligence
+- 1.10
+	- Magic: Minor PfP fixes forwarded
+	- Skills: Security reverted back to Intelligence
 1.9
   - Barter: Mages Guild’s travel cost changed from 10x to 5x
   - Barter: Merchant creatures gold decreased 10x
