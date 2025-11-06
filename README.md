@@ -55,6 +55,53 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 
 ------------------------------------------------------------
 
+#### History
+```
+1.10
+  - Magic: Minor PfP fixes forwarded
+  - Skills: Security change reverted
+1.9
+  - Barter: Mages Guild’s travel cost changed from 10x to 5x
+  - Barter: Merchant creatures gold decreased 10x
+  - Magic: All elemental damage effects costs set to 6
+  - Spells TD: Module added
+  - Enchantments: Module added
+1.8
+  - Magic: Lock and Open added
+  - Magic: Drain Magicka 0.75 to 0.8
+  - Magic: Sound 0.8 to 1
+  - Magic: Fortify Magicka 0.75 to 0.8
+  - Lockpicking: Lock 60 to 24
+  - Traps: fTrapCostMult -1 to -0.75
+  - Traps: Trap Costs revisited
+  - Potions TD: Module added
+1.7
+  - Potions and Spells: Modules in progress...
+  - Lockpicking: Lock spell effect 30x more expensive
+1.6
+  - Traps: Costs readjusted
+  - Crime: Bounties reduced
+  - Potions: Module added
+  - Spells: Module added
+1.5
+  - Magic: Module remastered
+1.4
+  - Magic: Module revisited
+1.3
+  - Magic: Resist Paralysis spell effect 10x more expensive
+  - Crime: Module added
+1.2
+  - Lockpicking and Traps: Split into separate esps
+  - Alchemy: Adjusted
+  - Barter: Mages Guild's travel 10x more expensive
+1.1
+  - Magic: Elemental damage effects costs increased
+  - Magic: Detect spells effects 5x cheaper
+  - Alchemy: Secret Master's apparatuses 5x more expensive
+```
+
+------------------------------------------------------------
+
 ## Skills
 
 Armorer skill is better suited in Endurance, as this attribute lacks any non-combat skill.
@@ -62,18 +109,30 @@ Armorer skill is better suited in Endurance, as this attribute lacks any non-com
 Armorer                             Strength -> Endurance
 ```
 
-And this is how table looks now.
+And this is how skills table looks now.
 ```
-Strength        5 -> 4              Acrobatics, --Armorer--, Axe, Blunt, Long Blade
+Strength        5 -> 4              Acrobatics, Axe, Blunt, Long Blade
 Intelligence    4                   Alchemy, Conjuration, Enchant, Security
 Willpower       4                   Alteration, Destruction, Mysticism, Restoration
 Agility         4                   Block, Light Armor, Marksman, Sneak
 Speed           4                   Athletics, Hand-to-Hand, Short Blade, Unarmored
-Endurance       3 -> 4              Heavy Armor, Medium Armor, Spear, ++Armorer++
+Endurance       3 -> 4              Heavy Armor, Medium Armor, Spear, ~~Armorer~~
 Personality     3                   Illusion, Mercantile, Speechcraft
 ```
 
-* $${\color{orange}\*1.10\*}$$ Security reverted to Intelligence.
+* $${\color{orange}\*1.10\*}$$ Security reverted back to Intelligence.
+
+------------------------------------------------------------
+
+## Skills - Races
+
+* $${\color{red}\*?\*}$$ TODO
+
+------------------------------------------------------------
+
+## Skills - Birthsigns
+
+* $${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
@@ -105,6 +164,12 @@ Secret Master's Calcinator          3200gp -> 16000gp
 Secret Master's Mortar & Pestle     6000gp -> 30000gp
 Secret Master's Retort              1000gp -> 5000gp
 ```
+
+------------------------------------------------------------
+
+## Alchemy - Apparatuses
+
+* $${\color{red}\*?\*}$$ TODO
 
 ------------------------------------------------------------
 
@@ -222,7 +287,7 @@ Drain Skill                         1 -> 2
 
 ### Illusion
 
-Previously, there was little reason to use these effects over Paralyze.
+Previously, there was little reason to use these effects over Paralyze. $${\color{lime}\*1.8\*}$$ Sound changed from 0.8 to 1. Now it's exactly 3x cheaper.
 ```
 Silence                             40 -> 20            2x cheaper than Paralyze
 Sound                               3 -> 1              2x cheaper at 20% than Paralyze
