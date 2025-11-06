@@ -60,13 +60,13 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
 - 1.10
 	- Magic: Minor PfP fixes forwarded
 	- Skills: Security reverted back to Intelligence
-1.9
+- 1.9
   - Barter: Mages Guild’s travel cost changed from 10x to 5x
   - Barter: Merchant creatures gold decreased 10x
   - Magic: All elemental damage effects costs set to 6
   - Spells TD: Module added
   - Enchantments: Module added
-1.8
+- 1.8
   - Magic: Open and Lock spell effects added
   - Magic: Drain Magicka changed from 0.75 to 0.8 (now it's exactly 5x cheaper)
   - Magic: Sound changed from 0.8 to 1 (now it's exactly 3x cheaper)
@@ -75,26 +75,26 @@ If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Cr
   - Traps: fTrapCostMult changed from -1 to -0.75 (now it scales more like lockpicking)
   - Traps: Trap costs have been revisited (it doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power)
   - Potions TD: Module added
-1.7
+- 1.7
   - Potions and Spells: Modules in progress...
   - Lockpicking: Lock spell effect 30x more expensive
-1.6
+- 1.6
   - Traps: Costs readjusted
   - Crime: Bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values
   - Potions: Module added
   - Spells: Module added
-1.5
+- 1.5
   - Magic: Module remastered
-1.4
+- 1.4
   - Magic: Module revisited
-1.3
+- 1.3
   - Magic: Resist Paralysis spell effect 10x more expensive
   - Crime: Module added
-1.2
+- 1.2
   - Lockpicking and Traps: Split into separate esps
   - Alchemy: Adjusted
   - Barter: Mages Guild's travel 10x more expensive
-1.1
+- 1.1
   - Magic: Elemental damage effects costs increased
   - Magic: Detect spells effects 5x cheaper
   - Alchemy: Secret Master's apparatuses 5x more expensive
