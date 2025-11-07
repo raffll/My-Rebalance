@@ -10,7 +10,7 @@ Despite the name, my intention here is not to balance the game. That’s impossi
 
 - Simplicity - I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
 - Modularity - Everything is divided into separate modules, so you can mix and match with other mods.
-- Purist friendly - I try to avoid arbitrary decisions. Most changes are multipliers or additions to existing values.
+- Purist friendly - I'm trying to avoid arbitrary decisions. Most changes are multipliers or additions to existing values.
 - Math-driven - Seriously, I'm doing real calculations here.
 
 ------------------------------------------------------------
@@ -34,7 +34,7 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 #### Recommendations
 
 - Using some form of real-time dialogue mod with NPCs is recommended, primarily to prevent persuasion exploits.
-- I also recommend my other mod: https://www.nexusmods.com/morrowind/mods/55507, which sets the skill cap to 150 and the attribute cap to 300, limits potion consumption, and enables a training limit per level.
+- I also recommend my other mod: https://www.nexusmods.com/morrowind/mods/55507, which sets the skills and attribute caps, limit potion consumption, and training sessions per level. All changes below are made with those limits in mind.
 
 ------------------------------------------------------------
 
@@ -123,76 +123,274 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ## Skills - Races
 
+```
+~~ - new
+[] - spell cost
+```
+
 ### Argonian
 ```
 Skill Bonuses
-    Athletics       +15
-    Alchemy         +5
-    Illusion        +5
-    Medium Armor    +5
-    Mysticism       +5
-    Spear           +5
-    Unarmored       +5
+    Athletics                       +15 -> +5
+    Alchemy                         +5
+    Illusion                        +5
+    Medium Armor                    +5
+    Mysticism                       +5
+    Spear                           +5 -> +15
+    Unarmored                       +5
 ```
 
 ```
 Abilities
     Immune to Poison
-        Resist Poison 100 pts on Self
+        Resist Poison               100%
     Resist Disease
-        Resist Common Disease 75 pts on Self
+        Resist Common Disease       75%
 
 Spells
-    Water Breathing
-        Water Breathing for 2 mins on Self, Cost: 5
+    Water Breathing                 [5]
+        Water Breathing             120s/Self
 ```
 
 ### Breton
 ```
 Abilities
     Resist Magicka
-        Resist Magicka 50 pts on Self
+        Resist Magicka              50%
     Magicka Bonus
-        Fortify Maximum Magicka 0.5×INT
+        Fortify Maximum Magicka     0.5×INT
 
 Powers
     Dragon Skin
-        Shield 50 pts for 60 secs on Self
+        Shield                      50/60s/Self
 ```
 
 ### Dark Elf -> Dunmer
 ```
 Abilities
     Resist Fire
-        Resist Fire 75 pts on Self
+        Resist Fire                 75%
 
 Powers
     Ancestor Guardian
-        Sanctuary 50 pts for 60 secs on Self
+        Sanctuary                   50/60s/Self
 ```
 
 ### High Elf -> Altmer
 ```
 Abilities
     Resist Disease
-		Resist Common Disease 75 pts on Self
+        Resist Common Disease       75%
     Weakness to Shock
-		Shock Weakness to Shock 25 pts on Self
+        Weakness to Shock           25%
     Weakness to Frost
-		Frost Weakness to Frost 25 pts on Self
+        Weakness to Frost           25%
     Weakness to Fire
-		Fire Weakness to Fire 50 pts on Self
+        Weakness to Fire            50% -> 25%
     Weakness to Magicka
-		Magicka Weakness to Magicka 50 pts on Self
+        Weakness to Magicka         50%
     Magicka Bonus
-		Fortify Maximum Magicka 1.5×INT
+        Fortify Maximum Magicka     1.5×INT
+```
+
+### Imperial
+```
+Powers
+    Star of the West
+        Absorb Fatigue              200/Target
+    Voice of the Emperor
+        Charm                       25-50/15/Target
+```
+
+### Khajiit
+```
+Powers
+    Eye of Fear
+        Demoralize Humanoid         100/30s/Target
+
+Spells
+    Eye of Night
+        Night Eye                   50/30s/Self
+```
+
+### Nord
+```
+Abilities
+    Resist Shock
+        Resist Shock                50%
+    Immune to Frost
+        Resist Frost                100%
+
+Powers
+    Thunder Fist
+        Frost Damage                25/Touch
+    Woad
+        Shield                      30/60s/Self
+```
+
+### Orc -> Orsimer
+```
+Abilities
+    Resist Magicka
+        Resist Magicka              25%
+
+Powers
+    Berserk
+        Fortify Health              20/60s/Self
+        Fortify Fatigue             200/60s/Self
+        Fortify Attack              100/60s/Self
+        Drain Agility               100/60s/Self
+```
+
+### Redguard
+```
+Abilities
+    Resist Poison
+        Resist Poison               75%
+    Resist Disease
+        Resist Common Disease       75%
+
+Powers
+    Adrenaline Rush
+        Fortify Agility             50/60s/Self
+        Fortify Strength            50/60s/Self
+        Fortify Speed               50/60s/Self
+        Fortify Endurance           50/60s/Self
+        Fortify Health              25/60s/Self
+```
+
+### Wood Elf -> Bosmer
+```
+Abilities
+    Resist Disease
+        Resist Common Disease       75%
+
+Powers
+    Beast Tongue
+        Command Creature            5/600s/Target
 ```
 
 ------------------------------------------------------------
 
 ## Skills - Birthsigns
 
-* $${\color{red}\*?\*}$$ TODO
+### Warrior
+```
+Abilities
+    Warwyrd
+        Fortify Attack              10
+```
+
+### Mage
+```
+Abilities
+    Fay
+        Fortify Maximum Magicka     0.5xINT
+```
+
+### Thief
+```
+Abilities
+    Akaviri Danger-sense
+        Sanctuary                   10
+```
+
+### Serpent
+```
+Spells
+    Star-Curse
+        Poison                      3/30s/Touch
+        Damage Health               1/30s/Self
+```
+
+### Lady
+```
+Abilities
+    Lady's Favor
+        Fortify Personality         25
+    Lady's Grace
+        Fortify Endurance           25
+```
+
+### Steed
+```
+Abilities
+    Charioteer
+        Fortify Speed               25
+```
+
+### Lord
+```
+Spells
+    Blood of the North
+        Restore Health              2/30s/Self
+
+Abilities
+    Trollkin
+        Weakness to Fire            100%
+```
+
+### Apprentice
+```
+Abilities
+    Elfborn
+        Fortify Maximum Magicka     1.5xINT
+        Weakness to Magicka         50%
+```
+
+### Atronach
+```
+Abilities
+    Wombburn
+        Spell Absorption            50
+        Fortify Maximum Magicka     2.0xINT
+        Stunted Magicka
+```
+
+### Ritual
+```
+Spells
+    Blessed Word
+        Turn Undead                 100/30s/Target
+    Blessed Touch
+        Turn Undead                 100/30s/Touch
+
+Powers
+    Mara's Gift
+        Restore Health              100/Self
+```
+
+### Lover
+```
+Abilities
+    Mooncalf
+        Fortify Agility             25
+
+Powers
+    Lover's Kiss
+        Paralyze                    60s/Target
+        Damage Fatigue              200/Self
+```
+
+### Shadow
+```
+Powers
+    Moonshadow
+        Invisibility                60s/Self
+```
+
+### Tower
+```
+Spells
+    Beggar's Nose
+        Detect Animal               200/60s/Self
+        Detect Enchantment          200/60s/Self
+        Detect Key                  200/60s/Self
+
+Powers
+    Tower Key
+        Open                        50/Touch
+```
 
 ------------------------------------------------------------
 
@@ -667,9 +865,9 @@ To the ja-Kha'jay                   50/20s -> 50/60s                    1x/3x
 Fuchon Cire's Gentle Descent        10/20s -> 10/60s                    1x/3x
 Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
 
-Dalgor's Entwining                  cost 8 -> 96
-Falling First Barrier               cost 42 -> 21
-Tsun's Ward                         cost 40 -> 20
+Dalgor's Entwining                  [8] -> [96]
+Falling First Barrier               [42] -> [21]
+Tsun's Ward                         [40] -> [20]
 ```
 
 ### Destruction
@@ -678,7 +876,7 @@ Fracture Armor                      100/2s -> 100/20s                   1x/10x
 Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
 Steel Eater                         5-30/3s -> 5-30/18s                 1x/6x
 
-Duck                                cost 40 -> 10
+Duck                                [40] -> [10]
 ```
 
 ### Illusion
