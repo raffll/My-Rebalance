@@ -125,7 +125,7 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 * $${\color{red}\*?\*}$$ TODO
 
-#### Argonian
+### Argonian
 ```
 Skill Bonuses
     Athletics       +15
@@ -149,20 +149,20 @@ Spells
         Water Breathing for 2 mins on Self, Cost: 5
 ```
 
-#### Breton
+### Breton
 ```
 Abilities
     Resist Magicka
         Resist Magicka 50 pts on Self
     Magicka Bonus
-        Fortify Maximum Magicka 0.5×Int
+        Fortify Maximum Magicka 0.5×INT
 
 Powers
     Dragon Skin
         Shield 50 pts for 60 secs on Self
 ```
 
-#### Dark Elf -> Dunmer
+### Dark Elf -> Dunmer
 ```
 Abilities
     Resist Fire
@@ -171,6 +171,23 @@ Abilities
 Powers
     Ancestor Guardian
         Sanctuary 50 pts for 60 secs on Self
+```
+
+### High Elf -> Altmer
+```
+Abilities
+    Resist Disease
+		Resist Common Disease 75 pts on Self
+    Weakness to Shock
+		Shock Weakness to Shock 25 pts on Self
+    Weakness to Frost
+		Frost Weakness to Frost 25 pts on Self
+    Weakness to Fire
+		Fire Weakness to Fire 50 pts on Self
+    Weakness to Magicka
+		Magicka Weakness to Magicka 50 pts on Self
+    Magicka Bonus
+		Fortify Maximum Magicka 1.5×INT
 ```
 
 ------------------------------------------------------------
