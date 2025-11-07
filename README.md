@@ -123,8 +123,6 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ## Skills - Races
 
-* $${\color{red}\*?\*}$$ TODO
-
 ### Argonian
 ```
 Skill Bonuses
@@ -241,10 +239,10 @@ This was one of the weakest skills in the game. Creating your own enchantments w
 
 These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully—or just buy a replacement item when needed.
 ```
-fMagicItemRechargePerSecond         0.05 -> 0                                       No idle recharging
-fEnchantmentChanceMult              3 -> 0.6                                        5x easier self enchant
+fMagicItemRechargePerSecond         0.05 -> 0                                   No idle recharging
+fEnchantmentChanceMult              3 -> 0.6                                    5x easier self enchant
 
-sMagicInsufficientCharge            "Item does not have enough charge." -> ""       No annoing messages
+sMagicInsufficientCharge            "Item does not have enough charge." -> ""   No annoing messages
 ```
 
 ------------------------------------------------------------
