@@ -125,6 +125,54 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 * $${\color{red}\*?\*}$$ TODO
 
+#### Argonian
+```
+Skill Bonuses
+    Athletics       +15
+    Alchemy         +5
+    Illusion        +5
+    Medium Armor    +5
+    Mysticism       +5
+    Spear           +5
+    Unarmored       +5
+```
+
+```
+Abilities
+    Immune to Poison
+        Resist Poison 100 pts on Self
+    Resist Disease
+        Resist Common Disease 75 pts on Self
+
+Spells
+    Water Breathing
+        Water Breathing for 2 mins on Self, Cost: 5
+```
+
+#### Breton
+```
+Abilities
+    Resist Magicka
+        Resist Magicka 50 pts on Self
+    Magicka Bonus
+        Fortify Maximum Magicka 0.5×Int
+
+Powers
+    Dragon Skin
+        Shield 50 pts for 60 secs on Self
+```
+
+#### Dark Elf -> Dunmer
+```
+Abilities
+    Resist Fire
+        Resist Fire 75 pts on Self
+
+Powers
+    Ancestor Guardian
+        Sanctuary 50 pts for 60 secs on Self
+```
+
 ------------------------------------------------------------
 
 ## Skills - Birthsigns
@@ -176,9 +224,10 @@ This was one of the weakest skills in the game. Creating your own enchantments w
 
 These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully—or just buy a replacement item when needed.
 ```
-sMagicInsufficientCharge            "Item does not have enough charge." -> ""
-fMagicItemRechargePerSecond         0.05 -> 0           Disabled idle recharging
-fEnchantmentChanceMult              3 -> 0.6            5x easier self enchant
+fMagicItemRechargePerSecond         0.05 -> 0                                       No idle recharging
+fEnchantmentChanceMult              3 -> 0.6                                        5x easier self enchant
+
+sMagicInsufficientCharge            "Item does not have enough charge." -> ""       No annoing messages
 ```
 
 ------------------------------------------------------------
@@ -408,7 +457,6 @@ fPickLockMult                       -1 -> -1.25         Locks harder to unlock
 ```
 
 The second goal is to ensure that unlocking 100-point locks is only achievable by higher-level characters. Previously, cheap Alteration spells and scrolls made magic a better option for unlocking doors at any level.
-
 ```
 Open                                6 -> 12             2x increased base cost
 Lock                                2 -> 24
@@ -440,19 +488,19 @@ fTrapCostMult                       0 -> -0.75          Trap spell cost taken in
 
 Common trap costs were previously too low, so they have been adjusted to present a greater challenge. These spells are roughly 50% of all traps in the game, and most of the others are under 20 points.
 ```
-Fire Trap                           3 -> 30             2-20pts/3s
-Frost Trap                          3 -> 35             2-20pts/3s
-Shock Trap                          5 -> 40             2-20pts/3s
-Lifeforce Trap                      8 -> 45             2-20pts/3s
-Poison Trap                         16 -> 50            1-5pts/60s
+Fire Trap                           3 -> 30             2-20/3s
+Frost Trap                          3 -> 35             2-20/3s
+Shock Trap                          5 -> 40             2-20/3s
+Lifeforce Trap                      8 -> 45             2-20/3s
+Poison Trap                         16 -> 50            1-5/60s
 
 Paralysis Trap                      13 -> 55            10s
 Silence Trap                        37 -> 60            30s
 
-Master Fire Trap                    3 -> 65             20-30pts/10s
-Master Frost Trap                   3 -> 70             20-30pts/10s
-Master Shock Trap                   5 -> 75             20-30pts/10s
-Master Poison Trap                  16 -> 100           5-10pts/50s
+Master Fire Trap                    3 -> 65             20-30/10s
+Master Frost Trap                   3 -> 70             20-30/10s
+Master Shock Trap                   5 -> 75             20-30/10s
+Master Poison Trap                  16 -> 100           5-10/50s
 ```
 
 ------------------------------------------------------------
@@ -460,52 +508,51 @@ Master Poison Trap                  16 -> 100           5-10pts/50s
 ## Magic - Potions
 
 With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
-
 ```
-Bargain Potion of Burden            5pts/8s -> 50pts/80s                10x/10x (cost 0.1)
-Cheap Potion of Burden              8pts/15s -> 80pts/150s
-Standard Potion of Burden           10pts/30s -> 100pts/300s
-Quality Potion of Burden            15pts/45s -> 150pts/450s
-Exclusive Potion of Burden          20pts/60s -> 200pts/600s
+Bargain Potion of Burden            5/8s -> 50/80s                10x/10x
+Cheap Potion of Burden              8/15s -> 80/150s
+Standard Potion of Burden           10/30s -> 100/300s
+Quality Potion of Burden            15/45s -> 150/450s
+Exclusive Potion of Burden          20/60s -> 200/600s
 
-Bargain Potion of Feather           5pts/8s -> 50pts/80s
-Cheap Potion of Feather             8pts/15s -> 80pts/150s
-Quality Potion of Feather           15pts/45s -> 150pts/450s
-Exclusive Potion of Feather         20pts/60s -> 200pts/600s
-```
-
-```
-Potion of Detect Creatures          10pts/15s -> 50pts/150s             5x/10x (cost 0.2)
-Potion of Detect Key                10pts/15s -> 50pts/150s
-Potion of Detect Enchantments       10pts/15s -> 50pts/150s
+Bargain Potion of Feather           5/8s -> 50/80s
+Cheap Potion of Feather             8/15s -> 80/150s
+Quality Potion of Feather           15/45s -> 150/450s
+Exclusive Potion of Feather         20/60s -> 200/600s
 ```
 
 ```
-Bargain Potion of Light             5pts/8s -> 25/40s                   5x/5x (cost 0.2)
-Cheap Potion of Light               8pts/15s -> 40pts/75s
-Standard Potion of Light            10pts/30s -> 50pts/150s
-Quality Potion of Light             15pts/45s -> 75pts/225s
-Exclusive Potion of Light           20pts/60s -> 100pts/300s
+Potion of Detect Creatures          10/15s -> 50/150s             5x/10x
+Potion of Detect Key                10/15s -> 50/150s
+Potion of Detect Enchantments       10/15s -> 50/150s
+```
 
-Bargain Potion of Night-Eye         5pts/8s -> 25/40s
-Cheap Potion of Night-Eye           8pts/15s -> 40pts/75s
-Standard Potion of Night-Eye        10pts/30s -> 50pts/150s
-Quality Potion of Night-Eye         15pts/45s -> 75pts/225s
-Exclusive Potion of Night-Eye       20pts/60s -> 100pts/300s
+```
+Bargain Potion of Light             5/8s -> 25/40s                5x/5x
+Cheap Potion of Light               8/15s -> 40/75s
+Standard Potion of Light            10/30s -> 50/150s
+Quality Potion of Light             15/45s -> 75/225s
+Exclusive Potion of Light           20/60s -> 100/300s
+
+Bargain Potion of Night-Eye         5/8s -> 25/40s
+Cheap Potion of Night-Eye           8/15s -> 40/75s
+Standard Potion of Night-Eye        10/30s -> 50/150s
+Quality Potion of Night-Eye         15/45s -> 75/225s
+Exclusive Potion of Night-Eye       20/60s -> 100/300s
 ```
 
 Those potions are standard, so they should have a standard duration.
 ```
-Potion of Slowfalling               10pts/15s -> 10pts/30s              1x/2x
-Potion of Telekinesis               10pts/15s -> 10pts/30s
+Potion of Slowfalling               10/15s -> 10/30s              1x/2x
+Potion of Telekinesis               10/15s -> 10/30s
 Potion of Water Breathing           15s -> 30s
 Potion of Water Walking             15s -> 30s
 ```
 
 Additionally, potion inconsistencies have been fixed.
 ```
-Bargain Potion of Swift Swim        1pts/8s -> 5pts/8s
-Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
+Bargain Potion of Swift Swim        1/8s -> 5/8s
+Spoiled Slowfall Potion             10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
@@ -514,31 +561,31 @@ Spoiled Slowfall Potion             10pts/15s -> 1pts/15s
 
 Following potions from Tamriel Data has been updated.
 ```
-Standard Potion of Feather          10pts/30s -> 100pts/300s            T_Com_Potion_Feather_S
+Standard Potion of Feather          10/30s -> 100/300s            T_Com_Potion_Feather_S
 
-Cheap Potion of Burden              8pts/15s -> 50pts/80s               T_Nor_Potion_Burden_C
-Quality Potion of Burden            15pts/45s -> 150pts/450s            T_Nor_Potion_Burden_Q
+Cheap Potion of Burden              8/15s -> 50/80s               T_Nor_Potion_Burden_C
+Quality Potion of Burden            15/45s -> 150/450s            T_Nor_Potion_Burden_Q
 
-Cheap Potion of Feather             8pts/15s -> 50pts/80s               T_Nor_Potion_Feather_C
-Quality Potion of Feather           15pts/45s -> 150pts/450s            T_Nor_Potion_Feather_Q
+Cheap Potion of Feather             8/15s -> 50/80s               T_Nor_Potion_Feather_C
+Quality Potion of Feather           15/45s -> 150/450s            T_Nor_Potion_Feather_Q
 ```
 
 ```
-Potion of Detect Key                10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Invisib_S
-Potion of Detect Creatures          10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Humanoid_S
-Potion of Detect Enchantments       10pts/15s -> 50pts/150s             T_Com_Potion_Detect_Enemy_S
+Potion of Detect Key                10/15s -> 50/150s             T_Com_Potion_Detect_Invisib_S
+Potion of Detect Creatures          10/15s -> 50/150s             T_Com_Potion_Detect_Humanoid_S
+Potion of Detect Enchantments       10/15s -> 50/150s             T_Com_Potion_Detect_Enemy_S
 ```
 
 ```
-Cheap Potion of Light               8pts/15s -> 40pts/75s               T_Nor_Potion_Light_C
-Quality Potion of Light             15pts/45s -> 75pts/225s             T_Nor_Potion_Light_Q
+Cheap Potion of Light               8/15s -> 40/75s               T_Nor_Potion_Light_C
+Quality Potion of Light             15/45s -> 75/225s             T_Nor_Potion_Light_Q
 
-Cheap Potion of Night-Eye           8pts/15s -> 40pts/75s               T_Nor_Potion_NightEye_C
-Quality Potion of Night-Eye         15pts/45s -> 75pts/225s             T_Nor_Potion_NightEye_Q
+Cheap Potion of Night-Eye           8/15s -> 40/75s               T_Nor_Potion_NightEye_C
+Quality Potion of Night-Eye         15/45s -> 75/225s             T_Nor_Potion_NightEye_Q
 ```
 
 ```
-Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Potion_DrainEndurance_Q
+Spoiled Slowfall Potion             10/15s -> 1/15s               T_Nor_Potion_DrainEndurance_Q
 ```
 
 ------------------------------------------------------------
@@ -548,7 +595,6 @@ Spoiled Slowfall Potion             10pts/15s -> 1pts/15s               T_Nor_Po
 Spells have been tweaked to stay useful following the changes to spell effect costs.
 
 ### Alteration
-
 ```
 Burden Touch                        20/10s/Touch -> 100/20s             5x/2x
 Burden                              20/10s/Target -> 100/20s
@@ -579,7 +625,6 @@ Ulms' Juicedaw Feather              50/10s/Self -> 500/10s              10x/1x
 ```
 
 ### Destruction
-
 ```
 Armor Eater                         10-30/Touch -> 10-30/6s             1x/6x
 Weapon Eater                        6-25/Touch -> 6-25/6s
@@ -597,7 +642,6 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 Following spells from Tamriel Data has been updated.
 
 ### Alteration
-
 ```
 Shadow Rust
     Burden                          1-15/20s -> 10-150/20s              10x/1x
@@ -614,7 +658,6 @@ Tsun's Ward                         cost 40 -> 20
 ```
 
 ### Destruction
-
 ```
 Fracture Armor                      100/2s -> 100/20s                   1x/10x
 Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
@@ -624,7 +667,6 @@ Duck                                cost 40 -> 10
 ```
 
 ### Illusion
-
 ```
 Voices                              50/20s -> 50/60s                    1x/3x
 ```
@@ -634,72 +676,9 @@ Voices                              50/20s -> 50/60s                    1x/3x
 ## Magic - Enchantments
 
 Following enchantments has been updated.
-
 ```
 Shadowsting
     Chameleon                       200-100 -> 100
     Poison                          Unchanged
 Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
-```
-
-------------------------------------------------------------
-
-## Appendix A
-
-#### How to create an exclusive potion - 20pts/60s (with a magic effect base cost of 1)
-
-- You need Alchemy, Intelligence, and Luck at 100 and mortar with a quality of 1. Previously this was possible with Alchemy at 40.
-
-#### How to enchant a high-level spell - 100pts/24s (with a magic effect base cost of 1)
-
-- Enchanter - 17000gp with Mercantile at 100 and Disposition at 100. Mercantile, Intelligence, and Luck are taken into account but capped at 100.
-- Self-enchant - 53% chance of making an item with Enchant at 100 and average (50) attributes.
-
-#### How to open a 100-point lock
-
-- Thief - Security starting from level 60; 6% with pick quality 1.4 and average (50) attributes.
-- Mage - Alteration starting from level 60; spell costs 120 with an 8% chance on average (50) attributes.
-- Warrior - Enchanting service; 27000gp with Mercantile 50 and Disposition 100.
-
-#### How to untrap a 100-point spell
-
-- Thief - Security starting from level 65; 8% with probe quality 1.25 and average (50) attributes.
-- Mage - Telekinesis.
-- Warrior - Take it on the chin.
-
-------------------------------------------------------------
-
-## Appendix B
-
-#### How to stop a mage using a 120-cost spell (assuming mage is high level with 120 Intelligence * 1.5 Magicka Multiplier = 180 Magicka)
-
-Damage spells are most powerful but need time to kick in.
-```
-Damage Intelligence                 2pts/50s            Permanent drop 150 Magicka over 50s
-Damage Magicka                      4pts/100s           Permanent drop 400 Magicka over 100s
-```
-Otherwise, they will cost more.
-```
-Damage Intelligence                 50pts/1s            Permanent drop 75 Magicka
-Damage Magicka                      100pts/3s           Permanent drop 300 Magicka over 3s
-```
-Drain Intelligence is good if you don't have time or you're not skilled in Illusion.
-```
-Drain Intelligence                  100pts/24s          Drop 150 Magicka for 24s
-```
-Drain Magicka is the worst, even after adjustment.
-```
-Drain Magicka                       100pts/32s          Drop 100 Magicka for 32s
-```
-Silence is 5x longer than Drain Intelligence and also better if the opponent mage has more than 100 Intelligence.
-```
-Silence                             120s                Can't cast any spells for 120s
-```
-Sound may be 4x less efficient, but the opponent can still cast, wasting time and magicka.
-```
-Sound                               100%/24s            100% to fail cast for 30s
-```
-Or... just use Destruction.
-```
-Damage Health                       100pts/3s           Permanent drop 300 Health over 3s
 ```
