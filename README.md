@@ -146,10 +146,13 @@ Abilities
         Resist Poison               100%
     Resist Disease
         Resist Common Disease       75%
+    ~~Resist Normal Weapons~~
+        Resist Normal Weapons       25%
 
 Spells
-    Water Breathing                 [5]
+    Water Breathing [5]
         Water Breathing             120s/Self
+        ~~Swift Swim~~              50/120s/Self
 ```
 
 ### Breton
@@ -427,7 +430,13 @@ Secret Master's Retort              1000gp -> 5000gp
 
 ## Alchemy - Apparatuses
 
-* $${\color{red}\*?\*}$$ TODO
+* TODO
+
+------------------------------------------------------------
+
+## Alchemy - Apparatuses - Tamriel Data
+
+* TODO
 
 ------------------------------------------------------------
 
@@ -490,7 +499,7 @@ Lock                                2 -> 24
 
 ### Conjuration
 
-* $${\color{red}\*?\*}$$ TODO
+* TODO
 
 ------------------------------------------------------------
 
