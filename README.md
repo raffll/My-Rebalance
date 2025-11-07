@@ -423,23 +423,23 @@ fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, du
 ## Alchemy - Apparatuses
 
 ```
-apparatus_m_mortar_01           Master's Mortar and Pestle          3.00    2400            1.20 -> 1.04
-apparatus_m_alembic_01          Master's Alembic                    5.00    1200            1.20
-apparatus_m_calcinator_01       Master's Calcinator                 13.00   240             1.20
-apparatus_m_retort_01           Master's Retort                     4.00    480             1.20
+apparatus_m_mortar_01           Master's Mortar and Pestle          2400            1.20 -> 1.04
+apparatus_m_alembic_01          Master's Alembic                    1200            1.20
+apparatus_m_calcinator_01       Master's Calcinator                 240             1.20
+apparatus_m_retort_01           Master's Retort                     480             1.20
         
-apparatus_g_mortar_01           Grandmaster's Mortar and Pestle     2.00    4000            1.50 -> 1.10
-apparatus_g_alembic_01          Grandmaster's Alembic               3.00    4000            1.50
-apparatus_g_calcinator_01       Grandmaster's Calcinator            8.00    4000            1.50
-apparatus_g_retort_01           Grandmaster's Retort                3.00    1600            1.50
+apparatus_g_mortar_01           Grandmaster's Mortar and Pestle     4000            1.50 -> 1.10
+apparatus_g_alembic_01          Grandmaster's Alembic               4000            1.50
+apparatus_g_calcinator_01       Grandmaster's Calcinator            4000            1.50
+apparatus_g_retort_01           Grandmaster's Retort                1600            1.50
 ```
 
 Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
 ```     
-apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     1.00    6000 -> 30000   2.00 -> 1.20
-apparatus_sm_alembic_01         Secret Master's Alembic             3.00    1600 -> 8000    2.00
-apparatus_sm_calcinator_01      Secret Master's Calcinator          6.00    3200 -> 16000   2.00
-apparatus_sm_retort_01          Secret Master's Retort              2.00    1000 -> 5000    2.00
+apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000   2.00 -> 1.20
+apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000    2.00
+apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000   2.00
+apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000    2.00
 ```
         
 ------------------------------------------------------------        
@@ -447,34 +447,34 @@ apparatus_sm_retort_01          Secret Master's Retort              2.00    1000
 ## Alchemy - Apparatuses - Tamriel Data     
 
 ``` 
-T_He_DirenniMortar_01           Direnni Mortar and Pestle           4.00    3000            1.20 -> 1.04
-T_He_DirenniAlembic_01          Direnni Alembic                     6.00    1600            1.20
+T_He_DirenniMortar_01           Direnni Mortar and Pestle           3000            1.20 -> 1.04
+T_He_DirenniAlembic_01          Direnni Alembic                     1600            1.20
         
-TR_m7_apparatus_m_alembic_02    Master's Alembic                    5.00    1200            1.20 -> 1.04
-TR_m7_apparatus_g_calcinator_02 Grandmaster's Calcinator            8.00    4000            1.50 -> 1.10
+TR_m7_apparatus_m_alembic_02    Master's Alembic                    1200            1.20 -> 1.04
+TR_m7_apparatus_g_calcinator_02 Grandmaster's Calcinator            4000            1.50 -> 1.10
         
-T_De_PunavitComCup_01           Punavit Communal Cup                10.00   1000            1.60 -> 1.12
-T_De_PunavitSamovar_01          Punavit Samovar                     12.00   5000            1.60
+T_De_PunavitComCup_01           Punavit Communal Cup                1000            1.60 -> 1.12
+T_De_PunavitSamovar_01          Punavit Samovar                     5000            1.60
         
-T_De_Ebony_Mortar               Ebony Mortar and Pestle             6.00    12000           1.75 -> 1.15
-T_De_Ebony_Alembic              Ebony Alembic                       9.00    3200            1.75
-T_De_Ebony_Calcinator           Ebony Calcinator                    12.00   8000            1.75
-T_De_Ebony_Retort               Ebony Retort                        9.00    2400            1.75
+T_De_Ebony_Mortar               Ebony Mortar and Pestle             12000           1.75 -> 1.15
+T_De_Ebony_Alembic              Ebony Alembic                       3200            1.75
+T_De_Ebony_Calcinator           Ebony Calcinator                    8000            1.75
+T_De_Ebony_Retort               Ebony Retort                        2400            1.75
         
-TR_m1_faruna_mortar_ya          Faruna's Mortar and Pestle          1.00    0               2.00
-TR_m1_faruna_alembic            Faruna's Alembic                    3.00    0               2.00
-TR_m1_faruna_calcinator         Faruna's Calcinator                 6.00    0               2.00
-TR_m1_faruna_retort             Faruna's Retort                     2.00    0               2.00
+TR_m1_faruna_mortar_ya          Faruna's Mortar and Pestle          0               2.00
+TR_m1_faruna_alembic            Faruna's Alembic                    0               2.00
+TR_m1_faruna_calcinator         Faruna's Calcinator                 0               2.00
+TR_m1_faruna_retort             Faruna's Retort                     0               2.00
         
-TR_m1_rathra_mortar             Rathra's Mortar and Pestle          1.00    0               2.00
-TR_m1_rathra_alembic            Rathra's Alembic                    3.00    0               2.00
-TR_m1_rathra_calcinator         Rathra's Calcinator                 6.00    0               2.00
-TR_m1_rathra_retort             Rathra's Retort                     2.00    0               2.00
+TR_m1_rathra_mortar             Rathra's Mortar and Pestle          0               2.00
+TR_m1_rathra_alembic            Rathra's Alembic                    0               2.00
+TR_m1_rathra_calcinator         Rathra's Calcinator                 0               2.00
+TR_m1_rathra_retort             Rathra's Retort                     0               2.00
         
-TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar and Pestl    1.00    6000 -> 30000   2.00 -> 1.20
-TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             3.00    6000 -> 8000    2.00
-TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6.00    6000 -> 16000   2.00
-TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2.00    2400 -> 5000    2.00
+TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000   2.00 -> 1.20
+TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000    2.00
+TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6000 -> 16000   2.00
+TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000    2.00
 ```
 
 ------------------------------------------------------------
