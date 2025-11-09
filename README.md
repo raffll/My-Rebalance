@@ -125,6 +125,9 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 ## Skills - Races
 
 ### Argonian
+
+Weapon skill is more important early game than athletics. 
+
 ```
 Skill Bonuses
     Athletics                       +15 -> +5
@@ -149,11 +152,14 @@ Abilities
         Swift Swim                  50
 
 Spells
-    [REMOVED] Water Breathing [5]
+    [REMOVED] Water Breathing
         Water Breathing             120s/Self
 ```
 
 ### Breton
+
+No changes here.
+
 ```
 Abilities
     Resist Magicka
@@ -167,6 +173,9 @@ Powers
 ```
 
 ### Dark Elf -> Dunmer
+
+No changes here.
+
 ```
 Abilities
     Resist Fire
@@ -178,6 +187,9 @@ Powers
 ```
 
 ### High Elf -> Altmer
+
+Weakness to Fire slightly decreased as there is too many weaknesses already.
+
 ```
 Abilities
     Resist Disease
@@ -205,6 +217,10 @@ Powers
 
 ### Khajiit
 ```
+Abilities
+	[NEW] Resist Frost
+		Resist Frost                25
+
 Powers
     Eye of Fear
         Demoralize Humanoid         100/30s/Target
@@ -215,6 +231,7 @@ Spells
 ```
 
 ### Nord
+
 ```
 Abilities
     Resist Shock
@@ -226,8 +243,8 @@ Powers
     [REMOVED] Thunder Fist
         Frost Damage                25/Touch
     Woad
-        Shield                      30/60s/Self
-		[NEW] Frost Shield          20/60s/Self
+        [REMOVED] Shield            30/60s/Self
+		[NEW] Frost Shield          25/60s/Self
 ```
 
 ### Orc -> Orsimer
@@ -422,7 +439,7 @@ After this patch, some potion effects—depending on the underlying spell effect
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
 
-Those tables show how self made potion strength scales now, depending on different levels of A-Alchemy, Q-Mortal Quality, and BC-Spell Effect Base Cost.
+Those tables show how self made potion strength scales now, depending on different levels of A-Alchemy, Q-Mortar Quality, and BC-Spell Effect Base Cost.
 
 ```
 fPotionStrengthMult: 0.5
@@ -518,15 +535,19 @@ This was one of the weakest skills in the game. Creating your own enchantments w
 
 These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully—or just buy a replacement item when needed.
 ```
-fMagicItemRechargePerSecond         0.05 -> 0                                   No idle recharging
+fMagicItemRechargePerSecond         0.05 -> 0                                   no idle recharging
 fEnchantmentChanceMult              3 -> 0.6                                    5x easier self enchant
 
-sMagicInsufficientCharge            "Item does not have enough charge." -> ""   No annoing messages
+sMagicInsufficientCharge            "Item does not have enough charge." -> ""   no annoing messages
 ```
 
 ------------------------------------------------------------
 
 ## Magic
+
+* All spell examples here are self made high level spells that can cost around 120-125 Magicka.
+* I you want to know how much it will be at constant enchantment, just switch magnitude with duration (cosntant duration is always 100).
+* Potion examples are provided for Alchemy, Intelligence, and Luck at 100 and also mortal quality at 1 and fPotionStrengthMult at 0.25.   
 
 ------------------------------------------------------------
 
@@ -535,22 +556,26 @@ sMagicInsufficientCharge            "Item does not have enough charge." -> ""   
 Elemental shields are now worth experimenting with—especially for the fun of killing low-level creatures. Their cost hasn’t changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers. Even with 10x more damage, though, they remain more of a gimmick than a true alternative to direct damage spells.
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
+
+Fire Shield							3					spell: 100/7s or 8/100s
+Frost Shield						3
+Lightning Shield                    3                                 
 ```
 
-Previously, Feather wasn’t very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point.
+Previously, Feather wasn’t very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
 ```
-Feather                             1 -> 0.1            2x encumbrance gain than Fortify Strength
-Burden                              1 -> 0.1            2x encumbrance lost than Drain Strength
+Feather                             1 -> 0.1            spell: 100/240s, potion: 200/600s
+Burden                              1 -> 0.1            			
 ```
 
 The same logic applies to Swift Swim, which affects only swimming speed and should therefore outperform Fortify Speed.
 ```
-Swift Swim                          2 -> 0.5            2x faster swim than Fortify Speed
+Swift Swim                          2 -> 0.5            spell: 100/48s, potion: 40/120s 
 ```
 
 Jump and Slowfall are generally harder to use than Levitate, but used together, they should offer a more affordable alternative.
 ```
-Jump                                3 -> 1
+Jump                                3 -> 1				spell: 100/24s, potion: 20/60s 
 Slowfall                            3 -> 1
 
 sEffectSlowFall                     SlowFall -> Slowfall
@@ -558,13 +583,13 @@ sEffectSlowFall                     SlowFall -> Slowfall
 
 Even with this adjustment, Shield remains less effective than Sanctuary.
 ```
-Shield                              2 -> 1
+Shield                              2 -> 1				spell: 100/24s, potion: 20/60s
 ```
 
 The cost of these spell effects has been changed to be on par with Lockpicking.
 ```
-Open                                6 -> 12
-Lock                                2 -> 24
+Open                                6 -> 12				spell: 100
+Lock                                2 -> 24				spell: 50
 ```
 
 ------------------------------------------------------------
@@ -573,7 +598,7 @@ Lock                                2 -> 24
 
 Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
 ```
-Fire Damage                         5 -> 6
+Fire Damage                         5 -> 6				spell: 100/3s or 4/100s  
 Frost Damage                        5 -> 6
 Shock Damage                        7 -> 6
 Damage Health                       8 -> 6
@@ -582,29 +607,30 @@ Poison                              9 -> 6
 
 Damage Magicka has been reduced to align with Damage Health.
 ```
-Damage Magicka                      8 -> 6
+Damage Magicka                      8 -> 6              spell: 100/3s
 ```
 
 Damage Fatigue remains unchanged, as it is either nearly useless or very powerful depending on the "Uncapped Damage Fatigue" setting.
 ```
-Damage Fatigue                      4                   Unchanged
+Damage Fatigue                      4                   unchanged
 ```
 
 Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
 ```
-Damage Attribute                    8 -> 24
+Damage Attribute                    8 -> 24				spell: 1/100s or 50/1s
 ```
 
-Low-tier gear typically has a durability of around 300–500. With these changes, it can now be destroyed by a 25-cost spell—the equivalent of 100 points of Fire Damage.
+Low-tier gear typically has a durability of around 300–500. With these changes, it can now be destroyed by a 25-cost spell.
 ```
-Disintegrate Armor                  6 -> 1
+Disintegrate Armor                  6 -> 1				spell: 100/24s
 Disintegrate Weapon                 6 -> 1
 ```
 
 Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it’s 20% cheaper. As a side effect, many potions with these negative effects will become stronger.
 ```
-Drain Magicka                       4 -> 0.8
-Drain Fatigue                       2 -> 0.5
+Drain Health						4					spell: 100/5s, potion: 5/15s, unchanged
+Drain Magicka                       4 -> 0.8			spell: 100/30s, potion: 25/75s
+Drain Fatigue                       2 -> 0.5			spell: 100/48s, potion: 40/120s
 ```
 
 Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
@@ -708,7 +734,7 @@ iCrimeAttack                        40 -> 200
 iCrimePickPocket                    25 -> 100
 iCrimeTresspass                     5 -> 25
 
-iDaysinPrisonMod                    100 -> 500          Days in prison same as in vanilla
+iDaysinPrisonMod                    100 -> 500          days in prison same as in vanilla
 ```
 
 The crime threshold is lowered, so guards will pursue you after just one attack.
@@ -718,7 +744,7 @@ iCrimeThreshold                     1000 -> 200
 
 The death warrant will be triggered after a combination of one killing, one attack, and any other crime. This means you must be perfectly clean while doing MT’s Writs.
 ```
-Death Warrant                       5000 -> 5201        You can kill only one person, instead of 4
+Death Warrant                       5000 -> 5201        you can kill only one person, instead of 4
 ```
 
 ------------------------------------------------------------
@@ -732,7 +758,7 @@ iPickMaxChance                      75 -> 95            ~10% chance of being cau
 
 It also didn’t make much sense to factor in the item’s value when determining success, so I removed that requirement.
 ```
-fPickPocketMod                      0.3 -> 0            Any item available to steal
+fPickPocketMod                      0.3 -> 0            any item available to steal
 ```
 
 ------------------------------------------------------------
@@ -741,7 +767,7 @@ fPickPocketMod                      0.3 -> 0            Any item available to st
 
 The primary goal is to make the Security skill more valuable at higher levels and to ensure it’s more effective than Alteration for lock-related tasks. Previously, raising Security above 50 provided no real benefit.
 ```
-fPickLockMult                       -1 -> -1.25         Locks harder to unlock
+fPickLockMult                       -1 -> -1.25         locks harder to unlock
 ```
 
 The second goal is to ensure that unlocking 100-point locks is only achievable by higher-level characters. Previously, cheap Alteration spells and scrolls made magic a better option for unlocking doors at any level.
@@ -752,17 +778,17 @@ Lock                                2 -> 24
 
 Now, using existing open spells requires a mage skilled in Alteration, or even a master mage to create new ones, since self-made spells cost twice as much as standalone spells.
 ```
-Open                                         20pts      Unchanged, unavailable in vanilla
+Open                                         20pts      unchanged, unavailable in vanilla
 Ondusi's Open Door                  50pts -> 40pts
 Strong Open                         50pts -> 60pts
-Great Open                          50pts -> 80pts      Unavailable in vanilla
-Wild Open                                    1-100pts   Unchanged
+Great Open                          50pts -> 80pts      unavailable in vanilla
+Wild Open                                    1-100pts   unchanged
 ```
 
 For warriors, scrolls remain available but have been nerfed or had their prices increased due to their widespread availability.
 ```
-Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
-Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
+Scroll of Ondusi's Unhinging        73gp -> 273gp       available in stores
+Scroll of Ekash's Lock Splitter     100pts -> 80pts     available in random loot later in the game
 ```
 
 ------------------------------------------------------------
@@ -771,7 +797,7 @@ Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot
 
 The trap mechanic has been restored; previously, anyone could disarm any trap with ease. Now, the trap spell cost will be factored into disarming difficulty, similar to how lock levels work.
 ```
-fTrapCostMult                       0 -> -0.75          Trap spell cost taken into account
+fTrapCostMult                       0 -> -0.75          trap spell cost taken into account
 ```
 
 Common trap costs were previously too low, so they have been adjusted to present a greater challenge. These spells are roughly 50% of all traps in the game, and most of the others are under 20 points.
