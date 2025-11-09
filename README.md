@@ -51,7 +51,7 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 
 #### Compatibility
 
-- If you are using *Morag Tong Polished*, make sure to also enable "**Corrupted Crime - Morag Tong Polished.esp**" at the end of your load order.
+- If you are using **Morag Tong Polished**, make sure to also enable **Corrupted Crime - Morag Tong Polished.esp** at the end of your load order.
 
 ------------------------------------------------------------
 
@@ -59,6 +59,7 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 
 - 1.10
   - Magic: Minor PfP fixes forwarded
+  - Skills: New races and birthsigns modules
   - Skills: Security reverted back to Intelligence
 - 1.9
   - Barter: Mages Guild’s travel cost changed from 10x to 5x
@@ -302,8 +303,8 @@ Abilities
 ```
 Spells
     Star-Curse
-        Poison                      3/30s/Touch
-        Damage Health               1/30s/Self
+        Poison                      3/30s/Touch -> 3/300s/Touch
+        Damage Health               1/30s/Self -> 1/300s/Self
 ```
 
 ### Lady
@@ -320,6 +321,7 @@ Abilities
 Abilities
     Charioteer
         Fortify Speed               25
+        ~~Feather~~                 100
 ```
 
 ### Lord
@@ -418,6 +420,30 @@ After this patch, some potion effects—depending on the underlying spell effect
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
 
+Those tables show how self made potion strength scales now, depending on different levels of A-Alchemy, Q-Mortal Quality, and BC-Spell Effect Base Cost.
+
+```
+fPotionStrengthMult: 0.5
+
+5/8s
+8/15s
+10/30s  [A-40, Q-1, BC-2]
+15/45s
+20/60s  [A-40, Q-1, BC-1] [A-100, Q-1, BC-2] [A-40, Q-2, BC-2]
+
+40/120s [A-100, Q-1, BC-1] [A-100, Q-2, BC-2]
+```
+
+```
+fPotionStrengthMult: 0.25
+
+5/8s    [A-40, Q-1, BC-2] <- actually this will be 5/15s
+8/15s
+10/30s  [A-40, Q-1, BC-1] [A-100, Q-1, BC-2] [A-40, Q-2, BC-2]
+15/45s
+20/60s  [A-100, Q-1, BC-1] [A-100, Q-2, BC-2]
+```
+
 ------------------------------------------------------------
 
 ## Alchemy - Apparatuses
@@ -427,7 +453,7 @@ apparatus_m_mortar_01           Master's Mortar and Pestle          2400        
 apparatus_m_alembic_01          Master's Alembic                    1200            1.20
 apparatus_m_calcinator_01       Master's Calcinator                 240             1.20
 apparatus_m_retort_01           Master's Retort                     480             1.20
-        
+
 apparatus_g_mortar_01           Grandmaster's Mortar and Pestle     4000            1.50 -> 1.10
 apparatus_g_alembic_01          Grandmaster's Alembic               4000            1.50
 apparatus_g_calcinator_01       Grandmaster's Calcinator            4000            1.50
@@ -435,42 +461,42 @@ apparatus_g_retort_01           Grandmaster's Retort                1600        
 ```
 
 Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
-```     
+```
 apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000   2.00 -> 1.20
 apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000    2.00
 apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000   2.00
 apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000    2.00
 ```
-        
-------------------------------------------------------------        
-        
-## Alchemy - Apparatuses - Tamriel Data     
 
-``` 
+------------------------------------------------------------
+
+## Alchemy - Apparatuses - Tamriel Data
+
+```
 T_He_DirenniMortar_01           Direnni Mortar and Pestle           3000            1.20 -> 1.04
 T_He_DirenniAlembic_01          Direnni Alembic                     1600            1.20
-        
+
 TR_m7_apparatus_m_alembic_02    Master's Alembic                    1200            1.20 -> 1.04
 TR_m7_apparatus_g_calcinator_02 Grandmaster's Calcinator            4000            1.50 -> 1.10
-        
+
 T_De_PunavitComCup_01           Punavit Communal Cup                1000            1.60 -> 1.12
 T_De_PunavitSamovar_01          Punavit Samovar                     5000            1.60
-        
+
 T_De_Ebony_Mortar               Ebony Mortar and Pestle             12000           1.75 -> 1.15
 T_De_Ebony_Alembic              Ebony Alembic                       3200            1.75
 T_De_Ebony_Calcinator           Ebony Calcinator                    8000            1.75
 T_De_Ebony_Retort               Ebony Retort                        2400            1.75
-        
+
 TR_m1_faruna_mortar_ya          Faruna's Mortar and Pestle          0               2.00
 TR_m1_faruna_alembic            Faruna's Alembic                    0               2.00
 TR_m1_faruna_calcinator         Faruna's Calcinator                 0               2.00
 TR_m1_faruna_retort             Faruna's Retort                     0               2.00
-        
+
 TR_m1_rathra_mortar             Rathra's Mortar and Pestle          0               2.00
 TR_m1_rathra_alembic            Rathra's Alembic                    0               2.00
 TR_m1_rathra_calcinator         Rathra's Calcinator                 0               2.00
 TR_m1_rathra_retort             Rathra's Retort                     0               2.00
-        
+
 TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000   2.00 -> 1.20
 TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000    2.00
 TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6000 -> 16000   2.00
@@ -533,12 +559,6 @@ The cost of these spell effects has been changed to be on par with Lockpicking.
 Open                                6 -> 12
 Lock                                2 -> 24
 ```
-
-------------------------------------------------------------
-
-### Conjuration
-
-* TODO
 
 ------------------------------------------------------------
 
