@@ -126,7 +126,7 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ### Argonian
 
-Weapon skill is more important early game than athletics. 
+Weapon skill is more important early game than athletics.
 
 ```
 Skill Bonuses
@@ -147,8 +147,8 @@ Abilities
         Resist Common Disease       75%
     [NEW] Resist Normal Weapons
         Resist Normal Weapons       25%
-	[NEW] Water Breathing
-		Water Breathing
+    [NEW] Water Breathing
+        Water Breathing
         Swift Swim                  50
 
 Spells
@@ -218,8 +218,8 @@ Powers
 ### Khajiit
 ```
 Abilities
-	[NEW] Resist Frost
-		Resist Frost                25
+    [NEW] Resist Frost
+        Resist Frost                25
 
 Powers
     Eye of Fear
@@ -244,7 +244,7 @@ Powers
         Frost Damage                25/Touch
     Woad
         [REMOVED] Shield            30/60s/Self
-		[NEW] Frost Shield          25/60s/Self
+        [NEW] Frost Shield          25/60s/Self
 ```
 
 ### Orc -> Orsimer
@@ -378,8 +378,8 @@ Spells
 Powers
     Mara's Gift
         Restore Health              100/Self
-		[NEW] Restore Magicka       100/Self
-		[NEW] Restore Fatigue       200/Self
+        [NEW] Restore Magicka       100/Self
+        [NEW] Restore Fatigue       200/Self
 ```
 
 ### Lover
@@ -399,7 +399,7 @@ Powers
 Powers -> Abilities
     Moonshadow
         [REMOVED] Invisibility      60s/Self
-		[NEW] Chameleon				10
+        [NEW] Chameleon             10
 ```
 
 ### Tower
@@ -413,7 +413,7 @@ Spells -> Abilities
 Powers
     Tower Key
         [REMOVED] Open              50/Touch
-		[NEW] Fortify Security      25/60s/Self
+        [NEW] Fortify Security      25/60s/Self
 ```
 
 ------------------------------------------------------------
@@ -466,9 +466,9 @@ fPotionStrengthMult: 0.25
 Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
 ```
 apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000
-apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000 
+apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000
 apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000
-apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000 
+apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
 ```
 
 ------------------------------------------------------------
@@ -547,7 +547,7 @@ sMagicInsufficientCharge            "Item does not have enough charge." -> ""   
 
 * All spell examples here are self made high level spells that can cost around 120-130 Magicka.
 * I you want to know how much it will be at constant enchantment, just switch magnitude with duration (constant duration is always 100).
-* Potion examples are provided for Alchemy, Intelligence, and Luck at 100, mortal quality at 1 and fPotionStrengthMult at 0.25.   
+* Potion examples are provided for Alchemy, Intelligence, and Luck at 100, mortal quality at 1 and fPotionStrengthMult at 0.25.
 
 ------------------------------------------------------------
 
@@ -557,23 +557,23 @@ Elemental shields are now worth experimenting with—especially for the fun of k
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
 
-Fire, Frost, Lightning Shield		3 -> Unchanged		100/7s or 8/100s, potion: 7/20s                                
+Fire, Frost, Lightning Shield       3 -> Unchanged      100/7s or 8/100s, potion: 7/20s
 ```
 
 Previously, Feather wasn’t very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
 ```
 Feather                             1 -> 0.1            100/240s, potion: 200/600s
-Burden                              1 -> 0.1            			
+Burden                              1 -> 0.1
 ```
 
 The same logic applies to Swift Swim, which affects only swimming speed and should therefore outperform Fortify Speed.
 ```
-Swift Swim                          2 -> 0.5            100/48s, potion: 40/120s 
+Swift Swim                          2 -> 0.5            100/48s, potion: 40/120s
 ```
 
 Jump and Slowfall are generally harder to use than Levitate, but used together, they should offer a more affordable alternative.
 ```
-Jump                                3 -> 1				100/24s, potion: 20/60s 
+Jump                                3 -> 1              100/24s, potion: 20/60s
 Slowfall                            3 -> 1
 
 sEffectSlowFall                     SlowFall -> Slowfall
@@ -581,13 +581,13 @@ sEffectSlowFall                     SlowFall -> Slowfall
 
 Even with this adjustment, Shield remains less effective than Sanctuary.
 ```
-Shield                              2 -> 1				100/24s, potion: 20/60s
+Shield                              2 -> 1              100/24s, potion: 20/60s
 ```
 
 The cost of these spell effects has been changed to be on par with Lockpicking.
 ```
-Open                                6 -> 12				100 lock level
-Lock                                2 -> 24				50 lock level
+Open                                6 -> 12             100 lock level
+Lock                                2 -> 24             50 lock level
 ```
 
 ------------------------------------------------------------
@@ -596,7 +596,7 @@ Lock                                2 -> 24				50 lock level
 
 Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
 ```
-Fire Damage                         5 -> 6				100/3s or 4/100s  
+Fire Damage                         5 -> 6              100/3s or 4/100s
 Frost Damage                        5 -> 6
 Shock Damage                        7 -> 6
 Damage Health                       8 -> 6
@@ -615,25 +615,25 @@ Damage Fatigue                      4 -> Unchanged      100/5s
 
 Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
 ```
-Damage Attribute                    8 -> 24				1/100s or 50/1s
+Damage Attribute                    8 -> 24             1/100s or 50/1s
 ```
 
 Low-tier gear typically has a durability of around 300–500. With these changes, it can now be destroyed by a 25-cost spell.
 ```
-Disintegrate Armor                  6 -> 1				100/24s
+Disintegrate Armor                  6 -> 1              100/24s
 Disintegrate Weapon                 6 -> 1
 ```
 
 Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it’s 20% cheaper. As a side effect, many potions with these negative effects will become stronger.
 ```
-Drain Health						4 -> Unchanged		100/5s, potion: 5/15s
-Drain Magicka                       4 -> 0.8			100/30s, potion: 25/75s
-Drain Fatigue                       2 -> 0.5			100/48s, potion: 40/120s
+Drain Health                        4 -> Unchanged      100/5s, potion: 5/15s
+Drain Magicka                       4 -> 0.8            100/30s, potion: 25/75s
+Drain Fatigue                       2 -> 0.5            100/48s, potion: 40/120s
 ```
 
 Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
 ```
-Drain Skill                         1 -> 2				100/11s, potion: 10/30s
+Drain Skill                         1 -> 2              100/11s, potion: 10/30s
 ```
 
 ------------------------------------------------------------
@@ -642,7 +642,7 @@ Drain Skill                         1 -> 2				100/11s, potion: 10/30s
 
 Previously, there was little reason to use these effects over Paralyze.
 ```
-Paralyze							40 -> Unchanged		60s
+Paralyze                            40 -> Unchanged     60s
 Silence                             40 -> 20            120s
 Sound                               3 -> 1              100/24s
 ```
@@ -654,12 +654,12 @@ Demoralize Humanoid                 Mysticism -> Illusion
 
 TODO
 ```
-Chameleon							1 -> 2				100/11s, potion: 10/30s
+Chameleon                           1 -> 2              100/11s, potion: 10/30s
 ```
 
 TODO
 ```
-Sanctuary							1 -> 2				100/11s, potion: 10/30s
+Sanctuary                           1 -> 2              100/11s, potion: 10/30s
 ```
 
 ------------------------------------------------------------
