@@ -547,7 +547,7 @@ sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No a
 
 * All spell examples here are self made high level spells that can cost around 120-130 Magicka.
 * I you want to know how much it will be at constant enchantment, just switch magnitude with duration (constant duration is always 100).
-* Potion examples are provided for Alchemy, Intelligence, and Luck at 100, mortal quality at 1 and fPotionStrengthMult at 0.25.
+* Potion examples are provided for Alchemy, Intelligence, and Luck at 100, mortar quality at 1 and fPotionStrengthMult at 0.25.
 
 ------------------------------------------------------------
 
@@ -1001,7 +1001,8 @@ Voices                              50/20s -> 50/60s                    1x/3x
 Following enchantments has been updated.
 ```
 Shadowsting
-    Chameleon                       200-100 -> 100
-    Poison                          Unchanged
-Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
+    Chameleon                       200-100/20s/Target -> 100/20s/Target
+    Poison                          5/20s/Target
+Slave's Left/Right Bracer           
+	Drain Magicka -> Damage Magicka 
 ```
