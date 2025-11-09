@@ -124,11 +124,6 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ## Skills - Races
 
-```
-~~ - new
-[] - spell cost
-```
-
 ### Argonian
 ```
 Skill Bonuses
@@ -147,13 +142,15 @@ Abilities
         Resist Poison               100%
     Resist Disease
         Resist Common Disease       75%
-    ~~Resist Normal Weapons~~
+    [NEW] Resist Normal Weapons
         Resist Normal Weapons       25%
+	[NEW] Water Breathing
+		Water Breathing
+        Swift Swim                  50
 
 Spells
-    Water Breathing [5]
+    [REMOVED] Water Breathing [5]
         Water Breathing             120s/Self
-        ~~Swift Swim~~              50/120s/Self
 ```
 
 ### Breton
@@ -321,18 +318,22 @@ Abilities
 Abilities
     Charioteer
         Fortify Speed               25
-        ~~Feather~~                 100
+        [NEW] Feather               100
 ```
 
 ### Lord
 ```
 Spells
-    Blood of the North
+    [REMOVED] Blood of the North
         Restore Health              2/30s/Self
+
+Powers
+    [NEW] Blood of the North
+		Restore Health              1/600s/Self
 
 Abilities
     Trollkin
-        Weakness to Fire            100%
+        Weakness to Fire            100% -> 50%
 ```
 
 ### Apprentice
@@ -347,7 +348,7 @@ Abilities
 ```
 Abilities
     Wombburn
-        Spell Absorption            50
+        Spell Absorption            50 -> 25
         Fortify Maximum Magicka     2.0xINT
         Stunted Magicka
 ```
