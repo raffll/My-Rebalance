@@ -441,9 +441,9 @@ fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, du
 
 Those tables show how self made potion strength scales now, depending on different levels of A-Alchemy, Q-Mortar Quality, and BC-Spell Effect Base Cost.
 
-
-* fPotionStrengthMult: 0.5
 ```
+fPotionStrengthMult: 0.5
+
 5/8s
 8/15s
 10/30s  [A:40,Q:1,BC:2]
@@ -453,8 +453,9 @@ Those tables show how self made potion strength scales now, depending on differe
 40/120s [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
 ```
 
-* fPotionStrengthMult: 0.25
 ```
+fPotionStrengthMult: 0.25
+
 5/8s    [A:40,Q:1,BC:2] <- actually this will be 5/15s
 8/15s
 10/30s  [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
