@@ -223,10 +223,11 @@ Abilities
         Resist Frost                100%
 
 Powers
-    Thunder Fist
+    [REMOVED] Thunder Fist
         Frost Damage                25/Touch
     Woad
         Shield                      30/60s/Self
+		[NEW] Frost Shield          20/60s/Self
 ```
 
 ### Orc -> Orsimer
@@ -298,7 +299,7 @@ Abilities
 
 ### Serpent
 ```
-Spells
+Spells -> Powers
     Star-Curse
         Poison                      3/30s/Touch -> 3/300s/Touch
         Damage Health               1/30s/Self -> 1/300s/Self
@@ -323,17 +324,13 @@ Abilities
 
 ### Lord
 ```
-Spells
-    [REMOVED] Blood of the North
-        Restore Health              2/30s/Self
-
-Powers
-    [NEW] Blood of the North
-		Restore Health              1/600s/Self
+Spells -> Powers
+    Blood of the North
+        Restore Health              2/30s/Self -> 1/600s/Self
 
 Abilities
     Trollkin
-        Weakness to Fire            100% -> 50%
+        Weakness to Fire            100% -> 25%
 ```
 
 ### Apprentice
@@ -364,6 +361,8 @@ Spells
 Powers
     Mara's Gift
         Restore Health              100/Self
+		[NEW] Restore Magicka       100/Self
+		[NEW] Restore Fatigue       200/Self
 ```
 
 ### Lover
@@ -380,22 +379,24 @@ Powers
 
 ### Shadow
 ```
-Powers
+Powers -> Abilities
     Moonshadow
-        Invisibility                60s/Self
+        [REMOVED] Invisibility      60s/Self
+		[NEW] Chameleon				10
 ```
 
 ### Tower
 ```
-Spells
+Spells -> Abilities
     Beggar's Nose
-        Detect Animal               200/60s/Self
-        Detect Enchantment          200/60s/Self
-        Detect Key                  200/60s/Self
+        Detect Animal               200/60s/Self -> 200
+        Detect Enchantment          200/60s/Self -> 200
+        Detect Key                  200/60s/Self -> 200
 
 Powers
     Tower Key
-        Open                        50/Touch
+        [REMOVED] Open              50/Touch
+		[NEW] Fortify Security      25/60s/Self
 ```
 
 ------------------------------------------------------------
@@ -428,21 +429,29 @@ fPotionStrengthMult: 0.5
 
 5/8s
 8/15s
-10/30s  [A-40, Q-1, BC-2]
+10/30s  [A:40,Q:1,BC:2]
 15/45s
-20/60s  [A-40, Q-1, BC-1] or [A-100, Q-1, BC-2] or [A-40, Q-2, BC-2]
+20/60s  [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
 
-40/120s [A-100, Q-1, BC-1] or [A-100, Q-2, BC-2]
+40/120s [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
 ```
 
 ```
 fPotionStrengthMult: 0.25
 
-5/8s    [A-40, Q-1, BC-2] <- actually this will be 5/15s
+5/8s    [A:40,Q:1,BC:2] <- actually this will be 5/15s
 8/15s
-10/30s  [A-40, Q-1, BC-1] or [A-100, Q-1, BC-2] or [A-40, Q-2, BC-2]
+10/30s  [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
 15/45s
-20/60s  [A-100, Q-1, BC-1] or [A-100, Q-2, BC-2]
+20/60s  [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
+```
+
+Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
+```
+apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000
+apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000 
+apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000
+apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000 
 ```
 
 ------------------------------------------------------------
@@ -459,10 +468,7 @@ apparatus_g_mortar_01           Grandmaster's Mortar and Pestle     4000        
 apparatus_g_alembic_01          Grandmaster's Alembic               4000            1.50
 apparatus_g_calcinator_01       Grandmaster's Calcinator            4000            1.50
 apparatus_g_retort_01           Grandmaster's Retort                1600            1.50
-```
 
-Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
-```
 apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000   2.00 -> 1.20
 apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000    2.00
 apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000   2.00
