@@ -58,6 +58,7 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 #### History
 
 - 1.10
+  - TODO
   - Magic: Minor PfP fixes forwarded
   - Skills: New races and birthsigns modules
   - Skills: Security reverted back to Intelligence
@@ -127,7 +128,6 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 ### Argonian
 
 Weapon skill is more important early game than athletics.
-
 ```
 Skill Bonuses
     Athletics                       +15 -> +5
@@ -139,6 +139,7 @@ Skill Bonuses
     Unarmored                       +5
 ```
 
+TODO
 ```
 Abilities
     Immune to Poison
@@ -159,7 +160,6 @@ Spells
 ### Breton
 
 No changes here.
-
 ```
 Abilities
     Resist Magicka
@@ -175,7 +175,6 @@ Powers
 ### Dark Elf -> Dunmer
 
 No changes here.
-
 ```
 Abilities
     Resist Fire
@@ -189,7 +188,6 @@ Powers
 ### High Elf -> Altmer
 
 Weakness to Fire slightly decreased as there is too many weaknesses already.
-
 ```
 Abilities
     Resist Disease
@@ -207,6 +205,8 @@ Abilities
 ```
 
 ### Imperial
+
+TODO
 ```
 Powers
     Star of the West
@@ -216,6 +216,8 @@ Powers
 ```
 
 ### Khajiit
+
+TODO
 ```
 Abilities
     [NEW] Resist Frost
@@ -232,6 +234,7 @@ Spells
 
 ### Nord
 
+TODO
 ```
 Abilities
     Resist Shock
@@ -248,6 +251,8 @@ Powers
 ```
 
 ### Orc -> Orsimer
+
+TODO
 ```
 Abilities
     Resist Magicka
@@ -262,6 +267,8 @@ Powers
 ```
 
 ### Redguard
+
+TODO
 ```
 Abilities
     Resist Poison
@@ -279,6 +286,8 @@ Powers
 ```
 
 ### Wood Elf -> Bosmer
+
+TODO
 ```
 Abilities
     Resist Disease
@@ -294,6 +303,8 @@ Powers
 ## Skills - Birthsigns
 
 ### Warrior
+
+No changes here.
 ```
 Abilities
     Warwyrd
@@ -301,6 +312,8 @@ Abilities
 ```
 
 ### Mage
+
+No changes here.
 ```
 Abilities
     Fay
@@ -308,6 +321,8 @@ Abilities
 ```
 
 ### Thief
+
+No changes here.
 ```
 Abilities
     Akaviri Danger-sense
@@ -315,6 +330,8 @@ Abilities
 ```
 
 ### Serpent
+
+TODO
 ```
 Spells -> Powers
     Star-Curse
@@ -323,6 +340,8 @@ Spells -> Powers
 ```
 
 ### Lady
+
+No changes here.
 ```
 Abilities
     Lady's Favor
@@ -332,6 +351,8 @@ Abilities
 ```
 
 ### Steed
+
+TODO
 ```
 Abilities
     Charioteer
@@ -340,6 +361,8 @@ Abilities
 ```
 
 ### Lord
+
+TODO
 ```
 Spells -> Powers
     Blood of the North
@@ -351,6 +374,8 @@ Abilities
 ```
 
 ### Apprentice
+
+No changes here.
 ```
 Abilities
     Elfborn
@@ -359,6 +384,8 @@ Abilities
 ```
 
 ### Atronach
+
+TODO
 ```
 Abilities
     Wombburn
@@ -368,6 +395,8 @@ Abilities
 ```
 
 ### Ritual
+
+TODO
 ```
 Spells
     Blessed Word
@@ -383,6 +412,8 @@ Powers
 ```
 
 ### Lover
+
+No changes here.
 ```
 Abilities
     Mooncalf
@@ -395,6 +426,8 @@ Powers
 ```
 
 ### Shadow
+
+TODO
 ```
 Powers -> Abilities
     Moonshadow
@@ -403,6 +436,8 @@ Powers -> Abilities
 ```
 
 ### Tower
+
+TODO
 ```
 Spells -> Abilities
     Beggar's Nose
@@ -444,25 +479,25 @@ Those tables show how self made potion strength scales now, depending on differe
 ```
 fPotionStrengthMult: 0.5
 
-5/8s
-8/15s
-10/30s  [A:40,Q:1,BC:2]
-15/45s
-20/60s  [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
-
-40/120s [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
+5/8s    :
+8/15s   :
+10/30s  : [A:40,Q:1,BC:2]
+15/45s  :
+20/60s  : [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
+        :
+40/120s : [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
 ```
 
 ```
 fPotionStrengthMult: 0.25
 
-5/8s    [A:40,Q:1,BC:2] <- actually this will be 5/15s
-8/15s
-10/30s  [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
-15/45s
-20/60s  [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
-```
-
+5/8s    : [A:40,Q:1,BC:2] <- actually this will be 5/15s
+8/15s   :
+10/30s  : [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
+15/45s  :
+20/60s  : [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
+```     
+       
 Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
 ```
 apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000
@@ -475,6 +510,7 @@ apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
 
 ## Alchemy - Apparatuses
 
+TODO
 ```
 apparatus_m_mortar_01           Master's Mortar and Pestle          2400            1.20 -> 1.04
 apparatus_m_alembic_01          Master's Alembic                    1200            1.20
@@ -496,6 +532,7 @@ apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
 
 ## Alchemy - Apparatuses - Tamriel Data
 
+TODO
 ```
 T_He_DirenniMortar_01           Direnni Mortar and Pestle           3000            1.20 -> 1.04
 T_He_DirenniAlembic_01          Direnni Alembic                     1600            1.20
@@ -535,10 +572,10 @@ This was one of the weakest skills in the game. Creating your own enchantments w
 
 These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully—or just buy a replacement item when needed.
 ```
-fMagicItemRechargePerSecond         0.05 -> 0                                   No idle recharging
-fEnchantmentChanceMult              3 -> 0.6                                    5x easier self enchant
+fMagicItemRechargePerSecond     0.05 -> 0                                   No idle recharging
+fEnchantmentChanceMult          3 -> 0.6                                    5x easier self enchant
 
-sMagicInsufficientCharge            "Item does not have enough charge." -> ""   No annoing messages
+sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No annoing messages
 ```
 
 ------------------------------------------------------------
@@ -584,10 +621,10 @@ Even with this adjustment, Shield remains less effective than Sanctuary.
 Shield                              2 -> 1              100/24s, potion: 20/60s
 ```
 
-The cost of these spell effects has been changed to be on par with Lockpicking.
+The cost of these spell effects has been changed to be on par with Lockpicking module.
 ```
-Open                                6 -> 12             100 lock level
-Lock                                2 -> 24             50 lock level
+Open                                6 -> 12
+Lock                                2 -> 24
 ```
 
 ------------------------------------------------------------
@@ -613,7 +650,7 @@ Damage Fatigue remains unchanged, as it is either nearly useless or very powerfu
 Damage Fatigue                      4 -> Unchanged      100/5s
 ```
 
-Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells.
+Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
 ```
 Damage Attribute                    8 -> 24             1/100s or 50/1s
 ```
@@ -781,7 +818,7 @@ fPickLockMult                       -1 -> -1.25         Locks harder to unlock
 
 The second goal is to ensure that unlocking 100-point locks is only achievable by higher-level characters. Previously, cheap Alteration spells and scrolls made magic a better option for unlocking doors at any level.
 ```
-Open                                6 -> 12             2x increased base cost
+Open                                6 -> 12             100pts spell will cost you 120 Magicka
 Lock                                2 -> 24
 ```
 
