@@ -2,7 +2,7 @@
 
 #### Intentions
 
-Despite the name, my intention here is not to balance the game. That’s impossible. Nor is it to make it harder or easier. The idea is to make more options usable, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+Despite the name, my intention here is not to balance the game. That's impossible. Nor is it to make it harder or easier. The idea is to make more options usable, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
 ------------------------------------------------------------
 
@@ -27,7 +27,7 @@ If you are using MCP, leave vanilla mechanics for creating spells:
 - Self-made spells have one additional second added when calculating cost. A 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
 - Only one spell effect per spell is allowed.
 
-Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn’t be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these "cheats" are enabled.
+Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn't be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these "cheats" are enabled.
 
 ------------------------------------------------------------
 
@@ -58,14 +58,15 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 #### History
 
 - 1.10
-  - TODO
+  - Alchemy TD: Module added
+  - Magic: Chameleon and Sanctuary cost changed
   - Magic: Minor PfP fixes forwarded
-  - Skills: New races and birthsigns modules
+  - Skills: New races and birthsigns modules added
   - Skills: Security reverted back to Intelligence
 - 1.9
-  - Barter: Mages Guild’s travel cost changed from 10x to 5x
-  - Barter: Merchant creatures gold decreased 10x
-  - Magic: All elemental damage effects costs set to 6
+  - Barter: Mages Guild's travel cost changed from 10x to 5x
+  - Barter: Merchant creatures' gold decreased 10x
+  - Magic: All elemental damage effects cost set to 6
   - Spells TD: Module added
   - Enchantments: Module added
 - 1.8
@@ -82,7 +83,7 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
   - Lockpicking: Lock spell effect 30x more expensive
 - 1.6
   - Traps: Costs readjusted
-  - Crime: Bounties have been reduced from the previous version; they are now only 5 times higher than vanilla values
+  - Crime: Bounties have been reduced from the previous version (they are now only 5 times higher than vanilla values)
   - Potions: Module added
   - Spells: Module added
 - 1.5
@@ -125,9 +126,11 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ## Skills - Races
 
+Here is my attempt to improve racial abilities. However, I'm trying to stay as close as possible to the original concept. Beast races are an exception here because of their disadvantages compared to other races.
+
 ### Argonian
 
-Weapon skill is more important early game than athletics.
+When I think about Argonians, spears are my first choice (and vice versa). Also weapon skill is just more important early game than athletics.
 ```
 Skill Bonuses
     Athletics                       +15 -> +5
@@ -139,7 +142,7 @@ Skill Bonuses
     Unarmored                       +5
 ```
 
-TODO
+New very rare ability to Resist Normal Weapons, because we can agree that Argonians can have some kind of natural armor because of scales. Water breathing and swimming are just their natural abilities now.
 ```
 Abilities
     Immune to Poison
@@ -187,7 +190,7 @@ Powers
 
 ### High Elf -> Altmer
 
-Weakness to Fire slightly decreased as there is too many weaknesses already.
+Weakness to Fire is slightly decreased, as there are too many weaknesses already.
 ```
 Abilities
     Resist Disease
@@ -206,18 +209,18 @@ Abilities
 
 ### Imperial
 
-TODO
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while.
 ```
 Powers
     Star of the West
-        Absorb Fatigue              200/Target
+        Absorb Fatigue              200/Target -> 2/100s/50ft/Target
     Voice of the Emperor
-        Charm                       25-50/15/Target
+        Charm                       25-50/15s/Target -> 25/300s/50ft/Target
 ```
 
 ### Khajiit
 
-TODO
+Khajiits now acquired a small Resist Frost ability because of fur.
 ```
 Abilities
     [NEW] Resist Frost
@@ -229,30 +232,35 @@ Powers
 
 Spells
     Eye of Night
-        Night Eye                   50/30s/Self
+        Night Eye                   50/30s/Self -> 25/120s/Self
+	[New] Jump (TODO: Feline Grace?)
+		Jump						?
+		Slowfall					?
 ```
 
 ### Nord
 
-TODO
+Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell, and Woad does the same as Breton power but worse. So I decided to replace them with elemental shields that in combination give them the same resistances as before. And also with my other change to how those spell effects work, 50 pts of passive elemental damage are dealt to all melee attackers. Nord can be paralyzed now and still do the damage (TODO: need a confirmation).
 ```
 Abilities
     Resist Shock
-        Resist Shock                50%
+        Resist Shock                50% -> 25%
     Immune to Frost
-        Resist Frost                100%
+        Resist Frost                100% -> 75%
 
 Powers
     [REMOVED] Thunder Fist
         Frost Damage                25/Touch
-    Woad
-        [REMOVED] Shield            30/60s/Self
-        [NEW] Frost Shield          25/60s/Self
+    [REMOVED] Woad
+        Shield            			30/60s/Self
+    [NEW] Snowstorm (TODO: or Blizzard, Barrier?)
+		Lightning Shield      		25/30s/Self
+		Frost Shield          		25/30s/Self
 ```
 
 ### Orc -> Orsimer
 
-TODO
+There is one problem with Orcs: Berserk gives them a 200 boost to Fatigue, which can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, and many more (TODO: need a confirmation). That is a contradiction to the assumptions of what Berserk actually is. Also, Fortify Health is meaningless in the mid-game when characters have decent stats already (and also almost copies what Redguard does).
 ```
 Abilities
     Resist Magicka
@@ -260,15 +268,16 @@ Abilities
 
 Powers
     Berserk
-        Fortify Health              20/60s/Self
-        Fortify Fatigue             200/60s/Self
+        Fortify Health              20/60s/Self -> 50/60s/Self
+        [REMOVED] Fortify Fatigue   200/60s/Self
+		[NEW] Restore Fatigue       10/60s/Self
         Fortify Attack              100/60s/Self
         Drain Agility               100/60s/Self
 ```
 
 ### Redguard
 
-TODO
+No changes here. Adrenaline Rush is fine effect that can be compared to being after several local drinks.
 ```
 Abilities
     Resist Poison
@@ -295,7 +304,7 @@ Abilities
 
 Powers
     Beast Tongue
-        Command Creature            5/600s/Target
+        Command Creature            5/600s/Target -> 15/600s/Target
 ```
 
 ------------------------------------------------------------
@@ -413,7 +422,7 @@ Powers
 
 ### Lover
 
-No changes here.
+TODO
 ```
 Abilities
     Mooncalf
@@ -421,7 +430,7 @@ Abilities
 
 Powers
     Lover's Kiss
-        Paralyze                    60s/Target
+        Paralyze                    60s/Target -> 60s/Touch
         Damage Fatigue              200/Self
 ```
 
@@ -508,67 +517,21 @@ apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
 
 ------------------------------------------------------------
 
-## Alchemy - Apparatuses
+## Alchemy - Tamriel Data
 
-TODO
+Tamriel Data apparatuses prices doesn't make sense also.
 ```
-apparatus_m_mortar_01           Master's Mortar and Pestle          2400            1.20 -> 1.04
-apparatus_m_alembic_01          Master's Alembic                    1200            1.20
-apparatus_m_calcinator_01       Master's Calcinator                 240             1.20
-apparatus_m_retort_01           Master's Retort                     480             1.20
-
-apparatus_g_mortar_01           Grandmaster's Mortar and Pestle     4000            1.50 -> 1.10
-apparatus_g_alembic_01          Grandmaster's Alembic               4000            1.50
-apparatus_g_calcinator_01       Grandmaster's Calcinator            4000            1.50
-apparatus_g_retort_01           Grandmaster's Retort                1600            1.50
-
-apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000   2.00 -> 1.20
-apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000    2.00
-apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000   2.00
-apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000    2.00
-```
-
-------------------------------------------------------------
-
-## Alchemy - Apparatuses - Tamriel Data
-
-TODO
-```
-T_He_DirenniMortar_01           Direnni Mortar and Pestle           3000            1.20 -> 1.04
-T_He_DirenniAlembic_01          Direnni Alembic                     1600            1.20
-
-TR_m7_apparatus_m_alembic_02    Master's Alembic                    1200            1.20 -> 1.04
-TR_m7_apparatus_g_calcinator_02 Grandmaster's Calcinator            4000            1.50 -> 1.10
-
-T_De_PunavitComCup_01           Punavit Communal Cup                1000            1.60 -> 1.12
-T_De_PunavitSamovar_01          Punavit Samovar                     5000            1.60
-
-T_De_Ebony_Mortar               Ebony Mortar and Pestle             12000           1.75 -> 1.15
-T_De_Ebony_Alembic              Ebony Alembic                       3200            1.75
-T_De_Ebony_Calcinator           Ebony Calcinator                    8000            1.75
-T_De_Ebony_Retort               Ebony Retort                        2400            1.75
-
-TR_m1_faruna_mortar_ya          Faruna's Mortar and Pestle          0               2.00
-TR_m1_faruna_alembic            Faruna's Alembic                    0               2.00
-TR_m1_faruna_calcinator         Faruna's Calcinator                 0               2.00
-TR_m1_faruna_retort             Faruna's Retort                     0               2.00
-
-TR_m1_rathra_mortar             Rathra's Mortar and Pestle          0               2.00
-TR_m1_rathra_alembic            Rathra's Alembic                    0               2.00
-TR_m1_rathra_calcinator         Rathra's Calcinator                 0               2.00
-TR_m1_rathra_retort             Rathra's Retort                     0               2.00
-
-TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000   2.00 -> 1.20
-TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000    2.00
-TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6000 -> 16000   2.00
-TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000    2.00
+TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000
+TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000 
+TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6000 -> 16000
+TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000 
 ```
 
 ------------------------------------------------------------
 
 ## Enchant
 
-This was one of the weakest skills in the game. Creating your own enchantments was nearly impossible, and you didn’t even need to recharge enchanted items—they recharged automatically. To make things worse, the Secret Master would attack you on sight.
+This was one of the weakest skills in the game. Creating your own enchantments was nearly impossible, and you didn't even need to recharge enchanted items—they recharged automatically. To make things worse, the Secret Master would attack you on sight.
 
 These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully—or just buy a replacement item when needed.
 ```
@@ -590,14 +553,14 @@ sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No a
 
 ### Alteration
 
-Elemental shields are now worth experimenting with—especially for the fun of killing low-level creatures. Their cost hasn’t changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers. Even with 10x more damage, though, they remain more of a gimmick than a true alternative to direct damage spells.
+Elemental shields are now worth experimenting with—especially for the fun of killing low-level creatures. Their cost hasn't changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers. Even with 10x more damage, though, they remain more of a gimmick than a true alternative to direct damage spells.
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
 
 Fire, Frost, Lightning Shield       3 -> Unchanged      100/7s or 8/100s, potion: 7/20s
 ```
 
-Previously, Feather wasn’t very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
+Previously, Feather wasn't very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
 ```
 Feather                             1 -> 0.1            100/240s, potion: 200/600s
 Burden                              1 -> 0.1
@@ -650,7 +613,7 @@ Damage Fatigue remains unchanged, as it is either nearly useless or very powerfu
 Damage Fatigue                      4 -> Unchanged      100/5s
 ```
 
-Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target’s Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
+Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target's Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
 ```
 Damage Attribute                    8 -> 24             1/100s or 50/1s
 ```
@@ -661,7 +624,7 @@ Disintegrate Armor                  6 -> 1              100/24s
 Disintegrate Weapon                 6 -> 1
 ```
 
-Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it’s 20% cheaper. As a side effect, many potions with these negative effects will become stronger.
+Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 20% cheaper. As a side effect, many potions with these negative effects will become stronger.
 ```
 Drain Health                        4 -> Unchanged      100/5s, potion: 5/15s
 Drain Magicka                       4 -> 0.8            100/30s, potion: 25/75s
@@ -751,14 +714,14 @@ Resist Paralysis                    0.2 -> 2
 
 ## Barter
 
-The economy is broken because there is an unlimited supply of money in the game, so simply making everything more expensive won’t fix the problem. The real issue is a player mindset focused on quickly replacing all items with gold. You don’t need to do that. Instead, pick only valuable items and sell them when you truly need cash. Typically, the only times you’ll really need cash are to purchase enchanted items or pay for training. There should already be enough money in the market to cover those needs for about a month.
+The economy is broken because there is an unlimited supply of money in the game, so simply making everything more expensive won't fix the problem. The real issue is a player mindset focused on quickly replacing all items with gold. You don't need to do that. Instead, pick only valuable items and sell them when you truly need cash. Typically, the only times you'll really need cash are to purchase enchanted items or pay for training. There should already be enough money in the market to cover those needs for about a month.
 
 Additionally, this encourages investing in Speechcraft and Mercantile to secure better prices. A beneficial side effect is having more time to recover money spent on enchantments or training, especially if the merchant also buys your items.
 ```
 fBarterGoldResetDelay               24 -> 720           30 days to reset merchants' gold
 ```
 
-The Mages Guild’s teleportation price has been increased. As a fast, modern form of travel, it shouldn’t be cheaper than traditional methods.
+The Mages Guild's teleportation price has been increased. As a fast, modern form of travel, it shouldn't be cheaper than traditional methods.
 ```
 fMagesGuildTravel                   10 -> 50            5x more expensive
 ```
@@ -773,7 +736,7 @@ Mudcrab                             10000gp -> 1000gp
 
 ## Crime
 
-You might prefer loading a previous save rather than facing the consequences. But if you don’t, you’ll quickly see that bounties were previously unrealistically low. That’s why crime penalties have been increased significantly.
+You might prefer loading a previous save rather than facing the consequences. But if you don't, you'll quickly see that bounties were previously unrealistically low. That's why crime penalties have been increased significantly.
 ```
 iCrimeKilling                       1000 -> 5000
 iCrimeAttack                        40 -> 200
@@ -788,7 +751,7 @@ The crime threshold is lowered, so guards will pursue you after just one attack.
 iCrimeThreshold                     1000 -> 200
 ```
 
-The death warrant will be triggered after a combination of one killing, one attack, and any other crime. This means you must be perfectly clean while doing MT’s Writs.
+The death warrant will be triggered after a combination of one killing, one attack, and any other crime. This means you must be perfectly clean while doing MT's Writs.
 ```
 Death Warrant                       5000 -> 5201        You can kill only one person, instead of 4
 ```
@@ -802,7 +765,7 @@ Pickpocketing is essentially a stat-based contest between you and the NPC. Howev
 iPickMaxChance                      75 -> 95            ~10% chance of being caught anyway
 ```
 
-It also didn’t make much sense to factor in the item’s value when determining success, so I removed that requirement.
+It also didn't make much sense to factor in the item's value when determining success, so I removed that requirement.
 ```
 fPickPocketMod                      0.3 -> 0            Any item available to steal
 ```
@@ -811,7 +774,7 @@ fPickPocketMod                      0.3 -> 0            Any item available to st
 
 ## Lockpicking
 
-The primary goal is to make the Security skill more valuable at higher levels and to ensure it’s more effective than Alteration for lock-related tasks. Previously, raising Security above 50 provided no real benefit.
+The primary goal is to make the Security skill more valuable at higher levels and to ensure it's more effective than Alteration for lock-related tasks. Previously, raising Security above 50 provided no real benefit.
 ```
 fPickLockMult                       -1 -> -1.25         Locks harder to unlock
 ```
