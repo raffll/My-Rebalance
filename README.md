@@ -126,7 +126,7 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ## Skills - Races
 
-Here is my attempt to improve racial abilities. I'm trying to stay as close as possible to the original concept but also to balance and take into account changes I made in magical effects.
+Here is my attempt to improve racial abilities. I'm trying to stay as close as possible to the original concept but also balance and take into account changes I made in magical effects.
 
 ### Argonian
 
@@ -209,18 +209,20 @@ Abilities
 
 ### Imperial
 
-Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while. Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.
+Disclaimer: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.
+
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while.
 ```
 Powers
     Star of the West
-        Absorb Fatigue              200/Target
+        Absorb Fatigue              200/Target -> 200/10ft/Target
     Voice of the Emperor
         Charm                       25-50/15s/Target -> 25/120s/10ft/Target
 ```
 
 ### Khajiit
 
-Khajiits now acquired a small Resist Frost ability because of fur. Eye of Night last longer and new Feline Grace spell allows them to jump higher.
+Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night last longer and new Feline Grace spell allows them to jump higher.
 ```
 Abilities
     [NEW] Resist Frost
@@ -232,7 +234,7 @@ Powers
 
 Spells
     Eye of Night
-        Night Eye                   50/30s/Self -> 25/120s/Self
+        Night Eye                   50/30s/Self -> 50/120s/Self
 	[NEW] Feline Grace
 		Jump						5/120s/Self
 		Slowfall					5/120s/Self
@@ -240,7 +242,9 @@ Spells
 
 ### Nord
 
-Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell. Woad does the same as Breton power but worse. So I decided to replace them with elemental shields that in combination with natural resistances give them the same results as before. With my other change to how elemental shield effects work, 50 pts of passive damage are dealt to all melee attackers. Nord can be paralyzed now and still do the damage.
+Disclaimer: Changes made here are done with the assumption that you are using setting tweak to how elemental shield effects work. 
+
+Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell. Woad does the same as Breton power but worse. So I decided to replace them with elemental shields that in combination with natural resistances give them the same results as before and 50 pts of passive damage to all melee attackers. Nord can be paralyzed now and still do the damage.
 ```
 Abilities
     Resist Shock
@@ -296,7 +300,7 @@ Powers
 
 ### Wood Elf -> Bosmer
 
-TODO
+5 -- Scamp, Dreugh; 15 -- Winged Twilight, Storm Atronach
 ```
 Abilities
     Resist Disease
@@ -305,6 +309,10 @@ Abilities
 Powers
     Beast Tongue
         Command Creature            5/600s/Target -> 15/600s/Target
+```
+
+```
+Bosmer Female Height				1 -> 0.92
 ```
 
 ------------------------------------------------------------
