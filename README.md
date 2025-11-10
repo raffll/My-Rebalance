@@ -209,7 +209,9 @@ Abilities
 
 ### Imperial
 
-Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while. **Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.**
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while.
+
+Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.
 ```
 Powers
     Star of the West
