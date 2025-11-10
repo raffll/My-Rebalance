@@ -126,7 +126,7 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ## Skills - Races
 
-Here is my attempt to improve racial abilities. However, I'm trying to stay as close as possible to the original concept. Beast races are an exception here because of their disadvantages compared to other races.
+Here is my attempt to improve racial abilities. I'm trying to stay as close as possible to the original concept but also to balance and take into account changes I made in magical effects.
 
 ### Argonian
 
@@ -142,16 +142,16 @@ Skill Bonuses
     Unarmored                       +5
 ```
 
-New very rare ability to Resist Normal Weapons, because we can agree that Argonians can have some kind of natural armor because of scales. Water breathing and swimming are just their natural abilities now.
+I added a new, very rare Resist Normal Weapons ability because Argonians can have some kind of natural armor made from scales. Water breathing and swimming are just their natural abilities now.
 ```
 Abilities
     Immune to Poison
         Resist Poison               100%
     Resist Disease
         Resist Common Disease       75%
-    [NEW] Resist Normal Weapons
+    [NEW] Scales
         Resist Normal Weapons       25%
-    [NEW] Water Breathing
+    [NEW] Amphibious
         Water Breathing
         Swift Swim                  50
 
@@ -209,18 +209,18 @@ Abilities
 
 ### Imperial
 
-Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while.
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while. **Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.**
 ```
 Powers
     Star of the West
-        Absorb Fatigue              200/Target -> 2/100s/50ft/Target
+        Absorb Fatigue              200/Target
     Voice of the Emperor
-        Charm                       25-50/15s/Target -> 25/300s/50ft/Target
+        Charm                       25-50/15s/Target -> 25/120s/10ft/Target
 ```
 
 ### Khajiit
 
-Khajiits now acquired a small Resist Frost ability because of fur.
+Khajiits now acquired a small Resist Frost ability because of fur. Eye of Night last longer and new Feline Grace spell allows them to jump higher.
 ```
 Abilities
     [NEW] Resist Frost
@@ -233,14 +233,14 @@ Powers
 Spells
     Eye of Night
         Night Eye                   50/30s/Self -> 25/120s/Self
-	[New] Jump (TODO: Feline Grace?)
-		Jump						?
-		Slowfall					?
+	[NEW] Feline Grace
+		Jump						5/120s/Self
+		Slowfall					5/120s/Self
 ```
 
 ### Nord
 
-Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell, and Woad does the same as Breton power but worse. So I decided to replace them with elemental shields that in combination give them the same resistances as before. And also with my other change to how those spell effects work, 50 pts of passive elemental damage are dealt to all melee attackers. Nord can be paralyzed now and still do the damage (TODO: need a confirmation).
+Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell. Woad does the same as Breton power but worse. So I decided to replace them with elemental shields that in combination with natural resistances give them the same results as before. With my other change to how elemental shield effects work, 50 pts of passive damage are dealt to all melee attackers. Nord can be paralyzed now and still do the damage.
 ```
 Abilities
     Resist Shock
@@ -253,14 +253,15 @@ Powers
         Frost Damage                25/Touch
     [REMOVED] Woad
         Shield            			30/60s/Self
-    [NEW] Snowstorm (TODO: or Blizzard, Barrier?)
+    [NEW] Blizzard Barrier
 		Lightning Shield      		25/30s/Self
 		Frost Shield          		25/30s/Self
 ```
 
 ### Orc -> Orsimer
 
-There is one problem with Orcs: Berserk gives them a 200 boost to Fatigue, which can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, and many more (TODO: need a confirmation). That is a contradiction to the assumptions of what Berserk actually is. Also, Fortify Health is meaningless in the mid-game when characters have decent stats already (and also almost copies what Redguard does).
+There is a lot to say about Berserk. Fortify Health is meaningless in the mid-game when characters have decent stats already. Boost to Fatigue can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, etc. Fortify Attack makes any combat trivial if you know how to not get hit. Because of Drain Agility, every hit will cause you to fall.
+
 ```
 Abilities
     Resist Magicka
@@ -268,11 +269,10 @@ Abilities
 
 Powers
     Berserk
-        Fortify Health              20/60s/Self -> 50/60s/Self
-        [REMOVED] Fortify Fatigue   200/60s/Self
-		[NEW] Restore Fatigue       10/60s/Self
+		Fortify Health              20/60s/Self
+		Fortify Fatigue   			200/60s/Self
         Fortify Attack              100/60s/Self
-        Drain Agility               100/60s/Self
+		Drain Agility     			100/60s/Self
 ```
 
 ### Redguard
@@ -340,7 +340,7 @@ Abilities
 
 ### Serpent
 
-TODO
+Serpent was originally just awful spell. Now it is very powerful, but you need to workaround it's negative effect.
 ```
 Spells -> Powers
     Star-Curse
@@ -446,7 +446,8 @@ Powers -> Abilities
 
 ### Tower
 
-TODO
+* Beggar's Nose is now constant ability
+* Tower Key replaced 
 ```
 Spells -> Abilities
     Beggar's Nose
