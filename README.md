@@ -647,7 +647,7 @@ Drain Magicka                       4 -> 0.8            100/30s, potion: 25/75s
 Drain Fatigue                       2 -> 0.5            100/48s, potion: 40/120s
 ```
 
-TODO
+No changes here.
 ```
 Drain Attribute						1                   100/24s
 ```
@@ -673,19 +673,19 @@ Additionally, a bugfix related to Illusion has been included.
 Demoralize Humanoid                 Mysticism -> Illusion
 ```
 
-TODO
+Chameleon is powerful tool that increase your sneak skill, evasion, and making you invisible to opponents. It was too cheap before.
 ```
 Chameleon                           1 -> 2              100/11s, potion: 10/30s
 ```
 
-TODO
+Sanctuary compared to Blind can be cast in advance and also as an constant enchantment. Thus should be more expensive.
 ```
 Sanctuary                           1 -> 2              100/11s, potion: 10/30s
 ```
 
-TODO
+Charm was broken in original game, so I assume you are using real-time time dialogue mod, where duration matters.
 ```
-Charm								5 -> 1              100/24s
+Charm								5 -> 2              100/11s
 ```
 
 ------------------------------------------------------------
@@ -702,7 +702,7 @@ Absorb Health = Damage Health (6) + Restore Health (5)
 Absorb Fatigue = Damage Fatigue (4) + Restore Fatigue (1)
 ```
 
-TODO
+No changes here.
 ```
 Absorb Attribute					2					100/11s
 ```
