@@ -279,7 +279,7 @@ Powers
     Berserk
 		[REMOVED] Fortify Health    20/60s/Self
 		Fortify Fatigue   			200/60s/Self
-        Fortify Attack              100/60s/Self -> 25/60s/Self
+        Fortify Attack              100/60s/Self -> 50/60s/Self
 		Drain Agility     			100/60s/Self -> 200/60s/Self
 ```
 
@@ -470,8 +470,7 @@ Spells -> Abilities
 
 Powers
     Tower Key
-        [REMOVED] Open              50/Touch
-        [NEW] Fortify Security      25/60s/Self
+        Open                        50/Touch -> 80/Touch
 ```
 
 ------------------------------------------------------------
@@ -559,6 +558,8 @@ sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No a
 
 ## Magic
 
+The point of reference here is Fortify Attribute spell effect which stay untouched. Every other effect is balanced around it.
+
 * All spell examples here are self made high level spells that can cost around 120-130 Magicka.
 * I you want to know how powerful they will be in constant enchantment, just switch magnitude with duration (constant duration is always 100s).
 * Potion examples are provided for Alchemy, Intelligence, and Luck at 100, mortar quality at 1 and fPotionStrengthMult at 0.25.
@@ -593,7 +594,7 @@ Slowfall                            3 -> 1
 sEffectSlowFall                     SlowFall -> Slowfall
 ```
 
-Even with this adjustment, Shield remains less effective than Sanctuary.
+With this adjustment, Shield can be used as an good addition to Unarmored skill.
 ```
 Shield                              2 -> 1              100/24s, potion: 20/60s
 ```
@@ -630,6 +631,7 @@ Damage Fatigue                      4 -> Unchanged      100/5s
 Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target's Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
 ```
 Damage Attribute                    8 -> 24             1/100s or 50/1s
+Damage Skill                        8 -> 24
 ```
 
 Low-tier gear typically has a durability of around 300–500. With these changes, it can now be destroyed by a 25-cost spell.
@@ -643,6 +645,11 @@ Drain spells have been lowered to match the cost of corresponding Fortify spells
 Drain Health                        4 -> Unchanged      100/5s, potion: 5/15s
 Drain Magicka                       4 -> 0.8            100/30s, potion: 25/75s
 Drain Fatigue                       2 -> 0.5            100/48s, potion: 40/120s
+```
+
+TODO
+```
+Drain Attribute						1                   100/24s
 ```
 
 Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
@@ -676,32 +683,48 @@ TODO
 Sanctuary                           1 -> 2              100/11s, potion: 10/30s
 ```
 
+TODO
+```
+Charm								5 -> 1              100/24s
+```
+
 ------------------------------------------------------------
 
 ### Mysticism
 
-Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—it should come at a higher cost.
+Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost.
+
+Absorb Health = Damage Health (6) + Restore Health (5)
+Absorb Fatigue = Damage Fatigue (4) + Restore Fatigue (1)
 ```
-Absorb Health                       8 -> 12             Damage Health (6) + Restore Health (5)
-Absorb Fatigue                      4 -> 6              Damage Fatigue (4) + Restore Fatigue (1)
+Absorb Health                       8 -> 12             100/1s or 1/200s   
+Absorb Fatigue                      4 -> 6              100/3s or 4/100s
+```
+
+TODO
+```
+Absorb Attribute					2					100/11s
 ```
 
 The following effects, while not available in any vanilla craftable spells, have been adjusted for consistency.
+
+Absorb Magicka = Damage Magicka (6) + Restore Magicka (5)
+Absorb Skill = Drain Skill (2) + Fortify Skill (4)
 ```
-Absorb Magicka                      8 -> 12             Damage Magicka (6) + Restore Magicka (5)
-Absorb Skill                        2 -> 6              Drain Skill (2) + Fortify Skill (4)
+Absorb Magicka                      8 -> 12             100/1s or 1/200s   
+Absorb Skill                        2 -> 6              100/3s or 4/100s
 ```
 
 Detect spells were just too expensive.
 ```
-Detect Animal                       0.75 -> 0.15
-Detect Enchantment                  1 -> 0.2
+Detect Animal                       0.75 -> 0.15		100/160s, potion: 133/400s
+Detect Enchantment                  1 -> 0.2            100/120s, potion: 100/300s
 Detect Key                          1 -> 0.2
 ```
 
 Reflect and Spell Absorption are essentially stronger versions of resist effects. They were just too costly to be useful.
 ```
-Reflect                             10 -> 4
+Reflect                             10 -> 4				100/5s, potion: 5/15s
 Spell Absorption                    10 -> 4
 ```
 
@@ -709,19 +732,19 @@ Spell Absorption                    10 -> 4
 
 ### Restoration
 
-Fortify Magicka was doing less than Fortify Intelligence for the same price.
+Fortify Magicka was doing less than Fortify Intelligence for the same price. Now it's 20% cheaper than Fortify Intelligence.
 ```
-Fortify Magicka                     1 -> 0.8            20% cheaper than Fortify Intelligence
+Fortify Magicka                     1 -> 0.8            100/30s, potion: 25/75s
 ```
 
 Fortifying skill over 50 should be available only for the highest-level characters.
 ```
-Fortify Skill                       1 -> 4
+Fortify Skill                       1 -> 4				100/5s, potion: 5/15s
 ```
 
 This looks like a typo compared to other resistances.
 ```
-Resist Paralysis                    0.2 -> 2
+Resist Paralysis                    0.2 -> 2            100/11s
 ```
 
 ------------------------------------------------------------
