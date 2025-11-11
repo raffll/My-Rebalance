@@ -223,13 +223,27 @@ Powers
         Charm                       25-50/15s/Target -> 25/120s/25ft/Target
 ```
 
-### Khajiit
+### Khajiit (TODO)
+
+```
+Skill Bonuses
+	Acrobatics 						+15
+	Athletics 						+5
+	Hand-to-hand 					+5
+	Light Armor 					+5
+	Security 						+5
+	Short Blade 					+5
+	Sneak 							+5 
+```
 
 Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night last longer and new Feline Grace spell allows them to jump higher.
 ```
 Abilities
     [NEW] Resist Frost
         Resist Frost                25
+	[NEW] Feline Grace
+		Jump						5
+		Slowfall					1
 
 Powers
     Eye of Fear
@@ -238,9 +252,6 @@ Powers
 Spells
     Eye of Night
         Night Eye                   50/30s/Self -> 50/120s/Self
-	[NEW] Feline Grace
-		Jump						5/120s/Self
-		Slowfall					5/120s/Self
 ```
 
 ### Nord
@@ -527,7 +538,7 @@ apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
 
 ------------------------------------------------------------
 
-## Alchemy - Tamriel Data
+## Alchemy - Tamriel Data (TODO)
 
 Tamriel Data apparatuses prices doesn't make sense also.
 ```
