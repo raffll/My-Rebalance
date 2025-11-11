@@ -130,7 +130,7 @@ Here is my attempt to improve racial abilities. I'm trying to stay as close as p
 
 ### Argonian
 
-When I think about Argonians, spears are my first choice (and vice versa). Also weapon skill is just more important early game than athletics.
+When I think about Argonians, spears are my first choice, and also weapon skill is just more important early game than athletics.
 ```
 Skill Bonuses
     Athletics                       +15 -> +5
@@ -211,11 +211,14 @@ Abilities
 
 Disclaimer: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.
 
-Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time, but he can be a little tiring after a while.
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so.
 ```
+Abilities
+    [NEW] Star of the West
+        Restore Fatigue             1
 Powers
-    Star of the West
-        Absorb Fatigue              200/Target -> 200/10ft/Target
+    [REMOVED] Star of the West
+        Absorb Fatigue              200/Target
     Voice of the Emperor
         Charm                       25-50/15s/Target -> 25/120s/10ft/Target
 ```
@@ -244,12 +247,12 @@ Spells
 
 Disclaimer: Changes made here are done with the assumption that you are using setting tweak to how elemental shield effects work. 
 
-Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell. Woad does the same as Breton power but worse. So I decided to replace them with elemental shields that in combination with natural resistances give them the same results as before and 50 pts of passive damage to all melee attackers. Nord can be paralyzed now and still do the damage.
+Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell. Woad does the same as Breton power but worse. To fix that I decided to replace them with elemental shields that in combination with natural resistances give them the same levels as before, but with additional 50 pts of passive damage to all melee attackers. Nord can be paralyzed now and still do the damage.
 ```
 Abilities
     Resist Shock
         Resist Shock                50% -> 25%
-    Immune to Frost
+    Immune to Frost -> Resist Frost
         Resist Frost                100% -> 75%
 
 Powers
@@ -264,8 +267,9 @@ Powers
 
 ### Orc -> Orsimer
 
-There is a lot to say about Berserk. Fortify Health is meaningless in the mid-game when characters have decent stats already. Boost to Fatigue can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, etc. Fortify Attack makes any combat trivial if you know how to not get hit. Because of Drain Agility, every hit will cause you to fall.
+There is a lot to say about Berserk. Fortify Health is meaningless in the mid-game when characters have decent stats already. Boost to Fatigue can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, etc. Fortify Attack makes any combat trivial if you know how to workaround Drain Agility, because every hit will cause you to fall. 
 
+This power is simply too overpowered and allows you to beat any boss at level 1. I just nerfed it a little.
 ```
 Abilities
     Resist Magicka
@@ -273,10 +277,10 @@ Abilities
 
 Powers
     Berserk
-		Fortify Health              20/60s/Self
+		[REMOVED] Fortify Health    20/60s/Self
 		Fortify Fatigue   			200/60s/Self
-        Fortify Attack              100/60s/Self
-		Drain Agility     			100/60s/Self
+        Fortify Attack              100/60s/Self -> 25/60s/Self
+		Drain Agility     			100/60s/Self -> 200/60s/Self
 ```
 
 ### Redguard
@@ -300,7 +304,7 @@ Powers
 
 ### Wood Elf -> Bosmer
 
-5 -- Scamp, Dreugh; 15 -- Winged Twilight, Storm Atronach
+Previously with Beast Tongue at level 5 best creatures available to command were Scamp or Dreugh; At level 15 those will be Winged Twilight or Storm Atronach.
 ```
 Abilities
     Resist Disease
@@ -311,8 +315,9 @@ Powers
         Command Creature            5/600s/Target -> 15/600s/Target
 ```
 
+Bosmer females were just too tall.
 ```
-Bosmer Female Height				1 -> 0.92
+Female Height				        1 -> 0.92
 ```
 
 ------------------------------------------------------------
@@ -321,7 +326,7 @@ Bosmer Female Height				1 -> 0.92
 
 ### Warrior
 
-No changes here.
+No changes here. It's useful entire game.
 ```
 Abilities
     Warwyrd
@@ -330,16 +335,16 @@ Abilities
 
 ### Mage
 
-No changes here.
+There was little reason to take this instead of Apprentice.
 ```
 Abilities
     Fay
-        Fortify Maximum Magicka     0.5xINT
+        Fortify Maximum Magicka     0.5xINT -> 1.0xINT
 ```
 
 ### Thief
 
-No changes here.
+No changes here. It's useful entire game.
 ```
 Abilities
     Akaviri Danger-sense
@@ -348,7 +353,7 @@ Abilities
 
 ### Serpent
 
-Serpent was originally just awful spell. Now it is very powerful, but you need to workaround it's negative effect.
+Serpent was originally just awful spell. Now it's very powerful, but you need to workaround its negative effect.
 ```
 Spells -> Powers
     Star-Curse
@@ -358,7 +363,7 @@ Spells -> Powers
 
 ### Lady
 
-No changes here.
+No changes here. Best if you want maximize Health.
 ```
 Abilities
     Lady's Favor
@@ -369,7 +374,7 @@ Abilities
 
 ### Steed
 
-TODO
+Attribute boost is only useful early game. With this addition it will be handy entire time.
 ```
 Abilities
     Charioteer
@@ -379,7 +384,7 @@ Abilities
 
 ### Lord
 
-TODO
+No one would ever pick this before for other reasons than role playing.
 ```
 Spells -> Powers
     Blood of the North
@@ -402,7 +407,7 @@ Abilities
 
 ### Atronach
 
-TODO
+This was overpowered late game when every caster only exist to regenerate your Magicka.
 ```
 Abilities
     Wombburn
@@ -413,7 +418,7 @@ Abilities
 
 ### Ritual
 
-TODO
+This was just boring spell previously, now it can be useful as a last resort.
 ```
 Spells
     Blessed Word
@@ -426,11 +431,12 @@ Powers
         Restore Health              100/Self
         [NEW] Restore Magicka       100/Self
         [NEW] Restore Fatigue       200/Self
+        [NEW] Dispel                100%       
 ```
 
 ### Lover
 
-TODO
+Very powerful power. Now at least you have to get close to your opponent.
 ```
 Abilities
     Mooncalf
@@ -444,7 +450,7 @@ Powers
 
 ### Shadow
 
-TODO
+Very low level spell replaced by ability than will be useful entire game.
 ```
 Powers -> Abilities
     Moonshadow
@@ -454,8 +460,7 @@ Powers -> Abilities
 
 ### Tower
 
-* Beggar's Nose is now constant ability
-* Tower Key replaced 
+Detect spells are so cheap now that Beggar's Nose deserves constant effect.
 ```
 Spells -> Abilities
     Beggar's Nose
@@ -542,7 +547,7 @@ TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000
 
 This was one of the weakest skills in the game. Creating your own enchantments was nearly impossible, and you didn't even need to recharge enchanted items—they recharged automatically. To make things worse, the Secret Master would attack you on sight.
 
-These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully—or just buy a replacement item when needed.
+These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully, or just buy a replacement item when needed.
 ```
 fMagicItemRechargePerSecond     0.05 -> 0                                   No idle recharging
 fEnchantmentChanceMult          3 -> 0.6                                    5x easier self enchant
@@ -555,14 +560,14 @@ sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No a
 ## Magic
 
 * All spell examples here are self made high level spells that can cost around 120-130 Magicka.
-* I you want to know how much it will be at constant enchantment, just switch magnitude with duration (constant duration is always 100).
+* I you want to know how powerful they will be in constant enchantment, just switch magnitude with duration (constant duration is always 100s).
 * Potion examples are provided for Alchemy, Intelligence, and Luck at 100, mortar quality at 1 and fPotionStrengthMult at 0.25.
 
 ------------------------------------------------------------
 
 ### Alteration
 
-Elemental shields are now worth experimenting with—especially for the fun of killing low-level creatures. Their cost hasn't changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers. Even with 10x more damage, though, they remain more of a gimmick than a true alternative to direct damage spells.
+Elemental shields are now worth experimenting with. Especially for the fun of killing low-level creatures. Their cost hasn't changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers.
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
 
