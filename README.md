@@ -211,16 +211,16 @@ Abilities
 
 Disclaimer: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.
 
-Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so.
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so. You're not loosing Fatigue while running anymore.
 ```
 Abilities
     [NEW] Star of the West
-        Restore Fatigue             1
+        Restore Fatigue             2
 Powers
     [REMOVED] Star of the West
         Absorb Fatigue              200/Target
     Voice of the Emperor
-        Charm                       25-50/15s/Target -> 25/120s/10ft/Target
+        Charm                       25-50/15s/Target -> 25/120s/25ft/Target
 ```
 
 ### Khajiit
@@ -363,7 +363,7 @@ Spells -> Powers
 
 ### Lady
 
-No changes here. Best if you want maximize Health.
+No changes here. Best if you want to maximize Health.
 ```
 Abilities
     Lady's Favor
@@ -418,25 +418,22 @@ Abilities
 
 ### Ritual
 
-This was just boring spell previously, now it can be useful as a last resort.
+Mara's Gift was just boring spell previously, now it can be useful as a last resort even until late game. (TODO: Blessed Word)
 ```
 Spells
     Blessed Word
-        Turn Undead                 100/30s/Target
-    Blessed Touch
+        Turn Undead                 100/30s/Target -> 100/60s/50ft/Target
+    [REMOVED] Blessed Touch
         Turn Undead                 100/30s/Touch
 
 Powers
     Mara's Gift
-        Restore Health              100/Self
-        [NEW] Restore Magicka       100/Self
-        [NEW] Restore Fatigue       200/Self
-        [NEW] Dispel                100%       
+        Restore Health              100/Self -> 200/Self 
 ```
 
 ### Lover
 
-Very powerful power. Now at least you have to get close to your opponent.
+No changes here. Very powerful power.
 ```
 Abilities
     Mooncalf
@@ -444,23 +441,23 @@ Abilities
 
 Powers
     Lover's Kiss
-        Paralyze                    60s/Target -> 60s/Touch
+        Paralyze                    60s/Target
         Damage Fatigue              200/Self
 ```
 
 ### Shadow
 
-Very low level spell replaced by ability than will be useful entire game.
+Very low level spell upgraded to be useful entire game.
 ```
-Powers -> Abilities
+Powers
     Moonshadow
         [REMOVED] Invisibility      60s/Self
-        [NEW] Chameleon             10
+        [NEW] Chameleon             20/120s/Self
 ```
 
 ### Tower
 
-Detect spells are so cheap now that Beggar's Nose deserves constant effect.
+Detect spells are so cheap now that Beggar's Nose deserves constant effect. (TODO: Tower Key)
 ```
 Spells -> Abilities
     Beggar's Nose
