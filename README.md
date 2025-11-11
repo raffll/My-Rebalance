@@ -269,7 +269,7 @@ Powers
 
 There is a lot to say about Berserk. Fortify Health is meaningless in the mid-game when characters have decent stats already. Boost to Fatigue can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, etc. Fortify Attack makes any combat trivial if you know how to workaround Drain Agility, because every hit will cause you to fall. 
 
-This power is simply too overpowered and allows you to beat any boss at level 1. I just nerfed it a little.
+This power is simply too overpowered and allows you to beat any boss at level 1. I just nerfed it a little, but it's still doable.
 ```
 Abilities
     Resist Magicka
@@ -694,11 +694,12 @@ Charm								5 -> 1              100/24s
 
 Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost.
 
-Absorb Health = Damage Health (6) + Restore Health (5)
-Absorb Fatigue = Damage Fatigue (4) + Restore Fatigue (1)
 ```
 Absorb Health                       8 -> 12             100/1s or 1/200s   
 Absorb Fatigue                      4 -> 6              100/3s or 4/100s
+
+Absorb Health = Damage Health (6) + Restore Health (5)
+Absorb Fatigue = Damage Fatigue (4) + Restore Fatigue (1)
 ```
 
 TODO
@@ -708,11 +709,12 @@ Absorb Attribute					2					100/11s
 
 The following effects, while not available in any vanilla craftable spells, have been adjusted for consistency.
 
-Absorb Magicka = Damage Magicka (6) + Restore Magicka (5)
-Absorb Skill = Drain Skill (2) + Fortify Skill (4)
 ```
 Absorb Magicka                      8 -> 12             100/1s or 1/200s   
 Absorb Skill                        2 -> 6              100/3s or 4/100s
+
+Absorb Magicka = Damage Magicka (6) + Restore Magicka (5)
+Absorb Skill = Drain Skill (2) + Fortify Skill (4)
 ```
 
 Detect spells were just too expensive.
