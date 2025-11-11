@@ -59,7 +59,8 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 
 - 1.10
   - Alchemy TD: Module added
-  - Magic: Chameleon and Sanctuary cost changed
+  - Magic: Jump, Slowfall cost changes reverted
+  - Magic: Chameleon, Sanctuary, Charm cost changed
   - Magic: Minor PfP fixes forwarded
   - Skills: New races and birthsigns modules added
   - Skills: Security reverted back to Intelligence
@@ -594,10 +595,11 @@ The same logic applies to Swift Swim, which affects only swimming speed and shou
 Swift Swim                          2 -> 0.5            100/48s, potion: 40/120s
 ```
 
-Jump and Slowfall are generally harder to use than Levitate, but used together, they should offer a more affordable alternative.
+No changes here. Jump and Slowfall are generally harder to use than Levitate, but used together, they offer a more affordable alternative to travel long distances. 1 point of jump is equivalent to 6.6 points of Acrobatics.
 ```
-Jump                                3 -> 1              100/24s, potion: 20/60s
-Slowfall                            3 -> 1
+Levitate							3 -> Unchanged      100/7s, potion: 7/20s
+Jump                                3 -> Unchanged      100/7s, potion: 7/20s
+Slowfall                            3 -> Unchanged      1/800s, potion: 7/20s
 
 sEffectSlowFall                     SlowFall -> Slowfall
 ```
