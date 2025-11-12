@@ -155,6 +155,8 @@ Abilities
     [NEW] Amphibious
         Water Breathing
         Swift Swim                  50
+    [NEW] Magicka Bonus
+        Magicka Bonus               0.2xINT
 
 Spells
     [REMOVED] Water Breathing
@@ -228,9 +230,9 @@ Powers
 
 ```
 Skill Bonuses
-	Acrobatics 						+15
+	Acrobatics 						+15 -> +5
 	Athletics 						+5
-	Hand-to-hand 					+5
+	Hand-to-hand 					+5 -> +15
 	Light Armor 					+5
 	Security 						+5
 	Short Blade 					+5
@@ -245,13 +247,16 @@ Abilities
 	[NEW] Feline Grace
 		Jump						5
 		Slowfall					1
+    [NEW] Eye of Night
+        Night Eye                   25
 
 Powers
     Eye of Fear
         Demoralize Humanoid         100/30s/Target
+        [NEW] Demoralize Creature   100/30s/Target
 
 Spells
-    Eye of Night
+    [REMOVED] Eye of Night
         Night Eye                   50/30s/Self -> 50/120s/Self
 ```
 
