@@ -974,6 +974,8 @@ Spoiled Slowfall Potion             10/15s -> 1/15s               T_Nor_Potion_D
 Spells have been tweaked to stay useful following the changes to spell effect costs.
 
 ### Alteration
+
+#### Burden
 ```
 Burden Touch                        20/10s/Touch -> 100/20s             5x/2x
 Burden                              20/10s/Target -> 100/20s
@@ -995,6 +997,7 @@ Crushing Burden of Sin              60-80/30s/Target -> 600-800/30s
 * swapped names
 ```
 
+#### Feather
 ```
 Feather                             20/10s/Self -> 100/20s              5x/2x
 Strong Feather                      50/10s/Self -> 250/20s              5x/2x
@@ -1004,6 +1007,8 @@ Ulms' Juicedaw Feather              50/10s/Self -> 500/10s              10x/1x
 ```
 
 ### Destruction
+
+#### Disintegrate
 ```
 Armor Eater                         10-30/Touch -> 10-30/6s             1x/6x
 Weapon Eater                        6-25/Touch -> 6-25/6s
@@ -1025,15 +1030,24 @@ Following spells from Tamriel Data has been updated.
 Shadow Rust
     Burden                          1-15/20s -> 10-150/20s              10x/1x
     Disintegrate Armor              1-5/20s -> 6-30/20s                 6x/1x
-Weight of Guilt                     500/3s -> 500/30s                   1x/10x
-Fling                               500/3s -> 500/30s                   1x/10x
-To the ja-Kha'jay                   50/20s -> 50/60s                    1x/3x
-Fuchon Cire's Gentle Descent        10/20s -> 10/60s                    1x/3x
+Weight of Guilt                     
+	Burden							500/3s -> 500/30s                   1x/10x
+Fling                               
+	Feather							500/3s -> 500/30s                   1x/10x
+To the ja-Kha'jay
+	Jump                   			50/20s -> 50/60s                    1x/3x (TODO)
+Fuchon Cire's Gentle Descent
+	Slowfall        				10/20s -> 10/60s                    1x/3x (TODO)
 Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
-
-Dalgor's Entwining                  [8] -> [96]
-Falling First Barrier               [42] -> [21]
-Tsun's Ward                         [40] -> [20]
+	Swift Swim
+Dalgor's Entwining
+	Lock			                [8] -> [96]
+Falling First Barrier
+	Shield               			[42] -> [21]
+Force Wall
+	Shield 							(TODO)
+Tsun's Ward
+	Shield                          [40] -> [20]
 ```
 
 ### Destruction
