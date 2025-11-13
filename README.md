@@ -143,7 +143,7 @@ Skill Bonuses
     Unarmored                       +5
 ```
 
-I added a new, very rare Resist Normal Weapons ability because Argonians can have some kind of natural armor made from scales. Water breathing and swimming are just their natural abilities now.
+I added a new, very rare Resist Normal Weapons ability because Argonians can have some kind of natural armor made from scales. Water breathing and swimming are just their natural abilities now (there is one quest related to this, but it can be worked around). They also acquired a small bonus to Magicka, as we can read in the description: __"The female life-phase is highly intelligent, and gifted in the magical arts"__.
 ```
 Abilities
     Immune to Poison
