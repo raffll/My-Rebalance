@@ -1070,38 +1070,35 @@ Weight of Guilt
     Burden                          500/3s -> 500/30s                   1x/10x
 Fling
     Feather                         500/3s -> 500/30s                   1x/10x
-To the ja-Kha'jay
-    Jump                            50/20s -> 50/60s                    1x/3x (TODO)
-Fuchon Cire's Gentle Descent
-    Slowfall                        10/20s -> 10/60s                    1x/3x (TODO)
-Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
-    Swift Swim
+Dreugh's Grace                      
+    Swift Swim						30/20s -> 30/80s                    1x/4x
 Dalgor's Entwining
     Lock                            [8] -> [96]
 Falling First Barrier
     Shield                          [42] -> [21]
 Force Wall
-    Shield                          (TODO)
+    Shield                          50/5s -> 50/10s
 Tsun's Ward
     Shield                          [40] -> [20]
 ```
 
 ### Destruction
 ```
-Fracture Armor                      100/2s -> 100/20s                   1x/10x (TODO)
-    Disintegrate Armor
-Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
-    Disintegrate Weapon
-Steel Eater                         5-30/3s -> 5-30/18s                 1x/6x
-    Disintegrate Weapon
+Fracture Armor                      
+    Disintegrate Armor				100/2s -> 100/12s                   1x/6x
+Iron Eater                          
+    Disintegrate Weapon				1-25/2s -> 1-25/12s                 1x/6x
+Steel Eater                         
+    Disintegrate Weapon				5-30/3s -> 5-30/18s                 1x/6x
 
-Duck                                [40] -> [10]
-    Drain Fatigue
+Duck                                
+    Drain Fatigue					[40] -> [10]
 ```
 
 ### Illusion
 ```
-Voices                              50/20s -> 50/60s                    1x/3x
+Voices                              
+	Sound							50/20s -> 50/60s                    1x/3x
 ```
 
 ------------------------------------------------------------
