@@ -229,7 +229,7 @@ Abilities
 
 ### Imperial
 
-Disclaimer: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects is necessary.
+Warning: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects is necessary.
 
 Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so. You're not loosing Fatigue while running at 0 Encumbrance and 75 Endurance (previously 125 Endurance).
 ```
@@ -270,7 +270,6 @@ Abilities
     [NEW] Nine Lives
         Fortify Luck                10
 
-
 Powers
     Eye of Fear
         Demoralize Humanoid         100/30s/Target
@@ -282,7 +281,7 @@ Spells
 
 ### Nord
 
-Disclaimer: Changes made here are done with the assumption that you are using setting tweak to how elemental shield effects work.
+Warning: Changes made here are done with the assumption that you are using setting tweak to how elemental shield effects work.
 
 Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell. Woad does the same as Breton power but worse. To fix that I decided to replace them with elemental shields that in combination with natural resistances give them the same levels as before, but with additional 50 pts of passive damage to all melee attackers. Nord can be paralyzed now and still do the damage.
 ```
