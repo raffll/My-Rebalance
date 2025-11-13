@@ -127,7 +127,7 @@ Personality     3                   Illusion, Mercantile, Speechcraft
 
 ## Skills - Races
 
-Here is my attempt to improve racial abilities. I'm trying to stay as close as possible to the original concept but also balance and take into account changes I made in magical effects.
+Here is my attempt to improve racial abilities. I'm trying to stay as close as possible to the original concept but also balance and take into account changes I made in magical effects. The only exceptions are beast races that are improved significantly (they have 5 abilities now compared to 2-3 for other races).
 
 ### Argonian
 
@@ -143,7 +143,7 @@ Skill Bonuses
     Unarmored                       +5
 ```
 
-I added a new, very rare Resist Normal Weapons ability because Argonians can have some kind of natural armor made from scales. Water breathing and swimming are just their natural abilities now (there is one quest related to this, but it can be worked around). They also acquired a small bonus to Magicka, as we can read in the description: __"The female life-phase is highly intelligent, and gifted in the magical arts"__.
+I added a new, very rare Resist Normal Weapons ability because Argonians can have some kind of natural armor made from scales. Water breathing and swimming are just their natural abilities now (there is one quest related to this, but it can be worked around). They also acquired a small bonus to Magicka, as we can read in the description: *"The female life-phase is highly intelligent, and gifted in the magical arts"*.
 ```
 Abilities
     Immune to Poison
