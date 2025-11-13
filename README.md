@@ -58,9 +58,10 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 #### History
 
 - 1.10
-  - Skills: **New races and birthsigns modules added**
+  - Races: Module added
+  - Birthsigns: Module added
   - Skills: Security reverted back to Intelligence
-  - Alchemy TD: Module added
+  - Alchemy TR: Module added
   - Magic:
     - Minor PfP fixes forwarded
     - Jump reverted from 1 to 3
