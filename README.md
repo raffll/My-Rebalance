@@ -58,12 +58,29 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 #### History
 
 - 1.10
-  - Alchemy TD: Module added
-  - Magic: Jump, Slowfall cost changes reverted
-  - Magic: Chameleon, Sanctuary, Charm cost changed
-  - Magic: Minor PfP fixes forwarded
-  - Skills: New races and birthsigns modules added
+  - Skills: **New races and birthsigns modules added**
   - Skills: Security reverted back to Intelligence
+  - Alchemy TD: Module added
+  - Magic:
+    - Minor PfP fixes forwarded  
+	- Jump reverted from 1 to 3
+	- Slowfall reverted from 1 to 3
+	- Chameleon changed from 1 to 2
+	- Sanctuary changed from 1 to 2
+	- Charm changed from 5 to 2
+	- Drain Magicka changed from 0.8 -> 0.5
+    - Drain Fatigue changed from 0.5 -> 0.25
+	- Absorb Health changed from 8 -> 10
+    - Absorb Magicka changed from 8 -> 120    	
+	- Restore Health changed from 5 -> 4
+    - Restore Magicka changed from 5 -> 4
+    - Restore Fatigue changed from 1 -> 2
+    - Restore Attribute changed from 1 -> 8
+    - Restore Skill changed from 1 -> 8
+    - Fortify Magicka changed from 1 -> 0.5
+    - Fortify Fatigue changed from 0.5 -> 0.25
+    - Fortify Attack changed from 1 -> 4	
+  - Spells TD: Adjusted to changes in magic
 - 1.9
   - Barter: Mages Guild's travel cost changed from 10x to 5x
   - Barter: Merchant creatures' gold decreased 10x
@@ -657,11 +674,11 @@ Disintegrate Armor                  6 -> 1              100/24s
 Disintegrate Weapon                 6 -> 1
 ```
 
-Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 20% cheaper. As a side effect, many potions with these negative effects will become stronger.
+Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 2x cheaper. As a side effect, many potions with these negative effects will become stronger.
 ```
 Drain Health                        4 -> Unchanged      100/5s, potion: 5/15s
-Drain Magicka                       4 -> 0.8            100/30s, potion: 25/75s
-Drain Fatigue                       2 -> 0.5            100/48s, potion: 40/120s
+Drain Magicka                       4 -> 0.5
+Drain Fatigue                       2 -> 0.25
 ```
 
 No changes here.
@@ -709,29 +726,15 @@ Charm								5 -> 2              100/11s
 
 ### Mysticism
 
-Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost.
+Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost. Absorb Magicka and Absorb Skill, while not available in any vanilla craftable spells, have been adjusted for consistency.
 
 ```
-Absorb Health                       8 -> 12             100/1s or 1/200s   
-Absorb Fatigue                      4 -> 6              100/3s or 4/100s
+Absorb Health                       8 -> 10
+Absorb Magicka                      8 -> 10    
+Absorb Fatigue                      4 -> 6 
 
-Absorb Health = Damage Health (6) + Restore Health (5)
-Absorb Fatigue = Damage Fatigue (4) + Restore Fatigue (1)
-```
-
-No changes here.
-```
-Absorb Attribute					2					100/11s
-```
-
-The following effects, while not available in any vanilla craftable spells, have been adjusted for consistency.
-
-```
-Absorb Magicka                      8 -> 12             100/1s or 1/200s   
-Absorb Skill                        2 -> 6              100/3s or 4/100s
-
-Absorb Magicka = Damage Magicka (6) + Restore Magicka (5)
-Absorb Skill = Drain Skill (2) + Fortify Skill (4)
+Absorb Attribute					2 -> Unchanged		
+Absorb Skill                        2 -> 6 
 ```
 
 Detect spells were just too expensive.
@@ -751,14 +754,47 @@ Spell Absorption                    10 -> 4
 
 ### Restoration
 
-Fortify Magicka was doing less than Fortify Intelligence for the same price. Now it's 20% cheaper than Fortify Intelligence.
+Those changes are done mostly to balance self made potions.
 ```
-Fortify Magicka                     1 -> 0.8            100/30s, potion: 25/75s
+Restore Health						5 -> 4
+Restore Magicka						5 -> 4
+Restore Fatigue						1 -> 2
+```
+
+Tghose were ridiculously cheap before.
+```
+Restore Attribute					1 -> 8
+Restore Skill						1 -> 8
+```
+
+No changes here.
+```
+Fortify Health						1 -> Unchanged
+```
+
+Fortify Magicka was doing less than Fortify Intelligence for the same price. Now it's 2x cheaper than Fortify Intelligence.
+```
+Fortify Magicka                     1 -> 0.5            100/30s, potion: 25/75s
+```
+
+TODO
+```
+Fortify Fatigue						0.5 -> 0.25
+```
+
+No changes here.
+```
+Fortify Attribute					1 -> Unchanged
 ```
 
 Fortifying skill over 50 should be available only for the highest-level characters.
 ```
 Fortify Skill                       1 -> 4				100/5s, potion: 5/15s
+```
+
+TODO
+```
+Fortify Attack      				1 -> 4
 ```
 
 This looks like a typo compared to other resistances.
