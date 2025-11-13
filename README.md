@@ -62,24 +62,24 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
   - Skills: Security reverted back to Intelligence
   - Alchemy TD: Module added
   - Magic:
-    - Minor PfP fixes forwarded  
-	- Jump reverted from 1 to 3
-	- Slowfall reverted from 1 to 3
-	- Chameleon changed from 1 to 2
-	- Sanctuary changed from 1 to 2
-	- Charm changed from 5 to 2
-	- Drain Magicka changed from 0.8 -> 0.5
+    - Minor PfP fixes forwarded
+    - Jump reverted from 1 to 3
+    - Slowfall reverted from 1 to 3
+    - Chameleon changed from 1 to 2
+    - Sanctuary changed from 1 to 2
+    - Charm changed from 5 to 2
+    - Drain Magicka changed from 0.8 -> 0.5
     - Drain Fatigue changed from 0.5 -> 0.25
-	- Absorb Health changed from 8 -> 10
-    - Absorb Magicka changed from 8 -> 120    	
-	- Restore Health changed from 5 -> 4
+    - Absorb Health changed from 8 -> 10
+    - Absorb Magicka changed from 8 -> 120
+    - Restore Health changed from 5 -> 4
     - Restore Magicka changed from 5 -> 4
     - Restore Fatigue changed from 1 -> 2
     - Restore Attribute changed from 1 -> 8
     - Restore Skill changed from 1 -> 8
     - Fortify Magicka changed from 1 -> 0.5
     - Fortify Fatigue changed from 0.5 -> 0.25
-    - Fortify Attack changed from 1 -> 4	
+    - Fortify Attack changed from 1 -> 4
   - Spells TD: Adjusted to changes in magic
 - 1.9
   - Barter: Mages Guild's travel cost changed from 10x to 5x
@@ -248,26 +248,26 @@ Powers
 Description says: "_Many Khajiit disdain weapons in favor of their natural claws._" and acrobatics is already improved as a constant ability.
 ```
 Skill Bonuses
-	Acrobatics 						+15 -> +5
-	Athletics 						+5
-	Hand-to-hand 					+5 -> +15
-	Light Armor 					+5
-	Security 						+5
-	Short Blade 					+5
-	Sneak 							+5 
+    Acrobatics                      +15 -> +5
+    Athletics                       +5
+    Hand-to-hand                    +5 -> +15
+    Light Armor                     +5
+    Security                        +5
+    Short Blade                     +5
+    Sneak                           +5
 ```
 
 Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night is permanent (it looks good on OpenMW). New Feline Grace spell allows them to jump higher and also they are immune to fall damage. Last ability is Fortify Luck as it just perfectly fits there.
 ```
 Abilities
     [NEW] Resist Frost
-        Resist Frost                25		
-	[NEW] Feline Grace
-		Jump						5
-		Slowfall					1
+        Resist Frost                25
+    [NEW] Feline Grace
+        Jump                        5
+        Slowfall                    1
     [NEW] Eye of Night
         Night Eye                   25
-	[NEW] Nine Lives
+    [NEW] Nine Lives
         Fortify Luck                10
 
 
@@ -282,7 +282,7 @@ Spells
 
 ### Nord
 
-Disclaimer: Changes made here are done with the assumption that you are using setting tweak to how elemental shield effects work. 
+Disclaimer: Changes made here are done with the assumption that you are using setting tweak to how elemental shield effects work.
 
 Nords have the best resistances compared to other races, even after debuffs. Thunder Fist is almost useless, as this is just a low-level spell. Woad does the same as Breton power but worse. To fix that I decided to replace them with elemental shields that in combination with natural resistances give them the same levels as before, but with additional 50 pts of passive damage to all melee attackers. Nord can be paralyzed now and still do the damage.
 ```
@@ -296,15 +296,15 @@ Powers
     [REMOVED] Thunder Fist
         Frost Damage                25/Touch
     [REMOVED] Woad
-        Shield            			30/60s/Self
+        Shield                      30/60s/Self
     [NEW] Blizzard Barrier
-		Lightning Shield      		25/30s/Self
-		Frost Shield          		25/30s/Self
+        Lightning Shield            25/30s/Self
+        Frost Shield                25/30s/Self
 ```
 
 ### Orc -> Orsimer
 
-There is a lot to say about Berserk. Fortify Health is meaningless in the mid-game when characters have decent stats already. Boost to Fatigue can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, etc. Fortify Attack makes any combat trivial if you know how to workaround Drain Agility, because every hit will cause you to fall. 
+There is a lot to say about Berserk. Fortify Health is meaningless in the mid-game when characters have decent stats already. Boost to Fatigue can affect a lot of other things you can do in the game, like picking a lock, enchanting, persuasion, etc. Fortify Attack makes any combat trivial if you know how to workaround Drain Agility, because every hit will cause you to fall.
 
 This power is simply too overpowered and allows you to beat any boss at level 1. I just nerfed it a little, but it's still doable.
 ```
@@ -314,10 +314,10 @@ Abilities
 
 Powers
     Berserk
-		[REMOVED] Fortify Health    20/60s/Self
-		Fortify Fatigue   			200/60s/Self
+        [REMOVED] Fortify Health    20/60s/Self
+        Fortify Fatigue             200/60s/Self
         Fortify Attack              100/60s/Self -> 50/60s/Self
-		Drain Agility     			100/60s/Self -> 200/60s/Self
+        Drain Agility               100/60s/Self -> 200/60s/Self
 ```
 
 ### Redguard
@@ -354,7 +354,7 @@ Powers
 
 Bosmer females were just too tall.
 ```
-Female Height				        1 -> 0.92
+Female Height                       1 -> 0.92
 ```
 
 ------------------------------------------------------------
@@ -465,7 +465,7 @@ Spells
 
 Powers
     Mara's Gift
-        Restore Health              100/Self -> 200/Self 
+        Restore Health              100/Self -> 200/Self
 ```
 
 ### Lover
@@ -552,8 +552,8 @@ fPotionStrengthMult: 0.25
 10/30s  : [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
 15/45s  :
 20/60s  : [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
-```     
-       
+```
+
 Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
 ```
 apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000
@@ -569,9 +569,9 @@ apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
 Tamriel Rebuilt apparatuses prices doesn't make sense also.
 ```
 TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000
-TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000 
+TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000
 TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6000 -> 16000
-TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000 
+TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000
 ```
 
 ------------------------------------------------------------
@@ -611,18 +611,18 @@ Fire, Frost, Lightning Shield       3 -> Unchanged      100/7s or 8/100s (potion
 
 Previously, Feather wasn't very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
 ```
-Feather                             1 -> 0.1            100/240s (potion: 200/600s)
-Burden                              1 -> 0.1
+Feather [8]                         1 -> 0.1            100/240s (potion: 200/600s)
+Burden [7]                          1 -> 0.1
 ```
 
 The same logic applies to Swift Swim, which affects only swimming speed and should therefore outperform Fortify Speed.
 ```
-Swift Swim                          2 -> 0.5            100/48s (potion: 40/120s)
+Swift Swim [1]                      2 -> 0.5            100/48s (potion: 40/120s)
 ```
 
 No changes here. Jump and Slowfall are generally harder to use than Levitate, but used together, they offer a more affordable alternative to travel long distances. 1 point of jump is equivalent to 6.6 points of Acrobatics.
 ```
-Levitate							3 -> Unchanged      100/7s (potion: 7/20s)
+Levitate                            3 -> Unchanged      100/7s (potion: 7/20s)
 Jump                                3 -> Unchanged      100/7s (potion: 7/20s)
 Slowfall                            3 -> Unchanged      1/800s (potion: 7/20s)
 
@@ -631,13 +631,13 @@ sEffectSlowFall                     SlowFall -> Slowfall
 
 With this adjustment, Shield can be used as an good addition to Unarmored skill.
 ```
-Shield                              2 -> 1              100/24s (potion: 20/60s)
+Shield [3]                          2 -> 1              100/24s (potion: 20/60s)
 ```
 
 The cost of these spell effects has been changed to be on par with Lockpicking module.
 ```
-Open                                6 -> 12
-Lock                                2 -> 24
+Open [13]                           6 -> 12
+Lock [12]                           2 -> 24
 ```
 
 ------------------------------------------------------------
@@ -646,16 +646,16 @@ Lock                                2 -> 24
 
 Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
 ```
-Fire Damage                         5 -> 6              100/3s or 4/100s
-Frost Damage                        5 -> 6
-Shock Damage                        7 -> 6
-Damage Health                       8 -> 6
-Poison                              9 -> 6
+Fire Damage [14]                    5 -> 6              100/3s or 4/100s
+Frost Damage [16]                   5 -> 6
+Shock Damage [15]                   7 -> 6
+Damage Health [23]                  8 -> 6
+Poison [27]                         9 -> 6
 ```
 
 Damage Magicka has been reduced to align with Damage Health.
 ```
-Damage Magicka                      8 -> 6              100/3s
+Damage Magicka [24]                 8 -> 6              100/3s
 ```
 
 Damage Fatigue remains unchanged, as it is either nearly useless or very powerful depending on the "Uncapped Damage Fatigue" setting.
@@ -665,31 +665,31 @@ Damage Fatigue                      4 -> Unchanged      100/5s
 
 Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target's Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
 ```
-Damage Attribute                    8 -> 24             1/100s or 50/1s
-Damage Skill                        8 -> 24
+Damage Attribute [22]               8 -> 24             1/100s or 50/1s
+Damage Skill [26]                   8 -> 24
 ```
 
 Low-tier gear typically has a durability of around 300–500. With these changes, it can now be destroyed by a 25-cost spell.
 ```
-Disintegrate Armor                  6 -> 1              100/24s
-Disintegrate Weapon                 6 -> 1
+Disintegrate Armor [38]             6 -> 1              100/24s
+Disintegrate Weapon [37]            6 -> 1
 ```
 
 Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 2x cheaper. As a side effect, many potions with these negative effects will become stronger. Drain Health is unchanged, because it can still kill low level creature cheaper than Damage Health spell.
 ```
 Drain Health                        4 -> Unchanged      100/5s (potion: 5/15s)
-Drain Magicka                       4 -> 0.5
-Drain Fatigue                       2 -> 0.25
+Drain Magicka [19]                  4 -> 0.5
+Drain Fatigue [20]                  2 -> 0.25
 ```
 
 No changes here.
 ```
-Drain Attribute						1                   100/24s
+Drain Attribute                     1                   100/24s
 ```
 
 Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
 ```
-Drain Skill                         1 -> 2              100/11s (potion: 10/30s)
+Drain Skill [21]                    1 -> 2              100/11s (potion: 10/30s)
 ```
 
 ------------------------------------------------------------
@@ -699,28 +699,28 @@ Drain Skill                         1 -> 2              100/11s (potion: 10/30s)
 Previously, there was little reason to use these effects over Paralyze.
 ```
 Paralyze                            40 -> Unchanged     60s
-Silence                             40 -> 20            120s
-Sound                               3 -> 1              100/24s
+Silence [46]                        40 -> 20            120s
+Sound [48]                          3 -> 1              100/24s
 ```
 
 Additionally, a bugfix related to Illusion has been included.
 ```
-Demoralize Humanoid                 Mysticism -> Illusion
+Demoralize Humanoid [53]            Mysticism -> Illusion
 ```
 
 Chameleon is powerful tool that increase your sneak skill, evasion, and making you invisible to opponents. It was too cheap before.
 ```
-Chameleon                           1 -> 2              100/11s (potion: 10/30s)
+Chameleon [40]                      1 -> 2              100/11s (potion: 10/30s)
 ```
 
 Sanctuary compared to Blind can be cast in advance and also as an constant enchantment. Thus should be more expensive.
 ```
-Sanctuary                           1 -> 2              100/11s (potion: 10/30s)
+Sanctuary [42]                      1 -> 2              100/11s (potion: 10/30s)
 ```
 
 Charm was broken in original game, so I assume you are using real-time time dialogue mod, where duration matters.
 ```
-Charm								5 -> 2              100/11s
+Charm [44]                          5 -> 2              100/11s
 ```
 
 ------------------------------------------------------------
@@ -730,25 +730,25 @@ Charm								5 -> 2              100/11s
 Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost. Absorb Magicka and Absorb Skill, while not available in any vanilla craftable spells, have been adjusted for consistency.
 
 ```
-Absorb Health                       8 -> 10				50/4s or 1/240s
-Absorb Magicka                      8 -> 10    
-Absorb Fatigue                      4 -> 6 
+Absorb Health [86]                  8 -> 10             50/4s or 1/240s
+Absorb Magicka [87]                 8 -> 10
+Absorb Fatigue [88]                 4 -> 6
 
-Absorb Attribute					2 -> Unchanged		
-Absorb Skill                        2 -> 6 
+Absorb Attribute                    2 -> Unchanged
+Absorb Skill [89]                   2 -> 6
 ```
 
 Detect spells were just too expensive.
 ```
-Detect Animal                       0.75 -> 0.15		100/160s (potion: 133/400s)
-Detect Enchantment                  1 -> 0.2            100/120s (potion: 100/300s)
-Detect Key                          1 -> 0.2
+Detect Animal [64]                  0.75 -> 0.15        100/160s (potion: 133/400s)
+Detect Enchantment [65]             1 -> 0.2            100/120s (potion: 100/300s)
+Detect Key [66]                     1 -> 0.2
 ```
 
 Reflect and Spell Absorption are essentially stronger versions of resist effects. They were just too costly to be useful.
 ```
-Reflect                             10 -> 4				100/5s (potion: 5/15s)
-Spell Absorption                    10 -> 4
+Reflect [68]                        10 -> 4             100/5s (potion: 5/15s)
+Spell Absorption [67]               10 -> 4
 ```
 
 ------------------------------------------------------------
@@ -757,50 +757,50 @@ Spell Absorption                    10 -> 4
 
 Those changes are done mostly to balance self made potions.
 ```
-Restore Health						5 -> 4
-Restore Magicka						5 -> 4
-Restore Fatigue						1 -> 2
+Restore Health [75]                 5 -> 4
+Restore Magicka [76]                5 -> 4
+Restore Fatigue [77]                1 -> 2
 ```
 
 Tghose were ridiculously cheap before.
 ```
-Restore Attribute					1 -> 8
-Restore Skill						1 -> 8
+Restore Attribute [74]              1 -> 8
+Restore Skill [78]                  1 -> 8
 ```
 
 No changes here.
 ```
-Fortify Health						1 -> Unchanged
+Fortify Health                      1 -> Unchanged
 ```
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Now it's 2x cheaper than Fortify Intelligence.
 ```
-Fortify Magicka                     1 -> 0.5            100/30s (potion: 25/75s)
+Fortify Magicka [81]                1 -> 0.5            100/30s (potion: 25/75s)
 ```
 
 This should be cheaper than Fortify Magicka.
 ```
-Fortify Fatigue						0.5 -> 0.25
+Fortify Fatigue [82]                0.5 -> 0.25
 ```
 
 No changes here.
 ```
-Fortify Attribute					1 -> Unchanged
+Fortify Attribute                   1 -> Unchanged
 ```
 
 Fortifying skill over 50 should be available only for the highest-level characters.
 ```
-Fortify Skill                       1 -> 4				100/5s (potion: 5/15s)
+Fortify Skill [83]                  1 -> 4              100/5s (potion: 5/15s)
 ```
 
-Fortify Attack is doing same as Fortify Skill but it's more versatile. 
+Fortify Attack is doing same as Fortify Skill but it's more versatile.
 ```
-Fortify Attack      				1 -> 4
+Fortify Attack [117]                1 -> 4
 ```
 
 This looks like a typo compared to other resistances.
 ```
-Resist Paralysis                    0.2 -> 2            100/11s
+Resist Paralysis [99]               0.2 -> 2            100/11s
 ```
 
 ------------------------------------------------------------
@@ -925,7 +925,7 @@ Master Poison Trap                  16 -> 100           5-10/50s
 
 With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
 ```
-Bargain Potion of Burden            5/8s -> 50/80s                		10x/10x
+Bargain Potion of Burden            5/8s -> 50/80s                      10x/10x
 Cheap Potion of Burden              8/15s -> 80/150s
 Standard Potion of Burden           10/30s -> 100/300s
 Quality Potion of Burden            15/45s -> 150/450s
@@ -938,13 +938,13 @@ Exclusive Potion of Feather         20/60s -> 200/600s
 ```
 
 ```
-Potion of Detect Creatures          10/15s -> 50/150s             		5x/10x
+Potion of Detect Creatures          10/15s -> 50/150s                   5x/10x
 Potion of Detect Key                10/15s -> 50/150s
 Potion of Detect Enchantments       10/15s -> 50/150s
 ```
 
 ```
-Bargain Potion of Light             5/8s -> 25/40s                		5x/5x
+Bargain Potion of Light             5/8s -> 25/40s                      5x/5x
 Cheap Potion of Light               8/15s -> 40/75s
 Standard Potion of Light            10/30s -> 50/150s
 Quality Potion of Light             15/45s -> 75/225s
@@ -959,7 +959,7 @@ Exclusive Potion of Night-Eye       20/60s -> 100/300s
 
 Those potions are standard, so they should have a standard duration.
 ```
-Potion of Slowfalling               10/15s -> 10/30s              		1x/2x
+Potion of Slowfalling               10/15s -> 10/30s                    1x/2x
 Potion of Telekinesis               10/15s -> 10/30s
 Potion of Water Breathing           15s -> 30s
 Potion of Water Walking             15s -> 30s
@@ -979,29 +979,29 @@ Following potions from Tamriel Data has been updated.
 ```
 Standard Potion of Feather          10/30s -> 100/300s
 
-Cheap Potion of Burden              8/15s -> 50/80s   
+Cheap Potion of Burden              8/15s -> 50/80s
 Quality Potion of Burden            15/45s -> 150/450s
 
-Cheap Potion of Feather             8/15s -> 50/80s   
+Cheap Potion of Feather             8/15s -> 50/80s
 Quality Potion of Feather           15/45s -> 150/450s
 ```
 
 ```
-Potion of Detect Key                10/15s -> 50/150s 
-Potion of Detect Creatures          10/15s -> 50/150s 
-Potion of Detect Enchantments       10/15s -> 50/150s 
+Potion of Detect Key                10/15s -> 50/150s
+Potion of Detect Creatures          10/15s -> 50/150s
+Potion of Detect Enchantments       10/15s -> 50/150s
 ```
 
 ```
-Cheap Potion of Light               8/15s -> 40/75s   
-Quality Potion of Light             15/45s -> 75/225s 
+Cheap Potion of Light               8/15s -> 40/75s
+Quality Potion of Light             15/45s -> 75/225s
 
-Cheap Potion of Night-Eye           8/15s -> 40/75s   
-Quality Potion of Night-Eye         15/45s -> 75/225s 
+Cheap Potion of Night-Eye           8/15s -> 40/75s
+Quality Potion of Night-Eye         15/45s -> 75/225s
 ```
 
 ```
-Spoiled Slowfall Potion             10/15s -> 1/15s   
+Spoiled Slowfall Potion             10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
@@ -1067,37 +1067,37 @@ Following spells from Tamriel Data has been updated.
 Shadow Rust
     Burden                          1-15/20s -> 10-150/20s              10x/1x
     Disintegrate Armor              1-5/20s -> 6-30/20s                 6x/1x
-Weight of Guilt                     
-	Burden							500/3s -> 500/30s                   1x/10x
-Fling                               
-	Feather							500/3s -> 500/30s                   1x/10x
+Weight of Guilt
+    Burden                          500/3s -> 500/30s                   1x/10x
+Fling
+    Feather                         500/3s -> 500/30s                   1x/10x
 To the ja-Kha'jay
-	Jump                   			50/20s -> 50/60s                    1x/3x (TODO)
+    Jump                            50/20s -> 50/60s                    1x/3x (TODO)
 Fuchon Cire's Gentle Descent
-	Slowfall        				10/20s -> 10/60s                    1x/3x (TODO)
+    Slowfall                        10/20s -> 10/60s                    1x/3x (TODO)
 Dreugh's Grace                      30/20s -> 30/80s                    1x/4x
-	Swift Swim
+    Swift Swim
 Dalgor's Entwining
-	Lock			                [8] -> [96]
+    Lock                            [8] -> [96]
 Falling First Barrier
-	Shield               			[42] -> [21]
+    Shield                          [42] -> [21]
 Force Wall
-	Shield 							(TODO)
+    Shield                          (TODO)
 Tsun's Ward
-	Shield                          [40] -> [20]
+    Shield                          [40] -> [20]
 ```
 
 ### Destruction
 ```
 Fracture Armor                      100/2s -> 100/20s                   1x/10x (TODO)
-	Disintegrate Armor
+    Disintegrate Armor
 Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
-	Disintegrate Weapon
+    Disintegrate Weapon
 Steel Eater                         5-30/3s -> 5-30/18s                 1x/6x
-	Disintegrate Weapon
+    Disintegrate Weapon
 
 Duck                                [40] -> [10]
-	Drain Fatigue
+    Drain Fatigue
 ```
 
 ### Illusion
@@ -1114,6 +1114,6 @@ Following enchantments has been updated.
 Shadowsting
     Chameleon                       200-100/20s/Target -> 100/20s/Target
     Poison                          5/20s/Target
-Slave's Left/Right Bracer           
-	Drain Magicka -> Damage Magicka 
+Slave's Left/Right Bracer
+    Drain Magicka -> Damage Magicka
 ```
