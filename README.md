@@ -212,13 +212,13 @@ Abilities
 
 ### Imperial
 
-Disclaimer: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects are necessary.
+Disclaimer: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects is necessary.
 
-Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so. You're not loosing Fatigue while running anymore.
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so. You're not loosing Fatigue while running at 0 Encumbrance and 75 Endurance (previously 125 Endurance).
 ```
 Abilities
     [NEW] Star of the West
-        Restore Fatigue             2
+        Restore Fatigue             1
 Powers
     [REMOVED] Star of the West
         Absorb Fatigue              200/Target
@@ -228,6 +228,7 @@ Powers
 
 ### Khajiit (TODO)
 
+Description says: "_Many Khajiit disdain weapons in favor of their natural claws._" and acrobatics is already improved as a constant ability.
 ```
 Skill Bonuses
 	Acrobatics 						+15 -> +5
@@ -239,7 +240,7 @@ Skill Bonuses
 	Sneak 							+5 
 ```
 
-Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night last longer and new Feline Grace spell allows them to jump higher.
+Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night is permanent (it looks good on OpenMW). New Feline Grace spell allows them to jump higher and also they are immune to fall damage. Last ability is Fortify Luck.
 ```
 Abilities
     [NEW] Resist Frost
@@ -436,7 +437,7 @@ Abilities
 
 ### Ritual
 
-Mara's Gift was just boring spell previously, now it can be useful as a last resort even until late game. (TODO: Blessed Word)
+Mara's Gift was just boring spell previously, now it can be useful as a last resort even until late game. Blessed Word also is greatly improved.
 ```
 Spells
     Blessed Word
@@ -475,7 +476,7 @@ Powers
 
 ### Tower
 
-Detect spells are so cheap now that Beggar's Nose deserves constant effect. (TODO: Tower Key)
+Detect spells are so cheap now that Beggar's Nose deserves constant effect. Tower Key is improved for being useful much longer.
 ```
 Spells -> Abilities
     Beggar's Nose
