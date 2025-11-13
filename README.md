@@ -243,7 +243,7 @@ Powers
         Charm                       25-50/15s/Target -> 25/120s/25ft/Target
 ```
 
-### Khajiit (TODO)
+### Khajiit
 
 Description says: "_Many Khajiit disdain weapons in favor of their natural claws._" and acrobatics is already improved as a constant ability.
 ```
@@ -261,14 +261,15 @@ Khajiits now acquired a small Resist Frost ability because they have fur. Eye of
 ```
 Abilities
     [NEW] Resist Frost
-        Resist Frost                25
+        Resist Frost                25		
 	[NEW] Feline Grace
 		Jump						5
 		Slowfall					1
     [NEW] Eye of Night
         Night Eye                   25
-    [NEW] Nine Lives
+	[NEW] Nine Lives
         Fortify Luck                10
+
 
 Powers
     Eye of Fear
@@ -563,9 +564,9 @@ apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
 
 ------------------------------------------------------------
 
-## Alchemy - Tamriel Data (TODO)
+## Alchemy - Tamriel Rebuilt
 
-Tamriel Data apparatuses prices doesn't make sense also.
+Tamriel Rebuilt apparatuses prices doesn't make sense also.
 ```
 TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000
 TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000 
