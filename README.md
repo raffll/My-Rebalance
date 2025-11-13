@@ -249,11 +249,12 @@ Abilities
 		Slowfall					1
     [NEW] Eye of Night
         Night Eye                   25
+    [NEW] Nine Lives
+        Fortify Luck                10
 
 Powers
     Eye of Fear
         Demoralize Humanoid         100/30s/Target
-        [NEW] Demoralize Creature   100/30s/Target
 
 Spells
     [REMOVED] Eye of Night
