@@ -257,7 +257,7 @@ Skill Bonuses
 	Sneak 							+5 
 ```
 
-Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night is permanent (it looks good on OpenMW). New Feline Grace spell allows them to jump higher and also they are immune to fall damage. Last ability is Fortify Luck.
+Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night is permanent (it looks good on OpenMW). New Feline Grace spell allows them to jump higher and also they are immune to fall damage. Last ability is Fortify Luck as it just perfectly fits there.
 ```
 Abilities
     [NEW] Resist Frost
@@ -924,7 +924,7 @@ Master Poison Trap                  16 -> 100           5-10/50s
 
 With the new spell effect costs, potions that used to be very weak compared to their self-made versions have now been adjusted. I also want to keep this 1 to 3 magnitude-to-duration ratio, at least for the standard potions.
 ```
-Bargain Potion of Burden            5/8s -> 50/80s                10x/10x
+Bargain Potion of Burden            5/8s -> 50/80s                		10x/10x
 Cheap Potion of Burden              8/15s -> 80/150s
 Standard Potion of Burden           10/30s -> 100/300s
 Quality Potion of Burden            15/45s -> 150/450s
@@ -937,13 +937,13 @@ Exclusive Potion of Feather         20/60s -> 200/600s
 ```
 
 ```
-Potion of Detect Creatures          10/15s -> 50/150s             5x/10x
+Potion of Detect Creatures          10/15s -> 50/150s             		5x/10x
 Potion of Detect Key                10/15s -> 50/150s
 Potion of Detect Enchantments       10/15s -> 50/150s
 ```
 
 ```
-Bargain Potion of Light             5/8s -> 25/40s                5x/5x
+Bargain Potion of Light             5/8s -> 25/40s                		5x/5x
 Cheap Potion of Light               8/15s -> 40/75s
 Standard Potion of Light            10/30s -> 50/150s
 Quality Potion of Light             15/45s -> 75/225s
@@ -958,7 +958,7 @@ Exclusive Potion of Night-Eye       20/60s -> 100/300s
 
 Those potions are standard, so they should have a standard duration.
 ```
-Potion of Slowfalling               10/15s -> 10/30s              1x/2x
+Potion of Slowfalling               10/15s -> 10/30s              		1x/2x
 Potion of Telekinesis               10/15s -> 10/30s
 Potion of Water Breathing           15s -> 30s
 Potion of Water Walking             15s -> 30s
@@ -976,31 +976,31 @@ Spoiled Slowfall Potion             10/15s -> 1/15s
 
 Following potions from Tamriel Data has been updated.
 ```
-Standard Potion of Feather          10/30s -> 100/300s            T_Com_Potion_Feather_S
+Standard Potion of Feather          10/30s -> 100/300s
 
-Cheap Potion of Burden              8/15s -> 50/80s               T_Nor_Potion_Burden_C
-Quality Potion of Burden            15/45s -> 150/450s            T_Nor_Potion_Burden_Q
+Cheap Potion of Burden              8/15s -> 50/80s   
+Quality Potion of Burden            15/45s -> 150/450s
 
-Cheap Potion of Feather             8/15s -> 50/80s               T_Nor_Potion_Feather_C
-Quality Potion of Feather           15/45s -> 150/450s            T_Nor_Potion_Feather_Q
+Cheap Potion of Feather             8/15s -> 50/80s   
+Quality Potion of Feather           15/45s -> 150/450s
 ```
 
 ```
-Potion of Detect Key                10/15s -> 50/150s             T_Com_Potion_Detect_Invisib_S
-Potion of Detect Creatures          10/15s -> 50/150s             T_Com_Potion_Detect_Humanoid_S
-Potion of Detect Enchantments       10/15s -> 50/150s             T_Com_Potion_Detect_Enemy_S
+Potion of Detect Key                10/15s -> 50/150s 
+Potion of Detect Creatures          10/15s -> 50/150s 
+Potion of Detect Enchantments       10/15s -> 50/150s 
 ```
 
 ```
-Cheap Potion of Light               8/15s -> 40/75s               T_Nor_Potion_Light_C
-Quality Potion of Light             15/45s -> 75/225s             T_Nor_Potion_Light_Q
+Cheap Potion of Light               8/15s -> 40/75s   
+Quality Potion of Light             15/45s -> 75/225s 
 
-Cheap Potion of Night-Eye           8/15s -> 40/75s               T_Nor_Potion_NightEye_C
-Quality Potion of Night-Eye         15/45s -> 75/225s             T_Nor_Potion_NightEye_Q
+Cheap Potion of Night-Eye           8/15s -> 40/75s   
+Quality Potion of Night-Eye         15/45s -> 75/225s 
 ```
 
 ```
-Spoiled Slowfall Potion             10/15s -> 1/15s               T_Nor_Potion_DrainEndurance_Q
+Spoiled Slowfall Potion             10/15s -> 1/15s   
 ```
 
 ------------------------------------------------------------
