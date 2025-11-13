@@ -1052,11 +1052,15 @@ Tsun's Ward
 
 ### Destruction
 ```
-Fracture Armor                      100/2s -> 100/20s                   1x/10x
+Fracture Armor                      100/2s -> 100/20s                   1x/10x (TODO)
+	Disintegrate Armor
 Iron Eater                          1-25/2s -> 1-25/12s                 1x/6x
+	Disintegrate Weapon
 Steel Eater                         5-30/3s -> 5-30/18s                 1x/6x
+	Disintegrate Weapon
 
 Duck                                [40] -> [10]
+	Drain Fatigue
 ```
 
 ### Illusion
