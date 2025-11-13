@@ -605,32 +605,32 @@ Elemental shields are now worth experimenting with. Especially for the fun of ki
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
 
-Fire, Frost, Lightning Shield       3 -> Unchanged      100/7s or 8/100s, potion: 7/20s
+Fire, Frost, Lightning Shield       3 -> Unchanged      100/7s or 8/100s (potion: 7/20s)
 ```
 
 Previously, Feather wasn't very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
 ```
-Feather                             1 -> 0.1            100/240s, potion: 200/600s
+Feather                             1 -> 0.1            100/240s (potion: 200/600s)
 Burden                              1 -> 0.1
 ```
 
 The same logic applies to Swift Swim, which affects only swimming speed and should therefore outperform Fortify Speed.
 ```
-Swift Swim                          2 -> 0.5            100/48s, potion: 40/120s
+Swift Swim                          2 -> 0.5            100/48s (potion: 40/120s)
 ```
 
 No changes here. Jump and Slowfall are generally harder to use than Levitate, but used together, they offer a more affordable alternative to travel long distances. 1 point of jump is equivalent to 6.6 points of Acrobatics.
 ```
-Levitate							3 -> Unchanged      100/7s, potion: 7/20s
-Jump                                3 -> Unchanged      100/7s, potion: 7/20s
-Slowfall                            3 -> Unchanged      1/800s, potion: 7/20s
+Levitate							3 -> Unchanged      100/7s (potion: 7/20s)
+Jump                                3 -> Unchanged      100/7s (potion: 7/20s)
+Slowfall                            3 -> Unchanged      1/800s (potion: 7/20s)
 
 sEffectSlowFall                     SlowFall -> Slowfall
 ```
 
 With this adjustment, Shield can be used as an good addition to Unarmored skill.
 ```
-Shield                              2 -> 1              100/24s, potion: 20/60s
+Shield                              2 -> 1              100/24s (potion: 20/60s)
 ```
 
 The cost of these spell effects has been changed to be on par with Lockpicking module.
@@ -674,9 +674,9 @@ Disintegrate Armor                  6 -> 1              100/24s
 Disintegrate Weapon                 6 -> 1
 ```
 
-Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 2x cheaper. As a side effect, many potions with these negative effects will become stronger.
+Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 2x cheaper. As a side effect, many potions with these negative effects will become stronger. Drain Health is unchanged, because it can still kill low level creature cheaper than Damage Health spell.
 ```
-Drain Health                        4 -> Unchanged      100/5s, potion: 5/15s
+Drain Health                        4 -> Unchanged      100/5s (potion: 5/15s)
 Drain Magicka                       4 -> 0.5
 Drain Fatigue                       2 -> 0.25
 ```
@@ -688,7 +688,7 @@ Drain Attribute						1                   100/24s
 
 Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
 ```
-Drain Skill                         1 -> 2              100/11s, potion: 10/30s
+Drain Skill                         1 -> 2              100/11s (potion: 10/30s)
 ```
 
 ------------------------------------------------------------
@@ -709,12 +709,12 @@ Demoralize Humanoid                 Mysticism -> Illusion
 
 Chameleon is powerful tool that increase your sneak skill, evasion, and making you invisible to opponents. It was too cheap before.
 ```
-Chameleon                           1 -> 2              100/11s, potion: 10/30s
+Chameleon                           1 -> 2              100/11s (potion: 10/30s)
 ```
 
 Sanctuary compared to Blind can be cast in advance and also as an constant enchantment. Thus should be more expensive.
 ```
-Sanctuary                           1 -> 2              100/11s, potion: 10/30s
+Sanctuary                           1 -> 2              100/11s (potion: 10/30s)
 ```
 
 Charm was broken in original game, so I assume you are using real-time time dialogue mod, where duration matters.
@@ -729,7 +729,7 @@ Charm								5 -> 2              100/11s
 Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost. Absorb Magicka and Absorb Skill, while not available in any vanilla craftable spells, have been adjusted for consistency.
 
 ```
-Absorb Health                       8 -> 10
+Absorb Health                       8 -> 10				50/4s or 1/240s
 Absorb Magicka                      8 -> 10    
 Absorb Fatigue                      4 -> 6 
 
@@ -739,14 +739,14 @@ Absorb Skill                        2 -> 6
 
 Detect spells were just too expensive.
 ```
-Detect Animal                       0.75 -> 0.15		100/160s, potion: 133/400s
-Detect Enchantment                  1 -> 0.2            100/120s, potion: 100/300s
+Detect Animal                       0.75 -> 0.15		100/160s (potion: 133/400s)
+Detect Enchantment                  1 -> 0.2            100/120s (potion: 100/300s)
 Detect Key                          1 -> 0.2
 ```
 
 Reflect and Spell Absorption are essentially stronger versions of resist effects. They were just too costly to be useful.
 ```
-Reflect                             10 -> 4				100/5s, potion: 5/15s
+Reflect                             10 -> 4				100/5s (potion: 5/15s)
 Spell Absorption                    10 -> 4
 ```
 
@@ -774,10 +774,10 @@ Fortify Health						1 -> Unchanged
 
 Fortify Magicka was doing less than Fortify Intelligence for the same price. Now it's 2x cheaper than Fortify Intelligence.
 ```
-Fortify Magicka                     1 -> 0.5            100/30s, potion: 25/75s
+Fortify Magicka                     1 -> 0.5            100/30s (potion: 25/75s)
 ```
 
-TODO
+This should be cheaper than Fortify Magicka.
 ```
 Fortify Fatigue						0.5 -> 0.25
 ```
@@ -789,10 +789,10 @@ Fortify Attribute					1 -> Unchanged
 
 Fortifying skill over 50 should be available only for the highest-level characters.
 ```
-Fortify Skill                       1 -> 4				100/5s, potion: 5/15s
+Fortify Skill                       1 -> 4				100/5s (potion: 5/15s)
 ```
 
-TODO
+Fortify Attack is doing same as Fortify Skill but it's more versatile. 
 ```
 Fortify Attack      				1 -> 4
 ```
