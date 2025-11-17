@@ -58,12 +58,15 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 #### History
 - 1.11
   - Magic:
-    - Restore Health [75]                 5 -> 4	 (on the second throught I made a mistake by lowering those values)
-	- Restore Magicka [76]                5 -> 4
-	- Restore Fatigue [77]                1 -> 2
-	- Absorb Health [86]                  8 -> 10             50/4s or 1/240s
-	- Absorb Magicka [87]                 8 -> 10
-	- Absorb Fatigue [88]                 4 -> 6
+    - Damage Health
+    - Damage Magicka
+    - Damage Fatigue
+    - Restore Health
+    - Restore Magicka
+    - Restore Fatigue
+    - Absorb Health
+    - Absorb Magicka
+    - Absorb Fatigue
 - 1.10
   - Races: Module added
   - Birthsigns: Module added
@@ -76,14 +79,14 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
     - Chameleon changed to 2
     - Sanctuary changed to 2
     - Charm changed to 2
-    - Drain Magicka changed to 0.5
+	- Drain Magicka changed to 0.5
     - Drain Fatigue changed to 0.25
-    - Absorb Health changed to 10
+	- Absorb Health changed to 10
     - Absorb Magicka changed to 10
-    - Restore Health changed to 4
+	- Restore Health changed to 4
     - Restore Magicka changed to 4
     - Restore Fatigue changed to 2
-    - Restore Attribute changed to 8
+	- Restore Attribute changed to 8
     - Restore Skill changed to 8
     - Fortify Magicka changed to 0.5
     - Fortify Fatigue changed to 0.25
