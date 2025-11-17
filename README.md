@@ -72,7 +72,7 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
     - Drain Magicka changed from 0.8 -> 0.5
     - Drain Fatigue changed from 0.5 -> 0.25
     - Absorb Health changed from 8 -> 10
-    - Absorb Magicka changed from 8 -> 120
+    - Absorb Magicka changed from 8 -> 10
     - Restore Health changed from 5 -> 4
     - Restore Magicka changed from 5 -> 4
     - Restore Fatigue changed from 1 -> 2
@@ -230,9 +230,9 @@ Abilities
 
 ### Imperial
 
-Warning: Changes made here are done with the assumption that you are using real-time dialogue mod, when longer Charm effects is necessary.
+Warning: Changes made here are done with the assumption that you are using the real-time dialogue mod when longer Charm effects are necessary.
 
-Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so. You're not loosing Fatigue while running at 0 Encumbrance and 75 Endurance (previously 125 Endurance).
+Imperial is a real star here. I imagine he can charm everyone in a room for a good period of time. And also be tireless doing so. You're not losing fatigue while running at 0 Encumbrance and 75 Endurance (previously 125 Endurance).
 ```
 Abilities
     [NEW] Star of the West
@@ -258,7 +258,7 @@ Skill Bonuses
     Sneak                           +5
 ```
 
-Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night is permanent (it looks good on OpenMW). New Feline Grace spell allows them to jump higher and also they are immune to fall damage. Last ability is Fortify Luck as it just perfectly fits there.
+Khajiits now acquired a small Resist Frost ability because they have fur. Eye of Night is permanent (it looks good on OpenMW). The new Feline Grace spell allows them to jump higher, and also they are immune to fall damage. The last ability is Fortify Luck as it just perfectly fits there.
 ```
 Abilities
     [NEW] Resist Frost
@@ -762,7 +762,7 @@ Restore Magicka [76]                5 -> 4
 Restore Fatigue [77]                1 -> 2
 ```
 
-Tghose were ridiculously cheap before.
+Those were ridiculously cheap before.
 ```
 Restore Attribute [74]              1 -> 8
 Restore Skill [78]                  1 -> 8
@@ -1006,7 +1006,7 @@ Spoiled Slowfall Potion             10/15s -> 1/15s
 
 ------------------------------------------------------------
 
-## Magic - Spells
+## Magic - Spells (In Progress)
 
 Spells have been tweaked to stay useful following the changes to spell effect costs.
 
@@ -1058,7 +1058,7 @@ Weapon Eater                        6-25/Touch -> 6-25/6s
 
 ------------------------------------------------------------
 
-## Magic - Spells - Tamriel Data
+## Magic - Spells - Tamriel Data (In Progress)
 
 Following spells from Tamriel Data has been updated.
 
@@ -1104,7 +1104,7 @@ Voices
 
 ------------------------------------------------------------
 
-## Magic - Enchantments
+## Magic - Enchantments (In Progress)
 
 Following enchantments has been updated.
 ```
