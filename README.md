@@ -56,7 +56,14 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 ------------------------------------------------------------
 
 #### History
-
+- 1.11
+  - Magic:
+    - Restore Health [75]                 5 -> 4	 (on the second throught I made a mistake by lowering those values)
+	- Restore Magicka [76]                5 -> 4
+	- Restore Fatigue [77]                1 -> 2
+	- Absorb Health [86]                  8 -> 10             50/4s or 1/240s
+	- Absorb Magicka [87]                 8 -> 10
+	- Absorb Fatigue [88]                 4 -> 6
 - 1.10
   - Races: Module added
   - Birthsigns: Module added
@@ -64,23 +71,23 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
   - Alchemy TR: Module added
   - Magic:
     - Minor PfP fixes forwarded
-    - Jump reverted from 1 to 3
-    - Slowfall reverted from 1 to 3
-    - Chameleon changed from 1 to 2
-    - Sanctuary changed from 1 to 2
-    - Charm changed from 5 to 2
-    - Drain Magicka changed from 0.8 -> 0.5
-    - Drain Fatigue changed from 0.5 -> 0.25
-    - Absorb Health changed from 8 -> 10
-    - Absorb Magicka changed from 8 -> 10
-    - Restore Health changed from 5 -> 4
-    - Restore Magicka changed from 5 -> 4
-    - Restore Fatigue changed from 1 -> 2
-    - Restore Attribute changed from 1 -> 8
-    - Restore Skill changed from 1 -> 8
-    - Fortify Magicka changed from 1 -> 0.5
-    - Fortify Fatigue changed from 0.5 -> 0.25
-    - Fortify Attack changed from 1 -> 4
+    - Jump reverted to 3
+    - Slowfall reverted to 3
+    - Chameleon changed to 2
+    - Sanctuary changed to 2
+    - Charm changed to 2
+    - Drain Magicka changed to 0.5
+    - Drain Fatigue changed to 0.25
+    - Absorb Health changed to 10
+    - Absorb Magicka changed to 10
+    - Restore Health changed to 4
+    - Restore Magicka changed to 4
+    - Restore Fatigue changed to 2
+    - Restore Attribute changed to 8
+    - Restore Skill changed to 8
+    - Fortify Magicka changed to 0.5
+    - Fortify Fatigue changed to 0.25
+    - Fortify Attack changed to 4
   - Spells TD: Adjusted to changes in magic
 - 1.9
   - Barter: Mages Guild's travel cost changed from 10x to 5x
@@ -592,7 +599,7 @@ sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No a
 
 ## Magic
 
-The point of reference here is Fortify Attribute spell effect which stay untouched. Every other effect is balanced around it.
+The point of reference here is Fortify Attribute spell effect which stay untouched. Every other effect is balanced around it. I'm taking into account also potion creation and constant enchancements, so if some spell effect is still too cheap or expensive this is because I don't want it to be overpowered in other disciplines. 
 
 * All spell examples here are self made high level spells that can cost around 120-130 Magicka.
 * I you want to know how powerful they will be in constant enchantment, just switch magnitude with duration (constant duration is always 100s).
@@ -660,7 +667,7 @@ Damage Magicka [24]                 8 -> 6              100/3s
 
 Damage Fatigue remains unchanged, as it is either nearly useless or very powerful depending on the "Uncapped Damage Fatigue" setting.
 ```
-Damage Fatigue                      4 -> Unchanged      100/5s
+Damage Fatigue                      4 -> 2              100/5s
 ```
 
 Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target's Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
@@ -730,9 +737,9 @@ Charm [44]                          5 -> 2              100/11s
 Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost. Absorb Magicka and Absorb Skill, while not available in any vanilla craftable spells, have been adjusted for consistency.
 
 ```
-Absorb Health [86]                  8 -> 10             50/4s or 1/240s
+Absorb Health [86]                  8 -> 12
 Absorb Magicka [87]                 8 -> 10
-Absorb Fatigue [88]                 4 -> 6
+Absorb Fatigue [88]                 4 -> Unchanged
 
 Absorb Attribute                    2 -> Unchanged
 Absorb Skill [89]                   2 -> 6
@@ -755,11 +762,11 @@ Spell Absorption [67]               10 -> 4
 
 ### Restoration
 
-Those changes are done mostly to balance self made potions.
+These changes should further encourage you to use other defensive spells, and buyable potions will be useful entire game. With my changes to alchemy, self-made potions with those effects will be much weaker.
 ```
-Restore Health [75]                 5 -> 4
+Restore Health [75]                 5 -> 6				
 Restore Magicka [76]                5 -> 4
-Restore Fatigue [77]                1 -> 2
+Restore Fatigue [77]                1 -> 2				
 ```
 
 Those were ridiculously cheap before.
