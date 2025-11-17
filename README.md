@@ -2,7 +2,7 @@
 
 #### Intentions
 
-Despite the name, my intention here is not to balance the game. That's impossible. Nor is it to make it harder or easier. The idea is to make more options usable, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+The idea is to make more options interesting, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
 ------------------------------------------------------------
 
@@ -58,15 +58,11 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 #### History
 - 1.11
   - Magic:
-    - Damage Health
-    - Damage Magicka
-    - Damage Fatigue
-    - Restore Health
-    - Restore Magicka
-    - Restore Fatigue
-    - Absorb Health
-    - Absorb Magicka
-    - Absorb Fatigue
+    - Chameleon reverted to 1
+    - Damage Fatigue changed to 2
+    - Restore Health changed to 6
+    - Absorb Health changed to 12
+    - Absorb Fatigue changed to 4
 - 1.10
   - Races: Module added
   - Birthsigns: Module added
@@ -600,9 +596,9 @@ sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No a
 
 ------------------------------------------------------------
 
-## Magic
+## Magic (In Progress)
 
-The point of reference here is Fortify Attribute spell effect which stay untouched. Every other effect is balanced around it. I'm taking into account also potion creation and constant enchancements, so if some spell effect is still too cheap or expensive this is because I don't want it to be overpowered in other disciplines. 
+The point of reference here is Fortify Attribute spell effect which stay untouched. Every other effect is balanced around it. I'm taking into account also potion creation and constant enchantments, so if some spell effect is still too expensive this is because I don't want it to be overpowered in other disciplines. 
 
 * All spell examples here are self made high level spells that can cost around 120-130 Magicka.
 * I you want to know how powerful they will be in constant enchantment, just switch magnitude with duration (constant duration is always 100s).
@@ -665,12 +661,12 @@ Poison [27]                         9 -> 6
 
 Damage Magicka has been reduced to align with Damage Health.
 ```
-Damage Magicka [24]                 8 -> 6              100/3s
+Damage Magicka [24]                 8 -> 6              100/3s or 4/100s
 ```
 
-Damage Fatigue remains unchanged, as it is either nearly useless or very powerful depending on the "Uncapped Damage Fatigue" setting.
+TODO
 ```
-Damage Fatigue                      4 -> 2              100/5s
+Damage Fatigue                      4 -> 2				100/11s
 ```
 
 Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target's Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
@@ -694,10 +690,10 @@ Drain Fatigue [20]                  2 -> 0.25
 
 No changes here.
 ```
-Drain Attribute                     1                   100/24s
+Drain Attribute                     1 -> Unchanged      100/24s
 ```
 
-Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
+TODO: Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
 ```
 Drain Skill [21]                    1 -> 2              100/11s (potion: 10/30s)
 ```
@@ -718,9 +714,9 @@ Additionally, a bugfix related to Illusion has been included.
 Demoralize Humanoid [53]            Mysticism -> Illusion
 ```
 
-Chameleon is powerful tool that increase your sneak skill, evasion, and making you invisible to opponents. It was too cheap before.
+TODO: Chameleon is powerful tool that increase your sneak skill, evasion, and making you invisible to opponents.
 ```
-Chameleon [40]                      1 -> 2              100/11s (potion: 10/30s)
+Chameleon [40]                      1 -> Unchanged
 ```
 
 Sanctuary compared to Blind can be cast in advance and also as an constant enchantment. Thus should be more expensive.
@@ -743,7 +739,9 @@ Absorb spells were previously overpowered, costing the same as their damage-base
 Absorb Health [86]                  8 -> 12
 Absorb Magicka [87]                 8 -> 10
 Absorb Fatigue [88]                 4 -> Unchanged
+```
 
+```
 Absorb Attribute                    2 -> Unchanged
 Absorb Skill [89]                   2 -> 6
 ```
