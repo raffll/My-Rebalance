@@ -57,8 +57,14 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 
 #### History
 - 1.11
-  - Magic:
+  - Magic: Generally I'm not happy with the changes that I made here. It's better to nerf damage dealing spells than defense spells.
     - Chameleon reverted to 1
+	- Sanctuary reverted to 1
+	- Drain Skill reverted to 1
+	- Fortify Skill reverted to 1
+    - Fortify Attack reverted to 1
+	- Absorb Skill reverted to 2
+	- Absorb Magicka reverted to 8
     - Damage Fatigue changed to 2
     - Restore Health changed to 6
     - Absorb Health changed to 12
@@ -488,7 +494,7 @@ Powers
         Damage Fatigue              200/Self
 ```
 
-### Shadow
+### Shadow (TODO)
 
 Very low level spell upgraded to be useful entire game.
 ```
@@ -523,292 +529,6 @@ fMinWalkSpeed                       100 -> 125
 fMaxWalkSpeed                       200 -> 250
 fMinWalkSpeedCreature               5 -> 6.25
 fMaxWalkSpeedCreature               300 -> 375
-```
-
-------------------------------------------------------------
-
-## Alchemy
-
-The main goal here is to fix the imbalance at low skill levels. For example, you can easily make highly effective Restore Fatigue potions (e.g., 200 points) with only 5 Alchemy, while a similar Restore Fatigue spell at Restoration level 5 would cost 15 Magicka and have just a 9% success rate. This makes some choices clearly superior to others with little effort.
-
-After this patch, some potion effects—depending on the underlying spell effect—may be up to four times weaker. However, the system as a whole should feel more balanced. Crafted potions will still scale well with better stats and equipment, while store-bought potions will remain useful for much longer.
-```
-fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
-```
-
-Those tables show how self made potion strength scales now, depending on different levels of A-Alchemy, Q-Mortar Quality, and BC-Spell Effect Base Cost.
-
-```
-fPotionStrengthMult: 0.5
-
-5/8s    :
-8/15s   :
-10/30s  : [A:40,Q:1,BC:2]
-15/45s  :
-20/60s  : [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
-        :
-40/120s : [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
-```
-
-```
-fPotionStrengthMult: 0.25
-
-5/8s    : [A:40,Q:1,BC:2] <- actually this will be 5/15s
-8/15s   :
-10/30s  : [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
-15/45s  :
-20/60s  : [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
-```
-
-Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
-```
-apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000
-apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000
-apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000
-apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
-```
-
-------------------------------------------------------------
-
-## Alchemy - Tamriel Rebuilt
-
-Tamriel Rebuilt apparatuses prices doesn't make sense also.
-```
-TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000
-TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000
-TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6000 -> 16000
-TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000
-```
-
-------------------------------------------------------------
-
-## Enchant
-
-This was one of the weakest skills in the game. Creating your own enchantments was nearly impossible, and you didn't even need to recharge enchanted items—they recharged automatically. To make things worse, the Secret Master would attack you on sight.
-
-These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully, or just buy a replacement item when needed.
-```
-fMagicItemRechargePerSecond     0.05 -> 0                                   No idle recharging
-fEnchantmentChanceMult          3 -> 0.6                                    5x easier self enchant
-
-sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No annoing messages
-```
-
-------------------------------------------------------------
-
-## Magic (In Progress)
-
-The point of reference here is Fortify Attribute spell effect which stay untouched. Every other effect is balanced around it. I'm taking into account also potion creation and constant enchantments, so if some spell effect is still too expensive this is because I don't want it to be overpowered in other disciplines. 
-
-* All spell examples here are self made high level spells that can cost around 120-130 Magicka.
-* I you want to know how powerful they will be in constant enchantment, just switch magnitude with duration (constant duration is always 100s).
-* Potion examples are provided for Alchemy, Intelligence, and Luck at 100, mortar quality at 1 and fPotionStrengthMult at 0.25.
-
-------------------------------------------------------------
-
-### Alteration
-
-Elemental shields are now worth experimenting with. Especially for the fun of killing low-level creatures. Their cost hasn't changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers.
-```
-fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
-
-Fire, Frost, Lightning Shield       3 -> Unchanged      100/7s or 8/100s (potion: 7/20s)
-```
-
-Previously, Feather wasn't very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
-```
-Feather [8]                         1 -> 0.1            100/240s (potion: 200/600s)
-Burden [7]                          1 -> 0.1
-```
-
-The same logic applies to Swift Swim, which affects only swimming speed and should therefore outperform Fortify Speed.
-```
-Swift Swim [1]                      2 -> 0.5            100/48s (potion: 40/120s)
-```
-
-No changes here. Jump and Slowfall are generally harder to use than Levitate, but used together, they offer a more affordable alternative to travel long distances. 1 point of jump is equivalent to 6.6 points of Acrobatics.
-```
-Levitate                            3 -> Unchanged      100/7s (potion: 7/20s)
-Jump                                3 -> Unchanged      100/7s (potion: 7/20s)
-Slowfall                            3 -> Unchanged      1/800s (potion: 7/20s)
-
-sEffectSlowFall                     SlowFall -> Slowfall
-```
-
-With this adjustment, Shield can be used as an good addition to Unarmored skill.
-```
-Shield [3]                          2 -> 1              100/24s (potion: 20/60s)
-```
-
-The cost of these spell effects has been changed to be on par with Lockpicking module.
-```
-Open [13]                           6 -> 12
-Lock [12]                           2 -> 24
-```
-
-------------------------------------------------------------
-
-### Destruction
-
-Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
-```
-Fire Damage [14]                    5 -> 6              100/3s or 4/100s
-Frost Damage [16]                   5 -> 6
-Shock Damage [15]                   7 -> 6
-Damage Health [23]                  8 -> 6
-Poison [27]                         9 -> 6
-```
-
-Damage Magicka has been reduced to align with Damage Health.
-```
-Damage Magicka [24]                 8 -> 6              100/3s or 4/100s
-```
-
-TODO
-```
-Damage Fatigue                      4 -> 2				100/11s
-```
-
-Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target's Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
-```
-Damage Attribute [22]               8 -> 24             1/100s or 50/1s
-Damage Skill [26]                   8 -> 24
-```
-
-Low-tier gear typically has a durability of around 300–500. With these changes, it can now be destroyed by a 25-cost spell.
-```
-Disintegrate Armor [38]             6 -> 1              100/24s
-Disintegrate Weapon [37]            6 -> 1
-```
-
-Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 2x cheaper. As a side effect, many potions with these negative effects will become stronger. Drain Health is unchanged, because it can still kill low level creature cheaper than Damage Health spell.
-```
-Drain Health                        4 -> Unchanged      100/5s (potion: 5/15s)
-Drain Magicka [19]                  4 -> 0.5
-Drain Fatigue [20]                  2 -> 0.25
-```
-
-No changes here.
-```
-Drain Attribute                     1 -> Unchanged      100/24s
-```
-
-TODO: Drain Skill is now more expensive due to its potential for being overpowered—similar to Fortify Skill. Compared to Drain Attribute, it has a much greater impact.
-```
-Drain Skill [21]                    1 -> 2              100/11s (potion: 10/30s)
-```
-
-------------------------------------------------------------
-
-### Illusion
-
-Previously, there was little reason to use these effects over Paralyze.
-```
-Paralyze                            40 -> Unchanged     60s
-Silence [46]                        40 -> 20            120s
-Sound [48]                          3 -> 1              100/24s
-```
-
-Additionally, a bugfix related to Illusion has been included.
-```
-Demoralize Humanoid [53]            Mysticism -> Illusion
-```
-
-TODO: Chameleon is powerful tool that increase your sneak skill, evasion, and making you invisible to opponents.
-```
-Chameleon [40]                      1 -> Unchanged
-```
-
-Sanctuary compared to Blind can be cast in advance and also as an constant enchantment. Thus should be more expensive.
-```
-Sanctuary [42]                      1 -> 2              100/11s (potion: 10/30s)
-```
-
-Charm was broken in original game, so I assume you are using real-time time dialogue mod, where duration matters.
-```
-Charm [44]                          5 -> 2              100/11s
-```
-
-------------------------------------------------------------
-
-### Mysticism
-
-Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost. Absorb Magicka and Absorb Skill, while not available in any vanilla craftable spells, have been adjusted for consistency.
-
-```
-Absorb Health [86]                  8 -> 12
-Absorb Magicka [87]                 8 -> 10
-Absorb Fatigue [88]                 4 -> Unchanged
-```
-
-```
-Absorb Attribute                    2 -> Unchanged
-Absorb Skill [89]                   2 -> 6
-```
-
-Detect spells were just too expensive.
-```
-Detect Animal [64]                  0.75 -> 0.15        100/160s (potion: 133/400s)
-Detect Enchantment [65]             1 -> 0.2            100/120s (potion: 100/300s)
-Detect Key [66]                     1 -> 0.2
-```
-
-Reflect and Spell Absorption are essentially stronger versions of resist effects. They were just too costly to be useful.
-```
-Reflect [68]                        10 -> 4             100/5s (potion: 5/15s)
-Spell Absorption [67]               10 -> 4
-```
-
-------------------------------------------------------------
-
-### Restoration
-
-These changes should further encourage you to use other defensive spells, and buyable potions will be useful entire game. With my changes to alchemy, self-made potions with those effects will be much weaker.
-```
-Restore Health [75]                 5 -> 6				
-Restore Magicka [76]                5 -> 4
-Restore Fatigue [77]                1 -> 2				
-```
-
-Those were ridiculously cheap before.
-```
-Restore Attribute [74]              1 -> 8
-Restore Skill [78]                  1 -> 8
-```
-
-No changes here.
-```
-Fortify Health                      1 -> Unchanged
-```
-
-Fortify Magicka was doing less than Fortify Intelligence for the same price. Now it's 2x cheaper than Fortify Intelligence.
-```
-Fortify Magicka [81]                1 -> 0.5            100/30s (potion: 25/75s)
-```
-
-This should be cheaper than Fortify Magicka.
-```
-Fortify Fatigue [82]                0.5 -> 0.25
-```
-
-No changes here.
-```
-Fortify Attribute                   1 -> Unchanged
-```
-
-Fortifying skill over 50 should be available only for the highest-level characters.
-```
-Fortify Skill [83]                  1 -> 4              100/5s (potion: 5/15s)
-```
-
-Fortify Attack is doing same as Fortify Skill but it's more versatile.
-```
-Fortify Attack [117]                1 -> 4
-```
-
-This looks like a typo compared to other resistances.
-```
-Resist Paralysis [99]               0.2 -> 2            100/11s
 ```
 
 ------------------------------------------------------------
@@ -925,6 +645,258 @@ Master Fire Trap                    3 -> 65             20-30/10s
 Master Frost Trap                   3 -> 70             20-30/10s
 Master Shock Trap                   5 -> 75             20-30/10s
 Master Poison Trap                  16 -> 100           5-10/50s
+```
+
+------------------------------------------------------------
+
+## Alchemy
+
+The main goal here is to fix the imbalance at low skill levels. For example, you can easily make highly effective Restore Fatigue potions (e.g., 200 points) with only 5 Alchemy, while a similar Restore Fatigue spell at Restoration level 5 would cost 15 Magicka and have just a 9% success rate. This makes some choices clearly superior to others with little effort.
+
+After this patch, some potion effects—depending on the underlying spell effect—may be up to four times weaker. However, the system as a whole should feel more balanced. Crafted potions will still scale well with better stats and equipment, while store-bought potions will remain useful for much longer.
+```
+fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
+```
+
+Those tables show how self made potion strength scales now, depending on different levels of A-Alchemy, Q-Mortar Quality, and BC-Spell Effect Base Cost.
+
+```
+fPotionStrengthMult: 0.5
+
+5/8s    :
+8/15s   :
+10/30s  : [A:40,Q:1,BC:2]
+15/45s  :
+20/60s  : [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
+        :
+40/120s : [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
+```
+
+```
+fPotionStrengthMult: 0.25
+
+5/8s    : [A:40,Q:1,BC:2] <- actually this will be 5/15s
+8/15s   :
+10/30s  : [A:40,Q:1,BC:1] or [A:100,Q:1,BC:2] or [A:40,Q:2,BC:2]
+15/45s  :
+20/60s  : [A:100,Q:1,BC:1] or [A:100,Q:2,BC:2]
+```
+
+Some Secret Master's apparatuses were cheaper than Grandmaster's versions. They all are now five times more expensive.
+```
+apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000
+apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000
+apparatus_sm_calcinator_01      Secret Master's Calcinator          3200 -> 16000
+apparatus_sm_retort_01          Secret Master's Retort              1000 -> 5000
+```
+
+------------------------------------------------------------
+
+## Alchemy - Tamriel Rebuilt
+
+Tamriel Rebuilt apparatuses prices doesn't make sense also.
+```
+TR_m7_apparatus_sm_mortar_02    Secret Master's Mortar & Pestle     6000 -> 30000
+TR_m7_apparatus_sm_alembic_02   Secret Master's Alembic             6000 -> 8000
+TR_m7_apparatus_sm_calcin_02    Secret Master's Calcinator          6000 -> 16000
+TR_m7_apparatus_sm_retort_02    Secret Master's Retort              2400 -> 5000
+```
+
+------------------------------------------------------------
+
+## Enchant
+
+This was one of the weakest skills in the game. Creating your own enchantments was nearly impossible, and you didn't even need to recharge enchanted items—they recharged automatically. To make things worse, the Secret Master would attack you on sight.
+
+These changes aim to make self-enchanting a viable alternative to using an enchanter while requiring you to actively hunt for soul gems to keep your equipment charged. As a fighter or thief, you'll need to manage your resources more carefully, or just buy a replacement item when needed.
+```
+fMagicItemRechargePerSecond     0.05 -> 0                                   No idle recharging
+fEnchantmentChanceMult          3 -> 0.6                                    5x easier self enchant
+
+sMagicInsufficientCharge        "Item does not have enough charge." -> ""   No annoing messages
+```
+
+------------------------------------------------------------
+
+## Magic (In Progress)
+
+The point of reference here is the Fortify Attribute spell effect, which stays untouched. Every other effect is balanced around it. I'm also taking into account potion creation, constant enchantments and 1s exploits, so if some spell effect is still too expensive, this is because I don't want it to be overpowered in other disciplines.
+
+General changes and bugfixes.
+```
+sEffectSlowFall                     SlowFall -> Slowfall
+Demoralize Humanoid                 Mysticism -> Illusion
+```
+
+------------------------------------------------------------
+
+### Alteration
+
+Elemental shields are now worth experimenting with. Especially for the fun of killing low-level creatures. Their cost hasn't changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers.
+```
+fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
+
+Fire, Frost, Lightning Shield       3 -> Unchanged
+```
+
+Previously, Feather wasn't very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
+```
+Feather                             1 -> 0.1
+Burden                              1 -> 0.1
+```
+
+The same logic applies to Swift Swim, which affects only swimming speed and should therefore outperform Fortify Speed.
+```
+Swift Swim                          2 -> 0.5
+```
+
+With this adjustment, Shield can be used as an good addition to Unarmored skill.
+```
+Shield                              2 -> 1
+```
+
+The cost of these spell effects has been changed to be on par with Lockpicking module.
+```
+Open                                6 -> 12
+Lock                                2 -> 24
+```
+
+------------------------------------------------------------
+
+### Destruction
+
+Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
+```
+Fire Damage                         5 -> 6
+Frost Damage                        5 -> 6
+Shock Damage                        7 -> 6
+Damage Health                       8 -> 6
+Poison                              9 -> 6
+```
+
+Damage Magicka has been reduced to align with Damage Health.
+```
+Damage Magicka                      8 -> 6
+```
+
+Too costly for being useful for other things than training Hand-to-Hand.
+```
+Damage Fatigue                      4 -> 2
+```
+
+Damage Attribute was so powerful it outperformed almost every other "utility" spell. For just 40 Magicka, you could reduce the target's Strength or Intelligence to zero, leaving them unable to walk, fight, or cast spells. Now it is 3x more expensive.
+```
+Damage Attribute                    8 -> 24
+Damage Skill                        8 -> 24
+```
+
+Low-tier gear typically has a durability of around 300–500. With these changes, it can now be destroyed by a 25-cost spell.
+```
+Disintegrate Armor                  6 -> 1
+Disintegrate Weapon                 6 -> 1
+```
+
+Drain spells have been lowered to match the cost of corresponding Fortify spells. This change reflects that the 100-magnitude cap makes them mostly ineffective at higher levels. Additionally, Drain Magicka was four times more expensive than Drain Intelligence; now it's 2x cheaper. As a side effect, many potions with these negative effects will become stronger. Drain Health is unchanged, because it can still kill low level creature cheaper than Damage Health spell.
+```
+Drain Health                        4 -> Unchanged
+Drain Magicka                       4 -> 0.5
+Drain Fatigue                       2 -> 0.25
+```
+
+No changes here.
+```
+Drain Attribute                     1 -> Unchanged
+Drain skill							1 -> Unchanged
+```
+
+------------------------------------------------------------
+
+### Illusion
+
+Previously, there was little reason to use these effects over Paralyze.
+```
+Paralyze                            40 -> Unchanged
+Silence                             40 -> 20       
+Sound                               3 -> 1         
+```
+
+Charm was broken in original game, so I assume you are using real-time time dialogue mod, where duration matters.
+```
+Charm                               5 -> 2
+```
+
+------------------------------------------------------------
+
+### Mysticism
+
+Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost. Absorb Magicka and Absorb Skill, while not available in any vanilla craftable spells, have been adjusted for consistency.
+
+```
+Absorb Health                       8 -> 12
+Absorb Magicka (Unavailable)        8 -> Unchanged
+Absorb Fatigue                      4 -> Unchanged
+```
+
+```
+Absorb Attribute                    2 -> Unchanged
+Absorb Skill (Unavailable)          2 -> Unchanged	    
+```
+
+Detect spells were just too expensive.
+```
+Detect Animal                       0.75 -> 0.15
+Detect Enchantment                  1 -> 0.2    
+Detect Key                          1 -> 0.2
+```
+
+Reflect and Spell Absorption are essentially stronger versions of resist effects. They were just too costly to be useful.
+```
+Reflect                             10 -> 4
+Spell Absorption                    10 -> 4
+```
+
+------------------------------------------------------------
+
+### Restoration
+
+These changes should further encourage you to use other defensive spells, and buyable potions will be useful entire game. With my changes to alchemy, self-made potions with those effects will be much weaker.
+```
+Restore Health                      5 -> 6				
+Restore Magicka (Potions Only)      5 -> 4
+Restore Fatigue                     1 -> 2				
+```
+
+Those were ridiculously cheap before.
+```
+Restore Attribute                   1 -> 8
+Restore Skill (Unavailable)         1 -> 8
+```
+
+No changes here.
+```
+Fortify Health                      1 -> Unchanged
+```
+
+Fortify Magicka was doing less than Fortify Intelligence for the same price. Now it's 2x cheaper than Fortify Intelligence.
+```
+Fortify Magicka                     1 -> 0.5
+```
+
+This should be cheaper than Fortify Magicka.
+```
+Fortify Fatigue                     0.5 -> 0.25
+```
+
+No changes here.
+```
+Fortify Attribute                   1 -> Unchanged
+Fortify Skill                       1 -> Unchanged
+Fortify Attack                      1 -> Unchanged
+```
+
+This looks like a typo compared to other resistances.
+```
+Resist Paralysis                    0.2 -> 2
 ```
 
 ------------------------------------------------------------
