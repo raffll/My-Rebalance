@@ -899,7 +899,7 @@ Resist Frost                        2 -> 1
 Resist Shock                        2 -> 1
 Resist Poison                       2 -> 1
 Resist Magicka                      2 -> 1
-Resist Paralysis                    0,20 -> 0,5
+Resist Paralysis                    0.20 -> 0.5
 ```
 
 ------------------------------------------------------------
