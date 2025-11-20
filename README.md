@@ -2,7 +2,7 @@
 
 #### Intentions
 
-The idea is to make more options interesting, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
+The idea is to make more options interesting to use, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
 
 ------------------------------------------------------------
 
@@ -20,7 +20,7 @@ The idea is to make more options interesting, especially for the fun of role-pla
 - Patch for Purists is applied.
 - Tamriel Rebuilt is used, but not required.
 - OpenMW is preferred (vanilla may have different calculations, and MCP can fix some issues).
-- "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
+- The "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
 
 If you are using MCP, leave vanilla mechanics for creating spells:
 - Maximum spell magnitude is set to 100 for 1440 seconds. Creating spells with a magnitude over 100 is generally overpowered.
@@ -57,18 +57,8 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 
 #### History
 - 1.11
-  - Magic: Generally I'm not happy with the changes that I made here. It's better to nerf damage dealing spells than defense spells.
-    - Chameleon reverted to 1
-	- Sanctuary reverted to 1
-	- Drain Skill reverted to 1
-	- Fortify Skill reverted to 1
-    - Fortify Attack reverted to 1
-	- Absorb Skill reverted to 2
-	- Absorb Magicka reverted to 8
-    - Damage Fatigue changed to 2
-    - Restore Health changed to 6
-    - Absorb Health changed to 12
-    - Absorb Fatigue changed to 4
+  - Magic: Generally I wasn't happy with the changes that I made here. So it was completely refined.
+  - Birthsigns: Shadow converted to Ability -> Chameleon 20
 - 1.10
   - Races: Module added
   - Birthsigns: Module added
@@ -81,14 +71,14 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
     - Chameleon changed to 2
     - Sanctuary changed to 2
     - Charm changed to 2
-	- Drain Magicka changed to 0.5
+    - Drain Magicka changed to 0.5
     - Drain Fatigue changed to 0.25
-	- Absorb Health changed to 10
+    - Absorb Health changed to 10
     - Absorb Magicka changed to 10
-	- Restore Health changed to 4
+    - Restore Health changed to 4
     - Restore Magicka changed to 4
     - Restore Fatigue changed to 2
-	- Restore Attribute changed to 8
+    - Restore Attribute changed to 8
     - Restore Skill changed to 8
     - Fortify Magicka changed to 0.5
     - Fortify Fatigue changed to 0.25
@@ -494,14 +484,14 @@ Powers
         Damage Fatigue              200/Self
 ```
 
-### Shadow (TODO)
+### Shadow
 
 Very low level spell upgraded to be useful entire game.
 ```
-Powers
+Powers -> Abilities
     Moonshadow
         [REMOVED] Invisibility      60s/Self
-        [NEW] Chameleon             20/120s/Self
+        [NEW] Chameleon             20
 ```
 
 ### Tower
@@ -732,11 +722,13 @@ Demoralize Humanoid                 Mysticism -> Illusion
 
 ### Alteration
 
-Elemental shields are now worth experimenting with. Especially for the fun of killing low-level creatures. Their cost hasn't changed, since they serve a dual purpose: providing elemental resistance and dealing damage to attackers.
+Elemental shields are now worth experimenting with. Especially for the fun of killing low-level creatures.
 ```
 fElementalShieldMult                0.1 -> 1            1 point of damage for 1 point of magnitude
 
-Fire, Frost, Lightning Shield       3 -> Unchanged
+Fire Shield                         3 -> 2
+Frost Shield                        3 -> 2
+Lightning Shield                    3 -> 2
 ```
 
 Previously, Feather wasn't very useful because its cost matched Fortify Strength, so it provided five times less encumbrance increase per point. Now it is 2x more cost efficient.
@@ -767,16 +759,16 @@ Lock                                2 -> 24
 
 Elemental damage felt unbalanced—there was little reason to use anything other than Fire or Frost. To address this, I adjusted all elemental damage types to the same level.
 ```
-Fire Damage                         5 -> 6
-Frost Damage                        5 -> 6
-Shock Damage                        7 -> 6
-Damage Health                       8 -> 6
-Poison                              9 -> 6
+Fire Damage                         5 -> 8
+Frost Damage                        5 -> 8
+Shock Damage                        7 -> 8
+Damage Health                       8 -> 8
+Poison                              9 -> 8
 ```
 
 Damage Magicka has been reduced to align with Damage Health.
 ```
-Damage Magicka                      8 -> 6
+Damage Magicka                      8 -> 4
 ```
 
 Too costly for being useful for other things than training Hand-to-Hand.
@@ -806,7 +798,7 @@ Drain Fatigue                       2 -> 0.25
 No changes here.
 ```
 Drain Attribute                     1 -> Unchanged
-Drain skill							1 -> Unchanged
+Drain skill                         1 -> Unchanged
 ```
 
 ------------------------------------------------------------
@@ -815,9 +807,9 @@ Drain skill							1 -> Unchanged
 
 Previously, there was little reason to use these effects over Paralyze.
 ```
-Paralyze                            40 -> Unchanged
-Silence                             40 -> 20       
-Sound                               3 -> 1         
+Paralyze                            40 -> 80
+Silence                             40 -> 20
+Sound                               3 -> 0.5
 ```
 
 Charm was broken in original game, so I assume you are using real-time time dialogue mod, where duration matters.
@@ -832,27 +824,27 @@ Charm                               5 -> 2
 Absorb spells were previously overpowered, costing the same as their damage-based counterparts. Since each Absorb spell effectively combines two effects—damage and restore—and also can be cast on area and on your own allys, it should come at a higher cost. Absorb Magicka and Absorb Skill, while not available in any vanilla craftable spells, have been adjusted for consistency.
 
 ```
-Absorb Health                       8 -> 12
+Absorb Health                       8 -> 14
 Absorb Magicka (Unavailable)        8 -> Unchanged
 Absorb Fatigue                      4 -> Unchanged
 ```
 
 ```
 Absorb Attribute                    2 -> Unchanged
-Absorb Skill (Unavailable)          2 -> Unchanged	    
+Absorb Skill (Unavailable)          2 -> Unchanged
 ```
 
 Detect spells were just too expensive.
 ```
 Detect Animal                       0.75 -> 0.15
-Detect Enchantment                  1 -> 0.2    
+Detect Enchantment                  1 -> 0.2
 Detect Key                          1 -> 0.2
 ```
 
 Reflect and Spell Absorption are essentially stronger versions of resist effects. They were just too costly to be useful.
 ```
-Reflect                             10 -> 4
-Spell Absorption                    10 -> 4
+Reflect                             10 -> 2
+Spell Absorption                    10 -> 2
 ```
 
 ------------------------------------------------------------
@@ -861,15 +853,15 @@ Spell Absorption                    10 -> 4
 
 These changes should further encourage you to use other defensive spells, and buyable potions will be useful entire game. With my changes to alchemy, self-made potions with those effects will be much weaker.
 ```
-Restore Health                      5 -> 6				
+Restore Health                      5 -> 6
 Restore Magicka (Potions Only)      5 -> 4
-Restore Fatigue                     1 -> 2				
+Restore Fatigue                     1 -> 2
 ```
 
 Those were ridiculously cheap before.
 ```
 Restore Attribute                   1 -> 8
-Restore Skill (Unavailable)         1 -> 8
+Restore Skill (Unavailable)         1 -> Unchanged
 ```
 
 No changes here.
@@ -894,9 +886,20 @@ Fortify Skill                       1 -> Unchanged
 Fortify Attack                      1 -> Unchanged
 ```
 
-This looks like a typo compared to other resistances.
+TODO
 ```
-Resist Paralysis                    0.2 -> 2
+Resist Blight Disease               5 -> 1
+Resist Common Disease               2 -> 0.5
+```
+
+TODO
+```
+Resist Fire                         2 -> 1
+Resist Frost                        2 -> 1
+Resist Shock                        2 -> 1
+Resist Poison                       2 -> 1
+Resist Magicka                      2 -> 1
+Resist Paralysis                    0,20 -> 0,5
 ```
 
 ------------------------------------------------------------
@@ -1051,8 +1054,8 @@ Weight of Guilt
     Burden                          500/3s -> 500/30s                   1x/10x
 Fling
     Feather                         500/3s -> 500/30s                   1x/10x
-Dreugh's Grace                      
-    Swift Swim						30/20s -> 30/80s                    1x/4x
+Dreugh's Grace
+    Swift Swim                      30/20s -> 30/80s                    1x/4x
 Dalgor's Entwining
     Lock                            [8] -> [96]
 Falling First Barrier
@@ -1065,21 +1068,21 @@ Tsun's Ward
 
 ### Destruction
 ```
-Fracture Armor                      
-    Disintegrate Armor				100/2s -> 100/12s                   1x/6x
-Iron Eater                          
-    Disintegrate Weapon				1-25/2s -> 1-25/12s                 1x/6x
-Steel Eater                         
-    Disintegrate Weapon				5-30/3s -> 5-30/18s                 1x/6x
+Fracture Armor
+    Disintegrate Armor              100/2s -> 100/12s                   1x/6x
+Iron Eater
+    Disintegrate Weapon             1-25/2s -> 1-25/12s                 1x/6x
+Steel Eater
+    Disintegrate Weapon             5-30/3s -> 5-30/18s                 1x/6x
 
-Duck                                
-    Drain Fatigue					[40] -> [10]
+Duck
+    Drain Fatigue                   [40] -> [10]
 ```
 
 ### Illusion
 ```
-Voices                              
-	Sound							50/20s -> 50/60s                    1x/3x
+Voices
+    Sound                           50/20s -> 50/60s                    1x/3x
 ```
 
 ------------------------------------------------------------
