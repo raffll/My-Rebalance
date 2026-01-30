@@ -43,16 +43,16 @@ Abilities
         Resist Poison               100%
     Resist Disease
         Resist Common Disease       75%
-    [NEW] Scales
+    Scales [NEW]
         Resist Normal Weapons       25%
-    [NEW] Amphibious
+    Amphibious [NEW]
         Water Breathing
         Swift Swim                  50
-    [NEW] Magicka Bonus
+    Magicka Bonus [NEW]
         Magicka Bonus               0.2xINT
 
 Spells
-    [REMOVED] Water Breathing
+    Water Breathing [REMOVED]
         Water Breathing             120s/Self
 ```
 
