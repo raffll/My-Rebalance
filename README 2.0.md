@@ -56,7 +56,7 @@ Spells
         Water Breathing             120s/Self
 ```
 
-### Breton [No Changes]
+### Breton [UNCHANGED]
 
 ```
 Abilities
@@ -70,7 +70,7 @@ Powers
         Shield                      50/60s/Self
 ```
 
-### Dark Elf -> Dunmer [No Changes]
+### Dark Elf -> Dunmer [UNCHANGED]
 
 ```
 Abilities
@@ -181,7 +181,7 @@ Powers
         Drain Agility               100/60s/Self -> 200/60s/Self
 ```
 
-### Redguard [No Changes]
+### Redguard [UNCHANGED]
 
 ```
 Abilities
@@ -219,7 +219,7 @@ Female Height                       1 -> 0.92
 
 ## Skills - Birthsigns
 
-### Warrior [No Changes]
+### Warrior [UNCHANGED]
 
 ```
 Abilities
@@ -235,7 +235,7 @@ Abilities
         Fortify Maximum Magicka     0.5xINT -> 1.0xINT
 ```
 
-### Thief [No Changes]
+### Thief [UNCHANGED]
 
 ```
 Abilities
@@ -252,7 +252,7 @@ Spells -> Powers
         Damage Health               1/30s/Self -> 1/300s/Self
 ```
 
-### Lady [No Changes]
+### Lady [UNCHANGED]
 
 ```
 Abilities
@@ -283,7 +283,7 @@ Abilities
         Weakness to Fire            100% -> 25%
 ```
 
-### Apprentice [No Changes]
+### Apprentice [UNCHANGED]
 
 ```
 Abilities
@@ -316,7 +316,7 @@ Powers
         Restore Health              100/Self -> 200/Self
 ```
 
-### Lover [No Changes]
+### Lover [UNCHANGED]
 
 ```
 Abilities
@@ -509,6 +509,55 @@ Demoralize Humanoid                 Mysticism -> Illusion
 ------------------------------------------------------------
 
 ## Magic - Burden & Feather
+
+```
+Feather                             1 -> 0.1
+Burden                              1 -> 0.1
+```
+
+#### Potions
+```
+Bargain Potion of Burden            5/8s -> 50/150s
+Cheap Potion of Burden              8/15s -> 80/240s
+Standard Potion of Burden           10/30s -> 100/300s
+Quality Potion of Burden            15/45s -> 150/450s
+Exclusive Potion of Burden          20/60s -> 200/600s
+
+Bargain Potion of Feather           5/8s -> 50/150s
+Cheap Potion of Feather             8/15s -> 80/240s
+Quality Potion of Feather           15/45s -> 150/450s
+Exclusive Potion of Feather         20/60s -> 200/600s
+```
+
+#### Spells
+```
+Burden Touch                        20/10s/Touch -> 100/20s             5x/2x
+Burden                              20/10s/Target -> 100/20s
+
+Heavy Burden Touch                  40/10s/Touch -> 200/20s
+Heavy Burden                        40/10s/Target -> 200/20s
+
+Crushing Burden Touch               60/10s/Touch -> 300/20s
+Crushing Burden                     60/10s/Target -> 300/20s
+
+Weary                               30-60/10s/Target -> 150-300/20s     5x/2x
+Cruel Weary                         50-70/10s/Target -> 250-350/20s
+Dire Weary                          60-90/10s/Target -> 300-450/20s
+
+*Burden of Sin                      40/10s/Target -> 400/10s            10x/1x
+*Great Burden of Sin                40-60/20s/Touch -> 400-600/20s
+Crushing Burden of Sin              60-80/30s/Target -> 600-800/30s
+
+* swapped names
+```
+
+```
+Feather                             20/10s/Self -> 100/20s              5x/2x
+Strong Feather                      50/10s/Self -> 250/20s              5x/2x
+Great Feather                       100/10s/Self -> 500/20s             5x/2x
+
+Ulms' Juicedaw Feather              50/10s/Self -> 500/10s              10x/1x
+```
 
 ------------------------------------------------------------
 
