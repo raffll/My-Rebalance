@@ -1,128 +1,5 @@
 # Remastered Rebalance Redux
 
-#### Intentions
-
-The idea is to make more options interesting to use, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, lockpicking, traps, alchemy, enchanting, and many more!
-
-------------------------------------------------------------
-
-#### Philosophy
-
-- Simplicity - I prefer to change as little as possible to achieve the goal. It's easier to maintain and more compatible.
-- Modularity - Everything is divided into separate modules, so you can mix and match with other mods.
-- Purist friendly - I'm trying to avoid arbitrary decisions. Most changes are multipliers or additions to existing values.
-- Math-driven - Seriously, I'm doing real calculations here.
-
-------------------------------------------------------------
-
-#### Assumptions
-
-- Patch for Purists is applied.
-- Tamriel Rebuilt is used, but not required.
-- OpenMW is preferred (vanilla may have different calculations, and MCP can fix some issues).
-- The "Use Magic Item Animation" setting is on in OpenMW (or equivalent in MCP).
-
-If you are using MCP, leave vanilla mechanics for creating spells:
-- Maximum spell magnitude is set to 100 for 1440 seconds. Creating spells with a magnitude over 100 is generally overpowered.
-- Self-made spells have one additional second added when calculating cost. A 100/1s spell is much more powerful than a 1/100s spell at the same cost. In vanilla, a 100/1s spell costs twice as much.
-- Only one spell effect per spell is allowed.
-
-Ideally, a mod that allows a higher magnitude cap for certain effects like Feather is needed. Some spells shouldn't be allowed to have a 1-second duration, such as Charm. Summon spells should allow summoning multiple skeletons in one spell. Until such mods exist, balancing the spell system is impossible when these "cheats" are enabled.
-
-------------------------------------------------------------
-
-#### Recommendations
-
-- Using some form of real-time dialogue mod with NPCs is recommended, primarily to prevent persuasion exploits.
-- I also recommend my other mod: https://www.nexusmods.com/morrowind/mods/55507, which sets the skills and attribute caps, limit potion consumption, and training sessions per level. All changes below are made with those limits in mind.
-
-------------------------------------------------------------
-
-#### Inspirations
-
-- BTB's Game Improvements
-- Thief Experience Overhaul
-- HotFusion's Economy Adjuster
-- Spell Effects Rebalance: https://www.nexusmods.com/morrowind/mods/52858
-- Magicka Awakening - Magicka Costs Adjustments: https://www.nexusmods.com/morrowind/mods/51723
-- Gentleman's Level-Up and Progression Rebalance: https://www.nexusmods.com/morrowind/mods/54569
-
-------------------------------------------------------------
-
-#### Compatibility
-
-- If you are using **Morag Tong Polished**, make sure to also enable **Corrupted Crime - Morag Tong Polished.esp** at the end of your load order.
-
-------------------------------------------------------------
-
-#### History
-- 1.11
-  - Magic: Generally I wasn't happy with the changes that I made here. So it was completely refined.
-  - Birthsigns: Shadow converted to Ability -> Chameleon 20
-- 1.10
-  - Races: Module added
-  - Birthsigns: Module added
-  - Skills: Security reverted back to Intelligence
-  - Alchemy TR: Module added
-  - Magic:
-    - Minor PfP fixes forwarded
-    - Jump reverted to 3
-    - Slowfall reverted to 3
-    - Chameleon changed to 2
-    - Sanctuary changed to 2
-    - Charm changed to 2
-    - Drain Magicka changed to 0.5
-    - Drain Fatigue changed to 0.25
-    - Absorb Health changed to 10
-    - Absorb Magicka changed to 10
-    - Restore Health changed to 4
-    - Restore Magicka changed to 4
-    - Restore Fatigue changed to 2
-    - Restore Attribute changed to 8
-    - Restore Skill changed to 8
-    - Fortify Magicka changed to 0.5
-    - Fortify Fatigue changed to 0.25
-    - Fortify Attack changed to 4
-  - Spells TD: Adjusted to changes in magic
-- 1.9
-  - Barter: Mages Guild's travel cost changed from 10x to 5x
-  - Barter: Merchant creatures' gold decreased 10x
-  - Magic: All elemental damage effects cost set to 6
-  - Spells TD: Module added
-  - Enchantments: Module added
-- 1.8
-  - Magic: Open and Lock spell effects added
-  - Magic: Drain Magicka changed from 0.75 to 0.8 (now it's exactly 5x cheaper)
-  - Magic: Sound changed from 0.8 to 1 (now it's exactly 3x cheaper)
-  - Magic: Fortify Magicka changed from 0.75 to 0.8 (to be on par with Drain Magicka)
-  - Lockpicking: Lock changed from 60 to 24
-  - Traps: fTrapCostMult changed from -1 to -0.75 (now it scales more like lockpicking)
-  - Traps: Trap costs have been revisited (it doesn't make sense to auto-calculate them; the values were too low anyway, and trap difficulty can be independent from spell power)
-  - Potions TD: Module added
-- 1.7
-  - Potions and Spells: Modules in progress...
-  - Lockpicking: Lock spell effect 30x more expensive
-- 1.6
-  - Traps: Costs readjusted
-  - Crime: Bounties have been reduced from the previous version (they are now only 5 times higher than vanilla values)
-  - Potions: Module added
-  - Spells: Module added
-- 1.5
-  - Magic: Module remastered
-- 1.4
-  - Magic: Module revisited
-- 1.3
-  - Magic: Resist Paralysis spell effect 10x more expensive
-  - Crime: Module added
-- 1.2
-  - Lockpicking and Traps: Split into separate esps
-  - Alchemy: Adjusted
-  - Barter: Mages Guild's travel 10x more expensive
-- 1.1
-  - Magic: Elemental damage effects costs increased
-  - Magic: Detect spells effects 5x cheaper
-  - Alchemy: Secret Master's apparatuses 5x more expensive
-
 ------------------------------------------------------------
 
 ## Skills
@@ -130,6 +7,8 @@ Ideally, a mod that allows a higher magnitude cap for certain effects like Feath
 ```
 Armorer                             Strength -> Endurance
 ```
+
+#### Attributes Table
 
 ```
 Strength        5 -> 4              Acrobatics, Axe, Blunt, Long Blade
