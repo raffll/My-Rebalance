@@ -56,7 +56,7 @@ Spells
         Water Breathing             120s/Self
 ```
 
-### Breton [NO CHANGES]
+### Breton [No Changes]
 
 ```
 Abilities
@@ -70,7 +70,7 @@ Powers
         Shield                      50/60s/Self
 ```
 
-### Dark Elf -> Dunmer [NO CHANGES]
+### Dark Elf -> Dunmer [No Changes]
 
 ```
 Abilities
@@ -181,7 +181,7 @@ Powers
         Drain Agility               100/60s/Self -> 200/60s/Self
 ```
 
-### Redguard
+### Redguard [No Changes]
 
 ```
 Abilities
@@ -219,7 +219,7 @@ Female Height                       1 -> 0.92
 
 ## Skills - Birthsigns
 
-### Warrior
+### Warrior [No Changes]
 
 ```
 Abilities
@@ -235,7 +235,7 @@ Abilities
         Fortify Maximum Magicka     0.5xINT -> 1.0xINT
 ```
 
-### Thief
+### Thief [No Changes]
 
 ```
 Abilities
@@ -252,7 +252,7 @@ Spells -> Powers
         Damage Health               1/30s/Self -> 1/300s/Self
 ```
 
-### Lady
+### Lady [No Changes]
 
 ```
 Abilities
@@ -283,7 +283,7 @@ Abilities
         Weakness to Fire            100% -> 25%
 ```
 
-### Apprentice
+### Apprentice [No Changes]
 
 ```
 Abilities
@@ -316,7 +316,7 @@ Powers
         Restore Health              100/Self -> 200/Self
 ```
 
-### Lover
+### Lover [No Changes]
 
 ```
 Abilities
@@ -369,12 +369,10 @@ fMaxWalkSpeedCreature               300 -> 375
 
 ```
 fBarterGoldResetDelay               24 -> 720           30 days to reset merchants' gold
+fMagesGuildTravel                   10 -> 50            5x more expensive Mages Guild travel
 ```
 
-```
-fMagesGuildTravel                   10 -> 50            5x more expensive
-```
-
+#### Merchants Gold
 ```
 Creeper                             5000gp -> 500gp
 Mudcrab                             10000gp -> 1000gp
@@ -391,9 +389,6 @@ iCrimePickPocket                    25 -> 100
 iCrimeTresspass                     5 -> 25
 
 iDaysinPrisonMod                    100 -> 500          Days in prison same as in vanilla
-```
-
-```
 iCrimeThreshold                     1000 -> 200
 ```
 
@@ -407,9 +402,6 @@ Death Warrant                       5000 -> 5201        You can kill only one pe
 
 ```
 iPickMaxChance                      75 -> 95            ~10% chance of being caught anyway
-```
-
-```
 fPickPocketMod                      0.3 -> 0            Any item available to steal
 ```
 
@@ -421,11 +413,13 @@ fPickPocketMod                      0.3 -> 0            Any item available to st
 fPickLockMult                       -1 -> -1.25         Locks harder to unlock
 ```
 
+#### Spell Effects
 ```
 Open                                6 -> 12             100pts spell will cost you 120 Magicka
 Lock                                2 -> 24
 ```
 
+#### Spells
 ```
 Open                                         20pts      Unchanged, unavailable in vanilla
 Ondusi's Open Door                  50pts -> 40pts
@@ -434,6 +428,7 @@ Great Open                          50pts -> 80pts      Unavailable in vanilla
 Wild Open                                    1-100pts   Unchanged
 ```
 
+#### Scrolls
 ```
 Scroll of Ondusi's Unhinging        73gp -> 273gp       Available in stores
 Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot later in the game
@@ -447,20 +442,21 @@ Scroll of Ekash's Lock Splitter     100pts -> 80pts     Available in random loot
 fTrapCostMult                       0 -> -0.75          Trap spell cost taken into account
 ```
 
+#### Common Trap Costs
 ```
-Fire Trap                           3 -> 30             2-20/3s
-Frost Trap                          3 -> 35             2-20/3s
-Shock Trap                          5 -> 40             2-20/3s
-Lifeforce Trap                      8 -> 45             2-20/3s
-Poison Trap                         16 -> 50            1-5/60s
+Fire Trap                           3 -> 30  
+Frost Trap                          3 -> 35  
+Shock Trap                          5 -> 40  
+Lifeforce Trap                      8 -> 45  
+Poison Trap                         16 -> 50 
 
-Paralysis Trap                      13 -> 55            10s
-Silence Trap                        37 -> 60            30s
+Paralysis Trap                      13 -> 55 
+Silence Trap                        37 -> 60 
 
-Master Fire Trap                    3 -> 65             20-30/10s
-Master Frost Trap                   3 -> 70             20-30/10s
-Master Shock Trap                   5 -> 75             20-30/10s
-Master Poison Trap                  16 -> 100           5-10/50s
+Master Fire Trap                    3 -> 65  
+Master Frost Trap                   3 -> 70  
+Master Shock Trap                   5 -> 75  
+Master Poison Trap                  16 -> 100
 ```
 
 ------------------------------------------------------------
@@ -471,6 +467,7 @@ Master Poison Trap                  16 -> 100           5-10/50s
 fPotionStrengthMult                 0.5 -> 0.25         2x smaller magnitude, duration and price
 ```
 
+#### Apparatuses Price
 ```
 apparatus_sm_mortar_01          Secret Master's Mortar & Pestle     6000 -> 30000
 apparatus_sm_alembic_01         Secret Master's Alembic             1600 -> 8000
