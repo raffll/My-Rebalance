@@ -43,16 +43,16 @@ Abilities
         Resist Poison               100%
     Resist Disease
         Resist Common Disease       75%
-    Scales [NEW]
+    [NEW] Scales 
         Resist Normal Weapons       25%
-    Amphibious [NEW]
+    [NEW] Amphibious 
         Water Breathing
         Swift Swim                  50
-    Magicka Bonus [NEW]
+    [NEW] Magicka Bonus 
         Magicka Bonus               0.2xINT
 
 Spells
-    Water Breathing [REMOVED]
+    [REMOVED] Water Breathing 
         Water Breathing             120s/Self
 ```
 
@@ -383,13 +383,13 @@ Mudcrab                             10000gp -> 1000gp
 ## Crime
 
 ```
-iCrimeKilling                       1000 -> 5000
+iCrimeKilling                       1000 -> 5000		Crime is 5x more costly 
 iCrimeAttack                        40 -> 200
-iCrimePickPocket                    25 -> 100
+iCrimePickPocket                    25 -> 125
 iCrimeTresspass                     5 -> 25
 
-iDaysinPrisonMod                    100 -> 500          Days in prison same as in vanilla
-iCrimeThreshold                     1000 -> 200
+iDaysinPrisonMod                    100 -> 500          Days in prison stay the same as in vanilla
+iCrimeThreshold                     1000 -> 200			Guards will pursue you after just one attack
 ```
 
 ```
