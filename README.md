@@ -5,9 +5,6 @@
 ## Skills
 ```
 Armorer                             Strength -> Endurance
-
-Acrobatics (Jump)					0.15 -> 0.10
-Athletics (Second of Running)		0.02 -> 0.01
 ```
 
 ------------------------------------------------------------
