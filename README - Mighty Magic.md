@@ -9,7 +9,11 @@ Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 
 ------------------------------------------------------------
 
-## Burden
+## Alteration
+
+------------------------------------------------------------
+
+### Burden
 ```
 Burden                              1 -> 0.1
 ```
@@ -49,7 +53,7 @@ Black Jinx                          25-100/120s                 !
 Spear of the Hunter                 50/10s -> 500/10s           !
 ```
 
-#### Tamriel Data
+**Tamriel Data**
 ```
 Cheap Potion of Burden              8/15s -> 80/240s
 Quality Potion of Burden            15/45s -> 150/450s
@@ -62,7 +66,7 @@ Weight of Guilt                     500/3s -> 500/30s
 
 ------------------------------------------------------------
 
-## Feather
+### Feather
 ```
 Feather                             1 -> 0.1
 ```
@@ -81,7 +85,7 @@ Great Feather                       100/10s -> 500/20s
 Ulms' Juicedaw Feather              50/10s -> 500/10s
 ```
 
-#### Tamriel Data
+**Tamriel Data**
 ```
 Cheap Potion of Feather             8/15s -> 80/240s
 Standard Potion of Feather          10/30s -> 100/300s
@@ -95,7 +99,32 @@ Zenithar's Arms                     50/10s -> 500/10s
 
 ------------------------------------------------------------
 
-## Disintegrate Armor
+## Swift Swim 
+```
+Swift Swim                          2 -> 0.5					!
+```
+
+```
+Bargain Potion of Swift Swim        1/8s -> 5/8s				!
+```
+
+```
+Buoyancy							1/20s						!
+Swimmer's Blessing					5/30s						!
+```
+
+**Tamriel Data**
+```
+Dreugh's Grace						30/20s -> 30/80s			!
+```
+
+------------------------------------------------------------
+
+## Destruction
+
+------------------------------------------------------------
+
+### Disintegrate Armor
 ```
 Disintegrate Armor                  6 -> 1
 ```
@@ -104,7 +133,7 @@ Disintegrate Armor                  6 -> 1
 Armor Eater                         10-30/1s -> 60-180/1s
 ```
 
-#### Tamriel Data
+**Tamriel Data**
 ```
 Shadow Rust                         1-5/20s -> 6-30/20s
 Fracture Armor                      100/2s -> 600/2s
@@ -112,7 +141,7 @@ Fracture Armor                      100/2s -> 600/2s
 
 ------------------------------------------------------------
 
-## Disintegrate Weapon
+### Disintegrate Weapon
 ```
 Disintegrate Weapon                 6 -> 1
 ```
@@ -121,7 +150,7 @@ Disintegrate Weapon                 6 -> 1
 Weapon Eater                        6-25/1s -> 36-150/1s
 ```
 
-#### Tamriel Data
+**Tamriel Data**
 ```
 Iron Eater                          1-25/2s -> 6-150/2s
 Steel Eater                         5-30/3s -> 30-180/3s
