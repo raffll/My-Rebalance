@@ -7,7 +7,6 @@
 ------------------------------------------------------------
 
 ### Argonian
-
 ```
 Athletics                       +15 -> +5
 Alchemy                         +5
@@ -38,7 +37,6 @@ Spells
 ```
 
 ### Breton
-
 ```
 Abilities
     Resist Magicka
@@ -52,7 +50,6 @@ Powers
 ```
 
 ### Dark Elf -> Dunmer
-
 ```
 Abilities
     Resist Fire
@@ -64,7 +61,6 @@ Powers
 ```
 
 ### High Elf -> Altmer
-
 ```
 Abilities
     Resist Disease
@@ -82,7 +78,6 @@ Abilities
 ```
 
 ### Imperial
-
 ```
 Abilities
     [NEW] Star of the West
@@ -95,7 +90,6 @@ Powers
 ```
 
 ### Khajiit
-
 ```
 Acrobatics                      +15 -> +5
 Athletics                       +5
@@ -128,7 +122,6 @@ Spells
 ```
 
 ### Nord
-
 ```
 Abilities
     Resist Shock
@@ -147,7 +140,6 @@ Powers
 ```
 
 ### Orc -> Orsimer
-
 ```
 Abilities
     Resist Magicka
@@ -162,8 +154,6 @@ Powers
 ```
 
 ### Redguard
-
-**No Changes!**
 ```
 Abilities
     Resist Poison
@@ -181,7 +171,6 @@ Powers
 ```
 
 ### Wood Elf -> Bosmer
-
 ```
 Abilities
     Resist Disease
@@ -203,7 +192,6 @@ Female Height                       1 -> 0.92
 ------------------------------------------------------------
 
 ### Warrior
-
 ```
 Abilities
     Warwyrd
@@ -211,7 +199,6 @@ Abilities
 ```
 
 ### Mage
-
 ```
 Abilities
     Fay
@@ -219,7 +206,6 @@ Abilities
 ```
 
 ### Thief
-
 ```
 Abilities
     Akaviri Danger-sense
@@ -227,7 +213,6 @@ Abilities
 ```
 
 ### Serpent
-
 ```
 Spells -> Powers
     Star-Curse
@@ -236,7 +221,6 @@ Spells -> Powers
 ```
 
 ### Lady
-
 ```
 Abilities
     Lady's Favor
@@ -246,7 +230,6 @@ Abilities
 ```
 
 ### Steed
-
 ```
 Abilities
     Charioteer
@@ -255,7 +238,6 @@ Abilities
 ```
 
 ### Lord
-
 ```
 Spells -> Powers
     Blood of the North
@@ -267,7 +249,6 @@ Abilities
 ```
 
 ### Apprentice
-
 ```
 Abilities
     Elfborn
@@ -276,7 +257,6 @@ Abilities
 ```
 
 ### Atronach
-
 ```
 Abilities
     Wombburn
@@ -286,7 +266,6 @@ Abilities
 ```
 
 ### Ritual
-
 ```
 Spells
     Blessed Word
@@ -300,7 +279,6 @@ Powers
 ```
 
 ### Lover
-
 ```
 Abilities
     Mooncalf
@@ -313,7 +291,6 @@ Powers
 ```
 
 ### Shadow
-
 ```
 Powers -> Abilities
     Moonshadow
@@ -322,7 +299,6 @@ Powers -> Abilities
 ```
 
 ### Tower
-
 ```
 Spells -> Abilities
     Beggar's Nose
