@@ -161,8 +161,9 @@ Powers
         Drain Agility               100/60s/Self -> 200/60s/Self
 ```
 
-### Redguard [UNCHANGED]
+### Redguard
 
+**No Changes!**
 ```
 Abilities
     Resist Poison
