@@ -9,14 +9,13 @@
 ### Argonian
 
 ```
-Skill Bonuses
-    Athletics                       +15 -> +5
-    Alchemy                         +5
-    Illusion                        +5
-    Medium Armor                    +5
-    Mysticism                       +5
-    Spear                           +5 -> +15
-    Unarmored                       +5
+Athletics                       +15 -> +5
+Alchemy                         +5
+Illusion                        +5
+Medium Armor                    +5
+Mysticism                       +5
+Spear                           +5 -> +15
+Unarmored                       +5
 ```
 
 ```
@@ -25,16 +24,16 @@ Abilities
         Resist Poison               100%
     Resist Disease
         Resist Common Disease       75%
-    [NEW] Scales 
+    [NEW] Scales
         Resist Normal Weapons       25%
-    [NEW] Amphibious 
+    [NEW] Amphibious
         Water Breathing
         Swift Swim                  50
-    [NEW] Magicka Bonus 
+    [NEW] Magicka Bonus
         Magicka Bonus               0.2xINT
 
 Spells
-    Water Breathing [REMOVED]
+    [REMOVED] Water Breathing
         Water Breathing             120s/Self
 ```
 
@@ -98,14 +97,13 @@ Powers
 ### Khajiit
 
 ```
-Skill Bonuses
-    Acrobatics                      +15 -> +5
-    Athletics                       +5
-    Hand-to-hand                    +5 -> +15
-    Light Armor                     +5
-    Security                        +5
-    Short Blade                     +5
-    Sneak                           +5
+Acrobatics                      +15 -> +5
+Athletics                       +5
+Hand-to-hand                    +5 -> +15
+Light Armor                     +5
+Security                        +5
+Short Blade                     +5
+Sneak                           +5
 ```
 
 ```
@@ -126,7 +124,7 @@ Powers
 
 Spells
     [REMOVED] Eye of Night
-        Night Eye                   50/30s/Self -> 50/120s/Self
+        Night Eye                   50/30s/Self
 ```
 
 ### Nord
