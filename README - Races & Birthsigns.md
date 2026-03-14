@@ -135,8 +135,8 @@ Powers
     [REMOVED] Woad
         Shield                      30/60s/Self
     [NEW] Blizzard Barrier
-        Lightning Shield            25/30s/Self
-        Frost Shield                25/30s/Self
+        Lightning Shield            25/60s/Self						!
+        Frost Shield                25/60s/Self
 ```
 
 ### Orc -> Orsimer
@@ -209,7 +209,7 @@ Abilities
 ```
 Abilities
     Akaviri Danger-sense
-        Sanctuary                   10
+        Sanctuary                   10								!
 ```
 
 ### Serpent
@@ -269,7 +269,7 @@ Abilities
 ```
 Spells
     Blessed Word
-        Turn Undead                 100/30s/Target -> 100/60s/50ft/Target
+        Turn Undead                 100/30s/Target -> 100/60s/50ft/Target			!
     [REMOVED] Blessed Touch
         Turn Undead                 100/30s/Touch
 
@@ -295,7 +295,7 @@ Powers
 Powers -> Abilities
     Moonshadow
         [REMOVED] Invisibility      60s/Self
-        [NEW] Chameleon             20
+        [NEW] Chameleon             20/120s						!
 ```
 
 ### Tower
@@ -308,5 +308,5 @@ Spells -> Abilities
 
 Powers
     Tower Key
-        Open                        50/Touch -> 80/Touch
+        Open                        50/Touch -> 100/Touch		!
 ```
