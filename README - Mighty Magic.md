@@ -2,37 +2,26 @@
 
 ------------------------------------------------------------
 
-## Burden & Feather
+## Enchantments
 ```
-Feather                             1 -> 0.1
+Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
+```
+
+------------------------------------------------------------
+
+## Burden
+```
 Burden                              1 -> 0.1
 ```
 
-#### Potions
 ```
 Bargain Potion of Burden            5/8s -> 50/150s
 Cheap Potion of Burden              8/15s -> 80/240s
 Standard Potion of Burden           10/30s -> 100/300s
 Quality Potion of Burden            15/45s -> 150/450s
 Exclusive Potion of Burden          20/60s -> 200/600s
-
-Bargain Potion of Feather           5/8s -> 50/150s
-Cheap Potion of Feather             8/15s -> 80/240s
-Quality Potion of Feather           15/45s -> 150/450s
-Exclusive Potion of Feather         20/60s -> 200/600s
 ```
 
-#### Potions - Tamriel Data
-```
-Cheap Potion of Burden              8/15s -> 80/240s
-Quality Potion of Burden            15/45s -> 150/450s
-
-Cheap Potion of Feather             8/15s -> 80/240s
-Standard Potion of Feather          10/30s -> 100/300s
-Quality Potion of Feather           15/45s -> 150/450s
-```
-
-#### Spells
 ```
 Burden Touch                        20/10s -> 100/20s
 Burden                              20/10s -> 100/20s
@@ -47,49 +36,93 @@ Dire Weary                          60-90/10s -> 300-450/20s
 *Great Burden of Sin                40-60/20s -> 400-600/20s
 Crushing Burden of Sin              60-80/30s -> 600-800/30s
 
+* swapped names
+```
+
+```
+Scroll of Baleful Suffering         0−25/30s -> 0-250/30s       !
+Scroll of Fader's Leaden Flesh      0−50/30s -> 0-500/30s       !
+```
+
+```
+Black Jinx                          25-100/120s                 !
+Spear of the Hunter                 50/10s -> 500/10s           !
+```
+
+#### Tamriel Data
+```
+Cheap Potion of Burden              8/15s -> 80/240s
+Quality Potion of Burden            15/45s -> 150/450s
+```
+
+```
+Shadow Rust                         1-15/20s -> 10-150/20s
+Weight of Guilt                     500/3s -> 500/30s
+```
+
+------------------------------------------------------------
+
+## Feather
+```
+Feather                             1 -> 0.1
+```
+
+```
+Bargain Potion of Feather           5/8s -> 50/150s
+Cheap Potion of Feather             8/15s -> 80/240s
+Quality Potion of Feather           15/45s -> 150/450s
+Exclusive Potion of Feather         20/60s -> 200/600s
+```
+
+```
 Feather                             20/10s -> 100/20s
 Strong Feather                      50/10s -> 250/20s
 Great Feather                       100/10s -> 500/20s
 Ulms' Juicedaw Feather              50/10s -> 500/10s
-
-* swapped names
 ```
 
-#### Spells - Tamriel Data
+#### Tamriel Data
 ```
-Shadow Rust                         1-15/20s -> 10-150/20s
-Weight of Guilt                     500/3s -> 500/30s
+Cheap Potion of Feather             8/15s -> 80/240s
+Standard Potion of Feather          10/30s -> 100/300s
+Quality Potion of Feather           15/45s -> 150/450s
+```
 
+```
 Fling                               500/3s -> 500/30s
 Zenithar's Arms                     50/10s -> 500/10s
 ```
 
 ------------------------------------------------------------
 
-## Disintegrate
+## Disintegrate Armor
 ```
 Disintegrate Armor                  6 -> 1
-Disintegrate Weapon                 6 -> 1
 ```
 
-#### Spells
 ```
 Armor Eater                         10-30/1s -> 60-180/1s
-Weapon Eater                        6-25/1s -> 36-150/1s
 ```
 
-#### Spells - Tamriel Data
+#### Tamriel Data
 ```
 Shadow Rust                         1-5/20s -> 6-30/20s
 Fracture Armor                      100/2s -> 600/2s
-
-Iron Eater                          1-25/2s -> 6-150/2s
-Steel Eater                         5-30/3s -> 30-180/3s
 ```
 
 ------------------------------------------------------------
 
-## Enchantments
+## Disintegrate Weapon
 ```
-Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
+Disintegrate Weapon                 6 -> 1
+```
+
+```
+Weapon Eater                        6-25/1s -> 36-150/1s
+```
+
+#### Tamriel Data
+```
+Iron Eater                          1-25/2s -> 6-150/2s
+Steel Eater                         5-30/3s -> 30-180/3s
 ```
