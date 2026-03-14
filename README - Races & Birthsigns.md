@@ -8,13 +8,13 @@
 
 ### Argonian
 ```
-Athletics                       +15 -> +5
-Alchemy                         +5
-Illusion                        +5
-Medium Armor                    +5
-Mysticism                       +5
-Spear                           +5 -> +15
-Unarmored                       +5
+Athletics                       	15 -> 5
+Alchemy                         	5
+Illusion                        	5
+Medium Armor                    	5
+Mysticism                       	5
+Spear                           	5 -> 15
+Unarmored                       	5
 ```
 
 ```
@@ -91,19 +91,19 @@ Powers
 
 ### Khajiit
 ```
-Acrobatics                      +15 -> +5
-Athletics                       +5
-Hand-to-hand                    +5 -> +15
-Light Armor                     +5
-Security                        +5
-Short Blade                     +5
-Sneak                           +5
+Acrobatics                      	15 -> 5
+Athletics                       	5
+Hand-to-hand                    	5 -> 15
+Light Armor                     	5
+Security                        	5
+Short Blade                     	5
+Sneak                           	5
 ```
 
 ```
 Abilities
     [NEW] Resist Frost
-        Resist Frost                25
+        Resist Frost                25%
     [NEW] Feline Grace
         Jump                        5
         Slowfall                    1
