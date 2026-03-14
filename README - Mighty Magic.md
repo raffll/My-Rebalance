@@ -74,17 +74,17 @@ Disintegrate Weapon                 6 -> 1
 
 #### Spells
 ```
-Armor Eater                         10-30/1s -> 10-30/6s
-Weapon Eater                        6-25/1s -> 6-25/6s
+Armor Eater                         10-30/1s -> 60-180/1s
+Weapon Eater                        6-25/1s -> 36-150/1s
 ```
 
 #### Spells - Tamriel Data
 ```
 Shadow Rust                         1-5/20s -> 6-30/20s
-Fracture Armor                      100/2s -> 100/12s
+Fracture Armor                      100/2s -> 600/2s
 
-Iron Eater                          1-25/2s -> 1-25/12s
-Steel Eater                         5-30/3s -> 5-30/18s
+Iron Eater                          1-25/2s -> 6-150/2s
+Steel Eater                         5-30/3s -> 30-180/3s
 ```
 
 ------------------------------------------------------------
