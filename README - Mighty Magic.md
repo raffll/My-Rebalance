@@ -133,6 +133,10 @@ Disintegrate Armor                  6 -> 1
 Armor Eater                         10-30/1s -> 60-180/1s
 ```
 
+```
+Scroll of Baleful Suffering         5 pts for 5 secs       !
+```
+
 **Tamriel Data**
 ```
 Shadow Rust                         1-5/20s -> 6-30/20s
@@ -148,6 +152,10 @@ Disintegrate Weapon                 6 -> 1
 
 ```
 Weapon Eater                        6-25/1s -> 36-150/1s
+```
+
+```
+Scroll of Baleful Suffering         5 pts for 5 secs       !
 ```
 
 **Tamriel Data**
