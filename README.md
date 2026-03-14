@@ -5,6 +5,10 @@
 ## Skills
 ```
 Armorer                             Strength -> Endurance
+
+fMajorSkillBonus                    0.75 -> 1.5
+fMinorSkillBonus                    1 -> 2
+fMiscSkillBonus                     1.25 -> 2.5
 ```
 
 ------------------------------------------------------------
@@ -63,7 +67,6 @@ fPickLockMult                       -1 -> -1.25
 #### Spell Effects
 ```
 Open                                6 -> 12
-Lock                                2 -> 24
 ```
 
 #### Spell Magnitudes
@@ -94,18 +97,18 @@ fTrapCostMult                       0 -> -0.75
 
 #### Common Trap Costs
 ```
-Fire Trap                           3 -> 30  
-Frost Trap                          3 -> 35  
-Shock Trap                          5 -> 40  
-Lifeforce Trap                      8 -> 45  
-Poison Trap                         16 -> 50 
+Fire Trap                           3 -> 30
+Frost Trap                          3 -> 35
+Shock Trap                          5 -> 40
+Lifeforce Trap                      8 -> 45
+Poison Trap                         16 -> 50
 
-Paralysis Trap                      13 -> 55 
-Silence Trap                        37 -> 60 
+Paralysis Trap                      13 -> 55
+Silence Trap                        37 -> 60
 
-Master Fire Trap                    3 -> 65  
-Master Frost Trap                   3 -> 70  
-Master Shock Trap                   5 -> 75  
+Master Fire Trap                    3 -> 65
+Master Frost Trap                   3 -> 70
+Master Shock Trap                   5 -> 75
 Master Poison Trap                  16 -> 100
 ```
 
@@ -128,8 +131,16 @@ Secret Master's Retort              1000 -> 5000
 
 ## Enchant
 ```
-fMagicItemRechargePerSecond     	0.05 -> 0
-fEnchantmentChanceMult          	3 -> 0.6
-	
-sMagicInsufficientCharge        	"Item does not have enough charge." -> ""
+fMagicItemRechargePerSecond         0.05 -> 0
+fEnchantmentChanceMult              3 -> 0.6
+
+sMagicInsufficientCharge            "Item does not have enough charge." -> ""
+```
+
+------------------------------------------------------------
+
+## Magic
+```
+sEffectSlowFall                     SlowFall -> Slowfall
+fElementalShieldMult                0.1 -> 1
 ```
