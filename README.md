@@ -40,13 +40,13 @@ Mudcrab                             10000 -> 1000
 ## Crime
 ```
 iCrimeKilling                       1000 -> 5000
-iCrimeAttack                        40 -> 500
-iCrimePickPocket                    25 -> 125
-iCrimeTresspass                     5 -> 250
+iCrimeAttack                        40 -> 1000
+iCrimePickPocket                    25 -> 250
+iCrimeTresspass                     5 -> 500
 
 iDaysinPrisonMod                    100 -> 500
 
-Death Warrant                       5000 -> 5501
+Death Warrant                       5000 -> 20000
 ```
 
 ------------------------------------------------------------

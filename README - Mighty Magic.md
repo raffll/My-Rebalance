@@ -44,13 +44,13 @@ Crushing Burden of Sin              60-80/30s -> 600-800/30s
 ```
 
 ```
-Scroll of Baleful Suffering         0−25/30s -> 0-250/30s       !
-Scroll of Fader's Leaden Flesh      0−50/30s -> 0-500/30s       !
+Scroll of Baleful Suffering         0−25/30s -> 0-250/30s
+Scroll of Fader's Leaden Flesh      0−50/30s -> 0-500/30s
 ```
 
 ```
-Black Jinx                          25-100/120s                 !
-Spear of the Hunter                 50/10s -> 500/10s           !
+Black Jinx                          25-100/120s -> 250-1000/120s
+Spear of the Hunter                 50/10s -> 500/10s
 ```
 
 **Tamriel Data**
@@ -99,23 +99,23 @@ Zenithar's Arms                     50/10s -> 500/10s
 
 ------------------------------------------------------------
 
-## Swift Swim 
+## Swift Swim
 ```
-Swift Swim                          2 -> 0.5					!
-```
-
-```
-Bargain Potion of Swift Swim        1/8s -> 5/8s				!
+Swift Swim                          2 -> 0.5
 ```
 
 ```
-Buoyancy							1/20s						!
-Swimmer's Blessing					5/30s						!
+Bargain Potion of Swift Swim        1/8s -> 5/8s
+```
+
+```
+Buoyancy                            1/20s -> 20/20s
+Swimmer's Blessing                  5/30s -> 50/30s
 ```
 
 **Tamriel Data**
 ```
-Dreugh's Grace						30/20s -> 30/80s			!
+Dreugh's Grace                      30/20s -> 120/20s
 ```
 
 ------------------------------------------------------------
@@ -131,10 +131,11 @@ Disintegrate Armor                  6 -> 1
 
 ```
 Armor Eater                         10-30/1s -> 60-180/1s
+Disintegrate Armor                  6-25/1s -> 6-25/6s
 ```
 
 ```
-Scroll of Baleful Suffering         5 pts for 5 secs       !
+Scroll of Baleful Suffering         5/5s -> 5/30s
 ```
 
 **Tamriel Data**
@@ -152,10 +153,11 @@ Disintegrate Weapon                 6 -> 1
 
 ```
 Weapon Eater                        6-25/1s -> 36-150/1s
+Disintegrate Weapon                 6-25/1s -> 6-25/6s
 ```
 
 ```
-Scroll of Baleful Suffering         5 pts for 5 secs       !
+Scroll of Baleful Suffering         5/5s -> 5/30s
 ```
 
 **Tamriel Data**
