@@ -4,6 +4,8 @@
 
 ## Skills
 ```
+fLevelUpHealthEndMult               0.1 -> 0.05
+
 Armorer                             Strength -> Endurance
 
 fMajorSkillBonus                    0.75 -> 1.5
@@ -133,8 +135,6 @@ Secret Master's Retort              1000 -> 5000
 ```
 fMagicItemRechargePerSecond         0.05 -> 0
 fEnchantmentChanceMult              3 -> 0.6
-
-sMagicInsufficientCharge            "Item does not have enough charge." -> ""
 ```
 
 ------------------------------------------------------------
@@ -143,4 +143,18 @@ sMagicInsufficientCharge            "Item does not have enough charge." -> ""
 ```
 sEffectSlowFall                     SlowFall -> Slowfall
 fElementalShieldMult                0.1 -> 1
+```
+
+------------------------------------------------------------
+
+## Optional - No Magic Insufficient Charge Messagebox
+```
+sMagicInsufficientCharge            "Item does not have enough charge." -> ""
+```
+
+------------------------------------------------------------
+
+## Optional - One Hour Barter Gold Reset Delay
+```
+fBarterGoldResetDelay               24 -> 1
 ```
