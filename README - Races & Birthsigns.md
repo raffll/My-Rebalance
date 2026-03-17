@@ -195,8 +195,7 @@ Female Height                       1 -> 0.92
 ```
 Abilities
     Warwyrd
-        Fortify Attack              10
-        [NEW] Sanctuary             10
+        Fortify Attack              10 -> 20
 ```
 
 ### Mage
@@ -271,7 +270,7 @@ Abilities
 ```
 Powers
     Mara's Gift
-        Restore Health              100/Self -> 200/Self
+        Restore Health              100/Self -> 300/Self
     [NEW] Blessed Word
         Turn Undead                 100/600s/50ft/Target
 

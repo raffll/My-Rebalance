@@ -27,18 +27,18 @@ Exclusive Potion of Burden          20/60s -> 200/600s
 ```
 
 ```
-Burden Touch                        		20/10s -> 100/20s
-Burden                              		20/10s -> 100/20s
-Heavy Burden Touch                  		40/10s -> 200/20s
-Heavy Burden                        		40/10s -> 200/20s
-Crushing Burden Touch               		60/10s -> 300/20s
-Crushing Burden                     		60/10s -> 300/20s
-Weary                               		30-60/10s -> 150-300/20s
-Cruel Weary                         		50-70/10s -> 250-350/20s
-Dire Weary                          		60-90/10s -> 300-450/20s
-Great Burden of Sin -> Burden of Sin		40/10s -> 400/10s
-Burden of Sin -> Great Burden of Sin		40-60/20s -> 400-600/20s
-Crushing Burden of Sin              		60-80/30s -> 600-800/30s
+Burden Touch                                20/10s -> 100/20s
+Burden                                      20/10s -> 100/20s
+Heavy Burden Touch                          40/10s -> 200/20s
+Heavy Burden                                40/10s -> 200/20s
+Crushing Burden Touch                       60/10s -> 300/20s
+Crushing Burden                             60/10s -> 300/20s
+Weary                                       30-60/10s -> 150-300/20s
+Cruel Weary                                 50-70/10s -> 250-350/20s
+Dire Weary                                  60-90/10s -> 300-450/20s
+Great Burden of Sin -> Burden of Sin        40/10s -> 400/10s
+Burden of Sin -> Great Burden of Sin        40-60/20s -> 400-600/20s
+Crushing Burden of Sin                      60-80/30s -> 600-800/30s
 ```
 
 ```
@@ -124,29 +124,47 @@ Dreugh's Grace                      30/20s -> 120/20s
 
 ------------------------------------------------------------
 
-## Fire Shield                                                      !
+## Fire Shield
 ```
-Fire Shield                         3
+Fire Shield                                 3
 ```
 
 ```
-Fire Barrier                        1-10/10s
-Fire Barrier (fire_fathasa_unique)  1-10/10s                        -> Strong Fire Barrier
-Fire Shield                         10/30s
-Strong Fire Shield                  12/30s
-Fierce Fire Shield                  5-11/10s
+Fire Barrier                                1-10/10s -> 5/10s       !
+Fire Barrier -> Strong Fire Barrier         1-10/10s -> 10/10s      !
+Fire Shield                                 10/30s
+Strong Fire Shield                          12/30s -> 20/30s        !
+Fierce Fire Shield                          5-11/10s -> 30/10s      !
+```
 
-Frost Barrier                       3/10s
-Frost Shield (frost_shield)         6/30s                           -> Weak Frost Shield
-Frost Shield                        10/30s
-Strong Frost Shield                 12/30s
-Fierce Frost Shield                 5-11/10s
+------------------------------------------------------------
 
-Shock Barrier                       1-10/10s
-Shock Shield (shock shield)         3/20s                           -> Weak Shock Shield
-Lightning Shield                    10/30s                          -> Shock Shield
-Strong Shock Shield                 12/30s
-Fierce Shock Shield                 5-11/10s
+## Frost Shield
+```
+Frost Shield                                3
+```
+
+```
+Frost Barrier                               3/10s
+Frost Shield -> Weak Frost Shield           6/30s
+Frost Shield                                10/30s
+Strong Frost Shield                         12/30s
+Fierce Frost Shield                         5-11/10s
+```
+
+------------------------------------------------------------
+
+## Lightning Shield
+```
+Lightning Shield                            3
+```
+
+```
+Shock Barrier                               1-10/10s
+Shock Shield -> Weak Shock Shield           3/20s
+Lightning Shield -> Shock Shield            10/30s
+Strong Shock Shield                         12/30s
+Fierce Shock Shield                         5-11/10s
 ```
 
 ------------------------------------------------------------
