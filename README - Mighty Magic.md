@@ -42,12 +42,6 @@ Crushing Burden of Sin                      60-80/30s -> 600-800/30s
 ```
 
 ```
-Aryon's Rest                        10/10s -> 100/10s               !
-Hand of Odros                       30-40/60s -> 300-400/60s        !
-Wrath of Odros                      20-30/50s -> 200-300/50s        !
-```
-
-```
 Scroll of Baleful Suffering         0−25/30s -> 0-250/30s
 Scroll of Fader's Leaden Flesh      0−50/30s -> 0-500/30s
 ```
@@ -109,62 +103,17 @@ Swift Swim                          2 -> 0.5
 ```
 
 ```
-Bargain Potion of Swift Swim        1/8s -> 5/8s
+Bargain Potion of Swift Swim        1/8s -> 5/8s					bug
 ```
 
 ```
-Buoyancy                            1/20s -> 20/20s
-Swimmer's Blessing                  5/30s -> 50/30s
+Buoyancy                            1/20s -> 20/20s					x20
+Swimmer's Blessing                  5/30s -> 50/30s					x10
 ```
 
 **Tamriel Data**
 ```
 Dreugh's Grace                      30/20s -> 120/20s
-```
-
-------------------------------------------------------------
-
-## Fire Shield
-```
-Fire Shield                                 3
-```
-
-```
-Fire Barrier                                1-10/10s -> 5/10s       !
-Fire Barrier -> Strong Fire Barrier         1-10/10s -> 10/10s      !
-Fire Shield                                 10/30s
-Strong Fire Shield                          12/30s -> 20/30s        !
-Fierce Fire Shield                          5-11/10s -> 30/10s      !
-```
-
-------------------------------------------------------------
-
-## Frost Shield
-```
-Frost Shield                                3
-```
-
-```
-Frost Barrier                               3/10s
-Frost Shield -> Weak Frost Shield           6/30s
-Frost Shield                                10/30s
-Strong Frost Shield                         12/30s
-Fierce Frost Shield                         5-11/10s
-```
-
-------------------------------------------------------------
-
-## Lightning Shield
-```
-Lightning Shield                            3
-```
-
-```
-Shock Barrier                               1-10/10s
-Shock Shield -> Weak Shock Shield           3/20s
-Lightning Shield -> Shock Shield            10/30s
-Strong Shock Shield                         12/30s
-Fierce Shock Shield                         5-11/10s
 ```
 
 ------------------------------------------------------------
@@ -175,22 +124,22 @@ Fierce Shock Shield                         5-11/10s
 
 ### Disintegrate Armor
 ```
-Disintegrate Armor                  6 -> 1
+Disintegrate Armor                  6 -> 0.5								!
 ```
 
 ```
-Armor Eater                         10-30/1s -> 60-180/1s
-Disintegrate Armor                  6-25/1s -> 6-25/6s
+Armor Eater                         10-30/1s -> 120-360/1s					!
+Disintegrate Armor                  6-25/1s -> 72-300/1s				    !
 ```
 
 ```
-Scroll of Baleful Suffering         5/5s -> 5/30s
+Scroll of Baleful Suffering         5/5s -> 60/5s							!
 ```
 
 **Tamriel Data**
 ```
-Shadow Rust                         1-5/20s -> 6-30/20s
-Fracture Armor                      100/2s -> 600/2s
+Shadow Rust                         1-5/20s -> 12-60/20s					!
+Fracture Armor                      100/2s -> 1200/2s						!
 ```
 
 ------------------------------------------------------------
@@ -201,12 +150,12 @@ Disintegrate Weapon                 6 -> 1
 ```
 
 ```
-Weapon Eater                        6-25/1s -> 36-150/1s
-Disintegrate Weapon                 6-25/1s -> 6-25/6s
+Weapon Eater                        6-25/1s -> 60-180/1s			(10-30/1s) x6
+Disintegrate Weapon                 6-25/1s -> 36-150/1s
 ```
 
 ```
-Scroll of Baleful Suffering         5/5s -> 5/30s
+Scroll of Baleful Suffering         5/5s -> 30/5s							!
 ```
 
 **Tamriel Data**

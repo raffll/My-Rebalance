@@ -23,16 +23,16 @@ Abilities
         Resist Poison               100
     Resist Disease
         Resist Common Disease       75
-    [NEW] Scales
+    Scales [NEW]
         Resist Normal Weapons       25
-    [NEW] Amphibious
+    Amphibious [NEW]
         Water Breathing
         Swift Swim                  50
-    [NEW] Magicka Bonus
+    Magicka Bonus [NEW]
         Magicka Bonus               0.2
 
 Spells
-    [REMOVED] Water Breathing
+    Water Breathing [REMOVED]
         Water Breathing             120s/Self
 ```
 
@@ -80,12 +80,13 @@ Abilities
 ### Imperial
 ```
 Abilities
-    [NEW] Star of the West
+    Star of the West [NEW]
         Restore Fatigue             1
 Powers
     Voice of the Emperor
-        Charm                       25-50/15s/Target -> 50/300s/25ft/Target
-    [REMOVED] Star of the West
+        Charm                       25-50/15s/Target -> 25/60s/25ft/Target
+        Calm Humanoid [NEW]         25/60s/25ft/Target
+    Star of the West [REMOVED]
         Absorb Fatigue              200/Target
 ```
 
@@ -102,22 +103,22 @@ Sneak                               5
 
 ```
 Abilities
-    [NEW] Resist Frost
+    Resist Frost [NEW]
         Resist Frost                25
-    [NEW] Feline Grace
+    Feline Grace [NEW]
         Jump                        5
         Slowfall                    1
-    [NEW] Eye of Night
+    Eye of Night [NEW]
         Night Eye                   25
-    [NEW] Nine Lives
+    Nine Lives [NEW]
         Fortify Luck                10
 
 Powers
     Eye of Fear
-        Demoralize Humanoid         100/30s/Target
+        Demoralize Humanoid         100/30s/Target -> 100/60s/Target
 
 Spells
-    [REMOVED] Eye of Night
+    Eye of Night [REMOVED]
         Night Eye                   50/30s/Self
 ```
 
@@ -130,12 +131,12 @@ Abilities
         Resist Frost                100 -> 75
 
 Powers
-    [NEW] Blizzard Barrier
+    Blizzard Barrier [NEW]
         Lightning Shield            25/60s/Self
         Frost Shield                25/60s/Self
-    [REMOVED] Thunder Fist
+    Thunder Fist [REMOVED]
         Frost Damage                25/Touch
-    [REMOVED] Woad
+    Woad [REMOVED]
         Shield                      30/60s/Self
 ```
 
@@ -147,7 +148,7 @@ Abilities
 
 Powers
     Berserk
-        Fortify Health              20/60s/Self -> [REMOVED]
+        Fortify Health [REMOVED]    20/60s/Self
         Fortify Fatigue             200/60s/Self
         Fortify Attack              100/60s/Self -> 50/60s/Self
         Drain Agility               100/60s/Self -> 200/60s/Self
@@ -195,7 +196,7 @@ Female Height                       1 -> 0.92
 ```
 Abilities
     Warwyrd
-        Fortify Attack              10 -> 20
+        Fortify Attack              10
 ```
 
 ### Mage
@@ -209,8 +210,8 @@ Abilities
 ```
 Abilities
     Akaviri Danger-sense
-        [NEW] Fortify Luck          25
-        [REMOVED] Sanctuary         10
+        Fortify Luck [NEW]          25
+        Sanctuary [REMOVED]         10
 ```
 
 ### Serpent
@@ -235,7 +236,7 @@ Abilities
 Abilities
     Charioteer
         Fortify Speed               25
-        [NEW] Feather               100
+        Feather [NEW]               100
 ```
 
 ### Lord
@@ -270,14 +271,16 @@ Abilities
 ```
 Powers
     Mara's Gift
-        Restore Health              100/Self -> 300/Self
-    [NEW] Blessed Word
-        Turn Undead                 100/600s/50ft/Target
+        Restore Health              100/Self
+        Restore Magicka [NEW]       100/Self
+        Restore Fatigue [NEW]       200/Self
+    Blessed Word [NEW]
+        Turn Undead                 100/60s/25ft/Target
 
-Spells
-    [REMOVED] Blessed Word
+Spells -> Powers
+    Blessed Word [REMOVED]
         Turn Undead                 100/30s/Target
-    [REMOVED] Blessed Touch
+    Blessed Touch [REMOVED]
         Turn Undead                 100/30s/Touch
 ```
 
@@ -295,13 +298,10 @@ Powers
 
 ### Shadow
 ```
-Abilities
-    [NEW] Moonshadow
-        Chameleon                   20
-
 Powers -> Abilities
-    [REMOVED] Moonshadow
-        Invisibility                60s/Self
+    Moonshadow
+        Chameleon [NEW]             20
+        Invisibility [REMOVED]      60s/Self
 
 ```
 
@@ -315,5 +315,6 @@ Spells -> Abilities
 
 Powers
     Tower Key
-        Open                        50/Touch -> 100/Touch
+        Fortify Security            25/60s
+        Open [REMOVED]              50/Touch
 ```
