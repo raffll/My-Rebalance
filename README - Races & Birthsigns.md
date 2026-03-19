@@ -302,7 +302,6 @@ Powers -> Abilities
     Moonshadow
         Chameleon [NEW]             20
         Invisibility [REMOVED]      60s/Self
-
 ```
 
 ### Tower
