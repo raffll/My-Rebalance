@@ -4,7 +4,7 @@
 
 ## Enchantments
 ```
-Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
+Slave's Left/Right Bracer                   Drain Magicka -> Damage Magicka
 ```
 
 ------------------------------------------------------------
@@ -15,15 +15,15 @@ Slave's Left/Right Bracer           Drain Magicka -> Damage Magicka
 
 ### Burden
 ```
-Burden                              1 -> 0.1
+Burden                                      1 -> 0.1
 ```
 
 ```
-Bargain Potion of Burden            5/8s -> 50/150s
-Cheap Potion of Burden              8/15s -> 80/240s
-Standard Potion of Burden           10/30s -> 100/300s
-Quality Potion of Burden            15/45s -> 150/450s
-Exclusive Potion of Burden          20/60s -> 200/600s
+Bargain Potion of Burden                    5/8s -> 50/150s
+Cheap Potion of Burden                      8/15s -> 80/240s
+Standard Potion of Burden                   10/30s -> 100/300s
+Quality Potion of Burden                    15/45s -> 150/450s
+Exclusive Potion of Burden                  20/60s -> 200/600s
 ```
 
 ```
@@ -42,78 +42,78 @@ Crushing Burden of Sin                      60-80/30s -> 600-800/30s
 ```
 
 ```
-Scroll of Baleful Suffering         0−25/30s -> 0-250/30s
-Scroll of Fader's Leaden Flesh      0−50/30s -> 0-500/30s
+Scroll of Baleful Suffering                 0−25/30s -> 0-250/30s
+Scroll of Fader's Leaden Flesh              0−50/30s -> 0-500/30s
 ```
 
 ```
-Black Jinx                          25-100/120s -> 250-1000/120s
-Spear of the Hunter                 50/10s -> 500/10s
+Black Jinx                                  25-100/120s -> 250-1000/120s
+Spear of the Hunter                         50/10s -> 500/10s
 ```
 
 **Tamriel Data**
 ```
-Cheap Potion of Burden              8/15s -> 80/240s
-Quality Potion of Burden            15/45s -> 150/450s
+Cheap Potion of Burden                      8/15s -> 80/240s
+Quality Potion of Burden                    15/45s -> 150/450s
 ```
 
 ```
-Shadow Rust                         1-15/20s -> 10-150/20s
-Weight of Guilt                     500/3s -> 500/30s
+Shadow Rust                                 1-15/20s -> 10-150/20s
+Weight of Guilt                             500/3s -> 500/30s
 ```
 
 ------------------------------------------------------------
 
 ### Feather
 ```
-Feather                             1 -> 0.1
+Feather                                     1 -> 0.1
 ```
 
 ```
-Bargain Potion of Feather           5/8s -> 50/150s
-Cheap Potion of Feather             8/15s -> 80/240s
-Quality Potion of Feather           15/45s -> 150/450s
-Exclusive Potion of Feather         20/60s -> 200/600s
+Bargain Potion of Feather                   5/8s -> 50/150s
+Cheap Potion of Feather                     8/15s -> 80/240s
+Quality Potion of Feather                   15/45s -> 150/450s
+Exclusive Potion of Feather                 20/60s -> 200/600s
 ```
 
 ```
-Feather                             20/10s -> 100/20s
-Strong Feather                      50/10s -> 250/20s
-Great Feather                       100/10s -> 500/20s
-Ulms' Juicedaw Feather              50/10s -> 500/10s
+Feather                                     20/10s -> 100/20s
+Strong Feather                              50/10s -> 250/20s
+Great Feather                               100/10s -> 500/20s
+Ulms' Juicedaw Feather                      50/10s -> 500/10s
 ```
 
 **Tamriel Data**
 ```
-Cheap Potion of Feather             8/15s -> 80/240s
-Standard Potion of Feather          10/30s -> 100/300s
-Quality Potion of Feather           15/45s -> 150/450s
+Cheap Potion of Feather                     8/15s -> 80/240s
+Standard Potion of Feather                  10/30s -> 100/300s
+Quality Potion of Feather                   15/45s -> 150/450s
 ```
 
 ```
-Fling                               500/3s -> 500/30s
-Zenithar's Arms                     50/10s -> 500/10s
+Fling                                       500/3s -> 500/30s
+Zenithar's Arms                             50/10s -> 500/10s
 ```
 
 ------------------------------------------------------------
 
 ## Swift Swim
 ```
-Swift Swim                          2 -> 0.5
+Swift Swim                                  2 -> 0.5
 ```
 
 ```
-Bargain Potion of Swift Swim        1/8s -> 5/8s					bug
+Bargain Potion of Swift Swim                1/8s -> 5/8s
 ```
 
 ```
-Buoyancy                            1/20s -> 20/20s					x20
-Swimmer's Blessing                  5/30s -> 50/30s					x10
+Buoyancy                                    1/20s -> 20/20s
+Swimmer's Blessing                          5/30s -> 50/30s
 ```
 
 **Tamriel Data**
 ```
-Dreugh's Grace                      30/20s -> 120/20s
+Dreugh's Grace                              30/20s -> 120/20s
 ```
 
 ------------------------------------------------------------
@@ -124,42 +124,42 @@ Dreugh's Grace                      30/20s -> 120/20s
 
 ### Disintegrate Armor
 ```
-Disintegrate Armor                  6 -> 0.5								!
+Disintegrate Armor                          6 -> 0.6
 ```
 
 ```
-Armor Eater                         10-30/1s -> 120-360/1s					!
-Disintegrate Armor                  6-25/1s -> 72-300/1s				    !
+Armor Eater                                 10-30/1s -> 200-600/1s
+Disintegrate Armor                          6-25/1s -> 60-250/1s
 ```
 
 ```
-Scroll of Baleful Suffering         5/5s -> 60/5s							!
+Scroll of Baleful Suffering                 5/5s -> 50/5s
 ```
 
 **Tamriel Data**
 ```
-Shadow Rust                         1-5/20s -> 12-60/20s					!
-Fracture Armor                      100/2s -> 1200/2s						!
+Shadow Rust                                 1-5/20s -> 10-50/20s
+Fracture Armor                              100/2s -> 1000/2s
 ```
 
 ------------------------------------------------------------
 
 ### Disintegrate Weapon
 ```
-Disintegrate Weapon                 6 -> 1
+Disintegrate Weapon                         6 -> 1.2
 ```
 
 ```
-Weapon Eater                        6-25/1s -> 60-180/1s			(10-30/1s) x6
-Disintegrate Weapon                 6-25/1s -> 36-150/1s
+Weapon Eater                                6-25/1s -> 100-300/1s
+Disintegrate Weapon                         6-25/1s -> 30-125/1s
 ```
 
 ```
-Scroll of Baleful Suffering         5/5s -> 30/5s							!
+Scroll of Baleful Suffering                 5/5s -> 25/5s
 ```
 
 **Tamriel Data**
 ```
-Iron Eater                          1-25/2s -> 6-150/2s
-Steel Eater                         5-30/3s -> 30-180/3s
+Iron Eater                                  1-25/2s -> 5-125/2s
+Steel Eater                                 5-30/3s -> 25-150/3s
 ```
