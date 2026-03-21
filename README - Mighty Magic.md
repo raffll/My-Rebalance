@@ -13,10 +13,7 @@ Slave's Left/Right Bracer                   Drain Magicka -> Damage Magicka
 
 ------------------------------------------------------------
 
-### Burden
-```
-Burden                                      1 -> 0.1
-```
+### Burden                                  1 -> 0.1
 
 *Potions*
 ```
@@ -125,13 +122,13 @@ Dreugh's Grace                              30/20s -> 120/20s
 
 ## Slowfall
 ```
-Potion of Slowfalling               		10/15s -> 10/30s
-Spoiled Slowfall Potion             		10/15s -> 1/15s
+Potion of Slowfalling                       10/15s -> 10/30s
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 **Tamriel Data**
 ```
-Spoiled Slowfall Potion             		10/15s -> 1/15s
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
