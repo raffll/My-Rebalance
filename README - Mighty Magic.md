@@ -13,7 +13,7 @@ Slave's Left/Right Bracer                   Drain Magicka -> Damage Magicka
 
 ------------------------------------------------------------
 
-### Burden                                  1 -> 0.1
+### Burden
 ```
 Burden                                      1 -> 0.1
 ```
@@ -74,6 +74,7 @@ Weight of Guilt                             500/3s -> 500/30s
 Feather                                     1 -> 0.1
 ```
 
+*Potions*
 ```
 Bargain Potion of Feather                   5/8s -> 50/150s
 Cheap Potion of Feather                     8/15s -> 80/240s
@@ -81,6 +82,7 @@ Quality Potion of Feather                   15/45s -> 150/450s
 Exclusive Potion of Feather                 20/60s -> 200/600s
 ```
 
+*Spells*
 ```
 Feather                                     20/10s -> 100/20s
 Strong Feather                              50/10s -> 250/20s
@@ -88,13 +90,14 @@ Great Feather                               100/10s -> 500/20s
 Ulms' Juicedaw Feather                      50/10s -> 500/10s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Potions*
 ```
 Cheap Potion of Feather                     8/15s -> 80/240s
 Standard Potion of Feather                  10/30s -> 100/300s
 Quality Potion of Feather                   15/45s -> 150/450s
 ```
 
+*Tamriel Data - Spells*
 ```
 Fling                                       500/3s -> 500/30s
 Zenithar's Arms                             50/10s -> 500/10s
@@ -107,16 +110,18 @@ Zenithar's Arms                             50/10s -> 500/10s
 Swift Swim                                  2 -> 0.5
 ```
 
+*Potions*
 ```
 Bargain Potion of Swift Swim                1/8s -> 5/8s
 ```
 
+*Spells*
 ```
 Buoyancy                                    1/20s -> 20/20s
 Swimmer's Blessing                          5/30s -> 50/30s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Spells*
 ```
 Dreugh's Grace                              30/20s -> 120/20s
 ```
@@ -124,14 +129,16 @@ Dreugh's Grace                              30/20s -> 120/20s
 ------------------------------------------------------------
 
 ## Slowfall
+
+*Potions*
 ```
-Potion of Slowfalling               		10/15s -> 10/30s
-Spoiled Slowfall Potion             		10/15s -> 1/15s
+Potion of Slowfalling                       10/15s -> 10/30s
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Potions*
 ```
-Spoiled Slowfall Potion             		10/15s -> 1/15s
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
@@ -145,16 +152,18 @@ Spoiled Slowfall Potion             		10/15s -> 1/15s
 Disintegrate Armor                          6 -> 0.6
 ```
 
+*Spells*
 ```
 Armor Eater                                 10-30/1s -> 200-600/1s
 Disintegrate Armor                          6-25/1s -> 60-250/1s
 ```
 
+*Scrolls*
 ```
 Scroll of Baleful Suffering                 5/5s -> 50/5s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Spells*
 ```
 Shadow Rust                                 1-5/20s -> 10-50/20s
 Fracture Armor                              100/2s -> 1000/2s
@@ -167,16 +176,18 @@ Fracture Armor                              100/2s -> 1000/2s
 Disintegrate Weapon                         6 -> 1.2
 ```
 
+*Spells*
 ```
 Weapon Eater                                6-25/1s -> 100-300/1s
 Disintegrate Weapon                         6-25/1s -> 30-125/1s
 ```
 
+*Scrolls*
 ```
 Scroll of Baleful Suffering                 5/5s -> 25/5s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Spells*
 ```
 Iron Eater                                  1-25/2s -> 5-125/2s
 Steel Eater                                 5-30/3s -> 25-150/3s
