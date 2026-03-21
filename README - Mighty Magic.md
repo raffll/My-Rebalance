@@ -171,6 +171,24 @@ Wizard Lock                                 20 [2]
 
 ------------------------------------------------------------
 
+### Water Breathing
+
+*Potions*
+```
+Potion of Water Breathing                   15s -> 30s      !
+```
+
+------------------------------------------------------------
+
+### Water Walking
+
+*Potions*
+```
+Potion of Water Walking                     15s -> 30s      !
+```
+
+------------------------------------------------------------
+
 ## Destruction
 
 ------------------------------------------------------------
@@ -219,4 +237,46 @@ Scroll of Baleful Suffering                 5/5s -> 25/5s
 ```
 Iron Eater                                  1-25/2s -> 5-125/2s
 Steel Eater                                 5-30/3s -> 25-150/3s
+```
+
+------------------------------------------------------------
+
+## Illusion
+
+------------------------------------------------------------
+
+### Light
+
+*Potions*
+```
+Bargain Potion of Light                     5/8s -> 25/75s          !
+Cheap Potion of Light                       8/15s -> 40/120s
+Standard Potion of Light                    10/30s -> 50/150s
+Quality Potion of Light                     15/45s -> 75/225s
+Exclusive Potion of Light                   20/60s -> 100/300s
+```
+
+*Tamriel Data - Potions*
+```
+Cheap Potion of Light                       8/15s -> 40/120s
+Quality Potion of Light                     15/45s -> 75/225s
+```
+
+------------------------------------------------------------
+
+### Night Eye
+
+*Potions*
+```
+Bargain Potion of Night-Eye                 5/8s -> 25/75s          !
+Cheap Potion of Night-Eye                   8/15s -> 40/120s
+Standard Potion of Night-Eye                10/30s -> 50/150s
+Quality Potion of Night-Eye                 15/45s -> 75/225s
+Exclusive Potion of Night-Eye               20/60s -> 100/300s
+```
+
+*Tamriel Data - Potions*
+```
+Cheap Potion of Night-Eye                   8/15s -> 40/120s
+Quality Potion of Night-Eye                 15/45s -> 75/225s
 ```
