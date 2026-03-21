@@ -18,6 +18,7 @@ Slave's Left/Right Bracer                   Drain Magicka -> Damage Magicka
 Burden                                      1 -> 0.1
 ```
 
+*Potions*
 ```
 Bargain Potion of Burden                    5/8s -> 50/150s
 Cheap Potion of Burden                      8/15s -> 80/240s
@@ -26,6 +27,7 @@ Quality Potion of Burden                    15/45s -> 150/450s
 Exclusive Potion of Burden                  20/60s -> 200/600s
 ```
 
+*Spells*
 ```
 Burden Touch                                20/10s -> 100/20s
 Burden                                      20/10s -> 100/20s
@@ -41,22 +43,25 @@ Burden of Sin -> Great Burden of Sin        40-60/20s -> 400-600/20s
 Crushing Burden of Sin                      60-80/30s -> 600-800/30s
 ```
 
+*Scrolls*
 ```
 Scroll of Baleful Suffering                 0−25/30s -> 0-250/30s
 Scroll of Fader's Leaden Flesh              0−50/30s -> 0-500/30s
 ```
 
+*Enchantments*
 ```
 Black Jinx                                  25-100/120s -> 250-1000/120s
 Spear of the Hunter                         50/10s -> 500/10s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Potions*
 ```
 Cheap Potion of Burden                      8/15s -> 80/240s
 Quality Potion of Burden                    15/45s -> 150/450s
 ```
 
+*Tamriel Data - Spells*
 ```
 Shadow Rust                                 1-15/20s -> 10-150/20s
 Weight of Guilt                             500/3s -> 500/30s
