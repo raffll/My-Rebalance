@@ -143,24 +143,24 @@ Spoiled Slowfall Potion                     10/15s -> 1/15s
 
 ------------------------------------------------------------
 
-## Shield                                   !
+## Shield
 ```
-Base Cost                                   2 -> 1
+Base Cost                                   2 -> 1          !
 ```
 
 *Tamriel Data - Spells*
 ```
 Falling First Barrier                       8/40s -> 16/40s
-                                            5/20s -> 10/20s
+5/20s -> 10/20s
 Force Wall                                  50/5s -> 100/5s
 Tsun's Ward                                 20/20s -> 40/20s
 ```
 
 ------------------------------------------------------------
 
-## Lock                                     !
+## Lock
 ```
-Base Cost                                   2 -> 24
+Base Cost                                   2 -> 24         !
 ```
 
 *Tamriel Data - Spells*
