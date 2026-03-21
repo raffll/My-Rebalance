@@ -15,7 +15,7 @@ Slave's Left/Right Bracer                   Drain Magicka -> Damage Magicka
 
 ### Burden
 ```
-Burden                                      1 -> 0.1
+Cost                                        1 -> 0.1
 ```
 
 *Potions*
@@ -71,7 +71,7 @@ Weight of Guilt                             500/3s -> 500/30s
 
 ### Feather
 ```
-Feather                                     1 -> 0.1
+Cost                                        1 -> 0.1
 ```
 
 *Potions*
@@ -107,7 +107,7 @@ Zenithar's Arms                             50/10s -> 500/10s
 
 ## Swift Swim
 ```
-Swift Swim                                  2 -> 0.5
+Cost                                        2 -> 0.5
 ```
 
 *Potions*
@@ -149,7 +149,7 @@ Spoiled Slowfall Potion                     10/15s -> 1/15s
 
 ### Disintegrate Armor
 ```
-Disintegrate Armor                          6 -> 0.6
+Cost                                        6 -> 0.6
 ```
 
 *Spells*
@@ -173,7 +173,7 @@ Fracture Armor                              100/2s -> 1000/2s
 
 ### Disintegrate Weapon
 ```
-Disintegrate Weapon                         6 -> 1.2
+Cost                                        6 -> 1.2
 ```
 
 *Spells*
