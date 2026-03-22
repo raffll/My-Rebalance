@@ -258,6 +258,11 @@ Disintegrate Armor                          6-25/1s -> 60-250/1s
 Scroll of Baleful Suffering                 5/5s -> 50/5s
 ```
 
+*Enchantments*
+```
+Daedric Crescent                            5-30/1s            !
+```
+
 *Tamriel Data - Spells*
 ```
 Shadow Rust                                 1-5/20s -> 10-50/20s
@@ -328,4 +333,33 @@ Exclusive Potion of Night-Eye               20/60s -> 100/300s
 ```
 Cheap Potion of Night-Eye                   8/15s -> 40/120s
 Quality Potion of Night-Eye                 15/45s -> 75/225s
+```
+
+------------------------------------------------------------
+
+### Paralyze
+```
+Base Cost                                   40 -> 80        !
+```
+
+*Tamriel Data - Spells*
+```
+Hairdoch's Extinguisher                     10
+Living Statue                               20
+Mountain Wind                               5
+Paralysis                                   3
+```
+
+------------------------------------------------------------
+
+### Silence
+```
+Base Cost                                   40 -> 20        !
+```
+
+------------------------------------------------------------
+
+### Sound
+```
+Base Cost                                   3 -> 0.25       !
 ```
