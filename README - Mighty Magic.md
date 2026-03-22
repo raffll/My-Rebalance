@@ -244,14 +244,14 @@ Base Cost                                   9 -> 8
 
 ### Damage Magicka
 ```
-Base Cost                                   8 -> 4          !
+Base Cost                                   8 -> 4
 ```
 
 ------------------------------------------------------------
 
 ### Damage Fatigue
 ```
-Base Cost                                   4 -> 2          !
+Base Cost                                   4 -> 2
 ```
 
 ------------------------------------------------------------
@@ -279,14 +279,14 @@ Base Cost                                   4
 
 ### Drain Magicka
 ```
-Base Cost                                   4 -> 0.5        !
+Base Cost                                   4 -> 0.5
 ```
 
 ------------------------------------------------------------
 
 ### Drain Fatigue
 ```
-Base Cost                                   2 -> 0.25       !
+Base Cost                                   2 -> 0.25
 ```
 
 ------------------------------------------------------------
@@ -309,7 +309,7 @@ Scroll of Baleful Suffering                 5/5s -> 50/5s
 
 *Enchantments*
 ```
-Daedric Crescent                            5-30/1s -> 50-300/1s         !
+Daedric Crescent                            5-30/1s -> 50-300/1s
 ```
 
 *Tamriel Data - Spells*
@@ -388,7 +388,7 @@ Quality Potion of Night-Eye                 15/45s -> 75/225s
 
 ### Paralyze
 ```
-Base Cost                                   40 -> 80        !
+Base Cost                                   40 -> 80
 ```
 
 *Tamriel Data - Spells*
@@ -403,14 +403,14 @@ Paralysis                                   3
 
 ### Silence
 ```
-Base Cost                                   40 -> 20        !
+Base Cost                                   40 -> 20
 ```
 
 ------------------------------------------------------------
 
 ### Sound
 ```
-Base Cost                                   3 -> 0.25       !
+Base Cost                                   3 -> 0.25
 ```
 
 ------------------------------------------------------------
@@ -428,42 +428,42 @@ Base Cost                                   5
 
 ### Absorb Health
 ```
-Base Cost                                   8 -> 14         !
+Base Cost                                   8
 ```
 
 ------------------------------------------------------------
 
 ### Detect Animal
 ```
-Base Cost                                   0.75 -> 0.15    !
+Base Cost                                   0.75
 ```
 
 ------------------------------------------------------------
 
 ### Detect Enchantment
 ```
-Base Cost                                   1 -> 0.2        !
+Base Cost                                   1
 ```
 
 ------------------------------------------------------------
 
 ### Detect Key
 ```
-Base Cost                                   1 -> 0.2        !
+Base Cost                                   1
 ```
 
 ------------------------------------------------------------
 
 ### Reflect
 ```
-Base Cost                                   10 -> 2         !
+Base Cost                                   10
 ```
 
 ------------------------------------------------------------
 
 ### Spell Absorption
 ```
-Base Cost                                   10 -> 2         !
+Base Cost                                   10
 ```
 
 ------------------------------------------------------------
