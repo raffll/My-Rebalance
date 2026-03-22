@@ -55,8 +55,8 @@ Death Warrant                       5000 -> 20000
 
 ## Pickpocket
 ```
-iPickMaxChance                      75 -> 100				!
-fPickPocketMod                      0.3 -> 0.001			!
+iPickMaxChance                      75 -> 100
+fPickPocketMod                      0.3 -> 0.001
 ```
 
 ------------------------------------------------------------

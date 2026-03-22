@@ -145,7 +145,7 @@ Spoiled Slowfall Potion                     10/15s -> 1/15s
 
 ### Shield
 ```
-Base Cost                                   2 -> 1          !
+Base Cost                                   2 -> 1
 ```
 
 *Tamriel Data - Spells*
@@ -158,15 +158,36 @@ Tsun's Ward                                 20/20s -> 40/20s
 
 ------------------------------------------------------------
 
+## Fire Shield
+```
+Base Cost                                   3 -> 1
+```
+
+------------------------------------------------------------
+
+## Frost Shield
+```
+Base Cost                                   3 -> 1
+```
+
+------------------------------------------------------------
+
+## Lightning Shield
+```
+Base Cost                                   3 -> 1
+```
+
+------------------------------------------------------------
+
 ### Lock
 ```
-Base Cost                                   2 -> 24         !
+Base Cost                                   2 -> 24
 ```
 
 *Tamriel Data - Spells*
 ```
-Dalgor's Entwining                          100 [8]
-Wizard Lock                                 20 [2]
+Dalgor's Entwining                          100 [8 -> 96]
+Wizard Lock                                 20 [2 -> 24]
 ```
 
 ------------------------------------------------------------
@@ -175,7 +196,7 @@ Wizard Lock                                 20 [2]
 
 *Potions*
 ```
-Potion of Water Breathing                   15s -> 30s      !
+Potion of Water Breathing                   15s -> 30s
 ```
 
 ------------------------------------------------------------
@@ -184,7 +205,7 @@ Potion of Water Breathing                   15s -> 30s      !
 
 *Potions*
 ```
-Potion of Water Walking                     15s -> 30s      !
+Potion of Water Walking                     15s -> 30s
 ```
 
 ------------------------------------------------------------
@@ -249,7 +270,7 @@ Steel Eater                                 5-30/3s -> 25-150/3s
 
 *Potions*
 ```
-Bargain Potion of Light                     5/8s -> 25/75s          !
+Bargain Potion of Light                     5/8s -> 25/75s
 Cheap Potion of Light                       8/15s -> 40/120s
 Standard Potion of Light                    10/30s -> 50/150s
 Quality Potion of Light                     15/45s -> 75/225s
@@ -268,7 +289,7 @@ Quality Potion of Light                     15/45s -> 75/225s
 
 *Potions*
 ```
-Bargain Potion of Night-Eye                 5/8s -> 25/75s          !
+Bargain Potion of Night-Eye                 5/8s -> 25/75s
 Cheap Potion of Night-Eye                   8/15s -> 40/120s
 Standard Potion of Night-Eye                10/30s -> 50/150s
 Quality Potion of Night-Eye                 15/45s -> 75/225s
