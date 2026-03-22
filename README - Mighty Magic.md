@@ -479,7 +479,7 @@ Base Cost                                   1
 
 ------------------------------------------------------------
 
-### RRestore Attribute
+### Restore Attribute
 ```
 Base Cost                                   1
 ```
