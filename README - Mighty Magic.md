@@ -117,8 +117,8 @@ Bargain Potion of Swift Swim                1/8s -> 5/8s
 
 *Spells*
 ```
-Buoyancy                                    1/20s -> 20/20s
-Swimmer's Blessing                          5/30s -> 50/30s
+Buoyancy                                    1/20s -> 20/20s (x20)
+Swimmer's Blessing                          5/30s -> 50/30s (x10)
 ```
 
 *Tamriel Data - Spells*
@@ -298,7 +298,7 @@ Base Cost                                   6 -> 0.6
 
 *Spells*
 ```
-Armor Eater                                 10-30/1s -> 200-600/1s
+Armor Eater                                 10-30/1s -> 200-600/1s (x20)
 Disintegrate Armor                          6-25/1s -> 60-250/1s
 ```
 
@@ -327,7 +327,7 @@ Base Cost                                   6 -> 1.2
 
 *Spells*
 ```
-Weapon Eater                                6-25/1s -> 100-300/1s
+Weapon Eater                                6-25/1s -> 100-300/1s (10-30/1s x10)
 Disintegrate Weapon                         6-25/1s -> 30-125/1s
 ```
 
