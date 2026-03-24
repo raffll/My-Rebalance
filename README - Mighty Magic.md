@@ -43,6 +43,12 @@ Burden of Sin -> Great Burden of Sin        40-60/20s -> 400-600/20s
 Crushing Burden of Sin                      60-80/30s -> 600-800/30s
 ```
 
+```
+Aryon's Rest                                10/10s -> 100/10s               !
+Hand of Odros                               30-40/60s -> 300-400/60s        !
+Wrath of Odros                              20-30/50s -> 200-300/50s        !
+```
+
 *Scrolls*
 ```
 Scroll of Baleful Suffering                 0−25/30s -> 0-250/30s
@@ -158,23 +164,57 @@ Tsun's Ward                                 20/20s -> 40/20s
 
 ------------------------------------------------------------
 
-### Fire Shield
+## Fire Shield
 ```
-Base Cost                                   3 -> 1
+Fire Shield                                 3 -> 1
+```
+
+```
+Fire Barrier                                1-10/10s -> 3-30/10s    !
+Fire Barrier -> Strong Fire Barrier         1-10/10s -> 6-60/10s
+Fire Shield                                 10/30s -> 30/30s
+Strong Fire Shield                          12/30s -> 72/30s
+Fierce Fire Shield                          5-11/10s -> 15-33/10s
+```
+
+**Tamriel Data**
+```
+Fire Eye                                    10-23/20s -> 30-69/20s
 ```
 
 ------------------------------------------------------------
 
-### Frost Shield
+## Frost Shield
 ```
-Base Cost                                   3 -> 1
+Frost Shield                                3 -> 1
+```
+
+```
+Frost Barrier                               3/10s -> 9/10s          !
+Frost Shield -> Weak Frost Shield           6/30s -> 18/30s
+Frost Shield                                10/30s -> 30/30s
+Strong Frost Shield                         12/30s -> 72/30s
+Fierce Frost Shield                         5-11/10s -> 15-33/10s
 ```
 
 ------------------------------------------------------------
 
-### Lightning Shield
+## Lightning Shield
 ```
-Base Cost                                   3 -> 1
+Lightning Shield                            3 -> 1
+```
+
+```
+Shock Barrier                               1-10/10s -> 3-30/10s    !
+Shock Shield -> Lightning Shield            3/20s -> 9/20s
+Lightning Shield -> Shock Shield            10/30s -> 30/30s
+Strong Shock Shield                         12/30s -> 72/30s
+Fierce Shock Shield                         5-11/10s -> 15-33/10s
+```
+
+**Tamriel Data**
+```
+Draugr Lightning Shield                     50/20s [150]
 ```
 
 ------------------------------------------------------------
@@ -316,6 +356,9 @@ Daedric Crescent                            5-30/1s -> 50-300/1s
 ```
 Shadow Rust                                 1-5/20s -> 10-50/20s
 Fracture Armor                              100/2s -> 1000/2s
+
+Acid Trap                                   20-40pts                !
+Master Acid Trap                            150-300pts              !
 ```
 
 ------------------------------------------------------------
@@ -340,6 +383,9 @@ Scroll of Baleful Suffering                 5/5s -> 25/5s
 ```
 Iron Eater                                  1-25/2s -> 5-125/2s
 Steel Eater                                 5-30/3s -> 25-150/3s
+
+Acid Trap                                   20-40pts                !
+Master Acid Trap                            150-300pts              !
 ```
 
 ------------------------------------------------------------
@@ -411,6 +457,22 @@ Base Cost                                   40 -> 20
 ### Sound
 ```
 Base Cost                                   3 -> 0.25
+```
+
+```
+Earwig                                      3-8/5s -> 9-24/20s      !
+Cruel Earwig                                5-11/5s -> 15-33/20s
+Dire Earwig                                 8-15/5s -> 24-45/20s
+Wild Earwig                                 1-30/5s -> 3-90/20s
+
+Noise                                       3-8/5s -> 3-8/60s
+Cruel Noise                                 10-22/5s -> 10-20/60s
+Dire Noise                                  2-60/5s -> 2-60/60s
+```
+
+**Tamriel Data**
+```
+Voices                                      50/20s [100]
 ```
 
 ------------------------------------------------------------
