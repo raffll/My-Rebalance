@@ -165,7 +165,7 @@ Tsun's Ward                                 20/20s -> 40/20s
 
 ------------------------------------------------------------
 
-## Fire Shield
+### Fire Shield
 ```
 Fire Shield                                 3 -> 1
 ```
@@ -186,7 +186,7 @@ Fire Eye                                    10-23/20s -> 30-69/20s
 
 ------------------------------------------------------------
 
-## Frost Shield
+### Frost Shield
 ```
 Frost Shield                                3 -> 1
 ```
@@ -202,7 +202,7 @@ Fierce Frost Shield                         5-11/10s -> 15-33/10s
 
 ------------------------------------------------------------
 
-## Lightning Shield
+### Lightning Shield
 ```
 Lightning Shield                            3 -> 1
 ```
