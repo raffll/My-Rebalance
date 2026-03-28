@@ -97,6 +97,15 @@ Great Feather                               100/10s -> 500/20s
 Ulms' Juicedaw Feather                      50/10s -> 500/10s
 ```
 
+*Enchantments*
+```
+Feather Belt                                20/10s -> 100/20s               !      
+Feather Ring                                20/10s -> 100/20s
+Feather Shield                              20/10s -> 100/20s
+Saint's Shield                              20/10s -> 100/20s
+Juicedaw Feather Ring                       50/10s -> 500/10s
+```
+
 *Tamriel Data - Potions*
 ```
 Cheap Potion of Feather                     8/15s -> 80/240s
@@ -254,7 +263,7 @@ Base Cost                                   2 -> 24
 
 *Tamriel Data - Spells*
 ```
-Dalgor's Entwining                          100 [8] -> 100 [96]
+Dalgor's Entwining                          100 [8] -> 100 [96]             !
 Wizard Lock                                 20 [2] -> 20 [24]
 ```
 
@@ -622,11 +631,11 @@ Base Cost                                   5
 
 *Potions*
 ```
-Bargain Restore Health                      1/5s                            !
-Cheap Restore Health                        2/5s
-Standard Restore Health                     10/5s
-Quality Restore Health                      20/5s
-Exclusive Restore Health                    40/5s
+Bargain Restore Health                      1/5s -> 2/6s                    !
+Cheap Restore Health                        2/5s -> 3/9s
+Standard Restore Health                     10/5s -> 4/12s
+Quality Restore Health                      20/5s -> 6/18s
+Exclusive Restore Health                    40/5s -> 8/24s
 ```
 
 ------------------------------------------------------------
@@ -638,11 +647,11 @@ Base Cost                                   5
 
 *Potions*
 ```
-Bargain Restore Health                      1/5s                            !
-Cheap Restore Health                        2/5s
-Standard Restore Health                     10/5s
-Quality Restore Health                      20/5s
-Exclusive Restore Health                    40/5s
+Bargain Restore Health                      1/5s -> 2/6s                    !
+Cheap Restore Health                        2/5s -> 3/9s
+Standard Restore Health                     10/5s -> 4/12s
+Quality Restore Health                      20/5s -> 6/18s
+Exclusive Restore Health                    40/5s -> 8/24s
 ```
 
 ------------------------------------------------------------
@@ -654,11 +663,11 @@ Base Cost                                   1 -> 2.5
 
 *Potions*
 ```
-Bargain Restore Health                      5/5s                            !
-Cheap Restore Health                        10/5s
-Standard Restore Health                     20/5s
-Quality Restore Health                      40/5s
-Exclusive Restore Health                    80/5s
+Bargain Restore Health                      5/5s -> 3/9s                    !
+Cheap Restore Health                        10/5s -> 4/12s
+Standard Restore Health                     20/5s -> 6/18s
+Quality Restore Health                      40/5s -> 8/24s
+Exclusive Restore Health                    80/5s -> 12/36s
 ```
 
 ------------------------------------------------------------
