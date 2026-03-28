@@ -135,7 +135,24 @@ Dreugh's Grace                              30/20s -> 120/20s
 
 ------------------------------------------------------------
 
+### Levitate
+```
+Base Cost                                   3
+```
+
+------------------------------------------------------------
+
+### Jump
+```
+Base Cost                                   3
+```
+
+------------------------------------------------------------
+
 ### Slowfall
+```
+Base Cost                                   3
+```
 
 *Potions*
 ```
@@ -218,7 +235,14 @@ Fierce Shock Shield                         5-11/10s -> 15-33/10s
 
 *Tamriel Data - Spells*
 ```
-Draugr Lightning Shield                     50/20s [150] -> 150/20s [150]
+Draugr Lightning Shield                     50/20s -> 150/20s
+```
+
+------------------------------------------------------------
+
+### Open
+```
+Base Cost                                   6 -> 12
 ```
 
 ------------------------------------------------------------
@@ -237,6 +261,9 @@ Wizard Lock                                 20 [2] -> 20 [24]
 ------------------------------------------------------------
 
 ### Water Breathing
+```
+Base Cost                                   3
+```
 
 *Potions*
 ```
@@ -246,6 +273,9 @@ Potion of Water Breathing                   15s -> 30s
 ------------------------------------------------------------
 
 ### Water Walking
+```
+Base Cost                                   3
+```
 
 *Potions*
 ```
@@ -286,6 +316,13 @@ Base Cost                                   9 -> 8
 
 ------------------------------------------------------------
 
+### Damage Health
+```
+Base Cost                                   8
+```
+
+------------------------------------------------------------
+
 ### Damage Magicka
 ```
 Base Cost                                   8 -> 4
@@ -302,7 +339,7 @@ Base Cost                                   4 -> 2
 
 ### Damage Attribute
 ```
-Base Cost                                   8
+Base Cost                                   8 -> 24
 ```
 
 ------------------------------------------------------------
@@ -331,6 +368,20 @@ Base Cost                                   4 -> 0.5
 ### Drain Fatigue
 ```
 Base Cost                                   2 -> 0.25
+```
+
+------------------------------------------------------------
+
+### Drain Attribute
+```
+Base Cost                                   1
+```
+
+------------------------------------------------------------
+
+### Drain Skill
+```
+Base Cost                                   1
 ```
 
 ------------------------------------------------------------
@@ -400,11 +451,28 @@ Master Acid Trap                            150-300/1s -> 150-300/5s
 
 ------------------------------------------------------------
 
+### Weakness to Blight Disease
+```
+Base Cost                                   4
+```
+
+------------------------------------------------------------
+
+### Weakness to Common Disease
+```
+Base Cost                                   2
+```
+
+------------------------------------------------------------
+
 ## Illusion
 
 ------------------------------------------------------------
 
 ### Light
+```
+Base Cost                                   0.2
+```
 
 *Potions*
 ```
@@ -424,6 +492,9 @@ Quality Potion of Light                     15/45s -> 75/225s
 ------------------------------------------------------------
 
 ### Night Eye
+```
+Base Cost                                   0.2
+```
 
 *Potions*
 ```
@@ -500,7 +571,7 @@ Base Cost                                   5
 
 ### Absorb Health
 ```
-Base Cost                                   8
+Base Cost                                   8 -> 16
 ```
 
 ------------------------------------------------------------
@@ -528,14 +599,14 @@ Base Cost                                   1
 
 ### Reflect
 ```
-Base Cost                                   10
+Base Cost                                   10 -> 2
 ```
 
 ------------------------------------------------------------
 
 ### Spell Absorption
 ```
-Base Cost                                   10
+Base Cost                                   10 -> 2
 ```
 
 ------------------------------------------------------------
@@ -544,9 +615,50 @@ Base Cost                                   10
 
 ------------------------------------------------------------
 
+### Restore Health
+```
+Base Cost                                   5
+```
+
+*Potions*
+```
+Bargain Restore Health                      1/5s                            !
+Cheap Restore Health                        2/5s
+Standard Restore Health                     10/5s
+Quality Restore Health                      20/5s
+Exclusive Restore Health                    40/5s
+```
+
+------------------------------------------------------------
+
+### Restore Magicka
+```
+Base Cost                                   5
+```
+
+*Potions*
+```
+Bargain Restore Health                      1/5s                            !
+Cheap Restore Health                        2/5s
+Standard Restore Health                     10/5s
+Quality Restore Health                      20/5s
+Exclusive Restore Health                    40/5s
+```
+
+------------------------------------------------------------
+
 ### Restore Fatigue
 ```
-Base Cost                                   1
+Base Cost                                   1 -> 2.5
+```
+
+*Potions*
+```
+Bargain Restore Health                      5/5s                            !
+Cheap Restore Health                        10/5s
+Standard Restore Health                     20/5s
+Quality Restore Health                      40/5s
+Exclusive Restore Health                    80/5s
 ```
 
 ------------------------------------------------------------
@@ -609,54 +721,54 @@ Base Cost                                   1
 
 ### Resist Blight Disease
 ```
-Base Cost                                   5
+Base Cost                                   5 -> 0.2
 ```
 
 ------------------------------------------------------------
 
 ### Resist Common Disease
 ```
-Base Cost                                   2
+Base Cost                                   2 -> 0.1
 ```
 
 ------------------------------------------------------------
 
 ### Resist Fire
 ```
-Base Cost                                   2
+Base Cost                                   2 -> 0.5
 ```
 
 ------------------------------------------------------------
 
 ### Resist Frost
 ```
-Base Cost                                   2
+Base Cost                                   2 -> 0.5
 ```
 
 ------------------------------------------------------------
 
 ### Resist Shock
 ```
-Base Cost                                   2
+Base Cost                                   2 -> 0.5
 ```
 
 ------------------------------------------------------------
 
 ### Resist Poison
 ```
-Base Cost                                   2
+Base Cost                                   2 -> 0.5
 ```
 
 ------------------------------------------------------------
 
 ### Resist Magicka
 ```
-Base Cost                                   2
+Base Cost                                   2 -> 0.5
 ```
 
 ------------------------------------------------------------
 
 ### Resist Paralysis
 ```
-Base Cost                                   0.20
+Base Cost                                   0.20 -> 0.5
 ```
