@@ -449,7 +449,7 @@ Base Cost                                   40 -> 80
 
 *Tamriel Data - Spells*
 ```
-Hairdoch's Extinguisher                     10
+Hairdoch's Extinguisher                     10                              !
 Living Statue                               20
 Mountain Wind                               5
 Paralysis                                   3

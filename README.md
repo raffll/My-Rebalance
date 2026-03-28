@@ -129,6 +129,14 @@ Secret Master's Calcinator          3200 -> 16000
 Secret Master's Retort              1000 -> 5000
 ```
 
+*Tamriel Data - Apparatus Prices*
+```
+Secret Master's Mortar & Pestle     6000 -> 30000
+Secret Master's Alembic             1600 -> 8000
+Secret Master's Calcinator          3200 -> 16000
+Secret Master's Retort              1000 -> 5000
+```
+
 ------------------------------------------------------------
 
 ## Enchant
