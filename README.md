@@ -31,7 +31,7 @@ fBarterGoldResetDelay               24 -> 720
 fMagesGuildTravel                   10 -> 50
 ```
 
-#### Merchants Gold
+*Merchants Gold*
 ```
 Creeper                             5000 -> 500
 Mudcrab                             10000 -> 1000
@@ -66,12 +66,12 @@ fPickPocketMod                      0.3 -> 0.001
 fPickLockMult                       -1 -> -1.25
 ```
 
-#### Spell Effects
+*Spell Effects*
 ```
 Open                                6 -> 12
 ```
 
-#### Spell Magnitudes
+*Spell Magnitudes*
 ```
 Open                                      20
 Ondusi's Open Door                  50 -> 40
@@ -80,12 +80,12 @@ Great Open                          50 -> 80
 Wild Open                                 1-100
 ```
 
-#### Scroll Prices
+*Scroll Prices*
 ```
 Scroll of Ondusi's Unhinging        73 -> 173
 ```
 
-#### Scroll Magnitudes
+*Scroll Magnitudes*
 ```
 Scroll of Ekash's Lock Splitter     100 -> 80
 ```
@@ -97,7 +97,7 @@ Scroll of Ekash's Lock Splitter     100 -> 80
 fTrapCostMult                       0 -> -0.75
 ```
 
-#### Common Trap Costs
+*Common Trap Costs*
 ```
 Fire Trap                           3 -> 30
 Frost Trap                          3 -> 35
@@ -121,7 +121,7 @@ Master Poison Trap                  16 -> 100
 fPotionStrengthMult                 0.5 -> 0.25
 ```
 
-#### Apparatus Prices
+*Apparatus Prices*
 ```
 Secret Master's Mortar & Pestle     6000 -> 30000
 Secret Master's Alembic             1600 -> 8000
@@ -147,14 +147,14 @@ fElementalShieldMult                0.1 -> 1
 
 ------------------------------------------------------------
 
-## Optional - No Magic Insufficient Charge Messagebox
+## Optional
+
+*No Magic Insufficient Charge Messagebox*
 ```
 sMagicInsufficientCharge            "Item does not have enough charge." -> ""
 ```
 
-------------------------------------------------------------
-
-## Optional - One Hour Barter Gold Reset Delay
+*One Hour Barter Gold Reset Delay*
 ```
 fBarterGoldResetDelay               24 -> 1
 ```

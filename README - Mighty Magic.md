@@ -43,10 +43,11 @@ Burden of Sin -> Great Burden of Sin        40-60/20s -> 400-600/20s
 Crushing Burden of Sin                      60-80/30s -> 600-800/30s
 ```
 
+*Unavailable Spells*
 ```
-Aryon's Rest                                10/10s -> 100/10s               !
-Hand of Odros                               30-40/60s -> 300-400/60s        !
-Wrath of Odros                              20-30/50s -> 200-300/50s        !
+Aryon's Rest                                10/10s -> 100/10s
+Hand of Odros                               30-40/60s -> 300-400/60s
+Wrath of Odros                              20-30/50s -> 200-300/50s
 ```
 
 *Scrolls*
@@ -123,8 +124,8 @@ Bargain Potion of Swift Swim                1/8s -> 5/8s
 
 *Spells*
 ```
-Buoyancy                                    1/20s -> 20/20s (x20)
-Swimmer's Blessing                          5/30s -> 50/30s (x10)
+Buoyancy                                    1/20s -> 20/20s                 (x20)
+Swimmer's Blessing                          5/30s -> 50/30s                 (x10)
 ```
 
 *Tamriel Data - Spells*
@@ -169,15 +170,16 @@ Tsun's Ward                                 20/20s -> 40/20s
 Fire Shield                                 3 -> 1
 ```
 
+*Spells*
 ```
-Fire Barrier                                1-10/10s -> 3-30/10s    !
-Fire Barrier -> Strong Fire Barrier         1-10/10s -> 6-60/10s
+Fire Barrier                                1-10/10s -> 3-30/10s
+Fire Barrier -> Strong Fire Barrier         1-10/10s -> 6-60/10s            (x6)
 Fire Shield                                 10/30s -> 30/30s
-Strong Fire Shield                          12/30s -> 72/30s
+Strong Fire Shield                          12/30s -> 72/30s                (x6)
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Spells*
 ```
 Fire Eye                                    10-23/20s -> 30-69/20s
 ```
@@ -189,11 +191,12 @@ Fire Eye                                    10-23/20s -> 30-69/20s
 Frost Shield                                3 -> 1
 ```
 
+*Spells*
 ```
-Frost Barrier                               3/10s -> 9/10s          !
+Frost Barrier                               3/10s -> 3-30/10s               (1-10/10s x3)
 Frost Shield -> Weak Frost Shield           6/30s -> 18/30s
 Frost Shield                                10/30s -> 30/30s
-Strong Frost Shield                         12/30s -> 72/30s
+Strong Frost Shield                         12/30s -> 72/30s                (x6)
 Fierce Frost Shield                         5-11/10s -> 15-33/10s
 ```
 
@@ -204,17 +207,18 @@ Fierce Frost Shield                         5-11/10s -> 15-33/10s
 Lightning Shield                            3 -> 1
 ```
 
+*Spells*
 ```
-Shock Barrier                               1-10/10s -> 3-30/10s    !
+Shock Barrier                               1-10/10s -> 3-30/10s
 Shock Shield -> Lightning Shield            3/20s -> 9/20s
 Lightning Shield -> Shock Shield            10/30s -> 30/30s
 Strong Shock Shield                         12/30s -> 72/30s
 Fierce Shock Shield                         5-11/10s -> 15-33/10s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Spells*
 ```
-Draugr Lightning Shield                     50/20s [150]
+Draugr Lightning Shield                     50/20s [150] -> 150/20s [150]
 ```
 
 ------------------------------------------------------------
@@ -226,8 +230,8 @@ Base Cost                                   2 -> 24
 
 *Tamriel Data - Spells*
 ```
-Dalgor's Entwining                          100 [8 -> 96]
-Wizard Lock                                 20 [2 -> 24]
+Dalgor's Entwining                          100 [8] -> 100 [96]
+Wizard Lock                                 20 [2] -> 20 [24]
 ```
 
 ------------------------------------------------------------
@@ -338,7 +342,7 @@ Base Cost                                   6 -> 0.6
 
 *Spells*
 ```
-Armor Eater                                 10-30/1s -> 200-600/1s (x20)
+Armor Eater                                 10-30/1s -> 200-600/1s          (x20)
 Disintegrate Armor                          6-25/1s -> 60-250/1s
 ```
 
@@ -356,9 +360,12 @@ Daedric Crescent                            5-30/1s -> 50-300/1s
 ```
 Shadow Rust                                 1-5/20s -> 10-50/20s
 Fracture Armor                              100/2s -> 1000/2s
+```
 
-Acid Trap                                   20-40pts                !
-Master Acid Trap                            150-300pts              !
+*Tamriel Data - Unavailable Spells*
+```
+Acid Trap                                   20-40/1s -> 20-40/10s
+Master Acid Trap                            150-300/1s -> 150-300/10s
 ```
 
 ------------------------------------------------------------
@@ -370,7 +377,7 @@ Base Cost                                   6 -> 1.2
 
 *Spells*
 ```
-Weapon Eater                                6-25/1s -> 100-300/1s (10-30/1s x10)
+Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s x10)
 Disintegrate Weapon                         6-25/1s -> 30-125/1s
 ```
 
@@ -383,9 +390,12 @@ Scroll of Baleful Suffering                 5/5s -> 25/5s
 ```
 Iron Eater                                  1-25/2s -> 5-125/2s
 Steel Eater                                 5-30/3s -> 25-150/3s
+```
 
-Acid Trap                                   20-40pts                !
-Master Acid Trap                            150-300pts              !
+*Tamriel Data - Unavailable Spells*
+```
+Acid Trap                                   20-40/1s -> 20-40/5s
+Master Acid Trap                            150-300/1s -> 150-300/5s
 ```
 
 ------------------------------------------------------------
@@ -459,18 +469,18 @@ Base Cost                                   40 -> 20
 Base Cost                                   3 -> 0.25
 ```
 
+*Spells*
 ```
-Earwig                                      3-8/5s -> 9-24/20s      !
+Earwig                                      3-8/5s -> 9-24/20s              !
 Cruel Earwig                                5-11/5s -> 15-33/20s
 Dire Earwig                                 8-15/5s -> 24-45/20s
 Wild Earwig                                 1-30/5s -> 3-90/20s
-
 Noise                                       3-8/5s -> 3-8/60s
 Cruel Noise                                 10-22/5s -> 10-20/60s
 Dire Noise                                  2-60/5s -> 2-60/60s
 ```
 
-**Tamriel Data**
+*Tamriel Data - Spells*
 ```
 Voices                                      50/20s [100]
 ```
