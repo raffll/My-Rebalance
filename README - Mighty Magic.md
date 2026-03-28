@@ -102,7 +102,7 @@ Ulms' Juicedaw Feather                      50/10s -> 500/10s
 Feather Belt                                20/10s -> 100/20s               !      
 Feather Ring                                20/10s -> 100/20s
 Feather Shield                              20/10s -> 100/20s
-Saint's Shield                              20/10s -> 100/20s
+Saint's Shield                              20/10s -> 200/10s
 Juicedaw Feather Ring                       50/10s -> 500/10s
 ```
 
