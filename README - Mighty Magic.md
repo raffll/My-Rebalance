@@ -155,9 +155,9 @@ Fire Shield                                 3 -> 1
 *Spells*
 ```
 Fire Barrier                                1-10/10s -> 3-30/10s
-Fire Barrier -> Strong Fire Barrier         1-10/10s -> 6-60/10s            (x6)
+Fire Barrier -> Fathasa's Fire Barrier      1-10/10s -> 3-30/10s
 Fire Shield                                 10/30s -> 30/30s
-Strong Fire Shield                          12/30s -> 72/30s                (x6)
+Strong Fire Shield                          12/30s -> 36/30s
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 
@@ -178,7 +178,7 @@ Frost Shield                                3 -> 1
 Frost Barrier                               3/10s -> 3-30/10s               (1-10/10s x3)
 Frost Shield -> Weak Frost Shield           6/30s -> 18/30s
 Frost Shield                                10/30s -> 30/30s
-Strong Frost Shield                         12/30s -> 72/30s                (x6)
+Strong Frost Shield                         12/30s -> 36/30s
 Fierce Frost Shield                         5-11/10s -> 15-33/10s
 ```
 
@@ -194,7 +194,7 @@ Lightning Shield                            3 -> 1
 Shock Barrier                               1-10/10s -> 3-30/10s
 Shock Shield -> Lightning Shield            3/20s -> 9/20s
 Lightning Shield -> Shock Shield            10/30s -> 30/30s
-Strong Shock Shield                         12/30s -> 72/30s
+Strong Shock Shield                         12/30s -> 36/30s
 Fierce Shock Shield                         5-11/10s -> 15-33/10s
 ```
 
@@ -526,7 +526,7 @@ Base Cost                                   3 -> 0.25
 
 *Spells*
 ```
-Earwig                                      3-8/5s -> 9-24/20s              !
+Earwig                                      3-8/5s -> 9-24/20s
 Cruel Earwig                                5-11/5s -> 15-33/20s
 Dire Earwig                                 8-15/5s -> 24-45/20s
 Wild Earwig                                 1-30/5s -> 3-90/20s
@@ -622,11 +622,11 @@ Base Cost                                   5
 
 *Potions*
 ```
-Bargain Restore Health                      1/5s -> 2/6s                    !
-Cheap Restore Health                        2/5s -> 3/9s
-Standard Restore Health                     10/5s -> 4/12s
-Quality Restore Health                      20/5s -> 6/18s
-Exclusive Restore Health                    40/5s -> 8/24s
+Bargain Restore Magicka                     1/5s -> 2/6s                    !
+Cheap Restore Magicka                       2/5s -> 3/9s
+Standard Restore Magicka                    10/5s -> 4/12s
+Quality Restore Magicka                     20/5s -> 6/18s
+Exclusive Restore Magicka                   40/5s -> 8/24s
 ```
 
 ------------------------------------------------------------
@@ -638,11 +638,11 @@ Base Cost                                   1 -> 2.5
 
 *Potions*
 ```
-Bargain Restore Health                      5/5s -> 3/9s                    !
-Cheap Restore Health                        10/5s -> 4/12s
-Standard Restore Health                     20/5s -> 6/18s
-Quality Restore Health                      40/5s -> 8/24s
-Exclusive Restore Health                    80/5s -> 12/36s
+Bargain Restore Fatigue                     5/5s -> 3/9s                    !
+Cheap Restore Fatigue                       10/5s -> 4/12s
+Standard Restore Fatigue                    20/5s -> 6/18s
+Quality Restore Fatigue                     40/5s -> 8/24s
+Exclusive Restore Fatigue                   80/5s -> 12/36s
 ```
 
 ------------------------------------------------------------
