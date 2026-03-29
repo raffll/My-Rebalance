@@ -92,7 +92,7 @@ Ulms' Juicedaw Feather                      50/10s -> 500/10s
 
 *Enchantments*
 ```
-Feather Belt                                20/10s -> 100/20s               !
+Feather Belt                                20/10s -> 100/20s
 Feather Ring                                20/10s -> 100/20s
 Feather Shield                              20/10s -> 100/20s
 Saint's Shield                              20/10s -> 200/10s
@@ -212,7 +212,7 @@ Base Cost                                   2 -> 24
 
 *Tamriel Data - Spells*
 ```
-Dalgor's Entwining                          100 [8] -> 100 [96]             !
+Dalgor's Entwining                          100 [8] -> 100 [96]
 Wizard Lock                                 20 [2] -> 20 [24]
 ```
 
@@ -504,7 +504,7 @@ Base Cost                                   40 -> 80
 
 *Tamriel Data - Spells*
 ```
-Hairdoch's Extinguisher                     10                              !
+Hairdoch's Extinguisher                     10
 Living Statue                               20
 Mountain Wind                               5
 Paralysis                                   3
