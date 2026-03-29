@@ -33,7 +33,7 @@ Abilities
 
 Spells
     Water Breathing [REMOVED]
-        Water Breathing                     120s/Self
+        Water Breathing                     120s
 ```
 
 ### Breton
@@ -46,7 +46,7 @@ Abilities
 
 Powers
     Dragon Skin
-        Shield                              50/60s/Self
+        Shield                              50/60s
 ```
 
 ### Dark Elf -> Dunmer
@@ -57,7 +57,7 @@ Abilities
 
 Powers
     Ancestor Guardian
-        Sanctuary                           50/60s/Self
+        Sanctuary                           50/60s
 ```
 
 ### High Elf -> Altmer
@@ -79,15 +79,14 @@ Abilities
 
 ### Imperial
 ```
-Abilities
-    Star of the West [NEW]
-        Restore Fatigue                     1
+Powers -> Abilities
+    Star of the West
+        Absorb Fatigue                      200/1s -> 1
+
 Powers
     Voice of the Emperor
-        Charm                               25-50/15s/Target -> 25/60s/25ft/Target
-        Calm Humanoid [NEW]                 25/60s/25ft/Target
-    Star of the West [REMOVED]
-        Absorb Fatigue                      200/Target
+        Charm                               25-50/15s -> 25/60s/25ft
+        Calm Humanoid [NEW]                 25/60s/25ft
 ```
 
 ### Khajiit
@@ -115,11 +114,11 @@ Abilities
 
 Powers
     Eye of Fear
-        Demoralize Humanoid                 100/30s/Target -> 100/60s/Target
+        Demoralize Humanoid                 100/30s -> 100/60s
 
 Spells
     Eye of Night [REMOVED]
-        Night Eye                           50/30s/Self
+        Night Eye                           50/30s
 ```
 
 ### Nord
@@ -132,12 +131,12 @@ Abilities
 
 Powers
     Blizzard Barrier [NEW]
-        Lightning Shield                    25/60s/Self
-        Frost Shield                        25/60s/Self
+        Lightning Shield                    25/60s
+        Frost Shield                        25/60s
     Thunder Fist [REMOVED]
-        Frost Damage                        25/Touch
+        Frost Damage                        25
     Woad [REMOVED]
-        Shield                              30/60s/Self
+        Shield                              30/60s
 ```
 
 ### Orc -> Orsimer
@@ -148,10 +147,10 @@ Abilities
 
 Powers
     Berserk
-        Fortify Health [REMOVED]            20/60s/Self
-        Fortify Fatigue                     200/60s/Self
-        Fortify Attack                      100/60s/Self -> 50/60s/Self
-        Drain Agility                       100/60s/Self -> 200/60s/Self
+        Fortify Health [REMOVED]            20/60s
+        Fortify Fatigue                     200/60s
+        Fortify Attack                      100/60s -> 50/60s
+        Drain Agility                       100/60s -> 200/60s
 ```
 
 ### Redguard
@@ -164,11 +163,11 @@ Abilities
 
 Powers
     Adrenaline Rush
-        Fortify Agility                     50/60s/Self
-        Fortify Strength                    50/60s/Self
-        Fortify Speed                       50/60s/Self
-        Fortify Endurance                   50/60s/Self
-        Fortify Health                      25/60s/Self
+        Fortify Agility                     50/60s
+        Fortify Strength                    50/60s
+        Fortify Speed                       50/60s
+        Fortify Endurance                   50/60s
+        Fortify Health                      25/60s
 ```
 
 ### Wood Elf -> Bosmer
@@ -179,7 +178,7 @@ Abilities
 
 Powers
     Beast Tongue
-        Command Creature                    5/600s/Target -> 15/600s/Target
+        Command Creature                    5/600s -> 15/600s
 ```
 
 ```
@@ -218,8 +217,8 @@ Abilities
 ```
 Spells -> Powers
     Star-Curse
-        Poison                              3/30s/Touch -> 3/300s/Touch
-        Damage Health                       1/30s/Self -> 1/300s/Self
+        Poison                              3/30s -> 3/300s
+        Damage Health                       1/30s -> 1/300s
 ```
 
 ### Lady
@@ -243,7 +242,7 @@ Abilities
 ```
 Spells -> Powers
     Blood of the North
-        Restore Health                      2/30s/Self -> 1/600s/Self
+        Restore Health                      2/30s -> 1/600s
 
 Abilities
     Trollkin
@@ -271,17 +270,17 @@ Abilities
 ```
 Powers
     Mara's Gift
-        Restore Health                      100/Self
-        Restore Magicka [NEW]               100/Self
-        Restore Fatigue [NEW]               200/Self
-    Blessed Word [NEW]
-        Turn Undead                         100/60s/25ft/Target
+        Restore Health                      100/1s
+        Restore Magicka [NEW]               100/1s
+        Restore Fatigue [NEW]               200/1s
 
 Spells -> Powers
-    Blessed Word [REMOVED]
-        Turn Undead                         100/30s/Target
+    Blessed Word
+        Turn Undead                         100/30s -> 100/60s/25ft
+
+Spells
     Blessed Touch [REMOVED]
-        Turn Undead                         100/30s/Touch
+        Turn Undead                         100/30s
 ```
 
 ### Lover
@@ -292,8 +291,8 @@ Abilities
 
 Powers
     Lover's Kiss
-        Paralyze                            60s/Target
-        Damage Fatigue                      200/Self
+        Paralyze                            60s
+        Damage Fatigue                      200/1s
 ```
 
 ### Shadow
@@ -301,19 +300,19 @@ Powers
 Powers -> Abilities
     Moonshadow
         Chameleon [NEW]                     20
-        Invisibility [REMOVED]              60s/Self
+        Invisibility [REMOVED]              60s
 ```
 
 ### Tower
 ```
 Spells -> Abilities
     Beggar's Nose
-        Detect Animal                       200/60s/Self -> 200
-        Detect Enchantment                  200/60s/Self -> 200
-        Detect Key                          200/60s/Self -> 200
+        Detect Animal                       200/60s -> 200
+        Detect Enchantment                  200/60s -> 200
+        Detect Key                          200/60s -> 200
 
 Powers
     Tower Key
         Fortify Security                    25/60s
-        Open [REMOVED]                      50/Touch
+        Open [REMOVED]                      50
 ```
