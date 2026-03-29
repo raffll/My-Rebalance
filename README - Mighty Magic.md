@@ -2,13 +2,6 @@
 
 ------------------------------------------------------------
 
-## Enchantments
-```
-Slave's Left/Right Bracer                   Drain Magicka -> Damage Magicka
-```
-
-------------------------------------------------------------
-
 ## Alteration
 
 ------------------------------------------------------------
@@ -99,7 +92,7 @@ Ulms' Juicedaw Feather                      50/10s -> 500/10s
 
 *Enchantments*
 ```
-Feather Belt                                20/10s -> 100/20s               !      
+Feather Belt                                20/10s -> 100/20s               !
 Feather Ring                                20/10s -> 100/20s
 Feather Shield                              20/10s -> 100/20s
 Saint's Shield                              20/10s -> 200/10s
@@ -124,11 +117,6 @@ Zenithar's Arms                             50/10s -> 500/10s
 ### Swift Swim
 ```
 Base Cost                                   2 -> 0.5
-```
-
-*Potions*
-```
-Bargain Potion of Swift Swim                1/8s -> 5/8s
 ```
 
 *Spells*
@@ -166,12 +154,6 @@ Base Cost                                   3
 *Potions*
 ```
 Potion of Slowfalling                       10/15s -> 10/30s
-Spoiled Slowfall Potion                     10/15s -> 1/15s
-```
-
-*Tamriel Data - Potions*
-```
-Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
