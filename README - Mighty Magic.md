@@ -1,7 +1,5 @@
 # Remastered Rebalance Redux
 
-
-
 ------------------------------------------------------------
 
 ## Alteration
