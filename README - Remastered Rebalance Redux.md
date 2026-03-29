@@ -121,7 +121,7 @@ Master Poison Trap                          16 -> 100
 fPotionStrengthMult                         0.5 -> 0.25
 ```
 
-*Apparatus Prices & Tamriel Data*
+*Apparatus Prices*
 ```
 Secret Master's Mortar & Pestle             6000 -> 30000
 Secret Master's Alembic                     1600 -> 8000
@@ -161,11 +161,6 @@ Exclusive Frost Shield                      20/30s -> 20/60s
 *Tamriel Data - Potions*
 ```
 Spoiled Slowfall Potion                     10/15s -> 1/15s
-```
-
-*Enchantments*
-```
-Slave's Left/Right Bracer                   Drain Magicka -> Damage Magicka
 ```
 
 ------------------------------------------------------------
