@@ -141,6 +141,7 @@ Base Cost                                   2 -> 1
 ```
 Falling First Barrier                       8/40s -> 16/40s
                                             5/20s -> 10/20s
+
 Force Wall                                  50/5s -> 100/5s
 Tsun's Ward                                 20/20s -> 40/20s
 ```
@@ -312,6 +313,11 @@ Base Cost                                   8
 Base Cost                                   8 -> 4
 ```
 
+```
+Mind Rot                                    1-15/2s/2ft
+Thimble of Magefire                         10-30/1s -> 10-30/2s
+```
+
 ------------------------------------------------------------
 
 ### Damage Fatigue
@@ -319,11 +325,22 @@ Base Cost                                   8 -> 4
 Base Cost                                   4 -> 2
 ```
 
+```
+Hairdoch's Extinguisher                     2/10s -> 4/10s
+```
+
 ------------------------------------------------------------
 
 ### Damage Attribute
 ```
 Base Cost                                   8 -> 24
+```
+
+```
+Kirhnarva's Leg-Breaker                     1-8/2s
+                                            1-8/2s
+Meat Rot                                    1-5/2s
+Mind Rot                                    1-5/2s/2ft
 ```
 
 ------------------------------------------------------------
@@ -347,11 +364,20 @@ Base Cost                                   4
 Base Cost                                   4 -> 0.5
 ```
 
+```
+Dhamcka's Soul-Withering                    1/30s/1ft
+Rage of Magnus                              60/10s/10ft
+```
+
 ------------------------------------------------------------
 
 ### Drain Fatigue
 ```
 Base Cost                                   2 -> 0.25
+```
+
+```
+Duck                                        200/2s [40]
 ```
 
 ------------------------------------------------------------
@@ -499,22 +525,27 @@ Quality Potion of Night-Eye                 15/45s -> 75/225s
 
 ### Paralyze
 ```
-Base Cost                                   40 -> 80
+Base Cost                                   40 -> 80                        !
 ```
 
 *Tamriel Data - Spells*
 ```
-Hairdoch's Extinguisher                     10
-Living Statue                               20
-Mountain Wind                               5
-Paralysis                                   3
+Hairdoch's Extinguisher                     10s -> 5s
+Living Statue                               20s -> 10s
+Mountain Wind                               5s [38 -> ?]
+Paralysis                                   3s [6 -> 12]
 ```
 
 ------------------------------------------------------------
 
 ### Silence
 ```
-Base Cost                                   40 -> 20
+Base Cost                                   40 -> 20                        !
+```
+
+```
+Silence                                     5s -> 10s
+Far Silence                                 10s -> 20s
 ```
 
 ------------------------------------------------------------
