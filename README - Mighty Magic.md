@@ -313,8 +313,8 @@ Base Cost                                   8
 Base Cost                                   8 -> 4
 ```
 
+*Tamriel Data - Spells*
 ```
-Mind Rot                                    1-15/2s/2ft
 Thimble of Magefire                         10-30/1s -> 10-30/2s
 ```
 
@@ -325,22 +325,11 @@ Thimble of Magefire                         10-30/1s -> 10-30/2s
 Base Cost                                   4 -> 2
 ```
 
-```
-Hairdoch's Extinguisher                     2/10s -> 4/10s
-```
-
 ------------------------------------------------------------
 
 ### Damage Attribute
 ```
 Base Cost                                   8 -> 24
-```
-
-```
-Kirhnarva's Leg-Breaker                     1-8/2s
-                                            1-8/2s
-Meat Rot                                    1-5/2s
-Mind Rot                                    1-5/2s/2ft
 ```
 
 ------------------------------------------------------------
@@ -364,9 +353,10 @@ Base Cost                                   4
 Base Cost                                   4 -> 0.5
 ```
 
+*Tamriel Data - Spells*
 ```
-Dhamcka's Soul-Withering                    1/30s/1ft
-Rage of Magnus                              60/10s/10ft
+Dhamcka's Soul-Withering                    1/30s -> 8/30s
+Rage of Magnus                              60/10s -> 240/20s
 ```
 
 ------------------------------------------------------------
@@ -376,8 +366,9 @@ Rage of Magnus                              60/10s/10ft
 Base Cost                                   2 -> 0.25
 ```
 
+*Tamriel Data - Spells*
 ```
-Duck                                        200/2s [40]
+Duck                                        200/2s -> 400/8s
 ```
 
 ------------------------------------------------------------
@@ -486,17 +477,17 @@ Base Cost                                   0.2
 
 *Potions*
 ```
-Bargain Potion of Light                     5/8s -> 25/75s
+Bargain Potion of Light                     5/8s -> 30/90s
 Cheap Potion of Light                       8/15s -> 40/120s
 Standard Potion of Light                    10/30s -> 50/150s
-Quality Potion of Light                     15/45s -> 75/225s
+Quality Potion of Light                     15/45s -> 80/240s
 Exclusive Potion of Light                   20/60s -> 100/300s
 ```
 
 *Tamriel Data - Potions*
 ```
 Cheap Potion of Light                       8/15s -> 40/120s
-Quality Potion of Light                     15/45s -> 75/225s
+Quality Potion of Light                     15/45s -> 80/240s
 ```
 
 ------------------------------------------------------------
@@ -508,43 +499,36 @@ Base Cost                                   0.2
 
 *Potions*
 ```
-Bargain Potion of Night-Eye                 5/8s -> 25/75s
+Bargain Potion of Night-Eye                 5/8s -> 30/90s
 Cheap Potion of Night-Eye                   8/15s -> 40/120s
 Standard Potion of Night-Eye                10/30s -> 50/150s
-Quality Potion of Night-Eye                 15/45s -> 75/225s
+Quality Potion of Night-Eye                 15/45s -> 80/240s
 Exclusive Potion of Night-Eye               20/60s -> 100/300s
 ```
 
 *Tamriel Data - Potions*
 ```
 Cheap Potion of Night-Eye                   8/15s -> 40/120s
-Quality Potion of Night-Eye                 15/45s -> 75/225s
+Quality Potion of Night-Eye                 15/45s -> 80/240s
 ```
 
 ------------------------------------------------------------
 
 ### Paralyze
 ```
-Base Cost                                   40 -> 80                        !
-```
-
-*Tamriel Data - Spells*
-```
-Hairdoch's Extinguisher                     10s -> 5s
-Living Statue                               20s -> 10s
-Mountain Wind                               5s [38 -> ?]
-Paralysis                                   3s [6 -> 12]
+Base Cost                                   40 -> 80
 ```
 
 ------------------------------------------------------------
 
 ### Silence
 ```
-Base Cost                                   40 -> 20                        !
+Base Cost                                   40 -> 20
 ```
 
+*Spells*
 ```
-Silence                                     5s -> 10s
+Silence                                     5s -> 10s                       !
 Far Silence                                 10s -> 20s
 ```
 
@@ -568,7 +552,7 @@ Dire Noise                                  2-60/5s -> 2-60/60s
 
 *Tamriel Data - Spells*
 ```
-Voices                                      50/20s [100]
+Voices                                      50/20s -> 100/120s
 ```
 
 ------------------------------------------------------------
