@@ -13,7 +13,7 @@ Base Cost                                   1 -> 0.1
 
 *Potions*
 ```
-Bargain Potion of Burden                    5/8s -> 50/150s
+Bargain Potion of Burden                    5/8s -> 60/180s
 Cheap Potion of Burden                      8/15s -> 80/240s
 Standard Potion of Burden                   10/30s -> 100/300s
 Quality Potion of Burden                    15/45s -> 150/450s
@@ -34,10 +34,7 @@ Dire Weary                                  60-90/10s -> 300-450/20s
 Great Burden of Sin -> Burden of Sin        40/10s -> 400/10s
 Burden of Sin -> Great Burden of Sin        40-60/20s -> 400-600/20s
 Crushing Burden of Sin                      60-80/30s -> 600-800/30s
-```
 
-*Unavailable Spells*
-```
 Aryon's Rest                                10/10s -> 100/10s
 Hand of Odros                               30-40/60s -> 300-400/60s
 Wrath of Odros                              20-30/50s -> 200-300/50s
@@ -76,7 +73,7 @@ Base Cost                                   1 -> 0.1
 
 *Potions*
 ```
-Bargain Potion of Feather                   5/8s -> 50/150s
+Bargain Potion of Feather                   5/8s -> 60/180s
 Cheap Potion of Feather                     8/15s -> 80/240s
 Quality Potion of Feather                   15/45s -> 150/450s
 Exclusive Potion of Feather                 20/60s -> 200/600s
@@ -144,6 +141,12 @@ Falling First Barrier                       8/40s -> 16/40s
 
 Force Wall                                  50/5s -> 100/5s
 Tsun's Ward                                 20/20s -> 40/20s
+```
+
+*Tamriel Data - Enchantments*
+```
+Scroll of The Falling Barrier               4/40s -> 8/40s
+                                            3/20s -> 6/20s
 ```
 
 ------------------------------------------------------------
@@ -479,7 +482,7 @@ Base Cost                                   0.2
 ```
 Bargain Potion of Light                     5/8s -> 30/90s
 Cheap Potion of Light                       8/15s -> 40/120s
-Standard Potion of Light                    10/30s -> 50/150s
+Standard Potion of Light                    10/30s -> 60/180s
 Quality Potion of Light                     15/45s -> 80/240s
 Exclusive Potion of Light                   20/60s -> 100/300s
 ```
@@ -501,7 +504,7 @@ Base Cost                                   0.2
 ```
 Bargain Potion of Night-Eye                 5/8s -> 30/90s
 Cheap Potion of Night-Eye                   8/15s -> 40/120s
-Standard Potion of Night-Eye                10/30s -> 50/150s
+Standard Potion of Night-Eye                10/30s -> 60/180s
 Quality Potion of Night-Eye                 15/45s -> 80/240s
 Exclusive Potion of Night-Eye               20/60s -> 100/300s
 ```
@@ -524,12 +527,6 @@ Base Cost                                   40 -> 80
 ### Silence
 ```
 Base Cost                                   40 -> 20
-```
-
-*Spells*
-```
-Silence                                     5s -> 10s                       !
-Far Silence                                 10s -> 20s
 ```
 
 ------------------------------------------------------------
@@ -577,21 +574,21 @@ Base Cost                                   8 -> 16
 
 ### Detect Animal
 ```
-Base Cost                                   0.75
+Base Cost                                   0.75 -> 0.15
 ```
 
 ------------------------------------------------------------
 
 ### Detect Enchantment
 ```
-Base Cost                                   1
+Base Cost                                   1 -> 0.2
 ```
 
 ------------------------------------------------------------
 
 ### Detect Key
 ```
-Base Cost                                   1
+Base Cost                                   1 -> 0.2
 ```
 
 ------------------------------------------------------------
@@ -621,9 +618,9 @@ Base Cost                                   5
 
 *Potions*
 ```
-Bargain Restore Health                      1/5s -> 2/6s                    !
+Bargain Restore Health                      1/5s -> 2/6s
 Cheap Restore Health                        2/5s -> 3/9s
-Standard Restore Health                     10/5s -> 4/12s
+Standard Restore Health Potion              10/5s -> 4/12s
 Quality Restore Health                      20/5s -> 6/18s
 Exclusive Restore Health                    40/5s -> 8/24s
 ```
@@ -637,9 +634,9 @@ Base Cost                                   5
 
 *Potions*
 ```
-Bargain Restore Magicka                     1/5s -> 2/6s                    !
+Bargain Restore Magicka                     1/5s -> 2/6s
 Cheap Restore Magicka                       2/5s -> 3/9s
-Standard Restore Magicka                    10/5s -> 4/12s
+Standard Restore Magicka Potion             10/5s -> 4/12s
 Quality Restore Magicka                     20/5s -> 6/18s
 Exclusive Restore Magicka                   40/5s -> 8/24s
 ```
@@ -653,7 +650,7 @@ Base Cost                                   1 -> 2.5
 
 *Potions*
 ```
-Bargain Restore Fatigue                     5/5s -> 3/9s                    !
+Bargain Restore Fatigue                     5/5s -> 3/9s
 Cheap Restore Fatigue                       10/5s -> 4/12s
 Standard Restore Fatigue                    20/5s -> 6/18s
 Quality Restore Fatigue                     40/5s -> 8/24s
@@ -664,7 +661,7 @@ Exclusive Restore Fatigue                   80/5s -> 12/36s
 
 ### Restore Attribute
 ```
-Base Cost                                   1
+Base Cost                                   1 -> 8
 ```
 
 ------------------------------------------------------------
