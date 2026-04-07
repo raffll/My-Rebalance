@@ -20,6 +20,12 @@ Quality Potion of Burden                    15/45s -> 150/450s
 Exclusive Potion of Burden                  20/60s -> 200/600s
 ```
 
+*Potions - Tamriel Data*
+```
+Cheap Potion of Burden                      8/15s -> 80/240s
+Quality Potion of Burden                    15/45s -> 150/450s
+```
+
 *Spells*
 ```
 Burden Touch                                20/10s -> 100/20s
@@ -40,6 +46,12 @@ Hand of Odros                               30-40/60s -> 300-400/60s
 Wrath of Odros                              20-30/50s -> 200-300/50s
 ```
 
+*Spells - Tamriel Data*
+```
+Shadow Rust                                 1-15/20s -> 10-150/20s
+Weight of Guilt                             500/3s -> 500/30s
+```
+
 *Scrolls*
 ```
 Scroll of Baleful Suffering                 0−25/30s -> 0-250/30s
@@ -50,18 +62,6 @@ Scroll of Fader's Leaden Flesh              0−50/30s -> 0-500/30s
 ```
 Black Jinx                                  25-100/120s -> 250-1000/120s
 Spear of the Hunter                         50/10s -> 500/10s
-```
-
-*Tamriel Data - Potions*
-```
-Cheap Potion of Burden                      8/15s -> 80/240s
-Quality Potion of Burden                    15/45s -> 150/450s
-```
-
-*Tamriel Data - Spells*
-```
-Shadow Rust                                 1-15/20s -> 10-150/20s
-Weight of Guilt                             500/3s -> 500/30s
 ```
 
 ------------------------------------------------------------
@@ -79,12 +79,25 @@ Quality Potion of Feather                   15/45s -> 150/450s
 Exclusive Potion of Feather                 20/60s -> 200/600s
 ```
 
+*Potions - Tamriel Data*
+```
+Cheap Potion of Feather                     8/15s -> 80/240s
+Standard Potion of Feather                  10/30s -> 100/300s
+Quality Potion of Feather                   15/45s -> 150/450s
+```
+
 *Spells*
 ```
 Feather                                     20/10s -> 100/20s
 Strong Feather                              50/10s -> 250/20s
 Great Feather                               100/10s -> 500/20s
 Ulms' Juicedaw Feather                      50/10s -> 500/10s
+```
+
+*Spells - Tamriel Data*
+```
+Fling                                       500/3s -> 500/30s
+Zenithar's Arms                             50/10s -> 500/10s
 ```
 
 *Enchantments*
@@ -94,19 +107,6 @@ Feather Ring                                20/10s -> 100/20s
 Feather Shield                              20/10s -> 100/20s
 Saint's Shield                              20/10s -> 200/10s
 Juicedaw Feather Ring                       50/10s -> 500/10s
-```
-
-*Tamriel Data - Potions*
-```
-Cheap Potion of Feather                     8/15s -> 80/240s
-Standard Potion of Feather                  10/30s -> 100/300s
-Quality Potion of Feather                   15/45s -> 150/450s
-```
-
-*Tamriel Data - Spells*
-```
-Fling                                       500/3s -> 500/30s
-Zenithar's Arms                             50/10s -> 500/10s
 ```
 
 ------------------------------------------------------------
@@ -122,7 +122,7 @@ Buoyancy                                    1/20s -> 20/20s                 (x20
 Swimmer's Blessing                          5/30s -> 50/30s                 (x10)
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Dreugh's Grace                              30/20s -> 120/20s
 ```
@@ -134,7 +134,7 @@ Dreugh's Grace                              30/20s -> 120/20s
 Base Cost                                   2 -> 1
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Falling First Barrier                       8/40s -> 16/40s
                                             5/20s -> 10/20s
@@ -143,7 +143,7 @@ Force Wall                                  50/5s -> 100/5s
 Tsun's Ward                                 20/20s -> 40/20s
 ```
 
-*Tamriel Data - Enchantments*
+*Enchantments - Tamriel Data*
 ```
 Scroll of The Falling Barrier               4/40s -> 8/40s
                                             3/20s -> 6/20s
@@ -153,7 +153,7 @@ Scroll of The Falling Barrier               4/40s -> 8/40s
 
 ### Fire Shield
 ```
-Fire Shield                                 3 -> 1
+Base Cost                                   3 -> 1
 ```
 
 *Spells*
@@ -165,7 +165,7 @@ Strong Fire Shield                          12/30s -> 36/30s
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Fire Eye                                    10-23/20s -> 30-69/20s
 ```
@@ -174,7 +174,7 @@ Fire Eye                                    10-23/20s -> 30-69/20s
 
 ### Frost Shield
 ```
-Frost Shield                                3 -> 1
+Base Cost                                   3 -> 1
 ```
 
 *Spells*
@@ -190,7 +190,7 @@ Fierce Frost Shield                         5-11/10s -> 15-33/10s
 
 ### Lightning Shield
 ```
-Lightning Shield                            3 -> 1
+Base Cost                                   3 -> 1
 ```
 
 *Spells*
@@ -202,7 +202,7 @@ Strong Shock Shield                         12/30s -> 36/30s
 Fierce Shock Shield                         5-11/10s -> 15-33/10s
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Draugr Lightning Shield                     50/20s -> 150/20s
 ```
@@ -214,7 +214,7 @@ Draugr Lightning Shield                     50/20s -> 150/20s
 Base Cost                                   2 -> 24
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Dalgor's Entwining                          100 [8] -> 100 [96]
 Wizard Lock                                 20 [2] -> 20 [24]
@@ -316,7 +316,7 @@ Base Cost                                   8
 Base Cost                                   8 -> 4
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Thimble of Magefire                         10-30/1s -> 10-30/2s
 ```
@@ -356,7 +356,7 @@ Base Cost                                   4
 Base Cost                                   4 -> 0.5
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Dhamcka's Soul-Withering                    1/30s -> 8/30s
 Rage of Magnus                              60/10s -> 240/20s
@@ -369,7 +369,7 @@ Rage of Magnus                              60/10s -> 240/20s
 Base Cost                                   2 -> 0.25
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Duck                                        200/2s -> 400/8s
 ```
@@ -401,6 +401,15 @@ Armor Eater                                 10-30/1s -> 200-600/1s          (x20
 Disintegrate Armor                          6-25/1s -> 60-250/1s
 ```
 
+*Spells - Tamriel Data*
+```
+Shadow Rust                                 1-5/20s -> 10-50/20s
+Fracture Armor                              100/2s -> 1000/2s
+
+Acid Trap                                   20-40/1s -> 20-40/10s
+Master Acid Trap                            150-300/1s -> 150-300/10s
+```
+
 *Scrolls*
 ```
 Scroll of Baleful Suffering                 5/5s -> 50/5s
@@ -409,18 +418,6 @@ Scroll of Baleful Suffering                 5/5s -> 50/5s
 *Enchantments*
 ```
 Daedric Crescent                            5-30/1s -> 50-300/1s
-```
-
-*Tamriel Data - Spells*
-```
-Shadow Rust                                 1-5/20s -> 10-50/20s
-Fracture Armor                              100/2s -> 1000/2s
-```
-
-*Tamriel Data - Unavailable Spells*
-```
-Acid Trap                                   20-40/1s -> 20-40/10s
-Master Acid Trap                            150-300/1s -> 150-300/10s
 ```
 
 ------------------------------------------------------------
@@ -436,21 +433,18 @@ Weapon Eater                                6-25/1s -> 100-300/1s           (10-
 Disintegrate Weapon                         6-25/1s -> 30-125/1s
 ```
 
-*Scrolls*
-```
-Scroll of Baleful Suffering                 5/5s -> 25/5s
-```
-
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Iron Eater                                  1-25/2s -> 5-125/2s
 Steel Eater                                 5-30/3s -> 25-150/3s
-```
 
-*Tamriel Data - Unavailable Spells*
-```
 Acid Trap                                   20-40/1s -> 20-40/5s
 Master Acid Trap                            150-300/1s -> 150-300/5s
+```
+
+*Scrolls*
+```
+Scroll of Baleful Suffering                 5/5s -> 25/5s
 ```
 
 ------------------------------------------------------------
@@ -487,7 +481,7 @@ Quality Potion of Light                     15/45s -> 80/240s
 Exclusive Potion of Light                   20/60s -> 100/300s
 ```
 
-*Tamriel Data - Potions*
+*Potions - Tamriel Data*
 ```
 Cheap Potion of Light                       8/15s -> 40/120s
 Quality Potion of Light                     15/45s -> 80/240s
@@ -509,7 +503,7 @@ Quality Potion of Night-Eye                 15/45s -> 80/240s
 Exclusive Potion of Night-Eye               20/60s -> 100/300s
 ```
 
-*Tamriel Data - Potions*
+*Potions - Tamriel Data*
 ```
 Cheap Potion of Night-Eye                   8/15s -> 40/120s
 Quality Potion of Night-Eye                 15/45s -> 80/240s
@@ -547,7 +541,7 @@ Cruel Noise                                 10-22/5s -> 10-20/60s
 Dire Noise                                  2-60/5s -> 2-60/60s
 ```
 
-*Tamriel Data - Spells*
+*Spells - Tamriel Data*
 ```
 Voices                                      50/20s -> 100/120s
 ```
@@ -718,6 +712,13 @@ Base Cost                                   1
 ### Resist Blight Disease
 ```
 Base Cost                                   5 -> 0.2
+```
+
+*Spells*
+```
+Poet's Whim                                 1-30/10s -> 1-30/250s           !
+Vivec's Mercy                               20/10s -> 50/100s
+Shield of the Armiger                       30/10s -> 75/100s
 ```
 
 ------------------------------------------------------------
