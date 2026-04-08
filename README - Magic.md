@@ -169,7 +169,7 @@ Base Cost                                   3 -> 1
 Fire Barrier                                1-10/10s -> 3-30/10s
 Fire Barrier -> Fathasa's Fire Barrier      1-10/10s -> 3-30/10s
 Fire Shield                                 10/30s -> 30/30s
-Strong Fire Shield                          12/30s -> 36/30s        
+Strong Fire Shield                          12/30s -> 36/30s
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 
@@ -379,11 +379,11 @@ Base Cost                                   2 -> 0.25
 
 *Spells*
 ```
-Wearying Touch                              5-20/30s                        !
-Sleep                                       5-15/30s
-Exhausting Touch                            5-20/60s
-Ordeal of St. Olms                          5-20/60s
-Wild Exhaustion                             5-15/60s
+Sleep                                       5-15/30s -> 40-120/30s          !
+Wild Exhaustion                             5-15/60s -> 40-120/60s
+Wearying Touch                              5-20/30s -> 40-160/30s
+Exhausting Touch                            5-20/60s -> 40-160/60s
+Ordeal of St. Olms                          5-20/60s -> 80-320/60s
 ```
 
 *Spells - Tamriel Data*
@@ -554,7 +554,7 @@ Cruel Earwig                                5-11/5s -> 15-33/20s
 Dire Earwig                                 8-15/5s -> 24-45/20s
 Wild Earwig                                 1-30/5s -> 3-90/20s
 Noise                                       3-8/5s -> 3-8/60s
-Cruel Noise                                 10-22/5s -> 10-20/60s
+Cruel Noise                                 10-22/5s -> 10-22/60s
 Dire Noise                                  2-60/5s -> 2-60/60s
 ```
 
