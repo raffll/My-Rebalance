@@ -136,17 +136,3 @@ Secret Master's Retort                      1000 -> 5000
 fMagicItemRechargePerSecond                 0.05 -> 0
 fEnchantmentChanceMult                      3 -> 0.6
 ```
-
-------------------------------------------------------------
-
-## Optional
-
-*No Magic Insufficient Charge Messagebox*
-```
-sMagicInsufficientCharge                    "Item does not have enough charge." -> ""
-```
-
-*One Hour Barter Gold Reset Delay*
-```
-fBarterGoldResetDelay                       24 -> 1
-```

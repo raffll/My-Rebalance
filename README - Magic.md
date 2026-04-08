@@ -195,10 +195,10 @@ Base Cost                                   3 -> 1
 
 *Spells*
 ```
-Fire Barrier                                1-10/10s -> 3-30/10s            !
+Fire Barrier                                1-10/10s -> 3-30/10s
 Fire Barrier -> Fathasa's Fire Barrier      1-10/10s -> 3-30/10s
 Fire Shield                                 10/30s -> 30/30s
-Strong Fire Shield                          12/30s -> 48/30s                x3 +12
+Strong Fire Shield                          12/30s -> 48/30s                x3 +12      !
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 
@@ -219,7 +219,7 @@ Base Cost                                   3 -> 1
 Frost Barrier                               3/10s -> 3-30/10s               1-10/10s x3
 Frost Shield -> Weak Frost Shield           6/30s -> 18/30s
 Frost Shield                                10/30s -> 30/30s
-Strong Frost Shield                         12/30s -> 36/30s
+Strong Frost Shield                         12/30s -> 48/30s                x3 +12      !
 Fierce Frost Shield                         5-11/10s -> 15-33/10s
 ```
 
@@ -235,7 +235,7 @@ Base Cost                                   3 -> 1
 Shock Barrier                               1-10/10s -> 3-30/10s
 Shock Shield -> Lightning Shield            3/20s -> 9/20s
 Lightning Shield -> Shock Shield            10/30s -> 30/30s
-Strong Shock Shield                         12/30s -> 36/30s
+Strong Shock Shield                         12/30s -> 48/30s                x3 +12      !
 Fierce Shock Shield                         5-11/10s -> 15-33/10s
 ```
 
