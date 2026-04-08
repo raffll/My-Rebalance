@@ -57,7 +57,7 @@ Wrath of Odros                              20-30/50s -> 200-300/50s
 *Spells - Tamriel Data*
 ```
 Shadow Rust                                 1-15/20s -> 10-150/20s
-Weight of Guilt                             500/3s -> 500/30s
+Weight of Guilt                             500/3s -> 1000/15s              !
 ```
 
 *Scrolls*
@@ -104,7 +104,7 @@ Ulms' Juicedaw Feather                      50/10s -> 500/10s
 
 *Spells - Tamriel Data*
 ```
-Fling                                       500/3s -> 500/30s
+Fling                                       500/3s -> 1000/15s              !
 Zenithar's Arms                             50/10s -> 500/10s
 ```
 
@@ -169,7 +169,7 @@ Base Cost                                   3 -> 1
 Fire Barrier                                1-10/10s -> 3-30/10s
 Fire Barrier -> Fathasa's Fire Barrier      1-10/10s -> 3-30/10s
 Fire Shield                                 10/30s -> 30/30s
-Strong Fire Shield                          12/30s -> 36/30s
+Strong Fire Shield                          12/30s -> 36/30s        
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 
@@ -388,7 +388,7 @@ Wild Exhaustion                             5-15/60s
 
 *Spells - Tamriel Data*
 ```
-Duck                                        200/2s -> 400/8s
+Duck                                        200/2s -> 1600/2s               !
 ```
 
 ------------------------------------------------------------
