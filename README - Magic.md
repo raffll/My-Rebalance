@@ -8,6 +8,17 @@ Bargain...                                  5/8s -> 6/18s                   !
 Cheap...                                    8/15s -> 8/24s
 ```
 
+```
+Bargain Rising Force Potion
+```
+
+```
+Bargain Potion of Blindness
+Bargain Potion of Cacophony
+Bargain Paralysis Resistance
+Bargain Potion of Protection
+```
+
 ------------------------------------------------------------
 
 ## Alteration
@@ -57,7 +68,7 @@ Wrath of Odros                              20-30/50s -> 200-300/50s
 *Spells - Tamriel Data*
 ```
 Shadow Rust                                 1-15/20s -> 10-150/20s
-Weight of Guilt                             500/3s -> 1000/15s              !
+Weight of Guilt                             500/3s -> 1000/15s
 ```
 
 *Scrolls*
@@ -104,7 +115,7 @@ Ulms' Juicedaw Feather                      50/10s -> 500/10s
 
 *Spells - Tamriel Data*
 ```
-Fling                                       500/3s -> 1000/15s              !
+Fling                                       500/3s -> 1000/15s
 Zenithar's Arms                             50/10s -> 500/10s
 ```
 
@@ -126,8 +137,8 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Buoyancy                                    1/20s -> 20/20s                 (x20)
-Swimmer's Blessing                          5/30s -> 50/30s                 (x10)
+Buoyancy                                    1/20s -> 20/20s                 x20
+Swimmer's Blessing                          5/30s -> 50/30s                 x10
 ```
 
 *Spells - Tamriel Data*
@@ -187,7 +198,7 @@ Base Cost                                   3 -> 1
 
 *Spells*
 ```
-Frost Barrier                               3/10s -> 3-30/10s               (1-10/10s x3)
+Frost Barrier                               3/10s -> 3-30/10s               1-10/10s x3
 Frost Shield -> Weak Frost Shield           6/30s -> 18/30s
 Frost Shield                                10/30s -> 30/30s
 Strong Frost Shield                         12/30s -> 36/30s
@@ -379,7 +390,7 @@ Base Cost                                   2 -> 0.25
 
 *Spells*
 ```
-Sleep                                       5-15/30s -> 40-120/30s          !
+Sleep                                       5-15/30s -> 40-120/30s
 Wild Exhaustion                             5-15/60s -> 40-120/60s
 Wearying Touch                              5-20/30s -> 40-160/30s
 Exhausting Touch                            5-20/60s -> 40-160/60s
@@ -388,7 +399,7 @@ Ordeal of St. Olms                          5-20/60s -> 80-320/60s
 
 *Spells - Tamriel Data*
 ```
-Duck                                        200/2s -> 1600/2s               !
+Duck                                        200/2s -> 1600/2s
 ```
 
 ------------------------------------------------------------
@@ -414,7 +425,7 @@ Base Cost                                   6 -> 0.6
 
 *Spells*
 ```
-Armor Eater                                 10-30/1s -> 200-600/1s          (x20)
+Armor Eater                                 10-30/1s -> 200-600/1s          x20
 Disintegrate Armor                          6-25/1s -> 60-250/1s
 ```
 
@@ -446,7 +457,7 @@ Base Cost                                   6 -> 1.2
 
 *Spells*
 ```
-Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s x10)
+Weapon Eater                                6-25/1s -> 100-300/1s           10-30/1s x10
 Disintegrate Weapon                         6-25/1s -> 30-125/1s
 ```
 
@@ -677,7 +688,7 @@ Base Cost                                   1 -> 8
 
 *Spells*
 ```
-Restore Agility                             5-20/30s -> 5-20/1s             !
+Restore Agility                             5-20/30s -> 5-20/1s
 Restore Endurance                           5-20/30s -> 5-20/1s
 Restore Intelligence                        5-20/30s -> 5-20/1s
 Restore Luck                                5-20/30s -> 5-20/1s
@@ -740,12 +751,12 @@ Base Cost                                   1
 
 ### Resist Blight Disease
 ```
-Base Cost                                   5 -> 0.25                       !
+Base Cost                                   5 -> 0.25
 ```
 
 *Spells*
 ```
-Poet's Whim                                 1-30/10s -> 1-30/200s           !
+Poet's Whim                                 1-30/10s -> 1-30/200s
 Vivec's Mercy                               20/10s -> 80/50s
 Shield of the Armiger                       30/10s -> 120/50s
 ```
@@ -759,7 +770,7 @@ Base Cost                                   2 -> 0.1
 
 *Spells*
 ```
-Resist Common Disease                       10/5s -> 50/20s                 !
+Resist Common Disease                       10/5s -> 50/20s
 Variable Resist Common Disease              1-30/10s -> 1-30/200s
 Seryn's Blessing                            20/10s -> 80/50s
 Great Resist Common Disease                 30/10s -> 120/50s
