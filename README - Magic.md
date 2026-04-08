@@ -2,21 +2,39 @@
 
 ------------------------------------------------------------
 
+## Settings
+```
+fElementalShieldMult                        0.1 -> 1
+sEffectSlowFall                             SlowFall -> Slowfall
+```
+
+------------------------------------------------------------
+
 ## Potions
 ```
-Bargain...                                  5/8s -> 6/18s                   !
+Bargain...                                  5/8s -> 6/18s
 Cheap...                                    8/15s -> 8/24s
 ```
 
+*Fixes*
 ```
-Bargain Rising Force Potion
+Bargain Rising Force Potion                 5/30s -> 6/18s
+Bargain Potion of Swift Swim                1/8s -> 6/18s
+Exclusive Frost Shield                      20/30s -> 20/60s
+
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
+*Fixes - Tamriel Data*
 ```
-Bargain Potion of Blindness
-Bargain Potion of Cacophony
-Bargain Paralysis Resistance
-Bargain Potion of Protection
+Bargain Potion of Blindness                 Sound -> Blind
+                                            1/10s -> 6/18s
+                                            
+Bargain Potion of Cacophony                 1/10s -> 6/18s
+Bargain Paralysis Resistance                7/10s -> 6/18s
+Bargain Potion of Protection                1/10s -> 6/18s
+
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
@@ -177,10 +195,10 @@ Base Cost                                   3 -> 1
 
 *Spells*
 ```
-Fire Barrier                                1-10/10s -> 3-30/10s
+Fire Barrier                                1-10/10s -> 3-30/10s            !
 Fire Barrier -> Fathasa's Fire Barrier      1-10/10s -> 3-30/10s
 Fire Shield                                 10/30s -> 30/30s
-Strong Fire Shield                          12/30s -> 36/30s
+Strong Fire Shield                          12/30s -> 48/30s                x3 +12
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 

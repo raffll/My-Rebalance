@@ -139,32 +139,6 @@ fEnchantmentChanceMult                      3 -> 0.6
 
 ------------------------------------------------------------
 
-## Magic Effects
-```
-fElementalShieldMult                        0.1 -> 1
-```
-
-------------------------------------------------------------
-
-## Inconsistencies
-```
-sEffectSlowFall                             SlowFall -> Slowfall
-```
-
-*Potions*
-```
-Bargain Potion of Swift Swim                1/8s -> 5/8s
-Spoiled Slowfall Potion                     10/15s -> 1/15s
-Exclusive Frost Shield                      20/30s -> 20/60s
-```
-
-*Tamriel Data - Potions*
-```
-Spoiled Slowfall Potion                     10/15s -> 1/15s
-```
-
-------------------------------------------------------------
-
 ## Optional
 
 *No Magic Insufficient Charge Messagebox*
