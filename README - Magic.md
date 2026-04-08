@@ -2,6 +2,14 @@
 
 ------------------------------------------------------------
 
+## Potions
+```
+Bargain...                                  5/8s -> 6/18s                   !
+Cheap...                                    8/15s -> 8/24s
+```
+
+------------------------------------------------------------
+
 ## Alteration
 
 ------------------------------------------------------------
@@ -369,6 +377,15 @@ Rage of Magnus                              60/10s -> 240/20s
 Base Cost                                   2 -> 0.25
 ```
 
+*Spells*
+```
+Wearying Touch                              5-20/30s                        !
+Sleep                                       5-15/30s
+Exhausting Touch                            5-20/60s
+Ordeal of St. Olms                          5-20/60s
+Wild Exhaustion                             5-15/60s
+```
+
 *Spells - Tamriel Data*
 ```
 Duck                                        200/2s -> 400/8s
@@ -658,6 +675,18 @@ Exclusive Restore Fatigue                   80/5s -> 12/36s
 Base Cost                                   1 -> 8
 ```
 
+*Spells*
+```
+Restore Agility                             5-20/30s -> 5-20/1s             !
+Restore Endurance                           5-20/30s -> 5-20/1s
+Restore Intelligence                        5-20/30s -> 5-20/1s
+Restore Luck                                5-20/30s -> 5-20/1s
+Restore Personality                         5-20/30s -> 5-20/1s
+Restore Speed                               5-20/30s -> 5-20/1s
+Restore Strength                            5-20/30s -> 5-20/1s
+Restore Willpower                           5-20/30s -> 5-20/1s
+```
+
 ------------------------------------------------------------
 
 ### Restore Skill
@@ -711,14 +740,14 @@ Base Cost                                   1
 
 ### Resist Blight Disease
 ```
-Base Cost                                   5 -> 0.2
+Base Cost                                   5 -> 0.25                       !
 ```
 
 *Spells*
 ```
-Poet's Whim                                 1-30/10s -> 1-30/250s           !
-Vivec's Mercy                               20/10s -> 50/100s
-Shield of the Armiger                       30/10s -> 75/100s
+Poet's Whim                                 1-30/10s -> 1-30/200s           !
+Vivec's Mercy                               20/10s -> 80/50s
+Shield of the Armiger                       30/10s -> 120/50s
 ```
 
 ------------------------------------------------------------
@@ -726,6 +755,23 @@ Shield of the Armiger                       30/10s -> 75/100s
 ### Resist Common Disease
 ```
 Base Cost                                   2 -> 0.1
+```
+
+*Spells*
+```
+Resist Common Disease                       10/5s -> 50/20s                 !
+Variable Resist Common Disease              1-30/10s -> 1-30/200s
+Seryn's Blessing                            20/10s -> 80/50s
+Great Resist Common Disease                 30/10s -> 120/50s
+```
+
+*Potions*
+```
+Bargain Disease Resistance                  5/8s -> 60/180s
+Cheap Disease Resistance                    8/15s -> 80/240s
+Standard Disease Resistance                 10/30s -> 100/300s
+Quality Disease Resistance                  15/45s -> 150/450s
+Exclusive Disease Resistance                20/60s -> 200/600s
 ```
 
 ------------------------------------------------------------
@@ -747,6 +793,14 @@ Base Cost                                   2 -> 0.5
 ### Resist Shock
 ```
 Base Cost                                   2 -> 0.5
+```
+
+*Spells*
+```
+Resist Shock                                20/5s -> 20/20s                 !
+Variable Resist Shock                       1-30/10s -> 1-30/40s
+Strong Resist Shock                         20/10s -> 20/40s
+Shockguard                                  20-40/30s -> 20-40/120s
 ```
 
 ------------------------------------------------------------
