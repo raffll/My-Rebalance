@@ -29,7 +29,7 @@ Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 Bargain Potion of Blindness                 Sound -> Blind
                                             1/10s -> 6/18s
-                                            
+
 Bargain Potion of Cacophony                 1/10s -> 6/18s
 Bargain Paralysis Resistance                7/10s -> 6/18s
 Bargain Potion of Protection                1/10s -> 6/18s
@@ -357,12 +357,12 @@ Base Cost                                   8
 
 ### Damage Magicka
 ```
-Base Cost                                   8 -> 4
+Base Cost                                   8 -> 4                          !
 ```
 
 *Spells*
 ```
-Soulpinch                                   1-20/1s
+Soulpinch                                   1-20/1s -> 10-200/1s            x10
 ```
 
 *Spells - Tamriel Data*
@@ -374,14 +374,14 @@ Thimble of Magefire                         10-30/1s -> 10-30/2s
 
 ### Damage Fatigue
 ```
-Base Cost                                   4 -> 2
+Base Cost                                   4 -> 2                          !
 ```
 
 *Spells*
 ```
-Fleabite                                    1-10/1s
-Doze                                        1-20/1s
-Hornhand                                    15-36/1s
+Fleabite                                    1-10/1s -> 10-100/1s            x10
+Doze                                        1-20/1s -> 10-200/1s            x10
+Hornhand                                    15-36/1s -> 150-360/1s          x10
 ```
 
 ------------------------------------------------------------
@@ -431,7 +431,7 @@ Sleep                                       5-15/30s -> 40-120/30s
 Wild Exhaustion                             5-15/60s -> 40-120/60s
 Wearying Touch                              5-20/30s -> 40-160/30s
 Exhausting Touch                            5-20/60s -> 40-160/60s
-Ordeal of St. Olms                          5-20/60s -> 80-320/60s
+Ordeal of St. Olms                          5-20/60s -> 80-320/60s          x16
 ```
 
 *Spells - Tamriel Data*
@@ -641,18 +641,52 @@ Base Cost                                   5
 ------------------------------------------------------------
 
 ### Blind
+```
+Base Cost                                   1                               !
+```
+
+*Spells*
+```
+Crying Eye                                  1-10/5s -> 1-10/20s             x4
+Erelvam's Wild Sty                          1-40/10s -> 1-40/20s            x2
+```
 
 ------------------------------------------------------------
 
 ### Sanctuary
+```
+Base Cost                                   1                               !
+```
+
+*Spells*
+```
+Sotha's Grace                               1-20/5s -> 1-20/10s             x2
+Father's Hand                               1-40/5s -> 1-40/10s             x2
+```
 
 ------------------------------------------------------------
 
 ### Chameleon
+```
+Base Cost                                   1                               !
+```
+
+*Spells*
+```
+Shadow Form                                 6-15/30s -> 12-30/30s           x2
+```
 
 ------------------------------------------------------------
 
 ### Invisibility
+```
+Base Cost                                   20                              !
+```
+
+*Spells*
+```
+Invisibility                                30s -> 60s                      x2
+```
 
 ------------------------------------------------------------
 
@@ -730,7 +764,16 @@ Base Cost                                   1 -> 0.2
 
 ### Reflect
 ```
-Base Cost                                   10 -> 2
+Base Cost                                   10 -> 2                         !
+```
+
+```
+Sotha's Mirror                              10/5s -> 10/25s
+Reflect                                     10-20/5s -> 10-20/25s
+Strong Reflect                              20-30/5s -> 20-30/25s
+Shalidor's Mirror                           10-30/10s -> 10-30/50s
+Wild Reflect                                1-40/10s -> 1-40/50s
+Llivam's Reversal                           20-30/10s -> 20-30/50s
 ```
 
 ------------------------------------------------------------
