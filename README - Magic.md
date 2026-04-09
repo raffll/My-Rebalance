@@ -213,7 +213,7 @@ Base Cost                                   3 -> 1
 
 *Spells*
 ```
-Frost Barrier                               3/10s -> 3-30/10s               1-10/10s x3
+Frost Barrier                               3/10s -> 3-30/10s               (1-10/10s) x3
 Frost Shield -> Weak Frost Shield           6/30s -> 18/30s
 Frost Shield                                10/30s -> 30/30s
 Strong Frost Shield                         12/30s -> 48/30s                x3 +12
@@ -491,7 +491,7 @@ Base Cost                                   6 -> 1.2
 
 *Spells*
 ```
-Weapon Eater                                6-25/1s -> 100-300/1s           10-30/1s x10
+Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s) x10
 Disintegrate Weapon                         6-25/1s -> 30-125/1s
 ```
 
@@ -803,7 +803,7 @@ Potion of Detect Key                        10/15s -> 60/180s
 
 *Spells*
 ```
-Tevral's Hawkshaw                           10/10s -> 50/10s               
+Tevral's Hawkshaw                           10/10s -> 50/10s
 Detect Key                                  50/5s -> 250/5s
 ```
 
@@ -850,6 +850,9 @@ Base Cost                                   10 -> 2
 ------------------------------------------------------------
 
 ### Dispel
+```
+Base Cost                                   5
+```
 
 *Potions*
 ```
@@ -1036,11 +1039,11 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Fire                                 10/5s                           !
-Variable Resist Fire                        1-30/10s
-Strong Resist Fire                          20/10s
-Great Resist Fire                           30/10s
-Flameguard                                  20-40/30s
+Resist Fire                                 10/5s -> 10/20s
+Variable Resist Fire                        1-30/10s -> 1-30/40s
+Strong Resist Fire                          20/10s -> 20/40s
+Great Resist Fire                           30/10s -> 30/40s
+Flameguard                                  20-40/30s -> 20-40/120s
 ```
 
 ------------------------------------------------------------
@@ -1052,16 +1055,16 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Frost                                10/5s
-Variable Resist Frost                       1-30/10s
-Strong Resist Frost                         20/10s
-Great Resist Frost                          30/10s
-Frostguard                                  20-40/30s
+Resist Frost                                10/5s -> 10/20s
+Variable Resist Frost                       1-30/10s -> 1-30/40s
+Strong Resist Frost                         20/10s -> 20/40s
+Great Resist Frost                          30/10s -> 30/40s
+Frostguard                                  20-40/30s -> 20-40/120s
 ```
 
 *Spells - Tamriel Data*
 ```
-Wintery Mantle                              20/60s
+Wintery Mantle                              20/60s -> 80/60s
 ```
 
 ------------------------------------------------------------
@@ -1073,7 +1076,7 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Shock                                20/5s -> 20/20s                 !
+Resist Shock                                20/5s -> 20/20s
 Variable Resist Shock                       1-30/10s -> 1-30/40s
 Strong Resist Shock                         20/10s -> 20/40s
 Shockguard                                  20-40/30s -> 20-40/120s
@@ -1088,11 +1091,11 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Poison                               20/5s
-Variable Resist Poison                      1-30/10s
-Strong Resist Poison                        20/10s
-Greater Resist Poison                       30/10s
-Poisonguard                                 20-40/30s
+Resist Poison                               20/5s -> 20/20s
+Variable Resist Poison                      1-30/10s -> 1-30/40s
+Strong Resist Poison                        20/10s -> 20/40s
+Greater Resist Poison                       30/10s -> 30/40s
+Poisonguard                                 20-40/30s -> 20-40/120s
 ```
 
 ------------------------------------------------------------
@@ -1104,11 +1107,11 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Magicka                              10/5s
-Variable Resist Magicka                     1-30/10s
-Strong Resist Magicka                       20/10s
-Great Resist Magicka                        30/10s
-Magickguard                                 20-40/10s
+Resist Magicka                              10/5s -> 20/20s
+Variable Resist Magicka                     1-30/10s -> 1-30/40s
+Strong Resist Magicka                       20/10s -> 20/40s
+Great Resist Magicka                        30/10s -> 30/40s
+Magickguard                                 20-40/10s -> 20-40/40s
 ```
 
 ------------------------------------------------------------
