@@ -257,8 +257,8 @@ Base Cost                                   2 -> 24
 
 *Spells - Tamriel Data*
 ```
-Dalgor's Entwining                          100 [8] -> 100 [96]
-Wizard Lock                                 20 [2] -> 20 [24]
+Dalgor's Entwining                          100 [8 -> 96]
+Wizard Lock                                 20 [2 -> 24]
 ```
 
 ------------------------------------------------------------
@@ -399,41 +399,46 @@ Base Cost                                   8
 
 ### Drain Health
 ```
-Base Cost                                   4
+Base Cost                                   4                               !
+```
+
+*Spells*
+```
+Ash Feast                                   3/30s
 ```
 
 ------------------------------------------------------------
 
 ### Drain Magicka
 ```
-Base Cost                                   4 -> 0.5
+Base Cost                                   4 -> 0.4
 ```
 
 *Spells - Tamriel Data*
 ```
-Dhamcka's Soul-Withering                    1/30s -> 8/30s
-Rage of Magnus                              60/10s -> 240/20s
+Dhamcka's Soul-Withering                    1/30s -> 10/30s
+Rage of Magnus                              60/10s -> 300/20s
 ```
 
 ------------------------------------------------------------
 
 ### Drain Fatigue
 ```
-Base Cost                                   2 -> 0.25
+Base Cost                                   2 -> 0.2
 ```
 
 *Spells*
 ```
-Sleep                                       5-15/30s -> 40-120/30s
-Wild Exhaustion                             5-15/60s -> 40-120/60s
-Wearying Touch                              5-20/30s -> 40-160/30s
-Exhausting Touch                            5-20/60s -> 40-160/60s
-Ordeal of St. Olms                          5-20/60s -> 80-320/60s          x16
+Sleep                                       5-15/30s -> 50-150/30s
+Wild Exhaustion                             5-15/60s -> 50-150/60s
+Wearying Touch                              5-20/30s -> 50-200/30s
+Exhausting Touch                            5-20/60s -> 50-200/60s
+Ordeal of St. Olms                          5-20/60s -> 100-400/30s
 ```
 
 *Spells - Tamriel Data*
 ```
-Duck                                        200/2s -> 1600/2s
+Duck                                        200/2s -> 2000/2s
 ```
 
 ------------------------------------------------------------
@@ -745,6 +750,15 @@ Base Cost                                   8 -> 16
 ------------------------------------------------------------
 
 ### Absorb Fatigue
+```
+Base Cost                                   4                               !
+```
+
+```
+Absorb Fatigue                              5-20/30s
+Energy Leech                                5-20/30s
+Absorb Fatigue [Ranged]                     5-20/30s
+```
 
 ------------------------------------------------------------
 
@@ -767,6 +781,11 @@ Potion of Detect Creatures                  10/15s -> 60/180s
 Potion of Detect Creatures                  10/15s -> 60/180s
 ```
 
+*Spells - Tamriel Data*
+```
+Greater Detect Creature                     100-300/5s [38 -> 8]
+```
+
 ------------------------------------------------------------
 
 ### Detect Enchantment
@@ -782,6 +801,11 @@ Potion of Detect Enchantments               10/15s -> 60/180s
 *Potions - Tamriel Data*
 ```
 Potion of Detect Enchantments               10/15s -> 60/180s
+```
+
+*Spells*
+```
+Detect Enchantment                          10/10s -> 50/10s
 ```
 
 ------------------------------------------------------------
@@ -811,24 +835,39 @@ Detect Key                                  50/5s -> 250/5s
 
 ### Reflect
 ```
-Base Cost                                   10 -> 2
+Base Cost                                   10 -> 2.5
 ```
 
 *Spells*
 ```
-Sotha's Mirror                              10/5s -> 10/25s
-Reflect                                     10-20/5s -> 10-20/25s
-Strong Reflect                              20-30/5s -> 20-30/25s
-Shalidor's Mirror                           10-30/10s -> 10-30/50s
-Wild Reflect                                1-40/10s -> 1-40/50s
-Llivam's Reversal                           20-30/10s -> 20-30/50s
+Sotha's Mirror                              10/5s -> 10/20s
+Reflect                                     10-20/5s -> 10-20/20s
+Strong Reflect                              20-30/5s -> 20-30/20s
+Shalidor's Mirror                           10-30/10s -> 10-30/40s
+Wild Reflect                                1-40/10s -> 1-40/40s
+Llivam's Reversal                           20-30/10s -> 20-30/40s
+```
+
+*Spells - Tamriel Data*
+```
+Reflect Damage                              15/30s [225 -> 45]
 ```
 
 ------------------------------------------------------------
 
 ### Spell Absorption
 ```
-Base Cost                                   10 -> 2
+Base Cost                                   10 -> 2.5                       !
+```
+
+*Spells*
+```
+Spell Absorption                            10/5s
+Vivec's Feast                               10/5s
+Weak Spelldrinker                           10-20/5s
+Wild Spelldrinker                           1-40/5s
+Strong Spelldrinker                         20-30/5s
+Tranasa's Spelltrap                         20-30/10s
 ```
 
 ------------------------------------------------------------
@@ -919,6 +958,11 @@ Quality Restore Fatigue                     40/5s -> 8/24s
 Exclusive Restore Fatigue                   80/5s -> 12/36s
 ```
 
+*Spells - Tamriel Data*
+```
+Greater Stamina                             30-60/30s -> 30-60/12s
+```
+
 ------------------------------------------------------------
 
 ### Restore Attribute
@@ -997,8 +1041,8 @@ Base Cost                                   5 -> 0.25
 *Spells*
 ```
 Poet's Whim                                 1-30/10s -> 1-30/200s
-Vivec's Mercy                               20/10s -> 80/50s
-Shield of the Armiger                       30/10s -> 120/50s
+Vivec's Mercy                               20/10s -> 50/80s                            !
+Shield of the Armiger                       30/10s -> 100/60s               x3.3/x6     !
 ```
 
 ------------------------------------------------------------
@@ -1012,8 +1056,8 @@ Base Cost                                   2 -> 0.1
 ```
 Resist Common Disease                       10/5s -> 50/20s
 Variable Resist Common Disease              1-30/10s -> 1-30/200s
-Seryn's Blessing                            20/10s -> 80/50s
-Great Resist Common Disease                 30/10s -> 120/50s
+Seryn's Blessing                            20/10s -> 50/80s                              !
+Great Resist Common Disease                 30/10s -> 100/60s               x3.3/x6       !
 ```
 
 *Spells - Tamriel Data*
@@ -1123,7 +1167,7 @@ Base Cost                                   0.20 -> 0.5
 
 *Spells*
 ```
-Resist Paralysis                            50/30s [300]
+Resist Paralysis                            50/30s [300]                    !
 ```
 
 ------------------------------------------------------------
