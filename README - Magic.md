@@ -89,14 +89,11 @@ Shadow Rust                                 1-15/20s -> 10-150/20s
 Weight of Guilt                             500/3s -> 1000/15s
 ```
 
-*Scrolls*
+*Enchantments*
 ```
 Scroll of Baleful Suffering                 0−25/30s -> 0-250/30s
 Scroll of Fader's Leaden Flesh              0−50/30s -> 0-500/30s
-```
 
-*Enchantments*
-```
 Black Jinx                                  25-100/120s -> 250-1000/120s
 Spear of the Hunter                         50/10s -> 500/10s
 ```
@@ -198,7 +195,7 @@ Base Cost                                   3 -> 1
 Fire Barrier                                1-10/10s -> 3-30/10s
 Fire Barrier -> Fathasa's Fire Barrier      1-10/10s -> 3-30/10s
 Fire Shield                                 10/30s -> 30/30s
-Strong Fire Shield                          12/30s -> 48/30s                x3 +12      !
+Strong Fire Shield                          12/30s -> 48/30s                x3 +12
 Fierce Fire Shield                          5-11/10s -> 15-33/10s
 ```
 
@@ -219,7 +216,7 @@ Base Cost                                   3 -> 1
 Frost Barrier                               3/10s -> 3-30/10s               1-10/10s x3
 Frost Shield -> Weak Frost Shield           6/30s -> 18/30s
 Frost Shield                                10/30s -> 30/30s
-Strong Frost Shield                         12/30s -> 48/30s                x3 +12      !
+Strong Frost Shield                         12/30s -> 48/30s                x3 +12
 Fierce Frost Shield                         5-11/10s -> 15-33/10s
 ```
 
@@ -235,7 +232,7 @@ Base Cost                                   3 -> 1
 Shock Barrier                               1-10/10s -> 3-30/10s
 Shock Shield -> Lightning Shield            3/20s -> 9/20s
 Lightning Shield -> Shock Shield            10/30s -> 30/30s
-Strong Shock Shield                         12/30s -> 48/30s                x3 +12      !
+Strong Shock Shield                         12/30s -> 48/30s                x3 +12
 Fierce Shock Shield                         5-11/10s -> 15-33/10s
 ```
 
@@ -248,7 +245,7 @@ Draugr Lightning Shield                     50/20s -> 150/20s
 
 ### Open
 ```
-Base Cost                                   6 -> 12                         !
+Base Cost                                   6 -> 12
 ```
 
 ------------------------------------------------------------
@@ -357,7 +354,7 @@ Base Cost                                   8
 
 ### Damage Magicka
 ```
-Base Cost                                   8 -> 4                          !
+Base Cost                                   8 -> 4
 ```
 
 *Spells*
@@ -374,7 +371,7 @@ Thimble of Magefire                         10-30/1s -> 10-30/2s
 
 ### Damage Fatigue
 ```
-Base Cost                                   4 -> 2                          !
+Base Cost                                   4 -> 2
 ```
 
 *Spells*
@@ -608,6 +605,12 @@ Base Cost                                   40 -> 80
 Base Cost                                   40 -> 20
 ```
 
+*Spells*
+```
+Silence                                     5s -> 10s
+Far Silence                                 10s -> 20s
+```
+
 ------------------------------------------------------------
 
 ### Sound
@@ -642,7 +645,7 @@ Base Cost                                   5
 
 ### Blind
 ```
-Base Cost                                   1                               !
+Base Cost                                   1
 ```
 
 *Spells*
@@ -651,11 +654,13 @@ Crying Eye                                  1-10/5s -> 1-10/20s             x4
 Erelvam's Wild Sty                          1-40/10s -> 1-40/20s            x2
 ```
 
+*Crying Eye [2 -> 8] -> Erelvam's Wild Sty [10 -> 21] -> Alad's Caliginy [30]*
+
 ------------------------------------------------------------
 
 ### Sanctuary
 ```
-Base Cost                                   1                               !
+Base Cost                                   1
 ```
 
 *Spells*
@@ -664,11 +669,13 @@ Sotha's Grace                               1-20/5s -> 1-20/10s             x2
 Father's Hand                               1-40/5s -> 1-40/10s             x2
 ```
 
+*Sotha's Grace [3 -> 5] -> Father's Hand [5 -> 10] -> Sanctuary [15]*
+
 ------------------------------------------------------------
 
 ### Chameleon
 ```
-Base Cost                                   1                               !
+Base Cost                                   1
 ```
 
 *Spells*
@@ -676,17 +683,21 @@ Base Cost                                   1                               !
 Shadow Form                                 6-15/30s -> 12-30/30s           x2
 ```
 
+*Chameleon [15] -> Shadow Form [16 -> 32] -> Shadowmask [83]*
+
 ------------------------------------------------------------
 
 ### Invisibility
 ```
-Base Cost                                   20                              !
+Base Cost                                   20
 ```
 
 *Spells*
 ```
 Invisibility                                30s -> 60s                      x2
 ```
+
+*Hide [30] -> Invisibility [30 -> 60] -> Concealment [90]*
 
 ------------------------------------------------------------
 
@@ -746,11 +757,31 @@ Base Cost                                   8 -> 16
 Base Cost                                   0.75 -> 0.15
 ```
 
+*Potions*
+```
+Potion of Detect Creatures                  10/15s -> 60/180s
+```
+
+*Potions - Tamriel Data*
+```
+Potion of Detect Creatures                  10/15s -> 60/180s
+```
+
 ------------------------------------------------------------
 
 ### Detect Enchantment
 ```
 Base Cost                                   1 -> 0.2
+```
+
+*Potions*
+```
+Potion of Detect Enchantments               10/15s -> 60/180s
+```
+
+*Potions - Tamriel Data*
+```
+Potion of Detect Enchantments               10/15s -> 60/180s
 ```
 
 ------------------------------------------------------------
@@ -760,13 +791,30 @@ Base Cost                                   1 -> 0.2
 Base Cost                                   1 -> 0.2
 ```
 
+*Potions*
+```
+Potion of Detect Key                        10/15s -> 60/180s
+```
+
+*Potions - Tamriel Data*
+```
+Potion of Detect Key                        10/15s -> 60/180s
+```
+
+*Spells*
+```
+Tevral's Hawkshaw                           10/10s -> 50/10s               
+Detect Key                                  50/5s -> 250/5s
+```
+
 ------------------------------------------------------------
 
 ### Reflect
 ```
-Base Cost                                   10 -> 2                         !
+Base Cost                                   10 -> 2
 ```
 
+*Spells*
 ```
 Sotha's Mirror                              10/5s -> 10/25s
 Reflect                                     10-20/5s -> 10-20/25s
@@ -802,6 +850,11 @@ Base Cost                                   10 -> 2
 ------------------------------------------------------------
 
 ### Dispel
+
+*Potions*
+```
+Potion of Dispel                            10 -> 100
+```
 
 ------------------------------------------------------------
 
@@ -960,6 +1013,11 @@ Seryn's Blessing                            20/10s -> 80/50s
 Great Resist Common Disease                 30/10s -> 120/50s
 ```
 
+*Spells - Tamriel Data*
+```
+Pilgrimage of St. Rosunius                  20/10s -> 100/40s
+```
+
 *Potions*
 ```
 Bargain Disease Resistance                  5/8s -> 60/180s
@@ -976,11 +1034,34 @@ Exclusive Disease Resistance                20/60s -> 200/600s
 Base Cost                                   2 -> 0.5
 ```
 
+*Spells*
+```
+Resist Fire                                 10/5s                           !
+Variable Resist Fire                        1-30/10s
+Strong Resist Fire                          20/10s
+Great Resist Fire                           30/10s
+Flameguard                                  20-40/30s
+```
+
 ------------------------------------------------------------
 
 ### Resist Frost
 ```
 Base Cost                                   2 -> 0.5
+```
+
+*Spells*
+```
+Resist Frost                                10/5s
+Variable Resist Frost                       1-30/10s
+Strong Resist Frost                         20/10s
+Great Resist Frost                          30/10s
+Frostguard                                  20-40/30s
+```
+
+*Spells - Tamriel Data*
+```
+Wintery Mantle                              20/60s
 ```
 
 ------------------------------------------------------------
@@ -1005,6 +1086,15 @@ Shockguard                                  20-40/30s -> 20-40/120s
 Base Cost                                   2 -> 0.5
 ```
 
+*Spells*
+```
+Resist Poison                               20/5s
+Variable Resist Poison                      1-30/10s
+Strong Resist Poison                        20/10s
+Greater Resist Poison                       30/10s
+Poisonguard                                 20-40/30s
+```
+
 ------------------------------------------------------------
 
 ### Resist Magicka
@@ -1012,11 +1102,25 @@ Base Cost                                   2 -> 0.5
 Base Cost                                   2 -> 0.5
 ```
 
+*Spells*
+```
+Resist Magicka                              10/5s
+Variable Resist Magicka                     1-30/10s
+Strong Resist Magicka                       20/10s
+Great Resist Magicka                        30/10s
+Magickguard                                 20-40/10s
+```
+
 ------------------------------------------------------------
 
 ### Resist Paralysis
 ```
 Base Cost                                   0.20 -> 0.5
+```
+
+*Spells*
+```
+Resist Paralysis                            50/30s [300]
 ```
 
 ------------------------------------------------------------
