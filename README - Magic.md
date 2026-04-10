@@ -39,6 +39,25 @@ Spoiled Slowfall Potion                     10/15s -> 1/15s
 
 ------------------------------------------------------------
 
+## Starting Spells
+```
+Shield -> First Barrier                                                     !
+Exhausting Touch -> Weariness
+Detect Creature -> Detect Enchantment
+Feet of Notorgo -> Skylamp's Shadow
+```
+
+------------------------------------------------------------
+
+## Creatures Magicka
+```
+Flame Atronachs                                                             !
+Frost Atronachs
+Ascended Sleepers
+```
+
+------------------------------------------------------------
+
 ## Alteration
 
 ------------------------------------------------------------
@@ -78,9 +97,11 @@ Great Burden of Sin -> Burden of Sin        40/10s -> 400/10s
 Burden of Sin -> Great Burden of Sin        40-60/20s -> 400-600/20s
 Crushing Burden of Sin                      60-80/30s -> 600-800/30s
 
-Aryon's Rest                                10/10s -> 100/10s
-Hand of Odros                               30-40/60s -> 300-400/60s
+Aryon's Rest                                10/10s -> 100/10s               used by Aryon
+Hand of Odros                               30-40/60s -> 300-400/60s        used by Odros
 Wrath of Odros                              20-30/50s -> 200-300/50s
+Harthoon's Heavy Eyes                       100/10s                         used by Barilzar                        !
+Hunter's Venom                              50/10s                          used by Hircine's Aspect of Guile
 ```
 
 *Spells - Tamriel Data*
@@ -235,10 +256,11 @@ Base Cost                                   3 -> 1
 *Spells*
 ```
 Shock Barrier                               1-10/10s -> 3-30/10s
-Shock Shield -> Lightning Shield            3/20s -> 9/20s
 Lightning Shield -> Shock Shield            10/30s -> 30/30s
 Strong Shock Shield                         12/30s -> 48/30s                x3 +12
 Fierce Shock Shield                         5-11/10s -> 15-33/10s
+
+Shock Shield -> Lightning Shield            3/20s -> 9/20s                  used by Centurion Spheres
 ```
 
 *Spells - Tamriel Data*
@@ -250,7 +272,7 @@ Draugr Lightning Shield                     50/20s -> 150/20s
 
 ### Open
 ```
-Base Cost                                   6 -> 12
+Base Cost                                   6 -> 12                         !typo
 ```
 
 ------------------------------------------------------------
@@ -434,11 +456,15 @@ Base Cost                                   2 -> 0.2
 
 *Spells*
 ```
+Weariness                                   1-10/1s -> 10-100/20s           x200                        !
 Sleep                                       5-15/30s -> 50-150/30s
 Wild Exhaustion                             5-15/60s -> 50-150/60s
 Wearying Touch                              5-20/30s -> 50-200/30s
 Exhausting Touch                            5-20/60s -> 50-200/60s
 Ordeal of St. Olms                          5-20/60s -> 100-400/30s
+Exhaustion                                  5-20/90s -> 50-200/90s                                      !
+
+Dagoth's Bosom                              20/30s -> 200/30s               used by Ascended Sleepers   !
 ```
 
 *Spells - Tamriel Data*
@@ -470,7 +496,11 @@ Base Cost                                   6 -> 0.6
 *Spells*
 ```
 Armor Eater                                 10-30/1s -> 200-600/1s          x20
-Disintegrate Armor                          6-25/1s -> 60-250/1s
+
+Disintegrate Armor                          6-25/1s -> 60-250/1s            used by Hungers
+Brittlewind                                 20/10s                          used by Fryse Hags      !
+Eddard's Wrath                              4-9/15s                         used by Draugr
+
 ```
 
 *Spells - Tamriel Data*
@@ -502,7 +532,10 @@ Base Cost                                   6 -> 1.2
 *Spells*
 ```
 Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s) x10
-Disintegrate Weapon                         6-25/1s -> 30-125/1s
+
+Disintegrate Weapon                         6-25/1s -> 30-125/1s            used by Hungers
+Brittlewind                                 20/10s          	            used by Fryse Hags      !
+Eddard's Wrath                              4-9/15s	                        used by Draugr
 ```
 
 *Spells - Tamriel Data*
@@ -606,6 +639,11 @@ Quality Potion of Night-Eye                 15/45s -> 80/240s
 ### Paralyze
 ```
 Base Cost                                   40 -> 80
+```
+
+*Spells
+```
+Paralysis                	                6s [auto -> 6] 	                used by Scribs      !
 ```
 
 *Spells - Tamriel Data*
@@ -777,6 +815,13 @@ Lifesteal                                   40/1s [24 -> 48]                !
 
 ### Absorb Magicka
 
+```
+Absorb Spell Points
+absorb spell points 	Absorb Magicka Absorb Magicka 5-20 pts for 30 secs on Touch 	150 	
+Absorb Spell Points [Ranged]
+absorb spell points [ranged] 	Absorb Magicka Absorb Magicka 5-20 pts for 30 secs on Target 	225 	
+```
+
 ------------------------------------------------------------
 
 ### Absorb Fatigue
@@ -786,6 +831,7 @@ Base Cost                                   4 -> 6
 
 *Spells*
 ```
+Tap Energy                                  20/30s -> 20/3s                 !
 Absorb Fatigue                              5-20/30s -> 5-30/3s             x0.1
 Absorb Fatigue [Ranged]                     5-20/30s -> 5-30/3s             x0.1
 Energy Leech                                5-20/30s -> 5-30/6s             x0.2
@@ -794,6 +840,11 @@ Energy Leech                                5-20/30s -> 5-30/6s             x0.2
 ------------------------------------------------------------
 
 ### Absorb Attribute
+
+```
+Absorb Intelligence [Ranged]
+absorb intelligence [ranged] 	Absorb Agility Absorb Agility 5-51 pts for 30 secs on Target 	126 	
+```
 
 ------------------------------------------------------------
 
@@ -1271,3 +1322,162 @@ Resist Paralysis                            50/30s [300 -> auto]
 ------------------------------------------------------------
 
 ### Cure Poison
+
+------------------------------------------------------------
+
+## Conjuration
+
+------------------------------------------------------------
+
+### Bound Battle Axe
+
+------------------------------------------------------------
+
+### Bound Boots
+
+------------------------------------------------------------
+
+### Bound Cuirass
+
+------------------------------------------------------------
+
+### Bound Dagger
+
+------------------------------------------------------------
+
+### Bound Gauntlets
+
+------------------------------------------------------------
+
+### Bound Helm
+
+------------------------------------------------------------
+
+### Bound Longbow
+
+------------------------------------------------------------
+
+### Bound Longsword
+
+------------------------------------------------------------
+
+### Bound Mace
+
+------------------------------------------------------------
+
+### Bound Shield
+
+------------------------------------------------------------
+
+### Bound Spear
+
+------------------------------------------------------------
+
+### Command Creature
+
+------------------------------------------------------------
+
+### Command Humanoid
+
+------------------------------------------------------------
+
+### Summon Ancestral Ghost
+
+------------------------------------------------------------
+
+### Summon Bonelord
+
+------------------------------------------------------------
+
+### Summon Bonewalker
+
+------------------------------------------------------------
+
+### Summon Centurion Sphere
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Summon Clannfear
+
+------------------------------------------------------------
+
+### Summon Daedroth
+
+------------------------------------------------------------
+
+### Summon Dremora
+
+------------------------------------------------------------
+
+### Summon Flame Atronach
+
+------------------------------------------------------------
+
+### Summon Frost Atronach
+
+------------------------------------------------------------
+
+### Summon Golden Saint
+
+------------------------------------------------------------
+
+### Summon Greater Bonewalker
+
+------------------------------------------------------------
+
+### Summon Hunger
+
+------------------------------------------------------------
+
+### Summon Scamp
+
+------------------------------------------------------------
+
+### Summon Skeletal Minion
+
+------------------------------------------------------------
+
+### Summon Storm Atronach
+
+------------------------------------------------------------
+
+### Summon Winged Twilight
+
+------------------------------------------------------------
+
+### Turn Undead
+
+------------------------------------------------------------
+
+### Summon Bonewolf
+```
+
+```
+
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Call Bear
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Call Wolf
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Summon Fabricant
+```
+Spellmaking & Enchanting                    Yes
+```
