@@ -98,6 +98,11 @@ Black Jinx                                  25-100/120s -> 250-1000/120s
 Spear of the Hunter                         50/10s -> 500/10s
 ```
 
+*Enchantments - Tamriel Data*
+```
+Scroll of Makkun's Heavy Hand               30/35s -> 300/35s
+```
+
 ------------------------------------------------------------
 
 ### Feather
@@ -603,6 +608,12 @@ Quality Potion of Night-Eye                 15/45s -> 80/240s
 Base Cost                                   40 -> 80
 ```
 
+*Spells - Tamriel Data*
+```
+Living Statue                               20s [30 -> 60]                  !
+Paralysis                                   3s [6 -> 12]
+```
+
 ------------------------------------------------------------
 
 ### Silence
@@ -643,7 +654,12 @@ Voices                                      50/20s -> 100/120s
 
 ### Charm
 ```
-Base Cost                                   5
+Base Cost                                   5                               !
+```
+
+*Spells - Tamriel Data*
+```
+Alluring Speech                             15-20/20s
 ```
 
 ------------------------------------------------------------
@@ -659,7 +675,7 @@ Crying Eye                                  1-10/5s -> 1-10/20s             x4
 Erelvam's Wild Sty                          1-40/10s -> 1-40/20s            x2
 ```
 
-*Crying Eye [2 -> 8] -> Erelvam's Wild Sty [10 -> 21] -> Alad's Caliginy [30]*
+Crying Eye [2 -> 8] -> Erelvam's Wild Sty [10 -> 21] -> Alad's Caliginy [30]
 
 ------------------------------------------------------------
 
@@ -674,7 +690,7 @@ Sotha's Grace                               1-20/5s -> 1-20/10s             x2
 Father's Hand                               1-40/5s -> 1-40/10s             x2
 ```
 
-*Sotha's Grace [3 -> 5] -> Father's Hand [5 -> 10] -> Sanctuary [15]*
+Sotha's Grace [3 -> 5] -> Father's Hand [5 -> 10] -> Sanctuary [15]
 
 ------------------------------------------------------------
 
@@ -688,7 +704,7 @@ Base Cost                                   1
 Shadow Form                                 6-15/30s -> 12-30/30s           x2
 ```
 
-*Chameleon [15] -> Shadow Form [16 -> 32] -> Shadowmask [83]*
+Chameleon [15] -> Shadow Form [16 -> 32] -> Shadowmask [83]
 
 ------------------------------------------------------------
 
@@ -702,7 +718,7 @@ Base Cost                                   20
 Invisibility                                30s -> 60s                      x2
 ```
 
-*Hide [30] -> Invisibility [30 -> 60] -> Concealment [90]*
+Hide [30] -> Invisibility [30 -> 60] -> Concealment [90]
 
 ------------------------------------------------------------
 
@@ -752,6 +768,15 @@ Base Cost                                   8 -> 16
 Absorb Health                               5-52/1s -> 5-50/1s              ?
 ```
 
+*Spells - Tamriel Data*
+```
+Lifesteal                                   40/1s [24 -> 48]                !
+```
+
+------------------------------------------------------------
+
+### Absorb Magicka
+
 ------------------------------------------------------------
 
 ### Absorb Fatigue
@@ -769,6 +794,18 @@ Energy Leech                                5-20/30s -> 5-30/6s             x0.2
 ------------------------------------------------------------
 
 ### Absorb Attribute
+
+------------------------------------------------------------
+
+### Absorb Skill
+```
+Base Cost                                   2
+```
+
+*Spells - Tamriel Data*
+```
+Jogvir's Sword Hand                         20/30s
+```
 
 ------------------------------------------------------------
 
@@ -857,6 +894,9 @@ Llivam's Reversal                           20-30/10s -> 20-30/40s
 *Spells - Tamriel Data*
 ```
 Reflect Damage                              15/30s [225 -> 45]
+
+St. Naharine's Shield                       10/5s -> 40/5s                  !
+Distorted Reflection                        20/15s -> 40/30s
 ```
 
 ------------------------------------------------------------
@@ -1034,6 +1074,11 @@ Vigor                                       5-20/30s -> 25-100/30s
 Daedric Fatigue                             50/90s
 ```
 
+*Spells - Tamriel Data*
+```
+Impossible Effort                           150/20s
+```
+
 ------------------------------------------------------------
 
 ### Fortify Attribute
@@ -1045,14 +1090,31 @@ Base Cost                                   1
 
 ### Fortify Skill
 ```
-Base Cost                                   1
+Base Cost                                   1                               !
+```
+
+*Spells*
+```
+Masterful... 	                            15/60s
+```
+
+*Spells - Tamriel Data*
+```
+Eagle Eye                                   10-15/40s
+Treefellers Rage                            10-15/40s
+Deft Security                               15/30s
 ```
 
 ------------------------------------------------------------
 
 ### Fortify Attack
 ```
-Base Cost                                   1
+Base Cost                                   1                               !
+```
+
+*Spells - Tamriel Data*
+```
+Blood Beat                                  30/20s
 ```
 
 ------------------------------------------------------------

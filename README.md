@@ -17,7 +17,7 @@
 
 ------------------------------------------------------------
 
-## Settings
+## Core
 
 - Halves the health gain per level-up. Now at level 70 you will have around 300-400 HP.
 - Halves skill progression rate for all skills.
