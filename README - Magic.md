@@ -88,7 +88,8 @@ Burden Touch                                20/10s -> 100/20s
 Burden                                      20/10s -> 100/20s
 Heavy Burden Touch                          40/10s -> 200/20s
 Heavy Burden                                40/10s -> 200/20s
-Crushing Burden Touch                       60/10s -> 300/20s
+
+Crushing Burden Touch                       60/10s -> 300/20s               [no auto]     !    
 Crushing Burden                             60/10s -> 300/20s
 Weary                                       30-60/10s -> 150-300/20s
 Cruel Weary                                 50-70/10s -> 250-350/20s
@@ -213,7 +214,7 @@ Scroll of The Falling Barrier               4/40s -> 8/40s
 
 ### Fire Shield
 ```
-Base Cost                                   3 -> 1
+Base Cost                                   3                               !
 ```
 
 *Spells*
@@ -500,7 +501,6 @@ Armor Eater                                 10-30/1s -> 200-600/1s          x20
 Disintegrate Armor                          6-25/1s -> 60-250/1s            used by Hungers
 Brittlewind                                 20/10s                          used by Fryse Hags      !
 Eddard's Wrath                              4-9/15s                         used by Draugr
-
 ```
 
 *Spells - Tamriel Data*

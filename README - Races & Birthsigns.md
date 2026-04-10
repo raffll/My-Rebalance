@@ -131,8 +131,8 @@ Abilities
 
 Powers
     Blizzard Barrier [NEW]
-        Lightning Shield                    25/60s
-        Frost Shield                        25/60s
+        Lightning Shield                    25/10s                          !
+        Frost Shield                        25/10s
     Thunder Fist [REMOVED]
         Frost Damage                        25
     Woad [REMOVED]
