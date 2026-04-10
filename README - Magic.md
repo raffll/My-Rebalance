@@ -399,12 +399,12 @@ Base Cost                                   8
 
 ### Drain Health
 ```
-Base Cost                                   4                               !
+Base Cost                                   4
 ```
 
 *Spells*
 ```
-Ash Feast                                   3/30s
+Ash Feast                                   3/30s -> 30/3s
 ```
 
 ------------------------------------------------------------
@@ -747,17 +747,23 @@ Invisibility                                30s -> 60s                      x2
 Base Cost                                   8 -> 16
 ```
 
+*Spells*
+```
+Absorb Health                               5-52/1s -> 5-50/1s              ?
+```
+
 ------------------------------------------------------------
 
 ### Absorb Fatigue
 ```
-Base Cost                                   4                               !
+Base Cost                                   4 -> 6
 ```
 
+*Spells*
 ```
-Absorb Fatigue                              5-20/30s
-Energy Leech                                5-20/30s
-Absorb Fatigue [Ranged]                     5-20/30s
+Absorb Fatigue                              5-20/30s -> 5-30/3s             x0.1
+Absorb Fatigue [Ranged]                     5-20/30s -> 5-30/3s             x0.1
+Energy Leech                                5-20/30s -> 5-30/6s             x0.2
 ```
 
 ------------------------------------------------------------
@@ -857,17 +863,22 @@ Reflect Damage                              15/30s [225 -> 45]
 
 ### Spell Absorption
 ```
-Base Cost                                   10 -> 2.5                       !
+Base Cost                                   10 -> 2.5
 ```
 
 *Spells*
 ```
-Spell Absorption                            10/5s
-Vivec's Feast                               10/5s
-Weak Spelldrinker                           10-20/5s
-Wild Spelldrinker                           1-40/5s
-Strong Spelldrinker                         20-30/5s
-Tranasa's Spelltrap                         20-30/10s
+Spell Absorption                            10/5s -> 10/20s
+Vivec's Feast                               10/5s -> 10/40s                 (10/10s) x4
+Weak Spelldrinker                           10-20/5s -> 10-20/20s
+Wild Spelldrinker                           1-40/5s -> 1-40/20s
+Strong Spelldrinker                         20-30/5s -> 20-30/20s
+Tranasa's Spelltrap                         20-30/10s -> 20-30/40s
+```
+
+*Spells - Tamriel Data*
+```
+St. Horuscia's Alms                         10/5s -> 40/5s
 ```
 
 ------------------------------------------------------------
@@ -958,6 +969,12 @@ Quality Restore Fatigue                     40/5s -> 8/24s
 Exclusive Restore Fatigue                   80/5s -> 12/36s
 ```
 
+*Spells*
+```
+Rest of St. Merris                          1-10/20s -> 1-10/8s
+Stamina                                     10-30/30s -> 10-30/12s
+```
+
 *Spells - Tamriel Data*
 ```
 Greater Stamina                             30-60/30s -> 30-60/12s
@@ -1007,7 +1024,14 @@ Base Cost                                   1
 
 ### Fortify Fatigue
 ```
-Base Cost                                   0.5
+Base Cost                                   0.5                             !
+```
+
+*Spells*
+```
+Enrichment                                  5-20/30s
+Vigor                                       5-20/30s -> 25-100/30s
+Daedric Fatigue                             50/90s
 ```
 
 ------------------------------------------------------------
@@ -1041,8 +1065,8 @@ Base Cost                                   5 -> 0.25
 *Spells*
 ```
 Poet's Whim                                 1-30/10s -> 1-30/200s
-Vivec's Mercy                               20/10s -> 50/80s                            !
-Shield of the Armiger                       30/10s -> 100/60s               x3.3/x6     !
+Vivec's Mercy                               20/10s -> 50/80s
+Shield of the Armiger                       30/10s -> 100/60s               x3.3/x6
 ```
 
 ------------------------------------------------------------
@@ -1056,8 +1080,8 @@ Base Cost                                   2 -> 0.1
 ```
 Resist Common Disease                       10/5s -> 50/20s
 Variable Resist Common Disease              1-30/10s -> 1-30/200s
-Seryn's Blessing                            20/10s -> 50/80s                              !
-Great Resist Common Disease                 30/10s -> 100/60s               x3.3/x6       !
+Seryn's Blessing                            20/10s -> 50/80s
+Great Resist Common Disease                 30/10s -> 100/60s               x3.3/x6
 ```
 
 *Spells - Tamriel Data*
@@ -1167,7 +1191,7 @@ Base Cost                                   0.20 -> 0.5
 
 *Spells*
 ```
-Resist Paralysis                            50/30s [300]                    !
+Resist Paralysis                            50/30s [300 -> auto]
 ```
 
 ------------------------------------------------------------
