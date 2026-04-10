@@ -675,7 +675,7 @@ Crying Eye                                  1-10/5s -> 1-10/20s             x4
 Erelvam's Wild Sty                          1-40/10s -> 1-40/20s            x2
 ```
 
-* Crying Eye [2 -> 8] -> Erelvam's Wild Sty [10 -> 21] -> Alad's Caliginy [30]
+*Crying Eye [2 -> 8] -> Erelvam's Wild Sty [10 -> 21] -> Alad's Caliginy [30]*
 
 ------------------------------------------------------------
 
@@ -690,7 +690,7 @@ Sotha's Grace                               1-20/5s -> 1-20/10s             x2
 Father's Hand                               1-40/5s -> 1-40/10s             x2
 ```
 
-* Sotha's Grace [3 -> 5] -> Father's Hand [5 -> 10] -> Sanctuary [15]
+*Sotha's Grace [3 -> 5] -> Father's Hand [5 -> 10] -> Sanctuary [15]*
 
 ------------------------------------------------------------
 
@@ -704,7 +704,7 @@ Base Cost                                   1
 Shadow Form                                 6-15/30s -> 12-30/30s           x2
 ```
 
-* Chameleon [15] -> Shadow Form [16 -> 32] -> Shadowmask [83]
+*Chameleon [15] -> Shadow Form [16 -> 32] -> Shadowmask [83]*
 
 ------------------------------------------------------------
 
@@ -718,7 +718,7 @@ Base Cost                                   20
 Invisibility                                30s -> 60s                      x2
 ```
 
-* Hide [30] -> Invisibility [30 -> 60] -> Concealment [90]
+*Hide [30] -> Invisibility [30 -> 60] -> Concealment [90]*
 
 ------------------------------------------------------------
 
