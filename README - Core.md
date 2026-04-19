@@ -6,11 +6,11 @@
 ```
 fLevelUpHealthEndMult                       0.1 -> 0.05
 
-Armorer                                     Strength -> Endurance
-
 fMajorSkillBonus                            0.75 -> 1.5
 fMinorSkillBonus                            1 -> 2
 fMiscSkillBonus                             1.25 -> 2.5
+
+Armorer                                     Strength -> Endurance
 ```
 
 ------------------------------------------------------------
