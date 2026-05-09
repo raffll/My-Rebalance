@@ -19,6 +19,8 @@ Spell Name                                  [default mag/dur from vanilla] -> [n
 - Do not add scale comments to potions.
 - If the scale follows directly from the base cost change (opposite direction, same factor — e.g. base cost ÷2 → spells ×2), omit the scale comment entirely since it is implied.
 - If the user writes a scale like `-> 5x/2x` as a trailing comment on a README entry (with `->` but no target value after it), it means: apply that scale to all entries in that section (until an empty line or a new `->` appears), compute and write the new target values in README and JSON, then remove the scale comment.
+- If the user writes `-> [Nx]` (a single value in brackets, e.g. `-> [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
+- If a `-> Nx` scale comment appears on a **Base Cost** line, apply that scale to the Base Cost value, then remove the scale comment.
 - The `->` means: left side is the vanilla/default value, right side is the new target value
 
 ## 2. JSON update
@@ -45,7 +47,9 @@ The JSON and README store the same new values — no conversion needed between t
 
 **Important**: When a scale is specified (either by the user or via `-> Nx/Nx` trigger in README), always apply it to the vanilla default (left of `->`) and replace whatever target value was previously on the right side — even if a target already exists. The value on the right of `->` is always the output of the last scale and is meaningless as input.
 
-**x1/x1 special case**: Scale x1/x1 means revert to vanilla. Remove the entry from R3 - Magic.json entirely (since it's now identical to vanilla and doesn't need to be in the ESP), and remove the `->` line from the README.
+**x1/x1 special case**: Scale x1/x1 means revert to vanilla. Set the target values to the vanilla defaults — keep the entry in both README and JSON, just update the values.
+
+**-> TODO special case**: When an entry has `-> TODO` as a comment, the value already on the right side of `->` is the final target — apply it directly to the JSON without any scale calculation. When the user says "don't apply, just add rule" (or similar), only update the steering file — do not touch README or JSON files.
 
 ## Base Cost and spell compensation rule
 When a magic effect's base cost is changed, spells of that school must be adjusted in the **opposite direction** to keep their effective cost roughly the same:
@@ -71,3 +75,6 @@ Use the matching filenames for whichever ESP was modified (Core, Magic, Races & 
 ## Notes
 - Never modify files inside `tes3conv/` — those are read-only vanilla references.
 - README, JSON, and ESP must always be updated together.
+
+## Modification Policy
+Only hooks may trigger actual modifications to README, JSON, and ESP files. Direct user requests must not apply changes — they may only update steering rules or prepare instructions for hooks to execute.

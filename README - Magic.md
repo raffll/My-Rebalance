@@ -153,7 +153,8 @@ Quality Potion of Feather                   15/45s -> 150/450s              T_No
 Feather                                     20/10s -> 40/50s
 Strong Feather                              50/10s -> 100/50s
 Great Feather                               100/10s -> 200/50s
-Ulms' Juicedaw Feather                      50/10s -> 100/50s
+
+Ulms' Juicedaw Feather                      50/10s -> 250/20s
 ```
 
 *Spells - Tamriel Data*
@@ -164,11 +165,12 @@ Zenithar's Arms                             50/10s -> 500/10s
 
 *Enchantments*
 ```
-Feather Belt                                20/10s -> 100/20s               feather_en
-Feather Ring                                20/10s -> 100/20s               feather_en
-Feather Shield                              20/10s -> 100/20s               feather_en
-Saint's Shield                              20/10s -> 200/10s               saint's shield_en
-Juicedaw Feather Ring                       50/10s -> 500/10s               ulms juicedaw's feather_en
+Feather Belt                                20/10s -> 40/50s                feather_en
+Feather Ring                                20/10s -> 40/50s                feather_en
+Feather Shield                              20/10s -> 40/50s                feather_en
+Saint's Shield                              20/10s -> 100/20s               saint's shield_en
+
+Juicedaw Feather Ring                       50/10s -> 500/10s               ulms juicedaw's feather_en -> 5x/2x
 ```
 
 ------------------------------------------------------------
@@ -208,7 +210,7 @@ Tsun's Ward                                 20/20s -> 40/20s
 *Enchantments - Tamriel Data*
 ```
 Scroll of The Falling Barrier               4/40s -> 8/40s                  T_Once_FallingBarrier
-                                            3/20s -> 6/20s
+                                            3/20s -> 5/20s                  T_Once_FallingBarrier
 ```
 
 ------------------------------------------------------------
@@ -258,7 +260,7 @@ Base Cost                                   3
 *Spells*
 ```
 Shock Barrier                               1-10/10s
-Lightning Shield -> Shock Shield            10/30s                          
+Lightning Shield -> Shock Shield            10/30s
 Strong Shock Shield                         12/30s
 Fierce Shock Shield                         5-11/10s
 
@@ -388,7 +390,7 @@ Base Cost                                   8 -> 4
 
 *Spells*
 ```
-Soulpinch                                   1-20/1s -> 10-200/1s            x10/x1
+Soulpinch                                   1-20/1s -> 10-200/1s            -> x2/x1
 ```
 
 *Spells - Tamriel Data*
@@ -836,10 +838,10 @@ Base Cost                                   4 -> 6
 
 *Spells*
 ```
-Tap Energy                                  20/30s -> 20/3s                 x1/x0.1 
-Absorb Fatigue                              5-20/30s -> 5-20/3s             
-Absorb Fatigue [Ranged]                     5-20/30s -> 5-20/3s             
-Energy Leech                                5-20/30s -> 5-20/6s             
+Tap Energy                                  20/30s -> 20/3s                 x1/x0.1
+Absorb Fatigue                              5-20/30s -> 5-20/3s
+Absorb Fatigue [Ranged]                     5-20/30s -> 5-20/3s
+Energy Leech                                5-20/30s -> 5-20/6s
 ```
 
 ------------------------------------------------------------
@@ -1152,34 +1154,34 @@ Base Cost                                   1
 
 *Spells*
 ```
-Masterful Red Wisdom                        15/60s                          
-Masterful Stolid Armor                      15/60s                          
-Masterful Balanced Armor                    15/60s                          
-Masterful Deep Biting                       15/60s                          
-Masterful Denial                            15/60s                          
-Masterful Enterprise                        15/60s                          
-Masterful Fleetness                         15/60s                          
-Masterful Fluid Evasion                     15/60s                          
-Masterful Glib Speech                       15/60s                          
-Masterful Golden Wisdom                     15/60s                          
-Masterful Green Wisdom                      15/60s                          
-Masterful Hewing                            15/60s                          
-Masterful Horny Fist                        15/60s                          
-Masterful Impaling Thrust                   15/60s                          
-Masterful Leaping                           15/60s                          
-Masterful Martial Craft                     15/60s                          
-Masterful Nimble Armor                      15/60s                          
-Masterful Red Wisdom                        15/60s                          
-Masterful Safekeeping                       15/60s                          
-Masterful Silver Wisdom                     15/60s                          
-Masterful Smiting                           15/60s                          
-Masterful Stalking                          15/60s                          
-Masterful Sublime Wisdom                    15/60s                          
-Masterful Sureflight                        15/60s                          
-Masterful Swiftblade                        15/60s                          
-Masterful Transcendant Wisdom               15/60s                          
-Masterful Transfiguring Wisdom              15/60s                          
-Masterful Unseen Wisdom                     15/60s                          
+Masterful Red Wisdom                        15/60s
+Masterful Stolid Armor                      15/60s
+Masterful Balanced Armor                    15/60s
+Masterful Deep Biting                       15/60s
+Masterful Denial                            15/60s
+Masterful Enterprise                        15/60s
+Masterful Fleetness                         15/60s
+Masterful Fluid Evasion                     15/60s
+Masterful Glib Speech                       15/60s
+Masterful Golden Wisdom                     15/60s
+Masterful Green Wisdom                      15/60s
+Masterful Hewing                            15/60s
+Masterful Horny Fist                        15/60s
+Masterful Impaling Thrust                   15/60s
+Masterful Leaping                           15/60s
+Masterful Martial Craft                     15/60s
+Masterful Nimble Armor                      15/60s
+Masterful Red Wisdom                        15/60s
+Masterful Safekeeping                       15/60s
+Masterful Silver Wisdom                     15/60s
+Masterful Smiting                           15/60s
+Masterful Stalking                          15/60s
+Masterful Sublime Wisdom                    15/60s
+Masterful Sureflight                        15/60s
+Masterful Swiftblade                        15/60s
+Masterful Transcendant Wisdom               15/60s
+Masterful Transfiguring Wisdom              15/60s
+Masterful Unseen Wisdom                     15/60s
 ```
 
 *Spells - Tamriel Data*
@@ -1210,9 +1212,9 @@ Base Cost                                   5 -> 0.25
 
 *Spells*
 ```
-Poet's Whim                                 1-30/10s -> 1-30/200s           
-Vivec's Mercy                               20/10s -> 50/80s                
-Shield of the Armiger                       30/10s -> 100/60s               
+Poet's Whim                                 1-30/10s -> 1-30/200s
+Vivec's Mercy                               20/10s -> 50/80s
+Shield of the Armiger                       30/10s -> 100/60s
 ```
 
 ------------------------------------------------------------
@@ -1224,10 +1226,10 @@ Base Cost                                   2 -> 0.1
 
 *Spells*
 ```
-Resist Common Disease                       10/5s -> 50/20s                 
-Variable Resist Common Disease              1-30/10s -> 1-30/200s           
-Seryn's Blessing                            20/10s -> 50/80s                
-Great Resist Common Disease                 30/10s -> 100/60s               
+Resist Common Disease                       10/5s -> 50/20s
+Variable Resist Common Disease              1-30/10s -> 1-30/200s
+Seryn's Blessing                            20/10s -> 50/80s
+Great Resist Common Disease                 30/10s -> 100/60s
 ```
 
 *Spells - Tamriel Data*
