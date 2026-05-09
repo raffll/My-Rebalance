@@ -229,7 +229,7 @@ Fierce Fire Shield                          5-11/10s
 
 *Spells - Tamriel Data*
 ```
-Fire Eye                                    10-23/20s -> 30-69/20s          -> x1/x1
+Fire Eye                                    10-23/20s -> 10-23/20s
 ```
 
 ------------------------------------------------------------
@@ -267,7 +267,7 @@ Shock Shield -> Lightning Shield            3/20s                           used
 
 *Spells - Tamriel Data*
 ```
-Draugr Lightning Shield                     50/20s -> 150/20s               -> x1/x1
+Draugr Lightning Shield                     50/20s -> 50/20s
 ```
 
 ------------------------------------------------------------
@@ -405,9 +405,9 @@ Base Cost                                   4 -> 2
 
 *Spells*
 ```
-Fleabite                                    1-10/1s -> 10-100/1s            -> x2/x1
-Doze                                        1-20/1s -> 10-200/1s            -> x2/x1
-Hornhand                                    15-36/1s -> 150-360/1s          -> x2/x1
+Fleabite                                    1-10/1s -> 2-20/1s
+Doze                                        1-20/1s -> 2-40/1s
+Hornhand                                    15-36/1s -> 30-72/1s
 ```
 
 ------------------------------------------------------------
@@ -836,10 +836,10 @@ Base Cost                                   4 -> 6
 
 *Spells*
 ```
-Tap Energy                                  20/30s -> 20/3s                 x1/x0.1
-Absorb Fatigue                              5-20/30s -> 5-20/3s             -> x1/x0.1
+Tap Energy                                  20/30s -> 20/3s                 x1/x0.1 
+Absorb Fatigue                              5-20/30s -> 5-20/3s             
 Absorb Fatigue [Ranged]                     5-20/30s -> 5-20/3s             
-Energy Leech                                5-20/30s -> 5-20/6s             -> x1/x0.2
+Energy Leech                                5-20/30s -> 5-20/6s             
 ```
 
 ------------------------------------------------------------

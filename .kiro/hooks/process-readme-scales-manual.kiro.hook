@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Process README Scales",
+  "description": "Manually trigger processing of -> Nx/Nx scale triggers in README - Magic.md, updating README and JSON values, then rebuilding the ESP.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Scan README - Magic.md for any entries with a trailing `-> Nx/Nx` scale comment (e.g. `-> 5x/2x`, `-> 10x/1x`). For each one found:\n1. Identify the section it belongs to (all entries until the next empty line or a new `->` value)\n2. Apply the scale to the VANILLA DEFAULT values (left of `->`) to compute new target values — always replace whatever is on the right side of `->`, even if a target already exists. The right side value is always meaningless as input.\n3. SPECIAL CASE x1/x1: means revert to vanilla — remove the entry from R3 - Magic.json entirely and remove the `->` line from README\n4. For all other scales: update the target values (right of `->`) in README - Magic.md and update the corresponding entries in R3 - Magic.json\n5. Remove the `-> Nx/Nx` trigger comment\n6. Rebuild the ESP using: `& \"tes3conv/tes3conv.exe\" \"R3 - Magic.json\" \"R3 - Magic.new.esp\"` then `$b = \"c:\\Users\\rafal\\OneDrive\\OMEN\\Morrowind\\MO2\\mods\\Remastered Rebalance Redux\"; [System.IO.File]::WriteAllBytes(\"$b\\R3 - Magic.esp\", [System.IO.File]::ReadAllBytes(\"$b\\R3 - Magic.new.esp\")); Remove-Item \"$b\\R3 - Magic.new.esp\"`\n\nIf no `-> Nx/Nx` triggers are found, do nothing."
+  }
+}

@@ -43,6 +43,10 @@ The scale is applied to the **vanilla default values** (left of `->` in README) 
 
 The JSON and README store the same new values — no conversion needed between them.
 
+**Important**: When a scale is specified (either by the user or via `-> Nx/Nx` trigger in README), always apply it to the vanilla default (left of `->`) and replace whatever target value was previously on the right side — even if a target already exists. The value on the right of `->` is always the output of the last scale and is meaningless as input.
+
+**x1/x1 special case**: Scale x1/x1 means revert to vanilla. Remove the entry from R3 - Magic.json entirely (since it's now identical to vanilla and doesn't need to be in the ESP), and remove the `->` line from the README.
+
 ## Base Cost and spell compensation rule
 When a magic effect's base cost is changed, spells of that school must be adjusted in the **opposite direction** to keep their effective cost roughly the same:
 - If base cost is multiplied by X, then spell mag×dur must be divided by X (and vice versa)
