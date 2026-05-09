@@ -119,7 +119,7 @@
     "description": "This effect creates a shield of elemental fire around the subject's entire body. The spell adds its magnitude to the subject's Armor Rating, and also greatly reduces damage from fire attacks.",
     "data": {
       "school": "Alteration",
-      "base_cost": 1.0,
+      "base_cost": 3.0,
       "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
       "color": [
         253,
@@ -148,7 +148,7 @@
     "description": "This effect creates a shield of elemental shock around the subject's entire body. The spell adds its magnitude to the subject's Armor Rating, and also greatly reduces damage from shock attacks.",
     "data": {
       "school": "Alteration",
-      "base_cost": 1.0,
+      "base_cost": 3.0,
       "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
       "color": [
         128,
@@ -177,7 +177,7 @@
     "description": "This effect creates a shield of elemental frost around the subject's entire body. The spell adds its magnitude to the subject's Armor Rating, and also greatly reduces damage from frost attacks.",
     "data": {
       "school": "Alteration",
-      "base_cost": 1.0,
+      "base_cost": 3.0,
       "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
       "color": [
         221,
@@ -1226,9 +1226,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 40,
-        "min_magnitude": 250,
-        "max_magnitude": 250
+        "duration": 25,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -1430,9 +1430,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 6250,
-        "max_magnitude": 6250
+        "duration": 8,
+        "min_magnitude": 2000,
+        "max_magnitude": 2000
       }
     ],
     "data": {
@@ -1917,9 +1917,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 2,
-        "duration": 160,
-        "min_magnitude": 13,
-        "max_magnitude": 188
+        "duration": 50,
+        "min_magnitude": 4,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -2687,8 +2687,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 15,
-        "max_magnitude": 33
+        "min_magnitude": 5,
+        "max_magnitude": 11
       }
     ],
     "data": {
@@ -2710,8 +2710,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 15,
-        "max_magnitude": 33
+        "min_magnitude": 5,
+        "max_magnitude": 11
       }
     ],
     "data": {
@@ -2733,8 +2733,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 15,
-        "max_magnitude": 33
+        "min_magnitude": 5,
+        "max_magnitude": 11
       }
     ],
     "data": {
@@ -2756,8 +2756,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 3,
-        "max_magnitude": 30
+        "min_magnitude": 1,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -2779,8 +2779,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 30,
-        "max_magnitude": 30
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -2802,8 +2802,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 3,
-        "max_magnitude": 30
+        "min_magnitude": 1,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -2895,7 +2895,7 @@
         "area": 0,
         "duration": 10,
         "min_magnitude": 3,
-        "max_magnitude": 30
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -2917,8 +2917,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 30,
-        "max_magnitude": 30
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -2940,8 +2940,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 18,
-        "max_magnitude": 18
+        "min_magnitude": 6,
+        "max_magnitude": 6
       }
     ],
     "data": {
@@ -3166,9 +3166,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 480,
-        "min_magnitude": 375,
-        "max_magnitude": 500
+        "duration": 150,
+        "min_magnitude": 120,
+        "max_magnitude": 160
       }
     ],
     "data": {
@@ -3282,8 +3282,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 30,
-        "max_magnitude": 30
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -3949,8 +3949,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 3,
-        "max_magnitude": 30
+        "min_magnitude": 1,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -3972,8 +3972,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 20,
-        "min_magnitude": 9,
-        "max_magnitude": 9
+        "min_magnitude": 3,
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -4202,8 +4202,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 48,
-        "max_magnitude": 48
+        "min_magnitude": 12,
+        "max_magnitude": 12
       }
     ],
     "data": {
@@ -4225,8 +4225,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 48,
-        "max_magnitude": 48
+        "min_magnitude": 12,
+        "max_magnitude": 12
       }
     ],
     "data": {
@@ -4386,8 +4386,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 48,
-        "max_magnitude": 48
+        "min_magnitude": 12,
+        "max_magnitude": 12
       }
     ],
     "data": {
@@ -4888,9 +4888,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 400,
-        "min_magnitude": 250,
-        "max_magnitude": 375
+        "duration": 125,
+        "min_magnitude": 80,
+        "max_magnitude": 120
       }
     ],
     "data": {
@@ -7688,9 +7688,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
       }
     ],
     "data": {
@@ -10568,9 +10568,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 8,
-        "min_magnitude": 5,
-        "max_magnitude": 5
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
       }
     ],
     "data": {
@@ -10655,6 +10655,85 @@
       "weight": 1.0,
       "value": 35,
       "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "heavy_eyes_unique",
+    "name": "Harthoon's Heavy Eyes",
+    "effects": [
+      {
+        "magic_effect": "Blind",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 100,
+        "max_magnitude": 100
+      },
+      {
+        "magic_effect": "Burden",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 100,
+        "min_magnitude": 100,
+        "max_magnitude": 100
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 50,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "absorb health",
+    "name": "Absorb Health",
+    "effects": [
+      {
+        "magic_effect": "AbsorbHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 5,
+        "max_magnitude": 50
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 11,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "Tap Energy",
+    "name": "Tap Energy",
+    "effects": [
+      {
+        "magic_effect": "AbsorbFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 3,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 180,
+      "flags": "AUTO_CALCULATE | PC_START_SPELL"
     }
   },
   {
