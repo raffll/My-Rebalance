@@ -57,24 +57,9 @@ When a magic effect's base cost is changed, spells of that school must be adjust
 - Example: base cost ÷2 → spell mag×dur ×2 (e.g. double magnitude, or double duration, or split between both)
 - The split between magnitude and duration is chosen per spell as appropriate
 
-## 3. Convert JSON back to ESP
-After updating the JSON, convert to a temp filename (tes3conv creates numbered files if destination exists, so use a unique temp name to avoid that):
-```
-& "tes3conv/tes3conv.exe" "R3 - Magic.json" "R3 - Magic.new.esp"
-```
-
-Then overwrite the original ESP in place using WriteAllBytes (preserves git tracking), and clean up:
-```
-$b = "c:\Users\rafal\OneDrive\OMEN\Morrowind\MO2\mods\Remastered Rebalance Redux"
-[System.IO.File]::WriteAllBytes("$b\R3 - Magic.esp", [System.IO.File]::ReadAllBytes("$b\R3 - Magic.new.esp"))
-Remove-Item "$b\R3 - Magic.new.esp"
-```
-
-Use the matching filenames for whichever ESP was modified (Core, Magic, Races & Birthsigns, or optional files).
-
 ## Notes
 - Never modify files inside `tes3conv/` — those are read-only vanilla references.
-- README, JSON, and ESP must always be updated together.
+- README and JSON must always be updated together. ESP conversion is handled separately and is not part of this workflow.
 
 ## Modification Policy
 Only hooks may trigger actual modifications to README, JSON, and ESP files. Direct user requests must not apply changes — they may only update steering rules or prepare instructions for hooks to execute.

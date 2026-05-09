@@ -1384,9 +1384,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 10,
-        "duration": 15,
-        "min_magnitude": 1000,
-        "max_magnitude": 1000
+        "duration": 3,
+        "min_magnitude": 5000,
+        "max_magnitude": 5000
       }
     ],
     "data": {
@@ -4110,8 +4110,8 @@
         "range": "OnTouch",
         "area": 0,
         "duration": 1,
-        "min_magnitude": 10,
-        "max_magnitude": 200
+        "min_magnitude": 2,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -4477,9 +4477,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 50,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 20,
+        "min_magnitude": 250,
+        "max_magnitude": 250
       }
     ],
     "data": {
@@ -5075,9 +5075,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 20,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 50,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -5098,9 +5098,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 10,
-        "min_magnitude": 200,
-        "max_magnitude": 200
+        "duration": 20,
+        "min_magnitude": 100,
+        "max_magnitude": 100
       },
       {
         "magic_effect": "RestoreFatigue",
@@ -5227,9 +5227,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 10,
-        "min_magnitude": 500,
-        "max_magnitude": 500
+        "duration": 20,
+        "min_magnitude": 250,
+        "max_magnitude": 250
       }
     ],
     "data": {
@@ -10950,29 +10950,6 @@
     "data": {
       "spell_type": "Spell",
       "cost": 50,
-      "flags": ""
-    }
-  },
-  {
-    "type": "Spell",
-    "flags": "",
-    "id": "T_Com_Alt_Fling",
-    "name": "Fling",
-    "effects": [
-      {
-        "magic_effect": "Feather",
-        "skill": "None",
-        "attribute": "None",
-        "range": "OnTarget",
-        "area": 10,
-        "duration": 3,
-        "min_magnitude": 5000,
-        "max_magnitude": 5000
-      }
-    ],
-    "data": {
-      "spell_type": "Spell",
-      "cost": 100,
       "flags": ""
     }
   },

@@ -170,7 +170,7 @@ Feather Ring                                20/10s -> 40/50s                feat
 Feather Shield                              20/10s -> 40/50s                feather_en
 Saint's Shield                              20/10s -> 100/20s               saint's shield_en
 
-Juicedaw Feather Ring                       50/10s -> 500/10s               ulms juicedaw's feather_en -> 5x/2x
+Juicedaw Feather Ring                       50/10s -> 250/20s               ulms juicedaw's feather_en
 ```
 
 ------------------------------------------------------------
@@ -390,7 +390,7 @@ Base Cost                                   8 -> 4
 
 *Spells*
 ```
-Soulpinch                                   1-20/1s -> 10-200/1s            -> x2/x1
+Soulpinch                                   1-20/1s -> 2-40/1s
 ```
 
 *Spells - Tamriel Data*

@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "Build Magic ESP",
   "description": "Converts R3 - Magic.json to ESP and overwrites the existing file in place.",
   "version": "1",
