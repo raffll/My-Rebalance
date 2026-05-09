@@ -84,31 +84,32 @@ Quality Potion of Burden                    15/45s -> 150/450s
 
 *Spells*
 ```
-Burden Touch                                20/10s -> 100/20s
-Burden                                      20/10s -> 100/20s
-Heavy Burden Touch                          40/10s -> 200/20s
-Heavy Burden                                40/10s -> 200/20s
+Burden Touch                                20/10s -> 50/40s                !
+Burden                                      20/10s -> 50/40s
+Heavy Burden Touch                          40/10s -> 100/40s
+Heavy Burden                                40/10s -> 100/40s
+Crushing Burden Touch                       60/10s -> 150/40s
+Crushing Burden                             60/10s -> 150/40s
 
-Crushing Burden Touch                       60/10s -> 300/20s               [no auto]     !    
-Crushing Burden                             60/10s -> 300/20s
-Weary                                       30-60/10s -> 150-300/20s
-Cruel Weary                                 50-70/10s -> 250-350/20s
-Dire Weary                                  60-90/10s -> 300-450/20s
-Great Burden of Sin -> Burden of Sin        40/10s -> 400/10s
-Burden of Sin -> Great Burden of Sin        40-60/20s -> 400-600/20s
-Crushing Burden of Sin                      60-80/30s -> 600-800/30s
+Weary                                       30-60/10s -> 75-150/40s
+Cruel Weary                                 50-70/10s -> 125-175/40s
+Dire Weary                                  60-90/10s -> 150-225/40s
 
-Aryon's Rest                                10/10s -> 100/10s               used by Aryon
-Hand of Odros                               30-40/60s -> 300-400/60s        used by Odros
-Wrath of Odros                              20-30/50s -> 200-300/50s
+Great Burden of Sin -> Burden of Sin        40/10s -> 100/40s
+Burden of Sin -> Great Burden of Sin        40-60/20s -> 100-150/80s
+Crushing Burden of Sin                      60-80/30s -> 150-200/120s
+
+Aryon's Rest                                10/10s -> 25/40s                used by Aryon
+Hand of Odros                               30-40/60s -> 75-100/240s        used by Odros
+Wrath of Odros                              20-30/50s -> 50-75/200s
 Harthoon's Heavy Eyes                       100/10s                         used by Barilzar                        !
 Hunter's Venom                              50/10s                          used by Hircine's Aspect of Guile
 ```
 
 *Spells - Tamriel Data*
 ```
-Shadow Rust                                 1-15/20s -> 10-150/20s
-Weight of Guilt                             500/3s -> 1000/15s
+Shadow Rust                                 1-15/20s -> 3-38/80s
+Weight of Guilt                             500/3s -> 1250/12s
 ```
 
 *Enchantments*
@@ -1453,10 +1454,6 @@ Spellmaking & Enchanting                    Yes
 ------------------------------------------------------------
 
 ### Summon Bonewolf
-```
-
-```
-
 ```
 Spellmaking & Enchanting                    Yes
 ```

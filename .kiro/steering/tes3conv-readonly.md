@@ -1,0 +1,11 @@
+# tes3conv JSON Files — Read Only
+
+The JSON files inside the `tes3conv/` folder are **default/vanilla reference files** and must **never be modified**.
+
+These files are:
+- `tes3conv/Morrowind.json`
+- `tes3conv/Tribunal.json`
+- `tes3conv/Bloodmoon.json`
+- `tes3conv/Tamriel_Data.json`
+
+They serve as the source of truth for original game data. All edits must be made to the ESP-derived JSON files in the workspace root or `optional/` folder, never to these reference files.

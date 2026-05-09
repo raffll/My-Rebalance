@@ -1,0 +1,933 @@
+[
+  {
+    "type": "Header",
+    "flags": "",
+    "version": 1.3,
+    "file_type": "Esp",
+    "author": "",
+    "description": "",
+    "num_objects": 46,
+    "masters": [
+      [
+        "Morrowind.esm",
+        79837557
+      ],
+      [
+        "Tribunal.esm",
+        4565686
+      ],
+      [
+        "Bloodmoon.esm",
+        9631798
+      ],
+      [
+        "Tamriel_Data.esm",
+        14887395
+      ]
+    ]
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fBarterGoldResetDelay",
+    "value": {
+      "type": "Float",
+      "data": 720.0
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fEnchantmentChanceMult",
+    "value": {
+      "type": "Float",
+      "data": 0.6
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fLevelUpHealthEndMult",
+    "value": {
+      "type": "Float",
+      "data": 0.05
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fMagesGuildTravel",
+    "value": {
+      "type": "Float",
+      "data": 50.0
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fMagicItemRechargePerSecond",
+    "value": {
+      "type": "Float",
+      "data": 0.0
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fMaxWalkSpeed",
+    "value": {
+      "type": "Float",
+      "data": 250.0
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fMaxWalkSpeedCreature",
+    "value": {
+      "type": "Float",
+      "data": 375.0
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fMinWalkSpeed",
+    "value": {
+      "type": "Float",
+      "data": 125.0
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fMinWalkSpeedCreature",
+    "value": {
+      "type": "Float",
+      "data": 6.25
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fPickLockMult",
+    "value": {
+      "type": "Float",
+      "data": -1.25
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fPickPocketMod",
+    "value": {
+      "type": "Float",
+      "data": 0.001
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fPotionStrengthMult",
+    "value": {
+      "type": "Float",
+      "data": 0.25
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "fTrapCostMult",
+    "value": {
+      "type": "Float",
+      "data": -0.75
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "iCrimeAttack",
+    "value": {
+      "type": "Integer",
+      "data": 1000
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "iCrimeKilling",
+    "value": {
+      "type": "Integer",
+      "data": 5000
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "iCrimePickPocket",
+    "value": {
+      "type": "Integer",
+      "data": 250
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "iCrimeTresspass",
+    "value": {
+      "type": "Integer",
+      "data": 500
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "iDaysinPrisonMod",
+    "value": {
+      "type": "Integer",
+      "data": 500
+    }
+  },
+  {
+    "type": "GameSetting",
+    "flags": "",
+    "id": "iPickMaxChance",
+    "value": {
+      "type": "Integer",
+      "data": 100
+    }
+  },
+  {
+    "type": "Skill",
+    "flags": "",
+    "skill_id": "Armorer",
+    "data": {
+      "governing_attribute": 5,
+      "specialization": 0,
+      "actions": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "description": "Armorer skill is used to maintain weapons and armor at top effectiveness. Worn weapons do less damage. Worn armor provides less protection against attacks. As wear increases, the diminishing effectiveness of weapons and armor is dramatic."
+  },
+  {
+    "type": "MagicEffect",
+    "flags": "",
+    "effect_id": "Open",
+    "icon": "s\\Tx_S_open.tga",
+    "texture": "vfx_ill_glow.tga",
+    "bolt_sound": "",
+    "cast_sound": "",
+    "hit_sound": "",
+    "area_sound": "",
+    "cast_visual": "VFX_AlterationCast",
+    "bolt_visual": "VFX_AlterationBolt",
+    "hit_visual": "VFX_AlterationHit",
+    "area_visual": "VFX_AlterationArea",
+    "description": "This effect opens a locked container or door. The effect's magnitude is the highest lock level that can be opened.",
+    "data": {
+      "school": "Alteration",
+      "base_cost": 12.0,
+      "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+      "color": [
+        106,
+        63,
+        120
+      ],
+      "speed": 1.0,
+      "size": 1.0,
+      "size_cap": 50.0
+    }
+  },
+  {
+    "type": "Script",
+    "flags": "",
+    "id": "BILL_MT_calc_legit_kills",
+    "header": {
+      "num_shorts": 2,
+      "num_longs": 0,
+      "num_floats": 0,
+      "bytecode_length": 3949,
+      "variables_length": 16
+    },
+    "variables": "KLUv/QBYoQAAEAAAAG11cmRlcmNvc3QAdGVtcAA=",
+    "bytecode": "KLUv/QBY9RUANhhYPGBpmwMwDMPUJEmShEmSLAQ0YokNkWoXW7I/JX0dy1uBexHK9fg95EXOBpLMEjrbrIjtZ7G9SYheC0uSBEkASABHAFlXIDqidvYj6vfuL1Ef6IItwnVFIdMBGNBBG3rbsRi7ufiAhZ2om1ZdYIM2lP9vAs7VWEzdtOkCGwSaUmqgswL9eGCGjeeBbALYuz+4m/fsDiICaDbpQ1cq3TlWwLm4Qd00SUaJXaPxXsIaIEm8zrG1LDQDOmAEI4bOuhcgmnOxReR1Q1Uh0xaEDmwv/CU4YAxzmhAA08xe9xdDsEl23U2cUVJYlBfeeWuhKF7HtTglyUSRJJ79fcr+4u8yr4lDw/VxnaWY1iR/XP64+bgmj8tiZxBnhUW6ChDm/xuhcq7Gfq14r6ibVjEYBBZZYQxdTcj0A+V+PDBfD5RhI0oKi7JzbCFsFCWyZmRZSUZJYVE65+8WiuJh7BTToeMTMYDPqMFtkjSlbOwZAGPqKB0SwMCoUAoiBAmUIkQxIiCGCEQgJBQJKBKtBxBPB0ieirLRPSpXr5kFRA5alYblaW2rjQcyOkfdzbAdqL8aCtAKPuhPBWi1t52csgoEvddDcWDUcV2qEAC0sjUlPddu0WJYQr7RPZ8FeD+3I24BkX0i2OgyYvw9ep0tajy44HJtUvJ2LqmpwhBxxce5w10LaoO1zwPKtnmzs2ghVzhJXl0FMT15KkoAunENVEcANy1HnudCK9oSLyjDOhccuT74Bv1bQ99khdNap8UCMlq91CnXIW4DmUUib8T+LMA9XVQDri3MzwOCbbsyrcgLwH4tSoDrFgaZEMvqpXTNBH6uha96h2XU8hHdqWKEueimB/odFGva285B3cSGdgfFGreGscE3S+uapaGP73ai0LR3Zk06hbGF5MlaqGS+GzNd58Rq/kG2rMYe6NTRB1YB",
+    "text": "Begin BILL_MT_calc_legit_kills\r\n; sets the PCCrimeLevel to the appropriate\r\n; value taking into account the writs the Player has on him.\r\n; should work now, changed most sets to ifs -dug\r\n; fixed infix/postfix thing -dug\r\n; top three at TR08_Hlaalu, not Morag Tong\r\n\r\n\r\nshort murdercost\t; value to pay (negative) after killing someone and you are caught by the law\r\nshort temp\t\t\t; temporary float variable\r\n\r\n; global definitions\r\n; MT_LegitKills \t\t= number of legitimate kills for which the Player has proof (writs)\r\n; MT_NewCrimeLevel\t= what the PCCrimeLevel will be when the writs are redeemed\r\n\r\nset murdercost to -6000\t\t\t; this value will need to be tweaked based on changes to the crime economy\r\n\t\t\t\t\t\t\t\t\t\t\t;equal to one assault and one murder\r\n\r\nset MT_LegitKills to 0\t\t\t; global set to 0 at start of script\r\nset MT_NewCrimeLevel to 0\t; global set to 0 at start of script\r\n\r\nif ( GetJournalIndex TR08_Hlaalu_Alen_A >= 1 )\r\n\tif ( Player->GetItemCount, \"writ_Alen\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex TR08_Hlaalu_Berano_A >= 1 )\r\n\tif ( Player->GetItemCount, \"writ_Berano\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex TR08_Hlaalu_Hloggar_A >= 1 )\r\n\tif ( Player->GetItemCount, \"writ_Hloggar\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritOran == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Oran\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritOran == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Oran\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritYasalmibaal == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Yasalmibaal\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritYasalmibaal == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Yasalmibaal\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritSaren == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Saren\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritSaren == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Saren\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritSadus == 80 )\r\n\tif ( Player->GetItemCount \"writ_Sadus\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritSadus == 100 )\r\n\tif ( Player->GetItemCount \"writ_Sadus\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritVendu == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Vendu\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 2 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritVendu == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Vendu\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 2 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritGuril == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Guril\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritGuril == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Guril\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritGalasa == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Galasa\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritGalasa == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Galasa\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritMavon == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Mavon\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritMavon == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Mavon\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBelvayn == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Belvayn\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBelvayn == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Belvayn\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\n\r\nif ( GetJournalIndex MT_WritBemis == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Bemis\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBemis == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Bemis\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBrilnosu == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Brilnosu\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBrilnosu == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Brilnosu\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritNavil == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Navil\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 2 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritNavil == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Navil\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 2 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritVarro == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Varro\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritVarro == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Varro\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBaladas == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Baladas\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBaladas == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Baladas\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBero == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Bero\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritBero == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Bero\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritTherana == 80 )\r\n\tif ( Player->GetItemCount, \"writ_Therana\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\nif ( GetJournalIndex MT_WritTherana == 100 )\r\n\tif ( Player->GetItemCount, \"writ_Therana\" > 0 )\r\n\t\tset MT_LegitKills to ( MT_LegitKills + 1 )\r\n\tendif\r\nendif\r\n\r\n; calculate Morag Tong sanctioned discount to PCCrimeLevel\r\nset temp to ( MT_LegitKills * murdercost )\r\nset MT_NewCrimeLevel to ( temp + GetPCCrimeLevel )\r\n\r\n; run ONLY ONCE\r\nStopScript BILL_MT_calc_legit_kills\r\n\r\nEnd"
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "great open",
+    "name": "Great Open",
+    "effects": [
+      {
+        "magic_effect": "Open",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 80,
+        "max_magnitude": 80
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 48,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "ondusi's open door",
+    "name": "Ondusi's Open Door",
+    "effects": [
+      {
+        "magic_effect": "Open",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 24,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "strong open",
+    "name": "Strong Open",
+    "effects": [
+      {
+        "magic_effect": "Open",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 60,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 36,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_fire00",
+    "name": "Fire Trap",
+    "effects": [
+      {
+        "magic_effect": "FireDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 3,
+        "min_magnitude": 2,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 30,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_fire_killer",
+    "name": "Master Fire Trap",
+    "effects": [
+      {
+        "magic_effect": "FireDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 10,
+        "min_magnitude": 20,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 65,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_frost00",
+    "name": "Frost Trap",
+    "effects": [
+      {
+        "magic_effect": "FrostDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 3,
+        "min_magnitude": 2,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_frost_killer",
+    "name": "Master Frost Trap",
+    "effects": [
+      {
+        "magic_effect": "FrostDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 10,
+        "min_magnitude": 20,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 70,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_health00",
+    "name": "Lifeforce Trap",
+    "effects": [
+      {
+        "magic_effect": "DamageHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 3,
+        "min_magnitude": 2,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_paralyze00",
+    "name": "Paralysis Trap",
+    "effects": [
+      {
+        "magic_effect": "Paralyze",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 55,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_poison00",
+    "name": "Poison Trap",
+    "effects": [
+      {
+        "magic_effect": "Poison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 60,
+        "min_magnitude": 1,
+        "max_magnitude": 5
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 50,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_poison_killer",
+    "name": "Master Poison Trap",
+    "effects": [
+      {
+        "magic_effect": "Poison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 50,
+        "min_magnitude": 5,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 100,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_shock00",
+    "name": "Shock Trap",
+    "effects": [
+      {
+        "magic_effect": "ShockDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 3,
+        "min_magnitude": 2,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 40,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_shock_killer",
+    "name": "Master Shock Trap",
+    "effects": [
+      {
+        "magic_effect": "ShockDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 10,
+        "min_magnitude": 20,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 75,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "trap_silence00",
+    "name": "Silence Trap",
+    "effects": [
+      {
+        "magic_effect": "Silence",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 30,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 60,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "mudcrab_unique",
+    "name": "Mudcrab",
+    "script": "",
+    "mesh": "r\\CaveMudcrab.NIF",
+    "inventory": [
+      [
+        2,
+        "random_crab_meat"
+      ],
+      [
+        -2,
+        "Potion_Local_Brew_01"
+      ],
+      [
+        -3,
+        "potion_local_liquor_01"
+      ],
+      [
+        -2,
+        "potion_comberry_wine_01"
+      ],
+      [
+        -3,
+        "potion_comberry_brandy_01"
+      ]
+    ],
+    "spells": [],
+    "ai_data": {
+      "hello": 0,
+      "fight": 50,
+      "flee": 30,
+      "alarm": 0,
+      "services": "BARTERS_WEAPONS | BARTERS_ARMOR | BARTERS_ALCHEMY | 0xa00000"
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 512,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 20,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "mudcrab",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Normal",
+      "level": 1,
+      "strength": 15,
+      "intelligence": 15,
+      "willpower": 0,
+      "agility": 15,
+      "speed": 6,
+      "endurance": 15,
+      "personality": 75,
+      "luck": 50,
+      "health": 20,
+      "magicka": 5,
+      "fatigue": 400,
+      "soul": 5,
+      "combat": 30,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        1,
+        5
+      ],
+      "attack2": [
+        1,
+        5
+      ],
+      "attack3": [
+        1,
+        5
+      ],
+      "gold": 1000
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "scamp_creeper",
+    "name": "Creeper",
+    "script": "scampScript",
+    "mesh": "r\\Scamp_Fetch.NIF",
+    "inventory": [
+      [
+        1,
+        "iron shortsword"
+      ],
+      [
+        1,
+        "random_scamp_skin"
+      ],
+      [
+        1,
+        "Potion_Local_Brew_01"
+      ],
+      [
+        1,
+        "potion_skooma_01"
+      ],
+      [
+        1,
+        "potion_local_liquor_01"
+      ],
+      [
+        1,
+        "Potion_Cyro_Whiskey_01"
+      ],
+      [
+        1,
+        "potion_cyro_brandy_01"
+      ],
+      [
+        1,
+        "potion_comberry_wine_01"
+      ],
+      [
+        1,
+        "potion_comberry_brandy_01"
+      ],
+      [
+        1,
+        "potion_ancient_brandy"
+      ],
+      [
+        1,
+        "misc_de_drum_02"
+      ]
+    ],
+    "spells": [
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 50,
+      "fight": 0,
+      "flee": 100,
+      "alarm": 0,
+      "services": "BARTERS_WEAPONS | BARTERS_ARMOR | BARTERS_MISC_ITEMS | BARTERS_ENCHANTED_ITEMS | BARTERS_ALCHEMY | 0xa00000"
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 0,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 0,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "scamp",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 5,
+      "strength": 20,
+      "intelligence": 20,
+      "willpower": 70,
+      "agility": 20,
+      "speed": 6,
+      "endurance": 20,
+      "personality": 20,
+      "luck": 20,
+      "health": 60,
+      "magicka": 100,
+      "fatigue": 400,
+      "soul": 10,
+      "combat": 60,
+      "magic": 30,
+      "stealth": 40,
+      "attack1": [
+        1,
+        20
+      ],
+      "attack2": [
+        1,
+        20
+      ],
+      "attack3": [
+        1,
+        20
+      ],
+      "gold": 500
+    }
+  },
+  {
+    "type": "Enchanting",
+    "flags": "",
+    "id": "sc_ekashslocksplitter_en",
+    "effects": [
+      {
+        "magic_effect": "Open",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 80,
+        "max_magnitude": 100
+      }
+    ],
+    "data": {
+      "enchant_type": "CastOnce",
+      "cost": 72,
+      "max_charge": 72,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Apparatus",
+    "flags": "",
+    "id": "apparatus_sm_alembic_01",
+    "name": "Secret Master's Alembic",
+    "script": "",
+    "mesh": "m\\Apparatus_S_Alembic_01.nif",
+    "icon": "m\\Tx_alembic_05.tga",
+    "data": {
+      "apparatus_type": "Alembic",
+      "quality": 2.0,
+      "weight": 3.0,
+      "value": 8000
+    }
+  },
+  {
+    "type": "Apparatus",
+    "flags": "",
+    "id": "apparatus_sm_calcinator_01",
+    "name": "Secret Master's Calcinator",
+    "script": "",
+    "mesh": "m\\App_S_Calcinator_01.nif",
+    "icon": "m\\Tx_calcinator_05.tga",
+    "data": {
+      "apparatus_type": "Calcinator",
+      "quality": 2.0,
+      "weight": 6.0,
+      "value": 16000
+    }
+  },
+  {
+    "type": "Apparatus",
+    "flags": "",
+    "id": "apparatus_sm_mortar_01",
+    "name": "Secret Master's Mortar & Pestle",
+    "script": "",
+    "mesh": "m\\Misc_mortarpestle_S_01.nif",
+    "icon": "m\\Tx_mortarpestle_S_01.tga",
+    "data": {
+      "apparatus_type": "MortarAndPestle",
+      "quality": 2.0,
+      "weight": 1.0,
+      "value": 30000
+    }
+  },
+  {
+    "type": "Apparatus",
+    "flags": "",
+    "id": "apparatus_sm_retort_01",
+    "name": "Secret Master's Retort",
+    "script": "",
+    "mesh": "m\\Apparatus_S_Retort_01.nif",
+    "icon": "m\\Tx_retort_05.tga",
+    "data": {
+      "apparatus_type": "Retort",
+      "quality": 2.0,
+      "weight": 2.0,
+      "value": 5000
+    }
+  },
+  {
+    "type": "Book",
+    "flags": "",
+    "id": "sc_ondusisunhinging",
+    "name": "Scroll of Ondusi's Unhinging",
+    "script": "",
+    "mesh": "m\\text_scroll_01.nif",
+    "icon": "m\\Tx_scroll_01.tga",
+    "enchanting": "sc_ondusisunhinging_en",
+    "text": "<DIV ALIGN=\"center\"><FONT COLOR=\"000000\" SIZE=\"2\" FACE=\"Daedric\">WOE UPON YOU</FONT><BR>",
+    "data": {
+      "weight": 0.2,
+      "value": 173,
+      "book_type": "Scroll",
+      "skill": "None",
+      "enchantment": 0
+    }
+  },
+  {
+    "type": "Dialogue",
+    "flags": "",
+    "id": "Greeting 0",
+    "dialogue_type": "Greeting"
+  },
+  {
+    "type": "DialogueInfo",
+    "flags": "",
+    "id": "58028831233554797",
+    "prev_id": "67239647320757300",
+    "next_id": "1553958902285827759",
+    "data": {
+      "dialogue_type": "Greeting",
+      "disposition": 0,
+      "speaker_rank": -1,
+      "speaker_sex": "Any",
+      "player_rank": -1
+    },
+    "speaker_id": "",
+    "speaker_race": "",
+    "speaker_class": "Guard",
+    "speaker_faction": "",
+    "speaker_cell": "",
+    "player_faction": "",
+    "sound_path": "",
+    "text": "You've earned a death warrant for your crimes, outlaw. May the gods have mercy upon your soul.",
+    "filters": [
+      {
+        "index": 0,
+        "filter_type": "Function",
+        "function": "PcCrimeLevel",
+        "comparison": "GreaterEqual",
+        "id": "",
+        "value": {
+          "type": "Integer",
+          "data": 20000
+        }
+      }
+    ],
+    "script_text": "StartCombat Player\r\nGoodbye"
+  }
+]

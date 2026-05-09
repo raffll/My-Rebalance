@@ -1,0 +1,1516 @@
+[
+  {
+    "type": "Header",
+    "flags": "",
+    "version": 1.3,
+    "file_type": "Esp",
+    "author": "",
+    "description": "",
+    "num_objects": 47,
+    "masters": [
+      [
+        "Morrowind.esm",
+        79837557
+      ],
+      [
+        "Tribunal.esm",
+        4565686
+      ],
+      [
+        "Bloodmoon.esm",
+        9631798
+      ]
+    ]
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "Argonian",
+    "name": "Argonian",
+    "spells": [
+      "raffll_argonian_magicka",
+      "immune to poison",
+      "resist disease_75",
+      "raffll_argonian_scales",
+      "raffll_argonian_amphibious"
+    ],
+    "description": "At home in water and on land, the Argonians of Black Marsh are well-suited to the treacherous swamps of their homeland, with natural immunities protecting them from disease and poison. The female life-phase is highly intelligent, and gifted in the magical arts. The more aggressive male phase has the traits of the hunter: stealth, speed, and agility. Argonians are reserved with strangers, yet fiercely loyal to those they accept as friends.",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "Alchemy",
+        "bonus_0": 5,
+        "skill_1": "Athletics",
+        "bonus_1": 5,
+        "skill_2": "Illusion",
+        "bonus_2": 5,
+        "skill_3": "MediumArmor",
+        "bonus_3": 5,
+        "skill_4": "Mysticism",
+        "bonus_4": 5,
+        "skill_5": "Spear",
+        "bonus_5": 15,
+        "skill_6": "Unarmored",
+        "bonus_6": 5
+      },
+      "strength": [
+        40,
+        40
+      ],
+      "intelligence": [
+        40,
+        50
+      ],
+      "willpower": [
+        30,
+        40
+      ],
+      "agility": [
+        50,
+        40
+      ],
+      "speed": [
+        50,
+        40
+      ],
+      "endurance": [
+        30,
+        30
+      ],
+      "personality": [
+        30,
+        30
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        1.03,
+        1.0
+      ],
+      "weight": [
+        1.1,
+        1.0
+      ],
+      "flags": "PLAYABLE | BEAST_RACE"
+    }
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "Dark Elf",
+    "name": "Dunmer",
+    "spells": [
+      "resist fire_75",
+      "ancestor guardian"
+    ],
+    "description": "In the Empire, \"Dark Elves\" is the common usage, but in their Morrowind homeland, they call themselves the \"Dunmer\". The dark-skinned, red-eyed Dark Elves combine powerful intellect with strong and agile physiques, producing superior warriors and sorcerers. On the battlefield, Dark Elves are noted for their skilled and balanced integration of swordsmen, marksmen, and war wizards. In character, they are grim, distrusting, and disdainful of other races.",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "Athletics",
+        "bonus_0": 5,
+        "skill_1": "Destruction",
+        "bonus_1": 10,
+        "skill_2": "LightArmor",
+        "bonus_2": 5,
+        "skill_3": "LongBlade",
+        "bonus_3": 5,
+        "skill_4": "Marksman",
+        "bonus_4": 5,
+        "skill_5": "Mysticism",
+        "bonus_5": 5,
+        "skill_6": "ShortBlade",
+        "bonus_6": 10
+      },
+      "strength": [
+        40,
+        40
+      ],
+      "intelligence": [
+        40,
+        40
+      ],
+      "willpower": [
+        30,
+        30
+      ],
+      "agility": [
+        40,
+        40
+      ],
+      "speed": [
+        50,
+        50
+      ],
+      "endurance": [
+        40,
+        30
+      ],
+      "personality": [
+        30,
+        40
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        1.0,
+        1.0
+      ],
+      "weight": [
+        1.0,
+        0.9
+      ],
+      "flags": "PLAYABLE"
+    }
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "High Elf",
+    "name": "Altmer",
+    "spells": [
+      "magicka mult bonus_15",
+      "weakness magicka_50",
+      "raffll_weakness fire_25",
+      "weakness frost_25",
+      "weakness shock_25",
+      "resist disease_75"
+    ],
+    "description": "The High Elves consider themselves the most civilized culture of Tamriel; the common tongue of the Empire, Tamrielic, is based on Altmer speech and writing, and most of the Empire's arts, crafts, and sciences derive from High Elven traditions. Deft, intelligent, and strong-willed, High Elves are often gifted in the arcane arts, and High Elves boast that their sublime physical natures make them far more resistant to disease than the \"lesser races.\"",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "Alchemy",
+        "bonus_0": 10,
+        "skill_1": "Alteration",
+        "bonus_1": 5,
+        "skill_2": "Conjuration",
+        "bonus_2": 5,
+        "skill_3": "Destruction",
+        "bonus_3": 10,
+        "skill_4": "Enchant",
+        "bonus_4": 10,
+        "skill_5": "Illusion",
+        "bonus_5": 5,
+        "skill_6": "None",
+        "bonus_6": 0
+      },
+      "strength": [
+        30,
+        30
+      ],
+      "intelligence": [
+        50,
+        50
+      ],
+      "willpower": [
+        40,
+        40
+      ],
+      "agility": [
+        40,
+        40
+      ],
+      "speed": [
+        30,
+        40
+      ],
+      "endurance": [
+        40,
+        30
+      ],
+      "personality": [
+        40,
+        40
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        1.1,
+        1.1
+      ],
+      "weight": [
+        1.0,
+        1.0
+      ],
+      "flags": "PLAYABLE"
+    }
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "Imperial",
+    "name": "Imperial",
+    "spells": [
+      "raffll_imperial_star",
+      "raffll_imperial_voice"
+    ],
+    "description": "The well-educated and well-spoken natives of Cyrodiil are known for the discipline and training of their citizen armies. Though physically less imposing than the other races, Imperials are shrewd diplomats and traders, and these traits, along with their remarkable skill and training as light infantry, have enabled them to subdue all the other nations and races, and to have erected the monument to peace and prosperity that comprises the Glorious Empire.",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "BluntWeapon",
+        "bonus_0": 5,
+        "skill_1": "HandToHand",
+        "bonus_1": 5,
+        "skill_2": "LightArmor",
+        "bonus_2": 5,
+        "skill_3": "LongBlade",
+        "bonus_3": 10,
+        "skill_4": "Mercantile",
+        "bonus_4": 10,
+        "skill_5": "Speechcraft",
+        "bonus_5": 10,
+        "skill_6": "None",
+        "bonus_6": 0
+      },
+      "strength": [
+        40,
+        40
+      ],
+      "intelligence": [
+        40,
+        40
+      ],
+      "willpower": [
+        30,
+        40
+      ],
+      "agility": [
+        30,
+        30
+      ],
+      "speed": [
+        40,
+        30
+      ],
+      "endurance": [
+        40,
+        40
+      ],
+      "personality": [
+        50,
+        50
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        1.0,
+        1.0
+      ],
+      "weight": [
+        1.25,
+        0.95
+      ],
+      "flags": "PLAYABLE"
+    }
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "Khajiit",
+    "name": "Khajiit",
+    "spells": [
+      "raffll_resist frost_25",
+      "raffll_khajiit_luck",
+      "raffll_khajiit_grace",
+      "raffll_khajiit_eye of night",
+      "raffll_khajiit_eye of fear"
+    ],
+    "description": "The Khajiit of Elsweyr can vary in appearance from nearly Elven to the cathay-raht \"jaguar men\" to the great Senche-Tiger. The most common breed found in Morrowind, the suthay-raht, is intelligent, quick, and agile. Khajiit of all breeds have a weakness for sweets, especially the drug known as skooma. Many Khajiit disdain weapons in favor of their natural claws. They make excellent thieves due to their natural agility and unmatched acrobatics ability.",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "Acrobatics",
+        "bonus_0": 5,
+        "skill_1": "Athletics",
+        "bonus_1": 5,
+        "skill_2": "HandToHand",
+        "bonus_2": 15,
+        "skill_3": "LightArmor",
+        "bonus_3": 5,
+        "skill_4": "Security",
+        "bonus_4": 5,
+        "skill_5": "ShortBlade",
+        "bonus_5": 5,
+        "skill_6": "Sneak",
+        "bonus_6": 5
+      },
+      "strength": [
+        40,
+        30
+      ],
+      "intelligence": [
+        40,
+        40
+      ],
+      "willpower": [
+        30,
+        30
+      ],
+      "agility": [
+        50,
+        50
+      ],
+      "speed": [
+        40,
+        40
+      ],
+      "endurance": [
+        30,
+        40
+      ],
+      "personality": [
+        40,
+        40
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        1.0,
+        0.95
+      ],
+      "weight": [
+        1.0,
+        0.95
+      ],
+      "flags": "PLAYABLE | BEAST_RACE"
+    }
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "Nord",
+    "name": "Nord",
+    "spells": [
+      "raffll_resist frost_75",
+      "raffll_resist shock_25",
+      "raffll_nord_blizzard"
+    ],
+    "description": "The citizens of Skyrim are aggressive and fearless in war, industrious and enterprising in trade and exploration. Strong, stubborn, and hardy, Nords are famous for their resistance to cold, even magical frost. Violence is an accepted and comfortable aspect of Nord culture; Nords of all classes are skilled with a variety of weapon and armor styles, and they cheerfully face battle with an ecstatic ferocity that shocks and appalls their enemies.",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "Axe",
+        "bonus_0": 10,
+        "skill_1": "BluntWeapon",
+        "bonus_1": 10,
+        "skill_2": "HeavyArmor",
+        "bonus_2": 5,
+        "skill_3": "LongBlade",
+        "bonus_3": 5,
+        "skill_4": "MediumArmor",
+        "bonus_4": 10,
+        "skill_5": "Spear",
+        "bonus_5": 5,
+        "skill_6": "None",
+        "bonus_6": 0
+      },
+      "strength": [
+        50,
+        50
+      ],
+      "intelligence": [
+        30,
+        30
+      ],
+      "willpower": [
+        40,
+        50
+      ],
+      "agility": [
+        30,
+        30
+      ],
+      "speed": [
+        40,
+        40
+      ],
+      "endurance": [
+        50,
+        40
+      ],
+      "personality": [
+        30,
+        30
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        1.06,
+        1.06
+      ],
+      "weight": [
+        1.25,
+        1.0
+      ],
+      "flags": "PLAYABLE"
+    }
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "Orc",
+    "name": "Orsimer",
+    "spells": [
+      "resist magicka_25",
+      "raffll_orc_beserk"
+    ],
+    "description": "These sophisticated barbarian beast peoples of the Wrothgarian and Dragontail Mountains are noted for their unshakeable courage in war and their unflinching endurance of hardships. Orc warriors in heavy armor are among the finest front-line troops in the Empire. Most Imperial citizens regard Orc society as rough and cruel, but there is much to admire in their fierce tribal loyalties and generous equality of rank and respect among the sexes.",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "Armorer",
+        "bonus_0": 10,
+        "skill_1": "Axe",
+        "bonus_1": 5,
+        "skill_2": "Block",
+        "bonus_2": 10,
+        "skill_3": "HeavyArmor",
+        "bonus_3": 10,
+        "skill_4": "MediumArmor",
+        "bonus_4": 10,
+        "skill_5": "None",
+        "bonus_5": 0,
+        "skill_6": "None",
+        "bonus_6": 0
+      },
+      "strength": [
+        45,
+        45
+      ],
+      "intelligence": [
+        30,
+        40
+      ],
+      "willpower": [
+        50,
+        45
+      ],
+      "agility": [
+        35,
+        35
+      ],
+      "speed": [
+        30,
+        30
+      ],
+      "endurance": [
+        50,
+        50
+      ],
+      "personality": [
+        30,
+        25
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        1.05,
+        1.05
+      ],
+      "weight": [
+        1.35,
+        1.1
+      ],
+      "flags": "PLAYABLE"
+    }
+  },
+  {
+    "type": "Race",
+    "flags": "",
+    "id": "Wood Elf",
+    "name": "Bosmer",
+    "spells": [
+      "resist disease_75",
+      "raffll_bosmer_beast tongue"
+    ],
+    "description": "The Wood Elves are the various barbarian Elven clanfolk of the Western Valenwood forests. These country cousins of the High Elves and Dark Elves are nimble and quick in body and wit, and because of their curious natures and natural agility, Wood Elves are especially suitable as scouts, agents, and thieves. But most of all, the Wood Elves are known for their skills with bows; there are no finer archers in all of Tamriel.",
+    "data": {
+      "skill_bonuses": {
+        "skill_0": "Acrobatics",
+        "bonus_0": 5,
+        "skill_1": "Alchemy",
+        "bonus_1": 5,
+        "skill_2": "LightArmor",
+        "bonus_2": 10,
+        "skill_3": "Marksman",
+        "bonus_3": 15,
+        "skill_4": "Sneak",
+        "bonus_4": 10,
+        "skill_5": "None",
+        "bonus_5": 0,
+        "skill_6": "None",
+        "bonus_6": 0
+      },
+      "strength": [
+        30,
+        30
+      ],
+      "intelligence": [
+        40,
+        40
+      ],
+      "willpower": [
+        30,
+        30
+      ],
+      "agility": [
+        50,
+        50
+      ],
+      "speed": [
+        50,
+        50
+      ],
+      "endurance": [
+        30,
+        30
+      ],
+      "personality": [
+        40,
+        40
+      ],
+      "luck": [
+        40,
+        40
+      ],
+      "height": [
+        0.9,
+        0.92
+      ],
+      "weight": [
+        0.95,
+        0.9
+      ],
+      "flags": "PLAYABLE"
+    }
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Beggar's Nose",
+    "name": "The Tower",
+    "texture": "Birthsigns\\Tx_birth_tower.tga",
+    "description": "Constellation of The Tower with a Prime Aspect of Secunda.",
+    "spells": [
+      "raffll_beggar's nose spell",
+      "raffll_tower key"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Blessed Touch Sign",
+    "name": "The Ritual",
+    "texture": "Birthsigns\\Tx_birth_ritual.tga",
+    "description": "Constellation of The Ritual with a Prime Aspect of Masser.",
+    "spells": [
+      "raffll_blessed word",
+      "raffll_mara's gift"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Charioteer",
+    "name": "The Steed",
+    "texture": "Birthsigns\\Tx_birth_steed.tga",
+    "description": "Constellation of The Steed with a Prime Aspect of Masser.",
+    "spells": [
+      "raffll_charioteer ability"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Fay",
+    "name": "The Mage",
+    "texture": "Birthsigns\\Tx_birth_mage.tga",
+    "description": "Constellation of The Mage with a Prime Aspect of Masser.",
+    "spells": [
+      "raffll_fay ability"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Hara",
+    "name": "The Thief",
+    "texture": "Birthsigns\\Tx_birth_thief.tga",
+    "description": "Constellation of The Thief with a Prime Aspect of Secunda.",
+    "spells": [
+      "raffll_akaviri"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Moonshadow Sign",
+    "name": "The Shadow",
+    "texture": "Birthsigns\\Tx_birth_shadow.tga",
+    "description": "Constellation of The Shadow with a Prime Aspect of Secunda.",
+    "spells": [
+      "raffll_moonshadow"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Star-Cursed",
+    "name": "The Serpent",
+    "texture": "Birthsigns\\Tx_birth_serpent.tga",
+    "description": "Constellation of The Serpent.",
+    "spells": [
+      "raffll_star-curse"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Trollkin",
+    "name": "The Lord",
+    "texture": "Birthsigns\\Tx_birth_lord.tga",
+    "description": "Constellation of The Lord with a Prime Aspect of Masser.",
+    "spells": [
+      "raffll_blood of the north",
+      "raffll_trollkin ability"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Warwyrd",
+    "name": "The Warrior",
+    "texture": "Birthsigns\\Tx_birth_warrior.tga",
+    "description": "Constellation of The Warrior with a Prime Aspect of Masser.",
+    "spells": [
+      "raffll_warwyrd"
+    ]
+  },
+  {
+    "type": "Birthsign",
+    "flags": "",
+    "id": "Wombburned",
+    "name": "The Atronach",
+    "texture": "Birthsigns\\Tx_birth_atron.tga",
+    "description": "Constellation of The Atronach with a Prime Aspect of Masser.",
+    "spells": [
+      "raffll_wombburn"
+    ]
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_akaviri",
+    "name": "Akaviri Danger-sense",
+    "effects": [
+      {
+        "magic_effect": "FortifyAttribute",
+        "skill": "None",
+        "attribute": "Luck",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_argonian_amphibious",
+    "name": "Amphibious",
+    "effects": [
+      {
+        "magic_effect": "WaterBreathing",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      },
+      {
+        "magic_effect": "SwiftSwim",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 50,
+        "max_magnitude": 50
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_argonian_magicka",
+    "name": "Magicka Bonus",
+    "effects": [
+      {
+        "magic_effect": "FortifyMagickaMultiplier",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_argonian_scales",
+    "name": "Scales",
+    "effects": [
+      {
+        "magic_effect": "ResistNormalWeapons",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_beggar's nose spell",
+    "name": "Beggar's Nose",
+    "effects": [
+      {
+        "magic_effect": "DetectAnimal",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 200,
+        "max_magnitude": 200
+      },
+      {
+        "magic_effect": "DetectEnchantment",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 200,
+        "max_magnitude": 200
+      },
+      {
+        "magic_effect": "DetectKey",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 200,
+        "max_magnitude": 200
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": "ALWAYS_SUCCEEDS"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_blessed word",
+    "name": "Blessed Word",
+    "effects": [
+      {
+        "magic_effect": "TurnUndead",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 25,
+        "duration": 60,
+        "min_magnitude": 100,
+        "max_magnitude": 100
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_blood of the north",
+    "name": "Blood of the North",
+    "effects": [
+      {
+        "magic_effect": "RestoreHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 600,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_bosmer_beast tongue",
+    "name": "Beast Tongue",
+    "effects": [
+      {
+        "magic_effect": "CommandCreature",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 600,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_charioteer ability",
+    "name": "Charioteer",
+    "effects": [
+      {
+        "magic_effect": "FortifyAttribute",
+        "skill": "None",
+        "attribute": "Speed",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      },
+      {
+        "magic_effect": "Feather",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 100,
+        "max_magnitude": 100
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_fay ability",
+    "name": "Fay",
+    "effects": [
+      {
+        "magic_effect": "FortifyMagickaMultiplier",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_imperial_star",
+    "name": "Star of the West",
+    "effects": [
+      {
+        "magic_effect": "RestoreFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_imperial_voice",
+    "name": "Voice of the Emperor",
+    "effects": [
+      {
+        "magic_effect": "Charm",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 25,
+        "duration": 60,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      },
+      {
+        "magic_effect": "CalmHumanoid",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 25,
+        "duration": 60,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_khajiit_eye of fear",
+    "name": "Eye of Fear",
+    "effects": [
+      {
+        "magic_effect": "DemoralizeHumanoid",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 100,
+        "max_magnitude": 100
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_khajiit_eye of night",
+    "name": "Eye of Night",
+    "effects": [
+      {
+        "magic_effect": "NightEye",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_khajiit_grace",
+    "name": "Feline Grace",
+    "effects": [
+      {
+        "magic_effect": "Jump",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 5,
+        "max_magnitude": 5
+      },
+      {
+        "magic_effect": "SlowFall",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_khajiit_luck",
+    "name": "Nine Lives",
+    "effects": [
+      {
+        "magic_effect": "FortifyAttribute",
+        "skill": "None",
+        "attribute": "Luck",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_mara's gift",
+    "name": "Mara's Gift",
+    "effects": [
+      {
+        "magic_effect": "RestoreHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 100,
+        "max_magnitude": 100
+      },
+      {
+        "magic_effect": "RestoreMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 100,
+        "max_magnitude": 100
+      },
+      {
+        "magic_effect": "RestoreFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 200,
+        "max_magnitude": 200
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_moonshadow",
+    "name": "Moonshadow",
+    "effects": [
+      {
+        "magic_effect": "Chameleon",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_nord_blizzard",
+    "name": "Blizzard Barrier",
+    "effects": [
+      {
+        "magic_effect": "FrostShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      },
+      {
+        "magic_effect": "LightningShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_orc_beserk",
+    "name": "Berserk",
+    "effects": [
+      {
+        "magic_effect": "FortifyFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 200,
+        "max_magnitude": 200
+      },
+      {
+        "magic_effect": "FortifyAttackBonus",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 50,
+        "max_magnitude": 50
+      },
+      {
+        "magic_effect": "DrainAttribute",
+        "skill": "None",
+        "attribute": "Agility",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 200,
+        "max_magnitude": 200
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_resist frost_25",
+    "name": "Resist Frost",
+    "effects": [
+      {
+        "magic_effect": "ResistFrost",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_resist frost_75",
+    "name": "Resist Frost",
+    "effects": [
+      {
+        "magic_effect": "ResistFrost",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 75,
+        "max_magnitude": 75
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_resist shock_25",
+    "name": "Resist Shock",
+    "effects": [
+      {
+        "magic_effect": "ResistShock",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_star-curse",
+    "name": "Star-Curse",
+    "effects": [
+      {
+        "magic_effect": "Poison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 300,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      },
+      {
+        "magic_effect": "DamageHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 300,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_tower key",
+    "name": "Tower Key",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Security",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Power",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_trollkin ability",
+    "name": "Trollkin",
+    "effects": [
+      {
+        "magic_effect": "WeaknessToFire",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_warwyrd",
+    "name": "Warwyrd",
+    "effects": [
+      {
+        "magic_effect": "FortifyAttackBonus",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_weakness fire_25",
+    "name": "Weakness to Fire",
+    "effects": [
+      {
+        "magic_effect": "WeaknessToFire",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "raffll_wombburn",
+    "name": "Wombburn",
+    "effects": [
+      {
+        "magic_effect": "SpellAbsorption",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 5,
+        "min_magnitude": 25,
+        "max_magnitude": 25
+      },
+      {
+        "magic_effect": "FortifyMagickaMultiplier",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      },
+      {
+        "magic_effect": "StuntedMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 0,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Ability",
+      "cost": 0,
+      "flags": ""
+    }
+  }
+]
