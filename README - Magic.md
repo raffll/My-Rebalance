@@ -150,15 +150,15 @@ Quality Potion of Feather                   15/45s -> 150/450s              T_No
 
 *Spells*
 ```
-Feather                                     20/10s -> 100/20s
-Strong Feather                              50/10s -> 250/20s
-Great Feather                               100/10s -> 500/20s
-Ulms' Juicedaw Feather                      50/10s -> 500/10s
+Feather                                     20/10s -> 40/50s
+Strong Feather                              50/10s -> 100/50s
+Great Feather                               100/10s -> 200/50s
+Ulms' Juicedaw Feather                      50/10s -> 100/50s
 ```
 
 *Spells - Tamriel Data*
 ```
-Fling                                       500/3s -> 1000/15s
+Fling                                       500/3s -> 5000/3s
 Zenithar's Arms                             50/10s -> 500/10s
 ```
 
@@ -229,7 +229,7 @@ Fierce Fire Shield                          5-11/10s
 
 *Spells - Tamriel Data*
 ```
-Fire Eye                                    10-23/20s -> 30-69/20s          x3/x1
+Fire Eye                                    10-23/20s -> 30-69/20s          -> x1/x1
 ```
 
 ------------------------------------------------------------
@@ -242,7 +242,7 @@ Base Cost                                   3
 *Spells*
 ```
 Frost Barrier                               3/10s
-Frost Shield -> Weak Frost Shield           6/30s                           frost_shield
+Frost Shield -> Weak Frost Shield           6/30s
 Frost Shield                                10/30s
 Strong Frost Shield                         12/30s
 Fierce Frost Shield                         5-11/10s
@@ -258,23 +258,23 @@ Base Cost                                   3
 *Spells*
 ```
 Shock Barrier                               1-10/10s
-Lightning Shield -> Shock Shield            10/30s                          lightning shield
+Lightning Shield -> Shock Shield            10/30s                          
 Strong Shock Shield                         12/30s
 Fierce Shock Shield                         5-11/10s
 
-Shock Shield -> Lightning Shield            3/20s                           shock shield; used by Centurion Spheres
+Shock Shield -> Lightning Shield            3/20s                           used by Centurion Spheres
 ```
 
 *Spells - Tamriel Data*
 ```
-Draugr Lightning Shield                     50/20s -> 150/20s               x3/x1
+Draugr Lightning Shield                     50/20s -> 150/20s               -> x1/x1
 ```
 
 ------------------------------------------------------------
 
 ### Open
 ```
-Base Cost                                   6 -> 12                         typo
+Base Cost                                   6 -> 12
 ```
 
 ------------------------------------------------------------
@@ -405,9 +405,9 @@ Base Cost                                   4 -> 2
 
 *Spells*
 ```
-Fleabite                                    1-10/1s -> 10-100/1s            x10/x1
-Doze                                        1-20/1s -> 10-200/1s            x10/x1
-Hornhand                                    15-36/1s -> 150-360/1s          x10/x1
+Fleabite                                    1-10/1s -> 10-100/1s            -> x2/x1
+Doze                                        1-20/1s -> 10-200/1s            -> x2/x1
+Hornhand                                    15-36/1s -> 150-360/1s          -> x2/x1
 ```
 
 ------------------------------------------------------------
@@ -433,7 +433,7 @@ Base Cost                                   4
 
 *Spells*
 ```
-Ash Feast                                   3/30s -> 30/3s                  x10/x0.1
+Ash Feast                                   3/30s -> 30/3s
 ```
 
 ------------------------------------------------------------
@@ -458,13 +458,15 @@ Base Cost                                   2 -> 0.2
 
 *Spells*
 ```
+
+Sleep                                       5-15/30s -> 25-75/60s
+Wild Exhaustion                             5-15/60s -> 25-75/120s
+Wearying Touch                              5-20/30s -> 25-100/60s
+Exhausting Touch                            5-20/60s -> 25-100/120s
+Exhaustion                                  5-20/90s -> 25-100/180s
+
 Weariness                                   1-10/1s -> 10-100/20s           x10/x20
-Sleep                                       5-15/30s -> 50-150/30s
-Wild Exhaustion                             5-15/60s -> 50-150/60s
-Wearying Touch                              5-20/30s -> 50-200/30s
-Exhausting Touch                            5-20/60s -> 50-200/60s
-Ordeal of St. Olms                          5-20/60s -> 100-400/30s         x20/x0.5
-Exhaustion                                  5-20/90s -> 50-200/90s
+Ordeal of St. Olms                          5-20/60s -> 50-200/60s
 
 Dagoth's Bosom                              20/30s -> 200/30s               used by Ascended Sleepers
 ```
@@ -710,7 +712,7 @@ Base Cost                                   1
 
 *Spells*
 ```
-Crying Eye                                  1-10/5s -> 1-10/20s
+Crying Eye                                  1-10/5s -> 1-10/20s             x1/x4
 Erelvam's Wild Sty                          1-40/10s -> 1-40/20s            x1/x2
 ```
 
@@ -815,6 +817,9 @@ Lifesteal                                   40/1s [24 -> 48]
 ------------------------------------------------------------
 
 ### Absorb Magicka
+```
+Base Cost                                   8
+```
 
 *Spells*
 ```
@@ -832,9 +837,9 @@ Base Cost                                   4 -> 6
 *Spells*
 ```
 Tap Energy                                  20/30s -> 20/3s                 x1/x0.1
-Absorb Fatigue                              5-20/30s -> 5-30/3s             x1/x0.1; +10 max
-Absorb Fatigue [Ranged]                     5-20/30s -> 5-30/3s             x1/x0.1; +10 max
-Energy Leech                                5-20/30s -> 5-30/6s             x1/x0.2; +10 max
+Absorb Fatigue                              5-20/30s -> 5-20/3s             -> x1/x0.1
+Absorb Fatigue [Ranged]                     5-20/30s -> 5-20/3s             
+Energy Leech                                5-20/30s -> 5-20/6s             -> x1/x0.2
 ```
 
 ------------------------------------------------------------
@@ -843,7 +848,7 @@ Energy Leech                                5-20/30s -> 5-30/6s             x1/x
 
 *Spells*
 ```
-Absorb Intelligence [Ranged]                5-51/30s [126]
+Absorb Intelligence [Ranged]                5-51/30s -> 5-50/30s            -> TODO
 ```
 
 ------------------------------------------------------------
@@ -944,10 +949,10 @@ Llivam's Reversal                           20-30/10s -> 20-30/40s
 
 *Spells - Tamriel Data*
 ```
-Reflect Damage                              15/30s [225 -> 45]              x0.2 cost
+Reflect Damage                              15/30s [225 -> 45]              -> [x0.25]
 
-St. Naharine's Shield                       10/5s -> 40/5s                  x4/x1; T_Imp_Res_SothasMirror
-Distorted Reflection                        20/15s -> 40/30s                x2/x2; T_Com_Mys_DistortedReflect
+St. Naharine's Shield                       10/5s -> 40/5s                  x4/x1
+Distorted Reflection                        20/15s -> 40/30s                x2/x2
 ```
 
 ------------------------------------------------------------
@@ -960,11 +965,12 @@ Base Cost                                   10 -> 2.5
 *Spells*
 ```
 Spell Absorption                            10/5s -> 10/20s
-Vivec's Feast                               10/5s -> 10/40s                 (10/10s) x1/x4
 Weak Spelldrinker                           10-20/5s -> 10-20/20s
 Wild Spelldrinker                           1-40/5s -> 1-40/20s
 Strong Spelldrinker                         20-30/5s -> 20-30/20s
 Tranasa's Spelltrap                         20-30/10s -> 20-30/40s
+
+Vivec's Feast                               10/5s -> 10/40s                 (10/10s) x1/x4
 ```
 
 *Spells - Tamriel Data*
@@ -1062,13 +1068,13 @@ Exclusive Restore Fatigue                   80/5s -> 12/36s
 
 *Spells*
 ```
-Rest of St. Merris                          1-10/20s -> 1-10/8s             x1/x0.4
-Stamina                                     10-30/30s -> 10-30/12s          x1/x0.4
+Rest of St. Merris                          1-10/20s -> 1-10/8s
+Stamina                                     10-30/30s -> 10-30/12s
 ```
 
 *Spells - Tamriel Data*
 ```
-Greater Stamina                             30-60/30s -> 30-60/12s          x1/x0.4
+Greater Stamina                             30-60/30s -> 30-60/12s
 ```
 
 ------------------------------------------------------------
@@ -1146,34 +1152,34 @@ Base Cost                                   1
 
 *Spells*
 ```
-Masterful Red Wisdom                        15/60s                          masteful red wisdom; FortifySkill Destruction
-Masterful Stolid Armor                      15/60s                          masteful stolid armor; FortifySkill HeavyArmor
-Masterful Balanced Armor                    15/60s                          masterful balanced armor; FortifySkill MediumArmor
-Masterful Deep Biting                       15/60s                          masterful deep biting; FortifySkill Axe
-Masterful Denial                            15/60s                          masterful denial; FortifySkill Block
-Masterful Enterprise                        15/60s                          masterful enterprise; FortifySkill Mercantile
-Masterful Fleetness                         15/60s                          masterful fleetness; FortifySkill Athletics
-Masterful Fluid Evasion                     15/60s                          masterful fluid evasion; FortifySkill Unarmored
-Masterful Glib Speech                       15/60s                          masterful glib speech; FortifySkill Speechcraft
-Masterful Golden Wisdom                     15/60s                          masterful golden wisdom; FortifySkill Alteration
-Masterful Green Wisdom                      15/60s                          masterful green wisdom; FortifySkill Restoration
-Masterful Hewing                            15/60s                          masterful hewing; FortifySkill LongBlade
-Masterful Horny Fist                        15/60s                          masterful horny fist; FortifySkill HandToHand
-Masterful Impaling Thrust                   15/60s                          masterful impaling thrust; FortifySkill Spear
-Masterful Leaping                           15/60s                          masterful leaping; FortifySkill Acrobatics
-Masterful Martial Craft                     15/60s                          masterful martial craft; FortifySkill Armorer
-Masterful Nimble Armor                      15/60s                          masterful nimble armor; FortifySkill LightArmor
-Masterful Red Wisdom                        15/60s                          masterful red wisdom; FortifySkill Destruction
-Masterful Safekeeping                       15/60s                          masterful safekeeping; FortifySkill Security
-Masterful Silver Wisdom                     15/60s                          masterful silver wisdom; FortifySkill Illusion
-Masterful Smiting                           15/60s                          masterful smiting; FortifySkill BluntWeapon
-Masterful Stalking                          15/60s                          masterful stalking; FortifySkill Sneak
-Masterful Sublime Wisdom                    15/60s                          masterful sublime wisdom; FortifySkill Alchemy
-Masterful Sureflight                        15/60s                          masterful sureflight; FortifySkill Marksman
-Masterful Swiftblade                        15/60s                          masterful swiftblade; FortifySkill ShortBlade
-Masterful Transcendant Wisdom               15/60s                          masterful transcendant wisdom; FortifySkill Conjuration
-Masterful Transfiguring Wisdom              15/60s                          masterful transfiguring wisdom; FortifySkill Enchant
-Masterful Unseen Wisdom                     15/60s                          masterful unseen wisdom; FortifySkill Mysticism
+Masterful Red Wisdom                        15/60s                          
+Masterful Stolid Armor                      15/60s                          
+Masterful Balanced Armor                    15/60s                          
+Masterful Deep Biting                       15/60s                          
+Masterful Denial                            15/60s                          
+Masterful Enterprise                        15/60s                          
+Masterful Fleetness                         15/60s                          
+Masterful Fluid Evasion                     15/60s                          
+Masterful Glib Speech                       15/60s                          
+Masterful Golden Wisdom                     15/60s                          
+Masterful Green Wisdom                      15/60s                          
+Masterful Hewing                            15/60s                          
+Masterful Horny Fist                        15/60s                          
+Masterful Impaling Thrust                   15/60s                          
+Masterful Leaping                           15/60s                          
+Masterful Martial Craft                     15/60s                          
+Masterful Nimble Armor                      15/60s                          
+Masterful Red Wisdom                        15/60s                          
+Masterful Safekeeping                       15/60s                          
+Masterful Silver Wisdom                     15/60s                          
+Masterful Smiting                           15/60s                          
+Masterful Stalking                          15/60s                          
+Masterful Sublime Wisdom                    15/60s                          
+Masterful Sureflight                        15/60s                          
+Masterful Swiftblade                        15/60s                          
+Masterful Transcendant Wisdom               15/60s                          
+Masterful Transfiguring Wisdom              15/60s                          
+Masterful Unseen Wisdom                     15/60s                          
 ```
 
 *Spells - Tamriel Data*
@@ -1204,9 +1210,9 @@ Base Cost                                   5 -> 0.25
 
 *Spells*
 ```
-Poet's Whim                                 1-30/10s -> 1-30/200s           x1/x20
-Vivec's Mercy                               20/10s -> 50/80s                x2.5/x8
-Shield of the Armiger                       30/10s -> 100/60s               x3.3/x6
+Poet's Whim                                 1-30/10s -> 1-30/200s           
+Vivec's Mercy                               20/10s -> 50/80s                
+Shield of the Armiger                       30/10s -> 100/60s               
 ```
 
 ------------------------------------------------------------
@@ -1218,15 +1224,15 @@ Base Cost                                   2 -> 0.1
 
 *Spells*
 ```
-Resist Common Disease                       10/5s -> 50/20s                 x5/x4
-Variable Resist Common Disease              1-30/10s -> 1-30/200s           x1/x20
-Seryn's Blessing                            20/10s -> 50/80s                x2.5/x8
-Great Resist Common Disease                 30/10s -> 100/60s               x3.3/x6
+Resist Common Disease                       10/5s -> 50/20s                 
+Variable Resist Common Disease              1-30/10s -> 1-30/200s           
+Seryn's Blessing                            20/10s -> 50/80s                
+Great Resist Common Disease                 30/10s -> 100/60s               
 ```
 
 *Spells - Tamriel Data*
 ```
-Pilgrimage of St. Rosunius                  20/10s -> 100/40s               x5/x4
+Pilgrimage of St. Rosunius                  20/10s -> 100/40s
 ```
 
 *Potions*
@@ -1272,7 +1278,7 @@ Frostguard                                  20-40/30s -> 20-40/120s
 
 *Spells - Tamriel Data*
 ```
-Wintery Mantle                              20/60s -> 80/60s                x4/x1
+Wintery Mantle                              20/60s -> 80/60s
 ```
 
 ------------------------------------------------------------

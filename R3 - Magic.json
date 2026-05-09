@@ -2594,9 +2594,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 60,
-        "min_magnitude": 50,
-        "max_magnitude": 200
+        "duration": 120,
+        "min_magnitude": 25,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -2663,9 +2663,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 20,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 50,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -3008,9 +3008,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 20,
-        "min_magnitude": 500,
-        "max_magnitude": 500
+        "duration": 50,
+        "min_magnitude": 200,
+        "max_magnitude": 200
       }
     ],
     "data": {
@@ -3373,9 +3373,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 30,
-        "min_magnitude": 100,
-        "max_magnitude": 400
+        "duration": 60,
+        "min_magnitude": 50,
+        "max_magnitude": 200
       }
     ],
     "data": {
@@ -4040,9 +4040,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 30,
-        "min_magnitude": 50,
-        "max_magnitude": 150
+        "duration": 60,
+        "min_magnitude": 25,
+        "max_magnitude": 75
       }
     ],
     "data": {
@@ -4178,9 +4178,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 20,
-        "min_magnitude": 250,
-        "max_magnitude": 250
+        "duration": 50,
+        "min_magnitude": 100,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -4477,9 +4477,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 10,
-        "min_magnitude": 500,
-        "max_magnitude": 500
+        "duration": 50,
+        "min_magnitude": 100,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -4753,9 +4753,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 30,
-        "min_magnitude": 50,
-        "max_magnitude": 200
+        "duration": 60,
+        "min_magnitude": 25,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -4799,9 +4799,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 60,
-        "min_magnitude": 50,
-        "max_magnitude": 150
+        "duration": 120,
+        "min_magnitude": 25,
+        "max_magnitude": 75
       }
     ],
     "data": {
@@ -10771,9 +10771,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 90,
-        "min_magnitude": 50,
-        "max_magnitude": 200
+        "duration": 180,
+        "min_magnitude": 25,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -10950,6 +10950,52 @@
     "data": {
       "spell_type": "Spell",
       "cost": 50,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Com_Alt_Fling",
+    "name": "Fling",
+    "effects": [
+      {
+        "magic_effect": "Feather",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 3,
+        "min_magnitude": 5000,
+        "max_magnitude": 5000
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 100,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Imp_Alt_UlmsJuicedawsFeather",
+    "name": "Zenithar's Arms",
+    "effects": [
+      {
+        "magic_effect": "Feather",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 500,
+        "max_magnitude": 500
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 25,
       "flags": ""
     }
   },

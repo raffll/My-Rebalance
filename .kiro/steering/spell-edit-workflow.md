@@ -27,6 +27,13 @@ Find the spell entry in the relevant ESP JSON (e.g. `R3 - Magic.json`).
 - If the spell **already exists** in the ESP JSON: update `min_magnitude`, `max_magnitude`, `duration`, `area` as needed.
 - If the spell **does not exist** in the ESP JSON: copy the full entry from the appropriate default reference JSON in `tes3conv/` (Morrowind.json, Tribunal.json, Bloodmoon.json, or Tamriel_Data.json), then apply the new values.
 
+## README IDs
+Only add JSON IDs as comments in the README for:
+- **Enchantments** (scrolls, weapons, clothing with enchantments)
+- **Tamriel Data potions** (duplicate names that need disambiguation)
+
+Do NOT add IDs for regular spells, vanilla potions, or base cost entries.
+
 ## JSON value scaling
 The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
 
