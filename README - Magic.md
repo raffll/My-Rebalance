@@ -12,48 +12,48 @@ sEffectSlowFall                             SlowFall -> Slowfall
 
 ## Potions
 ```
-Bargain...                                  5/8s -> 6/18s                   flat target for all Bargain potions
-Cheap...                                    8/15s -> 8/24s                  flat target for all Cheap potions
+Bargain...                                  5/8s -> 6/18s
+Cheap...                                    8/15s -> 8/24s
 ```
 
 *Fixes*
 ```
-Bargain Rising Force Potion                 5/30s -> 6/18s                  p_levitation_b
-Bargain Potion of Swift Swim                1/8s -> 6/18s                   T_Nor_Potion_SwiftSwim_C
-Exclusive Frost Shield                      20/30s -> 20/60s                p_frost_shield_e
+Bargain Rising Force Potion                 5/30s -> 6/18s
+Bargain Potion of Swift Swim                1/8s -> 6/18s
+Exclusive Frost Shield                      20/30s -> 20/60s
 
-Spoiled Slowfall Potion                     10/15s -> 1/15s                 p_drain_agility_q; p_drain_endurance_q
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 *Fixes - Tamriel Data*
 ```
-Bargain Potion of Blindness                 Sound -> Blind                  T_Com_Poison_Blind_B
+Bargain Potion of Blindness                 Sound -> Blind
                                             1/10s -> 6/18s
 
-Bargain Potion of Cacophony                 1/10s -> 6/18s                  T_Com_Poison_Sound_B
-Bargain Paralysis Resistance                7/10s -> 6/18s                  T_Com_Potion_ResistParalysis_B
-Bargain Potion of Protection                1/10s -> 6/18s                  T_Com_Potion_Shield_B
+Bargain Potion of Cacophony                 1/10s -> 6/18s
+Bargain Paralysis Resistance                7/10s -> 6/18s
+Bargain Potion of Protection                1/10s -> 6/18s
 
-Spoiled Slowfall Potion                     10/15s -> 1/15s                 T_Nor_Potion_DrainAgility_Q; T_Nor_Potion_DrainEndurance_Q
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
 
 ## Starting Spells
 ```
-Shield -> First Barrier                     shield; first barrier
-Exhausting Touch -> Weariness               exhausting touch; weariness
-Detect Creature -> Detect Enchantment       detect_creature; detect enchantment
-Feet of Notorgo -> Skylamp's Shadow         feet of notorgo; skylamp's shadow
+Shield -> First Barrier
+Exhausting Touch -> Weariness
+Detect Creature -> Detect Enchantment
+Feet of Notorgo -> Skylamp's Shadow
 ```
 
 ------------------------------------------------------------
 
 ## Creatures Magicka
 ```
-Flame Atronachs                             atronach_flame; atronach_flame_az; atronach_flame_summon; atronach_flame_ttmk
+Flame Atronachs
 Frost Atronachs
-Ascended Sleepers                           ascended_sleeper
+Ascended Sleepers
 ```
 
 ------------------------------------------------------------
@@ -84,46 +84,46 @@ Quality Potion of Burden                    15/45s -> 150/450s              T_No
 
 *Spells*
 ```
-Burden Touch                                20/10s -> 50/40s                x2.5/x4
+Burden Touch                                20/10s -> 50/40s
 Burden                                      20/10s -> 50/40s
 Heavy Burden Touch                          40/10s -> 100/40s
 Heavy Burden                                40/10s -> 100/40s
 Crushing Burden Touch                       60/10s -> 150/40s
 Crushing Burden                             60/10s -> 150/40s
 
-Weary                                       30-60/10s -> 75-150/40s
-Cruel Weary                                 50-70/10s -> 125-175/40s
-Dire Weary                                  60-90/10s -> 150-225/40s
+Weary                                       30-60/10s -> 60-120/50s
+Cruel Weary                                 50-70/10s -> 100-140/50s
+Dire Weary                                  60-90/10s -> 120-180/50s
 
-Great Burden of Sin -> Burden of Sin        40/10s -> 100/40s
-Burden of Sin -> Great Burden of Sin        40-60/20s -> 100-150/80s
-Crushing Burden of Sin                      60-80/30s -> 150-200/120s
+Great Burden of Sin -> Burden of Sin        40/10s -> 80/50s
+Burden of Sin -> Great Burden of Sin        40-60/20s -> 80-120/100s
+Crushing Burden of Sin                      60-80/30s -> 120-160/150s
 
-Aryon's Rest                                10/10s -> 40/25s                x4/x2.5; used by Aryon
-Hand of Odros                               30-40/60s -> 120-160/150s       used by Odros
-Wrath of Odros                              20-30/50s -> 80-120/125s
-Harthoon's Heavy Eyes                       100/10s -> 100/100s             x1/x10; used by Barilzar
-Hunter's Venom                              50/10s                          used by Hircine's Aspect of Guile
+Aryon's Rest                                10/10s -> 100/10s               used by Aryon
+Hand of Odros                               30-40/60s -> 300-400/60s        used by Odros
+Wrath of Odros                              20-30/50s -> 200-300/50s        used by Odros
+Harthoon's Heavy Eyes                       100/10s -> 1000/10s             used by Barilzar
+Hunter's Venom                              50/10s -> 500/10s               used by Hircine's Aspect of Guile
 ```
 
 *Spells - Tamriel Data*
 ```
-Shadow Rust                                 1-15/20s -> 4-60/50s
-Weight of Guilt                             500/3s -> 2000/8s
+Shadow Rust                                 1-15/20s -> 10-150/20s
+Weight of Guilt                             500/3s -> 5000/3s
 ```
 
 *Enchantments*
 ```
-Scroll of Baleful Suffering                 0−25/30s -> 0-250/30s           x10/x1; sc_balefulsuffering_en
-Scroll of Fader's Leaden Flesh              0−50/30s -> 0-500/30s           x10/x1; sc_fadersleadenflesh_en
+Scroll of Baleful Suffering                 0−25/30s -> 0-125/60s           sc_balefulsuffering_en
+Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s           sc_fadersleadenflesh_en
 
-Black Jinx                                  25-100/120s -> 250-1000/120s    x10/x1; black_jinx_en_unique
-Spear of the Hunter                         50/10s -> 500/10s               x10/x1; bm_hunterspear
+Black Jinx                                  25-100/120s -> 250-1000/120s    black_jinx_en_unique
+Spear of the Hunter                         50/10s -> 500/10s               bm_hunterspear
 ```
 
 *Enchantments - Tamriel Data*
 ```
-Scroll of Makkun's Heavy Hand               30/35s -> 300/35s               x10/x1; T_Once_BurdenTouch30-35
+Scroll of Makkun's Heavy Hand               30/35s -> 300/35s               T_Once_BurdenTouch30-35
 ```
 
 ------------------------------------------------------------
@@ -144,31 +144,31 @@ Exclusive Potion of Feather                 20/60s -> 200/600s
 *Potions - Tamriel Data*
 ```
 Cheap Potion of Feather                     8/15s -> 80/240s                T_Nor_Potion_Feather_C
-Standard Potion of Feather                  10/30s -> 100/300s
+Standard Potion of Feather                  10/30s -> 100/300s              T_Com_Potion_Feather_S
 Quality Potion of Feather                   15/45s -> 150/450s              T_Nor_Potion_Feather_Q
 ```
 
 *Spells*
 ```
-Feather                                     20/10s -> 100/20s               x5/x2
+Feather                                     20/10s -> 100/20s
 Strong Feather                              50/10s -> 250/20s
 Great Feather                               100/10s -> 500/20s
-Ulms' Juicedaw Feather                      50/10s -> 500/10s               x10/x1
+Ulms' Juicedaw Feather                      50/10s -> 500/10s
 ```
 
 *Spells - Tamriel Data*
 ```
-Fling                                       500/3s -> 1000/15s              x2/x5
-Zenithar's Arms                             50/10s -> 500/10s               x10/x1
+Fling                                       500/3s -> 1000/15s
+Zenithar's Arms                             50/10s -> 500/10s
 ```
 
 *Enchantments*
 ```
-Feather Belt                                20/10s -> 100/20s               x5/x2; feather_en
+Feather Belt                                20/10s -> 100/20s               feather_en
 Feather Ring                                20/10s -> 100/20s               feather_en
 Feather Shield                              20/10s -> 100/20s               feather_en
-Saint's Shield                              20/10s -> 200/10s               x10/x1; saint's shield_en
-Juicedaw Feather Ring                       50/10s -> 500/10s               x10/x1; ulms juicedaw's feather_en
+Saint's Shield                              20/10s -> 200/10s               saint's shield_en
+Juicedaw Feather Ring                       50/10s -> 500/10s               ulms juicedaw's feather_en
 ```
 
 ------------------------------------------------------------
@@ -198,16 +198,16 @@ Base Cost                                   2 -> 1
 
 *Spells - Tamriel Data*
 ```
-Falling First Barrier                       8/40s -> 16/40s                 x2/x1
+Falling First Barrier                       8/40s -> 16/40s
                                             5/20s -> 10/20s
 
-Force Wall                                  50/5s -> 100/5s                 x2/x1
-Tsun's Ward                                 20/20s -> 40/20s                x2/x1
+Force Wall                                  50/5s -> 100/5s
+Tsun's Ward                                 20/20s -> 40/20s
 ```
 
 *Enchantments - Tamriel Data*
 ```
-Scroll of The Falling Barrier               4/40s -> 8/40s                  x2/x1; T_Once_FallingBarrier
+Scroll of The Falling Barrier               4/40s -> 8/40s                  T_Once_FallingBarrier
                                             3/20s -> 6/20s
 ```
 
@@ -393,7 +393,7 @@ Soulpinch                                   1-20/1s -> 10-200/1s            x10/
 
 *Spells - Tamriel Data*
 ```
-Thimble of Magefire                         10-30/1s -> 10-30/2s            x1/x2
+Thimble of Magefire                         10-30/1s -> 10-30/2s
 ```
 
 ------------------------------------------------------------
@@ -445,8 +445,8 @@ Base Cost                                   4 -> 0.4
 
 *Spells - Tamriel Data*
 ```
-Dhamcka's Soul-Withering                    1/30s -> 10/30s                 x10/x1
-Rage of Magnus                              60/10s -> 300/20s               x5/x2
+Dhamcka's Soul-Withering                    1/30s -> 10/30s
+Rage of Magnus                              60/10s -> 300/20s
 ```
 
 ------------------------------------------------------------
@@ -459,19 +459,19 @@ Base Cost                                   2 -> 0.2
 *Spells*
 ```
 Weariness                                   1-10/1s -> 10-100/20s           x10/x20
-Sleep                                       5-15/30s -> 50-150/30s          x10/x1
-Wild Exhaustion                             5-15/60s -> 50-150/60s          x10/x1
-Wearying Touch                              5-20/30s -> 50-200/30s          x10/x1
-Exhausting Touch                            5-20/60s -> 50-200/60s          x10/x1
+Sleep                                       5-15/30s -> 50-150/30s
+Wild Exhaustion                             5-15/60s -> 50-150/60s
+Wearying Touch                              5-20/30s -> 50-200/30s
+Exhausting Touch                            5-20/60s -> 50-200/60s
 Ordeal of St. Olms                          5-20/60s -> 100-400/30s         x20/x0.5
-Exhaustion                                  5-20/90s -> 50-200/90s          x10/x1
+Exhaustion                                  5-20/90s -> 50-200/90s
 
-Dagoth's Bosom                              20/30s -> 200/30s               x10/x1; used by Ascended Sleepers
+Dagoth's Bosom                              20/30s -> 200/30s               used by Ascended Sleepers
 ```
 
 *Spells - Tamriel Data*
 ```
-Duck                                        200/2s -> 2000/2s               x10/x1
+Duck                                        200/2s -> 2000/2s
 ```
 
 ------------------------------------------------------------
@@ -499,28 +499,28 @@ Base Cost                                   6 -> 0.6
 ```
 Armor Eater                                 10-30/1s -> 200-600/1s          x20/x1
 
-Disintegrate Armor                          6-25/1s -> 60-250/1s            x10/x1; used by Hungers
+Disintegrate Armor                          6-25/1s -> 60-250/1s            used by Hungers
 Brittlewind                                 20/10s                          used by Fryse Hags
 Eddard's Wrath                              4-9/15s                         used by Draugr
 ```
 
 *Spells - Tamriel Data*
 ```
-Shadow Rust                                 1-5/20s -> 10-50/20s            x10/x1
-Fracture Armor                              100/2s -> 1000/2s               x10/x1
+Shadow Rust                                 1-5/20s -> 10-50/20s
+Fracture Armor                              100/2s -> 1000/2s
 
-Acid Trap                                   20-40/1s -> 20-40/10s           x1/x10
-Master Acid Trap                            150-300/1s -> 150-300/10s       x1/x10
+Acid Trap                                   20-40/1s -> 20-40/10s
+Master Acid Trap                            150-300/1s -> 150-300/10s
 ```
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s -> 50/5s                   x10/x1; sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s -> 50/5s                   sc_balefulsuffering_en
 ```
 
 *Enchantments*
 ```
-Daedric Crescent                            5-30/1s -> 50-300/1s            x10/x1; Crescent Moon
+Daedric Crescent                            5-30/1s -> 50-300/1s            Crescent Moon
 ```
 
 ------------------------------------------------------------
@@ -534,23 +534,23 @@ Base Cost                                   6 -> 1.2
 ```
 Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s) x10/x1
 
-Disintegrate Weapon                         6-25/1s -> 30-125/1s            x5/x1; used by Hungers
+Disintegrate Weapon                         6-25/1s -> 30-125/1s            used by Hungers
 Brittlewind                                 20/10s          	            used by Fryse Hags
 Eddard's Wrath                              4-9/15s	                        used by Draugr
 ```
 
 *Spells - Tamriel Data*
 ```
-Iron Eater                                  1-25/2s -> 5-125/2s             x5/x1
-Steel Eater                                 5-30/3s -> 25-150/3s            x5/x1
+Iron Eater                                  1-25/2s -> 5-125/2s
+Steel Eater                                 5-30/3s -> 25-150/3s
 
-Acid Trap                                   20-40/1s -> 20-40/5s            x1/x5
-Master Acid Trap                            150-300/1s -> 150-300/5s        x1/x5
+Acid Trap                                   20-40/1s -> 20-40/5s
+Master Acid Trap                            150-300/1s -> 150-300/5s
 ```
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s -> 25/5s                   x5/x1; sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s -> 25/5s                   sc_balefulsuffering_en
 ```
 
 ------------------------------------------------------------
@@ -662,7 +662,7 @@ Base Cost                                   40 -> 20
 
 *Spells*
 ```
-Silence                                     5s -> 10s                       x1/x2
+Silence                                     5s -> 10s
 Far Silence                                 10s -> 20s
 ```
 
@@ -675,18 +675,18 @@ Base Cost                                   3 -> 0.25
 
 *Spells*
 ```
-Earwig                                      3-8/5s -> 9-24/20s              x3/x4
+Earwig                                      3-8/5s -> 9-24/20s
 Cruel Earwig                                5-11/5s -> 15-33/20s
 Dire Earwig                                 8-15/5s -> 24-45/20s
 Wild Earwig                                 1-30/5s -> 3-90/20s
-Noise                                       3-8/5s -> 3-8/60s               x1/x12
+Noise                                       3-8/5s -> 3-8/60s
 Cruel Noise                                 10-22/5s -> 10-22/60s
 Dire Noise                                  2-60/5s -> 2-60/60s
 ```
 
 *Spells - Tamriel Data*
 ```
-Voices                                      50/20s -> 100/120s              x2/x6
+Voices                                      50/20s -> 100/120s
 ```
 
 ------------------------------------------------------------
@@ -710,7 +710,7 @@ Base Cost                                   1
 
 *Spells*
 ```
-Crying Eye                                  1-10/5s -> 1-10/20s             x1/x4
+Crying Eye                                  1-10/5s -> 1-10/20s
 Erelvam's Wild Sty                          1-40/10s -> 1-40/20s            x1/x2
 ```
 
@@ -804,7 +804,7 @@ Base Cost                                   8 -> 16
 
 *Spells*
 ```
-Absorb Health                               5-52/1s -> 5-50/1s              ?
+Absorb Health                               5-52/1s -> 5-50/1s
 ```
 
 *Spells - Tamriel Data*
@@ -899,7 +899,7 @@ Potion of Detect Enchantments               10/15s -> 60/180s
 
 *Spells*
 ```
-Detect Enchantment                          10/10s -> 50/10s                x5/x1
+Detect Enchantment                          10/10s -> 50/10s
 ```
 
 ------------------------------------------------------------
@@ -921,8 +921,8 @@ Potion of Detect Key                        10/15s -> 60/180s
 
 *Spells*
 ```
-Tevral's Hawkshaw                           10/10s -> 50/10s                x5/x1
-Detect Key                                  50/5s -> 250/5s                 x5/x1
+Tevral's Hawkshaw                           10/10s -> 50/10s
+Detect Key                                  50/5s -> 250/5s
 ```
 
 ------------------------------------------------------------
@@ -934,10 +934,10 @@ Base Cost                                   10 -> 2.5
 
 *Spells*
 ```
-Sotha's Mirror                              10/5s -> 10/20s                 x1/x4
+Sotha's Mirror                              10/5s -> 10/20s
 Reflect                                     10-20/5s -> 10-20/20s
 Strong Reflect                              20-30/5s -> 20-30/20s
-Shalidor's Mirror                           10-30/10s -> 10-30/40s          x1/x4
+Shalidor's Mirror                           10-30/10s -> 10-30/40s
 Wild Reflect                                1-40/10s -> 1-40/40s
 Llivam's Reversal                           20-30/10s -> 20-30/40s
 ```
@@ -946,8 +946,8 @@ Llivam's Reversal                           20-30/10s -> 20-30/40s
 ```
 Reflect Damage                              15/30s [225 -> 45]              x0.2 cost
 
-St. Naharine's Shield                       10/5s -> 40/5s                  x4/x1
-Distorted Reflection                        20/15s -> 40/30s                x2/x2
+St. Naharine's Shield                       10/5s -> 40/5s                  x4/x1; T_Imp_Res_SothasMirror
+Distorted Reflection                        20/15s -> 40/30s                x2/x2; T_Com_Mys_DistortedReflect
 ```
 
 ------------------------------------------------------------
@@ -959,17 +959,18 @@ Base Cost                                   10 -> 2.5
 
 *Spells*
 ```
-Spell Absorption                            10/5s -> 10/20s                 x1/x4
+Spell Absorption                            10/5s -> 10/20s
 Vivec's Feast                               10/5s -> 10/40s                 (10/10s) x1/x4
-Weak Spelldrinker                           10-20/5s -> 10-20/20s           x1/x4
-Wild Spelldrinker                           1-40/5s -> 1-40/20s             x1/x4
-Strong Spelldrinker                         20-30/5s -> 20-30/20s           x1/x4
-Tranasa's Spelltrap                         20-30/10s -> 20-30/40s          x1/x4
+Weak Spelldrinker                           10-20/5s -> 10-20/20s
+Wild Spelldrinker                           1-40/5s -> 1-40/20s
+Strong Spelldrinker                         20-30/5s -> 20-30/20s
+Tranasa's Spelltrap                         20-30/10s -> 20-30/40s
 ```
 
 *Spells - Tamriel Data*
 ```
-St. Horuscia's Alms                         10/5s -> 40/5s                  x4/x1
+St. Horuscia's Alms                         10/5s -> 40/5s
+```
 
 ------------------------------------------------------------
 
@@ -1119,7 +1120,7 @@ Base Cost                                   0.5
 
 *Spells*
 ```
-Vigor                                       5-20/30s -> 25-100/30s          x5
+Vigor                                       5-20/30s -> 25-100/30s          x5/x1
 Enrichment                                  5-20/30s
 Daedric Fatigue                             50/90s
 ```
@@ -1246,11 +1247,11 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Fire                                 10/5s -> 10/20s                 x1/x4
-Variable Resist Fire                        1-30/10s -> 1-30/40s            x1/x4
-Strong Resist Fire                          20/10s -> 20/40s                x1/x4
-Great Resist Fire                           30/10s -> 30/40s                x1/x4
-Flameguard                                  20-40/30s -> 20-40/120s         x1/x4
+Resist Fire                                 10/5s -> 10/20s
+Variable Resist Fire                        1-30/10s -> 1-30/40s
+Strong Resist Fire                          20/10s -> 20/40s
+Great Resist Fire                           30/10s -> 30/40s
+Flameguard                                  20-40/30s -> 20-40/120s
 ```
 
 ------------------------------------------------------------
@@ -1262,11 +1263,11 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Frost                                10/5s -> 10/20s                 x1/x4
-Variable Resist Frost                       1-30/10s -> 1-30/40s            x1/x4
-Strong Resist Frost                         20/10s -> 20/40s                x1/x4
-Great Resist Frost                          30/10s -> 30/40s                x1/x4
-Frostguard                                  20-40/30s -> 20-40/120s         x1/x4
+Resist Frost                                10/5s -> 10/20s
+Variable Resist Frost                       1-30/10s -> 1-30/40s
+Strong Resist Frost                         20/10s -> 20/40s
+Great Resist Frost                          30/10s -> 30/40s
+Frostguard                                  20-40/30s -> 20-40/120s
 ```
 
 *Spells - Tamriel Data*
@@ -1283,10 +1284,10 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Shock                                20/5s -> 20/20s                 x1/x4
-Variable Resist Shock                       1-30/10s -> 1-30/40s            x1/x4
-Strong Resist Shock                         20/10s -> 20/40s                x1/x4
-Shockguard                                  20-40/30s -> 20-40/120s         x1/x4
+Resist Shock                                20/5s -> 20/20s
+Variable Resist Shock                       1-30/10s -> 1-30/40s
+Strong Resist Shock                         20/10s -> 20/40s
+Shockguard                                  20-40/30s -> 20-40/120s
 ```
 
 ------------------------------------------------------------
@@ -1298,11 +1299,11 @@ Base Cost                                   2 -> 0.5
 
 *Spells*
 ```
-Resist Poison                               20/5s -> 20/20s                 x1/x4
-Variable Resist Poison                      1-30/10s -> 1-30/40s            x1/x4
-Strong Resist Poison                        20/10s -> 20/40s                x1/x4
-Greater Resist Poison                       30/10s -> 30/40s                x1/x4
-Poisonguard                                 20-40/30s -> 20-40/120s         x1/x4
+Resist Poison                               20/5s -> 20/20s
+Variable Resist Poison                      1-30/10s -> 1-30/40s
+Strong Resist Poison                        20/10s -> 20/40s
+Greater Resist Poison                       30/10s -> 30/40s
+Poisonguard                                 20-40/30s -> 20-40/120s
 ```
 
 ------------------------------------------------------------
@@ -1315,10 +1316,10 @@ Base Cost                                   2 -> 0.5
 *Spells*
 ```
 Resist Magicka                              10/5s -> 20/20s                 x2/x4
-Variable Resist Magicka                     1-30/10s -> 1-30/40s            x1/x4
-Strong Resist Magicka                       20/10s -> 20/40s                x1/x4
-Great Resist Magicka                        30/10s -> 30/40s                x1/x4
-Magickguard                                 20-40/10s -> 20-40/40s          x1/x4
+Variable Resist Magicka                     1-30/10s -> 1-30/40s
+Strong Resist Magicka                       20/10s -> 20/40s
+Great Resist Magicka                        30/10s -> 30/40s
+Magickguard                                 20-40/10s -> 20-40/40s
 ```
 
 ------------------------------------------------------------

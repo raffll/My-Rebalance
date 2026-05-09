@@ -17,6 +17,8 @@ Spell Name                                  [default mag/dur from vanilla] -> [n
 - Add the scale as a comment on the first spell that uses it, e.g. `x2.5/x4`. Skip the comment on subsequent spells if the scale is the same.
 - Always use `xMAG/xDUR` format (e.g. `x10/x1` for magnitude-only, `x1/x4` for duration-only). Never write `x10 dur` or `x4 mag`.
 - Do not add scale comments to potions.
+- If the scale follows directly from the base cost change (opposite direction, same factor — e.g. base cost ÷2 → spells ×2), omit the scale comment entirely since it is implied.
+- If the user writes a scale like `-> 5x/2x` as a trailing comment on a README entry (with `->` but no target value after it), it means: apply that scale to all entries in that section (until an empty line or a new `->` appears), compute and write the new target values in README and JSON, then remove the scale comment.
 - The `->` means: left side is the vanilla/default value, right side is the new target value
 
 ## 2. JSON update
@@ -33,6 +35,12 @@ The scale is applied to the **vanilla default values** (left of `->` in README) 
 - `new_duration = vanilla_duration × scale_dur`
 
 The JSON and README store the same new values — no conversion needed between them.
+
+## Base Cost and spell compensation rule
+When a magic effect's base cost is changed, spells of that school must be adjusted in the **opposite direction** to keep their effective cost roughly the same:
+- If base cost is multiplied by X, then spell mag×dur must be divided by X (and vice versa)
+- Example: base cost ÷2 → spell mag×dur ×2 (e.g. double magnitude, or double duration, or split between both)
+- The split between magnitude and duration is chosen per spell as appropriate
 
 ## 3. Convert JSON back to ESP
 After updating the JSON, convert to a temp filename (tes3conv creates numbered files if destination exists, so use a unique temp name to avoid that):

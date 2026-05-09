@@ -1226,9 +1226,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 25,
-        "min_magnitude": 40,
-        "max_magnitude": 40
+        "duration": 10,
+        "min_magnitude": 100,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -1430,9 +1430,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 8,
-        "min_magnitude": 2000,
-        "max_magnitude": 2000
+        "duration": 3,
+        "min_magnitude": 5000,
+        "max_magnitude": 5000
       }
     ],
     "data": {
@@ -1917,9 +1917,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 2,
-        "duration": 50,
-        "min_magnitude": 4,
-        "max_magnitude": 60
+        "duration": 20,
+        "min_magnitude": 10,
+        "max_magnitude": 150
       }
     ],
     "data": {
@@ -1998,7 +1998,7 @@
         "area": 0,
         "duration": 3,
         "min_magnitude": 5,
-        "max_magnitude": 20
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -2021,7 +2021,7 @@
         "area": 0,
         "duration": 3,
         "min_magnitude": 5,
-        "max_magnitude": 20
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -2111,9 +2111,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 250,
-        "max_magnitude": 250
+        "duration": 40,
+        "min_magnitude": 50,
+        "max_magnitude": 50
       }
     ],
     "data": {
@@ -2134,9 +2134,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 500,
-        "max_magnitude": 500
+        "duration": 50,
+        "min_magnitude": 80,
+        "max_magnitude": 80
       }
     ],
     "data": {
@@ -2157,9 +2157,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 250,
-        "max_magnitude": 250
+        "duration": 40,
+        "min_magnitude": 50,
+        "max_magnitude": 50
       }
     ],
     "data": {
@@ -2226,9 +2226,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 625,
-        "max_magnitude": 875
+        "duration": 50,
+        "min_magnitude": 100,
+        "max_magnitude": 140
       }
     ],
     "data": {
@@ -2249,9 +2249,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 750,
-        "max_magnitude": 750
+        "duration": 40,
+        "min_magnitude": 150,
+        "max_magnitude": 150
       }
     ],
     "data": {
@@ -2272,9 +2272,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 240,
-        "min_magnitude": 750,
-        "max_magnitude": 1000
+        "duration": 150,
+        "min_magnitude": 120,
+        "max_magnitude": 160
       }
     ],
     "data": {
@@ -2295,9 +2295,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 750,
-        "max_magnitude": 750
+        "duration": 40,
+        "min_magnitude": 150,
+        "max_magnitude": 150
       }
     ],
     "data": {
@@ -2433,9 +2433,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 750,
-        "max_magnitude": 1125
+        "duration": 50,
+        "min_magnitude": 120,
+        "max_magnitude": 180
       }
     ],
     "data": {
@@ -2550,7 +2550,7 @@
         "area": 0,
         "duration": 6,
         "min_magnitude": 5,
-        "max_magnitude": 20
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -2985,9 +2985,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 160,
-        "min_magnitude": 500,
-        "max_magnitude": 750
+        "duration": 100,
+        "min_magnitude": 80,
+        "max_magnitude": 120
       }
     ],
     "data": {
@@ -3166,9 +3166,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 150,
-        "min_magnitude": 120,
-        "max_magnitude": 160
+        "duration": 60,
+        "min_magnitude": 300,
+        "max_magnitude": 400
       }
     ],
     "data": {
@@ -3189,9 +3189,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 500,
-        "max_magnitude": 500
+        "duration": 40,
+        "min_magnitude": 100,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -3212,9 +3212,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 500,
-        "max_magnitude": 500
+        "duration": 40,
+        "min_magnitude": 100,
+        "max_magnitude": 100
       }
     ],
     "data": {
@@ -3535,8 +3535,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 20,
-        "min_magnitude": 10,
-        "max_magnitude": 10
+        "min_magnitude": 20,
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -4730,9 +4730,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 80,
-        "min_magnitude": 375,
-        "max_magnitude": 750
+        "duration": 50,
+        "min_magnitude": 60,
+        "max_magnitude": 120
       }
     ],
     "data": {
@@ -4888,9 +4888,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 125,
-        "min_magnitude": 80,
-        "max_magnitude": 120
+        "duration": 50,
+        "min_magnitude": 200,
+        "max_magnitude": 300
       }
     ],
     "data": {
@@ -5141,9 +5141,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 10,
-        "duration": 30,
+        "duration": 60,
         "min_magnitude": 0,
-        "max_magnitude": 250
+        "max_magnitude": 125
       },
       {
         "magic_effect": "DemoralizeCreature",
@@ -5204,9 +5204,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 30,
+        "duration": 60,
         "min_magnitude": 0,
-        "max_magnitude": 500
+        "max_magnitude": 250
       }
     ],
     "data": {
@@ -10679,9 +10679,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 100,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 10,
+        "min_magnitude": 1000,
+        "max_magnitude": 1000
       }
     ],
     "data": {
@@ -10734,6 +10734,223 @@
       "spell_type": "Spell",
       "cost": 180,
       "flags": "AUTO_CALCULATE | PC_START_SPELL"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "weariness",
+    "name": "Weariness",
+    "effects": [
+      {
+        "magic_effect": "DrainFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 20,
+        "min_magnitude": 10,
+        "max_magnitude": 100
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 1,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "exhaustion",
+    "name": "Exhaustion",
+    "effects": [
+      {
+        "magic_effect": "DrainFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 50,
+        "max_magnitude": 200
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 169,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "dagoth's bosom",
+    "name": "Dagoth's Bosom",
+    "effects": [
+      {
+        "magic_effect": "DrainFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 200,
+        "max_magnitude": 200
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 90,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "vigor",
+    "name": "Vigor",
+    "effects": [
+      {
+        "magic_effect": "FortifyFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 25,
+        "max_magnitude": 100
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 9,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Imp_Res_SothasMirror",
+    "name": "St. Naharine's Shield",
+    "effects": [
+      {
+        "magic_effect": "Reflect",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 5,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 25,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Com_Mys_DistortedReflect",
+    "name": "Distorted Reflection",
+    "effects": [
+      {
+        "magic_effect": "Reflect",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 125,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Com_Mys_Lifesteal",
+    "name": "Lifesteal",
+    "effects": [
+      {
+        "magic_effect": "AbsorbHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 48,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Nor_Mys_JogvirsSwordhand",
+    "name": "Jogvir's Sword Hand",
+    "effects": [
+      {
+        "magic_effect": "AbsorbSkill",
+        "skill": "LongBlade",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 1,
+        "duration": 30,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 40,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "BM_paralyze_hirc",
+    "name": "Hunter's Venom",
+    "effects": [
+      {
+        "magic_effect": "Paralyze",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      },
+      {
+        "magic_effect": "Burden",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 1,
+        "duration": 10,
+        "min_magnitude": 500,
+        "max_magnitude": 500
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 50,
+      "flags": ""
     }
   },
   {
