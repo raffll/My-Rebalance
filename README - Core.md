@@ -11,6 +11,7 @@ fMinorSkillBonus                            1 -> 2
 fMiscSkillBonus                             1.25 -> 2.5
 
 Armorer                                     Strength -> Endurance
+Armorer (Successful Repair)                 0.4 -> 1
 ```
 
 ------------------------------------------------------------
@@ -87,7 +88,7 @@ Scroll of Ondusi's Unhinging                73 -> 173
 
 *Scroll Magnitudes*
 ```
-Scroll of Ekash's Lock Splitter             100 -> 80
+Scroll of Ekash's Lock Splitter             100 -> 80-100
 ```
 
 ------------------------------------------------------------
@@ -135,4 +136,12 @@ Secret Master's Retort                      1000 -> 5000
 ```
 fMagicItemRechargePerSecond                 0.05 -> 0
 fEnchantmentChanceMult                      3 -> 0.6
+```
+
+------------------------------------------------------------
+
+## Magic
+```
+fElementalShieldMult                        0.1 -> 1
+sEffectSlowFall                             SlowFall -> Slowfall
 ```
