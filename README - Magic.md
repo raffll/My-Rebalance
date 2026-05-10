@@ -1178,7 +1178,7 @@ Base Cost                                   0.5
 
 *Spells*
 ```
-Vigor                                       5-20/30s -> 10-40/30s
+Vigor                                       5-20/30s -> 10-40/30s           x2/x1
 Enrichment                                  5-20/30s
 Daedric Fatigue                             50/90s
 ```
@@ -1209,7 +1209,7 @@ Masterful...                                15/60s -> 15/15s
 
 *Spells - Tamriel Data*
 ```
-Eagle Eye                                   10-15/40s [25 -> 100]
+Eagle Eye                                   10-15/40s [25 -> 100]           !
 Treefellers Rage                            10-15/40s [25 -> 100]
 Deft Security                               15/30s [23 -> 92]
 ```
@@ -1432,13 +1432,13 @@ Magickguard                                 20-40/10s -> 20-40/40s
 
 ### Resist Paralysis
 ```
-Base Cost                                   0.20                            !
+Base Cost                                   0.20
 ```
 
 *Potions - Tamriel Data*
 ```
-Bargain Paralysis Resistance                7/10s -> 6/18s                  id: T_Com_Potion_ResistParalysis_B
-Cheap Paralysis Resistance                  8/15s -> 8/24s                  id: T_Com_Potion_ResistParalysis_C
+Bargain Paralysis Resistance                7/10s -> 30/90s                 id: T_Com_Potion_ResistParalysis_B
+Cheap Paralysis Resistance                  8/15s -> 40/120s                id: T_Com_Potion_ResistParalysis_C
 ```
 
 *Spells*
@@ -1465,6 +1465,41 @@ Resist Paralysis                            50/30s [300 -> auto]
 ------------------------------------------------------------
 
 ## Conjuration
+
+------------------------------------------------------------
+
+### Summon Centurion Sphere
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Summon Bonewolf
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Call Bear
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Call Wolf
+```
+Spellmaking & Enchanting                    Yes
+```
+
+------------------------------------------------------------
+
+### Summon Fabricant
+```
+Spellmaking & Enchanting                    Yes
+```
 
 ------------------------------------------------------------
 
@@ -1532,13 +1567,6 @@ Resist Paralysis                            50/30s [300 -> auto]
 
 ------------------------------------------------------------
 
-### Summon Centurion Sphere
-```
-Spellmaking & Enchanting                    Yes
-```
-
-------------------------------------------------------------
-
 ### Summon Clannfear
 
 ------------------------------------------------------------
@@ -1588,31 +1616,3 @@ Spellmaking & Enchanting                    Yes
 ------------------------------------------------------------
 
 ### Turn Undead
-
-------------------------------------------------------------
-
-### Summon Bonewolf
-```
-Spellmaking & Enchanting                    Yes
-```
-
-------------------------------------------------------------
-
-### Call Bear
-```
-Spellmaking & Enchanting                    Yes
-```
-
-------------------------------------------------------------
-
-### Call Wolf
-```
-Spellmaking & Enchanting                    Yes
-```
-
-------------------------------------------------------------
-
-### Summon Fabricant
-```
-Spellmaking & Enchanting                    Yes
-```

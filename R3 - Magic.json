@@ -1221,7 +1221,7 @@
     "description": "This effect increases the target's resistance to paralysis. The magnitude is the percentage added to the subject's standard resistance.",
     "data": {
       "school": "Restoration",
-      "base_cost": 0.5,
+      "base_cost": 0.2,
       "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
       "color": [
         128,
@@ -7664,9 +7664,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -7690,9 +7690,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
