@@ -4,9 +4,14 @@ A row appearing in multiple tiers means that mag/dur value is shared across thos
 
 | Mag | Dur | Tiers |
 |----:|----:|-------|
-|   6 |  18 | 1 |
-|   8 |  24 | 1 |
-|  10 |  30 | 1, 2 |
+|   1 |   3 | |
+|   2 |   6 | |
+|   3 |   9 | 0 |
+|   4 |  12 | 0 |
+|   6 |  18 | 0, 1 |
+|   8 |  24 | 0, 1 |
+|  10 |  30 | 0, 1, 2 |
+|  12 |  36 | |
 |  15 |  45 | 1, 2 |
 |  20 |  60 | 1, 2 |
 |  30 |  90 | 2, 5 |

@@ -20,7 +20,6 @@ Cheap...                                    8/15s -> 8/24s
 ```
 Bargain Rising Force Potion                 5/30s -> 6/18s
 Bargain Potion of Swift Swim                1/8s -> 6/18s
-Exclusive Frost Shield                      20/30s -> 20/60s
 
 Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
@@ -231,7 +230,16 @@ Fierce Fire Shield                          5-11/10s
 
 *Spells - Tamriel Data*
 ```
-Fire Eye                                    10-23/20s -> 10-23/20s
+Fire Eye                                    10-23/20s
+```
+
+*Potions*
+```
+Bargain Potion of Fire Shield               5/8s -> 3/9s                    !
+Cheap Potion of Fire Shield                 8/15s -> 4/12s                  !
+Standard Potion of Fire Shield              10/30s -> 6/18s                 !
+Quality Potion of Fire Shield               15/45s -> 8/24s                 !
+Exclusive Potion of Fire Shield             20/60s -> 10/30s                !
 ```
 
 ------------------------------------------------------------
@@ -248,6 +256,15 @@ Frost Shield -> Weak Frost Shield           6/30s
 Frost Shield                                10/30s
 Strong Frost Shield                         12/30s
 Fierce Frost Shield                         5-11/10s
+```
+
+*Potions*
+```
+Bargain Potion of Frost Shield              5/8s -> 3/9s                    !
+Cheap Potion of Frost Shield                8/15s -> 4/12s                  !
+Standard Potion of Frost Shield             10/30s -> 6/18s                 !
+Quality Frost Shield                        15/45s -> 8/24s                 !
+Exclusive Frost Shield                      20/30s -> 10/30s                !
 ```
 
 ------------------------------------------------------------
@@ -270,6 +287,15 @@ Shock Shield -> Lightning Shield            3/20s                           used
 *Spells - Tamriel Data*
 ```
 Draugr Lightning Shield                     50/20s -> 50/20s
+```
+
+*Potions*
+```
+Bargain Lightning Shield                    5/8s -> 3/9s                    !
+Cheap Lightning Shield                      8/15s -> 4/12s                  !
+Standard Lightning Shield                   10/30s -> 6/18s                 !
+Quality Lightning Shield                    15/45s -> 8/24s                 !
+Exclusive Lightning Shield                  20/60s -> 10/30s                !
 ```
 
 ------------------------------------------------------------
@@ -467,8 +493,9 @@ Wearying Touch                              5-20/30s -> 25-100/60s
 Exhausting Touch                            5-20/60s -> 25-100/120s
 Exhaustion                                  5-20/90s -> 25-100/180s
 
-Weariness                                   1-10/1s -> 10-100/20s           x10/x20
 Ordeal of St. Olms                          5-20/60s -> 50-200/60s
+
+Weariness                                   1-10/1s -> 10-100/20s           x10/x20
 
 Dagoth's Bosom                              20/30s -> 200/30s               used by Ascended Sleepers
 ```
