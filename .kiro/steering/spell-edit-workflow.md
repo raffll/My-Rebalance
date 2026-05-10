@@ -16,7 +16,10 @@ Spell Name                                  [default mag/dur from vanilla] -> [n
 
 - Values are `magnitude/duration` (e.g. `20/10s -> 50/40s`)
 - Range spells use `min-max/duration` (e.g. `30-60/10s -> 60-120/50s`)
-- If there is an area, append it after duration: `50/10s 10ft`
+- If there is an area, append it after duration: `50/10s/10ft`
+- If there is also a range type, append it after area: `50/10s/10ft/Target`
+- If a cost override is also present, it comes last in brackets: `50/10s/10ft/Target [10]`
+- For **abilities** (always-on), duration is irrelevant — show magnitude only: `200/1s -> 1`
 - If there is a cost override, append it in brackets: `50/10s [25]`
 - Anything after the values (notes, flags) goes in a comment at the end of the line, with multiple comments separated by `;`: `50/10s               used by Aryon; !`
 - Add the scale as a comment on the first spell that uses it, e.g. `x2.5/x4`. Skip the comment on subsequent spells if the scale is the same.
