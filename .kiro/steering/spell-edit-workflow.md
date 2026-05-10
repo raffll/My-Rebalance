@@ -27,6 +27,7 @@ Spell Name                                  [default mag/dur from vanilla] -> [n
 - If the user writes `! [Nx]` (a single value in brackets, e.g. `! [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
 - If a `! Nx` scale comment appears on a **Base Cost** line, apply that scale to the Base Cost value, then remove the scale comment.
 - The `->` means: left side is the vanilla/default value, right side is the new target value
+- If the right side value is identical to the left side value, omit the `->` and right side entirely — just leave the vanilla value alone
 
 ## The `!` marker
 `!` is a general attention marker. When the user writes `!` anywhere — on a line, a section header, or as a standalone comment — it means: **look at this, analyze it, and report back**. Do not apply any changes unless the user explicitly asks after the analysis.
@@ -74,6 +75,7 @@ When a magic effect's base cost is changed, spells of that school must be adjust
 - Never modify files inside `tes3conv/` — those are read-only vanilla references.
 - README and JSON must always be updated together. ESP conversion is handled separately and is not part of this workflow.
 - Only rebuild the ESP for the JSON file that was actually changed.
+- The top-level `## Potions` section in README - Magic.md defines default Bargain and Cheap values for all potions (e.g. `Bargain... 5/8s -> 6/18s`). If an individual potion entry has its own explicit values, those override the general rule.
 
 ## Modification Policy
 Only hooks may trigger actual modifications to README, JSON, and ESP files. Direct user requests must not apply changes — they may only update steering rules or prepare instructions for hooks to execute.

@@ -1205,6 +1205,35 @@
     }
   },
   {
+    "type": "MagicEffect",
+    "flags": "",
+    "effect_id": "SummonCenturionSphere",
+    "icon": "s\\Tx_S_Smmn_Clnfear.tga",
+    "texture": "vfx_conj_flare02.tga",
+    "bolt_sound": "",
+    "cast_sound": "",
+    "hit_sound": "",
+    "area_sound": "",
+    "cast_visual": "VFX_ConjureCast",
+    "bolt_visual": "",
+    "hit_visual": "",
+    "area_visual": "",
+    "description": "This effect summons a centurion sphere from Oblivion. It appears six feet in front of the caster and attacks any entity that attacks the caster until the effect ends or the summoning is killed. At death, or when the effect ends, the summoning disappears, returning to Oblivion. If summoned in town, the guards will attack you and the summoning on sight.",
+    "data": {
+      "school": "Conjuration",
+      "base_cost": 25.0,
+      "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+      "color": [
+        244,
+        223,
+        185
+      ],
+      "speed": 1.0,
+      "size": 1.0,
+      "size_cap": 50.0
+    }
+  },
+  {
     "type": "Spell",
     "flags": "",
     "id": "Aryon_rest",
@@ -7520,9 +7549,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
@@ -7546,9 +7575,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
@@ -7572,9 +7601,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
@@ -7598,9 +7627,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
@@ -7624,9 +7653,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
@@ -8398,9 +8427,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -8424,14 +8453,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
       "weight": 1.0,
       "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_fire_resistance_s",
+    "name": "Standard Fire Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistFire",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_fire_resistance_q",
+    "name": "Quality Fire Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistFire",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_fire_resistance_e",
+    "name": "Exclusive Fire Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistFire",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -9074,9 +9181,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -9100,14 +9207,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
       "weight": 1.0,
       "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_frost_resistance_s",
+    "name": "Standard Frost Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistFrost",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_frost_resistance_q",
+    "name": "Quality Frost Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistFrost",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_frost_resistance_e",
+    "name": "Exclusive Frost Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistFrost",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -9542,9 +9727,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -9568,14 +9753,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
       "weight": 1.0,
       "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_magicka_resistance_s",
+    "name": "Standard Magicka Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_magicka_resistance_q",
+    "name": "Quality Magicka Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_magicka_resistance_e",
+    "name": "Exclusive Magicka Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -9776,9 +10039,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -9802,14 +10065,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
       "weight": 1.0,
       "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_poison_resistance_s",
+    "name": "Standard Poison Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistPoison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_poison_resistance_q",
+    "name": "Quality Poison Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistPoison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_poison_resistance_e",
+    "name": "Exclusive Poison Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistPoison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -10478,9 +10819,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -10504,14 +10845,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
       "weight": 1.0,
       "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_shock_resistance_s",
+    "name": "Standard Shock Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistShock",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_shock_resistance_q",
+    "name": "Quality Shock Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistShock",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_shock_resistance_e",
+    "name": "Exclusive Shock Resistance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "ResistShock",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },

@@ -1,13 +1,13 @@
 {
-  "enabled": false,
+  "enabled": true,
   "name": "Build All ESPs",
-  "description": "Converts all three JSON files to ESP using --overwrite, then removes any leftover numbered backup files.",
+  "description": "Converts all three JSON files to ESP using tes3conv and reports the output.",
   "version": "1",
   "when": {
     "type": "userTriggered"
   },
   "then": {
     "type": "askAgent",
-    "prompt": "Run the following commands to rebuild all three ESPs from their JSON files, then clean up any numbered backup files tes3conv may have created:\n\n1. `& \"tes3conv/tes3conv.exe\" --overwrite \"R3 - Magic.json\" \"R3 - Magic.esp\"`\n2. `& \"tes3conv/tes3conv.exe\" --overwrite \"R3 - Races & Birthsigns.json\" \"R3 - Races & Birthsigns.esp\"`\n3. `& \"tes3conv/tes3conv.exe\" --overwrite \"R3 - Core.json\" \"R3 - Core.esp\"`\n4. `Get-ChildItem -Filter \"*.???.esp\" | Remove-Item`"
+    "prompt": "Run the following commands one by one using PowerShell and report the output of each:\n1. tes3conv/tes3conv.exe -o \"R3 - Magic.json\" \"R3 - Magic.esp\"\n2. tes3conv/tes3conv.exe -o \"R3 - Races & Birthsigns.json\" \"R3 - Races & Birthsigns.esp\"\n3. tes3conv/tes3conv.exe -o \"R3 - Core.json\" \"R3 - Core.esp\"\n\nAfter all three, delete any leftover backup files matching *.000.esp and *.001.esp if they exist. Report success or any errors for each step."
   }
 }

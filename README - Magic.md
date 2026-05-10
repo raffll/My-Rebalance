@@ -1254,6 +1254,15 @@ Exclusive Disease Resistance                20/60s -> 200/600s
 Base Cost                                   2 -> 0.5
 ```
 
+*Potions*
+```
+Bargain Fire Resistance                     5/8s -> 10/30s
+Cheap Fire Resistance                       8/15s -> 15/45s
+Standard Fire Resistance                    10/30s -> 20/60s
+Quality Fire Resistance                     15/45s -> 30/90s
+Exclusive Fire Resistance                   20/60s -> 40/120s
+```
+
 *Spells*
 ```
 Resist Fire                                 10/5s -> 10/20s
@@ -1268,6 +1277,15 @@ Flameguard                                  20-40/30s -> 20-40/120s
 ### Resist Frost
 ```
 Base Cost                                   2 -> 0.5
+```
+
+*Potions*
+```
+Bargain Frost Resistance                    5/8s -> 10/30s
+Cheap Frost Resistance                      8/15s -> 15/45s
+Standard Frost Resistance                   10/30s -> 20/60s
+Quality Frost Resistance                    15/45s -> 30/90s
+Exclusive Frost Resistance                  20/60s -> 40/120s
 ```
 
 *Spells*
@@ -1291,6 +1309,15 @@ Wintery Mantle                              20/60s -> 80/60s
 Base Cost                                   2 -> 0.5
 ```
 
+*Potions*
+```
+Bargain Shock Resistance                    5/8s -> 10/30s
+Cheap Shock Resistance                      8/15s -> 15/45s
+Standard Shock Resistance                   10/30s -> 20/60s
+Quality Shock Resistance                    15/45s -> 30/90s
+Exclusive Shock Resistance                  20/60s -> 40/120s
+```
+
 *Spells*
 ```
 Resist Shock                                20/5s -> 20/20s
@@ -1304,6 +1331,15 @@ Shockguard                                  20-40/30s -> 20-40/120s
 ### Resist Poison
 ```
 Base Cost                                   2 -> 0.5
+```
+
+*Potions*
+```
+Bargain Poison Resistance                   5/8s -> 10/30s
+Cheap Poison Resistance                     8/15s -> 15/45s
+Standard Poison Resistance                  10/30s -> 20/60s
+Quality Poison Resistance                   15/45s -> 30/90s
+Exclusive Poison Resistance                 20/60s -> 40/120s
 ```
 
 *Spells*
@@ -1320,6 +1356,15 @@ Poisonguard                                 20-40/30s -> 20-40/120s
 ### Resist Magicka
 ```
 Base Cost                                   2 -> 0.5
+```
+
+*Potions*
+```
+Bargain Magicka Resistance                  5/8s -> 10/30s
+Cheap Magicka Resistance                    8/15s -> 15/45s
+Standard Magicka Resistance                 10/30s -> 20/60s
+Quality Magicka Resistance                  15/45s -> 30/90s
+Exclusive Magicka Resistance                20/60s -> 40/120s
 ```
 
 *Spells*
