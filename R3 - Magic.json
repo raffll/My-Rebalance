@@ -3892,7 +3892,7 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 6,
+        "duration": 12,
         "min_magnitude": 1,
         "max_magnitude": 1
       }

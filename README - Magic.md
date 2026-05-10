@@ -692,7 +692,7 @@ Base Cost                                   40 -> 80
 *Spells*
 ```
 Paralysis                                   5s
-Paralysis                                   6s [auto -> 6]                  used by Scribs                              scrib_paralysis
+Paralysis                                   6s [auto -> 12]                 used by Scribs                              scrib_paralysis
 ```
 
 *Spells - Tamriel Data*

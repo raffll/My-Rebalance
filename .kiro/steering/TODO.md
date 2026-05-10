@@ -53,12 +53,6 @@ Also create R3 - Factions.json with the Mages Guild entry copied from tes3conv/T
 
 ---
 
-## Scrib Paralysis — Duration
-Change `scrib_paralysis` duration from 6s to 12s in R3 - Magic.json.
-Update README entry: `6s [auto -> 6] -> 12s [auto -> 12]`.
-
----
-
 ## Paralyze Spells — Split Entry
 In README - Magic.md, under `### Paralyze`, replace the single `Paralysis` entry with two separate lines:
 - `paralysis` — revert to vanilla (5s, cost auto). Remove from R3 - Magic.json entirely (or keep with vanilla values if already present).
