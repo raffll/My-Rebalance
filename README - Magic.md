@@ -298,7 +298,7 @@ Shock Shield -> Lightning Shield            3/20s                           used
 
 *Spells - Tamriel Data*
 ```
-Draugr Lightning Shield                     50/20s -> 50/20s
+Draugr Lightning Shield                     50/20s
 ```
 
 *Potions*
@@ -504,7 +504,6 @@ Base Cost                                   2 -> 0.2
 
 *Spells*
 ```
-
 Sleep                                       5-15/30s -> 25-75/60s
 Wild Exhaustion                             5-15/60s -> 25-75/120s
 Wearying Touch                              5-20/30s -> 25-100/60s
@@ -690,7 +689,7 @@ Quality Potion of Night-Eye                 15/45s -> 80/240s               T_No
 Base Cost                                   40 -> 80
 ```
 
-*Spells
+*Spells*
 ```
 Paralysis                                   6s [auto -> 6]                  used by Scribs
 ```
