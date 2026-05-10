@@ -850,7 +850,8 @@ Energy Leech                                5-20/30s -> 5-20/6s
 
 *Spells*
 ```
-Absorb Intelligence [Ranged]                5-51/30s -> 5-50/30s            -> TODO
+Absorb Intelligence [Ranged]                Agility -> Intelligence
+                                            5-51/30s -> 5-50/30s
 ```
 
 ------------------------------------------------------------

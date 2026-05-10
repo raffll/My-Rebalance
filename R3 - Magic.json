@@ -2033,6 +2033,29 @@
   {
     "type": "Spell",
     "flags": "",
+    "id": "absorb intelligence [ranged]",
+    "name": "Absorb Intelligence [Ranged]",
+    "effects": [
+      {
+        "magic_effect": "AbsorbAttribute",
+        "skill": "None",
+        "attribute": "Intelligence",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 5,
+        "max_magnitude": 50
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 126,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
     "id": "armor eater",
     "name": "Armor Eater",
     "effects": [
