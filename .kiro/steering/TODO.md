@@ -18,3 +18,30 @@ Target magicka values: TBD
 ## Fortify Skill — Masterful Spells
 All 28 Masterful spells documented in README - Magic.md as one entry: `Masterful... 15/60s -> 15/15s`.
 All 28 copied from Morrowind.json into R3 - Magic.json with `duration: 15`. ✓
+
+---
+
+## Sound Spells — Flatten & Fix Range
+Flatten min/max to single values and make all OnTarget (Noise and Cruel Noise are currently OnTouch).
+
+| Spell | Current | Proposed |
+|---|---|---|
+| Earwig | 9-24/20s | 15/20s |
+| Cruel Earwig | 15-33/20s | 25/20s |
+| Dire Earwig | 24-45/20s | 35/20s |
+| Wild Earwig | 3-90/20s | 50/20s |
+| Noise | 3-8/60s | 5/60s |
+| Cruel Noise | 10-22/60s | 15/60s |
+| Dire Noise | 2-60/60s | 30/60s |
+
+---
+
+## Optional Files — Review
+- `sMagicInsufficientCharge` stored as Float in JSON — should be String `""`, verify tes3conv handles it correctly
+- **Morag Tong Polished**: no README entry in `optional/README - Optional.md` — add one
+- **Morag Tong Polished**: script hardcodes `murdercost = -5200` — needs adjustment to match current crime values in R3 - Core
+
+---
+
+## Masterful Spells — In-Game Verification
+Verify all 28 Masterful spells appear correctly in-game with the new duration (15s) and that costs feel right at base cost ×4.
