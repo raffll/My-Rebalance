@@ -1218,10 +1218,126 @@
     "bolt_visual": "",
     "hit_visual": "",
     "area_visual": "",
-    "description": "This effect summons a centurion sphere from Oblivion. It appears six feet in front of the caster and attacks any entity that attacks the caster until the effect ends or the summoning is killed. At death, or when the effect ends, the summoning disappears, returning to Oblivion. If summoned in town, the guards will attack you and the summoning on sight.",
+    "description": "This effect summons a centurion sphere. It appears six feet in front of the caster and attacks any entity that attacks the caster until the effect ends or the summoning is killed. If summoned in town, the guards will attack you and the summoning on sight.",
     "data": {
       "school": "Conjuration",
       "base_cost": 25.0,
+      "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+      "color": [
+        244,
+        223,
+        185
+      ],
+      "speed": 1.0,
+      "size": 1.0,
+      "size_cap": 50.0
+    }
+  },
+  {
+    "type": "MagicEffect",
+    "flags": "",
+    "effect_id": "SummonWolf",
+    "icon": "s\\Tx_S_Smmn_Wolf.dds",
+    "texture": "vfx_summon.tga",
+    "bolt_sound": "",
+    "cast_sound": "",
+    "hit_sound": "",
+    "area_sound": "",
+    "cast_visual": "",
+    "bolt_visual": "",
+    "hit_visual": "",
+    "area_visual": "",
+    "description": "",
+    "data": {
+      "school": "Conjuration",
+      "base_cost": 30.0,
+      "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+      "color": [
+        244,
+        223,
+        185
+      ],
+      "speed": 1.0,
+      "size": 1.0,
+      "size_cap": 50.0
+    }
+  },
+  {
+    "type": "MagicEffect",
+    "flags": "",
+    "effect_id": "SummonBear",
+    "icon": "s\\Tx_S_Smmn_Bear.dds",
+    "texture": "vfx_conj_flare02.tga",
+    "bolt_sound": "",
+    "cast_sound": "",
+    "hit_sound": "",
+    "area_sound": "",
+    "cast_visual": "",
+    "bolt_visual": "",
+    "hit_visual": "",
+    "area_visual": "",
+    "description": "",
+    "data": {
+      "school": "Conjuration",
+      "base_cost": 30.0,
+      "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+      "color": [
+        244,
+        223,
+        185
+      ],
+      "speed": 1.0,
+      "size": 1.0,
+      "size_cap": 50.0
+    }
+  },
+  {
+    "type": "MagicEffect",
+    "flags": "",
+    "effect_id": "SummonBoneWolf",
+    "icon": "s\\Tx_S_Smmn_Bonewolf.dds",
+    "texture": "vfx_summon.tga",
+    "bolt_sound": "conjuration bolt",
+    "cast_sound": "conjuration cast",
+    "hit_sound": "conjuration hit",
+    "area_sound": "conjuration area",
+    "cast_visual": "",
+    "bolt_visual": "",
+    "hit_visual": "",
+    "area_visual": "",
+    "description": "",
+    "data": {
+      "school": "Conjuration",
+      "base_cost": 30.0,
+      "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+      "color": [
+        244,
+        223,
+        185
+      ],
+      "speed": 1.0,
+      "size": 1.0,
+      "size_cap": 50.0
+    }
+  },
+  {
+    "type": "MagicEffect",
+    "flags": "",
+    "effect_id": "SummonFabricant",
+    "icon": "s\\Tx_S_Smmn_Fabrict.dds",
+    "texture": "vfx_conj_flare02.tga",
+    "bolt_sound": "Alteration Bolt",
+    "cast_sound": "Alteration Cast",
+    "hit_sound": "Alteration Hit",
+    "area_sound": "Alteration Area",
+    "cast_visual": "",
+    "bolt_visual": "",
+    "hit_visual": "",
+    "area_visual": "",
+    "description": "This effect summons a Verminous Fabricant. It appears six feet in front of the caster and attacks any entity that attacks the caster until the effect ends or the summoning is killed. If summoned in town, the guards will attack you and the summoning on sight.",
+    "data": {
+      "school": "Conjuration",
+      "base_cost": 10.0,
       "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
       "color": [
         244,
@@ -3738,8 +3854,8 @@
   {
     "type": "Spell",
     "flags": "",
-    "id": "rest of st. merris",
-    "name": "Rest of St. Merris",
+    "id": "rest of st. meris",
+    "name": "Rest of St. Meris",
     "effects": [
       {
         "magic_effect": "RestoreFatigue",
@@ -7667,6 +7783,136 @@
   {
     "type": "Alchemy",
     "flags": "",
+    "id": "T_Nor_Potion_ResistFire_Q",
+    "name": "Quality Fire Resistance",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "ResistFire",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "T_Nor_Potion_ResistFrost_Q",
+    "name": "Quality Frost Resistance",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "ResistFrost",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "T_Nor_Potion_ResistMagicka_Q",
+    "name": "Quality Magicka Resistance",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "ResistMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "T_Nor_Potion_ResistPoison_Q",
+    "name": "Quality Poison Resistance",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "ResistPoison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "T_Nor_Potion_ResistShock_Q",
+    "name": "Quality Shock Resistance",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "ResistShock",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
     "id": "T_Nor_Potion_ShieldFire_C",
     "name": "Cheap Potion of Fire Shield",
     "script": "",
@@ -7679,9 +7925,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
       }
     ],
     "data": {
@@ -7705,9 +7951,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
       }
     ],
     "data": {
@@ -7731,14 +7977,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.6,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "T_Nor_Potion_ShieldFire_Q",
+    "name": "Quality Potion of Fire Shield",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "FireShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
         "duration": 24,
         "min_magnitude": 8,
         "max_magnitude": 8
       }
     ],
     "data": {
-      "weight": 0.6,
-      "value": 15,
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "T_Nor_Potion_ShieldFrost_Q",
+    "name": "Quality Frost Shield",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "FrostShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 24,
+        "min_magnitude": 8,
+        "max_magnitude": 8
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "T_Nor_Potion_ShieldLightning_Q",
+    "name": "Quality Lightning Shield",
+    "script": "",
+    "mesh": "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+    "icon": "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+    "effects": [
+      {
+        "magic_effect": "LightningShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 24,
+        "min_magnitude": 8,
+        "max_magnitude": 8
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
       "flags": ""
     }
   },
@@ -8467,7 +8791,7 @@
   {
     "type": "Alchemy",
     "flags": "",
-    "id": "p_fire_resistance_s",
+    "id": "p_fire resistance_s",
     "name": "Standard Fire Resistance",
     "script": "",
     "mesh": "m\\Misc_Potion_Standard_01.nif",
@@ -8557,9 +8881,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -8583,9 +8907,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
       }
     ],
     "data": {
@@ -9311,9 +9635,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -9337,9 +9661,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
       }
     ],
     "data": {
@@ -9363,9 +9687,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 60,
-        "min_magnitude": 20,
-        "max_magnitude": 20
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -9675,9 +9999,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -9701,9 +10025,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
       }
     ],
     "data": {
@@ -11465,49 +11789,211 @@
     }
   },
   {
-    "type": "Spell",
+    "type": "Alchemy",
     "flags": "",
-    "id": "T_Imp_Alt_UlmsJuicedawsFeather",
-    "name": "Zenithar's Arms",
+    "id": "p_fire_shield_s",
+    "name": "Standard Potion of Fire Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
     "effects": [
       {
-        "magic_effect": "Feather",
+        "magic_effect": "FireShield",
         "skill": "None",
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 10,
-        "min_magnitude": 500,
-        "max_magnitude": 500
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
       }
     ],
     "data": {
-      "spell_type": "Spell",
-      "cost": 25,
+      "weight": 0.75,
+      "value": 35,
       "flags": ""
     }
   },
   {
-    "type": "Spell",
+    "type": "Alchemy",
     "flags": "",
-    "id": "skylamp's shadow",
-    "name": "Skylamp's Shadow",
+    "id": "p_fire_shield_q",
+    "name": "Quality Potion of Fire Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
     "effects": [
       {
-        "magic_effect": "FortifyAttribute",
+        "magic_effect": "FireShield",
         "skill": "None",
-        "attribute": "Speed",
+        "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 30,
-        "min_magnitude": 5,
-        "max_magnitude": 20
+        "duration": 24,
+        "min_magnitude": 8,
+        "max_magnitude": 8
       }
     ],
     "data": {
-      "spell_type": "Spell",
-      "cost": 19,
-      "flags": "AUTO_CALCULATE"
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_fire_shield_e",
+    "name": "Exclusive Potion of Fire Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "FireShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_frost_shield_s",
+    "name": "Standard Potion of Frost Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "FrostShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_frost_shield_q",
+    "name": "Quality Frost Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "FrostShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 24,
+        "min_magnitude": 8,
+        "max_magnitude": 8
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_lightning shield_s",
+    "name": "Standard Lightning Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "LightningShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_lightning shield_q",
+    "name": "Quality Lightning Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "LightningShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 24,
+        "min_magnitude": 8,
+        "max_magnitude": 8
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_lightning shield_e",
+    "name": "Exclusive Lightning Shield",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "LightningShield",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
+      "flags": ""
     }
   }
 ]

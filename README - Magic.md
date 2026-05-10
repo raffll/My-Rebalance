@@ -235,11 +235,17 @@ Fire Eye                                    10-23/20s
 
 *Potions*
 ```
-Bargain Potion of Fire Shield               5/8s -> 3/9s                    !
-Cheap Potion of Fire Shield                 8/15s -> 4/12s                  !
-Standard Potion of Fire Shield              10/30s -> 6/18s                 !
-Quality Potion of Fire Shield               15/45s -> 8/24s                 !
-Exclusive Potion of Fire Shield             20/60s -> 10/30s                !
+Bargain Potion of Fire Shield               5/8s -> 3/9s
+Cheap Potion of Fire Shield                 8/15s -> 4/12s
+Standard Potion of Fire Shield              10/30s -> 6/18s
+Quality Potion of Fire Shield               15/45s -> 8/24s
+Exclusive Potion of Fire Shield             20/60s -> 10/30s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Potion of Fire Shield                 8/15s -> 4/12s                  T_Nor_Potion_ShieldFire_C
+Quality Potion of Fire Shield               15/45s -> 8/24s                 T_Nor_Potion_ShieldFire_Q
 ```
 
 ------------------------------------------------------------
@@ -260,11 +266,17 @@ Fierce Frost Shield                         5-11/10s
 
 *Potions*
 ```
-Bargain Potion of Frost Shield              5/8s -> 3/9s                    !
-Cheap Potion of Frost Shield                8/15s -> 4/12s                  !
-Standard Potion of Frost Shield             10/30s -> 6/18s                 !
-Quality Frost Shield                        15/45s -> 8/24s                 !
-Exclusive Frost Shield                      20/30s -> 10/30s                !
+Bargain Potion of Frost Shield              5/8s -> 3/9s
+Cheap Potion of Frost Shield                8/15s -> 4/12s
+Standard Potion of Frost Shield             10/30s -> 6/18s
+Quality Frost Shield                        15/45s -> 8/24s
+Exclusive Frost Shield                      20/30s -> 10/30s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Potion of Frost Shield                8/15s -> 4/12s                  T_Nor_Potion_ShieldFrost_C
+Quality Frost Shield                        15/45s -> 8/24s                 T_Nor_Potion_ShieldFrost_Q
 ```
 
 ------------------------------------------------------------
@@ -291,11 +303,17 @@ Draugr Lightning Shield                     50/20s -> 50/20s
 
 *Potions*
 ```
-Bargain Lightning Shield                    5/8s -> 3/9s                    !
-Cheap Lightning Shield                      8/15s -> 4/12s                  !
-Standard Lightning Shield                   10/30s -> 6/18s                 !
-Quality Lightning Shield                    15/45s -> 8/24s                 !
-Exclusive Lightning Shield                  20/60s -> 10/30s                !
+Bargain Lightning Shield                    5/8s -> 3/9s
+Cheap Lightning Shield                      8/15s -> 4/12s
+Standard Lightning Shield                   10/30s -> 6/18s
+Quality Lightning Shield                    15/45s -> 8/24s
+Exclusive Lightning Shield                  20/60s -> 10/30s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Lightning Shield                      8/15s -> 4/12s                  T_Nor_Potion_ShieldLightning_C
+Quality Lightning Shield                    15/45s -> 8/24s                 T_Nor_Potion_ShieldLightning_Q
 ```
 
 ------------------------------------------------------------
@@ -492,7 +510,6 @@ Wild Exhaustion                             5-15/60s -> 25-75/120s
 Wearying Touch                              5-20/30s -> 25-100/60s
 Exhausting Touch                            5-20/60s -> 25-100/120s
 Exhaustion                                  5-20/90s -> 25-100/180s
-
 Ordeal of St. Olms                          5-20/60s -> 50-200/60s
 
 Weariness                                   1-10/1s -> 10-100/20s           x10/x20
@@ -1098,7 +1115,7 @@ Exclusive Restore Fatigue                   80/5s -> 12/36s
 
 *Spells*
 ```
-Rest of St. Merris                          1-10/20s -> 1-10/8s
+Rest of St. Meris                           1-10/20s -> 1-10/8s
 Stamina                                     10-30/30s -> 10-30/12s
 ```
 
@@ -1290,6 +1307,12 @@ Quality Fire Resistance                     15/45s -> 30/90s
 Exclusive Fire Resistance                   20/60s -> 40/120s
 ```
 
+*Potions - Tamriel Data*
+```
+Cheap Fire Resistance                       8/15s -> 15/45s                 T_Nor_Potion_ResistFire_C
+Quality Fire Resistance                     15/45s -> 30/90s                T_Nor_Potion_ResistFire_Q
+```
+
 *Spells*
 ```
 Resist Fire                                 10/5s -> 10/20s
@@ -1313,6 +1336,12 @@ Cheap Frost Resistance                      8/15s -> 15/45s
 Standard Frost Resistance                   10/30s -> 20/60s
 Quality Frost Resistance                    15/45s -> 30/90s
 Exclusive Frost Resistance                  20/60s -> 40/120s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Frost Resistance                      8/15s -> 15/45s                 T_Nor_Potion_ResistFrost_C
+Quality Frost Resistance                    15/45s -> 30/90s                T_Nor_Potion_ResistFrost_Q
 ```
 
 *Spells*
@@ -1345,6 +1374,12 @@ Quality Shock Resistance                    15/45s -> 30/90s
 Exclusive Shock Resistance                  20/60s -> 40/120s
 ```
 
+*Potions - Tamriel Data*
+```
+Cheap Shock Resistance                      8/15s -> 15/45s                 T_Nor_Potion_ResistShock_C
+Quality Shock Resistance                    15/45s -> 30/90s                T_Nor_Potion_ResistShock_Q
+```
+
 *Spells*
 ```
 Resist Shock                                20/5s -> 20/20s
@@ -1367,6 +1402,12 @@ Cheap Poison Resistance                     8/15s -> 15/45s
 Standard Poison Resistance                  10/30s -> 20/60s
 Quality Poison Resistance                   15/45s -> 30/90s
 Exclusive Poison Resistance                 20/60s -> 40/120s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Poison Resistance                     8/15s -> 15/45s                 T_Nor_Potion_ResistPoison_C
+Quality Poison Resistance                   15/45s -> 30/90s                T_Nor_Potion_ResistPoison_Q
 ```
 
 *Spells*
@@ -1392,6 +1433,12 @@ Cheap Magicka Resistance                    8/15s -> 15/45s
 Standard Magicka Resistance                 10/30s -> 20/60s
 Quality Magicka Resistance                  15/45s -> 30/90s
 Exclusive Magicka Resistance                20/60s -> 40/120s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Magicka Resistance                    8/15s -> 15/45s                 T_Nor_Potion_ResistMagicka_C
+Quality Magicka Resistance                  15/45s -> 30/90s                T_Nor_Potion_ResistMagicka_Q
 ```
 
 *Spells*
