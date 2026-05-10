@@ -113,7 +113,7 @@ Weight of Guilt                             500/3s -> 5000/3s
 
 *Enchantments*
 ```
-Scroll of Baleful Suffering                 0−25/30s -> 0-125/60s           sc_balefulsuffering_en
+Scroll of Baleful Suffering                 0−25/30s                        sc_balefulsuffering_en
 Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s           sc_fadersleadenflesh_en
 
 Black Jinx                                  25-100/120s -> 250-1000/120s    black_jinx_en_unique
@@ -563,7 +563,7 @@ Master Acid Trap                            150-300/1s -> 150-300/10s
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s -> 50/5s                   sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s                            sc_balefulsuffering_en
 ```
 
 *Enchantments*
@@ -583,8 +583,8 @@ Base Cost                                   6 -> 1.2
 Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s) x10/x1
 
 Disintegrate Weapon                         6-25/1s -> 30-125/1s            used by Hungers
-Brittlewind                                 20/10s          	            used by Fryse Hags
-Eddard's Wrath                              4-9/15s	                        used by Draugr
+Brittlewind                                 20/10s                          used by Fryse Hags
+Eddard's Wrath                              4-9/15s                         used by Draugr
 ```
 
 *Spells - Tamriel Data*
@@ -598,7 +598,7 @@ Master Acid Trap                            150-300/1s -> 150-300/5s
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s -> 25/5s                   sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s                            sc_balefulsuffering_en
 ```
 
 ------------------------------------------------------------
@@ -692,7 +692,7 @@ Base Cost                                   40 -> 80
 
 *Spells
 ```
-Paralysis                	                6s [auto -> 6] 	                used by Scribs
+Paralysis                                   6s [auto -> 6]                  used by Scribs
 ```
 
 *Spells - Tamriel Data*
@@ -919,7 +919,7 @@ Base Cost                                   0.75 -> 0.15
 
 *Potions*
 ```
-Potion of Detect Creatures                  10/15s -> 60/180s
+Potion of Detect Creatures                  10/15s -> 60/180s               p_detect_creatures_s
 ```
 
 *Potions - Tamriel Data*
@@ -941,7 +941,7 @@ Base Cost                                   1 -> 0.2
 
 *Potions*
 ```
-Potion of Detect Enchantments               10/15s -> 60/180s
+Potion of Detect Enchantments               10/15s -> 60/180s               p_detect_enchantment_s
 ```
 
 *Potions - Tamriel Data*
@@ -952,6 +952,11 @@ Potion of Detect Enchantments               10/15s -> 60/180s
 *Spells*
 ```
 Detect Enchantment                          10/10s -> 50/10s
+```
+
+*Spells - Tamriel Data*
+```
+Detect Enchantment                          10/10s -> 50/10s                T_Com_Mys_Insight
 ```
 
 ------------------------------------------------------------
@@ -1173,7 +1178,7 @@ Base Cost                                   0.5
 
 *Spells*
 ```
-Vigor                                       5-20/30s -> 25-100/30s          x5/x1
+Vigor                                       5-20/30s -> 10-40/30s
 Enrichment                                  5-20/30s
 Daedric Fatigue                             50/90s
 ```
@@ -1194,46 +1199,19 @@ Base Cost                                   1
 
 ### Fortify Skill
 ```
-Base Cost                                   1
+Base Cost                                   1 -> 4
 ```
 
 *Spells*
 ```
-Masterful Red Wisdom                        15/60s
-Masterful Stolid Armor                      15/60s
-Masterful Balanced Armor                    15/60s
-Masterful Deep Biting                       15/60s
-Masterful Denial                            15/60s
-Masterful Enterprise                        15/60s
-Masterful Fleetness                         15/60s
-Masterful Fluid Evasion                     15/60s
-Masterful Glib Speech                       15/60s
-Masterful Golden Wisdom                     15/60s
-Masterful Green Wisdom                      15/60s
-Masterful Hewing                            15/60s
-Masterful Horny Fist                        15/60s
-Masterful Impaling Thrust                   15/60s
-Masterful Leaping                           15/60s
-Masterful Martial Craft                     15/60s
-Masterful Nimble Armor                      15/60s
-Masterful Red Wisdom                        15/60s
-Masterful Safekeeping                       15/60s
-Masterful Silver Wisdom                     15/60s
-Masterful Smiting                           15/60s
-Masterful Stalking                          15/60s
-Masterful Sublime Wisdom                    15/60s
-Masterful Sureflight                        15/60s
-Masterful Swiftblade                        15/60s
-Masterful Transcendant Wisdom               15/60s
-Masterful Transfiguring Wisdom              15/60s
-Masterful Unseen Wisdom                     15/60s
+Masterful...                                15/60s -> 15/15s
 ```
 
 *Spells - Tamriel Data*
 ```
-Eagle Eye                                   10-15/40s
-Treefellers Rage                            10-15/40s
-Deft Security                               15/30s
+Eagle Eye                                   10-15/40s [25 -> 100]
+Treefellers Rage                            10-15/40s [25 -> 100]
+Deft Security                               15/30s [23 -> 92]
 ```
 
 ------------------------------------------------------------

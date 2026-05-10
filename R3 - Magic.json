@@ -47,6 +47,35 @@
   {
     "type": "MagicEffect",
     "flags": "",
+    "effect_id": "FortifySkill",
+    "icon": "s\\Tx_S_Ftfy_Skill.tga",
+    "texture": "vfx_bluecloud.tga",
+    "bolt_sound": "",
+    "cast_sound": "",
+    "hit_sound": "",
+    "area_sound": "",
+    "cast_visual": "VFX_FortifyCast",
+    "bolt_visual": "VFX_RestoreBolt",
+    "hit_visual": "VFX_RestorationHit",
+    "area_visual": "VFX_RestorationArea",
+    "description": "This effect temporarily increases the value of one of a subject's skills. The skill returns to its original value when the spell ends. The magnitude is the value of the increase in the skill.",
+    "data": {
+      "school": "Restoration",
+      "base_cost": 4.0,
+      "flags": "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+      "color": [
+        166,
+        224,
+        255
+      ],
+      "speed": 1.0,
+      "size": 1.0,
+      "size_cap": 50.0
+    }
+  },
+  {
+    "type": "MagicEffect",
+    "flags": "",
     "effect_id": "SwiftSwim",
     "icon": "s\\Tx_S_swiftswim.tga",
     "texture": "vfx_ill_glow.tga",
@@ -2166,7 +2195,7 @@
         "area": 0,
         "duration": 3,
         "min_magnitude": 5,
-        "max_magnitude": 30
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -2541,6 +2570,29 @@
       "spell_type": "Spell",
       "cost": 5,
       "flags": "AUTO_CALCULATE | PC_START_SPELL"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Com_Mys_Insight",
+    "name": "Detect Enchantment",
+    "effects": [
+      {
+        "magic_effect": "DetectEnchantment",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 50,
+        "max_magnitude": 50
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 25,
+      "flags": "AUTO_CALCULATE"
     }
   },
   {
@@ -3808,6 +3860,75 @@
   {
     "type": "Spell",
     "flags": "",
+    "id": "paralysis",
+    "name": "Paralysis",
+    "effects": [
+      {
+        "magic_effect": "Paralyze",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 6,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Com_Ilu_LivingStatue",
+    "name": "Living Statue",
+    "effects": [
+      {
+        "magic_effect": "Paralyze",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 20,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 60,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Com_Ilu_Paralysis",
+    "name": "Paralysis",
+    "effects": [
+      {
+        "magic_effect": "Paralyze",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 12,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
     "id": "resist poison",
     "name": "Resist Poison",
     "effects": [
@@ -4590,6 +4711,29 @@
   {
     "type": "Spell",
     "flags": "",
+    "id": "greater resist poison",
+    "name": "Greater Resist Poison",
+    "effects": [
+      {
+        "magic_effect": "ResistPoison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 40,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 30,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
     "id": "strong resist shock",
     "name": "Strong Resist Shock",
     "effects": [
@@ -5147,7 +5291,7 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 0,
+        "duration": 1,
         "min_magnitude": 50,
         "max_magnitude": 300
       },
@@ -5378,9 +5522,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 10,
-        "duration": 60,
+        "duration": 30,
         "min_magnitude": 0,
-        "max_magnitude": 125
+        "max_magnitude": 25
       },
       {
         "magic_effect": "DemoralizeCreature",
@@ -5409,8 +5553,8 @@
         "range": "OnTarget",
         "area": 10,
         "duration": 5,
-        "min_magnitude": 50,
-        "max_magnitude": 50
+        "min_magnitude": 5,
+        "max_magnitude": 5
       },
       {
         "magic_effect": "DisintegrateWeapon",
@@ -5419,8 +5563,8 @@
         "range": "OnTarget",
         "area": 10,
         "duration": 5,
-        "min_magnitude": 25,
-        "max_magnitude": 25
+        "min_magnitude": 5,
+        "max_magnitude": 5
       }
     ],
     "data": {
@@ -5474,6 +5618,742 @@
       "cost": 25,
       "max_charge": 125,
       "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masteful red wisdom",
+    "name": "Masterful Red Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Destruction",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masteful stolid armor",
+    "name": "Masterful Stolid Armor",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "HeavyArmor",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful balanced armor",
+    "name": "Masterful Balanced Armor",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "MediumArmor",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful deep biting",
+    "name": "Masterful Deep Biting",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Axe",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful denial",
+    "name": "Masterful Denial",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Block",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful enterprise",
+    "name": "Masterful Enterprise",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Mercantile",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful fleetness",
+    "name": "Masterful Fleetness",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Athletics",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful fluid evasion",
+    "name": "Masterful Fluid Evasion",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Unarmored",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful glib speech",
+    "name": "Masterful Glib Speech",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Speechcraft",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful golden wisdom",
+    "name": "Masterful Golden Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Alteration",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful green wisdom",
+    "name": "Masterful Green Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Restoration",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful hewing",
+    "name": "Masterful Hewing",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "LongBlade",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful horny fist",
+    "name": "Masterful Horny Fist",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "HandToHand",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful impaling thrust",
+    "name": "Masterful Impaling Thrust",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Spear",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful leaping",
+    "name": "Masterful Leaping",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Acrobatics",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful martial craft",
+    "name": "Masterful Martial Craft",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Armorer",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful nimble armor",
+    "name": "Masterful Nimble Armor",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "LightArmor",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful red wisdom",
+    "name": "Masterful Red Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Destruction",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful safekeeping",
+    "name": "Masterful Safekeeping",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Security",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful silver wisdom",
+    "name": "Masterful Silver Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Illusion",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful smiting",
+    "name": "Masterful Smiting",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "BluntWeapon",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful stalking",
+    "name": "Masterful Stalking",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Sneak",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful stolid armor",
+    "name": "Masterful Stolid Armor",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "HeavyArmor",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful sublime wisdom",
+    "name": "Masterful Sublime Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Alchemy",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful sureflight",
+    "name": "Masterful Sureflight",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Marksman",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful swiftblade",
+    "name": "Masterful Swiftblade",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "ShortBlade",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful transcendant wisdom",
+    "name": "Masterful Transcendant Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Conjuration",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful transfiguring wisdom",
+    "name": "Masterful Transfiguring Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Enchant",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "masterful unseen wisdom",
+    "name": "Masterful Unseen Wisdom",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Mysticism",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 15,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Nor_Res_EagleEye",
+    "name": "Eagle Eye",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Marksman",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 40,
+        "min_magnitude": 10,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 100,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Nor_Res_TreefellersRage",
+    "name": "Treefellers Rage",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Axe",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 40,
+        "min_magnitude": 10,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 100,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "T_Com_Res_DeftSecurity",
+    "name": "Deft Security",
+    "effects": [
+      {
+        "magic_effect": "FortifySkill",
+        "skill": "Security",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 15,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 92,
+      "flags": ""
     }
   },
   {
@@ -11653,8 +12533,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 25,
-        "max_magnitude": 100
+        "min_magnitude": 10,
+        "max_magnitude": 40
       }
     ],
     "data": {

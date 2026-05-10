@@ -16,8 +16,5 @@ Target magicka values: TBD
 ---
 
 ## Fortify Skill — Masterful Spells
-All 28 Masterful spells are documented in README - Magic.md.
-Current vanilla values: 15/60s each.
-Target values: TBD — decide new magnitude/duration.
-Copy all from Morrowind.json and add to R3 - Magic.json once values are decided.
-make only one entry in readme
+All 28 Masterful spells documented in README - Magic.md as one entry: `Masterful... 15/60s -> 15/15s`.
+All 28 copied from Morrowind.json into R3 - Magic.json with `duration: 15`. ✓

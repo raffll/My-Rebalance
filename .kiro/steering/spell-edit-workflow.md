@@ -47,8 +47,9 @@ Find the entry in the relevant ESP JSON (`R3 - Magic.json`, `R3 - Races & Births
 Only add JSON IDs as comments in the README for:
 - **Enchantments** (scrolls, weapons, clothing with enchantments)
 - **Tamriel Data potions** (duplicate names that need disambiguation)
+- **Any entry whose display name is shared by multiple JSON records** (vanilla or TD spells/potions with the same name)
 
-Do NOT add IDs for regular spells, vanilla potions, or base cost entries.
+Do NOT add IDs for regular spells or potions that have unique names, or for base cost entries.
 
 ## JSON value scaling
 The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
