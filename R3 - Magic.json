@@ -1247,7 +1247,7 @@
     "bolt_visual": "",
     "hit_visual": "",
     "area_visual": "",
-    "description": "",
+    "description": "This effect summons a wolf. It appears six feet in front of the caster and attacks any entity that attacks the caster until the effect ends or the summoning is killed. If summoned in town, the guards will attack you and the summoning on sight.",
     "data": {
       "school": "Conjuration",
       "base_cost": 30.0,
@@ -1276,7 +1276,7 @@
     "bolt_visual": "",
     "hit_visual": "",
     "area_visual": "",
-    "description": "",
+    "description": "This effect summons a bear. It appears six feet in front of the caster and attacks any entity that attacks the caster until the effect ends or the summoning is killed. If summoned in town, the guards will attack you and the summoning on sight.",
     "data": {
       "school": "Conjuration",
       "base_cost": 30.0,
@@ -1305,7 +1305,7 @@
     "bolt_visual": "",
     "hit_visual": "",
     "area_visual": "",
-    "description": "",
+    "description": "This effect summons a bonewolf. It appears six feet in front of the caster and attacks any entity that attacks the caster until the effect ends or the summoning is killed. If summoned in town, the guards will attack you and the summoning on sight.",
     "data": {
       "school": "Conjuration",
       "base_cost": 30.0,
@@ -3854,7 +3854,7 @@
   {
     "type": "Spell",
     "flags": "",
-    "id": "rest of st. meris",
+    "id": "rest of st. merris",
     "name": "Rest of St. Meris",
     "effects": [
       {
