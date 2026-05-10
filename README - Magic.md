@@ -952,7 +952,7 @@ Llivam's Reversal                           20-30/10s -> 20-30/40s
 
 *Spells - Tamriel Data*
 ```
-Reflect Damage                              15/30s [225 -> 45]              -> [x0.25]
+Reflect Damage                              15/30s [225 -> 56]
 
 St. Naharine's Shield                       10/5s -> 40/5s                  x4/x1
 Distorted Reflection                        20/15s -> 40/30s                x2/x2

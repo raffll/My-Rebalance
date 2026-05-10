@@ -1621,7 +1621,7 @@
     ],
     "data": {
       "spell_type": "Spell",
-      "cost": 45,
+      "cost": 56,
       "flags": ""
     }
   },
@@ -2355,6 +2355,29 @@
   {
     "type": "Spell",
     "flags": "",
+    "id": "detect_creature",
+    "name": "Detect Creature",
+    "effects": [
+      {
+        "magic_effect": "DetectAnimal",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 5,
+        "min_magnitude": 50,
+        "max_magnitude": 150
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 19,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
     "id": "detect enchantment",
     "name": "Detect Enchantment",
     "effects": [
@@ -2372,7 +2395,7 @@
     "data": {
       "spell_type": "Spell",
       "cost": 5,
-      "flags": "AUTO_CALCULATE"
+      "flags": "AUTO_CALCULATE | PC_START_SPELL"
     }
   },
   {
@@ -2625,7 +2648,7 @@
     "data": {
       "spell_type": "Spell",
       "cost": 75,
-      "flags": "AUTO_CALCULATE | PC_START_SPELL"
+      "flags": "AUTO_CALCULATE"
     }
   },
   {
@@ -2833,6 +2856,52 @@
       "spell_type": "Spell",
       "cost": 8,
       "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "feet of notorgo",
+    "name": "Feet of Notorgo",
+    "effects": [
+      {
+        "magic_effect": "FortifyAttribute",
+        "skill": "None",
+        "attribute": "Speed",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 45,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "skylamp's shadow",
+    "name": "Skylamp's Shadow",
+    "effects": [
+      {
+        "magic_effect": "FortifyAttribute",
+        "skill": "None",
+        "attribute": "Speed",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 5,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 19,
+      "flags": "AUTO_CALCULATE | PC_START_SPELL"
     }
   },
   {
@@ -3933,7 +4002,7 @@
     "data": {
       "spell_type": "Spell",
       "cost": 8,
-      "flags": "AUTO_CALCULATE"
+      "flags": "AUTO_CALCULATE | PC_START_SPELL"
     }
   },
   {
@@ -10779,7 +10848,7 @@
     "data": {
       "spell_type": "Spell",
       "cost": 1,
-      "flags": "AUTO_CALCULATE"
+      "flags": "AUTO_CALCULATE | PC_START_SPELL"
     }
   },
   {

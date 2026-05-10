@@ -1,13 +1,13 @@
 {
   "enabled": false,
   "name": "Build All ESPs",
-  "description": "Converts all three JSON files to ESP and overwrites the existing files in place.",
+  "description": "Converts all three JSON files to ESP using --overwrite, then removes any leftover numbered backup files.",
   "version": "1",
   "when": {
     "type": "userTriggered"
   },
   "then": {
     "type": "askAgent",
-    "prompt": "Run the following commands to rebuild all three ESPs from their JSON files. For each one, convert to a .new.esp then overwrite the existing .esp:\n\n$b = \"c:\\Users\\rafal\\OneDrive\\OMEN\\Morrowind\\MO2\\mods\\Remastered Rebalance Redux\"\n\n1. `& \"tes3conv/tes3conv.exe\" \"R3 - Magic.json\" \"R3 - Magic.new.esp\"`\n   `[System.IO.File]::WriteAllBytes(\"$b\\R3 - Magic.esp\", [System.IO.File]::ReadAllBytes(\"$b\\R3 - Magic.new.esp\")); Remove-Item \"$b\\R3 - Magic.new.esp\"`\n\n2. `& \"tes3conv/tes3conv.exe\" \"R3 - Races & Birthsigns.json\" \"R3 - Races & Birthsigns.new.esp\"`\n   `[System.IO.File]::WriteAllBytes(\"$b\\R3 - Races & Birthsigns.esp\", [System.IO.File]::ReadAllBytes(\"$b\\R3 - Races & Birthsigns.new.esp\")); Remove-Item \"$b\\R3 - Races & Birthsigns.new.esp\"`\n\n3. `& \"tes3conv/tes3conv.exe\" \"R3 - Core.json\" \"R3 - Core.new.esp\"`\n   `[System.IO.File]::WriteAllBytes(\"$b\\R3 - Core.esp\", [System.IO.File]::ReadAllBytes(\"$b\\R3 - Core.new.esp\")); Remove-Item \"$b\\R3 - Core.new.esp\"`"
+    "prompt": "Run the following commands to rebuild all three ESPs from their JSON files, then clean up any numbered backup files tes3conv may have created:\n\n1. `& \"tes3conv/tes3conv.exe\" --overwrite \"R3 - Magic.json\" \"R3 - Magic.esp\"`\n2. `& \"tes3conv/tes3conv.exe\" --overwrite \"R3 - Races & Birthsigns.json\" \"R3 - Races & Birthsigns.esp\"`\n3. `& \"tes3conv/tes3conv.exe\" --overwrite \"R3 - Core.json\" \"R3 - Core.esp\"`\n4. `Get-ChildItem -Filter \"*.???.esp\" | Remove-Item`"
   }
 }
