@@ -17,18 +17,12 @@ Spell Name                                  [default mag/dur from vanilla] -> [n
 Column positions (0-indexed):
 - **col 0**: spell/entry name
 - **col 44**: values (mag/dur)
-- **col 76**: comment (notes, flags, scale)
-- **col 120**: ID (enchantment ID, TD potion ID, or disambiguating JSON ID)
+- **col 76**: comments and IDs (notes, flags, scale, `id: <json_id>`)
 
-IDs always go at col 120, even when there is no comment. Pad with spaces to reach the column.
-
-Example with comment and ID:
+Multiple comments separated by `;`. IDs use `id:` prefix and go last. Example:
 ```
-Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s           used by Aryon           sc_fadersleadenflesh_en
-```
-Example with ID only (no comment):
-```
-Scroll of Baleful Suffering                 0−25/30s                                                sc_balefulsuffering_en
+Paralysis                                   6s [auto -> 12]                 used by Scribs; id: scrib_paralysis
+Scroll of Baleful Suffering                 0−25/30s                        id: sc_balefulsuffering_en
 ```
 
 - Values are `magnitude/duration` (e.g. `20/10s -> 50/40s`)
@@ -43,6 +37,7 @@ Scroll of Baleful Suffering                 0−25/30s                          
 - Always use `xMAG/xDUR` format (e.g. `x10/x1` for magnitude-only, `x1/x4` for duration-only). Never write `x10 dur` or `x4 mag`.
 - Do not add scale comments to potions.
 - If the scale follows directly from the base cost change (opposite direction, same factor — e.g. base cost ÷2 → spells ×2), omit the scale comment entirely since it is implied.
+- Potions always use a value from the potion tier table — never scale potion mag/dur from base cost changes.
 - If the user writes a scale like `! 5x/2x` as a trailing comment on a README entry, it means: apply that scale to all entries in that section (until an empty line or a new `!` trigger appears), compute and write the new target values in README and JSON, then remove the scale comment.
 - If the user writes `! [Nx]` (a single value in brackets, e.g. `! [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
 - If a `! Nx` scale comment appears on a **Base Cost** line, apply that scale to the Base Cost value, then remove the scale comment.
@@ -64,12 +59,20 @@ Find the entry in the relevant ESP JSON (`R3 - Magic.json`, `R3 - Races & Births
 - If the spell **does not exist** in the ESP JSON: copy the full entry from the appropriate default reference JSON in `tes3conv/` (Morrowind.json, Tribunal.json, Bloodmoon.json, or Tamriel_Data.json), then apply the new values.
 
 ## README IDs
-Only add JSON IDs as comments in the README for:
-- **Enchantments** (scrolls, weapons, clothing with enchantments)
-- **Tamriel Data potions** (duplicate names that need disambiguation)
-- **Any entry whose display name is shared by multiple JSON records** (vanilla or TD spells/potions with the same name)
+IDs go in the comment section of the line (col 76), prefixed with `id: `. Example:
+```
+Paralysis                                   6s [auto -> 12]                 used by Scribs; id: scrib_paralysis
+Scroll of Baleful Suffering                 0−25/30s                        id: sc_balefulsuffering_en
+```
 
-Do NOT add IDs for regular spells or potions that have unique names, or for base cost entries.
+Add IDs for:
+- **All enchanted items** (scrolls, weapons, clothing with enchantments) — always include `id:`
+- **Spells or potions that share a display name with another record** — both need `id:`, EXCEPT when one is from Tamriel Data (starts with `T_`) and the other is vanilla: in that case only the TD entry needs `id:`
+- **All Tamriel Data records** — always include `id:` since TD IDs start with `T_` and are not obvious from the name
+
+Do NOT add IDs for vanilla spells/potions with unique names, or for base cost entries.
+
+The col 120 rule is retired — IDs are part of the comment column at col 76, using `id:` prefix to distinguish from other comments. Multiple comments are separated by `;`.
 
 ## JSON value scaling
 The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
@@ -94,6 +97,7 @@ When a magic effect's base cost is changed, spells of that school must be adjust
 
 ## Notes
 - Never modify files inside `tes3conv/` — those are read-only vanilla references.
+- Never change the `id` field of any record in ESP JSON files. IDs are immutable — only `name` and other data fields may be edited.
 - README and JSON must always be updated together. ESP conversion is handled separately and is not part of this workflow.
 - Only rebuild the ESP for the JSON file that was actually changed.
 - The top-level `## Potions` section in README - Magic.md defines default Bargain and Cheap values for all potions (e.g. `Bargain... 5/8s -> 6/18s`). If an individual potion entry has its own explicit values, those override the general rule.

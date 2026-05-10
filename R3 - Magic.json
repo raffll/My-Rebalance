@@ -6245,7 +6245,7 @@
     "type": "Spell",
     "flags": "",
     "id": "masterful transcendant wisdom",
-    "name": "Masterful Transcendant Wisdom",
+    "name": "Masterful Transcendent Wisdom",
     "effects": [
       {
         "magic_effect": "FortifySkill",

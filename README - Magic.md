@@ -77,8 +77,8 @@ Exclusive Potion of Burden                  20/60s -> 200/600s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Burden                      8/15s -> 80/240s                                                            T_Nor_Potion_Burden_C
-Quality Potion of Burden                    15/45s -> 150/450s                                                          T_Nor_Potion_Burden_Q
+Cheap Potion of Burden                      8/15s -> 80/240s                id: T_Nor_Potion_Burden_C
+Quality Potion of Burden                    15/45s -> 150/450s              id: T_Nor_Potion_Burden_Q
 ```
 
 *Spells*
@@ -98,11 +98,11 @@ Great Burden of Sin -> Burden of Sin        40/10s -> 80/50s
 Burden of Sin -> Great Burden of Sin        40-60/20s -> 80-120/100s
 Crushing Burden of Sin                      60-80/30s -> 120-160/150s
 
-Aryon's Rest                                10/10s -> 100/10s               used by Aryon
-Hand of Odros                               30-40/60s -> 300-400/60s        used by Odros
-Wrath of Odros                              20-30/50s -> 200-300/50s        used by Odros
-Harthoon's Heavy Eyes                       100/10s -> 1000/10s             used by Barilzar
-Hunter's Venom                              50/10s -> 500/10s               used by Hircine's Aspect of Guile
+Aryon's Rest                                10/10s -> 100/10s               used by: Aryon
+Hand of Odros                               30-40/60s -> 300-400/60s        used by: Odros
+Wrath of Odros                              20-30/50s -> 200-300/50s        used by: Odros
+Harthoon's Heavy Eyes                       100/10s -> 1000/10s             used by: Barilzar
+Hunter's Venom                              50/10s -> 500/10s               used by: Hircine's Aspect of Guile
 ```
 
 *Spells - Tamriel Data*
@@ -113,16 +113,16 @@ Weight of Guilt                             500/3s -> 5000/3s
 
 *Enchantments*
 ```
-Scroll of Baleful Suffering                 0−25/30s                                                                    sc_balefulsuffering_en
-Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s                                                       sc_fadersleadenflesh_en
+Scroll of Baleful Suffering                 0−25/30s                        id: sc_balefulsuffering_en
+Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s           id: sc_fadersleadenflesh_en
 
-Black Jinx                                  25-100/120s -> 250-1000/120s                                                black_jinx_en_unique
-Spear of the Hunter                         50/10s -> 500/10s                                                           bm_hunterspear
+Black Jinx                                  25-100/120s -> 250-1000/120s    id: black_jinx_en_unique
+Spear of the Hunter                         50/10s -> 500/10s               id: bm_hunterspear
 ```
 
 *Enchantments - Tamriel Data*
 ```
-Scroll of Makkun's Heavy Hand               30/35s -> 300/35s                                                           T_Once_BurdenTouch30-35
+Scroll of Makkun's Heavy Hand               30/35s -> 300/35s               id: T_Once_BurdenTouch30-35
 ```
 
 ------------------------------------------------------------
@@ -142,9 +142,9 @@ Exclusive Potion of Feather                 20/60s -> 200/600s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Feather                     8/15s -> 80/240s                                                            T_Nor_Potion_Feather_C
-Standard Potion of Feather                  10/30s -> 100/300s                                                          T_Com_Potion_Feather_S
-Quality Potion of Feather                   15/45s -> 150/450s                                                          T_Nor_Potion_Feather_Q
+Cheap Potion of Feather                     8/15s -> 80/240s                id: T_Nor_Potion_Feather_C
+Standard Potion of Feather                  10/30s -> 100/300s              id: T_Com_Potion_Feather_S
+Quality Potion of Feather                   15/45s -> 150/450s              id: T_Nor_Potion_Feather_Q
 ```
 
 *Spells*
@@ -164,12 +164,12 @@ Zenithar's Arms                             50/10s -> 500/10s
 
 *Enchantments*
 ```
-Feather Belt                                20/10s -> 40/50s                                                            feather_en
-Feather Ring                                20/10s -> 40/50s                                                            feather_en
-Feather Shield                              20/10s -> 40/50s                                                            feather_en
-Saint's Shield                              20/10s -> 100/20s                                                           saint's shield_en
+Feather Belt                                20/10s -> 40/50s                id: feather_en
+Feather Ring                                20/10s -> 40/50s                id: feather_en
+Feather Shield                              20/10s -> 40/50s                id: feather_en
+Saint's Shield                              20/10s -> 100/20s               id: saint's shield_en
 
-Juicedaw Feather Ring                       50/10s -> 250/20s                                                           ulms juicedaw's feather_en
+Juicedaw Feather Ring                       50/10s -> 250/20s               id: ulms juicedaw's feather_en
 ```
 
 ------------------------------------------------------------
@@ -208,8 +208,8 @@ Tsun's Ward                                 20/20s -> 40/20s
 
 *Enchantments - Tamriel Data*
 ```
-Scroll of The Falling Barrier               4/40s -> 8/40s                                                              T_Once_FallingBarrier
-                                            3/20s -> 5/20s                                                              T_Once_FallingBarrier
+Scroll of The Falling Barrier               4/40s -> 8/40s                  id: T_Once_FallingBarrier
+                                            3/20s -> 5/20s                  id: T_Once_FallingBarrier
 ```
 
 ------------------------------------------------------------
@@ -244,8 +244,8 @@ Exclusive Potion of Fire Shield             20/60s -> 10/30s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Fire Shield                 8/15s -> 4/12s                                                              T_Nor_Potion_ShieldFire_C
-Quality Potion of Fire Shield               15/45s -> 8/24s                                                             T_Nor_Potion_ShieldFire_Q
+Cheap Potion of Fire Shield                 8/15s -> 4/12s                  id: T_Nor_Potion_ShieldFire_C
+Quality Potion of Fire Shield               15/45s -> 8/24s                 id: T_Nor_Potion_ShieldFire_Q
 ```
 
 ------------------------------------------------------------
@@ -275,8 +275,8 @@ Exclusive Frost Shield                      20/30s -> 10/30s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Frost Shield                8/15s -> 4/12s                                                              T_Nor_Potion_ShieldFrost_C
-Quality Frost Shield                        15/45s -> 8/24s                                                             T_Nor_Potion_ShieldFrost_Q
+Cheap Potion of Frost Shield                8/15s -> 4/12s                  id: T_Nor_Potion_ShieldFrost_C
+Quality Frost Shield                        15/45s -> 8/24s                 id: T_Nor_Potion_ShieldFrost_Q
 ```
 
 ------------------------------------------------------------
@@ -293,7 +293,7 @@ Lightning Shield -> Shock Shield            10/30s
 Strong Shock Shield                         12/30s
 Fierce Shock Shield                         5-11/10s
 
-Shock Shield -> Lightning Shield            3/20s                           used by Centurion Spheres
+Shock Shield -> Lightning Shield            3/20s                           used by: Centurion Spheres
 ```
 
 *Spells - Tamriel Data*
@@ -312,8 +312,8 @@ Exclusive Lightning Shield                  20/60s -> 10/30s
 
 *Potions - Tamriel Data*
 ```
-Cheap Lightning Shield                      8/15s -> 4/12s                                                              T_Nor_Potion_ShieldLightning_C
-Quality Lightning Shield                    15/45s -> 8/24s                                                             T_Nor_Potion_ShieldLightning_Q
+Cheap Lightning Shield                      8/15s -> 4/12s                  id: T_Nor_Potion_ShieldLightning_C
+Quality Lightning Shield                    15/45s -> 8/24s                 id: T_Nor_Potion_ShieldLightning_Q
 ```
 
 ------------------------------------------------------------
@@ -513,7 +513,7 @@ Ordeal of St. Olms                          5-20/60s -> 50-200/60s
 
 Weariness                                   1-10/1s -> 10-100/20s           x10/x20
 
-Dagoth's Bosom                              20/30s -> 200/30s               used by Ascended Sleepers
+Dagoth's Bosom                              20/30s -> 200/30s               used by: Ascended Sleepers
 ```
 
 *Spells - Tamriel Data*
@@ -546,9 +546,9 @@ Base Cost                                   6 -> 0.6
 ```
 Armor Eater                                 10-30/1s -> 200-600/1s          x20/x1
 
-Disintegrate Armor                          6-25/1s -> 60-250/1s            used by Hungers
-Brittlewind                                 20/10s                          used by Fryse Hags
-Eddard's Wrath                              4-9/15s                         used by Draugr
+Disintegrate Armor                          6-25/1s -> 60-250/1s            used by: Hungers
+Brittlewind                                 20/10s                          used by: Fryse Hags
+Eddard's Wrath                              4-9/15s                         used by: Draugr
 ```
 
 *Spells - Tamriel Data*
@@ -562,12 +562,12 @@ Master Acid Trap                            150-300/1s -> 150-300/10s
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s                                                                        sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s                            id: sc_balefulsuffering_en
 ```
 
 *Enchantments*
 ```
-Daedric Crescent                            5-30/1s -> 50-300/1s                                                        Crescent Moon
+Daedric Crescent                            5-30/1s -> 50-300/1s            id: Crescent Moon
 ```
 
 ------------------------------------------------------------
@@ -581,9 +581,9 @@ Base Cost                                   6 -> 1.2
 ```
 Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s) x10/x1
 
-Disintegrate Weapon                         6-25/1s -> 30-125/1s            used by Hungers
-Brittlewind                                 20/10s                          used by Fryse Hags
-Eddard's Wrath                              4-9/15s                         used by Draugr
+Disintegrate Weapon                         6-25/1s -> 30-125/1s            used by: Hungers
+Brittlewind                                 20/10s                          used by: Fryse Hags
+Eddard's Wrath                              4-9/15s                         used by: Draugr
 ```
 
 *Spells - Tamriel Data*
@@ -597,7 +597,7 @@ Master Acid Trap                            150-300/1s -> 150-300/5s
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s                                                                        sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s                            id: sc_balefulsuffering_en
 ```
 
 ------------------------------------------------------------
@@ -656,8 +656,8 @@ Exclusive Potion of Light                   20/60s -> 100/300s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Light                       8/15s -> 40/120s                                                            T_Nor_Potion_Light_C
-Quality Potion of Light                     15/45s -> 80/240s                                                           T_Nor_Potion_Light_Q
+Cheap Potion of Light                       8/15s -> 40/120s                id: T_Nor_Potion_Light_C
+Quality Potion of Light                     15/45s -> 80/240s               id: T_Nor_Potion_Light_Q
 ```
 
 ------------------------------------------------------------
@@ -678,8 +678,8 @@ Exclusive Potion of Night-Eye               20/60s -> 100/300s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Night-Eye                   8/15s -> 40/120s                                                            T_Nor_Potion_NightEye_C
-Quality Potion of Night-Eye                 15/45s -> 80/240s                                                           T_Nor_Potion_NightEye_Q
+Cheap Potion of Night-Eye                   8/15s -> 40/120s                id: T_Nor_Potion_NightEye_C
+Quality Potion of Night-Eye                 15/45s -> 80/240s               id: T_Nor_Potion_NightEye_Q
 ```
 
 ------------------------------------------------------------
@@ -692,7 +692,7 @@ Base Cost                                   40 -> 80
 *Spells*
 ```
 Paralysis                                   5s
-Paralysis                                   6s [auto -> 12]                 used by Scribs                              scrib_paralysis
+Paralysis                                   6s [auto -> 12]                 id: scrib_paralysis; used by: Scribs                              
 ```
 
 *Spells - Tamriel Data*
@@ -919,7 +919,7 @@ Base Cost                                   0.75 -> 0.15
 
 *Potions*
 ```
-Potion of Detect Creatures                  10/15s -> 60/180s                                                           p_detect_creatures_s
+Potion of Detect Creatures                  10/15s -> 60/180s               
 ```
 
 *Potions - Tamriel Data*
@@ -941,7 +941,7 @@ Base Cost                                   1 -> 0.2
 
 *Potions*
 ```
-Potion of Detect Enchantments               10/15s -> 60/180s                                                           p_detect_enchantment_s
+Potion of Detect Enchantments               10/15s -> 60/180s
 ```
 
 *Potions - Tamriel Data*
@@ -956,7 +956,7 @@ Detect Enchantment                          10/10s -> 50/10s
 
 *Spells - Tamriel Data*
 ```
-Detect Enchantment                          10/10s -> 50/10s                                                            T_Com_Mys_Insight
+Detect Enchantment                          10/10s -> 50/10s                id: T_Com_Mys_Insight
 ```
 
 ------------------------------------------------------------
@@ -1287,8 +1287,8 @@ Exclusive Fire Resistance                   20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Fire Resistance                       8/15s -> 15/45s                                                             T_Nor_Potion_ResistFire_C
-Quality Fire Resistance                     15/45s -> 30/90s                                                            T_Nor_Potion_ResistFire_Q
+Cheap Fire Resistance                       8/15s -> 15/45s                 id: T_Nor_Potion_ResistFire_C
+Quality Fire Resistance                     15/45s -> 30/90s                id: T_Nor_Potion_ResistFire_Q
 ```
 
 *Spells*
@@ -1318,8 +1318,8 @@ Exclusive Frost Resistance                  20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Frost Resistance                      8/15s -> 15/45s                                                             T_Nor_Potion_ResistFrost_C
-Quality Frost Resistance                    15/45s -> 30/90s                                                            T_Nor_Potion_ResistFrost_Q
+Cheap Frost Resistance                      8/15s -> 15/45s                 id: T_Nor_Potion_ResistFrost_C
+Quality Frost Resistance                    15/45s -> 30/90s                id: T_Nor_Potion_ResistFrost_Q
 ```
 
 *Spells*
@@ -1354,8 +1354,8 @@ Exclusive Shock Resistance                  20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Shock Resistance                      8/15s -> 15/45s                                                             T_Nor_Potion_ResistShock_C
-Quality Shock Resistance                    15/45s -> 30/90s                                                            T_Nor_Potion_ResistShock_Q
+Cheap Shock Resistance                      8/15s -> 15/45s                 id: T_Nor_Potion_ResistShock_C
+Quality Shock Resistance                    15/45s -> 30/90s                id: T_Nor_Potion_ResistShock_Q
 ```
 
 *Spells*
@@ -1384,8 +1384,8 @@ Exclusive Poison Resistance                 20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Poison Resistance                     8/15s -> 15/45s                                                             T_Nor_Potion_ResistPoison_C
-Quality Poison Resistance                   15/45s -> 30/90s                                                            T_Nor_Potion_ResistPoison_Q
+Cheap Poison Resistance                     8/15s -> 15/45s                 id: T_Nor_Potion_ResistPoison_C
+Quality Poison Resistance                   15/45s -> 30/90s                id: T_Nor_Potion_ResistPoison_Q
 ```
 
 *Spells*
@@ -1415,8 +1415,8 @@ Exclusive Magicka Resistance                20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Magicka Resistance                    8/15s -> 15/45s                                                             T_Nor_Potion_ResistMagicka_C
-Quality Magicka Resistance                  15/45s -> 30/90s                                                            T_Nor_Potion_ResistMagicka_Q
+Cheap Magicka Resistance                    8/15s -> 15/45s                 id: T_Nor_Potion_ResistMagicka_C
+Quality Magicka Resistance                  15/45s -> 30/90s                id: T_Nor_Potion_ResistMagicka_Q
 ```
 
 *Spells*
@@ -1432,7 +1432,13 @@ Magickguard                                 20-40/10s -> 20-40/40s
 
 ### Resist Paralysis
 ```
-Base Cost                                   0.20 -> 0.5
+Base Cost                                   0.20                            !
+```
+
+*Potions - Tamriel Data*
+```
+Bargain Paralysis Resistance                7/10s -> 6/18s                  id: T_Com_Potion_ResistParalysis_B
+Cheap Paralysis Resistance                  8/15s -> 8/24s                  id: T_Com_Potion_ResistParalysis_C
 ```
 
 *Spells*
