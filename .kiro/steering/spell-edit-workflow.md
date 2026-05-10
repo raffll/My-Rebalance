@@ -1,9 +1,14 @@
 # Spell Edit Workflow
 
-When asked to modify a spell:
+This workflow applies to all three file pairs:
+- `README - Magic.md` ↔ `R3 - Magic.json` → `R3 - Magic.esp`
+- `README - Races & Birthsigns.md` ↔ `R3 - Races & Birthsigns.json` → `R3 - Races & Birthsigns.esp`
+- `README - Core.md` ↔ `R3 - Core.json` → `R3 - Core.esp`
+
+When asked to modify a spell, race ability, birthsign, or game setting:
 
 ## 1. README update
-Find the spell's section in the relevant `README - *.md` file and add or update its entry using this format:
+Find the entry's section in the relevant `README - *.md` file and add or update its entry using this format:
 
 ```
 Spell Name                                  [default mag/dur from vanilla] -> [new mag/dur]
@@ -18,13 +23,21 @@ Spell Name                                  [default mag/dur from vanilla] -> [n
 - Always use `xMAG/xDUR` format (e.g. `x10/x1` for magnitude-only, `x1/x4` for duration-only). Never write `x10 dur` or `x4 mag`.
 - Do not add scale comments to potions.
 - If the scale follows directly from the base cost change (opposite direction, same factor — e.g. base cost ÷2 → spells ×2), omit the scale comment entirely since it is implied.
-- If the user writes a scale like `-> 5x/2x` as a trailing comment on a README entry (with `->` but no target value after it), it means: apply that scale to all entries in that section (until an empty line or a new `->` appears), compute and write the new target values in README and JSON, then remove the scale comment.
-- If the user writes `-> [Nx]` (a single value in brackets, e.g. `-> [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
-- If a `-> Nx` scale comment appears on a **Base Cost** line, apply that scale to the Base Cost value, then remove the scale comment.
+- If the user writes a scale like `! 5x/2x` as a trailing comment on a README entry, it means: apply that scale to all entries in that section (until an empty line or a new `!` trigger appears), compute and write the new target values in README and JSON, then remove the scale comment.
+- If the user writes `! [Nx]` (a single value in brackets, e.g. `! [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
+- If a `! Nx` scale comment appears on a **Base Cost** line, apply that scale to the Base Cost value, then remove the scale comment.
 - The `->` means: left side is the vanilla/default value, right side is the new target value
 
+## The `!` marker
+`!` is a general attention marker. When the user writes `!` anywhere — on a line, a section header, or as a standalone comment — it means: **look at this, analyze it, and report back**. Do not apply any changes unless the user explicitly asks after the analysis.
+
+Specific `!` trigger forms that do cause changes (only when the hook processes them):
+- `! Nx/Nx` trailing on a spell entry — scale trigger for mag/dur
+- `! [Nx]` trailing on a spell entry — scale trigger for cost override
+- `! Nx` on a Base Cost line — scale trigger for base cost
+
 ## 2. JSON update
-Find the spell entry in the relevant ESP JSON (e.g. `R3 - Magic.json`).
+Find the entry in the relevant ESP JSON (`R3 - Magic.json`, `R3 - Races & Birthsigns.json`, or `R3 - Core.json`).
 
 - If the spell **already exists** in the ESP JSON: update `min_magnitude`, `max_magnitude`, `duration`, `area` as needed.
 - If the spell **does not exist** in the ESP JSON: copy the full entry from the appropriate default reference JSON in `tes3conv/` (Morrowind.json, Tribunal.json, Bloodmoon.json, or Tamriel_Data.json), then apply the new values.
@@ -45,7 +58,7 @@ The scale is applied to the **vanilla default values** (left of `->` in README) 
 
 The JSON and README store the same new values — no conversion needed between them.
 
-**Important**: When a scale is specified (either by the user or via `-> Nx/Nx` trigger in README), always apply it to the vanilla default (left of `->`) and replace whatever target value was previously on the right side — even if a target already exists. The value on the right of `->` is always the output of the last scale and is meaningless as input.
+**Important**: When a scale is specified (either by the user or via `! Nx/Nx` trigger in README), always apply it to the vanilla default (left of `->`) and replace whatever target value was previously on the right side — even if a target already exists. The value on the right of `->` is always the output of the last scale and is meaningless as input.
 
 **x1/x1 special case**: Scale x1/x1 means revert to vanilla. Set the target values to the vanilla defaults — keep the entry in both README and JSON, just update the values.
 
@@ -60,6 +73,7 @@ When a magic effect's base cost is changed, spells of that school must be adjust
 ## Notes
 - Never modify files inside `tes3conv/` — those are read-only vanilla references.
 - README and JSON must always be updated together. ESP conversion is handled separately and is not part of this workflow.
+- Only rebuild the ESP for the JSON file that was actually changed.
 
 ## Modification Policy
 Only hooks may trigger actual modifications to README, JSON, and ESP files. Direct user requests must not apply changes — they may only update steering rules or prepare instructions for hooks to execute.

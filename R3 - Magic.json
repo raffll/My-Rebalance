@@ -290,7 +290,7 @@
     "bolt_visual": "VFX_AlterationBolt",
     "hit_visual": "VFX_AlterationHit",
     "area_visual": "VFX_AlterationArea",
-    "description": "This effect opens a locked container or door. The effect's magnitude is the highest lock level that can be opened. ",
+    "description": "This effect opens a locked container or door. The effect's magnitude is the highest lock level that can be opened.",
     "data": {
       "school": "Alteration",
       "base_cost": 12.0,

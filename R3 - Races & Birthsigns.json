@@ -1212,7 +1212,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 60,
+        "duration": 10,
         "min_magnitude": 25,
         "max_magnitude": 25
       },
@@ -1222,7 +1222,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 60,
+        "duration": 10,
         "min_magnitude": 25,
         "max_magnitude": 25
       }
