@@ -45,6 +45,14 @@ Flatten min/max to single values and make all OnTarget (Noise and Cruel Noise ar
 
 ---
 
+## Mages Guild — Attribute Requirements
+In README - Factions.md, update attribute columns (Int/Wil) to increment by 5 per rank starting at 30:
+30, 35, 40, 45, 50, 55, 60, 65, 70, 75
+
+Also create R3 - Factions.json with the Mages Guild entry copied from tes3conv/TR_Factions.json, applying the new attribute values.
+
+---
+
 ## Scrib Paralysis — Duration
 Change `scrib_paralysis` duration from 6s to 12s in R3 - Magic.json.
 Update README entry: `6s [auto -> 6] -> 12s [auto -> 12]`.
