@@ -11448,14 +11448,118 @@
         "attribute": "Agility",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_agility_c",
+    "name": "Cheap Restore Agility",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Agility",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_agility_s",
+    "name": "Standard Restore Agility",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Agility",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_agility_q",
+    "name": "Quality Restore Agility",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Agility",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_agility_e",
+    "name": "Exclusive Restore Agility",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Agility",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -11474,14 +11578,118 @@
         "attribute": "Endurance",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_endurance_c",
+    "name": "Cheap Restore Endurance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Endurance",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_endurance_s",
+    "name": "Standard Restore Endurance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Endurance",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_endurance_q",
+    "name": "Quality Restore Endurance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Endurance",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_endurance_e",
+    "name": "Exclusive Restore Endurance",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Endurance",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -11552,9 +11760,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 36,
-        "min_magnitude": 12,
-        "max_magnitude": 12
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -11760,14 +11968,118 @@
         "attribute": "Intelligence",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_intelligence_c",
+    "name": "Cheap Restore Intelligence",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Intelligence",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_intelligence_s",
+    "name": "Standard Restore Intelligence",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Intelligence",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_intelligence_q",
+    "name": "Quality Restore Intelligence",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Intelligence",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_intelligence_e",
+    "name": "Exclusive Restore Intelligence",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Intelligence",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -11786,14 +12098,118 @@
         "attribute": "Luck",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_luck_c",
+    "name": "Cheap Restore Luck",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Luck",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_luck_s",
+    "name": "Standard Restore Luck",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Luck",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_luck_q",
+    "name": "Quality Restore Luck",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Luck",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_luck_e",
+    "name": "Exclusive Restore Luck",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Luck",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -11942,14 +12358,118 @@
         "attribute": "Personality",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_personality_c",
+    "name": "Cheap Restore Personality",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Personality",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_personality_s",
+    "name": "Standard Restore Personality",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Personality",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_personality_q",
+    "name": "Quality Restore Personality",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Personality",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_personality_e",
+    "name": "Exclusive Restore Personality",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Personality",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -11968,14 +12488,118 @@
         "attribute": "Speed",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_speed_c",
+    "name": "Cheap Restore Speed",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Speed",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_speed_s",
+    "name": "Standard Restore Speed",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Speed",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_speed_q",
+    "name": "Quality Restore Speed",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Speed",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_speed_e",
+    "name": "Exclusive Restore Speed",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Speed",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -11994,14 +12618,118 @@
         "attribute": "Strength",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_strength_c",
+    "name": "Cheap Restore Strength",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Strength",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_strength_s",
+    "name": "Standard Restore Strength",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Strength",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_strength_q",
+    "name": "Quality Restore Strength",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Strength",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_strength_e",
+    "name": "Exclusive Restore Strength",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Strength",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -12020,14 +12748,118 @@
         "attribute": "Willpower",
         "range": "OnSelf",
         "area": 0,
-        "duration": 0,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 3,
+        "min_magnitude": 1,
+        "max_magnitude": 1
       }
     ],
     "data": {
       "weight": 1.5,
       "value": 5,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_willpower_c",
+    "name": "Cheap Restore Willpower",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Cheap_01.nif",
+    "icon": "m\\Tx_potion_cheap_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Willpower",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 6,
+        "min_magnitude": 2,
+        "max_magnitude": 2
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_willpower_s",
+    "name": "Standard Restore Willpower",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Willpower",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_willpower_q",
+    "name": "Quality Restore Willpower",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Willpower",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_restore_willpower_e",
+    "name": "Exclusive Restore Willpower",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "RestoreAttribute",
+        "skill": "None",
+        "attribute": "Willpower",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },

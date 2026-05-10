@@ -1115,7 +1115,7 @@ Bargain Restore Fatigue                     5/5s -> 3/9s
 Cheap Restore Fatigue                       10/5s -> 4/12s
 Standard Restore Fatigue                    20/5s -> 6/18s
 Quality Restore Fatigue                     40/5s -> 8/24s
-Exclusive Restore Fatigue                   80/5s -> 12/36s
+Exclusive Restore Fatigue                   80/5s -> 10/30s
 ```
 
 *Spells*
@@ -1134,6 +1134,57 @@ Greater Stamina                             30-60/30s -> 30-60/12s
 ### Restore Attribute
 ```
 Base Cost                                   1 -> 8
+```
+
+*Potions*
+```
+Bargain Restore Agility                     5/0s -> 1/3s
+Cheap Restore Agility                       8/0s -> 2/6s
+Standard Restore Agility                    10/0s -> 3/9s
+Quality Restore Agility                     15/0s -> 4/12s
+Exclusive Restore Agility                   20/0s -> 6/18s
+
+Bargain Restore Endurance                   5/0s -> 1/3s
+Cheap Restore Endurance                     8/0s -> 2/6s
+Standard Restore Endurance                  10/0s -> 3/9s
+Quality Restore Endurance                   15/0s -> 4/12s
+Exclusive Restore Endurance                 20/0s -> 6/18s
+
+Bargain Restore Intelligence                5/0s -> 1/3s
+Cheap Restore Intelligence                  8/0s -> 2/6s
+Standard Restore Intelligence               10/0s -> 3/9s
+Quality Restore Intelligence                15/0s -> 4/12s
+Exclusive Restore Intelligence              20/0s -> 6/18s
+
+Bargain Restore Luck                        5/0s -> 1/3s
+Cheap Restore Luck                          8/0s -> 2/6s
+Standard Restore Luck                       10/0s -> 3/9s
+Quality Restore Luck                        15/0s -> 4/12s
+Exclusive Restore Luck                      20/0s -> 6/18s
+
+Bargain Restore Personality                 5/0s -> 1/3s
+Cheap Restore Personality                   8/0s -> 2/6s
+Standard Restore Personality                10/0s -> 3/9s
+Quality Restore Personality                 15/0s -> 4/12s
+Exclusive Restore Personality               20/0s -> 6/18s
+
+Bargain Restore Speed                       5/0s -> 1/3s
+Cheap Restore Speed                         8/0s -> 2/6s
+Standard Restore Speed                      10/0s -> 3/9s
+Quality Restore Speed                       15/0s -> 4/12s
+Exclusive Restore Speed                     20/0s -> 6/18s
+
+Bargain Restore Strength                    5/0s -> 1/3s
+Cheap Restore Strength                      8/0s -> 2/6s
+Standard Restore Strength                   10/0s -> 3/9s
+Quality Restore Strength                    15/0s -> 4/12s
+Exclusive Restore Strength                  20/0s -> 6/18s
+
+Bargain Restore Willpower                   5/0s -> 1/3s
+Cheap Restore Willpower                     8/0s -> 2/6s
+Standard Restore Willpower                  10/0s -> 3/9s
+Quality Restore Willpower                   15/0s -> 4/12s
+Exclusive Restore Willpower                 20/0s -> 6/18s
 ```
 
 *Spells*
@@ -1425,7 +1476,7 @@ Resist Magicka                              10/5s -> 20/20s                 x2/x
 Variable Resist Magicka                     1-30/10s -> 1-30/40s
 Strong Resist Magicka                       20/10s -> 20/40s
 Great Resist Magicka                        30/10s -> 30/40s
-Magickguard                                 20-40/10s -> 20-40/40s
+Magickguard                                 20-40/10s -> 20-40/40s          !
 ```
 
 ------------------------------------------------------------
