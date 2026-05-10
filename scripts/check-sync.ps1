@@ -229,9 +229,7 @@ function Test-Match {
 # ---------------------------------------------------------------------------
 
 $pairs = @(
-    @{ Readme = "README - Magic.md";              Json = "R3 - Magic.json" },
-    @{ Readme = "README - Races & Birthsigns.md"; Json = "R3 - Races & Birthsigns.json" },
-    @{ Readme = "README - Core.md";               Json = "R3 - Core.json" }
+    @{ Readme = "README - Magic.md"; Json = "R3 - Magic.json" }
 )
 
 if ($File -ne "") {
