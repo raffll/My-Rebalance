@@ -10,6 +10,8 @@ Creatures to copy and modify:
 - `atronach_flame_ttmk` — Flame Atronach (Morrowind.json)
 - Frost Atronachs — find IDs in Morrowind.json
 - `ascended_sleeper` — Ascended Sleeper (Morrowind.json), current magicka: 300
+- Hungers — find IDs in Morrowind.json
+- Scribs — find IDs in Morrowind.json
 
 Target magicka values: TBD
 
@@ -40,6 +42,21 @@ Flatten min/max to single values and make all OnTarget (Noise and Cruel Noise ar
 - `sMagicInsufficientCharge` stored as Float in JSON — should be String `""`, verify tes3conv handles it correctly
 - **Morag Tong Polished**: no README entry in `optional/README - Optional.md` — add one
 - **Morag Tong Polished**: script hardcodes `murdercost = -5200` — needs adjustment to match current crime values in R3 - Core
+
+---
+
+## Paralyze Spells — Split Entry
+In README - Magic.md, under `### Paralyze`, replace the single `Paralysis` entry with two separate lines:
+- `paralysis` — revert to vanilla (5s, cost auto). Remove from R3 - Magic.json entirely (or keep with vanilla values if already present).
+- `scrib_paralysis` — keep as-is (6s, cost 6). Add ID comment `[scrib_paralysis]` since both share the name "Paralysis".
+
+README result should look like:
+```
+Paralysis                                   5s                              used by players/merchants
+Paralysis                                   6s [auto -> 6]                  used by Scribs [scrib_paralysis]
+```
+
+JSON: remove `paralysis` entry from R3 - Magic.json (revert to vanilla). Keep `scrib_paralysis` entry unchanged.
 
 ---
 

@@ -3869,6 +3869,29 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
+        "duration": 5,
+        "min_magnitude": 1,
+        "max_magnitude": 1
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 10,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "scrib_paralysis",
+    "name": "Paralysis",
+    "effects": [
+      {
+        "magic_effect": "Paralyze",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
         "duration": 6,
         "min_magnitude": 1,
         "max_magnitude": 1
