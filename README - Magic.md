@@ -77,8 +77,8 @@ Exclusive Potion of Burden                  20/60s -> 200/600s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Burden                      8/15s -> 80/240s                T_Nor_Potion_Burden_C
-Quality Potion of Burden                    15/45s -> 150/450s              T_Nor_Potion_Burden_Q
+Cheap Potion of Burden                      8/15s -> 80/240s                                                            T_Nor_Potion_Burden_C
+Quality Potion of Burden                    15/45s -> 150/450s                                                          T_Nor_Potion_Burden_Q
 ```
 
 *Spells*
@@ -113,16 +113,16 @@ Weight of Guilt                             500/3s -> 5000/3s
 
 *Enchantments*
 ```
-Scroll of Baleful Suffering                 0−25/30s                        sc_balefulsuffering_en
-Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s           sc_fadersleadenflesh_en
+Scroll of Baleful Suffering                 0−25/30s                                                                    sc_balefulsuffering_en
+Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s                                                       sc_fadersleadenflesh_en
 
-Black Jinx                                  25-100/120s -> 250-1000/120s    black_jinx_en_unique
-Spear of the Hunter                         50/10s -> 500/10s               bm_hunterspear
+Black Jinx                                  25-100/120s -> 250-1000/120s                                                black_jinx_en_unique
+Spear of the Hunter                         50/10s -> 500/10s                                                           bm_hunterspear
 ```
 
 *Enchantments - Tamriel Data*
 ```
-Scroll of Makkun's Heavy Hand               30/35s -> 300/35s               T_Once_BurdenTouch30-35
+Scroll of Makkun's Heavy Hand               30/35s -> 300/35s                                                           T_Once_BurdenTouch30-35
 ```
 
 ------------------------------------------------------------
@@ -142,9 +142,9 @@ Exclusive Potion of Feather                 20/60s -> 200/600s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Feather                     8/15s -> 80/240s                T_Nor_Potion_Feather_C
-Standard Potion of Feather                  10/30s -> 100/300s              T_Com_Potion_Feather_S
-Quality Potion of Feather                   15/45s -> 150/450s              T_Nor_Potion_Feather_Q
+Cheap Potion of Feather                     8/15s -> 80/240s                                                            T_Nor_Potion_Feather_C
+Standard Potion of Feather                  10/30s -> 100/300s                                                          T_Com_Potion_Feather_S
+Quality Potion of Feather                   15/45s -> 150/450s                                                          T_Nor_Potion_Feather_Q
 ```
 
 *Spells*
@@ -164,12 +164,12 @@ Zenithar's Arms                             50/10s -> 500/10s
 
 *Enchantments*
 ```
-Feather Belt                                20/10s -> 40/50s                feather_en
-Feather Ring                                20/10s -> 40/50s                feather_en
-Feather Shield                              20/10s -> 40/50s                feather_en
-Saint's Shield                              20/10s -> 100/20s               saint's shield_en
+Feather Belt                                20/10s -> 40/50s                                                            feather_en
+Feather Ring                                20/10s -> 40/50s                                                            feather_en
+Feather Shield                              20/10s -> 40/50s                                                            feather_en
+Saint's Shield                              20/10s -> 100/20s                                                           saint's shield_en
 
-Juicedaw Feather Ring                       50/10s -> 250/20s               ulms juicedaw's feather_en
+Juicedaw Feather Ring                       50/10s -> 250/20s                                                           ulms juicedaw's feather_en
 ```
 
 ------------------------------------------------------------
@@ -208,8 +208,8 @@ Tsun's Ward                                 20/20s -> 40/20s
 
 *Enchantments - Tamriel Data*
 ```
-Scroll of The Falling Barrier               4/40s -> 8/40s                  T_Once_FallingBarrier
-                                            3/20s -> 5/20s                  T_Once_FallingBarrier
+Scroll of The Falling Barrier               4/40s -> 8/40s                                                              T_Once_FallingBarrier
+                                            3/20s -> 5/20s                                                              T_Once_FallingBarrier
 ```
 
 ------------------------------------------------------------
@@ -244,8 +244,8 @@ Exclusive Potion of Fire Shield             20/60s -> 10/30s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Fire Shield                 8/15s -> 4/12s                  T_Nor_Potion_ShieldFire_C
-Quality Potion of Fire Shield               15/45s -> 8/24s                 T_Nor_Potion_ShieldFire_Q
+Cheap Potion of Fire Shield                 8/15s -> 4/12s                                                              T_Nor_Potion_ShieldFire_C
+Quality Potion of Fire Shield               15/45s -> 8/24s                                                             T_Nor_Potion_ShieldFire_Q
 ```
 
 ------------------------------------------------------------
@@ -275,8 +275,8 @@ Exclusive Frost Shield                      20/30s -> 10/30s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Frost Shield                8/15s -> 4/12s                  T_Nor_Potion_ShieldFrost_C
-Quality Frost Shield                        15/45s -> 8/24s                 T_Nor_Potion_ShieldFrost_Q
+Cheap Potion of Frost Shield                8/15s -> 4/12s                                                              T_Nor_Potion_ShieldFrost_C
+Quality Frost Shield                        15/45s -> 8/24s                                                             T_Nor_Potion_ShieldFrost_Q
 ```
 
 ------------------------------------------------------------
@@ -312,8 +312,8 @@ Exclusive Lightning Shield                  20/60s -> 10/30s
 
 *Potions - Tamriel Data*
 ```
-Cheap Lightning Shield                      8/15s -> 4/12s                  T_Nor_Potion_ShieldLightning_C
-Quality Lightning Shield                    15/45s -> 8/24s                 T_Nor_Potion_ShieldLightning_Q
+Cheap Lightning Shield                      8/15s -> 4/12s                                                              T_Nor_Potion_ShieldLightning_C
+Quality Lightning Shield                    15/45s -> 8/24s                                                             T_Nor_Potion_ShieldLightning_Q
 ```
 
 ------------------------------------------------------------
@@ -562,12 +562,12 @@ Master Acid Trap                            150-300/1s -> 150-300/10s
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s                            sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s                                                                        sc_balefulsuffering_en
 ```
 
 *Enchantments*
 ```
-Daedric Crescent                            5-30/1s -> 50-300/1s            Crescent Moon
+Daedric Crescent                            5-30/1s -> 50-300/1s                                                        Crescent Moon
 ```
 
 ------------------------------------------------------------
@@ -597,7 +597,7 @@ Master Acid Trap                            150-300/1s -> 150-300/5s
 
 *Scrolls*
 ```
-Scroll of Baleful Suffering                 5/5s                            sc_balefulsuffering_en
+Scroll of Baleful Suffering                 5/5s                                                                        sc_balefulsuffering_en
 ```
 
 ------------------------------------------------------------
@@ -656,8 +656,8 @@ Exclusive Potion of Light                   20/60s -> 100/300s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Light                       8/15s -> 40/120s                T_Nor_Potion_Light_C
-Quality Potion of Light                     15/45s -> 80/240s               T_Nor_Potion_Light_Q
+Cheap Potion of Light                       8/15s -> 40/120s                                                            T_Nor_Potion_Light_C
+Quality Potion of Light                     15/45s -> 80/240s                                                           T_Nor_Potion_Light_Q
 ```
 
 ------------------------------------------------------------
@@ -678,8 +678,8 @@ Exclusive Potion of Night-Eye               20/60s -> 100/300s
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Night-Eye                   8/15s -> 40/120s                T_Nor_Potion_NightEye_C
-Quality Potion of Night-Eye                 15/45s -> 80/240s               T_Nor_Potion_NightEye_Q
+Cheap Potion of Night-Eye                   8/15s -> 40/120s                                                            T_Nor_Potion_NightEye_C
+Quality Potion of Night-Eye                 15/45s -> 80/240s                                                           T_Nor_Potion_NightEye_Q
 ```
 
 ------------------------------------------------------------
@@ -692,7 +692,7 @@ Base Cost                                   40 -> 80
 *Spells*
 ```
 Paralysis                                   5s
-Paralysis                                   6s [auto -> 6]                  used by Scribs [scrib_paralysis]
+Paralysis                                   6s [auto -> 6]                  used by Scribs                              scrib_paralysis
 ```
 
 *Spells - Tamriel Data*
@@ -919,7 +919,7 @@ Base Cost                                   0.75 -> 0.15
 
 *Potions*
 ```
-Potion of Detect Creatures                  10/15s -> 60/180s               p_detect_creatures_s
+Potion of Detect Creatures                  10/15s -> 60/180s                                                           p_detect_creatures_s
 ```
 
 *Potions - Tamriel Data*
@@ -941,7 +941,7 @@ Base Cost                                   1 -> 0.2
 
 *Potions*
 ```
-Potion of Detect Enchantments               10/15s -> 60/180s               p_detect_enchantment_s
+Potion of Detect Enchantments               10/15s -> 60/180s                                                           p_detect_enchantment_s
 ```
 
 *Potions - Tamriel Data*
@@ -956,7 +956,7 @@ Detect Enchantment                          10/10s -> 50/10s
 
 *Spells - Tamriel Data*
 ```
-Detect Enchantment                          10/10s -> 50/10s                T_Com_Mys_Insight
+Detect Enchantment                          10/10s -> 50/10s                                                            T_Com_Mys_Insight
 ```
 
 ------------------------------------------------------------
@@ -1287,8 +1287,8 @@ Exclusive Fire Resistance                   20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Fire Resistance                       8/15s -> 15/45s                 T_Nor_Potion_ResistFire_C
-Quality Fire Resistance                     15/45s -> 30/90s                T_Nor_Potion_ResistFire_Q
+Cheap Fire Resistance                       8/15s -> 15/45s                                                             T_Nor_Potion_ResistFire_C
+Quality Fire Resistance                     15/45s -> 30/90s                                                            T_Nor_Potion_ResistFire_Q
 ```
 
 *Spells*
@@ -1318,8 +1318,8 @@ Exclusive Frost Resistance                  20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Frost Resistance                      8/15s -> 15/45s                 T_Nor_Potion_ResistFrost_C
-Quality Frost Resistance                    15/45s -> 30/90s                T_Nor_Potion_ResistFrost_Q
+Cheap Frost Resistance                      8/15s -> 15/45s                                                             T_Nor_Potion_ResistFrost_C
+Quality Frost Resistance                    15/45s -> 30/90s                                                            T_Nor_Potion_ResistFrost_Q
 ```
 
 *Spells*
@@ -1354,8 +1354,8 @@ Exclusive Shock Resistance                  20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Shock Resistance                      8/15s -> 15/45s                 T_Nor_Potion_ResistShock_C
-Quality Shock Resistance                    15/45s -> 30/90s                T_Nor_Potion_ResistShock_Q
+Cheap Shock Resistance                      8/15s -> 15/45s                                                             T_Nor_Potion_ResistShock_C
+Quality Shock Resistance                    15/45s -> 30/90s                                                            T_Nor_Potion_ResistShock_Q
 ```
 
 *Spells*
@@ -1384,8 +1384,8 @@ Exclusive Poison Resistance                 20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Poison Resistance                     8/15s -> 15/45s                 T_Nor_Potion_ResistPoison_C
-Quality Poison Resistance                   15/45s -> 30/90s                T_Nor_Potion_ResistPoison_Q
+Cheap Poison Resistance                     8/15s -> 15/45s                                                             T_Nor_Potion_ResistPoison_C
+Quality Poison Resistance                   15/45s -> 30/90s                                                            T_Nor_Potion_ResistPoison_Q
 ```
 
 *Spells*
@@ -1415,8 +1415,8 @@ Exclusive Magicka Resistance                20/60s -> 40/120s
 
 *Potions - Tamriel Data*
 ```
-Cheap Magicka Resistance                    8/15s -> 15/45s                 T_Nor_Potion_ResistMagicka_C
-Quality Magicka Resistance                  15/45s -> 30/90s                T_Nor_Potion_ResistMagicka_Q
+Cheap Magicka Resistance                    8/15s -> 15/45s                                                             T_Nor_Potion_ResistMagicka_C
+Quality Magicka Resistance                  15/45s -> 30/90s                                                            T_Nor_Potion_ResistMagicka_Q
 ```
 
 *Spells*

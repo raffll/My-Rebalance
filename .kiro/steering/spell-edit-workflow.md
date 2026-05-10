@@ -14,6 +14,23 @@ Find the entry's section in the relevant `README - *.md` file and add or update 
 Spell Name                                  [default mag/dur from vanilla] -> [new mag/dur]
 ```
 
+Column positions (0-indexed):
+- **col 0**: spell/entry name
+- **col 44**: values (mag/dur)
+- **col 76**: comment (notes, flags, scale)
+- **col 120**: ID (enchantment ID, TD potion ID, or disambiguating JSON ID)
+
+IDs always go at col 120, even when there is no comment. Pad with spaces to reach the column.
+
+Example with comment and ID:
+```
+Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s           used by Aryon           sc_fadersleadenflesh_en
+```
+Example with ID only (no comment):
+```
+Scroll of Baleful Suffering                 0−25/30s                                                sc_balefulsuffering_en
+```
+
 - Values are `magnitude/duration` (e.g. `20/10s -> 50/40s`)
 - Range spells use `min-max/duration` (e.g. `30-60/10s -> 60-120/50s`)
 - If there is an area, append it after duration: `50/10s/10ft`
