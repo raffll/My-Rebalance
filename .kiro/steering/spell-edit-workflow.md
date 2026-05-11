@@ -30,6 +30,7 @@ Scroll of Baleful Suffering                 0−25/30s                        id
 - If there is an area, append it after duration: `50/10s/10ft`
 - If there is also a range type, append it after area: `50/10s/10ft/Target`
 - If a cost override is also present, it comes last in brackets: `50/10s/10ft/Target [10]`
+- Only include area, range type, and cost override in the value if they are **being changed**. If they stay vanilla, omit them.
 - For **abilities** (always-on), duration is irrelevant — show magnitude only: `200/1s -> 1`
 - If there is a cost override, append it in brackets: `50/10s [25]`
 - Anything after the values (notes, flags) goes in a comment at the end of the line, with multiple comments separated by `;`: `50/10s               used by Aryon; !`
@@ -82,9 +83,18 @@ All spell magnitudes and durations must be either:
 - **1** (minimum floor value), or
 - A **multiple of 5** (5, 10, 15, 20, 25, 30, ...)
 
-When scaling produces non-round values, round to the nearest multiple of 5. If the result is less than 5, use 1 or 5 (never 2, 3, 4, 6, 7, etc. unless it's exactly 1).
+When scaling produces non-round values, first apply the scale, then round to the nearest multiple of 5. If the result is less than 5, use 1 or 5 (never 2, 3, 4, 6, 7, etc. unless it's exactly 1).
 
 This applies to the **right side** of `->` in README entries and to the corresponding JSON values. Vanilla values (left side) are recorded as-is.
+
+## No-Scale Effects
+The following effects do **not** get spell compensation scaling when their base cost changes. Only rounding fixes apply:
+- **Fire Damage**
+- **Frost Damage**
+- **Shock Damage**
+- **Poison**
+
+For these effects, spells keep their vanilla magnitudes/durations (rounded if needed). The base cost change affects spell cost directly without compensating adjustments.
 
 The scale is applied to the **vanilla default values** (left of `->` in README) to produce the new values:
 - `new_magnitude = vanilla_magnitude × scale_mag`
@@ -107,6 +117,7 @@ When a magic effect's base cost is changed, spells of that school must be adjust
 ## Notes
 - Never modify files inside `tes3conv/` — those are read-only vanilla references.
 - Never change the `id` field of any record in ESP JSON files. IDs are immutable — only `name` and other data fields may be edited.
+- Never add new records that don't exist in vanilla or TD. Only modify existing records.
 - README and JSON must always be updated together. ESP conversion is handled separately and is not part of this workflow.
 - Only rebuild the ESP for the JSON file that was actually changed.
 - The top-level `## Potions` section in README - Magic.md defines default Bargain and Cheap values for all potions (e.g. `Bargain... 5/8s -> 6/18s`). If an individual potion entry has its own explicit values, those override the general rule.

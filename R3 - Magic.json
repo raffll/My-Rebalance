@@ -6,7 +6,7 @@
     "file_type": "Esp",
     "author": "",
     "description": "",
-    "num_objects": 418,
+    "num_objects": 431,
     "masters": [
       [
         "Morrowind.esm",
@@ -2276,6 +2276,29 @@
   {
     "type": "Spell",
     "flags": "",
+    "id": "blood despair",
+    "name": "Blood Despair",
+    "effects": [
+      {
+        "magic_effect": "DrainAttribute",
+        "skill": "None",
+        "attribute": "Willpower",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 5,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 47,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
     "id": "buoyancy",
     "name": "Buoyancy",
     "effects": [
@@ -2379,12 +2402,35 @@
         "area": 0,
         "duration": 20,
         "min_magnitude": 15,
-        "max_magnitude": 33
+        "max_magnitude": 35
       }
     ],
     "data": {
       "spell_type": "Spell",
       "cost": 9,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "cruel firebloom",
+    "name": "Cruel Firebloom",
+    "effects": [
+      {
+        "magic_effect": "FireDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 1,
+        "min_magnitude": 10,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 7,
       "flags": "AUTO_CALCULATE"
     }
   },
@@ -2402,7 +2448,7 @@
         "area": 0,
         "duration": 60,
         "min_magnitude": 10,
-        "max_magnitude": 22
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -2631,7 +2677,7 @@
         "range": "OnTarget",
         "area": 0,
         "duration": 20,
-        "min_magnitude": 24,
+        "min_magnitude": 25,
         "max_magnitude": 45
       }
     ],
@@ -2654,7 +2700,7 @@
         "range": "OnTarget",
         "area": 0,
         "duration": 60,
-        "min_magnitude": 2,
+        "min_magnitude": 1,
         "max_magnitude": 60
       }
     ],
@@ -2769,8 +2815,8 @@
         "range": "OnTarget",
         "area": 0,
         "duration": 20,
-        "min_magnitude": 9,
-        "max_magnitude": 24
+        "min_magnitude": 10,
+        "max_magnitude": 25
       }
     ],
     "data": {
@@ -3265,6 +3311,52 @@
   {
     "type": "Spell",
     "flags": "",
+    "id": "god's fire",
+    "name": "God's Fire",
+    "effects": [
+      {
+        "magic_effect": "FireDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 10,
+        "min_magnitude": 10,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 135,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "god's frost",
+    "name": "God's Frost",
+    "effects": [
+      {
+        "magic_effect": "FrostDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 10,
+        "min_magnitude": 10,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 135,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
     "id": "great burden of sin",
     "name": "Great Burden of Sin",
     "effects": [
@@ -3526,7 +3618,7 @@
         "area": 0,
         "duration": 1,
         "min_magnitude": 30,
-        "max_magnitude": 72
+        "max_magnitude": 70
       }
     ],
     "data": {
@@ -3607,6 +3699,29 @@
   {
     "type": "Spell",
     "flags": "",
+    "id": "magicka leech",
+    "name": "Magicka Leech",
+    "effects": [
+      {
+        "magic_effect": "DrainMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 5,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 126,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
     "id": "magickguard",
     "name": "Magickguard",
     "effects": [
@@ -3640,8 +3755,8 @@
         "range": "OnTouch",
         "area": 0,
         "duration": 60,
-        "min_magnitude": 3,
-        "max_magnitude": 8
+        "min_magnitude": 1,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -5181,7 +5296,7 @@
         "range": "OnTarget",
         "area": 0,
         "duration": 20,
-        "min_magnitude": 3,
+        "min_magnitude": 1,
         "max_magnitude": 90
       }
     ],
@@ -7252,9 +7367,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 180,
-        "min_magnitude": 60,
-        "max_magnitude": 60
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -7304,9 +7419,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 180,
-        "min_magnitude": 60,
-        "max_magnitude": 60
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -7664,9 +7779,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 90,
-        "min_magnitude": 30,
-        "max_magnitude": 30
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -7690,9 +7805,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 120,
-        "min_magnitude": 40,
-        "max_magnitude": 40
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -8386,9 +8501,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 120,
-        "min_magnitude": 40,
-        "max_magnitude": 40
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -8412,9 +8527,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 240,
-        "min_magnitude": 80,
-        "max_magnitude": 80
+        "duration": 180,
+        "min_magnitude": 60,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -8438,9 +8553,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 120,
-        "min_magnitude": 40,
-        "max_magnitude": 40
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -8464,9 +8579,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 240,
-        "min_magnitude": 80,
-        "max_magnitude": 80
+        "duration": 180,
+        "min_magnitude": 60,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -9270,9 +9385,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 180,
-        "min_magnitude": 60,
-        "max_magnitude": 60
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -9296,9 +9411,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 180,
-        "min_magnitude": 60,
-        "max_magnitude": 60
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -10850,9 +10965,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 90,
-        "min_magnitude": 30,
-        "max_magnitude": 30
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -10876,9 +10991,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 120,
-        "min_magnitude": 40,
-        "max_magnitude": 40
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -10902,9 +11017,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 300,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 240,
+        "min_magnitude": 80,
+        "max_magnitude": 80
       }
     ],
     "data": {
@@ -10928,9 +11043,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 240,
-        "min_magnitude": 80,
-        "max_magnitude": 80
+        "duration": 180,
+        "min_magnitude": 60,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -10954,9 +11069,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 180,
-        "min_magnitude": 60,
-        "max_magnitude": 60
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -11162,9 +11277,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 90,
-        "min_magnitude": 30,
-        "max_magnitude": 30
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -11188,9 +11303,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 120,
-        "min_magnitude": 40,
-        "max_magnitude": 40
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
       }
     ],
     "data": {
@@ -11214,9 +11329,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 300,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 240,
+        "min_magnitude": 80,
+        "max_magnitude": 80
       }
     ],
     "data": {
@@ -11240,9 +11355,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 240,
-        "min_magnitude": 80,
-        "max_magnitude": 80
+        "duration": 180,
+        "min_magnitude": 60,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -11266,9 +11381,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 180,
-        "min_magnitude": 60,
-        "max_magnitude": 60
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -13807,6 +13922,325 @@
       "spell_type": "Spell",
       "cost": 50,
       "flags": ""
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "spark",
+    "name": "Spark",
+    "effects": [
+      {
+        "magic_effect": "ShockDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 5,
+        "duration": 1,
+        "min_magnitude": 1,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 7,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "shockball",
+    "name": "Shockball",
+    "effects": [
+      {
+        "magic_effect": "ShockDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 1,
+        "min_magnitude": 1,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 14,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "shockball_large",
+    "name": "Greater Shockball",
+    "effects": [
+      {
+        "magic_effect": "ShockDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 1,
+        "min_magnitude": 1,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 14,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "lightning storm",
+    "name": "Lightning Storm",
+    "effects": [
+      {
+        "magic_effect": "ShockDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 34,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "stormhand",
+    "name": "Stormhand",
+    "effects": [
+      {
+        "magic_effect": "DamageHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 5,
+        "max_magnitude": 10
+      },
+      {
+        "magic_effect": "ShockDamage",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 5,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 6,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "poison",
+    "name": "Poison",
+    "effects": [
+      {
+        "magic_effect": "Poison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 5,
+        "duration": 1,
+        "min_magnitude": 1,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 9,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "poison_powerful",
+    "name": "Toxic Cloud",
+    "effects": [
+      {
+        "magic_effect": "Poison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 10,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 15
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 61,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "black hand",
+    "name": "Black Hand",
+    "effects": [
+      {
+        "magic_effect": "DamageHealth",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 5,
+        "max_magnitude": 10
+      },
+      {
+        "magic_effect": "Poison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTouch",
+        "area": 0,
+        "duration": 1,
+        "min_magnitude": 5,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 7,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "dire weakness to fire",
+    "name": "Dire Weakness to Fire",
+    "effects": [
+      {
+        "magic_effect": "WeaknessToFire",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 47,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "dire weakness to frost",
+    "name": "Dire Weakness to Frost",
+    "effects": [
+      {
+        "magic_effect": "WeaknessToFrost",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 47,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "dire weakness to shock",
+    "name": "Dire Weakness to Shock",
+    "effects": [
+      {
+        "magic_effect": "WeaknessToShock",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 47,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "dire weakness to poison",
+    "name": "Dire Weakness to Poison",
+    "effects": [
+      {
+        "magic_effect": "WeaknessToPoison",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 47,
+      "flags": "AUTO_CALCULATE"
+    }
+  },
+  {
+    "type": "Spell",
+    "flags": "",
+    "id": "dire weakness to magicka",
+    "name": "Dire Weakness to Magicka",
+    "effects": [
+      {
+        "magic_effect": "WeaknessToMagicka",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnTarget",
+        "area": 0,
+        "duration": 10,
+        "min_magnitude": 1,
+        "max_magnitude": 60
+      }
+    ],
+    "data": {
+      "spell_type": "Spell",
+      "cost": 47,
+      "flags": "AUTO_CALCULATE"
     }
   },
   {

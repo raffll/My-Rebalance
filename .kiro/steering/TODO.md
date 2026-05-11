@@ -92,3 +92,14 @@ Spells with magnitudes or durations that aren't multiples of 5. Propose clean al
 | Greater Stamina (TD) | 30-60/12s | 12 (vanilla 30 ÷2.5) |
 
 **Sound spells** — covered separately in "Sound Spells — Flatten & Fix Range" above.
+
+---
+
+## Poison Potions — Paralyze, Silence, Sound
+Duration-only poisons use a separate tier progression.
+
+| | Bargain | Cheap | Standard | Quality | Exclusive |
+|---|---|---|---|---|---|
+| **Paralyze** | 3s | 6s | 9s | 12s | 18s |
+| **Silence** | 6s | 9s | 12s | 18s | 24s |
+| **Sound** | 6/18s | 8/24s | 10/30s | 15/45s | 20/60s |

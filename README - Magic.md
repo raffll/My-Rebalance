@@ -404,11 +404,22 @@ Potion of Water Walking                     15s -> 30s
 Base Cost                                   5 -> 8
 ```
 
+*Spells*
+```
+Cruel Firebloom                             10-16 -> 10-15
+God's Fire                                  11-60 -> 10-60
+```
+
 ------------------------------------------------------------
 
 ### Frost Damage
 ```
 Base Cost                                   5 -> 8
+```
+
+*Spells*
+```
+God's Frost                                 11-60 -> 10-60
 ```
 
 ------------------------------------------------------------
@@ -418,6 +429,15 @@ Base Cost                                   5 -> 8
 Base Cost                                   7 -> 8
 ```
 
+*Spells*
+```
+Spark                                       2-20 -> 1-20
+Shockball                                   2-40 -> 1-40
+Greater Shockball                           2-40 -> 1-40
+Lightning Storm                             2-10 -> 1-10
+Stormhand                                   5-12 -> 5-10
+```
+
 ------------------------------------------------------------
 
 ### Poison
@@ -425,11 +445,24 @@ Base Cost                                   7 -> 8
 Base Cost                                   9 -> 8
 ```
 
+*Spells*
+```
+Poison                                      2-20 -> 1-20
+Toxic Cloud                                 2-15 -> 1-15
+Black Hand                                  5-12 -> 5-10
+```
+
 ------------------------------------------------------------
 
 ### Damage Health
 ```
 Base Cost                                   8
+```
+
+*Spells*
+```
+Stormhand                                   5-12 -> 5-10
+Black Hand                                  5-12 -> 5-10
 ```
 
 ------------------------------------------------------------
@@ -460,7 +493,7 @@ Base Cost                                   4 -> 2
 ```
 Fleabite                                    1-10/1s -> 2-20/1s
 Doze                                        1-20/1s -> 2-40/1s
-Hornhand                                    15-36/1s -> 30-72/1s
+Hornhand                                    15-36/1s -> 30-70/1s
 ```
 
 ------------------------------------------------------------
@@ -494,6 +527,11 @@ Ash Feast                                   3/30s -> 30/3s
 ### Drain Magicka
 ```
 Base Cost                                   4 -> 0.4
+```
+
+*Spells*
+```
+Magicka Leech                               6-15 -> 5-15
 ```
 
 *Spells - Tamriel Data*
@@ -533,6 +571,11 @@ Duck                                        200/2s -> 2000/2s
 ### Drain Attribute
 ```
 Base Cost                                   1
+```
+
+*Spells*
+```
+Blood Despair                               7-14 -> 5-15
 ```
 
 ------------------------------------------------------------
@@ -625,21 +668,46 @@ Base Cost                                   2
 
 ### Weakness to Fire
 
+*Spells*
+```
+Dire Weakness to Fire                       2-60 -> 1-60
+```
+
 ------------------------------------------------------------
 
 ### Weakness to Frost
+
+*Spells*
+```
+Dire Weakness to Frost                      2-60 -> 1-60
+```
 
 ------------------------------------------------------------
 
 ### Weakness to Shock
 
+*Spells*
+```
+Dire Weakness to Shock                      2-60 -> 1-60
+```
+
 ------------------------------------------------------------
 
 ### Weakness to Poison
 
+*Spells*
+```
+Dire Weakness to Poison                     2-60 -> 1-60
+```
+
 ------------------------------------------------------------
 
 ### Weakness to Magicka
+
+*Spells*
+```
+Dire Weakness to Magicka                    2-60 -> 1-60
+```
 
 ------------------------------------------------------------
 
@@ -654,17 +722,17 @@ Base Cost                                   0.2
 
 *Potions*
 ```
-Bargain Potion of Light                     5/8s -> 30/90s
-Cheap Potion of Light                       8/15s -> 40/120s
-Standard Potion of Light                    10/30s -> 60/180s
-Quality Potion of Light                     15/45s -> 80/240s
-Exclusive Potion of Light                   20/60s -> 100/300s
+Bargain Potion of Light                     5/8s -> 20/60s
+Cheap Potion of Light                       8/15s -> 30/90s
+Standard Potion of Light                    10/30s -> 40/120s
+Quality Potion of Light                     15/45s -> 60/180s
+Exclusive Potion of Light                   20/60s -> 80/240s
 ```
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Light                       8/15s -> 40/120s                id: T_Nor_Potion_Light_C
-Quality Potion of Light                     15/45s -> 80/240s               id: T_Nor_Potion_Light_Q
+Cheap Potion of Light                       8/15s -> 30/90s                 id: T_Nor_Potion_Light_C
+Quality Potion of Light                     15/45s -> 60/180s               id: T_Nor_Potion_Light_Q
 ```
 
 ------------------------------------------------------------
@@ -676,17 +744,17 @@ Base Cost                                   0.2
 
 *Potions*
 ```
-Bargain Potion of Night-Eye                 5/8s -> 30/90s
-Cheap Potion of Night-Eye                   8/15s -> 40/120s
-Standard Potion of Night-Eye                10/30s -> 60/180s
-Quality Potion of Night-Eye                 15/45s -> 80/240s
-Exclusive Potion of Night-Eye               20/60s -> 100/300s
+Bargain Potion of Night-Eye                 5/8s -> 20/60s
+Cheap Potion of Night-Eye                   8/15s -> 30/90s
+Standard Potion of Night-Eye                10/30s -> 40/120s
+Quality Potion of Night-Eye                 15/45s -> 60/180s
+Exclusive Potion of Night-Eye               20/60s -> 80/240s
 ```
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Night-Eye                   8/15s -> 40/120s                id: T_Nor_Potion_NightEye_C
-Quality Potion of Night-Eye                 15/45s -> 80/240s               id: T_Nor_Potion_NightEye_Q
+Cheap Potion of Night-Eye                   8/15s -> 30/90s                 id: T_Nor_Potion_NightEye_C
+Quality Potion of Night-Eye                 15/45s -> 60/180s               id: T_Nor_Potion_NightEye_Q
 ```
 
 ------------------------------------------------------------
@@ -730,13 +798,13 @@ Base Cost                                   3 -> 0.25
 
 *Spells*
 ```
-Earwig                                      3-8/5s -> 9-24/20s
-Cruel Earwig                                5-11/5s -> 15-33/20s
-Dire Earwig                                 8-15/5s -> 24-45/20s
-Wild Earwig                                 1-30/5s -> 3-90/20s
-Noise                                       3-8/5s -> 3-8/60s
-Cruel Noise                                 10-22/5s -> 10-22/60s
-Dire Noise                                  2-60/5s -> 2-60/60s
+Earwig                                      3-8/5s -> 10-25/20s
+Cruel Earwig                                5-11/5s -> 15-35/20s
+Dire Earwig                                 8-15/5s -> 25-45/20s
+Wild Earwig                                 1-30/5s -> 1-90/20s
+Noise                                       3-8/5s -> 1-10/60s
+Cruel Noise                                 10-22/5s -> 10-20/60s
+Dire Noise                                  2-60/5s -> 1-60/60s
 ```
 
 *Spells - Tamriel Data*
@@ -948,12 +1016,12 @@ Base Cost                                   1 -> 0.2
 
 *Potions*
 ```
-Potion of Detect Enchantments               10/15s -> 60/180s
+Potion of Detect Enchantments               10/15s -> 40/120s
 ```
 
 *Potions - Tamriel Data*
 ```
-Potion of Detect Enchantments               10/15s -> 60/180s
+Potion of Detect Enchantments               10/15s -> 40/120s
 ```
 
 *Spells*
@@ -975,12 +1043,12 @@ Base Cost                                   1 -> 0.2
 
 *Potions*
 ```
-Potion of Detect Key                        10/15s -> 60/180s
+Potion of Detect Key                        10/15s -> 40/120s
 ```
 
 *Potions - Tamriel Data*
 ```
-Potion of Detect Key                        10/15s -> 60/180s
+Potion of Detect Key                        10/15s -> 40/120s
 ```
 
 *Spells*
@@ -1522,8 +1590,8 @@ Base Cost                                   0.20
 
 *Potions - Tamriel Data*
 ```
-Bargain Paralysis Resistance                7/10s -> 30/90s                 id: T_Com_Potion_ResistParalysis_B
-Cheap Paralysis Resistance                  8/15s -> 40/120s                id: T_Com_Potion_ResistParalysis_C
+Bargain Paralysis Resistance                7/10s -> 20/60s                 id: T_Com_Potion_ResistParalysis_B
+Cheap Paralysis Resistance                  8/15s -> 30/90s                 id: T_Com_Potion_ResistParalysis_C
 ```
 
 *Spells*
