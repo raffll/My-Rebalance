@@ -17,6 +17,7 @@ When looking up vanilla spell data, check `docs/` reference files **first** befo
 - `docs/Vanilla-Alteration-Spells.md`
 - `docs/Vanilla-Destruction-Spells.md`
 - `docs/Vanilla-Potions-Reference.md`
+- `docs/Vanilla-Scrolls-Reference.md`
 - `docs/TD-Destruction-Spells-Analysis.md`
 - `docs/TD-Potions-Reference.md`
 
