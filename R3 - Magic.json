@@ -6,7 +6,7 @@
     "file_type": "Esp",
     "author": "",
     "description": "",
-    "num_objects": 410,
+    "num_objects": 418,
     "masters": [
       [
         "Morrowind.esm",
@@ -9940,9 +9940,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -9966,14 +9966,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
       "weight": 1.0,
       "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_fortify_fatigue_s",
+    "name": "Standard Fortify Fatigue Potion",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "FortifyFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 60,
+        "min_magnitude": 20,
+        "max_magnitude": 20
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_fortify_fatigue_q",
+    "name": "Quality Fortify Fatigue",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "FortifyFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_fortify_fatigue_e",
+    "name": "Exclusive Fortify Fatigue",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "FortifyFatigue",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -11396,9 +11474,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -11422,14 +11500,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_reflection_s",
+    "name": "Standard Potion of Reflection",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "Reflect",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_reflection_q",
+    "name": "Quality Potion of Reflection",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "Reflect",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
         "duration": 24,
         "min_magnitude": 8,
         "max_magnitude": 8
       }
     ],
     "data": {
-      "weight": 1.0,
-      "value": 15,
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_reflection_e",
+    "name": "Exclusive Potion of Reflection",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "Reflect",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -13086,9 +13242,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -13112,14 +13268,92 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
+      }
+    ],
+    "data": {
+      "weight": 1.0,
+      "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_spell_absorption_s",
+    "name": "Standard Spell Absorption",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Standard_01.nif",
+    "icon": "m\\Tx_potion_standard_01.tga",
+    "effects": [
+      {
+        "magic_effect": "SpellAbsorption",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 18,
+        "min_magnitude": 6,
+        "max_magnitude": 6
+      }
+    ],
+    "data": {
+      "weight": 0.75,
+      "value": 35,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_spell_absorption_q",
+    "name": "Quality Spell Absorption",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "SpellAbsorption",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
         "duration": 24,
         "min_magnitude": 8,
         "max_magnitude": 8
       }
     ],
     "data": {
-      "weight": 1.0,
-      "value": 15,
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_spell_absorption_e",
+    "name": "Exclusive Spell Absorption",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "SpellAbsorption",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },
@@ -13138,9 +13372,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 30,
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -13164,14 +13398,66 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 45,
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
       "weight": 1.0,
       "value": 15,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_swift_swim_q",
+    "name": "Quality Potion of Swift Swim",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Quality_01.nif",
+    "icon": "m\\Tx_potion_quality_01.tga",
+    "effects": [
+      {
+        "magic_effect": "SwiftSwim",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 90,
+        "min_magnitude": 30,
+        "max_magnitude": 30
+      }
+    ],
+    "data": {
+      "weight": 0.5,
+      "value": 80,
+      "flags": ""
+    }
+  },
+  {
+    "type": "Alchemy",
+    "flags": "",
+    "id": "p_swift_swim_e",
+    "name": "Exclusive Potion of Swift Swim",
+    "script": "",
+    "mesh": "m\\Misc_Potion_Exclusive_01.nif",
+    "icon": "m\\Tx_potion_exclusive_01.tga",
+    "effects": [
+      {
+        "magic_effect": "SwiftSwim",
+        "skill": "None",
+        "attribute": "None",
+        "range": "OnSelf",
+        "area": 0,
+        "duration": 120,
+        "min_magnitude": 40,
+        "max_magnitude": 40
+      }
+    ],
+    "data": {
+      "weight": 0.25,
+      "value": 175,
       "flags": ""
     }
   },

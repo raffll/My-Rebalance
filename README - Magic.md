@@ -30,7 +30,6 @@ Bargain Potion of Blindness                 Sound -> Blind
                                             1/10s -> 6/18s
 
 Bargain Potion of Cacophony                 1/10s -> 6/18s
-Bargain Paralysis Resistance                7/10s -> 6/18s
 Bargain Potion of Protection                1/10s -> 6/18s
 
 Spoiled Slowfall Potion                     10/15s -> 1/15s
@@ -177,6 +176,14 @@ Juicedaw Feather Ring                       50/10s -> 250/20s               id: 
 ### Swift Swim
 ```
 Base Cost                                   2 -> 0.5
+```
+
+*Potions*
+```
+Bargain Potion of Swift Swim                1/8s -> 10/30s
+Cheap Potion of Swift Swim                  8/15s -> 15/45s
+Quality Potion of Swift Swim                15/45s -> 30/90s
+Exclusive Potion of Swift Swim              20/60s -> 40/120s
 ```
 
 *Spells*
@@ -989,6 +996,15 @@ Detect Key                                  50/5s -> 250/5s
 Base Cost                                   10 -> 2.5
 ```
 
+*Potions*
+```
+Bargain Potion of Reflection                5/8s -> 3/9s
+Cheap Potion of Reflection                  8/15s -> 4/12s
+Standard Potion of Reflection               10/30s -> 6/18s
+Quality Potion of Reflection                15/45s -> 8/24s
+Exclusive Potion of Reflection              20/60s -> 10/30s
+```
+
 *Spells*
 ```
 Sotha's Mirror                              10/5s -> 10/20s
@@ -1012,6 +1028,15 @@ Distorted Reflection                        20/15s -> 40/30s                x2/x
 ### Spell Absorption
 ```
 Base Cost                                   10 -> 2.5
+```
+
+*Potions*
+```
+Bargain Spell Absorption                    5/8s -> 3/9s
+Cheap Spell Absorption                      8/15s -> 4/12s
+Standard Spell Absorption                   10/30s -> 6/18s
+Quality Spell Absorption                    15/45s -> 8/24s
+Exclusive Spell Absorption                  20/60s -> 10/30s
 ```
 
 *Spells*
@@ -1225,6 +1250,15 @@ Base Cost                                   1
 ### Fortify Fatigue
 ```
 Base Cost                                   0.5
+```
+
+*Potions*
+```
+Bargain Fortify Fatigue                     5/8s -> 10/30s
+Cheap Fortify Fatigue                       8/15s -> 15/45s
+Standard Fortify Fatigue Potion             10/30s -> 20/60s
+Quality Fortify Fatigue                     15/45s -> 30/90s
+Exclusive Fortify Fatigue                   20/60s -> 40/120s
 ```
 
 *Spells*

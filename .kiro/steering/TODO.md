@@ -70,3 +70,25 @@ JSON: remove `paralysis` entry from R3 - Magic.json (revert to vanilla). Keep `s
 
 ## Masterful Spells — In-Game Verification
 Verify all 28 Masterful spells appear correctly in-game with the new duration (15s) and that costs feel right at base cost ×4.
+
+---
+
+## Non-Round Spell Values — Clean Up
+Spells with magnitudes or durations that aren't multiples of 5. Propose clean alternatives.
+
+**Magnitudes:**
+| Spell | Current | Issue |
+|---|---|---|
+| Hornhand | 30-72/1s | 72 (vanilla 36 ×2) |
+| Shadow Form | 12-30/30s | 12 (vanilla 6 ×2) |
+| Falling First Barrier (TD) | 16/40s | 16 (vanilla 8 ×2) |
+
+**Durations:**
+| Spell | Current | Issue |
+|---|---|---|
+| Energy Leech | 5-20/6s | 6 (vanilla 30 ÷5) |
+| Rest of St. Meris | 1-10/8s | 8 (vanilla 20 ÷2.5) |
+| Stamina | 10-30/12s | 12 (vanilla 30 ÷2.5) |
+| Greater Stamina (TD) | 30-60/12s | 12 (vanilla 30 ÷2.5) |
+
+**Sound spells** — covered separately in "Sound Spells — Flatten & Fix Range" above.

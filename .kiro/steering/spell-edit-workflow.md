@@ -77,6 +77,15 @@ The col 120 rule is retired — IDs are part of the comment column at col 76, us
 ## JSON value scaling
 The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
 
+## Value Rounding Rule
+All spell magnitudes and durations must be either:
+- **1** (minimum floor value), or
+- A **multiple of 5** (5, 10, 15, 20, 25, 30, ...)
+
+When scaling produces non-round values, round to the nearest multiple of 5. If the result is less than 5, use 1 or 5 (never 2, 3, 4, 6, 7, etc. unless it's exactly 1).
+
+This applies to the **right side** of `->` in README entries and to the corresponding JSON values. Vanilla values (left side) are recorded as-is.
+
 The scale is applied to the **vanilla default values** (left of `->` in README) to produce the new values:
 - `new_magnitude = vanilla_magnitude × scale_mag`
 - `new_duration = vanilla_duration × scale_dur`
