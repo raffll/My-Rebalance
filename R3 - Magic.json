@@ -2977,7 +2977,7 @@
         "area": 0,
         "duration": 10,
         "min_magnitude": 5,
-        "max_magnitude": 11
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -3000,7 +3000,7 @@
         "area": 0,
         "duration": 10,
         "min_magnitude": 5,
-        "max_magnitude": 11
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -3023,7 +3023,7 @@
         "area": 0,
         "duration": 10,
         "min_magnitude": 5,
-        "max_magnitude": 11
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -3229,8 +3229,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 3,
-        "max_magnitude": 3
+        "min_magnitude": 1,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -4698,8 +4698,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 12,
-        "max_magnitude": 12
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
@@ -4721,8 +4721,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 12,
-        "max_magnitude": 12
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {
@@ -4905,8 +4905,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 12,
-        "max_magnitude": 12
+        "min_magnitude": 15,
+        "max_magnitude": 15
       }
     ],
     "data": {

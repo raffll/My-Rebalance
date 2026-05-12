@@ -231,8 +231,8 @@ Base Cost                                   3
 Fire Barrier                                1-10/10s
 Fire Barrier -> Fathasa's Fire Barrier      1-10/10s
 Fire Shield                                 10/30s
-Strong Fire Shield                          12/30s
-Fierce Fire Shield                          5-11/10s
+Strong Fire Shield                          12/30s -> 15/30s
+Fierce Fire Shield                          5-11/10s -> 5-10/10s
 ```
 
 *Spells - Tamriel Data*
@@ -264,11 +264,11 @@ Base Cost                                   3
 
 *Spells*
 ```
-Frost Barrier                               3/10s
+Frost Barrier                               3/10s -> 1-10/10s
 Frost Shield -> Weak Frost Shield           6/30s
 Frost Shield                                10/30s
-Strong Frost Shield                         12/30s
-Fierce Frost Shield                         5-11/10s
+Strong Frost Shield                         12/30s -> 15/30s
+Fierce Frost Shield                         5-11/10s -> 5-10/10s
 ```
 
 *Potions*
@@ -297,8 +297,8 @@ Base Cost                                   3
 ```
 Shock Barrier                               1-10/10s
 Lightning Shield -> Shock Shield            10/30s
-Strong Shock Shield                         12/30s
-Fierce Shock Shield                         5-11/10s
+Strong Shock Shield                         12/30s -> 15/30s
+Fierce Shock Shield                         5-11/10s -> 5-10/10s
 
 Shock Shield -> Lightning Shield            3/20s                           used by: Centurion Spheres
 ```
