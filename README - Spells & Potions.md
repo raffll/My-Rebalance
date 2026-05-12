@@ -18,9 +18,6 @@ Cheap...                                    8/15s -> 8/24s
 
 *Fixes*
 ```
-Bargain Rising Force Potion                 5/30s -> 6/18s
-Bargain Potion of Swift Swim                1/8s -> 6/18s
-
 Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
@@ -28,10 +25,7 @@ Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 Bargain Potion of Blindness                 Sound -> Blind
                                             1/10s -> 6/18s
-
-Bargain Potion of Cacophony                 1/10s -> 6/18s
 Bargain Potion of Protection                1/10s -> 6/18s
-
 Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
@@ -318,6 +312,15 @@ Wizard Lock                                 20 [2 -> 24]
 ### Levitate
 ```
 Base Cost                                   3
+```
+
+*Potions*
+```
+Bargain Rising Force Potion                 5/8s -> 3/9s
+Cheap Rising Force Potion                   8/15s -> 4/12s
+Standard Rising Force Potion                10/30s -> 6/18s
+Quality Rising Force Potion                 15/45s -> 8/24s
+Exclusive Rising Force Potion               20/60s -> 10/30s
 ```
 
 ------------------------------------------------------------
@@ -731,6 +734,21 @@ Living Statue                               20s [30 -> 60]
 Paralysis                                   3s [6 -> 12]
 ```
 
+*Potions*
+```
+Bargain Potion of Paralyze                  8s -> 9s
+Cheap Potion of Paralyze                    15s -> 12s
+Standard Potion of Paralyze                 30s -> 18s
+Quality Potion of Paralyze                  45s -> 24s
+Exclusive Potion of Paralyze                60s -> 30s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Potion of Paralyze                    15s -> 12s                      id: T_Nor_Potion_Paralyze_C
+Quality Potion of Paralyze                  45s -> 24s                      id: T_Nor_Potion_Paralyze_Q
+```
+
 ------------------------------------------------------------
 
 ### Silence
@@ -742,6 +760,21 @@ Base Cost                                   40 -> 20
 ```
 Silence                                     5s -> 10s
 Far Silence                                 10s -> 20s
+```
+
+*Potions*
+```
+Bargain Potion of Silence                   8s -> 30s
+Cheap Potion of Silence                     15s -> 45s
+Standard Potion of Silence                  30s -> 60s
+Quality Potion of Silence                   45s -> 90s
+Exclusive Potion of Silence                 60s -> 120s
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Potion of Silence                     15s -> 45s                      id: T_Nor_Potion_Silence_C
+Quality Potion of Silence                   45s -> 90s                      id: T_Nor_Potion_Silence_Q
 ```
 
 ------------------------------------------------------------

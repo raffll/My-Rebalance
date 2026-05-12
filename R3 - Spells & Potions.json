@@ -6,7 +6,7 @@
         "file_type":  "Esp",
         "author":  "",
         "description":  "",
-        "num_objects":  560,
+        "num_objects":  575,
         "masters":  [
                         [
                             "Morrowind.esm",
@@ -7070,6 +7070,370 @@
     {
         "type":  "Alchemy",
         "flags":  "",
+        "id":  "p_paralyze_b",
+        "name":  "Bargain Potion of Paralyze",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Bargain_01.nif",
+        "icon":  "m\\Tx_potion_bargain_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  9,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  1.5,
+                     "value":  5,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_paralyze_c",
+        "name":  "Cheap Potion of Paralyze",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Cheap_01.nif",
+        "icon":  "m\\Tx_potion_cheap_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  12,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  1.0,
+                     "value":  15,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_paralyze_s",
+        "name":  "Standard Potion of Paralyze",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Standard_01.nif",
+        "icon":  "m\\Tx_potion_standard_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  18,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.75,
+                     "value":  35,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_paralyze_q",
+        "name":  "Quality Potion of Paralyze",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Quality_01.nif",
+        "icon":  "m\\Tx_potion_quality_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  24,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.5,
+                     "value":  80,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_paralyze_e",
+        "name":  "Exclusive Potion of Paralyze",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Exclusive_01.nif",
+        "icon":  "m\\Tx_potion_exclusive_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  30,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.25,
+                     "value":  175,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_silence_b",
+        "name":  "Bargain Potion of Silence",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Bargain_01.nif",
+        "icon":  "m\\Tx_potion_bargain_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Silence",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  30,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  1.5,
+                     "value":  5,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_silence_c",
+        "name":  "Cheap Potion of Silence",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Cheap_01.nif",
+        "icon":  "m\\Tx_potion_cheap_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Silence",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  45,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  1.0,
+                     "value":  15,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_silence_s",
+        "name":  "Standard Potion of Silence",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Standard_01.nif",
+        "icon":  "m\\Tx_potion_standard_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Silence",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  60,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.75,
+                     "value":  35,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_silence_q",
+        "name":  "Quality Potion of Silence",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Quality_01.nif",
+        "icon":  "m\\Tx_potion_quality_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Silence",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  90,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.5,
+                     "value":  80,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_silence_e",
+        "name":  "Exclusive Potion of Silence",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Exclusive_01.nif",
+        "icon":  "m\\Tx_potion_exclusive_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Silence",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  120,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.25,
+                     "value":  175,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "T_Nor_Potion_Paralyze_C",
+        "name":  "Cheap Potion of Paralyze",
+        "script":  "",
+        "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
+        "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  12,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.6,
+                     "value":  15,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "T_Nor_Potion_Paralyze_Q",
+        "name":  "Quality Potion of Paralyze",
+        "script":  "",
+        "mesh":  "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+        "icon":  "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  24,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.5,
+                     "value":  80,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "T_Nor_Potion_Silence_C",
+        "name":  "Cheap Potion of Silence",
+        "script":  "",
+        "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
+        "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
+        "effects":  [
+                        {
+                            "magic_effect":  "Silence",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  45,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.6,
+                     "value":  15,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "T_Nor_Potion_Silence_Q",
+        "name":  "Quality Potion of Silence",
+        "script":  "",
+        "mesh":  "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
+        "icon":  "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
+        "effects":  [
+                        {
+                            "magic_effect":  "Silence",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  90,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.5,
+                     "value":  80,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
         "id":  "T_Com_Potion_BlightResistance_B",
         "name":  "Bargain Blight Resistance",
         "script":  "",
@@ -8360,32 +8724,6 @@
     {
         "type":  "Alchemy",
         "flags":  "",
-        "id":  "T_Nor_Potion_Paralyze_C",
-        "name":  "Cheap Potion of Paralyze",
-        "script":  "",
-        "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
-        "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
-        "effects":  [
-                        {
-                            "magic_effect":  "Paralyze",
-                            "skill":  "None",
-                            "attribute":  "None",
-                            "range":  "OnSelf",
-                            "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  1,
-                            "max_magnitude":  1
-                        }
-                    ],
-        "data":  {
-                     "weight":  0.6,
-                     "value":  15,
-                     "flags":  ""
-                 }
-    },
-    {
-        "type":  "Alchemy",
-        "flags":  "",
         "id":  "T_Nor_Potion_Reflection_C",
         "name":  "Cheap Potion of Reflection",
         "script":  "",
@@ -8848,32 +9186,6 @@
         "data":  {
                      "weight":  0.5,
                      "value":  80,
-                     "flags":  ""
-                 }
-    },
-    {
-        "type":  "Alchemy",
-        "flags":  "",
-        "id":  "T_Nor_Potion_Silence_C",
-        "name":  "Cheap Potion of Silence",
-        "script":  "",
-        "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
-        "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
-        "effects":  [
-                        {
-                            "magic_effect":  "Silence",
-                            "skill":  "None",
-                            "attribute":  "None",
-                            "range":  "OnSelf",
-                            "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  1,
-                            "max_magnitude":  1
-                        }
-                    ],
-        "data":  {
-                     "weight":  0.6,
-                     "value":  15,
                      "flags":  ""
                  }
     },
@@ -10680,9 +10992,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  18,
-                            "min_magnitude":  6,
-                            "max_magnitude":  6
+                            "duration":  9,
+                            "min_magnitude":  3,
+                            "max_magnitude":  3
                         }
                     ],
         "data":  {
@@ -10706,14 +11018,92 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
+                            "duration":  12,
+                            "min_magnitude":  4,
+                            "max_magnitude":  4
+                        }
+                    ],
+        "data":  {
+                     "weight":  1.0,
+                     "value":  15,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_levitation_s",
+        "name":  "Standard Rising Force Potion",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Standard_01.nif",
+        "icon":  "m\\Tx_potion_standard_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Levitate",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  18,
+                            "min_magnitude":  6,
+                            "max_magnitude":  6
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.75,
+                     "value":  35,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "P_Levitation_Q",
+        "name":  "Quality Rising Force Potion",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Quality_01.nif",
+        "icon":  "m\\Tx_potion_quality_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Levitate",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
                             "duration":  24,
                             "min_magnitude":  8,
                             "max_magnitude":  8
                         }
                     ],
         "data":  {
-                     "weight":  1.0,
-                     "value":  15,
+                     "weight":  0.5,
+                     "value":  80,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_levitation_e",
+        "name":  "Exclusive Rising Force Potion",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Exclusive_01.nif",
+        "icon":  "m\\Tx_potion_exclusive_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Levitate",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  30,
+                            "min_magnitude":  10,
+                            "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.25,
+                     "value":  175,
                      "flags":  ""
                  }
     },
