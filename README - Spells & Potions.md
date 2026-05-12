@@ -444,7 +444,7 @@ Base Cost                                   8 -> 4
 
 *Spells*
 ```
-Soulpinch                                   1-20/1s -> 2-40/1s
+Soulpinch                                   1-20/1s -> 1-40/1s
 ```
 
 *Spells - Tamriel Data*
@@ -461,8 +461,8 @@ Base Cost                                   4 -> 2
 
 *Spells*
 ```
-Fleabite                                    1-10/1s -> 2-20/1s
-Doze                                        1-20/1s -> 2-40/1s
+Fleabite                                    1-10/1s -> 1-20/1s
+Doze                                        1-20/1s -> 1-40/1s
 Hornhand                                    15-36/1s -> 30-70/1s
 ```
 
@@ -771,7 +771,7 @@ Voices                                      50/20s -> 100/120s
 
 ### Charm
 ```
-Base Cost                                   5
+Base Cost                                   5 -> 2
 ```
 
 *Spells - Tamriel Data*
@@ -1123,6 +1123,14 @@ Potion of Dispel                            10 -> 100                       x10/
 ### Restore Health
 ```
 Base Cost                                   5
+```
+
+*Spells*
+```
+Balyna's Soothing Balm                      3-12 -> 5-10
+Balyna's Efficacious Balm                   3-22 -> 5-20
+Heal Companion                              6-15 -> 5-15
+Balyna's Perfect Balm                       3-30 -> 5-30
 ```
 
 *Potions*
@@ -1533,7 +1541,7 @@ Resist Magicka                              10/5s -> 20/20s                 x2/x
 Variable Resist Magicka                     1-30/10s -> 1-30/40s
 Strong Resist Magicka                       20/10s -> 20/40s
 Great Resist Magicka                        30/10s -> 30/40s
-Magickguard                                 20-40/10s -> 20-40/40s          !
+Magickguard                                 20-40/10s -> 20-40/120s         x1/x12
 ```
 
 ------------------------------------------------------------

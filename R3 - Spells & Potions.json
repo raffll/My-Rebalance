@@ -6,7 +6,7 @@
         "file_type":  "Esp",
         "author":  "",
         "description":  "",
-        "num_objects":  552,
+        "num_objects":  557,
         "masters":  [
                         [
                             "Morrowind.esm",
@@ -734,6 +734,35 @@
                                    238,
                                    255,
                                    232
+                               ],
+                     "speed":  1.0,
+                     "size":  1.0,
+                     "size_cap":  50.0
+                 }
+    },
+    {
+        "type":  "MagicEffect",
+        "flags":  "",
+        "effect_id":  "Charm",
+        "icon":  "s\\Tx_S_charm.tga",
+        "texture":  "vfx_greenglow.tga",
+        "bolt_sound":  "",
+        "cast_sound":  "",
+        "hit_sound":  "",
+        "area_sound":  "",
+        "cast_visual":  "VFX_IllusionCast",
+        "bolt_visual":  "VFX_IllusionBolt",
+        "hit_visual":  "VFX_IllusionHit",
+        "area_visual":  "VFX_IllusionArea",
+        "description":  "This effect temporarily increases the target\u0027s disposition towards the caster. When the effect ends, the target\u0027s disposition returns to its original value.",
+        "data":  {
+                     "school":  "Illusion",
+                     "base_cost":  2.0,
+                     "flags":  "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+                     "color":  [
+                                   136,
+                                   204,
+                                   159
                                ],
                      "speed":  1.0,
                      "size":  1.0,
@@ -2792,7 +2821,7 @@
                             "range":  "OnTouch",
                             "area":  0,
                             "duration":  1,
-                            "min_magnitude":  2,
+                            "min_magnitude":  1,
                             "max_magnitude":  40
                         }
                     ],
@@ -3206,7 +3235,7 @@
                             "range":  "OnTouch",
                             "area":  0,
                             "duration":  1,
-                            "min_magnitude":  2,
+                            "min_magnitude":  1,
                             "max_magnitude":  20
                         }
                     ],
@@ -3731,7 +3760,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  40,
+                            "duration":  120,
                             "min_magnitude":  20,
                             "max_magnitude":  40
                         }
@@ -4606,7 +4635,7 @@
                             "range":  "OnTouch",
                             "area":  0,
                             "duration":  1,
-                            "min_magnitude":  2,
+                            "min_magnitude":  1,
                             "max_magnitude":  40
                         }
                     ],
@@ -11752,6 +11781,98 @@
                      "weight":  0.75,
                      "value":  35,
                      "flags":  ""
+                 }
+    },
+    {
+        "type":  "Spell",
+        "flags":  "",
+        "id":  "balyna's soothing balm",
+        "name":  "Balyna's Soothing Balm",
+        "effects":  [
+                        {
+                            "magic_effect":  "RestoreHealth",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  1,
+                            "min_magnitude":  5,
+                            "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "spell_type":  "Spell",
+                     "cost":  2,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Spell",
+        "flags":  "",
+        "id":  "balyna's efficacious balm",
+        "name":  "Balyna's Efficacious Balm",
+        "effects":  [
+                        {
+                            "magic_effect":  "RestoreHealth",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  1,
+                            "min_magnitude":  5,
+                            "max_magnitude":  20
+                        }
+                    ],
+        "data":  {
+                     "spell_type":  "Spell",
+                     "cost":  3,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Spell",
+        "flags":  "",
+        "id":  "heal companion",
+        "name":  "Heal Companion",
+        "effects":  [
+                        {
+                            "magic_effect":  "RestoreHealth",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  1,
+                            "min_magnitude":  5,
+                            "max_magnitude":  15
+                        }
+                    ],
+        "data":  {
+                     "spell_type":  "Spell",
+                     "cost":  3,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Spell",
+        "flags":  "",
+        "id":  "balyna's perfect balm",
+        "name":  "Balyna's Perfect Balm",
+        "effects":  [
+                        {
+                            "magic_effect":  "RestoreHealth",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  1,
+                            "min_magnitude":  5,
+                            "max_magnitude":  30
+                        }
+                    ],
+        "data":  {
+                     "spell_type":  "Spell",
+                     "cost":  4,
+                     "flags":  "AUTO_CALCULATE"
                  }
     },
     {

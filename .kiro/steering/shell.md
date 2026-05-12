@@ -2,6 +2,14 @@
 
 Always use PowerShell for all shell commands and hook `runCommand` entries. Never use bash, CMD, or any other shell.
 
+## tes3conv ESP Build
+
+Always use the `-o` flag when creating ESP files:
+
+```powershell
+./tes3conv/tes3conv.exe "input.json" -o "output.esp"
+```
+
 ## JSON File Encoding
 
 tes3conv requires JSON files without a UTF-8 BOM. The `fsWrite` tool writes files with BOM by default. After creating any JSON file that will be passed to tes3conv, strip the BOM using:

@@ -80,13 +80,15 @@ The col 120 rule is retired — IDs are part of the comment column at col 76, us
 The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
 
 ## Value Rounding Rule
-All spell magnitudes and durations must be either:
+All spell **magnitudes** must be either:
 - **1** (minimum floor value), or
 - A **multiple of 5** (5, 10, 15, 20, 25, 30, ...)
 
-When scaling produces non-round values, first apply the scale, then round to the nearest multiple of 5. If the result is less than 5, use 1 or 5 (never 2, 3, 4, 6, 7, etc. unless it's exactly 1).
+**Durations are exempt from rounding** — they may be any integer value produced by scaling.
 
-This applies to the **right side** of `->` in README entries and to the corresponding JSON values. Vanilla values (left side) are recorded as-is.
+When scaling produces non-round magnitudes, first apply the scale, then round to the nearest multiple of 5. If the result is less than 5, use 1 or 5 (never 2, 3, 4, 6, 7, etc. unless it's exactly 1).
+
+This applies to **both sides** of `->` in README entries and to the corresponding JSON values. Vanilla spells with non-round magnitudes must also be rounded when they appear in the ESP — record the vanilla value as-is on the left side of `->`, then put the rounded value on the right side (even if no other change is being made).
 
 ## No-Scale Effects
 The following effects do **not** get spell compensation scaling when their base cost changes. Only rounding fixes apply:

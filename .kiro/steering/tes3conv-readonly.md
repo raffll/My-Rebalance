@@ -15,7 +15,11 @@ They serve as the source of truth for original game data. All edits must be made
 
 When looking up vanilla spell data, check `docs/` reference files **first** before searching the large JSON files:
 - `docs/Vanilla-Alteration-Spells.md`
+- `docs/Vanilla-Conjuration-Spells.md`
 - `docs/Vanilla-Destruction-Spells.md`
+- `docs/Vanilla-Illusion-Spells.md`
+- `docs/Vanilla-Mysticism-Spells.md`
+- `docs/Vanilla-Restoration-Spells.md`
 - `docs/Vanilla-Potions-Reference.md`
 - `docs/Vanilla-Scrolls-Reference.md`
 - `docs/TD-Destruction-Spells-Analysis.md`
