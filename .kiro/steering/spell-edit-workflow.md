@@ -1,7 +1,8 @@
 # Spell Edit Workflow
 
 This workflow applies to all three file pairs:
-- `README - Magic.md` ↔ `R3 - Magic.json` → `R3 - Magic.esp`
+- `README - Spells & Potions.md` ↔ `R3 - Spells & Potions.json` → `R3 - Spells & Potions.esp`
+- `README - Enchantments.md` ↔ `R3 - Enchantments.json` → `R3 - Enchantments.esp`
 - `README - Races & Birthsigns.md` ↔ `R3 - Races & Birthsigns.json` → `R3 - Races & Birthsigns.esp`
 - `README - Core.md` ↔ `R3 - Core.json` → `R3 - Core.esp`
 

@@ -110,20 +110,6 @@ Shadow Rust                                 1-15/20s -> 10-150/20s
 Weight of Guilt                             500/3s -> 5000/3s
 ```
 
-*Enchantments*
-```
-Scroll of Baleful Suffering                 0−25/30s                        id: sc_balefulsuffering_en
-Scroll of Fader's Leaden Flesh              0−50/30s -> 0-250/60s           id: sc_fadersleadenflesh_en
-
-Black Jinx                                  25-100/120s -> 250-1000/120s    id: black_jinx_en_unique
-Spear of the Hunter                         50/10s -> 500/10s               id: bm_hunterspear
-```
-
-*Enchantments - Tamriel Data*
-```
-Scroll of Makkun's Heavy Hand               30/35s -> 300/35s               id: T_Once_BurdenTouch30-35
-```
-
 ------------------------------------------------------------
 
 ### Feather
@@ -159,16 +145,6 @@ Ulms' Juicedaw Feather                      50/10s -> 250/20s
 ```
 Fling                                       500/3s -> 5000/3s
 Zenithar's Arms                             50/10s -> 500/10s
-```
-
-*Enchantments*
-```
-Feather Belt                                20/10s -> 40/50s                id: feather_en
-Feather Ring                                20/10s -> 40/50s                id: feather_en
-Feather Shield                              20/10s -> 40/50s                id: feather_en
-Saint's Shield                              20/10s -> 100/20s               id: saint's shield_en
-
-Juicedaw Feather Ring                       50/10s -> 250/20s               id: ulms juicedaw's feather_en
 ```
 
 ------------------------------------------------------------
@@ -211,12 +187,6 @@ Falling First Barrier                       8/40s -> 16/40s
 
 Force Wall                                  50/5s -> 100/5s
 Tsun's Ward                                 20/20s -> 40/20s
-```
-
-*Enchantments - Tamriel Data*
-```
-Scroll of The Falling Barrier               4/40s -> 8/40s                  id: T_Once_FallingBarrier
-                                            3/20s -> 5/20s                  id: T_Once_FallingBarrier
 ```
 
 ------------------------------------------------------------
@@ -610,16 +580,6 @@ Acid Trap                                   20-40/1s -> 20-40/10s
 Master Acid Trap                            150-300/1s -> 150-300/10s
 ```
 
-*Scrolls*
-```
-Scroll of Baleful Suffering                 5/5s                            id: sc_balefulsuffering_en
-```
-
-*Enchantments*
-```
-Daedric Crescent                            5-30/1s -> 50-300/1s            id: Crescent Moon
-```
-
 ------------------------------------------------------------
 
 ### Disintegrate Weapon
@@ -643,11 +603,6 @@ Steel Eater                                 5-30/3s -> 25-150/3s
 
 Acid Trap                                   20-40/1s -> 20-40/5s
 Master Acid Trap                            150-300/1s -> 150-300/5s
-```
-
-*Scrolls*
-```
-Scroll of Baleful Suffering                 5/5s                            id: sc_balefulsuffering_en
 ```
 
 ------------------------------------------------------------
