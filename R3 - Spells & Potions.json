@@ -6,7 +6,7 @@
         "file_type":  "Esp",
         "author":  "",
         "description":  "",
-        "num_objects":  557,
+        "num_objects":  560,
         "masters":  [
                         [
                             "Morrowind.esm",
@@ -728,7 +728,7 @@
         "description":  "This effect produces a disorienting noise in the victim\u0027s mind. The magnitude is the reduction in the victim\u0027s chance to successfully cast spells (and the relative magnitude of the sound\u0027s volume).\r\n",
         "data":  {
                      "school":  "Illusion",
-                     "base_cost":  0.25,
+                     "base_cost":  0.5,
                      "flags":  "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
                      "color":  [
                                    238,
@@ -1771,7 +1771,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  120,
+                            "duration":  60,
                             "min_magnitude":  100,
                             "max_magnitude":  100
                         }
@@ -2429,7 +2429,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  20,
+                            "duration":  10,
                             "min_magnitude":  15,
                             "max_magnitude":  35
                         }
@@ -2475,7 +2475,7 @@
                             "attribute":  "None",
                             "range":  "OnTouch",
                             "area":  0,
-                            "duration":  60,
+                            "duration":  30,
                             "min_magnitude":  10,
                             "max_magnitude":  20
                         }
@@ -2705,7 +2705,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  20,
+                            "duration":  10,
                             "min_magnitude":  25,
                             "max_magnitude":  45
                         }
@@ -2728,7 +2728,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  60,
+                            "duration":  30,
                             "min_magnitude":  1,
                             "max_magnitude":  60
                         }
@@ -2843,7 +2843,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  20,
+                            "duration":  10,
                             "min_magnitude":  10,
                             "max_magnitude":  25
                         }
@@ -3783,7 +3783,7 @@
                             "attribute":  "None",
                             "range":  "OnTouch",
                             "area":  0,
-                            "duration":  60,
+                            "duration":  30,
                             "min_magnitude":  1,
                             "max_magnitude":  10
                         }
@@ -5324,7 +5324,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  20,
+                            "duration":  10,
                             "min_magnitude":  1,
                             "max_magnitude":  90
                         }
@@ -6952,9 +6952,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  18,
-                            "min_magnitude":  6,
-                            "max_magnitude":  6
+                            "duration":  30,
+                            "min_magnitude":  10,
+                            "max_magnitude":  10
                         }
                     ],
         "data":  {
@@ -6978,14 +6978,92 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  45,
+                            "min_magnitude":  15,
+                            "max_magnitude":  15
                         }
                     ],
         "data":  {
                      "weight":  1.0,
                      "value":  15,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "T_Com_Poison_Sound_S",
+        "name":  "Standard Potion of Cacophony",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Standard_01.nif",
+        "icon":  "m\\Tx_potion_standard_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Sound",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  60,
+                            "min_magnitude":  20,
+                            "max_magnitude":  20
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.75,
+                     "value":  35,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "T_Com_Poison_Sound_Q",
+        "name":  "Quality Potion of Cacophony",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Quality_01.nif",
+        "icon":  "m\\Tx_potion_quality_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Sound",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  90,
+                            "min_magnitude":  30,
+                            "max_magnitude":  30
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.5,
+                     "value":  80,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "T_Com_Poison_Sound_E",
+        "name":  "Exclusive Potion of Cacophony",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Exclusive_01.nif",
+        "icon":  "m\\Tx_potion_exclusive_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Sound",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  120,
+                            "min_magnitude":  40,
+                            "max_magnitude":  40
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.25,
+                     "value":  175,
                      "flags":  ""
                  }
     },

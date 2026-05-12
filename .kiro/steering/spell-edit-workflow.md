@@ -79,6 +79,8 @@ The col 120 rule is retired — IDs are part of the comment column at col 76, us
 ## JSON value scaling
 The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
 
+**Before applying a new scale**, always check the current mag/dur values (right side of `->`) and determine what scale has already been applied relative to vanilla. Only apply the difference — never double-scale.
+
 ## Spell Cost Formula
 
 - **OnTarget:** `floor( base_cost × ((min + max) × duration + area) / 40 )`

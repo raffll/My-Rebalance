@@ -748,23 +748,33 @@ Far Silence                                 10s -> 20s
 
 ### Sound
 ```
-Base Cost                                   3 -> 0.25
+Base Cost                                   3 -> 0.5
+```
+
+*Potions - Tamriel Data*
+```
+Bargain Potion of Cacophony                 1/10s -> 10/30s                 id: T_Com_Poison_Sound_B
+Cheap Potion of Cacophony                   8/15s -> 15/45s                 id: T_Com_Poison_Sound_C
+Standard Potion of Cacophony                10/30s -> 20/60s                id: T_Com_Poison_Sound_S
+Quality Potion of Cacophony                 15/45s -> 30/90s                id: T_Com_Poison_Sound_Q
+Exclusive Potion of Cacophony               20/60s -> 40/120s               id: T_Com_Poison_Sound_E
 ```
 
 *Spells*
 ```
-Earwig                                      3-8/5s -> 10-25/20s
-Cruel Earwig                                5-11/5s -> 15-35/20s
-Dire Earwig                                 8-15/5s -> 25-45/20s
-Wild Earwig                                 1-30/5s -> 1-90/20s
-Noise                                       3-8/5s -> 1-10/60s
-Cruel Noise                                 10-22/5s -> 10-20/60s
-Dire Noise                                  2-60/5s -> 1-60/60s
+Earwig                                      3-8/5s -> 10-25/10s
+Cruel Earwig                                5-11/5s -> 15-35/10s
+Dire Earwig                                 8-15/5s -> 25-45/10s
+Wild Earwig                                 1-30/5s -> 1-90/10s
+
+Noise                                       3-8/5s -> 1-10/30s
+Cruel Noise                                 10-22/5s -> 10-20/30s
+Dire Noise                                  2-60/5s -> 1-60/30s
 ```
 
 *Spells - Tamriel Data*
 ```
-Voices                                      50/20s -> 100/120s
+Voices                                      50/20s -> 100/60s
 ```
 
 ------------------------------------------------------------
