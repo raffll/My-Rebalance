@@ -201,7 +201,7 @@ Fierce Fire Shield                          5-11/10s -> 5-10/10s
 
 *Spells - Tamriel Data*
 ```
-Fire Eye                                    10-23/20s
+Fire Eye                                    10-23/20s -> 10-25/20s
 ```
 
 *Potions*
@@ -229,7 +229,7 @@ Base Cost                                   3
 *Spells*
 ```
 Frost Barrier                               3/10s -> 1-10/10s
-Frost Shield -> Weak Frost Shield           6/30s
+Frost Shield -> Weak Frost Shield           6/30s -> 5/30s
 Frost Shield                                10/30s
 Strong Frost Shield                         12/30s -> 15/30s
 Fierce Frost Shield                         5-11/10s -> 5-10/10s

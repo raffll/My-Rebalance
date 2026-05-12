@@ -1,4 +1,4 @@
-# Remastered Rebalance Redux — Enchantments
+# Remastered Rebalance Redux
 
 ------------------------------------------------------------
 

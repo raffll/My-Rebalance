@@ -1477,7 +1477,7 @@
                             "area":  0,
                             "duration":  20,
                             "min_magnitude":  10,
-                            "max_magnitude":  23
+                            "max_magnitude":  25
                         },
                         {
                             "magic_effect":  "NightEye",
@@ -3304,8 +3304,8 @@
                             "range":  "OnSelf",
                             "area":  0,
                             "duration":  30,
-                            "min_magnitude":  6,
-                            "max_magnitude":  6
+                            "min_magnitude":  5,
+                            "max_magnitude":  5
                         }
                     ],
         "data":  {

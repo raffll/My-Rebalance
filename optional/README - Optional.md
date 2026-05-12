@@ -13,3 +13,10 @@ sMagicInsufficientCharge                    "Item does not have enough charge." 
 ```
 fBarterGoldResetDelay                       24 -> 1
 ```
+
+------------------------------------------------------------
+
+## Morag Tong Polished
+```
+BILL_MT_calc_legit_kills                    -5200 -> -6000
+```
