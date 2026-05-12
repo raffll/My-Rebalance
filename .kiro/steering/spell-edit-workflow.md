@@ -79,6 +79,13 @@ The col 120 rule is retired — IDs are part of the comment column at col 76, us
 ## JSON value scaling
 The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
 
+## Spell Cost Formula
+
+- **OnTarget:** `floor( base_cost × ((min + max) × duration + area) / 40 )`
+- **OnTouch/Self:** `floor( base_cost × ((min + max) × (duration + 1) + area) / 40 )`
+
+For multi-effect spells, sum the cost of each effect individually.
+
 ## Value Rounding Rule
 All spell **magnitudes** must be either:
 - **1** (minimum floor value), or

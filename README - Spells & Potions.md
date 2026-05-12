@@ -402,7 +402,7 @@ Base Cost                                   7 -> 8
 *Spells*
 ```
 Spark                                       2-20 -> 1-20
-Shockball                                   2-40 -> 1-40
+Shockball                                   2-40 -> 1-20
 Greater Shockball                           2-40 -> 1-40
 Lightning Storm                             2-10 -> 1-10
 Stormhand                                   5-12 -> 5-10

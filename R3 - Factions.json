@@ -6,7 +6,7 @@
     "file_type": "Esp",
     "author": "",
     "description": "",
-    "num_objects": 11,
+    "num_objects": 12,
     "masters": [
       [
         "Morrowind.esm",
@@ -1699,3 +1699,628 @@
       "flags": ""
     }
   },
+  {
+    "type": "Faction",
+    "flags": "",
+    "id": "Telvanni",
+    "name": "Great House Telvanni",
+    "rank_names": [
+      "Hireling",
+      "Retainer",
+      "Oathman",
+      "Lawman",
+      "Mouth",
+      "Spellwright",
+      "Wizard",
+      "Master",
+      "Magister",
+      "Archmagister"
+    ],
+    "reactions": [
+      {
+        "faction": "Telvanni",
+        "reaction": 3
+      },
+      {
+        "faction": "Mages Guild",
+        "reaction": -3
+      },
+      {
+        "faction": "Imperial Cult",
+        "reaction": -1
+      },
+      {
+        "faction": "Temple",
+        "reaction": -1
+      },
+      {
+        "faction": "Hlaalu",
+        "reaction": -1
+      },
+      {
+        "faction": "Redoran",
+        "reaction": -1
+      },
+      {
+        "faction": "Ashlanders",
+        "reaction": -1
+      },
+      {
+        "faction": "Clan Aundae",
+        "reaction": -1
+      },
+      {
+        "faction": "Clan Berne",
+        "reaction": -1
+      },
+      {
+        "faction": "Clan Quarra",
+        "reaction": -1
+      },
+      {
+        "faction": "Imperial Legion",
+        "reaction": -1
+      },
+      {
+        "faction": "Sixth House",
+        "reaction": -3
+      },
+      {
+        "faction": "T_Mw_HouseDres",
+        "reaction": 2
+      },
+      {
+        "faction": "T_Mw_HouseIndoril",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_ImperialNavy",
+        "reaction": -2
+      },
+      {
+        "faction": "T_Sky_ClanKhulari",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_Clan_Baluath",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_Clan_Orlukh",
+        "reaction": -1
+      }
+    ],
+    "data": {
+      "favored_attributes": [
+        "Willpower",
+        "Intelligence"
+      ],
+      "requirements": [
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 0,
+          "favored_skill": 0,
+          "reputation": 0
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 10,
+          "favored_skill": 0,
+          "reputation": 5
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 20,
+          "favored_skill": 0,
+          "reputation": 20
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 30,
+          "favored_skill": 5,
+          "reputation": 35
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 40,
+          "favored_skill": 10,
+          "reputation": 55
+        },
+        {
+          "attributes": [
+            35,
+            35
+          ],
+          "primary_skill": 50,
+          "favored_skill": 15,
+          "reputation": 75
+        },
+        {
+          "attributes": [
+            40,
+            40
+          ],
+          "primary_skill": 60,
+          "favored_skill": 20,
+          "reputation": 110
+        },
+        {
+          "attributes": [
+            45,
+            45
+          ],
+          "primary_skill": 70,
+          "favored_skill": 25,
+          "reputation": 150
+        },
+        {
+          "attributes": [
+            50,
+            50
+          ],
+          "primary_skill": 80,
+          "favored_skill": 30,
+          "reputation": 175
+        },
+        {
+          "attributes": [
+            55,
+            55
+          ],
+          "primary_skill": 90,
+          "favored_skill": 35,
+          "reputation": 225
+        }
+      ],
+      "favored_skills": [
+        "Mysticism",
+        "Conjuration",
+        "Illusion",
+        "Alteration",
+        "Destruction",
+        "Enchant",
+        "None"
+      ],
+      "flags": ""
+    }
+  },
+  {
+    "type": "Faction",
+    "flags": "",
+    "id": "Temple",
+    "name": "Temple",
+    "rank_names": [
+      "Layman",
+      "Novice",
+      "Initiate",
+      "Acolyte",
+      "Adept",
+      "Curate",
+      "Disciple",
+      "Diviner",
+      "Master",
+      "Patriarch"
+    ],
+    "reactions": [
+      {
+        "faction": "Temple",
+        "reaction": 3
+      },
+      {
+        "faction": "Mages Guild",
+        "reaction": -2
+      },
+      {
+        "faction": "Imperial Cult",
+        "reaction": -2
+      },
+      {
+        "faction": "Blades",
+        "reaction": -1
+      },
+      {
+        "faction": "Hlaalu",
+        "reaction": 1
+      },
+      {
+        "faction": "Redoran",
+        "reaction": 2
+      },
+      {
+        "faction": "Telvanni",
+        "reaction": -1
+      },
+      {
+        "faction": "Ashlanders",
+        "reaction": -1
+      },
+      {
+        "faction": "Nerevarine",
+        "reaction": -8
+      },
+      {
+        "faction": "Clan Berne",
+        "reaction": -3
+      },
+      {
+        "faction": "Clan Quarra",
+        "reaction": -3
+      },
+      {
+        "faction": "Fighters Guild",
+        "reaction": -1
+      },
+      {
+        "faction": "Imperial Legion",
+        "reaction": -1
+      },
+      {
+        "faction": "Thieves Guild",
+        "reaction": -1
+      },
+      {
+        "faction": "Sixth House",
+        "reaction": -3
+      },
+      {
+        "faction": "T_Mw_Clan_Baluath",
+        "reaction": -3
+      },
+      {
+        "faction": "T_Mw_Clan_Orlukh",
+        "reaction": -3
+      },
+      {
+        "faction": "T_Mw_HouseDres",
+        "reaction": 1
+      },
+      {
+        "faction": "T_Mw_HouseIndoril",
+        "reaction": 2
+      },
+      {
+        "faction": "T_Sky_ClanKhulari",
+        "reaction": -3
+      },
+      {
+        "faction": "T_Mw_JaNattaSyndicate",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_Shinathi",
+        "reaction": 2
+      }
+    ],
+    "data": {
+      "favored_attributes": [
+        "Personality",
+        "Intelligence"
+      ],
+      "requirements": [
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 0,
+          "favored_skill": 0,
+          "reputation": 0
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 10,
+          "favored_skill": 0,
+          "reputation": 5
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 20,
+          "favored_skill": 0,
+          "reputation": 20
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 30,
+          "favored_skill": 5,
+          "reputation": 45
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 40,
+          "favored_skill": 10,
+          "reputation": 70
+        },
+        {
+          "attributes": [
+            35,
+            35
+          ],
+          "primary_skill": 50,
+          "favored_skill": 15,
+          "reputation": 100
+        },
+        {
+          "attributes": [
+            40,
+            40
+          ],
+          "primary_skill": 60,
+          "favored_skill": 20,
+          "reputation": 130
+        },
+        {
+          "attributes": [
+            45,
+            45
+          ],
+          "primary_skill": 70,
+          "favored_skill": 25,
+          "reputation": 160
+        },
+        {
+          "attributes": [
+            50,
+            50
+          ],
+          "primary_skill": 80,
+          "favored_skill": 30,
+          "reputation": 200
+        },
+        {
+          "attributes": [
+            55,
+            55
+          ],
+          "primary_skill": 90,
+          "favored_skill": 35,
+          "reputation": 240
+        }
+      ],
+      "favored_skills": [
+        "Unarmored",
+        "Alchemy",
+        "Restoration",
+        "Mysticism",
+        "Conjuration",
+        "BluntWeapon",
+        "None"
+      ],
+      "flags": ""
+    }
+  },
+  {
+    "type": "Faction",
+    "flags": "",
+    "id": "Thieves Guild",
+    "name": "Thieves Guild",
+    "rank_names": [
+      "Toad",
+      "Wet Ear",
+      "Footpad",
+      "Blackcap",
+      "Operative",
+      "Bandit",
+      "Captain",
+      "Ringleader",
+      "Mastermind",
+      "Master Thief"
+    ],
+    "reactions": [
+      {
+        "faction": "Thieves Guild",
+        "reaction": 3
+      },
+      {
+        "faction": "Mages Guild",
+        "reaction": 1
+      },
+      {
+        "faction": "Imperial Cult",
+        "reaction": 1
+      },
+      {
+        "faction": "Temple",
+        "reaction": -1
+      },
+      {
+        "faction": "Hlaalu",
+        "reaction": -1
+      },
+      {
+        "faction": "Redoran",
+        "reaction": -1
+      },
+      {
+        "faction": "Ashlanders",
+        "reaction": -2
+      },
+      {
+        "faction": "Camonna Tong",
+        "reaction": -3
+      },
+      {
+        "faction": "Clan Berne",
+        "reaction": -1
+      },
+      {
+        "faction": "Clan Aundae",
+        "reaction": -1
+      },
+      {
+        "faction": "Clan Quarra",
+        "reaction": -1
+      },
+      {
+        "faction": "Imperial Legion",
+        "reaction": -1
+      },
+      {
+        "faction": "Sixth House",
+        "reaction": -3
+      },
+      {
+        "faction": "T_Glb_ArchaeologicalSociety",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_Clan_Baluath",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_Clan_Orlukh",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_HouseDres",
+        "reaction": -2
+      },
+      {
+        "faction": "T_Mw_HouseIndoril",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Sky_ClanKhulari",
+        "reaction": -1
+      },
+      {
+        "faction": "T_Mw_Shinathi",
+        "reaction": -2
+      }
+    ],
+    "data": {
+      "favored_attributes": [
+        "Agility",
+        "Personality"
+      ],
+      "requirements": [
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 0,
+          "favored_skill": 0,
+          "reputation": 0
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 10,
+          "favored_skill": 0,
+          "reputation": 5
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 20,
+          "favored_skill": 0,
+          "reputation": 20
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 30,
+          "favored_skill": 5,
+          "reputation": 40
+        },
+        {
+          "attributes": [
+            30,
+            30
+          ],
+          "primary_skill": 40,
+          "favored_skill": 10,
+          "reputation": 70
+        },
+        {
+          "attributes": [
+            35,
+            35
+          ],
+          "primary_skill": 50,
+          "favored_skill": 15,
+          "reputation": 100
+        },
+        {
+          "attributes": [
+            40,
+            40
+          ],
+          "primary_skill": 60,
+          "favored_skill": 20,
+          "reputation": 135
+        },
+        {
+          "attributes": [
+            45,
+            45
+          ],
+          "primary_skill": 70,
+          "favored_skill": 25,
+          "reputation": 170
+        },
+        {
+          "attributes": [
+            50,
+            50
+          ],
+          "primary_skill": 80,
+          "favored_skill": 30,
+          "reputation": 205
+        },
+        {
+          "attributes": [
+            55,
+            55
+          ],
+          "primary_skill": 90,
+          "favored_skill": 35,
+          "reputation": 250
+        }
+      ],
+      "favored_skills": [
+        "Marksman",
+        "ShortBlade",
+        "LightArmor",
+        "Acrobatics",
+        "Sneak",
+        "Security",
+        "None"
+      ],
+      "flags": ""
+    }
+  }
+]

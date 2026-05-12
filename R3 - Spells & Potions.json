@@ -3997,7 +3997,7 @@
                     ],
         "data":  {
                      "spell_type":  "Spell",
-                     "cost":  38,
+                     "cost":  15,
                      "flags":  "AUTO_CALCULATE"
                  }
     },
@@ -13742,7 +13742,7 @@
                             "area":  10,
                             "duration":  1,
                             "min_magnitude":  1,
-                            "max_magnitude":  40
+                            "max_magnitude":  20
                         }
                     ],
         "data":  {
