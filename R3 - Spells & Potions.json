@@ -6,7 +6,7 @@
         "file_type":  "Esp",
         "author":  "",
         "description":  "",
-        "num_objects":  576,
+        "num_objects":  579,
         "masters":  [
                         [
                             "Morrowind.esm",
@@ -937,6 +937,35 @@
                                    213,
                                    234,
                                    249
+                               ],
+                     "speed":  1.0,
+                     "size":  1.0,
+                     "size_cap":  50.0
+                 }
+    },
+    {
+        "type":  "MagicEffect",
+        "flags":  "",
+        "effect_id":  "FortifyFatigue",
+        "icon":  "s\\Tx_S_Ftfy_Fati.tga",
+        "texture":  "vfx_bluecloud.tga",
+        "bolt_sound":  "",
+        "cast_sound":  "",
+        "hit_sound":  "",
+        "area_sound":  "",
+        "cast_visual":  "VFX_FortifyCast",
+        "bolt_visual":  "VFX_RestoreBolt",
+        "hit_visual":  "VFX_RestorationHit",
+        "area_visual":  "VFX_RestorationArea",
+        "description":  "This effect temporarily increases the value of a subject\u0027s fatigue. Any derived attributes are recalculated. Fatigue returns to its original values when the spell ends. The magnitude is the value of the increase in fatigue.",
+        "data":  {
+                     "school":  "Restoration",
+                     "base_cost":  0.25,
+                     "flags":  "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
+                     "color":  [
+                                   166,
+                                   224,
+                                   255
                                ],
                      "speed":  1.0,
                      "size":  1.0,
@@ -2276,6 +2305,72 @@
         "data":  {
                      "spell_type":  "Spell",
                      "cost":  126,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Spell",
+        "flags":  "",
+        "id":  "brittlewind",
+        "name":  "Brittlewind",
+        "effects":  [
+                        {
+                            "magic_effect":  "FrostDamage",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  10,
+                            "min_magnitude":  10,
+                            "max_magnitude":  10
+                        },
+                        {
+                            "magic_effect":  "DisintegrateArmor",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  10,
+                            "min_magnitude":  200,
+                            "max_magnitude":  200
+                        }
+                    ],
+        "data":  {
+                     "spell_type":  "Spell",
+                     "cost":  50,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Spell",
+        "flags":  "",
+        "id":  "bm_draugr_curse",
+        "name":  "Eddard\u0027s Wrath",
+        "effects":  [
+                        {
+                            "magic_effect":  "DisintegrateArmor",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  15,
+                            "min_magnitude":  40,
+                            "max_magnitude":  90
+                        },
+                        {
+                            "magic_effect":  "DisintegrateWeapon",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  15,
+                            "min_magnitude":  40,
+                            "max_magnitude":  90
+                        }
+                    ],
+        "data":  {
+                     "spell_type":  "Spell",
+                     "cost":  50,
                      "flags":  "AUTO_CALCULATE"
                  }
     },
@@ -10157,9 +10252,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  30,
-                            "min_magnitude":  10,
-                            "max_magnitude":  10
+                            "duration":  60,
+                            "min_magnitude":  20,
+                            "max_magnitude":  20
                         }
                     ],
         "data":  {
@@ -10183,9 +10278,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  45,
-                            "min_magnitude":  15,
-                            "max_magnitude":  15
+                            "duration":  90,
+                            "min_magnitude":  30,
+                            "max_magnitude":  30
                         }
                     ],
         "data":  {
@@ -10209,9 +10304,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  60,
-                            "min_magnitude":  20,
-                            "max_magnitude":  20
+                            "duration":  120,
+                            "min_magnitude":  40,
+                            "max_magnitude":  40
                         }
                     ],
         "data":  {
@@ -10235,9 +10330,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  90,
-                            "min_magnitude":  30,
-                            "max_magnitude":  30
+                            "duration":  180,
+                            "min_magnitude":  60,
+                            "max_magnitude":  60
                         }
                     ],
         "data":  {
@@ -10261,9 +10356,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  120,
-                            "min_magnitude":  40,
-                            "max_magnitude":  40
+                            "duration":  240,
+                            "min_magnitude":  80,
+                            "max_magnitude":  80
                         }
                     ],
         "data":  {

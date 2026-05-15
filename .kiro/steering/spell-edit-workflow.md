@@ -26,7 +26,7 @@ Paralysis                                   6s [auto -> 12]                 used
 Scroll of Baleful Suffering                 0−25/30s                        id: sc_balefulsuffering_en
 ```
 
-- Values are `magnitude/duration` (e.g. `20/10s -> 50/40s`)
+- Values are `magnitude/duration` (e.g. `20/10s -> 50/40s`). All entries must include at least magnitude and duration.
 - Range spells use `min-max/duration` (e.g. `30-60/10s -> 60-120/50s`)
 - If there is an area, append it after duration: `50/10s/10ft`
 - If there is also a range type, append it after area: `50/10s/10ft/Target`

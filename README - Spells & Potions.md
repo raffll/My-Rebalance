@@ -379,8 +379,8 @@ Base Cost                                   5 -> 8
 
 *Spells*
 ```
-Cruel Firebloom                             10-16 -> 10-15
-God's Fire                                  11-60 -> 10-60
+Cruel Firebloom                             10-16/1s -> 10-15/1s
+God's Fire                                  11-60/1s -> 10-60/1s
 ```
 
 ------------------------------------------------------------
@@ -392,7 +392,7 @@ Base Cost                                   5 -> 8
 
 *Spells*
 ```
-God's Frost                                 11-60 -> 10-60
+God's Frost                                 11-60/1s -> 10-60/1s
 ```
 
 ------------------------------------------------------------
@@ -404,11 +404,11 @@ Base Cost                                   7 -> 8
 
 *Spells*
 ```
-Spark                                       2-20 -> 1-20
-Shockball                                   2-40 -> 1-20
-Greater Shockball                           2-40 -> 1-40
-Lightning Storm                             2-10 -> 1-10
-Stormhand                                   5-12 -> 5-10
+Spark                                       2-20/1s -> 1-20/1s
+Shockball                                   2-40/1s -> 1-20/1s
+Greater Shockball                           2-40/1s -> 1-40/1s
+Lightning Storm                             2-10/1s -> 1-10/1s
+Stormhand                                   5-12/1s -> 5-10/1s
 ```
 
 ------------------------------------------------------------
@@ -420,9 +420,9 @@ Base Cost                                   9 -> 8
 
 *Spells*
 ```
-Poison                                      2-20 -> 1-20
-Toxic Cloud                                 2-15 -> 1-15
-Black Hand                                  5-12 -> 5-10
+Poison                                      2-20/1s -> 1-20/1s
+Toxic Cloud                                 2-15/1s -> 1-15/1s
+Black Hand                                  5-12/1s -> 5-10/1s
 ```
 
 ------------------------------------------------------------
@@ -434,8 +434,8 @@ Base Cost                                   8
 
 *Spells*
 ```
-Stormhand                                   5-12 -> 5-10
-Black Hand                                  5-12 -> 5-10
+Stormhand                                   5-12/1s -> 5-10/1s
+Black Hand                                  5-12/1s -> 5-10/1s
 ```
 
 ------------------------------------------------------------
@@ -504,7 +504,7 @@ Base Cost                                   4 -> 0.4
 
 *Spells*
 ```
-Magicka Leech                               6-15 -> 5-15
+Magicka Leech                               6-15/60s -> 5-15/60s
 ```
 
 *Spells - Tamriel Data*
@@ -522,14 +522,13 @@ Base Cost                                   2 -> 0.2
 
 *Spells*
 ```
+Weariness                                   1-10/1s -> 10-100/20s           x10/x20
 Sleep                                       5-15/30s -> 25-75/60s
 Wild Exhaustion                             5-15/60s -> 25-75/120s
 Wearying Touch                              5-20/30s -> 25-100/60s
 Exhausting Touch                            5-20/60s -> 25-100/120s
 Exhaustion                                  5-20/90s -> 25-100/180s
 Ordeal of St. Olms                          5-20/60s -> 50-200/60s
-
-Weariness                                   1-10/1s -> 10-100/20s           x10/x20
 
 Dagoth's Bosom                              20/30s -> 200/30s               used by: Ascended Sleepers
 ```
@@ -548,7 +547,7 @@ Base Cost                                   1
 
 *Spells*
 ```
-Blood Despair                               7-14 -> 5-15
+Blood Despair                               7-14/1s -> 5-15/1s
 ```
 
 ------------------------------------------------------------
@@ -570,8 +569,8 @@ Base Cost                                   6 -> 0.6
 Armor Eater                                 10-30/1s -> 200-600/1s          x20/x1
 
 Disintegrate Armor                          6-25/1s -> 60-250/1s            used by: Hungers
-Brittlewind                                 20/10s                          used by: Fryse Hags
-Eddard's Wrath                              4-9/15s                         used by: Draugr
+Brittlewind                                 20/10s -> 200/10s               used by: Fryse Hags
+Eddard's Wrath                              4-9/15s -> 40-90/15s            used by: Draugr
 ```
 
 *Spells - Tamriel Data*
@@ -595,8 +594,8 @@ Base Cost                                   6 -> 1.2
 Weapon Eater                                6-25/1s -> 100-300/1s           (10-30/1s) x10/x1
 
 Disintegrate Weapon                         6-25/1s -> 30-125/1s            used by: Hungers
-Brittlewind                                 20/10s                          used by: Fryse Hags
-Eddard's Wrath                              4-9/15s                         used by: Draugr
+Brittlewind                                 20/10s -> 200/10s               used by: Fryse Hags
+Eddard's Wrath                              4-9/15s -> 40-90/15s            used by: Draugr
 ```
 
 *Spells - Tamriel Data*
@@ -628,7 +627,7 @@ Base Cost                                   2
 
 *Spells*
 ```
-Dire Weakness to Fire                       2-60 -> 1-60
+Dire Weakness to Fire                       2-60/1s -> 1-60/1s
 ```
 
 ------------------------------------------------------------
@@ -637,7 +636,7 @@ Dire Weakness to Fire                       2-60 -> 1-60
 
 *Spells*
 ```
-Dire Weakness to Frost                      2-60 -> 1-60
+Dire Weakness to Frost                      2-60/1s -> 1-60/1s
 ```
 
 ------------------------------------------------------------
@@ -646,7 +645,7 @@ Dire Weakness to Frost                      2-60 -> 1-60
 
 *Spells*
 ```
-Dire Weakness to Shock                      2-60 -> 1-60
+Dire Weakness to Shock                      2-60/1s -> 1-60/1s
 ```
 
 ------------------------------------------------------------
@@ -655,7 +654,7 @@ Dire Weakness to Shock                      2-60 -> 1-60
 
 *Spells*
 ```
-Dire Weakness to Poison                     2-60 -> 1-60
+Dire Weakness to Poison                     2-60/1s -> 1-60/1s
 ```
 
 ------------------------------------------------------------
@@ -664,7 +663,7 @@ Dire Weakness to Poison                     2-60 -> 1-60
 
 *Spells*
 ```
-Dire Weakness to Magicka                    2-60 -> 1-60
+Dire Weakness to Magicka                    2-60/1s -> 1-60/1s
 ```
 
 ------------------------------------------------------------
@@ -1136,7 +1135,7 @@ Base Cost                                   5
 
 *Potions*
 ```
-Potion of Dispel                            10 -> 100                       x10/x1
+Potion of Dispel                            10/1s -> 100/1s                 x10/x1
 ```
 
 ------------------------------------------------------------
@@ -1160,10 +1159,10 @@ Base Cost                                   5
 
 *Spells*
 ```
-Balyna's Soothing Balm                      3-12 -> 5-10
-Balyna's Efficacious Balm                   3-22 -> 5-20
-Heal Companion                              6-15 -> 5-15
-Balyna's Perfect Balm                       3-30 -> 5-30
+Balyna's Soothing Balm                      3-12/1s -> 5-10/1s
+Balyna's Efficacious Balm                   3-22/1s -> 5-20/1s
+Heal Companion                              6-15/1s -> 5-15/1s
+Balyna's Perfect Balm                       3-30/1s -> 5-30/1s
 ```
 
 *Potions*
@@ -1313,16 +1312,16 @@ Base Cost                                   1
 
 ### Fortify Fatigue
 ```
-Base Cost                                   0.5
+Base Cost                                   0.5 -> 0.25
 ```
 
 *Potions*
 ```
-Bargain Fortify Fatigue                     5/8s -> 10/30s
-Cheap Fortify Fatigue                       8/15s -> 15/45s
-Standard Fortify Fatigue Potion             10/30s -> 20/60s
-Quality Fortify Fatigue                     15/45s -> 30/90s
-Exclusive Fortify Fatigue                   20/60s -> 40/120s
+Bargain Fortify Fatigue                     5/8s -> 20/60s
+Cheap Fortify Fatigue                       8/15s -> 30/90s
+Standard Fortify Fatigue Potion             10/30s -> 40/120s
+Quality Fortify Fatigue                     15/45s -> 60/180s
+Exclusive Fortify Fatigue                   20/60s -> 80/240s
 ```
 
 *Spells*
