@@ -6,7 +6,7 @@
         "file_type":  "Esp",
         "author":  "",
         "description":  "",
-        "num_objects":  575,
+        "num_objects":  576,
         "masters":  [
                         [
                             "Morrowind.esm",
@@ -699,7 +699,7 @@
         "description":  "The effect temporarily renders a victim unable to cast spells.",
         "data":  {
                      "school":  "Illusion",
-                     "base_cost":  20.0,
+                     "base_cost":  40.0,
                      "flags":  "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
                      "color":  [
                                    242,
@@ -728,7 +728,7 @@
         "description":  "This effect produces a disorienting noise in the victim\u0027s mind. The magnitude is the reduction in the victim\u0027s chance to successfully cast spells (and the relative magnitude of the sound\u0027s volume).\r\n",
         "data":  {
                      "school":  "Illusion",
-                     "base_cost":  0.5,
+                     "base_cost":  1.0,
                      "flags":  "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
                      "color":  [
                                    238,
@@ -757,7 +757,7 @@
         "description":  "This effect temporarily increases the target\u0027s disposition towards the caster. When the effect ends, the target\u0027s disposition returns to its original value.",
         "data":  {
                      "school":  "Illusion",
-                     "base_cost":  2.0,
+                     "base_cost":  2.5,
                      "flags":  "ALLOW_SPELLMAKING | ALLOW_ENCHANTING",
                      "color":  [
                                    136,
@@ -1762,6 +1762,29 @@
     {
         "type":  "Spell",
         "flags":  "",
+        "id":  "T_Com_Ilu_AlluringSpeech",
+        "name":  "Alluring Speech",
+        "effects":  [
+                        {
+                            "magic_effect":  "Charm",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  20,
+                            "min_magnitude":  15,
+                            "max_magnitude":  20
+                        }
+                    ],
+        "data":  {
+                     "spell_type":  "Spell",
+                     "cost":  40,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Spell",
+        "flags":  "",
         "id":  "T_Com_Ilu_Voices",
         "name":  "Voices",
         "effects":  [
@@ -1772,13 +1795,13 @@
                             "range":  "OnSelf",
                             "area":  0,
                             "duration":  60,
-                            "min_magnitude":  100,
-                            "max_magnitude":  100
+                            "min_magnitude":  50,
+                            "max_magnitude":  50
                         }
                     ],
         "data":  {
                      "spell_type":  "Spell",
-                     "cost":  100,
+                     "cost":  50,
                      "flags":  ""
                  }
     },
@@ -2429,7 +2452,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  10,
+                            "duration":  5,
                             "min_magnitude":  15,
                             "max_magnitude":  35
                         }
@@ -2475,7 +2498,7 @@
                             "attribute":  "None",
                             "range":  "OnTouch",
                             "area":  0,
-                            "duration":  30,
+                            "duration":  15,
                             "min_magnitude":  10,
                             "max_magnitude":  20
                         }
@@ -2705,7 +2728,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  10,
+                            "duration":  5,
                             "min_magnitude":  25,
                             "max_magnitude":  45
                         }
@@ -2728,7 +2751,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  30,
+                            "duration":  15,
                             "min_magnitude":  1,
                             "max_magnitude":  60
                         }
@@ -2843,7 +2866,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  10,
+                            "duration":  5,
                             "min_magnitude":  10,
                             "max_magnitude":  25
                         }
@@ -2935,7 +2958,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  20,
+                            "duration":  10,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -3783,7 +3806,7 @@
                             "attribute":  "None",
                             "range":  "OnTouch",
                             "area":  0,
-                            "duration":  30,
+                            "duration":  15,
                             "min_magnitude":  1,
                             "max_magnitude":  10
                         }
@@ -4542,7 +4565,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  10,
+                            "duration":  5,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -5324,7 +5347,7 @@
                             "attribute":  "None",
                             "range":  "OnTarget",
                             "area":  0,
-                            "duration":  10,
+                            "duration":  5,
                             "min_magnitude":  1,
                             "max_magnitude":  90
                         }
@@ -6952,9 +6975,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  30,
-                            "min_magnitude":  10,
-                            "max_magnitude":  10
+                            "duration":  18,
+                            "min_magnitude":  6,
+                            "max_magnitude":  6
                         }
                     ],
         "data":  {
@@ -6978,9 +7001,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  45,
-                            "min_magnitude":  15,
-                            "max_magnitude":  15
+                            "duration":  24,
+                            "min_magnitude":  8,
+                            "max_magnitude":  8
                         }
                     ],
         "data":  {
@@ -7004,9 +7027,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  60,
-                            "min_magnitude":  20,
-                            "max_magnitude":  20
+                            "duration":  30,
+                            "min_magnitude":  10,
+                            "max_magnitude":  10
                         }
                     ],
         "data":  {
@@ -7030,9 +7053,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  90,
-                            "min_magnitude":  30,
-                            "max_magnitude":  30
+                            "duration":  45,
+                            "min_magnitude":  15,
+                            "max_magnitude":  15
                         }
                     ],
         "data":  {
@@ -7056,9 +7079,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  120,
-                            "min_magnitude":  40,
-                            "max_magnitude":  40
+                            "duration":  60,
+                            "min_magnitude":  20,
+                            "max_magnitude":  20
                         }
                     ],
         "data":  {
@@ -7212,7 +7235,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  30,
+                            "duration":  18,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -7238,7 +7261,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  45,
+                            "duration":  24,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -7264,7 +7287,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  60,
+                            "duration":  30,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -7290,7 +7313,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  90,
+                            "duration":  45,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -7316,7 +7339,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  120,
+                            "duration":  60,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -7394,7 +7417,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  45,
+                            "duration":  24,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -7420,7 +7443,7 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  90,
+                            "duration":  45,
                             "min_magnitude":  1,
                             "max_magnitude":  1
                         }
@@ -13510,58 +13533,6 @@
         "data":  {
                      "weight":  0.25,
                      "value":  175,
-                     "flags":  ""
-                 }
-    },
-    {
-        "type":  "Alchemy",
-        "flags":  "",
-        "id":  "p_silence_b",
-        "name":  "Bargain Potion of Silence",
-        "script":  "",
-        "mesh":  "m\\Misc_Potion_Bargain_01.nif",
-        "icon":  "m\\Tx_potion_bargain_01.tga",
-        "effects":  [
-                        {
-                            "magic_effect":  "Silence",
-                            "skill":  "None",
-                            "attribute":  "None",
-                            "range":  "OnSelf",
-                            "area":  0,
-                            "duration":  18,
-                            "min_magnitude":  1,
-                            "max_magnitude":  1
-                        }
-                    ],
-        "data":  {
-                     "weight":  1.5,
-                     "value":  5,
-                     "flags":  ""
-                 }
-    },
-    {
-        "type":  "Alchemy",
-        "flags":  "",
-        "id":  "p_silence_c",
-        "name":  "Cheap Potion of Silence",
-        "script":  "",
-        "mesh":  "m\\Misc_Potion_Cheap_01.nif",
-        "icon":  "m\\Tx_potion_cheap_01.tga",
-        "effects":  [
-                        {
-                            "magic_effect":  "Silence",
-                            "skill":  "None",
-                            "attribute":  "None",
-                            "range":  "OnSelf",
-                            "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  1,
-                            "max_magnitude":  1
-                        }
-                    ],
-        "data":  {
-                     "weight":  1.0,
-                     "value":  15,
                      "flags":  ""
                  }
     },

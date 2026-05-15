@@ -83,8 +83,10 @@ The user will specify the scale to use each time. Wait for the user to provide t
 
 ## Spell Cost Formula
 
-- **OnTarget:** `floor( base_cost × ((min + max) × duration + area) / 40 )`
-- **OnTouch/Self:** `floor( base_cost × ((min + max) × (duration + 1) + area) / 40 )`
+`((min + max) × duration × (base_cost / 40) + area × (base_cost / 40)) × 1.5 if OnTarget`
+
+- OnSelf/OnTouch: `(min + max) × duration × (base_cost / 40) + area × (base_cost / 40)`
+- OnTarget: multiply the above by 1.5
 
 For multi-effect spells, sum the cost of each effect individually.
 
@@ -125,6 +127,7 @@ When a magic effect's base cost is changed, spells of that school must be adjust
 - If base cost is multiplied by X, then spell mag×dur must be divided by X (and vice versa)
 - Example: base cost ÷2 → spell mag×dur ×2 (e.g. double magnitude, or double duration, or split between both)
 - The split between magnitude and duration is chosen per spell as appropriate
+- **Do not apply spell compensation automatically.** When a base cost changes, list each affected spell with its vanilla values and propose new values for the user to approve. Only apply after confirmation.
 
 ## Starting Spells
 The `## Starting Spells` section in the README is **not** a rename. The `->` means: remove `PC_START_SPELL` flag from the spell on the left, add `PC_START_SPELL` flag to the spell on the right. Both spells keep their original names and IDs unchanged.
@@ -136,6 +139,9 @@ The `## Starting Spells` section in the README is **not** a rename. The `->` mea
 - README and JSON must always be updated together. ESP conversion is handled separately and is not part of this workflow.
 - Only rebuild the ESP for the JSON file that was actually changed.
 - The top-level `## Potions` section in README - Magic.md defines default Bargain and Cheap values for all potions (e.g. `Bargain... 5/8s -> 6/18s`). If an individual potion entry has its own explicit values, those override the general rule.
+- When reverting a value to vanilla, keep the entry in both README and JSON — do not remove it automatically.
+- Do only what was explicitly asked. Do not proactively recalculate, adjust, or modify other entries beyond the specific request.
+- Every spell/potion/enchantment in the JSON must have a corresponding entry in the README.
 
 ## Modification Policy
 Only hooks may trigger actual modifications to README, JSON, and ESP files. Direct user requests must not apply changes — they may only update steering rules or prepare instructions for hooks to execute.

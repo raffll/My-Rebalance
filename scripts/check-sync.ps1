@@ -1,19 +1,18 @@
 # check-sync.ps1
-# Checks that README target values are in sync with JSON effect values.
+# Checks README <-> JSON sync in both directions:
+#   1. README entries missing or mismatched in JSON
+#   2. JSON Spell/Alchemy entries missing from README
 #
 # Usage:
 #   .\check-sync.ps1
 #   .\check-sync.ps1 -Verbose
-#   .\check-sync.ps1 -File "R3 - Magic.json"
 
 param(
-    [string]$File    = "",
     [switch]$Verbose
 )
 
 # ---------------------------------------------------------------------------
 # Parse README entries that have a target value (contain "->")
-# Returns a list of hashtables: Name, VanillaStr, TargetStr, Section
 # ---------------------------------------------------------------------------
 function Parse-ReadmeEntries {
     param([string]$Path)
@@ -58,10 +57,8 @@ function Parse-ReadmeEntries {
             }
 
             # Extract record ID from trailing comment using "id: <value>" format
-            # Comments are separated by ";", ID is prefixed with "id:"
             $enchId = ""
             if ($comment -ne "") {
-                # Split comment by ";" and look for an "id:" segment
                 $parts = $comment -split ';'
                 foreach ($part in $parts) {
                     $p = $part.Trim()
@@ -87,7 +84,60 @@ function Parse-ReadmeEntries {
 }
 
 # ---------------------------------------------------------------------------
-# Parse a target value string into numeric components
+# Parse ALL README spell/potion names (including non-arrow entries)
+# Returns a set of (name_lower) and (id_lower) that appear in README
+# ---------------------------------------------------------------------------
+function Parse-ReadmeAllNames {
+    param([string]$Path)
+
+    $names = New-Object System.Collections.Generic.HashSet[string]
+    $ids   = New-Object System.Collections.Generic.HashSet[string]
+    $inBlock = $false
+
+    foreach ($line in (Get-Content $Path -Encoding UTF8)) {
+        if ($line -match '^```') {
+            $inBlock = -not $inBlock
+            continue
+        }
+        if (-not $inBlock) { continue }
+
+        $t = $line.Trim()
+        if ($t -eq "")                                    { continue }
+        if ($t -match '^Base Cost\s')                     { continue }
+        if ($t -match '^f[A-Z]|^i[A-Z]|^s[A-Z]')         { continue }
+        if ($t -match '^\.\.\.')                          { continue }
+
+        # Extract name (first token before 2+ spaces)
+        if ($t -match '^(.+?)\s{2,}') {
+            $rawName = $Matches[1].Trim()
+            # Handle renames: add both sides
+            if ($rawName -match '^(.+?)\s*->\s*(.+)$') {
+                [void]$names.Add($Matches[1].Trim().ToLower())
+                [void]$names.Add($Matches[2].Trim().ToLower())
+            } else {
+                [void]$names.Add($rawName.ToLower())
+            }
+        } elseif ($t -match '^([A-Z].+)$') {
+            # Single-word entries without values (rare)
+            [void]$names.Add($t.ToLower())
+        }
+
+        # Extract IDs
+        if ($t -match 'id:\s*(\S+)') {
+            [void]$ids.Add($Matches[1].ToLower())
+        }
+
+        # Handle general rules with "..." — mark the prefix as a pattern
+        if ($t -match '^(.+?)\.\.\.\s') {
+            [void]$names.Add($Matches[1].Trim().ToLower() + "...")
+        }
+    }
+
+    return $names, $ids
+}
+
+# ---------------------------------------------------------------------------
+# Parse target values
 # ---------------------------------------------------------------------------
 function Parse-TargetValues {
     param([string]$s)
@@ -95,7 +145,7 @@ function Parse-TargetValues {
     $r = @{ MinMag = $null; MaxMag = $null; Duration = $null; Area = $null }
 
     # Strip cost override [N]
-    $s = $s -replace '\[\d+\]', '' 
+    $s = $s -replace '\[\d+\]', ''
     $s = $s.Trim()
 
     # Strip area Nft
@@ -130,9 +180,7 @@ function Parse-TargetValues {
 }
 
 # ---------------------------------------------------------------------------
-# Build lookup tables from JSON:
-#   $byName : display name (lowercase) -> list of Spell/Alchemy objects
-#   $byId   : id (lowercase)           -> object (any type with effects)
+# Build JSON lookups
 # ---------------------------------------------------------------------------
 function Build-JsonLookups {
     param([string]$JsonPath)
@@ -140,9 +188,9 @@ function Build-JsonLookups {
     $data   = Get-Content $JsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
     $byName = @{}
     $byId   = @{}
+    $allSpellAlchemy = New-Object System.Collections.Generic.List[object]
 
     foreach ($obj in $data) {
-        # Index by ID for all types that have effects
         if ($obj.id -and $obj.effects) {
             $key = $obj.id.ToLower().Trim()
             if (-not $byId.ContainsKey($key)) {
@@ -151,7 +199,6 @@ function Build-JsonLookups {
             $byId[$key].Add($obj)
         }
 
-        # Index Spell/Alchemy by display name too
         if ($obj.type -eq "Spell" -or $obj.type -eq "Alchemy") {
             if (-not $obj.name) { continue }
             $key = $obj.name.ToLower().Trim()
@@ -159,14 +206,15 @@ function Build-JsonLookups {
                 $byName[$key] = New-Object System.Collections.Generic.List[object]
             }
             $byName[$key].Add($obj)
+            $allSpellAlchemy.Add($obj)
         }
     }
 
-    return $byName, $byId
+    return $byName, $byId, $allSpellAlchemy
 }
 
 # ---------------------------------------------------------------------------
-# Get all effect value sets from a JSON object
+# Get effect values from JSON object
 # ---------------------------------------------------------------------------
 function Get-EffectValues {
     param($obj)
@@ -184,15 +232,13 @@ function Get-EffectValues {
 }
 
 # ---------------------------------------------------------------------------
-# Check if a JSON object matches the target values
-# Checks effect magnitudes/durations AND spell cost (for cost-only entries)
+# Check if JSON object matches target values
 # ---------------------------------------------------------------------------
 function Test-Match {
     param([hashtable]$target, $jsonObj)
 
     $effects = Get-EffectValues -obj $jsonObj
 
-    # If target has duration, it must match an effect
     if ($null -ne $target.Duration) {
         foreach ($eff in $effects) {
             $ok = $true
@@ -205,13 +251,10 @@ function Test-Match {
         return $false
     }
 
-    # No duration: could be a cost-only entry (e.g. trap costs)
-    # Check data.cost first
     if ($null -ne $target.MinMag -and $jsonObj.data -and $null -ne $jsonObj.data.cost) {
         if ($target.MinMag -eq [int]$jsonObj.data.cost) { return $true }
     }
 
-    # Also check magnitude-only against effects (e.g. Dispel potion)
     foreach ($eff in $effects) {
         $ok = $true
         if ($null -ne $target.MinMag -and $target.MinMag -ne $eff.MinMag) { $ok = $false }
@@ -230,16 +273,9 @@ $pairs = @(
     @{ Readme = "README - Spells & Potions.md"; Json = "R3 - Spells & Potions.json" }
 )
 
-if ($File -ne "") {
-    $pairs = $pairs | Where-Object { $_.Json -eq $File -or $_.Readme -eq $File }
-    if ($pairs.Count -eq 0) {
-        Write-Error "No matching pair found for: $File"
-        exit 1
-    }
-}
-
 $totalOk         = 0
 $totalMismatches = 0
+$totalMissing    = 0
 $totalSkipped    = 0
 
 foreach ($pair in $pairs) {
@@ -252,8 +288,13 @@ foreach ($pair in $pairs) {
     Write-Host ""
     Write-Host "=== $readmePath <-> $jsonPath ===" -ForegroundColor Cyan
 
-    $entries          = Parse-ReadmeEntries -Path $readmePath
-    $byName, $byId    = Build-JsonLookups  -JsonPath $jsonPath
+    $entries                        = Parse-ReadmeEntries -Path $readmePath
+    $readmeNames, $readmeIds        = Parse-ReadmeAllNames -Path $readmePath
+    $byName, $byId, $allSpellAlch   = Build-JsonLookups -JsonPath $jsonPath
+
+    # --- Part 1: README -> JSON (value mismatches and missing in JSON) ---
+    Write-Host ""
+    Write-Host "  --- README -> JSON ---" -ForegroundColor White
 
     $ok         = 0
     $mismatches = 0
@@ -265,19 +306,15 @@ foreach ($pair in $pairs) {
         $enchId  = $entry.EnchId
         $target  = Parse-TargetValues -s $entry.TargetStr
 
-        # Resolve which JSON objects to check
         $jsonObjs = $null
         $lookupBy = ""
 
         if ($enchId -ne "") {
             if ($byId.ContainsKey($enchId)) {
-                # Found by ID (Alchemy, Spell, or Enchanting)
                 $jsonObjs = $byId[$enchId]
                 $lookupBy = "id:$enchId"
             } else {
-                # ID specified but not found in JSON
                 $mismatches++
-                $totalMismatches++
                 Write-Host ("  MISSING  [{0}] {1}  (id: {2} not in JSON)" -f $entry.Section, $name, $enchId) -ForegroundColor Red
                 continue
             }
@@ -285,13 +322,11 @@ foreach ($pair in $pairs) {
             $jsonObjs = $byName[$nameKey]
             $lookupBy = "name"
         } else {
-            # Not found in JSON — only skip generic potion rule lines (e.g. "Bargain...", "Cheap...")
             if ($name -match '\.\.\.') {
                 $skipped++
-                Write-Host ("  SKIP  [{0}] {1} -- general rule" -f $entry.Section, $name) -ForegroundColor DarkGray
+                if ($Verbose) { Write-Host ("  SKIP  [{0}] {1} -- general rule" -f $entry.Section, $name) -ForegroundColor DarkGray }
             } else {
                 $mismatches++
-                $totalMismatches++
                 Write-Host ("  MISSING  [{0}] {1} -- not in JSON" -f $entry.Section, $name) -ForegroundColor Red
             }
             continue
@@ -307,11 +342,12 @@ foreach ($pair in $pairs) {
 
         if ($matched) {
             $ok++
-            $tag = if ($lookupBy -like "id:*") { " [$($entry.EnchId)]" } else { "" }
-            Write-Host ("  OK    [{0}] {1}{2} = {3}" -f $entry.Section, $name, $tag, $entry.TargetStr) -ForegroundColor Green
+            if ($Verbose) {
+                $tag = if ($lookupBy -like "id:*") { " [$($entry.EnchId)]" } else { "" }
+                Write-Host ("  OK    [{0}] {1}{2} = {3}" -f $entry.Section, $name, $tag, $entry.TargetStr) -ForegroundColor Green
+            }
         } else {
             $mismatches++
-            $totalMismatches++
 
             $actualParts = New-Object System.Collections.Generic.List[string]
             foreach ($jobj in $jsonObjs) {
@@ -333,14 +369,58 @@ foreach ($pair in $pairs) {
 
     $totalOk      += $ok
     $totalSkipped += $skipped
+    $totalMismatches += $mismatches
 
-    $color = if ($mismatches -gt 0) { "Red" } else { "Green" }
     Write-Host ""
-    Write-Host ("  Results: {0} OK, {1} mismatch(es), {2} skipped (not in JSON)" -f $ok, $mismatches, $skipped) -ForegroundColor $color
+    $color = if ($mismatches -gt 0) { "Red" } else { "Green" }
+    Write-Host ("  README->JSON: {0} OK, {1} mismatch(es), {2} skipped" -f $ok, $mismatches, $skipped) -ForegroundColor $color
+
+    # --- Part 2: JSON -> README (entries in JSON missing from README) ---
+    Write-Host ""
+    Write-Host "  --- JSON -> README ---" -ForegroundColor White
+
+    $missingFromReadme = 0
+
+    foreach ($obj in $allSpellAlch) {
+        $id      = $obj.id.ToLower().Trim()
+        $nameKey = $obj.name.ToLower().Trim()
+
+        # Check if this JSON entry is referenced in README (by id or by name)
+        $found = $false
+        if ($readmeIds.Contains($id)) { $found = $true }
+        if ($readmeNames.Contains($nameKey)) { $found = $true }
+
+        # Check against general rule patterns (e.g. "masterful..." matches "masterful red wisdom")
+        if (-not $found) {
+            foreach ($pattern in $readmeNames) {
+                if ($pattern.EndsWith("...")) {
+                    $prefix = $pattern.Substring(0, $pattern.Length - 3)
+                    if ($nameKey.StartsWith($prefix)) {
+                        $found = $true
+                        break
+                    }
+                }
+            }
+        }
+
+        if (-not $found) {
+            $missingFromReadme++
+            $totalMissing++
+            Write-Host ("  MISSING  {0} (id: {1}) -- not in README" -f $obj.name, $obj.id) -ForegroundColor Magenta
+        }
+    }
+
+    if ($missingFromReadme -eq 0) {
+        Write-Host "  All JSON entries found in README." -ForegroundColor Green
+    } else {
+        Write-Host ""
+        Write-Host ("  JSON->README: {0} missing from README" -f $missingFromReadme) -ForegroundColor Magenta
+    }
 }
 
 Write-Host ""
-$color = if ($totalMismatches -gt 0) { "Red" } else { "Green" }
-Write-Host ("=== TOTAL: {0} OK, {1} mismatch(es), {2} skipped ===" -f $totalOk, $totalMismatches, $totalSkipped) -ForegroundColor $color
+Write-Host "==========================================" -ForegroundColor Cyan
+$color = if (($totalMismatches + $totalMissing) -gt 0) { "Red" } else { "Green" }
+Write-Host ("TOTAL: {0} OK, {1} value mismatch(es), {2} missing from README, {3} skipped" -f $totalOk, $totalMismatches, $totalMissing, $totalSkipped) -ForegroundColor $color
 
-if ($totalMismatches -gt 0) { exit 1 } else { exit 0 }
+if (($totalMismatches + $totalMissing) -gt 0) { exit 1 } else { exit 0 }

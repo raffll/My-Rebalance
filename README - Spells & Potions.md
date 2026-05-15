@@ -753,73 +753,63 @@ Quality Potion of Paralyze                  45s -> 24s                      id: 
 
 ### Silence
 ```
-Base Cost                                   40 -> 20
-```
-
-*Spells*
-```
-Silence                                     5s -> 10s
-Far Silence                                 10s -> 20s
+Base Cost                                   40
 ```
 
 *Potions*
 ```
-Bargain Potion of Silence                   8s -> 30s
-Cheap Potion of Silence                     15s -> 45s
-Standard Potion of Silence                  30s -> 60s
-Quality Potion of Silence                   45s -> 90s
-Exclusive Potion of Silence                 60s -> 120s
+Bargain Potion of Silence                   8s -> 18s
+Cheap Potion of Silence                     15s -> 24s
 ```
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Silence                     15s -> 45s                      id: T_Nor_Potion_Silence_C
-Quality Potion of Silence                   45s -> 90s                      id: T_Nor_Potion_Silence_Q
+Cheap Potion of Silence                     15s -> 24s                      id: T_Nor_Potion_Silence_C
 ```
 
 ------------------------------------------------------------
 
 ### Sound
 ```
-Base Cost                                   3 -> 0.5
+Base Cost                                   3 -> 1
 ```
 
 *Potions - Tamriel Data*
 ```
-Bargain Potion of Cacophony                 1/10s -> 10/30s                 id: T_Com_Poison_Sound_B
-Cheap Potion of Cacophony                   8/15s -> 15/45s                 id: T_Com_Poison_Sound_C
-Standard Potion of Cacophony                10/30s -> 20/60s                id: T_Com_Poison_Sound_S
-Quality Potion of Cacophony                 15/45s -> 30/90s                id: T_Com_Poison_Sound_Q
-Exclusive Potion of Cacophony               20/60s -> 40/120s               id: T_Com_Poison_Sound_E
+Bargain Potion of Cacophony                 1/10s -> 6/18s                  id: T_Com_Poison_Sound_B
+Cheap Potion of Cacophony                   8/15s -> 8/24s                  id: T_Com_Poison_Sound_C
+Standard Potion of Cacophony                10/30s                          id: T_Com_Poison_Sound_S
+Quality Potion of Cacophony                 15/45s                          id: T_Com_Poison_Sound_Q
+Exclusive Potion of Cacophony               20/60s                          id: T_Com_Poison_Sound_E
 ```
 
 *Spells*
 ```
-Earwig                                      3-8/5s -> 10-25/10s
-Cruel Earwig                                5-11/5s -> 15-35/10s
-Dire Earwig                                 8-15/5s -> 25-45/10s
-Wild Earwig                                 1-30/5s -> 1-90/10s
+Earwig                                      3-8/5s -> 10-25/5s
+Cruel Earwig                                5-11/5s -> 15-35/5s
+Dire Earwig                                 8-15/5s -> 25-45/5s
+Wild Earwig                                 1-30/5s -> 1-90/5s
 
-Noise                                       3-8/5s -> 1-10/30s
-Cruel Noise                                 10-22/5s -> 10-20/30s
-Dire Noise                                  2-60/5s -> 1-60/30s
+Noise                                       3-8/5s -> 1-10/15s
+Cruel Noise                                 10-22/5s -> 10-20/15s
+Dire Noise                                  2-60/5s -> 1-60/15s
 ```
 
 *Spells - Tamriel Data*
 ```
-Voices                                      50/20s -> 100/60s
+Voices                                      50/20s -> 50/60s
 ```
 
 ------------------------------------------------------------
 
 ### Charm
 ```
-Base Cost                                   5 -> 2
+Base Cost                                   5 -> 2.5
 ```
 
 *Spells - Tamriel Data*
 ```
-Alluring Speech                             15-20/20s
+Alluring Speech                             15-20/20s [80 -> 40]            id: T_Com_Ilu_AlluringSpeech
 ```
 
 ------------------------------------------------------------
