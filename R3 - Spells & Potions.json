@@ -4435,7 +4435,7 @@
         "data":  {
                      "spell_type":  "Spell",
                      "cost":  8,
-                     "flags":  "AUTO_CALCULATE | PC_START_SPELL"
+                     "flags":  "AUTO_CALCULATE"
                  }
     },
     {
