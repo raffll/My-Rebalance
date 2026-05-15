@@ -126,6 +126,9 @@ When a magic effect's base cost is changed, spells of that school must be adjust
 - Example: base cost ÷2 → spell mag×dur ×2 (e.g. double magnitude, or double duration, or split between both)
 - The split between magnitude and duration is chosen per spell as appropriate
 
+## Starting Spells
+The `## Starting Spells` section in the README is **not** a rename. The `->` means: remove `PC_START_SPELL` flag from the spell on the left, add `PC_START_SPELL` flag to the spell on the right. Both spells keep their original names and IDs unchanged.
+
 ## Notes
 - Never modify files inside `tes3conv/` — those are read-only vanilla references.
 - Never change the `id` field of any record in ESP JSON files. IDs are immutable — only `name` and other data fields may be edited.

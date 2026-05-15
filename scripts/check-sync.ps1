@@ -57,20 +57,18 @@ function Parse-ReadmeEntries {
                 $rawName = $Matches[1].Trim()
             }
 
-            # Extract enchantment ID from trailing comment (last whitespace-separated token
-            # that looks like an ID: lowercase, may contain underscores, apostrophes, spaces)
-            # IDs are the last word-group after the last run of spaces in the comment,
-            # but only if they don't look like scale comments (x2/x1) or notes
+            # Extract record ID from trailing comment using "id: <value>" format
+            # Comments are separated by ";", ID is prefixed with "id:"
             $enchId = ""
-            if ($comment -ne "" -and $comment -notmatch '^x\d|^used|^!\s') {
-                # The ID is the whole comment if it contains no spaces, or matches known patterns
-                $candidate = $comment -replace '\s+', ' '
-                # Accept as ID if it looks like a record ID (no spaces, or known multi-word IDs)
-                if ($candidate -match "^[a-zA-Z0-9_'\. -]+$" -and $candidate -notmatch '\s') {
-                    $enchId = $candidate.ToLower()
-                } elseif ($candidate -match "^[a-zA-Z0-9_'\. ]+$") {
-                    # Multi-word IDs like "ulms juicedaw's feather_en" or "Crescent Moon"
-                    $enchId = $candidate.ToLower()
+            if ($comment -ne "") {
+                # Split comment by ";" and look for an "id:" segment
+                $parts = $comment -split ';'
+                foreach ($part in $parts) {
+                    $p = $part.Trim()
+                    if ($p -match '^id:\s*(.+)$') {
+                        $enchId = $Matches[1].Trim().ToLower()
+                        break
+                    }
                 }
             }
 
@@ -229,7 +227,7 @@ function Test-Match {
 # ---------------------------------------------------------------------------
 
 $pairs = @(
-    @{ Readme = "README - Magic.md"; Json = "R3 - Magic.json" }
+    @{ Readme = "README - Spells & Potions.md"; Json = "R3 - Spells & Potions.json" }
 )
 
 if ($File -ne "") {
