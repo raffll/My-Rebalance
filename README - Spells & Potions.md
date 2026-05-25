@@ -16,19 +16,6 @@ Bargain...                                  5/8s -> 6/18s
 Cheap...                                    8/15s -> 8/24s
 ```
 
-*Fixes*
-```
-Spoiled Slowfall Potion                     10/15s -> 1/15s
-```
-
-*Fixes - Tamriel Data*
-```
-Bargain Potion of Blindness                 Sound -> Blind
-                                            1/10s -> 6/18s
-Bargain Potion of Protection                1/10s -> 6/18s
-Spoiled Slowfall Potion                     10/15s -> 1/15s
-```
-
 ------------------------------------------------------------
 
 ## Starting Spells
@@ -172,6 +159,11 @@ Dreugh's Grace                              30/20s -> 120/20s
 ### Shield
 ```
 Base Cost                                   2 -> 1
+```
+
+*Potions - Tamriel Data*
+```
+Bargain Potion of Protection                1/10s -> 6/18s
 ```
 
 *Spells - Tamriel Data*
@@ -339,7 +331,13 @@ Base Cost                                   3
 
 *Potions*
 ```
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 Potion of Slowfalling                       10/15s -> 10/30s
+```
+
+*Potions - Tamriel Data*
+```
+Spoiled Slowfall Potion                     10/15s -> 1/15s
 ```
 
 ------------------------------------------------------------
@@ -816,6 +814,12 @@ Alluring Speech                             15-20/20s [80 -> 40]            id: 
 ### Blind
 ```
 Base Cost                                   1
+```
+
+*Potions - Tamriel Data*
+```
+Bargain Potion of Blindness                 Sound -> Blind
+                                            1/10s -> 6/18s
 ```
 
 *Spells*
@@ -1357,7 +1361,7 @@ Masterful...                                15/60s -> 15/15s
 
 *Spells - Tamriel Data*
 ```
-Eagle Eye                                   10-15/40s [25 -> 100]           !
+Eagle Eye                                   10-15/40s [25 -> 100]
 Treefellers Rage                            10-15/40s [25 -> 100]
 Deft Security                               15/30s [23 -> 92]
 ```

@@ -102,6 +102,8 @@ When scaling produces non-round magnitudes, first apply the scale, then round to
 
 This applies to **both sides** of `->` in README entries and to the corresponding JSON values. Vanilla spells with non-round magnitudes must also be rounded when they appear in the ESP — record the vanilla value as-is on the left side of `->`, then put the rounded value on the right side (even if no other change is being made).
 
+**Exception — no range**: When an effect has no magnitude range (min == max), do **not** round it. Rounding only applies to effects that use a min-max range (min ≠ max). Fixed-magnitude effects keep their vanilla value unchanged.
+
 ## No-Scale Effects
 The following effects do **not** get spell compensation scaling when their base cost changes. Only rounding fixes apply:
 - **Fire Damage**
