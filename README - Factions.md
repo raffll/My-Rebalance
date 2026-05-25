@@ -1,4 +1,4 @@
-# Remastered Rebalance Redux — Factions
+# Remastered Rebalance Redux
 
 ------------------------------------------------------------
 

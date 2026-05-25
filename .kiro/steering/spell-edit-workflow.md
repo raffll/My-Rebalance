@@ -39,6 +39,7 @@ Scroll of Baleful Suffering                 0−25/30s                        id
 - Always use `xMAG/xDUR` format (e.g. `x10/x1` for magnitude-only, `x1/x4` for duration-only). Never write `x10 dur` or `x4 mag`.
 - Do not add scale comments to potions.
 - If the scale follows directly from the base cost change (opposite direction, same factor — e.g. base cost ÷2 → spells ×2), omit the scale comment entirely since it is implied.
+- If a spell's scale does **not** match the implied base cost compensation, mark it with `*` as a trailing comment. This replaces explicit scale comments for deviations. This includes rounding (e.g. min magnitude staying at 1 instead of scaling up, or values rounded to nearest 5).
 - Potions always use a value from the potion tier table — never scale potion mag/dur from base cost changes.
 - If the user writes a scale like `! 5x/2x` as a trailing comment on a README entry, it means: apply that scale to all entries in that section (until an empty line or a new `!` trigger appears), compute and write the new target values in README and JSON, then remove the scale comment.
 - If the user writes `! [Nx]` (a single value in brackets, e.g. `! [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
