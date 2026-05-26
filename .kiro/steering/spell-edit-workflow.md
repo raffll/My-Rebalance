@@ -1,10 +1,11 @@
 # Spell Edit Workflow
 
-This workflow applies to all three file pairs:
+This workflow applies to all file pairs:
 - `README - Spells & Potions.md` ↔ `R3 - Spells & Potions.json` → `R3 - Spells & Potions.esp`
 - `README - Enchantments.md` ↔ `R3 - Enchantments.json` → `R3 - Enchantments.esp`
 - `README - Races & Birthsigns.md` ↔ `R3 - Races & Birthsigns.json` → `R3 - Races & Birthsigns.esp`
 - `README - Core.md` ↔ `R3 - Core.json` → `R3 - Core.esp`
+- `README - Creatures.md` ↔ `R3 - Creatures.json` → `R3 - Creatures.esp`
 
 When asked to modify a spell, race ability, birthsign, or game setting:
 
@@ -39,7 +40,7 @@ Scroll of Baleful Suffering                 0−25/30s                        id
 - Always use `xMAG/xDUR` format (e.g. `x10/x1` for magnitude-only, `x1/x4` for duration-only). Never write `x10 dur` or `x4 mag`.
 - Do not add scale comments to potions.
 - If the scale follows directly from the base cost change (opposite direction, same factor — e.g. base cost ÷2 → spells ×2), omit the scale comment entirely since it is implied.
-- If a spell's scale does **not** match the implied base cost compensation, mark it with `*` as a trailing comment. This replaces explicit scale comments for deviations. This includes rounding (e.g. min magnitude staying at 1 instead of scaling up, or values rounded to nearest 5).
+- If a spell's scale does **not** match the implied base cost compensation, mark it with `*` placed immediately after the right-side value (e.g. `1/20s -> 20/20s *`). The `*` is part of the value column, not a col-76 comment. This replaces explicit scale comments for deviations. This includes rounding (e.g. min magnitude staying at 1 instead of scaling up, or values rounded to nearest 5).
 - Potions always use a value from the potion tier table — never scale potion mag/dur from base cost changes.
 - If the user writes a scale like `! 5x/2x` as a trailing comment on a README entry, it means: apply that scale to all entries in that section (until an empty line or a new `!` trigger appears), compute and write the new target values in README and JSON, then remove the scale comment.
 - If the user writes `! [Nx]` (a single value in brackets, e.g. `! [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
@@ -145,6 +146,19 @@ The `## Starting Spells` section in the README is **not** a rename. The `->` mea
 - When reverting a value to vanilla, keep the entry in both README and JSON — do not remove it automatically.
 - Do only what was explicitly asked. Do not proactively recalculate, adjust, or modify other entries beyond the specific request.
 - Every spell/potion/enchantment in the JSON must have a corresponding entry in the README.
+
+## Creatures README Format
+The `README - Creatures.md` uses the same column layout but the value is **magicka** (not mag/dur):
+
+```
+Creature Name                               [vanilla magicka] -> [new magicka]    id: creature_id
+```
+
+- col 0: creature display name
+- col 44: magicka value (`old -> new`)
+- col 76: `id: <json_id>`
+
+Every creature entry must include `id:` since multiple creatures share the same display name.
 
 ## Modification Policy
 Only hooks may trigger actual modifications to README, JSON, and ESP files. Direct user requests must not apply changes — they may only update steering rules or prepare instructions for hooks to execute.

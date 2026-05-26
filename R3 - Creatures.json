@@ -1,0 +1,657 @@
+[
+  {
+    "type": "Header",
+    "flags": "",
+    "version": 1.3,
+    "file_type": "Esp",
+    "author": "",
+    "description": "",
+    "num_objects": 8,
+    "masters": [
+      [
+        "Morrowind.esm",
+        79837557
+      ]
+    ]
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "atronach_flame",
+    "name": "Flame Atronach",
+    "script": "",
+    "mesh": "r\\Atronach_Fire.NIF",
+    "inventory": [
+      [
+        1,
+        "random_fire_salts"
+      ]
+    ],
+    "spells": [
+      "weakness frost_60",
+      "immune to fire",
+      "firebloom",
+      "reflect_20",
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 0,
+      "fight": 90,
+      "flee": 20,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 1000,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 20,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 7,
+      "strength": 50,
+      "intelligence": 50,
+      "willpower": 70,
+      "agility": 50,
+      "speed": 32,
+      "endurance": 50,
+      "personality": 50,
+      "luck": 50,
+      "health": 75,
+      "magicka": 170,
+      "fatigue": 600,
+      "soul": 105,
+      "combat": 60,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        7,
+        21
+      ],
+      "attack2": [
+        7,
+        21
+      ],
+      "attack3": [
+        7,
+        21
+      ],
+      "gold": 0
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "atronach_flame_az",
+    "name": "Flame Atronach",
+    "script": "",
+    "mesh": "r\\Atronach_Fire.NIF",
+    "inventory": [
+      [
+        1,
+        "random_fire_salts"
+      ]
+    ],
+    "spells": [
+      "weakness frost_60",
+      "immune to fire",
+      "firebloom",
+      "reflect_20",
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 0,
+      "fight": 90,
+      "flee": 20,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 1000,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 0,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "atronach_flame",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 7,
+      "strength": 50,
+      "intelligence": 50,
+      "willpower": 70,
+      "agility": 50,
+      "speed": 32,
+      "endurance": 50,
+      "personality": 50,
+      "luck": 50,
+      "health": 75,
+      "magicka": 170,
+      "fatigue": 600,
+      "soul": 105,
+      "combat": 60,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        7,
+        21
+      ],
+      "attack2": [
+        7,
+        21
+      ],
+      "attack3": [
+        7,
+        21
+      ],
+      "gold": 0
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "atronach_flame_summon",
+    "name": "Flame Atronach",
+    "script": "",
+    "mesh": "r\\Atronach_Fire.NIF",
+    "inventory": [],
+    "spells": [
+      "weakness frost_60",
+      "immune to fire",
+      "firebloom",
+      "reflect_20",
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 0,
+      "fight": 50,
+      "flee": 20,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 1000,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 20,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 7,
+      "strength": 50,
+      "intelligence": 50,
+      "willpower": 70,
+      "agility": 50,
+      "speed": 32,
+      "endurance": 50,
+      "personality": 50,
+      "luck": 50,
+      "health": 75,
+      "magicka": 170,
+      "fatigue": 600,
+      "soul": 105,
+      "combat": 60,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        7,
+        21
+      ],
+      "attack2": [
+        7,
+        21
+      ],
+      "attack3": [
+        7,
+        21
+      ],
+      "gold": 0
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "atronach_flame_ttmk",
+    "name": "Flame Atronach",
+    "script": "atronachMountKand",
+    "mesh": "r\\Atronach_Fire.NIF",
+    "inventory": [
+      [
+        1,
+        "random_fire_salts"
+      ]
+    ],
+    "spells": [
+      "firebloom",
+      "immune to fire",
+      "weakness frost_60",
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 30,
+      "fight": 0,
+      "flee": 0,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 0,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 0,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "atronach_flame",
+    "creature_flags": "RESPAWN | IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 7,
+      "strength": 50,
+      "intelligence": 50,
+      "willpower": 70,
+      "agility": 50,
+      "speed": 32,
+      "endurance": 50,
+      "personality": 50,
+      "luck": 50,
+      "health": 100,
+      "magicka": 170,
+      "fatigue": 600,
+      "soul": 105,
+      "combat": 50,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        7,
+        21
+      ],
+      "attack2": [
+        7,
+        21
+      ],
+      "attack3": [
+        7,
+        21
+      ],
+      "gold": 0
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "atronach_frost",
+    "name": "Frost  Atronach",
+    "script": "",
+    "mesh": "r\\Atronach_Frost.NIF",
+    "inventory": [
+      [
+        1,
+        "random_frost_salts"
+      ]
+    ],
+    "spells": [
+      "weakness fire_50",
+      "immune to frost",
+      "frostbloom",
+      "reflect_20",
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 0,
+      "fight": 90,
+      "flee": 20,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 1000,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 0,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 9,
+      "strength": 50,
+      "intelligence": 50,
+      "willpower": 80,
+      "agility": 50,
+      "speed": 14,
+      "endurance": 50,
+      "personality": 50,
+      "luck": 50,
+      "health": 105,
+      "magicka": 215,
+      "fatigue": 600,
+      "soul": 138,
+      "combat": 60,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        9,
+        27
+      ],
+      "attack2": [
+        9,
+        27
+      ],
+      "attack3": [
+        9,
+        27
+      ],
+      "gold": 0
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "atronach_frost_summon",
+    "name": "Frost  Atronach",
+    "script": "",
+    "mesh": "r\\Atronach_Frost.NIF",
+    "inventory": [],
+    "spells": [
+      "weakness fire_50",
+      "immune to frost",
+      "frostbloom",
+      "reflect_20",
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 0,
+      "fight": 50,
+      "flee": 20,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 1000,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 0,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 9,
+      "strength": 50,
+      "intelligence": 50,
+      "willpower": 80,
+      "agility": 50,
+      "speed": 14,
+      "endurance": 50,
+      "personality": 50,
+      "luck": 50,
+      "health": 105,
+      "magicka": 215,
+      "fatigue": 600,
+      "soul": 138,
+      "combat": 60,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        9,
+        27
+      ],
+      "attack2": [
+        9,
+        27
+      ],
+      "attack3": [
+        9,
+        27
+      ],
+      "gold": 0
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "atronach_frost_ttmk",
+    "name": "Frost  Atronach",
+    "script": "atronachMountKand",
+    "mesh": "r\\Atronach_Frost.NIF",
+    "inventory": [
+      [
+        1,
+        "random_frost_salts"
+      ]
+    ],
+    "spells": [
+      "frostbloom",
+      "immune to frost",
+      "weakness fire_50",
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 30,
+      "fight": 0,
+      "flee": 0,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 0,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 0,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "atronach_frost",
+    "creature_flags": "RESPAWN | IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 9,
+      "strength": 50,
+      "intelligence": 50,
+      "willpower": 50,
+      "agility": 50,
+      "speed": 14,
+      "endurance": 50,
+      "personality": 50,
+      "luck": 50,
+      "health": 140,
+      "magicka": 215,
+      "fatigue": 600,
+      "soul": 138,
+      "combat": 60,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        9,
+        27
+      ],
+      "attack2": [
+        9,
+        27
+      ],
+      "attack3": [
+        9,
+        27
+      ],
+      "gold": 0
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "ascended_sleeper",
+    "name": "Ascended Sleeper",
+    "script": "diseaseAscended",
+    "mesh": "r\\AscendedSleeper.NIF",
+    "inventory": [
+      [
+        1,
+        "random_ash_salts"
+      ]
+    ],
+    "spells": [
+      "paralysis",
+      "fire storm",
+      "frost storm",
+      "shockball",
+      "black-heart blight",
+      "ash woe blight",
+      "ash-chancre",
+      "chanthrax blight",
+      "dagoth's bosom"
+    ],
+    "ai_data": {
+      "hello": 0,
+      "fight": 90,
+      "flee": 20,
+      "alarm": 0,
+      "services": ""
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 1000,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 60,
+        "idle3": 20,
+        "idle4": 20,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Humanoid",
+      "level": 25,
+      "strength": 100,
+      "intelligence": 100,
+      "willpower": 100,
+      "agility": 100,
+      "speed": 20,
+      "endurance": 100,
+      "personality": 100,
+      "luck": 100,
+      "health": 300,
+      "magicka": 330,
+      "fatigue": 400,
+      "soul": 400,
+      "combat": 80,
+      "magic": 80,
+      "stealth": 20,
+      "attack1": [
+        25,
+        75
+      ],
+      "attack2": [
+        25,
+        75
+      ],
+      "attack3": [
+        25,
+        75
+      ],
+      "gold": 0
+    }
+  }
+]
