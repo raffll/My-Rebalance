@@ -6,7 +6,7 @@
         "file_type":  "Esp",
         "author":  "",
         "description":  "",
-        "num_objects":  579,
+        "num_objects":  580,
         "masters":  [
                         [
                             "Morrowind.esm",
@@ -6357,7 +6357,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Poison_DamageAgl_B",
-        "name":  "Bargain Damage Agility Potion",
+        "name":  "Bargain Damage Agility",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -6409,7 +6409,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Poison_DamageFatigue_B",
-        "name":  "Bargain Damage Fatigue Potion",
+        "name":  "Bargain Damage Fatigue",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -6435,7 +6435,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Poison_DamageHealth_B",
-        "name":  "Bargain Damage Health Potion",
+        "name":  "Bargain Damage Health",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -6513,7 +6513,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Poison_DamageMagicka_B",
-        "name":  "Bargain Damage Magicka Potion",
+        "name":  "Bargain Damage Magicka",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -7605,7 +7605,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Potion_Detect_Enemy_S",
-        "name":  "Potion of Detect Enchantments",
+        "name":  "Potion of Detect Enchantment",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Fresh_01.nif",
         "icon":  "m\\Tx_potion_fresh_01.tga",
@@ -7761,7 +7761,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Potion_FortifyCasting_B",
-        "name":  "Bargain Fortify Casting",
+        "name":  "Bargain Fortify Magicka",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -7837,7 +7837,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Potion_FortifyCasting_C",
-        "name":  "Cheap Fortify Casting",
+        "name":  "Cheap Fortify Magicka",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -7913,7 +7913,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Potion_Insight_B",
-        "name":  "Bargain Potion of Fortify Luck",
+        "name":  "Bargain Fortify Luck",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -7939,7 +7939,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Com_Potion_Insight_C",
-        "name":  "Cheap Potion of Fortify Luck",
+        "name":  "Cheap Fortify Luck",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -8453,7 +8453,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_FortifyHealth_C",
-        "name":  "Cheap Potion of Fortify Health",
+        "name":  "Cheap Fortify Health",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -8505,7 +8505,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_FortifyLuck_C",
-        "name":  "Cheap Potion of Fortify Luck",
+        "name":  "Cheap Fortify Luck",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -8531,7 +8531,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_FortifyMagicka_C",
-        "name":  "Cheap Potion of Fortify Magicka",
+        "name":  "Cheap Fortify Magicka",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -8583,7 +8583,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_FortifySpeed_C",
-        "name":  "Cheap Potion of Fortify Speed",
+        "name":  "Cheap Fortify Speed",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -8661,7 +8661,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_Invisibility_C",
-        "name":  "Cheap Potion of Invisibility",
+        "name":  "Cheap Invisibility",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -8713,7 +8713,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_Levitation_C",
-        "name":  "Cheap Potion of Levitation",
+        "name":  "Cheap Rising Force Potion",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -9155,7 +9155,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_ShieldFire_C",
-        "name":  "Cheap Potion of Fire Shield",
+        "name":  "Cheap Fire Shield",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -9181,7 +9181,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_ShieldFrost_C",
-        "name":  "Cheap Potion of Frost Shield",
+        "name":  "Cheap Frost Shield",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_C.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_C.dds",
@@ -9233,7 +9233,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "T_Nor_Potion_ShieldFire_Q",
-        "name":  "Quality Potion of Fire Shield",
+        "name":  "Quality Fire Shield",
         "script":  "",
         "mesh":  "Sky\\m\\Sky_Misc_Potion_P_Q.nif",
         "icon":  "Sky\\m\\Tx_Misc_Potion_P_Q.dds",
@@ -9571,7 +9571,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_detect_enchantment_s",
-        "name":  "Potion of Detect Enchantments",
+        "name":  "Potion of Detect Enchantment",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Fresh_01.nif",
         "icon":  "m\\Tx_potion_fresh_01.tga",
@@ -10085,7 +10085,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fire_shield_b",
-        "name":  "Bargain Potion of Fire Shield",
+        "name":  "Bargain Fire Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -10111,7 +10111,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fire_shield_c",
-        "name":  "Cheap Potion of Fire Shield",
+        "name":  "Cheap Fire Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -10293,7 +10293,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_fatigue_s",
-        "name":  "Standard Fortify Fatigue Potion",
+        "name":  "Standard Fortify Fatigue",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Standard_01.nif",
         "icon":  "m\\Tx_potion_standard_01.tga",
@@ -10371,7 +10371,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_health_b",
-        "name":  "Bargain Fortify Health Potion",
+        "name":  "Bargain Fortify Health",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -10397,7 +10397,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_health_c",
-        "name":  "Cheap Potion of Fortify Health",
+        "name":  "Cheap Fortify Health",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -10475,7 +10475,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_luck_b",
-        "name":  "Bargain Potion of Fortify Luck",
+        "name":  "Bargain Fortify Luck",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -10501,7 +10501,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_luck_c",
-        "name":  "Cheap Potion of Fortify Luck",
+        "name":  "Cheap Fortify Luck",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -10553,7 +10553,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_magicka_c",
-        "name":  "Cheap Potion of Fortify Magicka",
+        "name":  "Cheap Fortify Magicka",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -10631,7 +10631,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_speed_b",
-        "name":  "Bargain Potion of Fortify Speed",
+        "name":  "Bargain Fortify Speed",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -10657,7 +10657,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fortify_speed_c",
-        "name":  "Cheap Potion of Fortify Speed",
+        "name":  "Cheap Fortify Speed",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -10917,7 +10917,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_frost_shield_b",
-        "name":  "Bargain Potion of Frost Shield",
+        "name":  "Bargain Frost Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -10943,7 +10943,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_frost_shield_c",
-        "name":  "Cheap Potion of Frost Shield",
+        "name":  "Cheap Frost Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -10995,7 +10995,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_invisibility_b",
-        "name":  "Bargain Potion of Invisibility",
+        "name":  "Bargain Invisibility",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Bargain_01.nif",
         "icon":  "m\\Tx_potion_bargain_01.tga",
@@ -11021,7 +11021,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_invisibility_c",
-        "name":  "Cheap Potion of Invisibility",
+        "name":  "Cheap Invisibility",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Cheap_01.nif",
         "icon":  "m\\Tx_potion_cheap_01.tga",
@@ -11664,58 +11664,6 @@
         "data":  {
                      "weight":  0.75,
                      "value":  35,
-                     "flags":  ""
-                 }
-    },
-    {
-        "type":  "Alchemy",
-        "flags":  "",
-        "id":  "p_paralyze_b",
-        "name":  "Bargain Potion of Paralyze",
-        "script":  "",
-        "mesh":  "m\\Misc_Potion_Bargain_01.nif",
-        "icon":  "m\\Tx_potion_bargain_01.tga",
-        "effects":  [
-                        {
-                            "magic_effect":  "Paralyze",
-                            "skill":  "None",
-                            "attribute":  "None",
-                            "range":  "OnSelf",
-                            "area":  0,
-                            "duration":  18,
-                            "min_magnitude":  1,
-                            "max_magnitude":  1
-                        }
-                    ],
-        "data":  {
-                     "weight":  1.5,
-                     "value":  5,
-                     "flags":  ""
-                 }
-    },
-    {
-        "type":  "Alchemy",
-        "flags":  "",
-        "id":  "p_paralyze_c",
-        "name":  "Cheap Potion of Paralyze",
-        "script":  "",
-        "mesh":  "m\\Misc_Potion_Cheap_01.nif",
-        "icon":  "m\\Tx_potion_cheap_01.tga",
-        "effects":  [
-                        {
-                            "magic_effect":  "Paralyze",
-                            "skill":  "None",
-                            "attribute":  "None",
-                            "range":  "OnSelf",
-                            "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  1,
-                            "max_magnitude":  1
-                        }
-                    ],
-        "data":  {
-                     "weight":  1.0,
-                     "value":  15,
                      "flags":  ""
                  }
     },
@@ -12372,8 +12320,8 @@
     {
         "type":  "Spell",
         "flags":  "",
-        "id":  "balyna's soothing balm",
-        "name":  "Balyna's Soothing Balm",
+        "id":  "balyna\u0027s soothing balm",
+        "name":  "Balyna\u0027s Soothing Balm",
         "effects":  [
                         {
                             "magic_effect":  "RestoreHealth",
@@ -12395,8 +12343,8 @@
     {
         "type":  "Spell",
         "flags":  "",
-        "id":  "balyna's efficacious balm",
-        "name":  "Balyna's Efficacious Balm",
+        "id":  "balyna\u0027s efficacious balm",
+        "name":  "Balyna\u0027s Efficacious Balm",
         "effects":  [
                         {
                             "magic_effect":  "RestoreHealth",
@@ -12441,8 +12389,8 @@
     {
         "type":  "Spell",
         "flags":  "",
-        "id":  "balyna's perfect balm",
-        "name":  "Balyna's Perfect Balm",
+        "id":  "balyna\u0027s perfect balm",
+        "name":  "Balyna\u0027s Perfect Balm",
         "effects":  [
                         {
                             "magic_effect":  "RestoreHealth",
@@ -12569,7 +12517,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_restore_health_s",
-        "name":  "Standard Restore Health Potion",
+        "name":  "Standard Restore Health",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Standard_01.nif",
         "icon":  "m\\Tx_potion_standard_01.tga",
@@ -12959,7 +12907,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_restore_magicka_s",
-        "name":  "Standard Restore Magicka Potion",
+        "name":  "Standard Restore Magicka",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Standard_01.nif",
         "icon":  "m\\Tx_potion_standard_01.tga",
@@ -13635,7 +13583,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_slowfall_s",
-        "name":  "Potion of Slowfalling",
+        "name":  "Potion of Slowfall",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Fresh_01.nif",
         "icon":  "m\\Tx_potion_fresh_01.tga",
@@ -14562,7 +14510,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fire_shield_s",
-        "name":  "Standard Potion of Fire Shield",
+        "name":  "Standard Fire Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Standard_01.nif",
         "icon":  "m\\Tx_potion_standard_01.tga",
@@ -14588,7 +14536,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fire_shield_q",
-        "name":  "Quality Potion of Fire Shield",
+        "name":  "Quality Fire Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Quality_01.nif",
         "icon":  "m\\Tx_potion_quality_01.tga",
@@ -14614,7 +14562,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_fire_shield_e",
-        "name":  "Exclusive Potion of Fire Shield",
+        "name":  "Exclusive Fire Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Exclusive_01.nif",
         "icon":  "m\\Tx_potion_exclusive_01.tga",
@@ -14640,7 +14588,7 @@
         "type":  "Alchemy",
         "flags":  "",
         "id":  "p_frost_shield_s",
-        "name":  "Standard Potion of Frost Shield",
+        "name":  "Standard Frost Shield",
         "script":  "",
         "mesh":  "m\\Misc_Potion_Standard_01.nif",
         "icon":  "m\\Tx_potion_standard_01.tga",
@@ -14758,6 +14706,136 @@
                             "duration":  30,
                             "min_magnitude":  10,
                             "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.25,
+                     "value":  175,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_fortify_health_s",
+        "name":  "Standard Fortify Health",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Standard_01.nif",
+        "icon":  "m\\Tx_potion_standard_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "FortifyHealth",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  30,
+                            "min_magnitude":  10,
+                            "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.75,
+                     "value":  35,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_fortify_magicka_s",
+        "name":  "Standard Fortify Magicka",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Standard_01.nif",
+        "icon":  "m\\Tx_potion_standard_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "FortifyMagicka",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  30,
+                            "min_magnitude":  10,
+                            "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.75,
+                     "value":  35,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_invisibility_s",
+        "name":  "Standard Invisibility",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Standard_01.nif",
+        "icon":  "m\\Tx_potion_standard_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Invisibility",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  30,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.75,
+                     "value":  35,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_invisibility_q",
+        "name":  "Quality Invisibility",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Quality_01.nif",
+        "icon":  "m\\Tx_potion_quality_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Invisibility",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  45,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "weight":  0.5,
+                     "value":  80,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Alchemy",
+        "flags":  "",
+        "id":  "p_invisibility_e",
+        "name":  "Exclusive Invisibility",
+        "script":  "",
+        "mesh":  "m\\Misc_Potion_Exclusive_01.nif",
+        "icon":  "m\\Tx_potion_exclusive_01.tga",
+        "effects":  [
+                        {
+                            "magic_effect":  "Invisibility",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  60,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
                         }
                     ],
         "data":  {

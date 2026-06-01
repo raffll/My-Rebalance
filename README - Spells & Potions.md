@@ -189,17 +189,24 @@ Fire Eye                                    10-23/20s -> 10-25/20s *
 
 *Potions*
 ```
-Bargain Potion of Fire Shield               5/8s -> 3/9s
-Cheap Potion of Fire Shield                 8/15s -> 4/12s
-Standard Potion of Fire Shield              10/30s -> 6/18s
-Quality Potion of Fire Shield               15/45s -> 8/24s
-Exclusive Potion of Fire Shield             20/60s -> 10/30s
+Bargain Potion of Fire Shield -> Bargain Fire Shield
+                                            5/8s -> 3/9s
+Cheap Potion of Fire Shield -> Cheap Fire Shield
+                                            8/15s -> 4/12s
+Standard Potion of Fire Shield -> Standard Fire Shield
+                                            10/30s -> 6/18s
+Quality Potion of Fire Shield -> Quality Fire Shield
+                                            15/45s -> 8/24s
+Exclusive Potion of Fire Shield -> Exclusive Fire Shield
+                                            20/60s -> 10/30s
 ```
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Fire Shield                 8/15s -> 4/12s                  id: T_Nor_Potion_ShieldFire_C
-Quality Potion of Fire Shield               15/45s -> 8/24s                 id: T_Nor_Potion_ShieldFire_Q
+Cheap Potion of Fire Shield -> Cheap Fire Shield
+                                            8/15s -> 4/12s                  id: T_Nor_Potion_ShieldFire_C
+Quality Potion of Fire Shield -> Quality Fire Shield
+                                            15/45s -> 8/24s                 id: T_Nor_Potion_ShieldFire_Q
 ```
 
 ------------------------------------------------------------
@@ -220,16 +227,20 @@ Fierce Frost Shield                         5-11/10s -> 5-10/10s *
 
 *Potions*
 ```
-Bargain Potion of Frost Shield              5/8s -> 3/9s
-Cheap Potion of Frost Shield                8/15s -> 4/12s
-Standard Potion of Frost Shield             10/30s -> 6/18s
+Bargain Potion of Frost Shield -> Bargain Frost Shield
+                                            5/8s -> 3/9s
+Cheap Potion of Frost Shield -> Cheap Frost Shield
+                                            8/15s -> 4/12s
+Standard Potion of Frost Shield -> Standard Frost Shield
+                                            10/30s -> 6/18s
 Quality Frost Shield                        15/45s -> 8/24s
 Exclusive Frost Shield                      20/30s -> 10/30s
 ```
 
 *Potions - Tamriel Data*
 ```
-Cheap Potion of Frost Shield                8/15s -> 4/12s                  id: T_Nor_Potion_ShieldFrost_C
+Cheap Potion of Frost Shield -> Cheap Frost Shield
+                                            8/15s -> 4/12s                  id: T_Nor_Potion_ShieldFrost_C
 Quality Frost Shield                        15/45s -> 8/24s                 id: T_Nor_Potion_ShieldFrost_Q
 ```
 
@@ -305,6 +316,12 @@ Quality Rising Force Potion                 15/45s -> 8/24s
 Exclusive Rising Force Potion               20/60s -> 10/30s
 ```
 
+*Potions - Tamriel Data*
+```
+Cheap Potion of Levitation -> Cheap Rising Force Potion
+                                                                            id: T_Nor_Potion_Levitation_C
+```
+
 ------------------------------------------------------------
 
 ### Jump
@@ -322,7 +339,7 @@ Base Cost                                   3
 *Potions*
 ```
 Spoiled Slowfall Potion                     10/15s -> 1/15s
-Potion of Slowfalling                       10/15s -> 10/30s
+Potion of Slowfalling -> Potion of Slowfall  10/15s -> 10/30s
 ```
 
 *Potions - Tamriel Data*
@@ -462,6 +479,25 @@ Hornhand                                    15-36/1s -> 30-70/1s *
 ### Damage Attribute
 ```
 Base Cost                                   8 -> 24
+```
+
+*Potions - Tamriel Data*
+```
+Bargain Damage Agility Potion -> Bargain Damage Agility
+                                                                            id: T_Com_Poison_DamageAgl_B
+Bargain Damage Endurance                                                    id: T_Com_Poison_DamageEnd_B
+Bargain Damage Fatigue Potion -> Bargain Damage Fatigue
+                                                                            id: T_Com_Poison_DamageFatigue_B
+Bargain Damage Health Potion -> Bargain Damage Health
+                                                                            id: T_Com_Poison_DamageHealth_B
+Bargain Damage Intelligence                                                 id: T_Com_Poison_DamageInt_B
+Bargain Damage Luck                                                         id: T_Com_Poison_DamageLuck_B
+Bargain Damage Magicka Potion -> Bargain Damage Magicka
+                                                                            id: T_Com_Poison_DamageMagicka_B
+Bargain Damage Personality                                                  id: T_Com_Poison_DamagePerson_B
+Bargain Damage Speed                                                        id: T_Com_Poison_DamageSpeed_B
+Bargain Damage Strength                                                     id: T_Com_Poison_DamageStr_B
+Bargain Damage Willpower                                                    id: T_Com_Poison_DamageWill_B
 ```
 
 ------------------------------------------------------------
@@ -853,6 +889,21 @@ Shadow Form                                 6-15/30s -> 12-30/30s *
 Base Cost                                   20
 ```
 
+*Potions*
+```
+Bargain Potion of Invisibility -> Bargain Invisibility
+Cheap Potion of Invisibility -> Cheap Invisibility
+Standard Potion of Invisibility -> Standard Invisibility
+Quality Potion of Invisibility -> Quality Invisibility
+Exclusive Invisibility
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Potion of Invisibility -> Cheap Invisibility
+                                                                            id: T_Nor_Potion_Invisibility_C
+```
+
 *Spells*
 ```
 Invisibility                                30s -> 60s *
@@ -994,12 +1045,14 @@ Base Cost                                   1 -> 0.2
 
 *Potions*
 ```
-Potion of Detect Enchantments               10/15s -> 40/120s
+Potion of Detect Enchantments -> Potion of Detect Enchantment
+                                            10/15s -> 40/120s
 ```
 
 *Potions - Tamriel Data*
 ```
-Potion of Detect Enchantments               10/15s -> 40/120s
+Potion of Detect Enchantments -> Potion of Detect Enchantment
+                                            10/15s -> 40/120s
 ```
 
 *Spells*
@@ -1160,7 +1213,8 @@ Balyna's Perfect Balm                       3-30/1s -> 5-30/1s *
 ```
 Bargain Restore Health                      1/5s -> 2/6s
 Cheap Restore Health                        2/5s -> 3/9s
-Standard Restore Health Potion              10/5s -> 4/12s
+Standard Restore Health Potion -> Standard Restore Health
+                                            10/5s -> 4/12s
 Quality Restore Health                      20/5s -> 6/18s
 Exclusive Restore Health                    40/5s -> 8/24s
 ```
@@ -1176,7 +1230,8 @@ Base Cost                                   5
 ```
 Bargain Restore Magicka                     1/5s -> 2/6s
 Cheap Restore Magicka                       2/5s -> 3/9s
-Standard Restore Magicka Potion             10/5s -> 4/12s
+Standard Restore Magicka Potion -> Standard Restore Magicka
+                                            10/5s -> 4/12s
 Quality Restore Magicka                     20/5s -> 6/18s
 Exclusive Restore Magicka                   40/5s -> 8/24s
 ```
@@ -1292,11 +1347,45 @@ Base Cost                                   1
 Base Cost                                   1
 ```
 
+*Potions*
+```
+Bargain Fortify Health Potion -> Bargain Fortify Health
+Cheap Potion of Fortify Health -> Cheap Fortify Health
+Standard Fortify Health Potion -> Standard Fortify Health
+Quality Fortify Health
+Exclusive Fortify Health
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Potion of Fortify Health -> Cheap Fortify Health
+                                                                            id: T_Nor_Potion_FortifyHealth_C
+```
+
 ------------------------------------------------------------
 
 ### Fortify Magicka
 ```
 Base Cost                                   1
+```
+
+*Potions*
+```
+Bargain Fortify Magicka
+Cheap Potion of Fortify Magicka -> Cheap Fortify Magicka
+Standard Fortify Magicka Potion -> Standard Fortify Magicka
+Quality Fortify Magicka
+Exclusive Fortify Magicka
+```
+
+*Potions - Tamriel Data*
+```
+Cheap Potion of Fortify Magicka -> Cheap Fortify Magicka
+                                                                            id: T_Nor_Potion_FortifyMagicka_C
+Bargain Fortify Casting -> Bargain Fortify Magicka
+                                                                            id: T_Com_Potion_FortifyCasting_B
+Cheap Fortify Casting -> Cheap Fortify Magicka
+                                                                            id: T_Com_Potion_FortifyCasting_C
 ```
 
 ------------------------------------------------------------
@@ -1310,7 +1399,8 @@ Base Cost                                   0.5 -> 0.25
 ```
 Bargain Fortify Fatigue                     5/8s -> 20/60s
 Cheap Fortify Fatigue                       8/15s -> 30/90s
-Standard Fortify Fatigue Potion             10/30s -> 40/120s
+Standard Fortify Fatigue Potion -> Standard Fortify Fatigue
+                                            10/30s -> 40/120s
 Quality Fortify Fatigue                     15/45s -> 60/180s
 Exclusive Fortify Fatigue                   20/60s -> 80/240s
 ```
@@ -1332,6 +1422,22 @@ Impossible Effort                           150/20s
 ### Fortify Attribute
 ```
 Base Cost                                   1
+```
+
+*Potions*
+```
+Bargain Potion of Fortify Speed -> Bargain Fortify Speed
+Cheap Potion of Fortify Speed -> Cheap Fortify Speed
+```
+
+*Potions - Tamriel Data*
+```
+Bargain Potion of Fortify Luck -> Bargain Fortify Luck
+                                                                            id: T_Com_Potion_Insight_B
+Cheap Potion of Fortify Luck -> Cheap Fortify Luck
+                                                                            id: T_Com_Potion_Insight_C
+Cheap Potion of Fortify Speed -> Cheap Fortify Speed
+                                                                            id: T_Nor_Potion_FortifySpeed_C
 ```
 
 ------------------------------------------------------------
