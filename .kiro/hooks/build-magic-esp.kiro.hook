@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Build All ESPs",
+  "description": "Converts all three JSON files to ESP using tes3conv in a single script.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "powershell -NoProfile -Command \"tes3conv\\tes3conv.exe -o 'R3 - Magic.json' 'R3 - Magic.esp'; tes3conv\\tes3conv.exe -o 'R3 - Races & Birthsigns.json' 'R3 - Races & Birthsigns.esp'; tes3conv\\tes3conv.exe -o 'R3 - Core.json' 'R3 - Core.esp'; Remove-Item -ErrorAction SilentlyContinue *.000.esp, *.001.esp\""
+  }
+}

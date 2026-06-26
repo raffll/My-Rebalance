@@ -1,0 +1,164 @@
+# Spell Edit Workflow
+
+This workflow applies to all file pairs:
+- `README - Spells & Potions.md` ↔ `R3 - Spells & Potions.json` → `R3 - Spells & Potions.esp`
+- `README - Enchantments.md` ↔ `R3 - Enchantments.json` → `R3 - Enchantments.esp`
+- `README - Races & Birthsigns.md` ↔ `R3 - Races & Birthsigns.json` → `R3 - Races & Birthsigns.esp`
+- `README - Core.md` ↔ `R3 - Core.json` → `R3 - Core.esp`
+- `README - Creatures.md` ↔ `R3 - Creatures.json` → `R3 - Creatures.esp`
+
+When asked to modify a spell, race ability, birthsign, or game setting:
+
+## 1. README update
+Find the entry's section in the relevant `README - *.md` file and add or update its entry using this format:
+
+```
+Spell Name                                  [default mag/dur from vanilla] -> [new mag/dur]
+```
+
+Column positions (0-indexed):
+- **col 0**: spell/entry name
+- **col 44**: values (mag/dur)
+- **col 76**: comments and IDs (notes, flags, scale, `id: <json_id>`)
+
+Multiple comments separated by `;`. IDs use `id:` prefix and go last. Example:
+```
+Paralysis                                   6s [auto -> 12]                 used by Scribs; id: scrib_paralysis
+Scroll of Baleful Suffering                 0−25/30s                        id: sc_balefulsuffering_en
+```
+
+- Values are `magnitude/duration` (e.g. `20/10s -> 50/40s`). All entries must include at least magnitude and duration.
+- Range spells use `min-max/duration` (e.g. `30-60/10s -> 60-120/50s`)
+- If there is an area, append it after duration: `50/10s/10ft`
+- If there is also a range type, append it after area: `50/10s/10ft/Target`
+- If a cost override is also present, it comes last in brackets: `50/10s/10ft/Target [10]`
+- Only include area, range type, and cost override in the value if they are **being changed**. If they stay vanilla, omit them.
+- For **abilities** (always-on), duration is irrelevant — show magnitude only: `200/1s -> 1`
+- If there is a cost override, append it in brackets: `50/10s [25]`
+- Anything after the values (notes, flags) goes in a comment at the end of the line, with multiple comments separated by `;`: `50/10s               used by Aryon; !`
+- Add the scale as a comment on the first spell that uses it, e.g. `x2.5/x4`. Skip the comment on subsequent spells if the scale is the same.
+- Always use `xMAG/xDUR` format (e.g. `x10/x1` for magnitude-only, `x1/x4` for duration-only). Never write `x10 dur` or `x4 mag`.
+- Do not add scale comments to potions.
+- If the scale follows directly from the base cost change (opposite direction, same factor — e.g. base cost ÷2 → spells ×2), omit the scale comment entirely since it is implied.
+- If a spell's scale does **not** match the implied base cost compensation, mark it with `*` placed immediately after the right-side value (e.g. `1/20s -> 20/20s *`). The `*` is part of the value column, not a col-76 comment. This replaces explicit scale comments for deviations. This includes rounding (e.g. min magnitude staying at 1 instead of scaling up, or values rounded to nearest 5).
+- Potions always use a value from the potion tier table — never scale potion mag/dur from base cost changes.
+- If the user writes a scale like `! 5x/2x` as a trailing comment on a README entry, it means: apply that scale to all entries in that section (until an empty line or a new `!` trigger appears), compute and write the new target values in README and JSON, then remove the scale comment.
+- If the user writes `! [Nx]` (a single value in brackets, e.g. `! [5x]`), it means: apply that scale to the **spell cost override** (the `[cost]` value in brackets on the spell line) for all entries in that section, then remove the scale comment.
+- If a `! Nx` scale comment appears on a **Base Cost** line, apply that scale to the Base Cost value, then remove the scale comment.
+- The `->` means: left side is the vanilla/default value, right side is the new target value
+- If the right side value is identical to the left side value, omit the `->` and right side entirely — just leave the vanilla value alone
+
+## The `!` marker
+`!` is a general attention marker. When the user writes `!` anywhere — on a line, a section header, or as a standalone comment — it means: **look at this, analyze it, and report back**. Do not apply any changes unless the user explicitly asks after the analysis.
+
+Specific `!` trigger forms that do cause changes (only when the hook processes them):
+- `! Nx/Nx` trailing on a spell entry — scale trigger for mag/dur
+- `! [Nx]` trailing on a spell entry — scale trigger for cost override
+- `! Nx` on a Base Cost line — scale trigger for base cost
+
+## 2. JSON update
+Find the entry in the relevant ESP JSON (`R3 - Magic.json`, `R3 - Races & Birthsigns.json`, or `R3 - Core.json`).
+
+- If the spell **already exists** in the ESP JSON: update `min_magnitude`, `max_magnitude`, `duration`, `area` as needed.
+- If the spell **does not exist** in the ESP JSON: copy the full entry from the appropriate default reference JSON in `tes3conv/` (Morrowind.json, Tribunal.json, Bloodmoon.json, or Tamriel_Data.json), then apply the new values.
+
+## README IDs
+IDs go in the comment section of the line (col 76), prefixed with `id: `. Example:
+```
+Paralysis                                   6s [auto -> 12]                 used by Scribs; id: scrib_paralysis
+Scroll of Baleful Suffering                 0−25/30s                        id: sc_balefulsuffering_en
+```
+
+Add IDs for:
+- **All enchanted items** (scrolls, weapons, clothing with enchantments) — always include `id:`
+- **Spells or potions that share a display name with another record** — both need `id:`, EXCEPT when one is from Tamriel Data (starts with `T_`) and the other is vanilla: in that case only the TD entry needs `id:`
+- **All Tamriel Data records** — always include `id:` since TD IDs start with `T_` and are not obvious from the name
+
+Do NOT add IDs for vanilla spells/potions with unique names, or for base cost entries.
+
+The col 120 rule is retired — IDs are part of the comment column at col 76, using `id:` prefix to distinguish from other comments. Multiple comments are separated by `;`.
+
+## JSON value scaling
+The user will specify the scale to use each time. Wait for the user to provide the scale before writing JSON values.
+
+**Before applying a new scale**, always check the current mag/dur values (right side of `->`) and determine what scale has already been applied relative to vanilla. Only apply the difference — never double-scale.
+
+## Spell Cost Formula
+
+`((min + max) × duration × (base_cost / 40) + area × (base_cost / 40)) × 1.5 if OnTarget`
+
+- OnSelf/OnTouch: `(min + max) × duration × (base_cost / 40) + area × (base_cost / 40)`
+- OnTarget: multiply the above by 1.5
+
+For multi-effect spells, sum the cost of each effect individually.
+
+## Value Rounding Rule
+All spell **magnitudes** must be either:
+- **1** (minimum floor value), or
+- A **multiple of 5** (5, 10, 15, 20, 25, 30, ...)
+
+**Durations are exempt from rounding** — they may be any integer value produced by scaling.
+
+When scaling produces non-round magnitudes, first apply the scale, then round to the nearest multiple of 5. If the result is less than 5, use 1 or 5 (never 2, 3, 4, 6, 7, etc. unless it's exactly 1).
+
+This applies to **both sides** of `->` in README entries and to the corresponding JSON values. Vanilla spells with non-round magnitudes must also be rounded when they appear in the ESP — record the vanilla value as-is on the left side of `->`, then put the rounded value on the right side (even if no other change is being made).
+
+**Exception — no range**: When an effect has no magnitude range (min == max), do **not** round it. Rounding only applies to effects that use a min-max range (min ≠ max). Fixed-magnitude effects keep their vanilla value unchanged.
+
+## No-Scale Effects
+The following effects do **not** get spell compensation scaling when their base cost changes. Only rounding fixes apply:
+- **Fire Damage**
+- **Frost Damage**
+- **Shock Damage**
+- **Poison**
+
+For these effects, spells keep their vanilla magnitudes/durations (rounded if needed). The base cost change affects spell cost directly without compensating adjustments.
+
+The scale is applied to the **vanilla default values** (left of `->` in README) to produce the new values:
+- `new_magnitude = vanilla_magnitude × scale_mag`
+- `new_duration = vanilla_duration × scale_dur`
+
+The JSON and README store the same new values — no conversion needed between them.
+
+**Important**: When a scale is specified (either by the user or via `! Nx/Nx` trigger in README), always apply it to the vanilla default (left of `->`) and replace whatever target value was previously on the right side — even if a target already exists. The value on the right of `->` is always the output of the last scale and is meaningless as input.
+
+**x1/x1 special case**: Scale x1/x1 means revert to vanilla. Set the target values to the vanilla defaults — keep the entry in both README and JSON, just update the values.
+
+**-> TODO special case**: When an entry has `-> TODO` as a comment, the value already on the right side of `->` is the final target — apply it directly to the JSON without any scale calculation. When the user says "don't apply, just add rule" (or similar), only update the steering file — do not touch README or JSON files.
+
+## Base Cost and spell compensation rule
+When a magic effect's base cost is changed, spells of that school must be adjusted in the **opposite direction** to keep their effective cost roughly the same:
+- If base cost is multiplied by X, then spell mag×dur must be divided by X (and vice versa)
+- Example: base cost ÷2 → spell mag×dur ×2 (e.g. double magnitude, or double duration, or split between both)
+- The split between magnitude and duration is chosen per spell as appropriate
+- **Do not apply spell compensation automatically.** When a base cost changes, list each affected spell with its vanilla values and propose new values for the user to approve. Only apply after confirmation.
+
+## Starting Spells
+The `## Starting Spells` section in the README is **not** a rename. The `->` means: remove `PC_START_SPELL` flag from the spell on the left, add `PC_START_SPELL` flag to the spell on the right. Both spells keep their original names and IDs unchanged.
+
+## Notes
+- Never modify files inside `tes3conv/` — those are read-only vanilla references.
+- Never change the `id` field of any record in ESP JSON files. IDs are immutable — only `name` and other data fields may be edited.
+- Never add new records that don't exist in vanilla or TD. Only modify existing records.
+- README and JSON must always be updated together. ESP conversion is handled separately and is not part of this workflow.
+- Only rebuild the ESP for the JSON file that was actually changed.
+- The top-level `## Potions` section in README - Magic.md defines default Bargain and Cheap values for all potions (e.g. `Bargain... 5/8s -> 6/18s`). If an individual potion entry has its own explicit values, those override the general rule.
+- When reverting a value to vanilla, keep the entry in both README and JSON — do not remove it automatically.
+- Do only what was explicitly asked. Do not proactively recalculate, adjust, or modify other entries beyond the specific request.
+- Every spell/potion/enchantment in the JSON must have a corresponding entry in the README.
+
+## Creatures README Format
+The `README - Creatures.md` uses the same column layout but the value is **magicka** (not mag/dur):
+
+```
+Creature Name                               [vanilla magicka] -> [new magicka]    id: creature_id
+```
+
+- col 0: creature display name
+- col 44: magicka value (`old -> new`)
+- col 76: `id: <json_id>`
+
+Every creature entry must include `id:` since multiple creatures share the same display name.
+
+## Modification Policy
+Only hooks may trigger actual modifications to README, JSON, and ESP files. Direct user requests must not apply changes — they may only update steering rules or prepare instructions for hooks to execute.

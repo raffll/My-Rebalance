@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Process README Scales",
+  "description": "Manually trigger processing of ! Nx/Nx scale triggers in all three READMEs, updating README and JSON values, then rebuilding the affected ESPs.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Scan all three README files (README - Magic.md, README - Races & Birthsigns.md, README - Core.md) for any entries with a trailing `! Nx/Nx` scale comment (e.g. `! 5x/2x`, `! 10x/1x`). For each one found:\n1. Identify the section it belongs to (all entries until the next empty line or a new `!` trigger)\n2. Apply the scale to the VANILLA DEFAULT values (left of `->`) to compute new target values — always replace whatever is on the right side of `->`, even if a target already exists. The right side value is always meaningless as input.\n3. SPECIAL CASE x1/x1: means revert to vanilla — set target values to vanilla defaults, keep the entry in both README and JSON\n4. For all other scales: update the target values (right of `->`) in the README and update the corresponding entries in the matching JSON (R3 - Magic.json, R3 - Races & Birthsigns.json, or R3 - Core.json)\n5. Remove the `! Nx/Nx` trigger comment\n6. Rebuild only the ESPs whose JSON files were changed, using:\n   `tes3conv/tes3conv.exe --overwrite \"<name>.json\" \"<name>.esp\"`\n   Then clean up any numbered backups: `rm -f *.???.esp`\n\nIf no `! Nx/Nx` triggers are found in any README, do nothing."
+  }
+}

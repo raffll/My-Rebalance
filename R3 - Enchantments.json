@@ -1,0 +1,626 @@
+[
+    {
+        "type":  "Header",
+        "flags":  "",
+        "version":  1.3,
+        "file_type":  "Esp",
+        "author":  "",
+        "description":  "",
+        "num_objects":  19,
+        "masters":  [
+                        [
+                            "Morrowind.esm",
+                            79837557
+                        ],
+                        [
+                            "Tribunal.esm",
+                            4565686
+                        ],
+                        [
+                            "Bloodmoon.esm",
+                            9631798
+                        ],
+                        [
+                            "Tamriel_Data.esm",
+                            14887395
+                        ]
+                    ]
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "Crescent Moon",
+        "effects":  [
+                        {
+                            "magic_effect":  "DisintegrateArmor",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  1,
+                            "min_magnitude":  50,
+                            "max_magnitude":  300
+                        },
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  10,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnStrike",
+                     "cost":  45,
+                     "max_charge":  450,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "T_Once_BurdenTouch30-35",
+        "effects":  [
+                        {
+                            "magic_effect":  "Burden",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  35,
+                            "min_magnitude":  300,
+                            "max_magnitude":  300
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  53,
+                     "max_charge":  53,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "T_Once_FallingBarrier",
+        "effects":  [
+                        {
+                            "magic_effect":  "Shield",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  20,
+                            "min_magnitude":  6,
+                            "max_magnitude":  6
+                        },
+                        {
+                            "magic_effect":  "Shield",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  40,
+                            "min_magnitude":  8,
+                            "max_magnitude":  8
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  22,
+                     "max_charge":  22,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "black_jinx_en_unique",
+        "effects":  [
+                        {
+                            "magic_effect":  "AbsorbAttribute",
+                            "skill":  "None",
+                            "attribute":  "Luck",
+                            "range":  "OnTouch",
+                            "area":  1,
+                            "duration":  120,
+                            "min_magnitude":  10,
+                            "max_magnitude":  50
+                        },
+                        {
+                            "magic_effect":  "Burden",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  1,
+                            "duration":  120,
+                            "min_magnitude":  250,
+                            "max_magnitude":  1000
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastWhenUsed",
+                     "cost":  735,
+                     "max_charge":  3675,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "bm_hunterspear",
+        "effects":  [
+                        {
+                            "magic_effect":  "Paralyze",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  10,
+                            "min_magnitude":  1,
+                            "max_magnitude":  1
+                        },
+                        {
+                            "magic_effect":  "Burden",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  10,
+                            "min_magnitude":  500,
+                            "max_magnitude":  500
+                        },
+                        {
+                            "magic_effect":  "Poison",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  5,
+                            "min_magnitude":  4,
+                            "max_magnitude":  4
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnStrike",
+                     "cost":  54,
+                     "max_charge":  540,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "feather_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Feather",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  50,
+                            "min_magnitude":  40,
+                            "max_magnitude":  40
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastWhenUsed",
+                     "cost":  10,
+                     "max_charge":  50,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "saint\u0027s shield_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Feather",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  20,
+                            "min_magnitude":  100,
+                            "max_magnitude":  100
+                        },
+                        {
+                            "magic_effect":  "RestoreFatigue",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  20,
+                            "min_magnitude":  1,
+                            "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastWhenUsed",
+                     "cost":  24,
+                     "max_charge":  120,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_balefulsuffering_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Blind",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  30,
+                            "min_magnitude":  0,
+                            "max_magnitude":  25
+                        },
+                        {
+                            "magic_effect":  "Burden",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  30,
+                            "min_magnitude":  0,
+                            "max_magnitude":  250
+                        },
+                        {
+                            "magic_effect":  "DemoralizeCreature",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  30,
+                            "min_magnitude":  0,
+                            "max_magnitude":  50
+                        },
+                        {
+                            "magic_effect":  "DemoralizeHumanoid",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  30,
+                            "min_magnitude":  0,
+                            "max_magnitude":  50
+                        },
+                        {
+                            "magic_effect":  "DisintegrateArmor",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  5,
+                            "min_magnitude":  50,
+                            "max_magnitude":  50
+                        },
+                        {
+                            "magic_effect":  "DisintegrateWeapon",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  5,
+                            "min_magnitude":  25,
+                            "max_magnitude":  25
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  193,
+                     "max_charge":  193,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_fadersleadenflesh_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Burden",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  0,
+                            "duration":  60,
+                            "min_magnitude":  0,
+                            "max_magnitude":  250
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  56,
+                     "max_charge":  56,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_ulmjuicedasfeather_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Feather",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  240,
+                            "min_magnitude":  500,
+                            "max_magnitude":  500
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  60,
+                     "max_charge":  1200,
+                     "flags":  ""
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "ulms juicedaw\u0027s feather_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Feather",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  20,
+                            "min_magnitude":  250,
+                            "max_magnitude":  250
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastWhenUsed",
+                     "cost":  25,
+                     "max_charge":  125,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_reynosbeastfinder_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "DetectAnimal",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  20,
+                            "min_magnitude":  100,
+                            "max_magnitude":  200
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  23,
+                     "max_charge":  23,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_mageseye_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "DetectEnchantment",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  20,
+                            "min_magnitude":  100,
+                            "max_magnitude":  200
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  30,
+                     "max_charge":  30,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_tevralshawkshaw_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "DetectKey",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnSelf",
+                            "area":  0,
+                            "duration":  60,
+                            "min_magnitude":  100,
+                            "max_magnitude":  200
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  90,
+                     "max_charge":  90,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_hellfire_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "WeaknessToFire",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  10,
+                            "min_magnitude":  5,
+                            "max_magnitude":  10
+                        },
+                        {
+                            "magic_effect":  "FireDamage",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  1,
+                            "min_magnitude":  10,
+                            "max_magnitude":  100
+                        },
+                        {
+                            "magic_effect":  "FireDamage",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  5,
+                            "min_magnitude":  1,
+                            "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  47,
+                     "max_charge":  47,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_FiercelyRoastThyEnemy_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "FireDamage",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  100,
+                            "duration":  5,
+                            "min_magnitude":  20,
+                            "max_magnitude":  80
+                        },
+                        {
+                            "magic_effect":  "WeaknessToFire",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  100,
+                            "duration":  5,
+                            "min_magnitude":  20,
+                            "max_magnitude":  80
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  156,
+                     "max_charge":  156,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_blackstorm_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "DamageMagicka",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  5,
+                            "min_magnitude":  1,
+                            "max_magnitude":  10
+                        },
+                        {
+                            "magic_effect":  "ShockDamage",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  2,
+                            "min_magnitude":  5,
+                            "max_magnitude":  50
+                        },
+                        {
+                            "magic_effect":  "ShockDamage",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTarget",
+                            "area":  10,
+                            "duration":  5,
+                            "min_magnitude":  0,
+                            "max_magnitude":  10
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  69,
+                     "max_charge":  69,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_didalasknack_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Charm",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  30,
+                            "min_magnitude":  0,
+                            "max_magnitude":  25
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  90,
+                     "max_charge":  90,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    },
+    {
+        "type":  "Enchanting",
+        "flags":  "",
+        "id":  "sc_vaerminaspromise_en",
+        "effects":  [
+                        {
+                            "magic_effect":  "Charm",
+                            "skill":  "None",
+                            "attribute":  "None",
+                            "range":  "OnTouch",
+                            "area":  0,
+                            "duration":  60,
+                            "min_magnitude":  0,
+                            "max_magnitude":  50
+                        }
+                    ],
+        "data":  {
+                     "enchant_type":  "CastOnce",
+                     "cost":  360,
+                     "max_charge":  360,
+                     "flags":  "AUTO_CALCULATE"
+                 }
+    }
+]
