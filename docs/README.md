@@ -15,3 +15,5 @@ The idea is to make more options usable, especially for the fun of role-playing 
 - Elemental damage (Fire, Frost, Shock, Poison) does not get spell compensation — base cost change affects cost directly.
 - All spell magnitudes rounded to multiples of 5 (minimum floor is 1).
 - Tamriel Data spells and potions follow the same rules.
+
+## README in construction! Check detailed readmes for every change this mod make.
