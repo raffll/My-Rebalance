@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Strip JSON BOM on Create",
+      "trigger": "PostFileCreate",
+      "description": "Removes a UTF-8 BOM from newly created JSON files so tes3conv can read them.",
+      "matcher": "\\.json$",
+      "action": {
+        "type": "command",
+        "command": "python scripts/strip_bom.py"
+      }
+    }
+  ]
+}

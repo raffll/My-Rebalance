@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Strip JSON BOM on Save",
+      "trigger": "PostFileSave",
+      "description": "Removes a UTF-8 BOM from JSON files on save so tes3conv can read them.",
+      "matcher": "\\.json$",
+      "action": {
+        "type": "command",
+        "command": "python scripts/strip_bom.py"
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# Remastered Rebalance Redux
+# Remastered Rebalance Redux - Factions
 
 ------------------------------------------------------------
 
@@ -7,6 +7,7 @@
 ------------------------------------------------------------
 
 ### Mages Guild
+
 ```
 Associate                                   30
 Apprentice                                  30
@@ -23,6 +24,7 @@ Arch-Mage                                   35 -> 55
 ------------------------------------------------------------
 
 ### Fighters Guild
+
 ```
 Associate                                   30
 Apprentice                                  30
@@ -39,6 +41,7 @@ Master                                      35 -> 55
 ------------------------------------------------------------
 
 ### Great House Hlaalu
+
 ```
 Hireling                                    30
 Retainer                                    30
@@ -55,6 +58,7 @@ Grandmaster                                 35 -> 55
 ------------------------------------------------------------
 
 ### Great House Redoran
+
 ```
 Hireling                                    30
 Retainer                                    30
@@ -71,6 +75,7 @@ Archmaster                                  35 -> 55
 ------------------------------------------------------------
 
 ### Great House Telvanni
+
 ```
 Hireling                                    30
 Retainer                                    30
@@ -87,6 +92,7 @@ Archmagister                                35 -> 55
 ------------------------------------------------------------
 
 ### Imperial Cult
+
 ```
 Layman                                      30
 Novice                                      30
@@ -103,6 +109,7 @@ Primate                                     35 -> 55
 ------------------------------------------------------------
 
 ### Imperial Legion
+
 ```
 Recruit                                     30
 Spearman                                    30
@@ -119,6 +126,7 @@ Knight of the Imperial Dragon               35 -> 55
 ------------------------------------------------------------
 
 ### Temple
+
 ```
 Layman                                      30
 Novice                                      30
@@ -135,6 +143,7 @@ Patriarch                                   35 -> 55
 ------------------------------------------------------------
 
 ### Thieves Guild
+
 ```
 Toad                                        30
 Wet Ear                                     30
@@ -151,6 +160,7 @@ Master Thief                                35 -> 55
 ------------------------------------------------------------
 
 ### Morag Tong
+
 ```
 Associate                                   30
 Blind Thrall                                30
@@ -167,6 +177,7 @@ Grandmaster                                 35 -> 55
 ------------------------------------------------------------
 
 ### East Empire Company
+
 ```
 Underling                                   30
 Clerk                                       30
