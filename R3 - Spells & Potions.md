@@ -1640,7 +1640,41 @@ T_Com_Res_WeaponResartus                    42-78/30s -> 30-60/12s [90 -> 68]   
 
 ------------------------------------------------------------
 
-## Multi-Effect Spells
+## Multi-Effect Spells & Potions
+
+*Potions*
+```
+p_drain_agility_q                                                               Spoiled SlowFall Potion -> Spoiled Slowfall Potion
+    Drain Attribute: Agility                15/40s
+    SlowFall                                1/15s
+p_drain_endurance_q                                                             Spoiled SlowFall Potion -> Spoiled Slowfall Potion
+    Drain Attribute: Endurance              15/40s
+    SlowFall                                10/15s -> 1/15s
+```
+
+*Potions - Tamriel Data*
+```
+T_Com_Potion_FortifyCasting_B                                                   Bargain Fortify Casting
+    Fortify Skill: Alteration               5/8s -> 6/18s
+    Fortify Skill: Conjuration              5/8s -> 6/18s
+    Fortify Skill: Destruction              5/8s -> 6/18s
+    Fortify Skill: Illusion                 5/8s -> 6/18s
+    Fortify Skill: Mysticism                5/8s -> 6/18s
+    Fortify Skill: Restoration              5/8s -> 6/18s
+T_Com_Potion_FortifyCasting_C                                                   Cheap Fortify Casting
+    Fortify Skill: Alteration               8/15s -> 8/24s
+    Fortify Skill: Conjuration              8/15s -> 8/24s
+    Fortify Skill: Destruction              8/15s -> 8/24s
+    Fortify Skill: Illusion                 8/15s -> 8/24s
+    Fortify Skill: Mysticism                8/15s -> 8/24s
+    Fortify Skill: Restoration              8/15s -> 8/24s
+T_Nor_Potion_DrainAgility_Q                                                     Spoiled SlowFall Potion -> Spoiled Slowfall Potion
+    Drain Attribute: Agility                15/40s
+    SlowFall                                1/15s
+T_Nor_Potion_DrainEndurance_Q                                                   Spoiled SlowFall Potion -> Spoiled Slowfall Potion
+    Drain Attribute: Endurance              15/40s
+    SlowFall                                10/15s -> 1/15s
+```
 
 *Spells*
 ```
@@ -1662,12 +1696,6 @@ Aryon_rest                                                                      
 brittlewind                                                                     Brittlewind
     Frost Damage                            10/10s
     Disintegrate Armor                      20/10s -> 200/10s
-p_drain_agility_q                                                               Spoiled SlowFall Potion -> Spoiled Slowfall Potion
-    Drain Attribute: Agility                15/40s
-    SlowFall                                1/15s
-p_drain_endurance_q                                                             Spoiled SlowFall Potion -> Spoiled Slowfall Potion
-    Drain Attribute: Endurance              15/40s
-    SlowFall                                10/15s -> 1/15s
 hand of odros                                                                   Hand of Odros
     Damage Fatigue                          60/1s
     Absorb Attribute: Agility               3-6/120s
@@ -1689,32 +1717,12 @@ T_Rea_Mys_SoulWither                                                            
 T_Rea_Des_ShadowRust                                                            Shadow Rust
     Disintegrate Armor                      1-5/20s -> 10-50/20s
     Burden                                  1-15/20s -> 10-150/20s
-T_Com_Potion_FortifyCasting_B                                                   Bargain Fortify Casting -> Bargain Fortify Magicka
-    Fortify Skill: Alteration               5/8s -> 6/18s
-    Fortify Skill: Conjuration              5/8s -> 6/18s
-    Fortify Skill: Destruction              5/8s -> 6/18s
-    Fortify Skill: Illusion                 5/8s -> 6/18s
-    Fortify Skill: Mysticism                5/8s -> 6/18s
-    Fortify Skill: Restoration              5/8s -> 6/18s
-T_Com_Potion_FortifyCasting_C                                                   Cheap Fortify Casting -> Cheap Fortify Magicka
-    Fortify Skill: Alteration               8/15s -> 8/24s
-    Fortify Skill: Conjuration              8/15s -> 8/24s
-    Fortify Skill: Destruction              8/15s -> 8/24s
-    Fortify Skill: Illusion                 8/15s -> 8/24s
-    Fortify Skill: Mysticism                8/15s -> 8/24s
-    Fortify Skill: Restoration              8/15s -> 8/24s
 T_Com_Alt_Falling1stBarrier                                                     Falling First Barrier
     Shield                                  8/40s -> 16/40s
     Shield                                  5/20s -> 10/20s
 T_Com_Alt_DaedraFireEye                                                         Fire Eye
     Fire Shield                             10-23/20s -> 10-25/20s
     Night Eye                               20/20s
-T_Nor_Potion_DrainAgility_Q                                                     Spoiled SlowFall Potion -> Spoiled Slowfall Potion
-    Drain Attribute: Agility                15/40s
-    SlowFall                                1/15s
-T_Nor_Potion_DrainEndurance_Q                                                   Spoiled SlowFall Potion -> Spoiled Slowfall Potion
-    Drain Attribute: Endurance              15/40s
-    SlowFall                                10/15s -> 1/15s
 T_Com_Trp_Acid                                                                  Acid Trap
     Disintegrate Armor                      20-40/1s -> 20-40/10s
     Disintegrate Weapon                     20-40/1s -> 20-40/5s

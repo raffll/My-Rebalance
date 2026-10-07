@@ -111,7 +111,7 @@ sc_balefulsuffering_en                      5/5s -> 25/5s                       
 ## Feather
 
 ```
-feather_en                                  20/10s -> 40/50s                    Feather Shield, Feather Belt, Feather Ring, Ritualistic Chitin Dagger, Boots of the First Settler, Merxia Vendicci's Signet Ring, Dropped Amulet
+feather_en                                  20/10s -> 40/50s                    Feather Shield, Feather Belt, Feather Ring, Ritualistic Chitin Dagger, Boots of the First Settler, Merxia Vendicci's Signet Ring, Dropped Amulet, Ayleid Ring of Traveling Fowl
 saint's shield_en                           20/10s -> 100/20s                   Saint's Shield
 ulms juicedaw's feather_en                  50/10s -> 250/20s                   Juicedaw Feather Ring, Runner Talisman
 sc_ulmjuicedasfeather_en                    50/240s -> 500/240s                 Scroll of Ulm Juiceda's Feather

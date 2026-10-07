@@ -451,7 +451,7 @@ def main() -> int:
             out.append("")
 
     if multi:
-        header("## Multi-Effect Spells")
+        header("## Multi-Effect Spells & Potions")
 
         def multi_block(title: str, items: list) -> None:
             if not items:
@@ -463,8 +463,14 @@ def main() -> int:
             out.append("```")
             out.append("")
 
-        multi_block("Spells", [r for r in multi if not is_td(r)])
-        multi_block("Spells - Tamriel Data", [r for r in multi if is_td(r)])
+        multi_block("Potions",
+                    [r for r in multi if r.get("type") == "Alchemy" and not is_td(r)])
+        multi_block("Potions - Tamriel Data",
+                    [r for r in multi if r.get("type") == "Alchemy" and is_td(r)])
+        multi_block("Spells",
+                    [r for r in multi if r.get("type") == "Spell" and not is_td(r)])
+        multi_block("Spells - Tamriel Data",
+                    [r for r in multi if r.get("type") == "Spell" and is_td(r)])
 
     out_dir = os.path.dirname(args.out)
     if out_dir and not os.path.exists(out_dir):
