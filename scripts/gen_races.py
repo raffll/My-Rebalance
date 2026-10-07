@@ -165,6 +165,21 @@ def main() -> int:
                                           gc.arrow(van_m.get(s), cur)))
         return lines
 
+    def height_lines(current, vanilla):
+        """Male/Female height lines, shown only when a value changed.
+        height = [male, female]."""
+        cur_h = (current.get("data") or {}).get("height") or []
+        van_h = ((vanilla or {}).get("data") or {}).get("height") or []
+        lines = []
+        for idx, label in ((0, "Male Height"), (1, "Female Height")):
+            cur = cur_h[idx] if idx < len(cur_h) else None
+            van = van_h[idx] if idx < len(van_h) else None
+            if cur is None:
+                continue
+            if van is not None and van != cur:
+                lines.append(gc.add_at_column(label, gc.COL_VALUES, gc.arrow(van, cur)))
+        return lines
+
     def spell_block_lines(record, vanilla: bool):
         """Lines for the Abilities/Powers/Spells of one race/birthsign version."""
         groups: dict[str, list] = {"Abilities": [], "Powers": [], "Spells": []}
@@ -208,13 +223,18 @@ def main() -> int:
         out.append("")
 
     def emit_entity(o, kind: str):
-        name = o.get("name") or o.get("id")
-        header(f"### {name}")
+        cur_name = o.get("name") or o.get("id")
         vo = van_typed.get((kind, (o.get("id") or "").lower().strip()))
+        van_name = (vo or {}).get("name")
+        # Rename-aware header: "Vanilla Name -> Current Name" when renamed.
+        if van_name and van_name != cur_name:
+            header(f"### {van_name} -> {cur_name}")
+        else:
+            header(f"### {cur_name}")
 
-        # Skill bonuses once, with vanilla -> current (races only).
+        # Skill bonuses + height, once, with vanilla -> current (races only).
         if kind == "Race":
-            sl = skill_lines(o, vo)
+            sl = skill_lines(o, vo) + height_lines(o, vo)
             if sl:
                 plain_block(sl)
 

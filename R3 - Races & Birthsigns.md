@@ -6,7 +6,7 @@
 
 ------------------------------------------------------------
 
-### Altmer
+### High Elf -> Altmer
 
 ```
 Alchemy                                     10
@@ -96,7 +96,7 @@ Abilities
 
 ------------------------------------------------------------
 
-### Bosmer
+### Wood Elf -> Bosmer
 
 ```
 Acrobatics                                  5
@@ -104,6 +104,7 @@ Alchemy                                     5
 Light Armor                                 10
 Marksman                                    15
 Sneak                                       10
+Female Height                               1.0 -> 0.92
 ```
 
 *Vanilla*
@@ -130,7 +131,7 @@ Powers
 
 ------------------------------------------------------------
 
-### Dunmer
+### Dark Elf -> Dunmer
 
 ```
 Athletics                                   5
@@ -273,7 +274,7 @@ Powers
 
 ------------------------------------------------------------
 
-### Orsimer
+### Orc -> Orsimer
 
 ```
 Armorer                                     10

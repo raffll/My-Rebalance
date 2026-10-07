@@ -58,7 +58,7 @@ def main() -> int:
     needed = set(by_id.keys())
     # Faction ids collide with same-named Dialogue topics, so match on
     # (type, id) rather than id alone.
-    van_typed, _ = gc.load_vanilla_typed(args.master_dir, {"Faction"}, set())
+    van_typed, _, _ = gc.load_vanilla_typed(args.master_dir, {"Faction"}, set())
     van_by_id = {k: v for (t, k), v in van_typed.items() if t == "Faction"}
 
     out: list[str] = []
