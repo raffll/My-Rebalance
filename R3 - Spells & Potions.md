@@ -178,7 +178,6 @@ p_lightning shield_e                        20/60s -> 10/30s                    
 *Potions - Tamriel Data*
 ```
 T_Nor_Potion_ShieldLightning_C              8/15s -> 4/12s                      Cheap Lightning Shield
-T_Com_Potion_Shield_C                       8/15s -> 8/24s                      Cheap Potion of Protection
 T_Nor_Potion_ShieldLightning_Q              15/45s -> 8/24s                     Quality Lightning Shield
 ```
 
@@ -206,8 +205,8 @@ Base Cost                                   2.0 -> 24.0
 
 *Spells - Tamriel Data*
 ```
-T_Com_Alt_WizardLock                        20/1s [2 -> 24]                     Wizard Lock
-T_Com_Alt_DalgorsEntwining                  100/1s [8 -> 96]                    Dalgor's Entwining
+T_Com_Alt_WizardLock                        20 [2 -> 24]                        Wizard Lock
+T_Com_Alt_DalgorsEntwining                  100 [8 -> 96]                       Dalgor's Entwining
 ```
 
 ------------------------------------------------------------
@@ -221,6 +220,7 @@ Base Cost                                   2.0 -> 1.0
 *Potions - Tamriel Data*
 ```
 T_Com_Potion_Shield_B                       5/10s -> 6/18s                      Bargain Potion of Protection
+T_Com_Potion_Shield_C                       8/15s -> 8/24s                      Cheap Potion of Protection
 ```
 
 *Spells*
@@ -253,7 +253,7 @@ p_swift_swim_e                              20/60s -> 40/120s                   
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_SwiftSwim_C                    8/15s -> 6/18s                      Cheap Potion of Swift Swim
+T_Nor_Potion_SwiftSwim_C                    8/15s -> 15/45s                     Cheap Potion of Swift Swim
 ```
 
 *Spells*
@@ -386,10 +386,10 @@ Base Cost                                   2.0 -> 0.2
 weariness                                   1-10/1s -> 10-100/20s               Weariness
 sleep                                       5-15/30s -> 25-75/60s               Sleep
 wild exhaustion                             5-15/60s -> 25-75/120s              Wild Exhaustion
-exhausting touch                            5-20/60s -> 25-100/120s             Exhausting Touch
-exhaustion                                  5-20/90s -> 25-100/180s             Exhaustion
-ordeal of st. olms                          5-20/60s -> 50-200/60s              Ordeal of St. Olms
 wearying touch                              5-20/30s -> 25-100/60s              Wearying Touch
+exhausting touch                            5-20/60s -> 25-100/120s             Exhausting Touch
+ordeal of st. olms                          5-20/60s -> 50-200/60s              Ordeal of St. Olms
+exhaustion                                  5-20/90s -> 25-100/180s             Exhaustion
 dagoth's bosom                              20/30s -> 200/30s                   Dagoth's Bosom
 ```
 
@@ -500,29 +500,29 @@ Base Cost                                   40.0 -> 80.0
 
 *Potions*
 ```
-p_paralyze_b                                1/8s -> 1/9s                        Bargain Potion of Paralyze
-p_paralyze_c                                1/15s -> 1/12s                      Cheap Potion of Paralyze
-p_paralyze_e                                1/60s -> 1/30s                      Exclusive Potion of Paralyze
-p_paralyze_q                                1/45s -> 1/24s                      Quality Potion of Paralyze
-p_paralyze_s                                1/30s -> 1/18s                      Standard Potion of Paralyze
+p_paralyze_b                                8s -> 9s                            Bargain Potion of Paralyze
+p_paralyze_c                                15s -> 12s                          Cheap Potion of Paralyze
+p_paralyze_s                                30s -> 18s                          Standard Potion of Paralyze
+p_paralyze_q                                45s -> 24s                          Quality Potion of Paralyze
+p_paralyze_e                                60s -> 30s                          Exclusive Potion of Paralyze
 ```
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_Paralyze_C                     1/15s -> 1/12s                      Cheap Potion of Paralyze
-T_Nor_Potion_Paralyze_Q                     1/45s -> 1/24s                      Quality Potion of Paralyze
+T_Nor_Potion_Paralyze_C                     15s -> 12s                          Cheap Potion of Paralyze
+T_Nor_Potion_Paralyze_Q                     45s -> 24s                          Quality Potion of Paralyze
 ```
 
 *Spells*
 ```
-paralysis                                   1/5s                                Paralysis
-scrib_paralysis                             1/6s -> 1/12s [auto -> 6]           Paralysis
+paralysis                                   5s                                  Paralysis
+scrib_paralysis                             6s -> 12s [auto -> 6]               Paralysis
 ```
 
 *Spells - Tamriel Data*
 ```
-T_Com_Ilu_LivingStatue                      1/20s [30 -> 60]                    Living Statue
-T_Com_Ilu_Paralysis                         1/3s [6 -> 12]                      Paralysis
+T_Com_Ilu_Paralysis                         3s [6 -> 12]                        Paralysis
+T_Com_Ilu_LivingStatue                      20s [30 -> 60]                      Living Statue
 ```
 
 ------------------------------------------------------------
@@ -535,23 +535,23 @@ Base Cost                                   40.0
 
 *Potions*
 ```
-p_silence_b                                 1/8s -> 1/18s                       Bargain Potion of Silence
-p_silence_c                                 1/15s -> 1/24s                      Cheap Potion of Silence
-p_silence_e                                 1/60s                               Exclusive Potion of Silence
-p_silence_q                                 1/45s                               Quality Potion of Silence
-p_silence_s                                 1/30s                               Standard Potion of Silence
+p_silence_b                                 8s -> 18s                           Bargain Potion of Silence
+p_silence_c                                 15s -> 24s                          Cheap Potion of Silence
+p_silence_s                                 30s                                 Standard Potion of Silence
+p_silence_q                                 45s                                 Quality Potion of Silence
+p_silence_e                                 60s                                 Exclusive Potion of Silence
 ```
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_Silence_C                      1/15s -> 1/24s                      Cheap Potion of Silence
-T_Nor_Potion_Silence_Q                      1/45s                               Quality Potion of Silence
+T_Nor_Potion_Silence_C                      15s -> 24s                          Cheap Potion of Silence
+T_Nor_Potion_Silence_Q                      45s                                 Quality Potion of Silence
 ```
 
 *Spells*
 ```
-far silence                                 1/10s                               Far Silence
-silence                                     1/5s                                Silence
+silence                                     5s                                  Silence
+far silence                                 10s                                 Far Silence
 ```
 
 ------------------------------------------------------------
@@ -666,7 +666,7 @@ T_Com_Poison_DamageHealth_B                 5/0s -> 6/0s                        
 
 *Potions*
 ```
-p_dispel_s                                  10/1s -> 100/1s                     Potion of Dispel
+p_dispel_s                                  10 -> 100                           Potion of Dispel
 ```
 
 ------------------------------------------------------------
@@ -806,21 +806,21 @@ T_Nor_Potion_FortifyMagicka_C               8/15s -> 8/24s                      
 
 *Potions*
 ```
-p_invisibility_b                            1/8s -> 1/18s                       Bargain Potion of Invisibility -> Bargain Invisibility
-p_invisibility_c                            1/15s -> 1/24s                      Cheap Potion of Invisibility -> Cheap Invisibility
-p_invisibility_e                            1/60s                               Exclusive Invisibility
-p_invisibility_q                            1/45s                               Quality Potion of Invisibility -> Quality Invisibility
-p_invisibility_s                            1/30s                               Standard Potion of Invisibility -> Standard Invisibility
+p_invisibility_b                            8s -> 18s                           Bargain Potion of Invisibility -> Bargain Invisibility
+p_invisibility_c                            15s -> 24s                          Cheap Potion of Invisibility -> Cheap Invisibility
+p_invisibility_s                            30s                                 Standard Potion of Invisibility -> Standard Invisibility
+p_invisibility_q                            45s                                 Quality Potion of Invisibility -> Quality Invisibility
+p_invisibility_e                            60s                                 Exclusive Invisibility
 ```
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_Invisibility_C                 1/15s -> 1/24s                      Cheap Potion of Invisibility -> Cheap Invisibility
+T_Nor_Potion_Invisibility_C                 15s -> 24s                          Cheap Potion of Invisibility -> Cheap Invisibility
 ```
 
 *Spells*
 ```
-invisibility                                1/30s -> 1/60s                      Invisibility
+invisibility                                30s -> 60s                          Invisibility
 ```
 
 ------------------------------------------------------------
@@ -830,13 +830,13 @@ invisibility                                1/30s -> 1/60s                      
 
 *Potions*
 ```
-p_jump_b                                    5/8s -> 6/18s                       Bargain Potion of Jump
-p_jump_c                                    8/15s -> 8/24s                      Cheap Potion of Jump
+p_jump_b                                    5/8s -> 3/9s                        Bargain Potion of Jump
+p_jump_c                                    8/15s -> 4/12s                      Cheap Potion of Jump
 ```
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_Jump_C                         8/15s -> 8/24s                      Cheap Potion of Jump
+T_Nor_Potion_Jump_C                         8/15s -> 4/12s                      Cheap Potion of Jump
 ```
 
 ------------------------------------------------------------
@@ -855,7 +855,7 @@ p_levitation_e                              20/60s -> 10/30s                    
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_Levitation_C                   8/15s -> 8/24s                      Cheap Potion of Levitation -> Cheap Rising Force Potion
+T_Nor_Potion_Levitation_C                   8/15s -> 4/12s                      Cheap Potion of Levitation -> Cheap Rising Force Potion
 ```
 
 ------------------------------------------------------------
@@ -958,7 +958,7 @@ father's hand                               1-40/5s -> 1-40/10s                 
 
 *Potions*
 ```
-p_slowfall_s                                10/15s -> 10/30s                    Potion of Slowfalling -> Potion of Slowfall
+p_slowfall_s                                10/15s -> 6/18s                     Potion of Slowfalling -> Potion of Slowfall
 ```
 
 ------------------------------------------------------------
@@ -968,7 +968,7 @@ p_slowfall_s                                10/15s -> 10/30s                    
 
 *Potions*
 ```
-p_water_breathing_s                         1/15s -> 1/30s                      Potion of Water Breathing
+p_water_breathing_s                         15s -> 30s                          Potion of Water Breathing
 ```
 
 ------------------------------------------------------------
@@ -978,7 +978,7 @@ p_water_breathing_s                         1/15s -> 1/30s                      
 
 *Potions*
 ```
-p_water_walking_s                           1/15s -> 1/30s                      Potion of Water Walking
+p_water_walking_s                           15s -> 30s                          Potion of Water Walking
 ```
 
 ------------------------------------------------------------
@@ -1079,12 +1079,12 @@ Base Cost                                   0.75 -> 0.15
 
 *Potions*
 ```
-p_detect_creatures_s                        10/15s -> 60/180s                   Potion of Detect Creatures
+p_detect_creatures_s                        10/15s -> 40/120s                   Potion of Detect Creatures
 ```
 
 *Potions - Tamriel Data*
 ```
-T_Com_Potion_Detect_Humanoid_S              10/15s -> 60/180s                   Potion of Detect Creatures
+T_Com_Potion_Detect_Humanoid_S              10/15s -> 40/120s                   Potion of Detect Creatures
 ```
 
 *Spells*
@@ -1179,8 +1179,8 @@ wild reflect                                1-40/10s -> 1-40/40s                
 sotha's mirror                              10/5s -> 10/20s                     Sotha's Mirror
 reflect                                     10-20/5s -> 10-20/20s               Reflect
 shalidor's mirror                           10-30/10s -> 10-30/40s              Shalidor's Mirror
-llivam's reversal                           20-30/10s -> 20-30/40s              Llivam's Reversal
 strong reflect                              20-30/5s -> 20-30/20s               Strong Reflect
+llivam's reversal                           20-30/10s -> 20-30/40s              Llivam's Reversal
 ```
 
 *Spells - Tamriel Data*
@@ -1209,7 +1209,7 @@ p_spell_absorption_e                        20/60s -> 10/30s                    
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_SpellAbsorbtion_C              8/15s -> 8/24s                      Cheap Spell Absorption
+T_Nor_Potion_SpellAbsorbtion_C              8/15s -> 4/12s                      Cheap Spell Absorption
 ```
 
 *Spells*
@@ -1250,7 +1250,7 @@ p_fortify_fatigue_e                         20/60s -> 80/240s                   
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_FortifyFatigue_C               8/15s -> 8/24s                      Cheap Fortify Fatigue
+T_Nor_Potion_FortifyFatigue_C               8/15s -> 30/90s                     Cheap Fortify Fatigue
 ```
 
 *Spells*
@@ -1316,8 +1316,8 @@ Base Cost                                   5.0 -> 0.25
 
 *Potions - Tamriel Data*
 ```
-T_Com_Potion_BlightResistance_B             5/8s -> 6/18s                       Bargain Blight Resistance
-T_Com_Potion_BlightResistance_C             8/15s -> 8/24s                      Cheap Blight Resistance
+T_Com_Potion_BlightResistance_B             5/8s -> 20/60s                      Bargain Blight Resistance
+T_Com_Potion_BlightResistance_C             8/15s -> 30/90s                     Cheap Blight Resistance
 ```
 
 *Spells*
@@ -1346,7 +1346,7 @@ p_disease_resistance_e                      20/60s -> 200/600s                  
 
 *Potions - Tamriel Data*
 ```
-T_Nor_Potion_ResistDesease_C                8/15s -> 8/24s                      Cheap Disease Resistance
+T_Nor_Potion_ResistDesease_C                8/15s -> 80/240s                    Cheap Disease Resistance
 ```
 
 *Spells*
@@ -1678,9 +1678,6 @@ T_Nor_Potion_DrainEndurance_Q                                                   
 
 *Spells*
 ```
-BM_paralyze_hirc                            [46 -> 50]                          Hunter's Venom
-    Paralyze                                1/10s
-    Burden                                  50/10s -> 500/10s
 bm_draugr_curse                             [200 -> auto]                       Eddard's Wrath
     Disintegrate Armor                      4-9/15s -> 40-90/15s
     Disintegrate Weapon                     4-9/15s -> 40-90/15s
@@ -1690,6 +1687,9 @@ black hand                                                                      
 stormhand                                                                       Stormhand
     Damage Health                           5-12/1s -> 5-10/1s
     Shock Damage                            5-12/1s -> 5-10/1s
+BM_paralyze_hirc                            [46 -> 50]                          Hunter's Venom
+    Paralyze                                10s
+    Burden                                  50/10s -> 500/10s
 Aryon_rest                                                                      Aryon's Rest
     Damage Fatigue                          10/10s
     Burden                                  10/10s -> 100/10s

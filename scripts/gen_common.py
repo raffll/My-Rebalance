@@ -44,6 +44,71 @@ BASE_MASTERS = [
 STREAM_THRESHOLD = 50 * 1024 * 1024  # 50 MB
 
 
+# ---------------------------------------------------------------------------
+# Per-effect axis flags (No Magnitude / No Duration).
+# Loaded from scripts/effect_axis_flags.json so all generators share one source
+# of truth. tes3conv does not expose the engine MGEF flags, so they live in that
+# data file. See docs/Effect-Magnitude-Duration-Flags.md.
+# ---------------------------------------------------------------------------
+_AXIS_FLAGS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "effect_axis_flags.json")
+_axis_cache = None
+
+
+def _load_axis_flags() -> dict:
+    global _axis_cache
+    if _axis_cache is None:
+        try:
+            with open(_AXIS_FLAGS_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            no_mag = set(data.get("no_magnitude") or [])
+            no_dur = set(data.get("no_duration") or [])
+            both = set(data.get("no_magnitude_no_duration") or [])
+            # Effects in the "neither" group lack both axes.
+            no_mag |= both
+            no_dur |= both
+            _axis_cache = {"no_magnitude": no_mag, "no_duration": no_dur}
+        except (OSError, ValueError):
+            # Missing/corrupt file: fail open (every effect uses both axes).
+            _axis_cache = {"no_magnitude": set(), "no_duration": set()}
+    return _axis_cache
+
+
+def effect_uses_magnitude(fx: str) -> bool:
+    """False for effects with no magnitude (Silence, Paralyze, Summon*, Cure*,
+    teleports...). Magnitude is omitted from output for these."""
+    return fx not in _load_axis_flags()["no_magnitude"]
+
+
+def effect_uses_duration(fx: str) -> bool:
+    """False for effects with no duration (Lock, Open, Dispel, Cure*,
+    teleports...). Duration is omitted from output for these.
+    NOTE: Damage/Drain/Restore/Absorb DO use duration (they act per second), so
+    they are not in this set even when a given record has duration 0."""
+    return fx not in _load_axis_flags()["no_duration"]
+
+
+def format_effect_values(eff: dict) -> str:
+    """Render an effect's magnitude/duration, omitting whichever axis the effect
+    does not use. Silence -> "18s" (not "1/18s"); Lock -> "5" (not "5/0s"); a
+    teleport/cure (neither axis) -> "-". Does not append area/range; callers that
+    need those add them."""
+    fx = eff.get("magic_effect", "") or ""
+    mn = int(eff.get("min_magnitude", 0))
+    mx = int(eff.get("max_magnitude", 0))
+    dur = int(eff.get("duration", 0))
+    mag = f"{mn}" if mn == mx else f"{mn}-{mx}"
+    use_mag = effect_uses_magnitude(fx)
+    use_dur = effect_uses_duration(fx)
+    if use_mag and use_dur:
+        return f"{mag}/{dur}s"
+    if use_dur:            # duration-only (Silence, Paralyze, Summon*...)
+        return f"{dur}s"
+    if use_mag:            # magnitude-only (Lock, Open, Dispel)
+        return f"{mag}"
+    return "-"             # neither axis (Mark/Recall/Intervention, Cure*)
+
+
 def fmt_num(v) -> str:
     """Render a number as-is from JSON (floats stay floats)."""
     return str(v)

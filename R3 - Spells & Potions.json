@@ -7564,9 +7564,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  18,
-                            "min_magnitude":  6,
-                            "max_magnitude":  6
+                            "duration":  60,
+                            "min_magnitude":  20,
+                            "max_magnitude":  20
                         }
                     ],
         "data":  {
@@ -7590,9 +7590,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  90,
+                            "min_magnitude":  30,
+                            "max_magnitude":  30
                         }
                     ],
         "data":  {
@@ -7642,9 +7642,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  180,
-                            "min_magnitude":  60,
-                            "max_magnitude":  60
+                            "duration":  120,
+                            "min_magnitude":  40,
+                            "max_magnitude":  40
                         }
                     ],
         "data":  {
@@ -8153,7 +8153,7 @@
         "icon":  "m\\Tx_potion_cheap_01.tga",
         "effects":  [
                         {
-                            "magic_effect":  "LightningShield",
+                            "magic_effect":  "Shield",
                             "skill":  "None",
                             "attribute":  "None",
                             "range":  "OnSelf",
@@ -8438,9 +8438,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  90,
+                            "min_magnitude":  30,
+                            "max_magnitude":  30
                         }
                     ],
         "data":  {
@@ -8698,9 +8698,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  12,
+                            "min_magnitude":  4,
+                            "max_magnitude":  4
                         }
                     ],
         "data":  {
@@ -8724,9 +8724,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  12,
+                            "min_magnitude":  4,
+                            "max_magnitude":  4
                         }
                     ],
         "data":  {
@@ -8880,9 +8880,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  240,
+                            "min_magnitude":  80,
+                            "max_magnitude":  80
                         }
                     ],
         "data":  {
@@ -9322,9 +9322,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  12,
+                            "min_magnitude":  4,
+                            "max_magnitude":  4
                         }
                     ],
         "data":  {
@@ -9348,9 +9348,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  18,
-                            "min_magnitude":  6,
-                            "max_magnitude":  6
+                            "duration":  45,
+                            "min_magnitude":  15,
+                            "max_magnitude":  15
                         }
                     ],
         "data":  {
@@ -9556,9 +9556,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  180,
-                            "min_magnitude":  60,
-                            "max_magnitude":  60
+                            "duration":  120,
+                            "min_magnitude":  40,
+                            "max_magnitude":  40
                         }
                     ],
         "data":  {
@@ -11058,9 +11058,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  18,
-                            "min_magnitude":  6,
-                            "max_magnitude":  6
+                            "duration":  9,
+                            "min_magnitude":  3,
+                            "max_magnitude":  3
                         }
                     ],
         "data":  {
@@ -11084,9 +11084,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  24,
-                            "min_magnitude":  8,
-                            "max_magnitude":  8
+                            "duration":  12,
+                            "min_magnitude":  4,
+                            "max_magnitude":  4
                         }
                     ],
         "data":  {
@@ -13594,9 +13594,9 @@
                             "attribute":  "None",
                             "range":  "OnSelf",
                             "area":  0,
-                            "duration":  30,
-                            "min_magnitude":  10,
-                            "max_magnitude":  10
+                            "duration":  18,
+                            "min_magnitude":  6,
+                            "max_magnitude":  6
                         }
                     ],
         "data":  {

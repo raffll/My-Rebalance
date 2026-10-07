@@ -40,6 +40,9 @@ import json
 import os
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import gen_common as gc
+
 COL_VALUES = 44
 COL_ID = 80
 EFFECT_INDENT = "    "  # indent before "effect N" rows on multi-effect records
@@ -84,15 +87,14 @@ RANGE_LABEL = {"OnTouch": "Touch", "OnTarget": "Target", "OnSelf": "Self"}
 
 
 def format_effect(eff: dict, show_area: bool = True, show_range: bool = True) -> str:
-    """Magnitude and duration are always shown. Area and range are only
-    appended when the caller asks (i.e. when they changed)."""
-    mn = int(eff.get("min_magnitude", 0))
-    mx = int(eff.get("max_magnitude", 0))
-    dur = int(eff.get("duration", 0))
+    """Render an effect's values. Magnitude/duration come from the shared
+    axis-aware renderer, so an effect with no magnitude shows duration only
+    (Silence -> "18s") and an effect with no duration shows magnitude only
+    (Damage Health -> "5"). Area and range are only appended when the caller
+    asks (i.e. when they changed)."""
     area = int(eff.get("area", 0))
-    mag = f"{mn}" if mn == mx else f"{mn}-{mx}"
-    # Always show magnitude/duration, even when duration is 0.
-    v = f"{mag}/{dur}s"
+    # Base magnitude/duration, with the unused axis omitted per effect flags.
+    v = gc.format_effect_values(eff)
     if show_area and area > 0:
         v = f"{v}/{area}ft"
     if show_range:
@@ -348,17 +350,28 @@ def main() -> int:
         return lines
 
     def sort_key(obj: dict):
-        """Sort by vanilla first-effect min magnitude, then max magnitude
-        (both ascending). Records with no vanilla counterpart sort last.
-        Name is the final tiebreaker for stable, readable output."""
+        """Sort ascending by the vanilla first-effect's *potency*, keyed on the
+        axis the effect actually uses so each grade ladder reads low -> high:
+          - duration-only effects (Silence, Paralyze): sort by duration (their
+            magnitude is a fixed 1, so sorting on it is meaningless);
+          - everything else: sort by magnitude (min then max), with duration as
+            a tiebreaker so equal-magnitude grades still order by duration.
+        Records with no vanilla counterpart sort last; name is the final
+        tiebreaker for stable, readable output."""
         van = van_by_id.get((obj.get("id") or "").lower().strip())
         veffs = (van or {}).get("effects") or []
-        if veffs:
-            e0 = veffs[0]
-            mn = int(e0.get("min_magnitude", 0))
-            mx = int(e0.get("max_magnitude", 0))
-            return (0, mn, mx, obj.get("name", ""))
-        return (1, 0, 0, obj.get("name", ""))
+        if not veffs:
+            return (1, 0, 0, 0, obj.get("name", ""))
+        e0 = veffs[0]
+        fx = e0.get("magic_effect", "") or ""
+        mn = int(e0.get("min_magnitude", 0))
+        mx = int(e0.get("max_magnitude", 0))
+        dur = int(e0.get("duration", 0))
+        if gc.effect_uses_magnitude(fx):
+            # Magnitude is the meaningful axis; duration breaks ties.
+            return (0, mn, mx, dur, obj.get("name", ""))
+        # Duration-only effect: sort by duration (magnitude is a fixed 1).
+        return (0, dur, dur, 0, obj.get("name", ""))
 
     # Bucket records.
     groups: dict[str, dict[str, list]] = {}

@@ -1,0 +1,62 @@
+{
+  "_comment": "Per-effect axis flags for Morrowind magic effects. Source of truth for which effects omit magnitude or duration in generated output. Readable by any script/language. Keys are magic_effect ids as they appear in tes3conv JSON (CamelCase, no spaces). Classification taken verbatim from UESP effect descriptions (en.uesp.net/wiki/Morrowind:Magic_Effects): the intro states that curing, summoning, teleportation, water breathing and water walking have NO MAGNITUDE; Paralyze is 'no magnitude, only duration'; Invisibility magnitude 'is not variable'; Lock/Open/Dispel have no duration (instant); Mark/Recall/Interventions are instantaneous (neither axis). Damage/Drain/Restore/Absorb effects explicitly act 'each second of the effect's duration' and therefore use BOTH axes - they are deliberately NOT listed here. Content was rephrased for compliance.",
+
+  "no_magnitude": [
+    "Paralyze",
+    "Silence",
+    "Invisibility",
+    "WaterBreathing",
+    "WaterWalking",
+
+    "SummonScamp",
+    "SummonClannfear",
+    "SummonDaedroth",
+    "SummonDremora",
+    "SummonGhost",
+    "SummonSkeleton",
+    "SummonLeastBonewalker",
+    "SummonGreaterBonewalker",
+    "SummonBonelord",
+    "SummonTwilight",
+    "SummonHunger",
+    "SummonGoldenSaint",
+    "SummonFlameAtronach",
+    "SummonFrostAtronach",
+    "SummonStormAtronach",
+    "SummonCenturionSphere",
+    "SummonFabricant",
+    "SummonWolf",
+    "SummonBear",
+    "SummonBoneWolf",
+
+    "BoundDagger",
+    "BoundLongsword",
+    "BoundMace",
+    "BoundBattleAxe",
+    "BoundSpear",
+    "BoundLongbow",
+    "BoundCuirass",
+    "BoundHelm",
+    "BoundBoots",
+    "BoundShield",
+    "BoundGloves"
+  ],
+
+  "no_duration": [
+    "Lock",
+    "Open",
+    "Dispel"
+  ],
+
+  "no_magnitude_no_duration": [
+    "Mark",
+    "Recall",
+    "DivineIntervention",
+    "AlmsiviIntervention",
+    "CureCommonDisease",
+    "CureBlightDisease",
+    "CureCorprusDisease",
+    "CurePoison",
+    "CureParalyzation"
+  ]
+}
