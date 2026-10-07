@@ -7,31 +7,31 @@ Every change is listed in detail in the generated reference files (`R3 - *.md`).
 ## Core
 
 - **Movement**
-  - Base walk speed raised 25%.
+  - Walk speed raised 25%.
 - **Crime**
-  - Much harsher bounties, for a more realistic medieval-style justice system.
-  - The days-in-prison divisor is scaled up to match, so jail time stays the same — only the gold you owe goes up.
+  - Much harsher bounties, for a more medieval justice system.
+  - Prison time is unchanged.
 - **Barter**
-  - Merchant gold restocks far more slowly, keeping less money circulating to fix the economy.
-  - Creeper and Mudcrab no longer carry absurd amounts of gold — that broken easter-egg economy is reined in.
+  - Merchant gold restocks far more slowly to keep less money on the market.
+  - Creeper and Mudcrab no longer carry broken amounts of gold.
 - **Pickpocket**
-  - Max chance raised to 100% and the item-value penalty cut 300×.
-  - A maxed thief (100 Agility/Luck/Sneak) can reliably steal items worth up to ~15,500 gold off an average target.
+  - 100% max chance and a 300× smaller value penalty.
+  - A maxed thief can steal items worth up to ~15,500 gold.
 - **Lockpicking**
-  - Harder on purpose: in vanilla, lockpicking skill was pointless past ~50 and the Open spell was so strong that magic trivialized every lock.
-  - Both manual lockpicking and the Open effect/spell line are made more demanding, so skill and magic each stay relevant at higher levels.
+  - Lockpicking and Open are harder.
+  - In vanilla the skill was pointless past 50 and magic trivialized locks.
 - **Traps**
-  - In vanilla the trap cost multiplier was 0, leaving traps effectively broken and free to ignore.
-  - It is now a real penalty, so traps actually threaten the player and disarming matters.
+  - A real threat again.
+  - Vanilla left their cost at 0, so they were free to ignore.
 - **Alchemy**
   - Homemade potion strength halved.
   - Secret Master apparatus made rare and expensive.
 - **Enchanting**
-  - No passive magic-item recharge.
-  - Much lower enchant success multiplier — enchanting is a bigger commitment.
+  - Far more reliable to enchant.
+  - Magic items no longer recharge on their own — soul gems required.
 - **Skills**
-  - Armorer governed by Endurance instead of Strength.
-  - Less free health per level from Endurance.
+  - Armorer governed by Endurance.
+  - Endurance grants less health per level.
 
 Details: `R3 - Core.md`
 
