@@ -379,7 +379,7 @@ def main() -> int:
     # Strip any trailing blank lines, then write without a trailing newline.
     while out and out[-1] == "":
         out.pop()
-    with open(args.out, "w", encoding="utf-8", newline="\n") as f:
+    with open(args.out, "w", encoding="utf-8", newline="\r\n") as f:
         f.write("\n".join(out))
 
     total = sum(1 for o in data if o.get("type") != "Header")

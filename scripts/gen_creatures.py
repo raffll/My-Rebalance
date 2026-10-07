@@ -66,7 +66,7 @@ def main() -> int:
     out_dir = os.path.dirname(args.out)
     if out_dir and not os.path.exists(out_dir):
         os.makedirs(out_dir, exist_ok=True)
-    with open(args.out, "w", encoding="utf-8", newline="\n") as f:
+    with open(args.out, "w", encoding="utf-8", newline="\r\n") as f:
         f.write("\n".join(out))
 
     print(f"Wrote {args.out}")

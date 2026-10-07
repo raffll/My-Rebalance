@@ -491,7 +491,7 @@ def main() -> int:
     # Strip trailing blank lines, then write without a trailing newline.
     while out and out[-1] == "":
         out.pop()
-    with open(args.out, "w", encoding="utf-8", newline="\n") as f:
+    with open(args.out, "w", encoding="utf-8", newline="\r\n") as f:
         f.write("\n".join(out))
 
     print()
