@@ -24,6 +24,7 @@ Base Cost                                   1.0 -> 0.1
 
 *Tamriel Data*
 ```
+T_Dae_Alt_UNI_WabbajackTrans                1/15s                               Wabbajack [NEW]                                                       PROPOSE: dur x10 (base /10 compensation) -> 1/150s, cost 1.125 [recalc]
 T_Nor_Alt_UlmsJuicedawsFeather              50/10s                              Thelen Kaarn's Feather [NEW]                                          PROPOSE: dur x10 (base /10 compensation) -> 50/100s, cost 25 [recalc]
 ```
 
@@ -206,6 +207,8 @@ Base Cost                                   4.0 -> 0.4
 ```
 
 ```
+wild flay spirit                            1-20/3s                             Wild Flay Spirit [NEW]                                                PROPOSE: dur x10 (base /10 compensation) -> 1-20/30s, cost 9.45 [recalc]
+flay spirit                                 5-20/60s                            Flay Spirit [NEW]                                                     PROPOSE: dur x10 (base /10 compensation) -> 5-20/600s, cost 150 [recalc]
 gash spirit                                 5-20/30s                            Gash Spirit [NEW]                                                     PROPOSE: dur x10 (base /10 compensation) -> 5-20/300s, cost 75 [recalc]
 gash spirit [ranged]                        5-20/30s                            Gash Spirit [Ranged] [NEW]                                            PROPOSE: dur x10 (base /10 compensation) -> 5-20/300s, cost 112.5 [recalc]
 wizard rend                                                                     Wizard Rend [NEW]                                                     PROPOSE: dur x10 (base /10 compensation) -> 10-35/40s, cost 51 +1 effects [recalc]
@@ -368,6 +371,7 @@ Base Cost                                   5.0 -> 2.5
 ```
 
 ```
+charm mortal                                10-30/30s                           Charm Mortal [NEW]                                                    PROPOSE: dur x2 (base /2 compensation) -> 10-30/60s, cost 225 [recalc]
 charming touch                              30/30s                              Charming Touch [NEW]                                                  PROPOSE: dur x2 (base /2 compensation) -> 30/60s, cost 225 [recalc]
 ```
 
@@ -448,6 +452,7 @@ Base Cost                                   1.0 -> 0.2
 ```
 T_Com_Mys_DetectEnemy                       57/20s                              Greater Detect Enchantment [NEW]                                      PROPOSE: dur x5 (base /5 compensation) -> 57/100s, cost 57 [recalc]
 T_Com_Mys_DetectValuables                   60/20s                              Greater Detect Enchantment [NEW]                                      PROPOSE: dur x5 (base /5 compensation) -> 60/100s, cost 60 [recalc]
+T_Com_Mys_UNI_Passwall                      480/4s                              Passwall [NEW]                                                        PROPOSE: dur x5 (base /5 compensation) -> 480/20s, cost 96 [recalc]
 ```
 
 ------------------------------------------------------------
@@ -517,6 +522,7 @@ Base Cost                                   0.5 -> 0.25
 
 ```
 enrichment                                  5-20/30s                            Enrichment [NEW]                                                      PROPOSE: dur x2 (base /2 compensation) -> 5-20/60s, cost 9.375 [recalc]
+daedric fatigue                             50/90s                              Daedric Fatigue [NEW]                                                 PROPOSE: dur x2 (base /2 compensation) -> 50/180s, cost 112.5 [recalc]
 ```
 
 ------------------------------------------------------------

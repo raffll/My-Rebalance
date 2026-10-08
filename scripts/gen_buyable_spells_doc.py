@@ -37,8 +37,10 @@ LOAD_ORDER = [
     "Morrowind.json",
     "Tribunal.json",
     "Bloodmoon.json",
+    "Patch for Purists.json",
     "Tamriel_Data.json",
     "TR_Mainland.json",
+    "TR_Factions.json",
     "Cyr_Main.json",
     "Sky_Main.json",
 ]

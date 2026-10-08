@@ -215,7 +215,7 @@ Gold price vs R3 enchantment cost. Ratio = Price ÷ Cost.
 | Daerir's Blessing             |   V   |   100 |    9 |  11.1 |
 | Ephemeral Lucidity            |  TD   |    78 |    7 |  11.1 |
 | The Fifth Pennant             |  TD   |   280 |   25 |  11.3 |
-| Fphyggi's Gem-Feeder (×2)    | V/TD  |   195 |   14 |  14.4 |
+| Fphyggi's Gem-Feeder (×2)     | V/TD  |   195 |   14 |  14.4 |
 | Lord Mhas' Vengeance          |   V   |   321 |   18 |  17.8 |
 | Daerir's Miracle              |   V   |    80 |    1 |    80 |
 | Mark                          |   V   |    85 |    1 |   113 |
