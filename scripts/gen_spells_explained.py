@@ -136,51 +136,97 @@ def main() -> int:
         return f"{van} -> {cur}" if (van is not None and van != cur) else cur
 
     def explain(obj: dict, van: dict | None) -> str:
-        """One short clause describing the dominant rule for this spell."""
+        """Describe the realized intent of this spell's change, read from the
+        values. Where a known rule explains it, mark the rule; otherwise state
+        the plain decision (cost raised/reduced, rescaled, renamed)."""
         notes: list[str] = []
         if is_td(obj) and cost_label(obj) == "auto":
-            notes.append("VIOLATION: TD spell on AUTO_CALCULATE")
+            notes.append("VIOLATION: TD spell must not be AUTO_CALCULATE")
 
         effs = obj.get("effects") or []
         veffs = (van or {}).get("effects") or []
-        # Per-effect rule, dominated by the first effect.
         e0 = effs[0] if effs else {}
+        v0 = veffs[0] if veffs else None
         fx = e0.get("magic_effect", "")
         vb, cb = fx_van_base.get(fx), fx_cur_base.get(fx)
+        base_changed = vb is not None and cb is not None and vb != cb
+        auto = cost_label(obj) == "auto"
 
         def magdur(e):
             mn = int(e.get("min_magnitude", 0)); mx = int(e.get("max_magnitude", 0))
             return (mn + mx) * max(int(e.get("duration", 0)), 1)
 
+        def md_split(cur_e, van_e):
+            """Return (mag_factor, dur_factor) strings or None if no vanilla."""
+            if not van_e:
+                return None
+            vmn = int(van_e.get("min_magnitude", 0)) + int(van_e.get("max_magnitude", 0))
+            cmn = int(cur_e.get("min_magnitude", 0)) + int(cur_e.get("max_magnitude", 0))
+            vd = max(int(van_e.get("duration", 0)), 0)
+            cd = int(cur_e.get("duration", 0))
+            mf = (cmn / vmn) if vmn else 1.0
+            df = (cd / vd) if vd else 1.0
+            return mf, df
+
+        md_changed = v0 is not None and eff_sig(e0) != eff_sig(v0)
+
         if fx in NO_SCALE:
-            if vb is not None and cb is not None and vb != cb:
-                notes.append(f"no-scale: magnitude kept vanilla; base {vb}->{cb} affects cost only")
+            # No-scale: magnitude kept vanilla; base change rides on cost.
+            tag = "[NO-SCALE]"
+            if base_changed:
+                notes.append(f"{tag} magnitude kept vanilla; base {vb}->{cb}, cost absorbs it")
             else:
-                notes.append("no-scale: magnitude kept vanilla (rounding only)")
-        elif vb is not None and cb is not None and vb != cb:
-            base_factor = cb / vb
-            # observed spell mag*dur factor on first effect, if vanilla present
-            obs = ""
-            if veffs:
-                vmd, cmd = magdur(veffs[0]), magdur(e0)
-                if vmd:
-                    obs = f"; spell mag·dur {ratio_word(cmd / vmd)}"
-            notes.append(f"base {vb}->{cb} ({ratio_word(base_factor)}) -> compensation{obs}")
-        else:
-            # No base-cost change for this effect.
-            if veffs and eff_sig(e0) != eff_sig(veffs[0]):
-                notes.append("rebalanced magnitude/duration")
+                notes.append(f"{tag} magnitude kept vanilla (rounding only)")
+        elif base_changed:
+            bf = cb / vb
+            # Did effective cost (mag*dur*base) stay, drop, or rise?
+            if v0 is not None:
+                vmd, cmd = magdur(v0), magdur(e0)
+                eff_v = vmd * vb
+                eff_c = cmd * cb
+                sp = md_split(e0, v0)
+                split = ""
+                if sp:
+                    mf, df = sp
+                    bits = []
+                    if abs(mf - 1) > 0.01:
+                        bits.append(f"mag {ratio_word(mf)}")
+                    if abs(df - 1) > 0.01:
+                        bits.append(f"dur {ratio_word(df)}")
+                    split = (" via " + " & ".join(bits)) if bits else " (mag/dur unchanged)"
+                if eff_v == 0:
+                    notes.append(f"base {ratio_word(bf)}{split}")
+                else:
+                    r = eff_c / eff_v
+                    if 0.85 <= r <= 1.18:
+                        notes.append(f"[COMPENSATED] base {ratio_word(bf)}{split}; effective cost kept ~same")
+                    elif r < 0.85:
+                        notes.append(f"[COST REDUCED] base {ratio_word(bf)}{split}; effective cost {ratio_word(r)} (intended cheaper)")
+                    else:
+                        notes.append(f"[COST RAISED] base {ratio_word(bf)}{split}; effective cost {ratio_word(r)} (intended pricier)")
+            else:
+                notes.append(f"base {ratio_word(bf)} changed")
+        elif md_changed:
+            # No base-cost change — pure rebalance of mag/dur.
+            sp = md_split(e0, v0)
+            bits = []
+            if sp:
+                mf, df = sp
+                if abs(mf - 1) > 0.01:
+                    bits.append(f"mag {ratio_word(mf)}")
+                if abs(df - 1) > 0.01:
+                    bits.append(f"dur {ratio_word(df)}")
+            notes.append("[RESCALED] " + (", ".join(bits) if bits else "magnitude/duration") +
+                         " (no base-cost change)")
+
+        if auto and not any(n.startswith("[NO-SCALE]") for n in notes):
+            notes.append("auto-calc cost")
 
         # Rounding note (first offending ranged magnitude).
         for e in effs:
             mn, mx = int(e.get("min_magnitude", 0)), int(e.get("max_magnitude", 0))
-            if mn != mx:
-                for v in (mn, mx):
-                    if v != 1 and v % 5 != 0:
-                        notes.append(f"rounding: {mn}-{mx} has non-5 value")
-                        break
-                else:
-                    continue
+            if mn != mx and any(v != 1 and v % 5 != 0 for v in (mn, mx)):
+                notes.append(f"[ROUNDING] {mn}-{mx} has a non-1/5 value")
                 break
 
         # Rename note.
