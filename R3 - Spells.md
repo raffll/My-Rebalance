@@ -21,7 +21,6 @@ sEffectSlowFall                             SlowFall -> Slowfall
 Base Cost                                   1.0 -> 0.1
 ```
 
-*Spells*
 ```
 burden                                      20/10s -> 50/40s                    Burden
 burden touch                                20/10s -> 50/40s                    Burden Touch
@@ -37,7 +36,7 @@ crushing burden of sin                      60-80/30s -> 120-160/150s           
 dire weary                                  60-90/10s -> 120-180/50s            Dire Weary
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Alt_WeightOfGuilt                     500/3s -> 5000/3s                   Weight of Guilt
 ```
@@ -50,7 +49,6 @@ T_Com_Alt_WeightOfGuilt                     500/3s -> 5000/3s                   
 Base Cost                                   1.0 -> 0.1
 ```
 
-*Spells*
 ```
 feather                                     20/10s -> 40/50s                    Feather
 strong feather                              50/10s -> 100/50s                   Strong Feather
@@ -58,7 +56,7 @@ ulms juicedaw's feather                     50/10s -> 250/20s                   
 great feather                               100/10s -> 200/50s                  Great Feather
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Imp_Alt_UlmsJuicedawsFeather              50/10s -> 500/10s                   Zenithar's Arms
 T_Com_Alt_Fling                             500/3s -> 5000/3s                   Fling
@@ -72,7 +70,6 @@ T_Com_Alt_Fling                             500/3s -> 5000/3s                   
 Base Cost                                   3.0
 ```
 
-*Spells*
 ```
 fire_fathasa_unique                         1-10/10s                            Fire Barrier -> Fathasa's Fire Barrier
 fire barrier                                1-10/10s                            Fire Barrier
@@ -89,7 +86,6 @@ strong fire shield                          12/30s -> 15/30s                    
 Base Cost                                   3.0
 ```
 
-*Spells*
 ```
 frost barrier                               3/10s -> 1-10/10s                   Frost Barrier
 fierce frost shield                         5-11/10s -> 5-10/10s                Fierce Frost Shield
@@ -106,7 +102,6 @@ strong frost shield                         12/30s -> 15/30s                    
 Base Cost                                   3.0
 ```
 
-*Spells*
 ```
 shock barrier                               1-10/10s                            Shock Barrier
 shock shield                                3/20s                               Shock Shield -> Lightning Shield
@@ -115,7 +110,7 @@ lightning shield                            10/30s                              
 strong shock shield                         12/30s -> 15/30s                    Strong Shock Shield
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Cr_Alt_DraugrLightnShield                 50/20s                              Draugr Lightning Shield
 ```
@@ -128,7 +123,7 @@ T_Cr_Alt_DraugrLightnShield                 50/20s                              
 Base Cost                                   2.0 -> 24.0
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Alt_WizardLock                        20 [2 -> 24]                        Wizard Lock
 T_Com_Alt_DalgorsEntwining                  100 [8 -> 96]                       Dalgor's Entwining
@@ -142,13 +137,12 @@ T_Com_Alt_DalgorsEntwining                  100 [8 -> 96]                       
 Base Cost                                   2.0 -> 1.0
 ```
 
-*Spells*
 ```
 shield                                      5/30s                               Shield
 first barrier                               10/30s                              First Barrier
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Nor_Alt_TsunsWard                         20/20s -> 40/20s                    Tsun's Ward
 T_Com_Alt_ForceWall                         50/5s -> 100/5s                     Force Wall
@@ -162,13 +156,12 @@ T_Com_Alt_ForceWall                         50/5s -> 100/5s                     
 Base Cost                                   2.0 -> 0.5
 ```
 
-*Spells*
 ```
 buoyancy                                    1/20s -> 20/20s                     Buoyancy
 Swimmer's_Blessing                          5/30s -> 50/30s                     Swimmer's Blessing
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Alt_DreughsGrace                      30/20s -> 120/20s                   Dreugh's Grace
 ```
@@ -185,7 +178,6 @@ T_Com_Alt_DreughsGrace                      30/20s -> 120/20s                   
 Base Cost                                   4.0 -> 2.0
 ```
 
-*Spells*
 ```
 fleabite                                    1-10/1s -> 1-20/1s                  Fleabite
 doze                                        1-20/1s -> 1-40/1s                  Doze
@@ -200,12 +192,11 @@ hornhand                                    15-36/1s -> 30-70/1s                
 Base Cost                                   8.0 -> 4.0
 ```
 
-*Spells*
 ```
 soulpinch                                   1-20/1s -> 1-40/1s                  Soulpinch
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Des_Magefire                          10-30/1s -> 10-30/2s                Thimble of Magefire
 ```
@@ -218,13 +209,12 @@ T_Com_Des_Magefire                          10-30/1s -> 10-30/2s                
 Base Cost                                   6.0 -> 0.6
 ```
 
-*Spells*
 ```
 disintegrate armor                          6-25/1s -> 60-250/1s                Disintegrate Armor
 armor eater                                 10-30/1s -> 200-600/1s              Armor Eater
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Des_FractureArmor                     100/2s -> 1000/2s                   Fracture Armor
 ```
@@ -237,13 +227,12 @@ T_Com_Des_FractureArmor                     100/2s -> 1000/2s                   
 Base Cost                                   6.0 -> 1.2
 ```
 
-*Spells*
 ```
 disintegrate weapon                         6-25/1s -> 30-125/1s                Disintegrate Weapon
 weapon eater                                6-25/1s -> 100-300/1s               Weapon Eater
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Rea_Des_IronEater                         1-25/2s -> 5-125/2s                 Iron Eater
 T_Rea_Des_SteelEater                        5-30/3s -> 25-150/3s                Steel Eater
@@ -257,7 +246,6 @@ T_Rea_Des_SteelEater                        5-30/3s -> 25-150/3s                
 Base Cost                                   2.0 -> 0.2
 ```
 
-*Spells*
 ```
 weariness                                   1-10/1s -> 10-100/20s               Weariness
 sleep                                       5-15/30s -> 25-75/60s               Sleep
@@ -269,7 +257,7 @@ exhaustion                                  5-20/90s -> 25-100/180s             
 dagoth's bosom                              20/30s -> 200/30s                   Dagoth's Bosom
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Des_Duck                              200/2s -> 2000/2s                   Duck
 ```
@@ -282,12 +270,11 @@ T_Com_Des_Duck                              200/2s -> 2000/2s                   
 Base Cost                                   4.0 -> 0.4
 ```
 
-*Spells*
 ```
 magicka leech                               6-15/60s -> 5-15/60s                Magicka Leech
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Des_RageOfMagnus                      60/10s -> 300/20s                   Rage of Magnus
 ```
@@ -300,7 +287,6 @@ T_Com_Des_RageOfMagnus                      60/10s -> 300/20s                   
 Base Cost                                   5.0 -> 8.0
 ```
 
-*Spells*
 ```
 cruel firebloom                             10-16/1s -> 10-15/1s                Cruel Firebloom
 god's fire                                  11-60/10s -> 10-60/10s              God's Fire
@@ -314,7 +300,6 @@ god's fire                                  11-60/10s -> 10-60/10s              
 Base Cost                                   5.0 -> 8.0
 ```
 
-*Spells*
 ```
 god's frost                                 11-60/10s -> 10-60/10s              God's Frost
 ```
@@ -327,7 +312,6 @@ god's frost                                 11-60/10s -> 10-60/10s              
 Base Cost                                   9.0 -> 8.0
 ```
 
-*Spells*
 ```
 poison_powerful                             2-15/10s -> 1-15/10s                Toxic Cloud
 poison                                      2-20/1s -> 1-20/1s                  Poison
@@ -341,7 +325,6 @@ poison                                      2-20/1s -> 1-20/1s                  
 Base Cost                                   7.0 -> 8.0
 ```
 
-*Spells*
 ```
 lightning storm                             2-10/10s -> 1-10/10s                Lightning Storm
 spark                                       2-20/1s -> 1-20/1s                  Spark
@@ -361,7 +344,7 @@ shockball                                   2-40/1s -> 1-20/1s                  
 Base Cost                                   5.0 -> 2.5
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Ilu_AlluringSpeech                    15-20/20s [80 -> 40]                Alluring Speech
 ```
@@ -374,13 +357,12 @@ T_Com_Ilu_AlluringSpeech                    15-20/20s [80 -> 40]                
 Base Cost                                   40.0 -> 80.0
 ```
 
-*Spells*
 ```
 paralysis                                   5s                                  Paralysis
 scrib_paralysis                             6s -> 12s [auto -> 6]               Paralysis
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Ilu_Paralysis                         3s [6 -> 12]                        Paralysis
 T_Com_Ilu_LivingStatue                      20s [30 -> 60]                      Living Statue
@@ -394,7 +376,6 @@ T_Com_Ilu_LivingStatue                      20s [30 -> 60]                      
 Base Cost                                   40.0
 ```
 
-*Spells*
 ```
 silence                                     5s                                  Silence
 far silence                                 10s                                 Far Silence
@@ -408,7 +389,6 @@ far silence                                 10s                                 
 Base Cost                                   3.0 -> 1.0
 ```
 
-*Spells*
 ```
 wild earwig                                 1-30/5s -> 1-90/5s                  Wild Earwig
 dire noise                                  2-60/5s -> 1-60/15s                 Dire Noise
@@ -419,7 +399,7 @@ dire earwig                                 8-15/5s -> 25-45/5s                 
 cruel noise                                 10-22/5s -> 10-20/15s               Cruel Noise
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Ilu_Voices                            50/20s -> 50/60s [100 -> 50]        Voices
 ```
@@ -433,7 +413,6 @@ T_Com_Ilu_Voices                            50/20s -> 50/60s [100 -> 50]        
 ### Absorb Attribute
 
 
-*Spells*
 ```
 absorb intelligence [ranged]                5-51/30s -> 5-50/30s                Absorb Intelligence [Ranged]
 ```
@@ -443,7 +422,7 @@ absorb intelligence [ranged]                5-51/30s -> 5-50/30s                
 ### Absorb Skill
 
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Nor_Mys_JogvirsSwordhand                  20/30s                              Jogvir's Sword Hand
 ```
@@ -453,7 +432,6 @@ T_Nor_Mys_JogvirsSwordhand                  20/30s                              
 ### Blind
 
 
-*Spells*
 ```
 crying eye                                  1-10/5s -> 1-10/20s                 Crying Eye
 erelvam's wild sty                          1-40/10s -> 1-40/20s                Erelvam's Wild Sty
@@ -464,7 +442,6 @@ erelvam's wild sty                          1-40/10s -> 1-40/20s                
 ### Chameleon
 
 
-*Spells*
 ```
 shadow form                                 6-15/30s -> 12-30/30s               Shadow Form
 ```
@@ -474,7 +451,6 @@ shadow form                                 6-15/30s -> 12-30/30s               
 ### Drain Attribute
 
 
-*Spells*
 ```
 blood despair                               7-14/60s -> 5-15/60s                Blood Despair
 ```
@@ -484,7 +460,6 @@ blood despair                               7-14/60s -> 5-15/60s                
 ### Drain Health
 
 
-*Spells*
 ```
 ash feast                                   3/30s -> 30/3s                      Ash Feast
 ```
@@ -494,7 +469,6 @@ ash feast                                   3/30s -> 30/3s                      
 ### Fortify Attribute
 
 
-*Spells*
 ```
 skylamp's shadow                            5-20/30s                            Skylamp's Shadow
 feet of notorgo                             10/90s                              Feet of Notorgo
@@ -505,7 +479,6 @@ feet of notorgo                             10/90s                              
 ### Invisibility
 
 
-*Spells*
 ```
 invisibility                                30s -> 60s                          Invisibility
 ```
@@ -515,7 +488,6 @@ invisibility                                30s -> 60s                          
 ### Restore Health
 
 
-*Spells*
 ```
 balyna's soothing balm                      3-12/1s -> 5-10/1s                  Balyna's Soothing Balm
 balyna's efficacious balm                   3-22/1s -> 5-20/1s                  Balyna's Efficacious Balm
@@ -528,7 +500,6 @@ heal companion                              6-15/1s -> 5-15/1s                  
 ### Sanctuary
 
 
-*Spells*
 ```
 sotha's grace                               1-20/5s -> 1-20/10s                 Sotha's Grace
 father's hand                               1-40/5s -> 1-40/10s                 Father's Hand
@@ -539,7 +510,6 @@ father's hand                               1-40/5s -> 1-40/10s                 
 ### Weakness to Fire
 
 
-*Spells*
 ```
 dire weakness to fire                       2-60/10s -> 1-60/10s                Dire Weakness to Fire
 ```
@@ -549,7 +519,6 @@ dire weakness to fire                       2-60/10s -> 1-60/10s                
 ### Weakness to Frost
 
 
-*Spells*
 ```
 dire weakness to frost                      2-60/10s -> 1-60/10s                Dire Weakness to Frost
 ```
@@ -559,7 +528,6 @@ dire weakness to frost                      2-60/10s -> 1-60/10s                
 ### Weakness to Magicka
 
 
-*Spells*
 ```
 dire weakness to magicka                    2-60/10s -> 1-60/10s                Dire Weakness to Magicka
 ```
@@ -569,7 +537,6 @@ dire weakness to magicka                    2-60/10s -> 1-60/10s                
 ### Weakness to Poison
 
 
-*Spells*
 ```
 dire weakness to poison                     2-60/10s -> 1-60/10s                Dire Weakness to Poison
 ```
@@ -579,7 +546,6 @@ dire weakness to poison                     2-60/10s -> 1-60/10s                
 ### Weakness to Shock
 
 
-*Spells*
 ```
 dire weakness to shock                      2-60/10s -> 1-60/10s                Dire Weakness to Shock
 ```
@@ -596,7 +562,6 @@ dire weakness to shock                      2-60/10s -> 1-60/10s                
 Base Cost                                   4.0 -> 6.0
 ```
 
-*Spells*
 ```
 absorb fatigue                              5-20/30s -> 5-20/3s                 Absorb Fatigue
 absorb fatigue [ranged]                     5-20/30s -> 5-20/3s                 Absorb Fatigue [Ranged]
@@ -612,12 +577,11 @@ Tap Energy                                  20/30s -> 20/3s                     
 Base Cost                                   8.0 -> 16.0
 ```
 
-*Spells*
 ```
 absorb health                               5-52/1s -> 5-50/1s                  Absorb Health
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Mys_Lifesteal                         40/1s [24 -> 48]                    Lifesteal
 ```
@@ -630,12 +594,11 @@ T_Com_Mys_Lifesteal                         40/1s [24 -> 48]                    
 Base Cost                                   0.75 -> 0.15
 ```
 
-*Spells*
 ```
 detect_creature                             50-150/5s                           Detect Creature
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Mys_DetectHumanoid                    100-300/5s [38 -> 8]                Greater Detect Creature
 ```
@@ -648,12 +611,11 @@ T_Com_Mys_DetectHumanoid                    100-300/5s [38 -> 8]                
 Base Cost                                   1.0 -> 0.2
 ```
 
-*Spells*
 ```
 detect enchantment                          10/10s -> 50/10s                    Detect Enchantment
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Mys_Insight                           150/10s -> 50/10s [75 -> auto]      Greater Detect Enchantment -> Detect Enchantment
 ```
@@ -666,7 +628,6 @@ T_Com_Mys_Insight                           150/10s -> 50/10s [75 -> auto]      
 Base Cost                                   1.0 -> 0.2
 ```
 
-*Spells*
 ```
 tevral's hawkshaw                           10/10s -> 50/10s                    Tevral's Hawkshaw
 detect_key                                  50/5s -> 250/5s                     Detect Key
@@ -680,7 +641,6 @@ detect_key                                  50/5s -> 250/5s                     
 Base Cost                                   10.0 -> 2.5
 ```
 
-*Spells*
 ```
 wild reflect                                1-40/10s -> 1-40/40s                Wild Reflect
 sotha's mirror                              10/5s -> 10/20s                     Sotha's Mirror
@@ -690,7 +650,7 @@ strong reflect                              20-30/5s -> 20-30/20s               
 llivam's reversal                           20-30/10s -> 20-30/40s              Llivam's Reversal
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Mys_ReflectDamage                     1-5/50s -> 15/30s [76 -> 56]        Minor Reflect -> Reflect Damage
 T_Imp_Res_SothasMirror                      10/5s -> 40/5s                      St. Naharine's Shield
@@ -705,7 +665,6 @@ T_Com_Mys_DistortedReflect                  20/15s -> 40/30s                    
 Base Cost                                   10.0 -> 2.5
 ```
 
-*Spells*
 ```
 wild spelldrinker                           1-40/5s -> 1-40/20s                 Wild Spelldrinker
 spell absorption                            10/5s -> 10/20s                     Spell Absorption
@@ -715,7 +674,7 @@ strong spelldrinker                         20-30/5s -> 20-30/20s               
 tranasa's spelltrap                         20-30/10s -> 20-30/40s              Tranasa's Spelltrap
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Imp_Mys_VivecsFeast                       10/5s -> 40/5s                      St. Horuscia's Alms
 ```
@@ -732,7 +691,6 @@ T_Imp_Mys_VivecsFeast                       10/5s -> 40/5s                      
 Base Cost                                   0.5 -> 0.25
 ```
 
-*Spells*
 ```
 vigor                                       5-20/30s -> 10-40/30s               Vigor
 ```
@@ -745,7 +703,6 @@ vigor                                       5-20/30s -> 10-40/30s               
 Base Cost                                   1.0 -> 4.0
 ```
 
-*Spells*
 ```
 masterful balanced armor                    15/60s -> 15/15s                    Masterful Balanced Armor
 masterful deep biting                       15/60s -> 15/15s                    Masterful Deep Biting
@@ -778,7 +735,7 @@ masterful transfiguring wisdom              15/60s -> 15/15s                    
 masterful unseen wisdom                     15/60s -> 15/15s                    Masterful Unseen Wisdom
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Nor_Res_EagleEye                          10-15/40s [25 -> 100]               Eagle Eye
 T_Nor_Res_TreefellersRage                   10-15/40s [25 -> 100]               Treefellers Rage
@@ -793,7 +750,6 @@ T_Com_Res_DeftSecurity                      15/30s [23 -> 92]                   
 Base Cost                                   5.0 -> 0.25
 ```
 
-*Spells*
 ```
 poet's whim                                 1-30/10s -> 1-30/200s [auto -> 39]  Poet's Whim
 vivec's mercy                               20/10s -> 50/80s [auto -> 50]       Vivec's Mercy
@@ -808,7 +764,6 @@ shield of the armiger                       30/10s -> 100/60s [auto -> 75]      
 Base Cost                                   2.0 -> 0.1
 ```
 
-*Spells*
 ```
 variable resist common disease              1-30/10s -> 1-30/200s [auto -> 16]  Variable Resist Common Disease
 resist common disease                       10/5s -> 50/20s [auto -> 5]         Resist Common Disease
@@ -816,7 +771,7 @@ seryn's blessing                            20/10s -> 50/80s [auto -> 20]       
 great resist common disease                 30/10s -> 100/60s [auto -> 30]      Great Resist Common Disease
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Imp_Res_SerynsBlessing                    20/10s -> 100/40s                   Pilgrimage of St. Rosunius
 ```
@@ -829,7 +784,6 @@ T_Imp_Res_SerynsBlessing                    20/10s -> 100/40s                   
 Base Cost                                   2.0 -> 0.5
 ```
 
-*Spells*
 ```
 variable resist fire                        1-30/10s -> 1-30/40s                Variable Resist Fire
 resist fire                                 10/5s -> 10/20s                     Resist Fire
@@ -846,7 +800,6 @@ great resist fire                           30/10s -> 30/40s                    
 Base Cost                                   2.0 -> 0.5
 ```
 
-*Spells*
 ```
 variable resist frost                       1-30/10s -> 1-30/40s                Variable Resist Frost
 resist frost                                10/5s -> 10/20s                     Resist Frost
@@ -855,7 +808,7 @@ frostguard                                  20-40/30s -> 20-40/120s             
 great resist frost                          30/10s -> 30/40s                    Great Resist Frost
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Nor_Res_WinteryMantle                     20/60s -> 80/60s                    Wintery Mantle
 ```
@@ -868,7 +821,6 @@ T_Nor_Res_WinteryMantle                     20/60s -> 80/60s                    
 Base Cost                                   2.0 -> 0.5
 ```
 
-*Spells*
 ```
 variable resist magicka                     1-30/10s -> 1-30/40s                Variable Resist Magicka
 resist magicka                              10/5s -> 20/20s                     Resist Magicka
@@ -885,7 +837,6 @@ great resist magicka                        30/10s -> 30/40s                    
 Base Cost                                   0.2
 ```
 
-*Spells*
 ```
 resist paralysis                            50/30s [300 -> auto]                Resist Paralysis
 ```
@@ -898,7 +849,6 @@ resist paralysis                            50/30s [300 -> auto]                
 Base Cost                                   2.0 -> 0.5
 ```
 
-*Spells*
 ```
 variable resist poison                      1-30/10s -> 1-30/40s                Variable Resist Poison
 resist poison                               20/5s -> 20/20s                     Resist Poison
@@ -915,7 +865,6 @@ greater resist poison                       30/10s -> 30/40s                    
 Base Cost                                   2.0 -> 0.5
 ```
 
-*Spells*
 ```
 variable resist shock                       1-30/10s -> 1-30/40s                Variable Resist Shock
 resist shock                                20/5s -> 20/20s                     Resist Shock
@@ -932,7 +881,6 @@ great resist shock                          30/10s -> 30/40s                    
 Base Cost                                   1.0 -> 8.0
 ```
 
-*Spells*
 ```
 restore agility                             5-20/30s -> 5-20/1s                 Restore Agility
 restore endurance                           5-20/30s -> 5-20/1s                 Restore Endurance
@@ -952,13 +900,12 @@ restore willpower                           5-20/30s -> 5-20/1s                 
 Base Cost                                   1.0 -> 2.5
 ```
 
-*Spells*
 ```
 rest of st. merris                          1-10/20s -> 1-10/8s                 Rest of St. Merris -> Rest of St. Meris
 stamina                                     10-30/30s -> 10-30/12s              Stamina
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Com_Res_WeaponResartus                    42-78/30s -> 30-60/12s [90 -> 68]   Greater Stamina
 ```
@@ -967,7 +914,6 @@ T_Com_Res_WeaponResartus                    42-78/30s -> 30-60/12s [90 -> 68]   
 
 ## Multi-Effect Spells
 
-*Spells*
 ```
 bm_draugr_curse                             [200 -> auto]                       Eddard's Wrath
     Disintegrate Armor                      4-9/15s -> 40-90/15s
@@ -1000,7 +946,7 @@ heavy_eyes_unique                                                               
     Burden                                  100/10s -> 1000/10s
 ```
 
-*Spells - Tamriel Data*
+*Tamriel Data*
 ```
 T_Rea_Mys_SoulWither                                                            Dhamcka's Soul-Withering
     Drain Magicka                           1/30s -> 10/30s

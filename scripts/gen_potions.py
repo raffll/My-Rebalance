@@ -321,19 +321,21 @@ def main() -> int:
             recs = groups[school][fx]
             header(f"### {effect_base_name(fx)}")
 
-            def block(title: str, items: list) -> None:
+            def block(title: str | None, items: list) -> None:
                 if not items:
                     return
                 out.append("")
-                out.append(f"*{title}*")
+                if title:
+                    out.append(f"*{title}*")
                 out.append("```")
                 for r in sorted(items, key=sort_key):
                     out.extend(emit_record(r))
                 out.append("```")
 
-            block("Potions",
+            # Vanilla records: no label. TD records: "Tamriel Data" label.
+            block(None,
                   [r for r in recs if r.get("type") == "Alchemy" and not is_td(r)])
-            block("Potions - Tamriel Data",
+            block("Tamriel Data",
                   [r for r in recs if r.get("type") == "Alchemy" and is_td(r)])
 
             out.append("")
@@ -341,19 +343,20 @@ def main() -> int:
     if multi:
         header("## Multi-Effect Potions")
 
-        def multi_block(title: str, items: list) -> None:
+        def multi_block(title: str | None, items: list) -> None:
             if not items:
                 return
-            out.append(f"*{title}*")
+            if title:
+                out.append(f"*{title}*")
             out.append("```")
             for r in sorted(items, key=sort_key):
                 out.extend(emit_record(r))
             out.append("```")
             out.append("")
 
-        multi_block("Potions",
+        multi_block(None,
                     [r for r in multi if r.get("type") == "Alchemy" and not is_td(r)])
-        multi_block("Potions - Tamriel Data",
+        multi_block("Tamriel Data",
                     [r for r in multi if r.get("type") == "Alchemy" and is_td(r)])
 
     out_dir = os.path.dirname(args.out)
