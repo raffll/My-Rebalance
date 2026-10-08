@@ -470,10 +470,6 @@ def main() -> int:
             out.append("```")
             out.append("")
 
-        multi_block("Potions",
-                    [r for r in multi if r.get("type") == "Alchemy" and not is_td(r)])
-        multi_block("Potions - Tamriel Data",
-                    [r for r in multi if r.get("type") == "Alchemy" and is_td(r)])
         multi_block("Spells",
                     [r for r in multi if r.get("type") == "Spell" and not is_td(r)])
         multi_block("Spells - Tamriel Data",
