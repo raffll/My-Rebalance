@@ -10,7 +10,7 @@ This flags upstream changes to records you rebalanced, so you can review whether
 your tuning still makes sense against the new baseline.
 
 Usage:
-  python scripts/check_vanilla_changes.py                       # Spells & Potions
+  python scripts/check_vanilla_changes.py                       # Spells
   python scripts/check_vanilla_changes.py --esp "R3 - Core.json"
   python scripts/check_vanilla_changes.py --backup <dir>        # pick a backup
 """
@@ -93,7 +93,7 @@ def brief(o: dict) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Report upstream vanilla changes to records your ESP modifies.")
-    ap.add_argument("--esp", default="R3 - Spells & Potions.json")
+    ap.add_argument("--esp", default="R3 - Spells.json")
     ap.add_argument("--tes3", default=gc.DEFAULT_MASTER_DIR)
     ap.add_argument("--backup", default=None,
                     help="Backup JSON dir (defaults to the newest under tes3conv/_backup_json).")

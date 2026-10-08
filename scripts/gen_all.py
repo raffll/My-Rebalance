@@ -22,6 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 GENERATORS = [
     "gen_core.py",
     "gen_readme.py",
+    "gen_potions.py",
     "gen_creatures.py",
     "gen_enchantments.py",
     "gen_factions.py",

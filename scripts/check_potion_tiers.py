@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Verify potion mag/dur against the potion-tiers ranges.
 
-Read-only. For every Alchemy (potion) record in the Spells & Potions ESP JSON,
+Read-only. For every Alchemy (potion) record in the Potions ESP JSON,
 determine its effect's CURRENT base cost (from the MagicEffect records in the
-same ESP, falling back to the vanilla masters), map that base cost to a tier
+Spells ESP JSON, falling back to the vanilla masters), map that base cost to a tier
 column using the geometric-midpoint ranges from .kiro/steering/potion-tiers.md,
 and compare the potion's actual mag/dur to the expected tier cell for its grade
 (B/C/S/Q/E). Prints only MISMATCHES.
@@ -20,7 +20,8 @@ import gen_common as gc
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-ESP = os.path.join(ROOT, "R3 - Spells & Potions.json")
+ESP = os.path.join(ROOT, "R3 - Potions.json")
+SPELLS_ESP = os.path.join(ROOT, "R3 - Spells.json")
 MASTER_DIR = gc.DEFAULT_MASTER_DIR
 
 # Tier table: column -> {grade: (mag, dur)}. Grades keyed by vanilla duration.
@@ -66,13 +67,17 @@ def main() -> int:
     with open(ESP, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # Current base costs from this ESP's MagicEffect records.
+    # Current base costs from the Spells ESP's MagicEffect records (MagicEffects
+    # moved there in the Spells/Potions split; the Potions JSON has none).
     base_cost: dict[str, float] = {}
-    for o in data:
-        if o.get("type") == "MagicEffect" and o.get("effect_id"):
-            bc = (o.get("data") or {}).get("base_cost")
-            if bc is not None:
-                base_cost[o["effect_id"]] = float(bc)
+    if os.path.exists(SPELLS_ESP):
+        with open(SPELLS_ESP, "r", encoding="utf-8") as f:
+            spells_data = json.load(f)
+        for o in spells_data:
+            if o.get("type") == "MagicEffect" and o.get("effect_id"):
+                bc = (o.get("data") or {}).get("base_cost")
+                if bc is not None:
+                    base_cost[o["effect_id"]] = float(bc)
 
     # Fill missing base costs from vanilla masters.
     missing = set()
