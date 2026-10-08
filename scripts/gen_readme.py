@@ -443,7 +443,9 @@ def main() -> int:
             def block(title: str | None, items: list) -> None:
                 if not items:
                     return
-                out.append("")
+                # Exactly one blank line before each block.
+                if out and out[-1] != "":
+                    out.append("")
                 if title:
                     out.append(f"*{title}*")
                 out.append("```")

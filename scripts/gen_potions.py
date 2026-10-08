@@ -324,8 +324,8 @@ def main() -> int:
             def block(title: str | None, items: list) -> None:
                 if not items:
                     return
-                out.append("")
                 if title:
+                    out.append("")
                     out.append(f"*{title}*")
                 out.append("```")
                 for r in sorted(items, key=sort_key):

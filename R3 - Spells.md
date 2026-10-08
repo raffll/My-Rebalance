@@ -412,7 +412,6 @@ T_Com_Ilu_Voices                            50/20s -> 50/60s [100 -> 50]        
 
 ### Absorb Attribute
 
-
 ```
 absorb intelligence [ranged]                5-51/30s -> 5-50/30s                Absorb Intelligence [Ranged]
 ```
@@ -420,7 +419,6 @@ absorb intelligence [ranged]                5-51/30s -> 5-50/30s                
 ------------------------------------------------------------
 
 ### Absorb Skill
-
 
 *Tamriel Data*
 ```
@@ -431,7 +429,6 @@ T_Nor_Mys_JogvirsSwordhand                  20/30s                              
 
 ### Blind
 
-
 ```
 crying eye                                  1-10/5s -> 1-10/20s                 Crying Eye
 erelvam's wild sty                          1-40/10s -> 1-40/20s                Erelvam's Wild Sty
@@ -441,7 +438,6 @@ erelvam's wild sty                          1-40/10s -> 1-40/20s                
 
 ### Chameleon
 
-
 ```
 shadow form                                 6-15/30s -> 12-30/30s               Shadow Form
 ```
@@ -449,7 +445,6 @@ shadow form                                 6-15/30s -> 12-30/30s               
 ------------------------------------------------------------
 
 ### Drain Attribute
-
 
 ```
 blood despair                               7-14/60s -> 5-15/60s                Blood Despair
@@ -459,7 +454,6 @@ blood despair                               7-14/60s -> 5-15/60s                
 
 ### Drain Health
 
-
 ```
 ash feast                                   3/30s -> 30/3s                      Ash Feast
 ```
@@ -467,7 +461,6 @@ ash feast                                   3/30s -> 30/3s                      
 ------------------------------------------------------------
 
 ### Fortify Attribute
-
 
 ```
 skylamp's shadow                            5-20/30s                            Skylamp's Shadow
@@ -478,7 +471,6 @@ feet of notorgo                             10/90s                              
 
 ### Invisibility
 
-
 ```
 invisibility                                30s -> 60s                          Invisibility
 ```
@@ -486,7 +478,6 @@ invisibility                                30s -> 60s                          
 ------------------------------------------------------------
 
 ### Restore Health
-
 
 ```
 balyna's soothing balm                      3-12/1s -> 5-10/1s                  Balyna's Soothing Balm
@@ -499,7 +490,6 @@ heal companion                              6-15/1s -> 5-15/1s                  
 
 ### Sanctuary
 
-
 ```
 sotha's grace                               1-20/5s -> 1-20/10s                 Sotha's Grace
 father's hand                               1-40/5s -> 1-40/10s                 Father's Hand
@@ -509,7 +499,6 @@ father's hand                               1-40/5s -> 1-40/10s                 
 
 ### Weakness to Fire
 
-
 ```
 dire weakness to fire                       2-60/10s -> 1-60/10s                Dire Weakness to Fire
 ```
@@ -517,7 +506,6 @@ dire weakness to fire                       2-60/10s -> 1-60/10s                
 ------------------------------------------------------------
 
 ### Weakness to Frost
-
 
 ```
 dire weakness to frost                      2-60/10s -> 1-60/10s                Dire Weakness to Frost
@@ -527,7 +515,6 @@ dire weakness to frost                      2-60/10s -> 1-60/10s                
 
 ### Weakness to Magicka
 
-
 ```
 dire weakness to magicka                    2-60/10s -> 1-60/10s                Dire Weakness to Magicka
 ```
@@ -536,7 +523,6 @@ dire weakness to magicka                    2-60/10s -> 1-60/10s                
 
 ### Weakness to Poison
 
-
 ```
 dire weakness to poison                     2-60/10s -> 1-60/10s                Dire Weakness to Poison
 ```
@@ -544,7 +530,6 @@ dire weakness to poison                     2-60/10s -> 1-60/10s                
 ------------------------------------------------------------
 
 ### Weakness to Shock
-
 
 ```
 dire weakness to shock                      2-60/10s -> 1-60/10s                Dire Weakness to Shock

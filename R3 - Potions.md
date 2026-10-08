@@ -8,7 +8,6 @@
 
 ### Burden
 
-
 ```
 p_burden_b                                  5/8s -> 60/180s                     Bargain Potion of Burden
 p_burden_c                                  8/15s -> 80/240s                    Cheap Potion of Burden
@@ -26,7 +25,6 @@ T_Nor_Potion_Burden_Q                       15/45s -> 150/450s                  
 ------------------------------------------------------------
 
 ### Feather
-
 
 ```
 p_feather_b                                 5/8s -> 60/180s                     Bargain Potion of Feather
@@ -46,7 +44,6 @@ T_Nor_Potion_Feather_Q                      15/45s -> 150/450s                  
 
 ### Fire Shield
 
-
 ```
 p_fire_shield_b                             5/8s -> 3/9s                        Bargain Potion of Fire Shield -> Bargain Fire Shield
 p_fire_shield_c                             8/15s -> 4/12s                      Cheap Potion of Fire Shield -> Cheap Fire Shield
@@ -64,7 +61,6 @@ T_Nor_Potion_ShieldFire_Q                   15/45s -> 8/24s                     
 ------------------------------------------------------------
 
 ### Frost Shield
-
 
 ```
 p_frost_shield_b                            5/8s -> 3/9s                        Bargain Potion of Frost Shield -> Bargain Frost Shield
@@ -84,7 +80,6 @@ T_Nor_Potion_ShieldFrost_Q                  15/45s -> 8/24s                     
 
 ### Jump
 
-
 ```
 p_jump_b                                    5/8s -> 3/9s                        Bargain Potion of Jump
 p_jump_c                                    8/15s -> 4/12s                      Cheap Potion of Jump
@@ -98,7 +93,6 @@ T_Nor_Potion_Jump_C                         8/15s -> 4/12s                      
 ------------------------------------------------------------
 
 ### Levitate
-
 
 ```
 p_levitation_b                              5/30s -> 3/9s                       Bargain Rising Force Potion
@@ -116,7 +110,6 @@ T_Nor_Potion_Levitation_C                   8/15s -> 4/12s                      
 ------------------------------------------------------------
 
 ### Lightning Shield
-
 
 ```
 p_lightning shield_b                        5/8s -> 3/9s                        Bargain Lightning Shield
@@ -147,7 +140,6 @@ T_Com_Potion_Shield_C                       8/15s -> 8/24s                      
 
 ### SlowFall
 
-
 ```
 p_slowfall_s                                10/15s -> 6/18s                     Potion of Slowfalling -> Potion of Slowfall
 ```
@@ -155,7 +147,6 @@ p_slowfall_s                                10/15s -> 6/18s                     
 ------------------------------------------------------------
 
 ### Swift Swim
-
 
 ```
 p_swift_swim_b                              1/8s -> 10/30s                      Bargain Potion of Swift Swim
@@ -173,7 +164,6 @@ T_Nor_Potion_SwiftSwim_C                    8/15s -> 15/45s                     
 
 ### Water Breathing
 
-
 ```
 p_water_breathing_s                         15s -> 300s                         Potion of Water Breathing
 ```
@@ -181,7 +171,6 @@ p_water_breathing_s                         15s -> 300s                         
 ------------------------------------------------------------
 
 ### Water Walking
-
 
 ```
 p_water_walking_s                           15s -> 300s                         Potion of Water Walking
@@ -282,7 +271,6 @@ T_Com_Poison_Blind_C                        8/15s -> 8/24s                      
 
 ### Chameleon
 
-
 ```
 p_chameleon_b                               5/8s -> 6/18s                       Bargain Potion of Shadow
 p_chameleon_c                               8/15s -> 8/24s                      Cheap Potion of Shadow
@@ -296,7 +284,6 @@ T_Nor_Potion_Chameleon_C                    8/15s -> 8/24s                      
 ------------------------------------------------------------
 
 ### Invisibility
-
 
 ```
 p_invisibility_b                            8s -> 30s                           Bargain Potion of Invisibility -> Bargain Invisibility
@@ -314,7 +301,6 @@ T_Nor_Potion_Invisibility_C                 15s -> 45s                          
 ------------------------------------------------------------
 
 ### Light
-
 
 ```
 p_light_b                                   5/8s -> 20/60s                      Bargain Potion of Light
@@ -334,7 +320,6 @@ T_Nor_Potion_Light_Q                        15/45s -> 60/180s                   
 
 ### Night Eye
 
-
 ```
 p_night-eye_b                               5/8s -> 20/60s                      Bargain Potion of Night-Eye
 p_night-eye_c                               8/15s -> 30/90s                     Cheap Potion of Night-Eye
@@ -352,7 +337,6 @@ T_Nor_Potion_NightEye_Q                     15/45s -> 60/180s                   
 ------------------------------------------------------------
 
 ### Paralyze
-
 
 ```
 p_paralyze_b                                8s -> 9s                            Bargain Potion of Paralyze
@@ -382,7 +366,6 @@ T_Com_Potion_Sanctuary_C                    8/15s -> 8/24s                      
 ------------------------------------------------------------
 
 ### Silence
-
 
 ```
 p_silence_b                                 8s -> 18s                           Bargain Potion of Silence
@@ -420,7 +403,6 @@ T_Com_Poison_Sound_E                        20/60s                              
 
 ### Detect Animal
 
-
 ```
 p_detect_creatures_s                        10/15s -> 40/120s                   Potion of Detect Creatures
 ```
@@ -433,7 +415,6 @@ T_Com_Potion_Detect_Humanoid_S              10/15s -> 40/120s                   
 ------------------------------------------------------------
 
 ### Detect Enchantment
-
 
 ```
 p_detect_enchantment_s                      10/15s -> 40/120s                   Potion of Detect Enchantments -> Potion of Detect Enchantment
@@ -448,7 +429,6 @@ T_Com_Potion_Detect_Enemy_S                 10/15s -> 40/120s                   
 
 ### Detect Key
 
-
 ```
 p_detect_key_s                              10/15s -> 40/120s                   Potion of Detect Key
 ```
@@ -462,7 +442,6 @@ T_Com_Potion_Detect_Invisib_S               10/15s -> 40/120s                   
 
 ### Dispel
 
-
 ```
 p_dispel_s                                  10 -> 100                           Potion of Dispel
 ```
@@ -470,7 +449,6 @@ p_dispel_s                                  10 -> 100                           
 ------------------------------------------------------------
 
 ### Reflect
-
 
 ```
 p_reflection_b                              5/8s -> 3/9s                        Bargain Potion of Reflection
@@ -490,7 +468,6 @@ T_Nor_Potion_Reflection_C                   8/15s -> 4/12s                      
 ------------------------------------------------------------
 
 ### Spell Absorption
-
 
 ```
 p_spell_absorption_b                        5/8s -> 3/9s                        Bargain Spell Absorption
@@ -523,7 +500,6 @@ T_Com_Potion_FortifyAttack_C                8/15s -> 8/24s                      
 ------------------------------------------------------------
 
 ### Fortify Attribute
-
 
 ```
 p_fortify_agility_b                         5/8s -> 6/18s                       Bargain Fortify Agility
@@ -562,7 +538,6 @@ T_Nor_Potion_FortifyWillpow_C               8/15s -> 8/24s                      
 
 ### Fortify Fatigue
 
-
 ```
 p_fortify_fatigue_b                         5/8s -> 20/60s                      Bargain Fortify Fatigue
 p_fortify_fatigue_c                         8/15s -> 30/90s                     Cheap Fortify Fatigue
@@ -580,7 +555,6 @@ T_Nor_Potion_FortifyFatigue_C               8/15s -> 30/90s                     
 
 ### Fortify Health
 
-
 ```
 p_fortify_health_b                          5/8s -> 6/18s                       Bargain Fortify Health Potion -> Bargain Fortify Health
 p_fortify_health_c                          8/15s -> 8/24s                      Cheap Potion of Fortify Health -> Cheap Fortify Health
@@ -595,7 +569,6 @@ T_Nor_Potion_FortifyHealth_C                8/15s -> 8/24s                      
 ------------------------------------------------------------
 
 ### Fortify Magicka
-
 
 ```
 p_fortify_magicka_b                         5/8s -> 6/18s                       Bargain Fortify Magicka
@@ -623,7 +596,6 @@ T_Com_Potion_BlightResistance_C             8/15s -> 30/90s                     
 
 ### Resist Common Disease
 
-
 ```
 p_disease_resistance_b                      5/8s -> 60/180s                     Bargain Disease Resistance
 p_disease_resistance_c                      8/15s -> 80/240s                    Cheap Disease Resistance
@@ -640,7 +612,6 @@ T_Nor_Potion_ResistDesease_C                8/15s -> 80/240s                    
 ------------------------------------------------------------
 
 ### Resist Fire
-
 
 ```
 p_fire_resistance_b                         5/8s -> 10/30s                      Bargain Fire Resistance
@@ -660,7 +631,6 @@ T_Nor_Potion_ResistFire_Q                   15/45s -> 30/90s                    
 
 ### Resist Frost
 
-
 ```
 p_frost_resistance_b                        5/8s -> 10/30s                      Bargain Frost Resistance
 p_frost_resistance_c                        8/15s -> 15/45s                     Cheap Frost Resistance
@@ -678,7 +648,6 @@ T_Nor_Potion_ResistFrost_Q                  15/45s -> 30/90s                    
 ------------------------------------------------------------
 
 ### Resist Magicka
-
 
 ```
 p_magicka_resistance_b                      5/8s -> 10/30s                      Bargain Magicka Resistance
@@ -709,7 +678,6 @@ T_Com_Potion_ResistParalysis_C              8/15s -> 30/90s                     
 
 ### Resist Poison
 
-
 ```
 p_poison_resistance_b                       5/8s -> 10/30s                      Bargain Poison Resistance
 p_poison_resistance_c                       8/15s -> 15/45s                     Cheap Poison Resistance
@@ -728,7 +696,6 @@ T_Nor_Potion_ResistPoison_Q                 15/45s -> 30/90s                    
 
 ### Resist Shock
 
-
 ```
 p_shock_resistance_b                        5/8s -> 10/30s                      Bargain Shock Resistance
 p_shock_resistance_c                        8/15s -> 15/45s                     Cheap Shock Resistance
@@ -746,7 +713,6 @@ T_Nor_Potion_ResistShock_Q                  15/45s -> 30/90s                    
 ------------------------------------------------------------
 
 ### Restore Attribute
-
 
 ```
 p_restore_agility_b                         5/0s -> 1/3s                        Bargain Restore Agility
@@ -795,7 +761,6 @@ p_restore_willpower_e                       20/0s -> 6/18s                      
 
 ### Restore Fatigue
 
-
 ```
 p_restore_fatigue_b                         5/5s -> 3/9s                        Bargain Restore Fatigue
 p_restore_fatigue_c                         10/5s -> 4/12s                      Cheap Restore Fatigue
@@ -808,7 +773,6 @@ p_restore_fatigue_e                         80/5s -> 10/30s                     
 
 ### Restore Health
 
-
 ```
 p_restore_health_b                          1/5s -> 2/6s                        Bargain Restore Health
 p_restore_health_c                          2/5s -> 3/9s                        Cheap Restore Health
@@ -820,7 +784,6 @@ p_restore_health_e                          40/5s -> 8/24s                      
 ------------------------------------------------------------
 
 ### Restore Magicka
-
 
 ```
 p_restore_magicka_b                         1/5s -> 2/6s                        Bargain Restore Magicka
