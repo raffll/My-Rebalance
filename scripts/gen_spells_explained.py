@@ -21,16 +21,73 @@ import gen_common as gc
 
 COL_VALUES = 44
 COL_ID = 80
-COL_NOTE = 118          # explanation column
+COL_NOTE = 150          # explanation column
 EFFECT_INDENT = "    "
 DIVIDER = "-" * 60
 
 MASTER_FILES = gc.MASTER_FILES
 NO_SCALE = {"FireDamage", "FrostDamage", "ShockDamage", "Poison"}
 
+TR_BUYABLE_DOC = "docs/TR-Buyable-Spells.md"
+# Recalc flag -> consideration tag shown on the NEW-spell note.
+RECALC_TAG = {"Yes": "recalc", "Cost only": "cost-only", "-": "as-is"}
+
 
 def is_td(obj: dict) -> bool:
     return (obj.get("id") or "").startswith("T_")
+
+
+def parse_new_tr_ids(path: str) -> dict[str, str]:
+    """Parse docs/TR-Buyable-Spells.md and return {id_lower: recalc_flag} for the
+    NEW buyable spells, i.e. the rows whose `In R3` cell is '-'.
+
+    The main school tables have the column shape
+    `| Spell | Mag | Dur | Cost | In R3 | Recalc | ID |`, which splits (with the
+    leading/trailing pipe empties) into >= 9 cells where cells[5] is `In R3`,
+    cells[6] is `Recalc`, cells[7] is the backticked id. We only capture rows
+    whose cells[5] == '-'. The "Missing Spells to Consider" table has a cost
+    number (not '-') in cells[5], and the Appendix rows carry no backtick, so
+    both are naturally excluded.
+    """
+    bt = chr(96)  # backtick
+    out: dict[str, str] = {}
+    with open(path, "r", encoding="utf-8") as f:
+        for ln in f:
+            s = ln.strip()
+            if not s.startswith("|") or bt not in s:
+                continue
+            cells = [c.strip() for c in s.split("|")]
+            if len(cells) < 9:
+                continue
+            if cells[5] != "-":
+                continue
+            rid = cells[7].strip(bt).lower().strip()
+            if rid:
+                out[rid] = cells[6]
+    return out
+
+
+def round_mag(v: float) -> int:
+    """Round a ranged magnitude end to the legal set: 1 or a multiple of 5.
+    Never returns 2/3/4/6/7..."""
+    r = int(round(v / 5.0)) * 5
+    if r < 5:
+        return 1 if v < 2.5 else 5
+    return r
+
+
+def effect_cost(eff: dict, base: float) -> float:
+    """Per-effect cost: (min+max)*dur*(base/40) + area*(base/40), *1.5 OnTarget."""
+    if base is None:
+        base = 0
+    mn = int(eff.get("min_magnitude", 0))
+    mx = int(eff.get("max_magnitude", 0))
+    dur = int(eff.get("duration", 0))
+    area = int(eff.get("area", 0))
+    c = (mn + mx) * dur * (base / 40.0) + area * (base / 40.0)
+    if eff.get("range") == "OnTarget":
+        c *= 1.5
+    return c
 
 
 def cost_label(obj: dict | None):
@@ -90,6 +147,14 @@ def main() -> int:
             fx_school[o["effect_id"]] = d.get("school")
 
     needed = {o["id"].lower().strip() for o in spells if o.get("id")}
+
+    # NEW buyable TR spells to interleave: ids with `In R3 = -` and their Recalc
+    # flag, parsed from TR-Buyable-Spells.md. Resolved from the masters below in
+    # the same streaming pass that loads the mod's vanilla records.
+    new_flags = parse_new_tr_ids(TR_BUYABLE_DOC) if os.path.exists(TR_BUYABLE_DOC) else {}
+    new_needed = set(new_flags) - needed      # never duplicate an In R3 = Y spell
+    new_by_id: dict[str, dict] = {}
+
     van_by_id: dict[str, dict] = {}
     fx_van_base: dict[str, float] = {}
     effect_names: dict[str, str] = {}
@@ -117,6 +182,8 @@ def main() -> int:
             k = rid.lower().strip()
             if k in needed and k not in van_by_id:
                 van_by_id[k] = o
+            if o.get("type") == "Spell" and k in new_needed and k not in new_by_id:
+                new_by_id[k] = o
 
     def ename(fx: str) -> str:
         return effect_names.get(fx, gc.split_camel(fx))
@@ -135,13 +202,30 @@ def main() -> int:
         van = gc.format_effect_values(van_e) if van_e else None
         return f"{van} -> {cur}" if (van is not None and van != cur) else cur
 
+    def nice(f: float) -> str:
+        """Round a factor to a clean 'xN' / '/N' label. Not precise by design."""
+        if f <= 0:
+            return "x0"
+        g = f if f >= 1 else 1 / f
+        # snap to a tidy value
+        for t in (1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50):
+            if abs(g - t) / t <= 0.15:
+                g = t
+                break
+        else:
+            g = round(g)
+        s = f"{g:g}"
+        return f"x{s}" if f >= 1 else f"/{s}"
+
+    def prod(mf: float, df: float) -> float:
+        return mf * df
+
     def explain(obj: dict, van: dict | None) -> str:
-        """Describe the realized intent of this spell's change, read from the
-        values. Where a known rule explains it, mark the rule; otherwise state
-        the plain decision (cost raised/reduced, rescaled, renamed)."""
+        """Terse realized-intent note, read from the values. Compensation shown
+        as mag/dur = product vs the factor the base change needs."""
         notes: list[str] = []
         if is_td(obj) and cost_label(obj) == "auto":
-            notes.append("VIOLATION: TD spell must not be AUTO_CALCULATE")
+            notes.append("TD-AUTOCALC ✗")
 
         effs = obj.get("effects") or []
         veffs = (van or {}).get("effects") or []
@@ -150,19 +234,13 @@ def main() -> int:
         fx = e0.get("magic_effect", "")
         vb, cb = fx_van_base.get(fx), fx_cur_base.get(fx)
         base_changed = vb is not None and cb is not None and vb != cb
-        auto = cost_label(obj) == "auto"
-
-        def magdur(e):
-            mn = int(e.get("min_magnitude", 0)); mx = int(e.get("max_magnitude", 0))
-            return (mn + mx) * max(int(e.get("duration", 0)), 1)
 
         def md_split(cur_e, van_e):
-            """Return (mag_factor, dur_factor) strings or None if no vanilla."""
             if not van_e:
-                return None
+                return 1.0, 1.0
             vmn = int(van_e.get("min_magnitude", 0)) + int(van_e.get("max_magnitude", 0))
             cmn = int(cur_e.get("min_magnitude", 0)) + int(cur_e.get("max_magnitude", 0))
-            vd = max(int(van_e.get("duration", 0)), 0)
+            vd = int(van_e.get("duration", 0))
             cd = int(cur_e.get("duration", 0))
             mf = (cmn / vmn) if vmn else 1.0
             df = (cd / vd) if vd else 1.0
@@ -171,90 +249,152 @@ def main() -> int:
         md_changed = v0 is not None and eff_sig(e0) != eff_sig(v0)
 
         if fx in NO_SCALE:
-            # No-scale: magnitude kept vanilla; base change rides on cost.
-            tag = "[NO-SCALE]"
-            if base_changed:
-                notes.append(f"{tag} magnitude kept vanilla; base {vb}->{cb}, cost absorbs it")
+            notes.append("no-scale")
+        elif base_changed and v0 is not None:
+            needed = vb / cb              # mag*dur must move by this to compensate
+            base_factor = cb / vb         # cost should move by this if compensating via cost
+            mf, df = md_split(e0, v0)
+            got = prod(mf, df)
+            scale = f"mag {nice(mf)}, dur {nice(df)}"
+            md_ok = needed and 0.85 <= (got / needed) <= 1.18
+            md_held = abs(mf - 1) <= 0.2 and abs(df - 1) <= 0.2
+            # Cost-based compensation: stored cost moved by the base factor while
+            # mag/dur were held (fixed-cost spells repriced instead of rescaled).
+            cv, cc = cost_label(van), cost_label(obj)
+            cost_num = isinstance(cv, (int, float)) and isinstance(cc, (int, float)) and cv
+            cost_ratio = (cc / cv) if cost_num else None
+            cost_ok = cost_ratio is not None and 0.85 <= (cost_ratio / base_factor) <= 1.18
+
+            if needed == 0:
+                notes.append(scale)
+            elif md_ok:
+                notes.append(f"{scale} = {nice(got)} compensated ✓")
+            elif md_held and cost_ok:
+                notes.append(f"mag/dur held; cost {nice(cost_ratio)} compensated via cost ✓")
             else:
-                notes.append(f"{tag} magnitude kept vanilla (rounding only)")
+                notes.append(f"{scale} = {nice(got)} ✗ (expected {nice(needed)})")
         elif base_changed:
-            bf = cb / vb
-            # Did effective cost (mag*dur*base) stay, drop, or rise?
-            if v0 is not None:
-                vmd, cmd = magdur(v0), magdur(e0)
-                eff_v = vmd * vb
-                eff_c = cmd * cb
-                sp = md_split(e0, v0)
-                split = ""
-                if sp:
-                    mf, df = sp
-                    bits = []
-                    if abs(mf - 1) > 0.01:
-                        bits.append(f"mag {ratio_word(mf)}")
-                    if abs(df - 1) > 0.01:
-                        bits.append(f"dur {ratio_word(df)}")
-                    split = (" via " + " & ".join(bits)) if bits else " (mag/dur unchanged)"
-                if eff_v == 0:
-                    notes.append(f"base {ratio_word(bf)}{split}")
-                else:
-                    r = eff_c / eff_v
-                    if 0.85 <= r <= 1.18:
-                        notes.append(f"[COMPENSATED] base {ratio_word(bf)}{split}; effective cost kept ~same")
-                    elif r < 0.85:
-                        notes.append(f"[COST REDUCED] base {ratio_word(bf)}{split}; effective cost {ratio_word(r)} (intended cheaper)")
-                    else:
-                        notes.append(f"[COST RAISED] base {ratio_word(bf)}{split}; effective cost {ratio_word(r)} (intended pricier)")
-            else:
-                notes.append(f"base {ratio_word(bf)} changed")
+            notes.append(f"base {nice(cb / vb)}")
         elif md_changed:
-            # No base-cost change — pure rebalance of mag/dur.
-            sp = md_split(e0, v0)
-            bits = []
-            if sp:
-                mf, df = sp
-                if abs(mf - 1) > 0.01:
-                    bits.append(f"mag {ratio_word(mf)}")
-                if abs(df - 1) > 0.01:
-                    bits.append(f"dur {ratio_word(df)}")
-            notes.append("[RESCALED] " + (", ".join(bits) if bits else "magnitude/duration") +
-                         " (no base-cost change)")
+            mf, df = md_split(e0, v0)
+            # A factor within ~20% of 1 is just a rounding nudge, not a rescale.
+            mag_real = abs(mf - 1) > 0.2
+            dur_real = abs(df - 1) > 0.2
+            bits = [b for b in ((f"mag {nice(mf)}" if mag_real else ""),
+                                (f"dur {nice(df)}" if dur_real else "")) if b]
+            if bits:
+                notes.append("rescaled " + " ".join(bits))
+            else:
+                notes.append("rounded")
 
-        if auto and not any(n.startswith("[NO-SCALE]") for n in notes):
-            notes.append("auto-calc cost")
-
-        # Rounding note (first offending ranged magnitude).
+        # Rounding flag.
         for e in effs:
             mn, mx = int(e.get("min_magnitude", 0)), int(e.get("max_magnitude", 0))
             if mn != mx and any(v != 1 and v % 5 != 0 for v in (mn, mx)):
-                notes.append(f"[ROUNDING] {mn}-{mx} has a non-1/5 value")
+                notes.append(f"rounding ✗ ({mn}-{mx})")
                 break
 
-        # Rename note.
         vn = (van or {}).get("name") if van else None
         if vn and vn != (obj.get("name") or ""):
             notes.append("renamed")
 
-        # Cost-only change.
         if not notes:
-            if cost_label(obj) != cost_label(van):
-                notes.append("cost recomputed")
-            else:
-                notes.append("changed")
+            notes.append("cost" if cost_label(obj) != cost_label(van) else "changed")
         return "; ".join(notes)
 
-    def emit_record(obj: dict, van: dict | None) -> list[str]:
+    def spell_cost(obj: dict) -> float:
+        """Sum effect_cost over all effects using current base (fallback vanilla)."""
+        total = 0.0
+        for e in obj.get("effects") or []:
+            fx = e.get("magic_effect", "") or ""
+            cb = fx_cur_base.get(fx)
+            vb = fx_van_base.get(fx)
+            base = cb if cb is not None else (vb if vb is not None else 0)
+            total += effect_cost(e, base)
+        return total
+
+    def propose_note(obj: dict, recalc_flag: str) -> str:
+        """Build the 'PROPOSE: ...' note for a NEW buyable spell, per
+        docs/Spell-Rules-Reference.md. Operates on the first (dominant) effect for
+        the mag/dur proposition; cost always sums all effects."""
+        effs = obj.get("effects") or []
+        e0 = effs[0] if effs else {}
+        fx = e0.get("magic_effect", "") or ""
+        vb = fx_van_base.get(fx)
+        cb = fx_cur_base.get(fx)
+        if cb is None:                      # effect untouched by the mod
+            cb = vb
+        base_changed = (vb is not None and cb is not None and vb != cb)
+
+        # A local copy of the first effect that may be rescaled for the proposal,
+        # then rendered through the shared value formatter.
+        prop = dict(e0)
+
+        def render_vals(d: dict) -> str:
+            return gc.format_effect_values(d)
+
+        extra = f" +{len(effs) - 1} effects" if len(effs) > 1 else ""
+        tag = f" [{RECALC_TAG.get(recalc_flag, 'as-is')}]"
+
+        if fx in NO_SCALE:
+            # Keep vanilla mag/dur; base change rides on cost only.
+            cost = spell_cost(obj)
+            note = f"PROPOSE: keep mag/dur, cost -> {cost:g} (no-scale)"
+            mn, mx = int(e0.get("min_magnitude", 0)), int(e0.get("max_magnitude", 0))
+            if mn != mx and any(v != 1 and v % 5 != 0 for v in (mn, mx)):
+                note += f" round {round_mag(mn)}-{round_mag(mx)}"
+            return note + extra + tag
+
+        if base_changed:
+            X = vb / cb                     # mag*dur must move by this factor
+            mn, mx = int(e0.get("min_magnitude", 0)), int(e0.get("max_magnitude", 0))
+            dur = int(e0.get("duration", 0))
+            uses_dur = gc.effect_uses_duration(fx)
+            if uses_dur and dur > 0:
+                # Default split: put the whole factor on duration (exempt from
+                # rounding), magnitude held. Keeps magnitudes legal by construction.
+                prop["duration"] = max(1, int(round(dur * X)))
+                split_desc = f"dur {nice(X)}"
+            else:
+                # Magnitude-only (or dur==0): scale the ranged magnitude, round.
+                prop["min_magnitude"] = round_mag(mn * X)
+                prop["max_magnitude"] = round_mag(mx * X)
+                split_desc = f"mag {nice(X)}"
+            prop_obj = dict(obj)
+            prop_obj["effects"] = [prop] + list(effs[1:])
+            cost = spell_cost(prop_obj)
+            note = (f"PROPOSE: {split_desc} (base {nice(cb / vb)} compensation) "
+                    f"-> {render_vals(prop)}, cost {cost:g}")
+            return note + extra + tag
+
+        # No base-cost change: import as-is. Confirm cost.
+        cost = spell_cost(obj)
+        stored = cost_label(obj)
+        if isinstance(stored, (int, float)) and abs(stored - cost) < 0.5:
+            note = f"PROPOSE: import as-is (no base-cost change), cost ok"
+        else:
+            note = f"PROPOSE: import as-is (no base-cost change), cost {cost:g}"
+        return note + extra + tag
+
+    def emit_record(obj: dict, van: dict | None, new: bool = False,
+                    recalc_flag: str | None = None) -> list[str]:
         effs = obj.get("effects") or []
         veffs = (van or {}).get("effects") or []
-        rows = [value_pair(effs[i], veffs[i] if i < len(veffs) else None)
-                for i in range(len(effs))]
+        if new:
+            rows = [gc.format_effect_values(effs[i]) for i in range(len(effs))]
+        else:
+            rows = [value_pair(effs[i], veffs[i] if i < len(veffs) else None)
+                    for i in range(len(effs))]
         cur_name = obj.get("name") or "(unnamed)"
         vn = van.get("name") if van else None
         name_seg = f"{vn} -> {cur_name}" if (vn and vn != cur_name) else cur_name
+        if new:
+            name_seg = f"{cur_name} [NEW]"
         cv, vv = cost_label(obj), cost_label(van)
         cost = ""
-        if cv is not None and vv is not None and cv != vv:
+        if not new and cv is not None and vv is not None and cv != vv:
             cost = f"[{vv} -> {cv}]"
-        note = explain(obj, van)
+        note = propose_note(obj, recalc_flag or "-") if new else explain(obj, van)
         id_col = obj.get("id") or ""
 
         if len(rows) <= 1:
@@ -279,6 +419,10 @@ def main() -> int:
         van = van_by_id.get((obj.get("id") or "").lower().strip())
         ve = (van or {}).get("effects") or []
         if not ve:
+            # NEW spells have no mod-vanilla pairing: sort on the record's own
+            # first effect so they interleave with mod spells.
+            ve = obj.get("effects") or []
+        if not ve:
             return (1, 0, 0, obj.get("name", ""))
         e0 = ve[0]
         fx = e0.get("magic_effect", "") or ""
@@ -289,6 +433,7 @@ def main() -> int:
         return (0, dur, dur, obj.get("name", ""))
 
     # Bucket CHANGED spells only, by school -> effect.
+    # Entries are 4-tuples (obj, van_or_None, is_new, recalc_flag_or_None).
     groups: dict[str, dict[str, list]] = {}
     changed_count = 0
     for o in spells:
@@ -301,14 +446,34 @@ def main() -> int:
             continue
         fx = effs[0].get("magic_effect")
         school = fx_school.get(fx) or "Misc"
-        groups.setdefault(school, {}).setdefault(fx, []).append((o, van))
+        groups.setdefault(school, {}).setdefault(fx, []).append((o, van, False, None))
+
+    # Merge NEW buyable TR spells into the same school -> effect buckets.
+    new_count = 0
+    r3_ids = needed
+    for k, o in new_by_id.items():
+        if k in r3_ids:                      # defensive: never duplicate In R3 = Y
+            continue
+        effs = o.get("effects") or []
+        if not effs:
+            continue
+        fx = effs[0].get("magic_effect")
+        school = fx_school.get(fx) or "Misc"
+        groups.setdefault(school, {}).setdefault(fx, []).append(
+            (o, None, True, new_flags.get(k, "-")))
+        new_count += 1
 
     out: list[str] = []
     out.append("# Remastered Rebalance Redux - Spells (Explained)")
     out.append("")
     out.append("Generated companion to `R3 - Spells.md`. Same layout, with an extra")
     out.append("explanation column noting which rule produced each change. Only spells")
-    out.append("that differ from vanilla are listed. Rules: see")
+    out.append("that differ from vanilla are listed. Rows tagged `[NEW]` are")
+    out.append("player-buyable Tamriel Rebuilt / Tamriel Data spells that are NOT yet")
+    out.append("in the mod; they are not current mod changes but a proposed import")
+    out.append("rebalance, shown with a `PROPOSE:` note giving the values and cost they")
+    out.append("would get if added, computed per `docs/Spell-Rules-Reference.md`.")
+    out.append("Non-`[NEW]` rows are unchanged mod spells. Rules: see")
     out.append("`docs/Spell-Rules-Reference.md`. Do not hand-edit; regenerate with")
     out.append("`python scripts/gen_spells_explained.py`.")
     out.append("")
@@ -338,8 +503,8 @@ def main() -> int:
                 if title:
                     out.append(f"*{title}*")
                 out.append("```")
-                for o, van in sorted(items, key=lambda t: sort_key(t[0])):
-                    out.extend(emit_record(o, van))
+                for o, van, is_new, recalc in sorted(items, key=lambda t: sort_key(t[0])):
+                    out.extend(emit_record(o, van, new=is_new, recalc_flag=recalc))
                 out.append("```")
 
             block(None, [t for t in recs if not is_td(t[0])])
@@ -354,8 +519,14 @@ def main() -> int:
     with open(args.out, "w", encoding="utf-8", newline="\r\n") as f:
         f.write("\n".join(out))
 
+    unresolved = sorted(new_needed - set(new_by_id))
     print(f"Wrote {args.out}")
     print(f"  changed spells: {changed_count} of {len(spells)}")
+    print(f"  NEW TR spells added: {new_count}")
+    print(f"  NEW ids unresolved: {len(unresolved)}")
+    if unresolved:
+        for u in unresolved:
+            print(f"    - {u}")
     print(f"  schools: {len(groups)}")
     return 0
 
