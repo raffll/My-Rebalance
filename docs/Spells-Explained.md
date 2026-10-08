@@ -4,9 +4,11 @@ Generated companion to `R3 - Spells.md`. Same layout, with an extra
 explanation column noting which rule produced each change. Only spells
 that differ from vanilla are listed. Rows tagged `[NEW]` are
 player-buyable Tamriel Rebuilt / Tamriel Data spells that are NOT yet
-in the mod; they are not current mod changes but a proposed import
-rebalance, shown with a `PROPOSE:` note giving the values and cost they
-would get if added, computed per `docs/Spell-Rules-Reference.md`.
+in the mod and that need rebalancing before import (a scalable effect's
+base cost changed, or a no-scale effect needs a cost/rounding fix);
+spells needing no change are omitted. Each is shown with a `PROPOSE:`
+note giving the values and cost it would get if added, computed per
+`docs/Spell-Rules-Reference.md`.
 Non-`[NEW]` rows are unchanged mod spells. Rules: see
 `docs/Spell-Rules-Reference.md`. Do not hand-edit; regenerate with
 `python scripts/gen_spells_explained.py`.
@@ -95,31 +97,6 @@ strong frost shield                         12/30s -> 15/30s                    
 
 ------------------------------------------------------------
 
-### Jump
-
-```
-jump                                        5/10s                               Jump [NEW]                                                            PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
-tinur's hoptoad                             20/10s                              Tinur's Hoptoad [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Alt_Lightness                         10-30/3s                            Waft of Lightness [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 9 [as-is]
-```
-
-------------------------------------------------------------
-
-### Levitate
-
-```
-wild levitate                               1-50/30s                            Wild Levitate [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 114.75 [as-is]
-levitate                                    10/30s                              Levitate [NEW]                                                        PROPOSE: import as-is (no base-cost change), cost 45 [as-is]
-strong levitate                             20/10s                              Strong Levitate [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-great levitate                              30/10s                              Great Levitate [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 45 [as-is]
-```
-
-------------------------------------------------------------
-
 ### Lightning Shield
 
 ```
@@ -191,20 +168,6 @@ T_Com_Alt_ForceWall                         50/5s -> 100/5s                     
 
 ------------------------------------------------------------
 
-### SlowFall
-
-```
-slowfall                                    30/10s                              Slowfall [NEW]                                                        PROPOSE: import as-is (no base-cost change), cost 45 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Alt_FuchonGentleDescent               10/20s                              Fuchon Cire's Gentle Descent [NEW]                                    PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-T_Com_Alt_Slowfalling                       10-30/3s                            Slowfalling [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
 ### Swift Swim
 
 ```
@@ -220,382 +183,6 @@ TR_m7_AI_Savi_Swim                          40/15s                              
 *Tamriel Data*
 ```
 T_Com_Alt_DreughsGrace                      30/20s -> 120/20s                   Dreugh's Grace                                                        mag x4, dur x1 = x4 compensated ✓
-```
-
-------------------------------------------------------------
-
-### Water Breathing
-
-```
-water breathing                             30s                                 Water Breathing [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 4.5 [as-is]
-vivec's kiss                                100s                                Vivec's Kiss [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Imp_Alt_VivecsKiss                        100s                                St. Cirrha's Song [NEW]                                               PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Water Walking
-
-```
-water walking                               60s                                 Water Walking [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 9 [as-is]
-```
-
-------------------------------------------------------------
-
-## Conjuration
-
-------------------------------------------------------------
-
-### Bound Battle Axe
-
-```
-bound battle-axe                            60s                                 Bound Battle-Axe [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_BoundWarAxe                       60s                                 Bound Battle Axe [NEW]                                                PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Boots
-
-```
-bound boots                                 60s                                 Bound Boots [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_BoundGreaves                      60s                                 Bound Boots [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Cuirass
-
-```
-bound cuirass                               60s                                 Bound Cuirass [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Dagger
-
-```
-bound dagger                                60s                                 Bound Dagger [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_BoundThrowingKnives               30s                                 Lesser Bound Dagger [NEW]                                             PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Gloves
-
-```
-bound gauntlets                             60s                                 Bound Gauntlets [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_BoundPauldron                     60s                                 Bound Gauntlets [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Helm
-
-```
-bound helm                                  60s                                 Bound Helm [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Longbow
-
-```
-bound longbow                               60s                                 Bound Longbow [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Longsword
-
-```
-bound longsword                             60s                                 Bound Longsword [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_BoundGreatsword                   60s                                 Bound Longsword [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Cnj_DaedricWeapon                     120s                                Daedric Weapon [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Mace
-
-```
-bound mace                                  60s                                 Bound Mace [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_BoundWarhammer                    60s                                 Bound Mace [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Shield
-
-```
-bound shield                                60s                                 Bound Shield [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-------------------------------------------------------------
-
-### Bound Spear
-
-```
-bound spear                                 60s                                 Bound Spear [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-------------------------------------------------------------
-
-### Command Creature
-
-```
-command creature                            5/30s                               Command Creature [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 168.75 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_CallOfTheBeasts                   10/10s                              Call of the Beasts [NEW]                                              PROPOSE: import as-is (no base-cost change), cost 75 [as-is]
-```
-
-------------------------------------------------------------
-
-### Command Humanoid
-
-```
-command humanoid                            5/30s                               Command Humanoid [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 168.75 [as-is]
-commanding touch                            5/10s                               Commanding Touch [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_Assistance                        15/10s                              Assistance [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 112.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Bonelord
-
-```
-summon bonelord                             60s                                 Summon Bonelord [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 75 [as-is]
-```
-
-*Tamriel Data*
-```
-T_De_Cnj_SummonGreaterBonelord              130s                                Greater Summon Bonelord [NEW]                                         PROPOSE: import as-is (no base-cost change), cost 162.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Bonewalker
-
-```
-summon least bonewalker                     60s                                 Summon Least Bonewalker [NEW]                                         PROPOSE: import as-is (no base-cost change), cost 39 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonHellHound                   30s                                 Lesser Summon Bonewalker [NEW]                                        PROPOSE: import as-is (no base-cost change), cost 19.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Clannfear
-
-```
-summon clanfear                             60s                                 Summon Clannfear [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 66 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonLesserClannfear             50s                                 Lesser Summon Clannfear [NEW]                                         PROPOSE: import as-is (no base-cost change), cost 55 [as-is]
-T_Com_Cnj_SummonOgrim                       90s                                 Greater Summon Clannfear [NEW]                                        PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Daedroth
-
-```
-summon daedroth                             60s                                 Summon Daedroth [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 96 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonMorphoid                    40s                                 Lesser Summon Daedroth [NEW]                                          PROPOSE: import as-is (no base-cost change), cost 64 [as-is]
-T_Com_Cnj_SummonSpiderDaedra                80s                                 Greater Summon Daedroth [NEW]                                         PROPOSE: import as-is (no base-cost change), cost 128 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Dremora
-
-```
-summon dremora                              60s                                 Summon Dremora [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 84 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonDremoraCaster               65s                                 Summon Dremora [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 91 [as-is]
-T_Com_Cnj_SummonDremoraArcher               70s                                 Summon Dremora [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Flame Atronach
-
-```
-summon flame atronach                       60s                                 Summon Flame Atronach [NEW]                                           PROPOSE: import as-is (no base-cost change), cost 69 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Frost Atronach
-
-```
-summon frost atronach                       60s                                 Summon Frost Atronach [NEW]                                           PROPOSE: import as-is (no base-cost change), cost 81 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Ghost
-
-```
-summon ancestral ghost                      60s                                 Summon Ancestral Ghost [NEW]                                          PROPOSE: import as-is (no base-cost change), cost 21 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Cyr_Cnj_SummonGhost                       60s                                 Summon Ancestral Ghost [NEW]                                          PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Cnj_BloodSpirit                       120s                                Blood Spirit [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Cyr_Cnj_SummonWraith                      430s                                Greater Summon Ancestral Ghost [NEW]                                  PROPOSE: import as-is (no base-cost change), cost 150.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Golden Saint
-
-```
-summon golden saint                         60s                                 Summon Golden Saint [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 165 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonNocturnal                   65s                                 Summon Golden Saint [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 178.75 [as-is]
-T_Com_Cnj_SummonGuardian                    75s                                 Summon Golden Saint [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 206.25 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Greater Bonewalker
-
-```
-summon greater bonewalker                   60s                                 Summon Greater Bonewalker [NEW]                                       PROPOSE: import as-is (no base-cost change), cost 45 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Hunger
-
-```
-summon hunger                               60s                                 Summon Hunger [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 87 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Scamp
-
-```
-summon scamp                                60s                                 Summon Scamp [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 36 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonHerne                       90s                                 Greater Summon Scamp [NEW]                                            PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Cnj_SummonVermai                      145s                                Greater Summon Scamp [NEW]                                            PROPOSE: import as-is (no base-cost change), cost 87 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Skeleton
-
-```
-summon skeletal minion                      60s                                 Summon Skeletal Minion [NEW]                                          PROPOSE: import as-is (no base-cost change), cost 39 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Cyr_Cnj_SummonBarrowguard                 50s                                 Lesser Summon Skeleton [NEW]                                          PROPOSE: import as-is (no base-cost change), cost 32.5 [as-is]
-T_Com_Cnj_SummonSkeletonChamp               150s                                Greater Summon Skeleton [NEW]                                         PROPOSE: import as-is (no base-cost change), cost 97.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Storm Atronach
-
-```
-summon storm atronach                       60s                                 Summon Storm Atronach [NEW]                                           PROPOSE: import as-is (no base-cost change), cost 114 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonStormMonarch                95s                                 Greater Summon Storm Atronach [NEW]                                   PROPOSE: import as-is (no base-cost change), cost 180.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Summon Twilight
-
-```
-summon winged twilight                      60s                                 Summon Winged Twilight [NEW]                                          PROPOSE: import as-is (no base-cost change), cost 156 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_SummonSeducer                     60s                                 Summon Winged Twilight [NEW]                                          PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Cnj_SummonSeducerDark                 85s                                 Summon Winged Twilight [NEW]                                          PROPOSE: import as-is (no base-cost change), cost 221 [as-is]
-```
-
-------------------------------------------------------------
-
-### Turn Undead
-
-```
-holy word                                   5/60s                               Holy Word [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 4.5 [as-is]
-holy touch                                  10/60s                              Holy Touch [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-saintly touch                               25/60s                              Saintly Touch [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-saintly word                                25/60s                              Saintly Word [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 22.5 [as-is]
-turn undead                                 50/10s                              Turn Undead [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-TR_m7_RirayneaTurn                          70/20s                              Scatter the Dead [NEW]                                                PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Cnj_DeathHowl                                                             Death Howl [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost ok +1 effects [as-is]
-    Turn Undead                             10/20s
-    Damage Health                           2-10/10s
 ```
 
 ------------------------------------------------------------
@@ -661,7 +248,6 @@ wrath of odros                                                                  
 ### Damage Health
 
 ```
-grave curse: health                         1-4/10s                             Grave Curse: Health [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
 five fingers of pain                                                            Five Fingers of Pain [NEW]                                            PROPOSE: import as-is (no base-cost change), cost 6.6 +4 effects [cost-only]
     Damage Health                           3-5/1s
     Fire Damage                             3-5/1s
@@ -685,8 +271,6 @@ firefist                                                                        
 frostfist                                                                       Frostfist [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 13.6 +1 effects [cost-only]
     Damage Health                           10-24/1s
     Frost Damage                            10-24/1s
-heartbite                                   10-50/1s                            Heartbite [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 12 [as-is]
-daedric bite                                50/1s                               Daedric Bite [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
 ```
 
 *Tamriel Data*
@@ -699,9 +283,6 @@ T_De_Des_IndGuardMothersIre                                                     
     Fire Damage                             2/15s
     Damage Fatigue                          20/1s
     Drain Attribute: Strength               15/10s
-T_Com_Des_Revelations                                                           Din of Revelations [NEW]                                              PROPOSE: import as-is (no base-cost change), cost 290 +1 effects [as-is]
-    Damage Health                           20/30s
-    Restore Health                          20/10s
 ```
 
 ------------------------------------------------------------
@@ -778,23 +359,11 @@ T_Rea_Des_SteelEater                        5-30/3s -> 25-150/3s                
 ### Drain Attribute
 
 ```
-wild strain                                 1-20/3s                             Wild Strain [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 2.3625 [as-is]
-grave curse: strength                       2-4/60s                             Grave Curse: Strength [NEW]                                           PROPOSE: import as-is (no base-cost change), cost 13.5 [as-is]
 Ghost Curse                                                                     Ghost Curse [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 12.7 +2 effects [recalc]
     Drain Attribute: Endurance              5/30s
     Drain Fatigue                           10/30s
     Damage Health                           1-10/1s
-distracting touch                           5-20/60s                            Distracting Touch [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-distraction                                 5-20/30s                            Distraction [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 28.125 [as-is]
-enervate                                    5-20/30s                            Enervate [NEW]                                                        PROPOSE: import as-is (no base-cost change), cost 28.125 [as-is]
-temptation                                  5-20/30s                            Temptation [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 28.125 [as-is]
-torpor                                      5-20/30s                            Torpor [NEW]                                                          PROPOSE: import as-is (no base-cost change), cost 28.125 [as-is]
-weakness                                    5-20/30s                            Weakness [NEW]                                                        PROPOSE: import as-is (no base-cost change), cost 28.125 [as-is]
-wild clumsiness                             5-20/60s                            Wild Clumsiness [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-wild distraction                            5-20/60s                            Wild Distraction [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-wild torpor                                 5-20/30s                            Wild Torpor [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 28.125 [as-is]
 blood despair                               7-14/60s -> 5-15/60s                Blood Despair                                                         rounded
-strength leech                              20/30s                              Strength Leech [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -826,12 +395,10 @@ T_Com_Des_Duck                              200/2s -> 2000/2s                   
 ### Drain Health
 
 ```
-wounding touch                              1-10/3s                             Wounding Touch [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 3.3 [as-is]
 ash feast                                   3/30s -> 30/3s                      Ash Feast                                                             rescaled mag x10 dur /10
 drain blood                                                                     Drain Blood [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 33 +1 effects [recalc]
     Drain Health                            5/30s
     Drain Magicka                           5/30s
-sphere of negation                          15-26/1s                            Sphere of Negation [NEW]                                              PROPOSE: import as-is (no base-cost change), cost 7.65 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -857,26 +424,6 @@ T_Rea_Mys_SoulWither                                                            
     Drain Magicka                           1/30s -> 10/30s
     Soul Trap                               1/30s
 T_Com_Des_RageOfMagnus                      60/10s -> 300/20s                   Rage of Magnus                                                        mag x5, dur x2 = x10 compensated ✓
-```
-
-------------------------------------------------------------
-
-### Drain Skill
-
-```
-drain alchemy                               5-20/60s                            Drain Alchemy [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain alteration                            5-20/60s                            Drain Alteration [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain conjuration                           5-20/60s                            Drain Conjuration [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain destruction                           5-20/60s                            Drain Destruction [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain enchant                               5-20/60s                            Drain Enchant [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain illusion                              5-20/60s                            Drain Illusion [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain long blade                            5-20/60s                            Drain Long Blade [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain mysticism                             5-20/60s                            Drain Mysticism [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain restoration                           5-20/60s                            Drain Restoration [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-drain spear                                 5-20/60s                            Drain Spear [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-scourge blade                                                                   Scourge Blade [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 56.25 +1 effects [as-is]
-    Drain Skill: Long Blade                 5-20/30s
-    Drain Skill: Short Blade                5-20/30s
 ```
 
 ------------------------------------------------------------
@@ -1023,10 +570,6 @@ T_Com_Des_WindsStorm                        30-75/2s                            
 
 ### Weakness to Common Disease
 
-```
-weakness to common disease                  1-20/10s                            Weakness to Common Disease [NEW]                                      PROPOSE: import as-is (no base-cost change), cost 15.75 [as-is]
-```
-
 *Tamriel Data*
 ```
 T_Com_Des_CauseDisease                                                          Cause Disease [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 88.8 +4 effects [recalc]
@@ -1043,7 +586,6 @@ T_Com_Des_CauseDisease                                                          
 
 ```
 dire weakness to fire                       2-60/10s -> 1-60/10s                Dire Weakness to Fire                                                 rounded
-weakness to fire                            10/5s                               Weakness to Fire [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1052,7 +594,6 @@ weakness to fire                            10/5s                               
 
 ```
 dire weakness to frost                      2-60/10s -> 1-60/10s                Dire Weakness to Frost                                                rounded
-weakness to frost                           10/5s                               Weakness to Frost [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1061,7 +602,6 @@ weakness to frost                           10/5s                               
 
 ```
 dire weakness to magicka                    2-60/10s -> 1-60/10s                Dire Weakness to Magicka                                              rounded
-weakness to magicka                         10/5s                               Weakness to Magicka [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1070,7 +610,6 @@ weakness to magicka                         10/5s                               
 
 ```
 dire weakness to poison                     2-60/10s -> 1-60/10s                Dire Weakness to Poison                                               rounded
-weakness to poison                          10/5s                               Weakness to Poison [NEW]                                              PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1079,7 +618,6 @@ weakness to poison                          10/5s                               
 
 ```
 dire weakness to shock                      2-60/10s -> 1-60/10s                Dire Weakness to Shock                                                rounded
-weakness to shock                           10/5s                               Weakness to Shock [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1093,39 +631,9 @@ weakness to shock                           10/5s                               
 ```
 crying eye                                  1-10/5s -> 1-10/20s                 Crying Eye                                                            rescaled dur x4
 erelvam's wild sty                          1-40/10s -> 1-40/20s                Erelvam's Wild Sty                                                    rescaled dur x2
-alad's caliginy                             10-30/30s                           Alad's Caliginy [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-blind                                       20/10s                              Blind [NEW]                                                           PROPOSE: import as-is (no base-cost change), cost 10 [as-is]
 heavy_eyes_unique                                                               Harthoon's Heavy Eyes                                                 changed
     Blind                                   100/10s
     Burden                                  100/10s -> 1000/10s
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_Blindfold                         100/15s                             Blindfold [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 75 [as-is]
-```
-
-------------------------------------------------------------
-
-### Calm Creature
-
-```
-calm creature                               30/10s                              Calm Creature [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 22.5 [as-is]
-soothe the savage beast                     30/10s                              Soothe the Savage Beast [NEW]                                         PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_SereneNature                      10/30s                              Serene Nature [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-```
-
-------------------------------------------------------------
-
-### Calm Humanoid
-
-```
-calm humanoid                               30/10s                              Calm Humanoid [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 22.5 [as-is]
-calming touch                               30/10s                              Calming Touch [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1134,19 +642,6 @@ calming touch                               30/10s                              
 
 ```
 shadow form                                 6-15/30s -> 12-30/30s               Shadow Form                                                           rescaled mag x2; rounding ✗ (12-30)
-chameleon                                   10/30s                              Chameleon [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-golanar's eye-maze                          10-40/10s                           Golanar's Eye-Maze [NEW]                                              PROPOSE: import as-is (no base-cost change), cost 12.5 [as-is]
-shadow weave                                                                    Shadow Weave [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 20 +1 effects [as-is]
-    Chameleon                               20/10s
-    Sanctuary                               20/10s
-shadowmask                                  40-70/30s                           Shadowmask [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 82.5 [as-is]
-TR_m3_DravaynChameleon                      100/20s                             Dravayn's Obscured Visage [NEW]                                       PROPOSE: import as-is (no base-cost change), cost 100 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_DistractCreature                  7/30s                               Lesser Chameleon [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 10.5 [as-is]
-T_Com_Ilu_DistractHumanoid                  12-17/30s                           Chameleon [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost ok [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1168,82 +663,10 @@ T_Com_Ilu_AlluringSpeech                    15-20/20s [80 -> 40]                
 
 ------------------------------------------------------------
 
-### Demoralize Creature
-
-```
-demoralize beast                            5/10s                               Demoralize Beast [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 3.75 [as-is]
-demoralize creature                         5/10s                               Demoralize Creature [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 3.75 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_Fear                              12/30s                              Fear [NEW]                                                            PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Ilu_MonstrousVision                   30/15s                              Monstrous Vision [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 22.5 [as-is]
-T_Com_Ilu_Skein                                                                 Skein of Convulsion [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 150 +1 effects [as-is]
-    Demoralize Creature                     50/30s
-    Demoralize Humanoid                     50/30s
-```
-
-------------------------------------------------------------
-
-### Frenzy Creature
-
-```
-frenzy creature                             5/10s                               Frenzy Creature [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 3.75 [as-is]
-```
-
-------------------------------------------------------------
-
-### Frenzy Humanoid
-
-```
-frenzy humanoid                             5/10s                               Frenzy Humanoid [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 3.75 [as-is]
-frenzying touch                             5/10s                               Frenzying Touch [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 2.5 [as-is]
-```
-
-------------------------------------------------------------
-
 ### Invisibility
 
 ```
-brevusa's averted eyes                      10s                                 Brevusa's Averted Eyes [NEW]                                          PROPOSE: import as-is (no base-cost change), cost 10 [as-is]
-hide                                        30s                                 Hide [NEW]                                                            PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
 invisibility                                30s -> 60s                          Invisibility                                                          rescaled dur x2
-concealment                                 90s                                 Concealment [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 90 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_Ethereal                          15s                                 Lesser Invisibility [NEW]                                             PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Light
-
-```
-light                                       20/30s                              Light [NEW]                                                           PROPOSE: import as-is (no base-cost change), cost 9.225 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_AzurasLight                       20/120s                             Azura's Light [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 24 [as-is]
-```
-
-------------------------------------------------------------
-
-### Night Eye
-
-```
-night-eye                                   20/30s                              Night-Eye [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 6 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_DaedraHuntersEye                                                      Hunter's Eye [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 54 +1 effects [as-is]
-    Night Eye                               15/60s
-    Chameleon                               15/60s
-T_Com_Ilu_OrcsEye                           30/30s                              Orc's Eye [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 9 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1275,51 +698,11 @@ T_Com_Ilu_LivingStatue                      20s [30 -> 60]                      
 
 ------------------------------------------------------------
 
-### Rally Creature
-
-```
-rally beast                                 5/30s                               Rally Beast [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 2.25 [as-is]
-rally creature                              5/30s                               Rally Creature [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 2.25 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_Confusion                                                             Confusion [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost ok +5 effects [as-is]
-    Rally Creature                          1-10/20s
-    Demoralize Creature                     1-10/20s
-    Rally Humanoid                          1-10/20s
-    Demoralize Humanoid                     1-10/20s
-    Frenzy Creature                         1-10/20s
-    Frenzy Humanoid                         1-10/20s
-```
-
-------------------------------------------------------------
-
-### Rally Humanoid
-
-```
-rally humanoid                              5/30s                               Rally Humanoid [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 2.25 [as-is]
-rallying touch                              5/30s                               Rallying Touch [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 1.5 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_Steadfast                         30/30s                              Steadfast [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 9.1 [as-is]
-```
-
-------------------------------------------------------------
-
 ### Sanctuary
 
 ```
 sotha's grace                               1-20/5s -> 1-20/10s                 Sotha's Grace                                                         rescaled dur x2
 father's hand                               1-40/5s -> 1-40/10s                 Father's Hand                                                         rescaled dur x2
-sanctuary                                   10/30s                              Sanctuary [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_Etherealness                      100/10s                             Etherealness [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost ok [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1358,22 +741,6 @@ T_Com_Ilu_Voices                            50/20s -> 50/60s [100 -> 50]        
 ### Absorb Attribute
 
 ```
-absorb agility                              5-20/30s                            Absorb Agility [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb agility [ranged]                     5-20/30s                            Absorb Agility [Ranged] [NEW]                                         PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-absorb endurance                            5-20/30s                            Absorb Endurance [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb endurance [ranged]                   5-20/30s                            Absorb Endurance [Ranged] [NEW]                                       PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-absorb intelligence                         5-20/30s                            Absorb Intelligence [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb luck                                 5-20/30s                            Absorb Luck [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb luck [ranged]                        5-20/30s                            Absorb Luck [Ranged] [NEW]                                            PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-absorb personality                          5-20/30s                            Absorb Personality [NEW]                                              PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb personality [ranged]                 5-20/30s                            Absorb Personality [Ranged] [NEW]                                     PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-absorb speed                                5-20/30s                            Absorb Speed [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb speed [ranged]                       5-20/30s                            Absorb Speed [Ranged] [NEW]                                           PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-absorb strength                             5-20/30s                            Absorb Strength [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb strength [ranged]                    5-20/30s                            Absorb Strength [Ranged] [NEW]                                        PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-absorb willpower                            5-20/30s                            Absorb Willpower [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-absorb willpower [ranged]                   5-20/30s                            Absorb Willpower [Ranged] [NEW]                                       PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-crimson despair                             5-20/60s                            Crimson Despair [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost 112.5 [as-is]
 absorb intelligence [ranged]                5-51/30s -> 5-50/30s                Absorb Intelligence [Ranged]                                          rounded
 ```
 
@@ -1417,28 +784,6 @@ TR_m7_AmataryaAbsorb                                                            
 *Tamriel Data*
 ```
 T_Com_Mys_Lifesteal                         40/1s [24 -> 48]                    Lifesteal                                                             mag/dur held; cost x2 compensated via cost ✓
-```
-
-------------------------------------------------------------
-
-### Almsivi Intervention
-
-```
-almsivi intervention                        -                                   Almsivi Intervention [NEW]                                            PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Demoralize Humanoid
-
-```
-demoralize humanoid                         5/10s                               Demoralize Humanoid [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 3.75 [as-is]
-demoralizing touch                          5/10s                               Demoralizing Touch [NEW]                                              PROPOSE: import as-is (no base-cost change), cost 2.5 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Ilu_OnTheMove                         40-60/10s                           On the Move [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 25 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1493,48 +838,6 @@ T_Com_Mys_DetectInvisibility                100/15s                             
 
 ------------------------------------------------------------
 
-### Dispel
-
-```
-touch dispel                                5                                   Touch Dispel [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 1.25 [as-is]
-almalexia's grace                           20                                  Almalexia's Grace [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-TR_m1_q_MG4Dispel                           30-40                               Dispel Other [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-dispel                                      100                                 Dispel [NEW]                                                          PROPOSE: import as-is (no base-cost change), cost 25 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Mys_DispelMagic                       20-60                               Dispel Magic [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 12.5 [as-is]
-T_Com_Mys_BanishDaedra                      100                                 Greater Dispel Magic [NEW]                                            PROPOSE: import as-is (no base-cost change), cost 56.25 [as-is]
-T_Com_Mys_RemoveEnchantment                 100                                 Remove Enchantment [NEW]                                              PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Divine Intervention
-
-```
-divine intervention                         -                                   Divine Intervention [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 7.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Mark
-
-```
-mark                                        -                                   Mark [NEW]                                                            PROPOSE: import as-is (no base-cost change), cost 17.5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Recall
-
-```
-recall                                      -                                   Recall [NEW]                                                          PROPOSE: import as-is (no base-cost change), cost 17.5 [as-is]
-```
-
-------------------------------------------------------------
-
 ### Reflect
 
 ```
@@ -1557,14 +860,6 @@ T_Nor_Mys_SothasMirror                      10/5s                               
 T_Com_Mys_SpellReflection                   10/5s                               Spell Reflection [NEW]                                                PROPOSE: dur x4 (base /4 compensation) -> 10/20s, cost 25 [recalc]
 T_Imp_Res_SothasMirror                      10/5s -> 40/5s                      St. Naharine's Shield                                                 mag x4, dur x1 = x4 compensated ✓
 T_Com_Mys_DistortedReflect                  20/15s -> 40/30s                    Distorted Reflection                                                  mag x2, dur x2 = x4 compensated ✓
-```
-
-------------------------------------------------------------
-
-### Soul Trap
-
-```
-soul trap                                   1/60s                               Soul Trap [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost ok [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1593,117 +888,18 @@ T_Imp_Mys_VivecsFeast                       10/5s -> 40/5s                      
 
 ------------------------------------------------------------
 
-### Telekinesis
-
-```
-telekinesis                                 25/5s                               Telekinesis [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 6.25 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Nor_Mys_ExtendedArm                       20/20s                              Jogvir's Extended Arm [NEW]                                           PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Mys_Blink                             50/10s                              Greater Telekinesis [NEW]                                             PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Mys_BloodMagic                        50/5s                               Greater Telekinesis [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 12.5 [as-is]
-```
-
-------------------------------------------------------------
-
 ## Restoration
-
-------------------------------------------------------------
-
-### Cure Blight Disease
-
-```
-Cure Blight_Self                            -                                   Cure Blight Disease [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 100 [as-is]
-vivec's tears                               -                                   Vivec's Tears [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Cure Common Disease
-
-```
-cure common disease                         -                                   Cure Common Disease [NEW]                                             PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-cure common disease victim                  -                                   Cure Common Disease Victim [NEW]                                      PROPOSE: import as-is (no base-cost change), cost 22.5 [as-is]
-cure common disease other                   -                                   Cure Common Disease on Other [NEW]                                    PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-rilm's cure                                 -                                   Rilm's Cure [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
-rilm's gift                                                                     Rilm's Gift [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 115 +1 effects [as-is]
-    Cure Common Disease                     -
-    Cure Blight Disease                     -
-```
-
-*Tamriel Data*
-```
-T_Imp_Res_RilmsCure                         -                                   Mara's Hand [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-```
-
-------------------------------------------------------------
-
-### Cure Paralyzation
-
-```
-free action                                 -                                   Free Action [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Cure Poison
-
-```
-balyna's antidote                           -                                   Balyna's Antidote [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-cure poison                                 -                                   Cure Poison [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-cure poison touch                           -                                   Cure Poison on Touch [NEW]                                            PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-panacea                                                                         Panacea [NEW]                                                         PROPOSE: import as-is (no base-cost change), cost 120 +2 effects [as-is]
-    Cure Poison                             -
-    Cure Common Disease                     -
-    Cure Blight Disease                     -
-seryn's gift                                -                                   Seryn's Gift [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-```
-
-------------------------------------------------------------
-
-### Fortify Attack
-
-*Tamriel Data*
-```
-T_Com_Res_BloodBeat                         30/20s                              Blood Beat [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-```
 
 ------------------------------------------------------------
 
 ### Fortify Attribute
 
 ```
-rilm's grace                                5/2880s                             Rilm's Grace [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 720 [as-is]
-orc's strength                              5-20/60s                            Orc Strength [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-turn of the wheel                           5-20/30s                            Turn of the Wheel [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 18.75 [as-is]
-charisma                                    10/60s                              Charisma [NEW]                                                        PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-divine aid                                                                      Divine Aid [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 60 +1 effects [as-is]
-    Fortify Attribute: Willpower            10/60s
-    Fortify Attribute: Luck                 10/60s
-fortitude                                   10/60s                              Fortitude [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-iron will                                   10/60s                              Iron Will [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-jack of trades                              10/60s                              Jack of Trades [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-nimbleness                                  10/60s                              Nimbleness [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-Quicksilver                                 10/60s                              Quicksilver [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-Troll Strength                              10/60s                              Troll Strength [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-wisdom                                      10/60s                              Wisdom [NEW]                                                          PROPOSE: import as-is (no base-cost change), cost 30 [as-is]
-Zenithar_gospel                             10/90s                              Zenithar's Gospel [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 45 [as-is]
 TR_m7_Prestidigitation                                                          Prestidigitation [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 112.5 +3 effects [recalc]
     Fortify Attribute: Speed                10-20/15s
     Fortify Attribute: Agility              10-20/15s
     Fortify Skill: Sneak                    10-20/15s
     Fortify Skill: Security                 10-20/15s
-daedric luck                                20/90s                              Daedric Luck [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost 90 [as-is]
-daedric speed                               20/90s                              Daedric Speed [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 90 [as-is]
-daedric strength                            20/90s                              Daedric Strength [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 90 [as-is]
-daedric willpower                           20/90s                              Daedric Willpower [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 90 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Res_Haste                             10-30/20s                           Haste [NEW]                                                           PROPOSE: import as-is (no base-cost change), cost ok [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1717,24 +913,6 @@ Base Cost                                   0.5 -> 0.25
 ```
 enrichment                                  5-20/30s                            Enrichment [NEW]                                                      PROPOSE: dur x2 (base /2 compensation) -> 5-20/60s, cost 9.375 [recalc]
 vigor                                       5-20/30s -> 10-40/30s               Vigor                                                                 mag x2, dur x1 = x2 compensated ✓
-```
-
-------------------------------------------------------------
-
-### Fortify Health
-
-```
-vitality                                    5-20/30s                            Vitality [NEW]                                                        PROPOSE: import as-is (no base-cost change), cost 18.75 [as-is]
-blood gift                                  10-40/30s                           Blood Gift [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
-daedric health                              25/60s                              Daedric Health [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 75 [as-is]
-```
-
-------------------------------------------------------------
-
-### Fortify Magicka
-
-```
-powerwell                                   5-20/60s                            Powerwell [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1882,7 +1060,6 @@ TR_m7_Intercession                          100/10s                             
 
 ```
 resist paralysis                            50/30s [300 -> auto]                Resist Paralysis                                                      cost
-TR_m7_FreedomMovement                       100/20s                             Freedom of Movement [NEW]                                             PROPOSE: import as-is (no base-cost change), cost ok [as-is]
 ```
 
 ------------------------------------------------------------
@@ -1960,73 +1137,8 @@ T_Com_Res_WeaponResartus                    42-78/30s -> 30-60/12s [90 -> 68]   
 ### Restore Health
 
 ```
-regenerate                                  1-5/20s                             Regenerate [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost 15 [as-is]
 balyna's soothing balm                      3-12/1s -> 5-10/1s                  Balyna's Soothing Balm                                                rounded
 balyna's efficacious balm                   3-22/1s -> 5-20/1s                  Balyna's Efficacious Balm                                             rounded
 balyna's perfect balm                       3-30/1s -> 5-30/1s                  Balyna's Perfect Balm                                                 rounded
-great heal companion                        4-45/1s                             Great Heal Companion [NEW]                                            PROPOSE: import as-is (no base-cost change), cost 6.125 [as-is]
-rapid regenerate                            5-10/20s                            Rapid Regenerate [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 37.5 [as-is]
 heal companion                              6-15/1s -> 5-15/1s                  Heal Companion                                                        rounded
-strong heal companion                       6-25/1s                             Strong Heal Companion [NEW]                                           PROPOSE: import as-is (no base-cost change), cost 3.875 [as-is]
-veloth's benison                            10/1s                               Veloth's Benison [NEW]                                                PROPOSE: import as-is (no base-cost change), cost 2.5 [as-is]
-veloth's gift                               10/1s                               Veloth's Gift [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 2.5 [as-is]
-veloth's grace                              10/2s                               Veloth's Grace [NEW]                                                  PROPOSE: import as-is (no base-cost change), cost 5 [as-is]
-mother's kiss                               10-20/1s                            Mother's Kiss [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 3.75 [as-is]
-hearth heal                                 20-80/1s                            Hearth Heal [NEW]                                                     PROPOSE: import as-is (no base-cost change), cost 12.5 [as-is]
-```
-
-*Tamriel Data*
-```
-T_Com_Res_AzraSustenance                    1-2/60s                             Azra's Sustenance [NEW]                                               PROPOSE: import as-is (no base-cost change), cost 22.5 [as-is]
-T_Imp_Res_VelothsGift                       10/1s                               Dibella's Eye [NEW]                                                   PROPOSE: import as-is (no base-cost change), cost 2.5 [as-is]
-T_Com_Res_Rejuvenator                                                           Jucilian's Rejuvenator [NEW]                                          PROPOSE: import as-is (no base-cost change), cost ok +1 effects [as-is]
-    Restore Health                          10-70/1s
-    Cure Common Disease                     -
-T_Com_Res_HealWound                         12/1s                               Heal Wound [NEW]                                                      PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Res_ArmorResartus                     25-47/10s                           Greater Heal [NEW]                                                    PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Res_HealTrue                          25-50/5s                            Heal True [NEW]                                                       PROPOSE: import as-is (no base-cost change), cost ok [as-is]
-T_Com_Res_Purify                                                                Purify [NEW]                                                          PROPOSE: import as-is (no base-cost change), cost ok +2 effects [as-is]
-    Restore Health                          100/1s
-    Cure Poison                             -
-    Sanctuary                               10-30/20s
-```
-
-------------------------------------------------------------
-
-### Restore Skill
-
-*Tamriel Data*
-```
-T_De_Res_RestoreConstitution                                                    Restore Constitution [NEW]                                            PROPOSE: import as-is (no base-cost change), cost ok +3 effects [as-is]
-    Restore Skill: Athletics                5/5s
-    Restore Skill: Unarmored                5/5s
-    Restore Skill: Hand To Hand             5/5s
-    Restore Skill: Acrobatics               5/5s
-T_De_Res_RestoreFinesse                                                         Restore Finesse [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost ok +7 effects [as-is]
-    Restore Skill: Security                 5/5s
-    Restore Skill: Sneak                    5/5s
-    Restore Skill: Acrobatics               5/5s
-    Restore Skill: Light Armor              5/5s
-    Restore Skill: Short Blade              5/5s
-    Restore Skill: Marksman                 5/5s
-    Restore Skill: Mercantile               5/5s
-    Restore Skill: Speechcraft              5/5s
-T_De_Res_RestoreFortitude                                                       Restore Fortitude [NEW]                                               PROPOSE: import as-is (no base-cost change), cost ok +7 effects [as-is]
-    Restore Skill: Block                    5/5s
-    Restore Skill: Armorer                  5/5s
-    Restore Skill: Medium Armor             5/5s
-    Restore Skill: Heavy Armor              5/5s
-    Restore Skill: Blunt Weapon             5/5s
-    Restore Skill: Long Blade               5/5s
-    Restore Skill: Axe                      5/5s
-    Restore Skill: Spear                    5/5s
-T_De_Res_RestoreSorcery                                                         Restore Sorcery [NEW]                                                 PROPOSE: import as-is (no base-cost change), cost ok +7 effects [as-is]
-    Restore Skill: Destruction              5/5s
-    Restore Skill: Alteration               5/5s
-    Restore Skill: Illusion                 5/5s
-    Restore Skill: Conjuration              5/5s
-    Restore Skill: Mysticism                5/5s
-    Restore Skill: Restoration              5/5s
-    Restore Skill: Enchant                  5/5s
-    Restore Skill: Alchemy                  5/5s
 ```

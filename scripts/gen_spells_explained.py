@@ -39,7 +39,11 @@ def is_td(obj: dict) -> bool:
 
 def parse_new_tr_ids(path: str) -> dict[str, str]:
     """Parse docs/TR-Buyable-Spells.md and return {id_lower: recalc_flag} for the
-    NEW buyable spells, i.e. the rows whose `In R3` cell is '-'.
+    NEW buyable spells that NEED rebalancing, i.e. the rows whose `In R3` cell is
+    '-' AND whose `Recalc` flag is `Yes` (compensation) or `Cost only`.
+
+    The "import as-is" category (`Recalc = -`, no base-cost change) is omitted
+    entirely: those spells have nothing to propose and would just be clutter.
 
     The main school tables have the column shape
     `| Spell | Mag | Dur | Cost | In R3 | Recalc | ID |`, which splits (with the
@@ -61,9 +65,12 @@ def parse_new_tr_ids(path: str) -> dict[str, str]:
                 continue
             if cells[5] != "-":
                 continue
+            recalc = cells[6]
+            if recalc not in ("Yes", "Cost only"):   # drop import-as-is spells
+                continue
             rid = cells[7].strip(bt).lower().strip()
             if rid:
-                out[rid] = cells[6]
+                out[rid] = recalc
     return out
 
 
@@ -470,9 +477,11 @@ def main() -> int:
     out.append("explanation column noting which rule produced each change. Only spells")
     out.append("that differ from vanilla are listed. Rows tagged `[NEW]` are")
     out.append("player-buyable Tamriel Rebuilt / Tamriel Data spells that are NOT yet")
-    out.append("in the mod; they are not current mod changes but a proposed import")
-    out.append("rebalance, shown with a `PROPOSE:` note giving the values and cost they")
-    out.append("would get if added, computed per `docs/Spell-Rules-Reference.md`.")
+    out.append("in the mod and that need rebalancing before import (a scalable effect's")
+    out.append("base cost changed, or a no-scale effect needs a cost/rounding fix);")
+    out.append("spells needing no change are omitted. Each is shown with a `PROPOSE:`")
+    out.append("note giving the values and cost it would get if added, computed per")
+    out.append("`docs/Spell-Rules-Reference.md`.")
     out.append("Non-`[NEW]` rows are unchanged mod spells. Rules: see")
     out.append("`docs/Spell-Rules-Reference.md`. Do not hand-edit; regenerate with")
     out.append("`python scripts/gen_spells_explained.py`.")
