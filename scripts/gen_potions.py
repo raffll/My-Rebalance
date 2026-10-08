@@ -6,12 +6,16 @@ The layout spec is baked into this script; it does NOT read the existing README.
 Sources
 -------
 - ESP JSON (R3 - Potions.json)   : current Alchemy values, IDs, records changed.
-- Spells JSON (R3 - Spells.json) : MagicEffect metadata (school + base_cost).
-  MagicEffect records live in the Spells plugin after the Spells/Potions split,
-  so the per-effect "Base Cost" line and the "## <School>" bucket are sourced
-  from there (NOT from the Potions file, which has no MagicEffect records).
-- Master JSONs (tes3conv folder) : vanilla values (matched by id), vanilla
-  MagicEffect base costs, and sEffect* GMSTs for effect display names.
+- Master JSONs (tes3conv folder) : vanilla values (matched by id), MagicEffect
+  SCHOOL (for the "## <School>" header), and sEffect* GMSTs for effect display
+  names.
+
+OWNER DECISION: the Potions README shows NO "Base Cost" line. R3 - Potions.json
+contains no MagicEffect records, so there is no base-cost change in this plugin
+to document; base-cost changes are documented in R3 - Spells.md where the
+MagicEffects live. This generator therefore does not read R3 - Spells.json and
+does not compute or emit any Base Cost line. It only needs each effect's school
+and display name, both read from the vanilla masters (read-only).
 
 Master lookup order (first hit wins):
     Morrowind -> Tribunal -> Bloodmoon -> Patch for Purists
@@ -22,14 +26,11 @@ Output structure
     # Title
     ## <School>                         one per magic-effect school
       ### <Effect>                      one per effect used by single-effect records
-        Base Cost                       vanilla base_cost -> current (overridden effects only)
         *Potions*                       single-effect Alchemy, non-TD
         *Potions - Tamriel Data*        single-effect Alchemy, id starts T_
     ## Multi-Effect Potions             every potion with 2+ effects
 
-Effects with no MagicEffect override in R3 - Spells.json have no fx_meta entry,
-so (as in the combined README) they bucket under school "Misc" and emit no
-"Base Cost" line.
+Effects whose school cannot be resolved from the masters fall back to "Misc".
 
 Line format matches gen_readme.py (name col, values col 44, id col 80).
 """
@@ -161,9 +162,6 @@ def main() -> int:
                     help="Potions ESP JSON path.")
     ap.add_argument("--out", default="R3 - Potions.md",
                     help="Output README path.")
-    ap.add_argument("--spells-json", default="R3 - Spells.json",
-                    help="Spells ESP JSON holding MagicEffect metadata "
-                         "(school + base_cost).")
     ap.add_argument("--master-dir", default="C:/OMEN/Morrowind/tes3conv",
                     help="Directory holding the master JSONs.")
     args = ap.parse_args()
@@ -176,38 +174,21 @@ def main() -> int:
     with open(args.json, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # MagicEffect metadata from the Spells ESP: effect_id -> {school, base_cost}.
-    # MagicEffect records moved to R3 - Spells.json in the split, so the potions
-    # README's "## <School>" headers and per-effect "Base Cost" lines are
-    # sourced from there. Effects with no override have no entry here (as in the
-    # combined README) and fall back to school "Misc" with no Base Cost line.
-    fx_meta: dict[str, dict] = {}
-    if os.path.exists(args.spells_json):
-        print(f"Loading MagicEffect metadata: {args.spells_json}")
-        with open(args.spells_json, "r", encoding="utf-8") as f:
-            spells_data = json.load(f)
-        for o in spells_data:
-            if o.get("type") == "MagicEffect" and o.get("effect_id"):
-                fx_meta[o["effect_id"]] = {
-                    "school": (o.get("data") or {}).get("school") or "Misc",
-                    "base_cost": (o.get("data") or {}).get("base_cost"),
-                }
-    else:
-        print(f"  (warning) spells JSON not found: {args.spells_json}",
-              file=sys.stderr)
-
     # Collect the ids we need vanilla data for: Alchemy ids.
     needed_ids: set[str] = set()
     for o in data:
         if o.get("type") == "Alchemy" and o.get("id"):
             needed_ids.add(o["id"].lower().strip())
 
-    # Load vanilla records from masters (in order, first hit wins). We also read
-    # vanilla MagicEffect base costs (for the "vanilla -> current" Base Cost
-    # line) and sEffect* GMSTs (for effect display names).
+    # Load vanilla records from masters (in order, first hit wins). We read:
+    #  - vanilla Alchemy records (for the "vanilla -> current" value diffs),
+    #  - MagicEffect SCHOOL (effect_id -> school) for the "## <School>" header,
+    #  - sEffect* GMSTs (effect_id -> display name) for the "### <Effect>" header.
+    # No base cost is read: the Potions README has no Base Cost line (MagicEffect
+    # records live in R3 - Spells.json, not here).
     print(f"Loading masters from: {args.master_dir}")
     van_by_id: dict[str, dict] = {}
-    fx_van_cost: dict[str, float] = {}
+    fx_school: dict[str, str] = {}
     effect_names: dict[str, str] = {}
     for name in MASTER_FILES:
         path = os.path.join(args.master_dir, name)
@@ -221,8 +202,10 @@ def main() -> int:
             if not isinstance(o, dict):
                 continue
             if o.get("type") == "MagicEffect" and o.get("effect_id"):
-                if o["effect_id"] not in fx_van_cost:
-                    fx_van_cost[o["effect_id"]] = (o.get("data") or {}).get("base_cost")
+                if o["effect_id"] not in fx_school:
+                    sch = (o.get("data") or {}).get("school")
+                    if sch:
+                        fx_school[o["effect_id"]] = sch
                 continue
             rid = o.get("id")
             if not rid:
@@ -314,7 +297,7 @@ def main() -> int:
             multi.append(o)
             continue
         fx = effects[0].get("magic_effect")
-        school = fx_meta.get(fx, {}).get("school", "Misc")
+        school = fx_school.get(fx, "Misc")
         groups.setdefault(school, {}).setdefault(fx, []).append(o)
 
     # Build output.
@@ -337,21 +320,6 @@ def main() -> int:
         for fx in sorted(groups[school], key=effect_base_name):
             recs = groups[school][fx]
             header(f"### {effect_base_name(fx)}")
-
-            # Base Cost line only for effects that have a MagicEffect override
-            # in R3 - Spells.json (matching the combined README's behavior: the
-            # 20 effects with no override emit no Base Cost line).
-            meta = fx_meta.get(fx)
-            if meta:
-                cur_cost = fmt_num(meta["base_cost"])
-                van_cost = fx_van_cost.get(fx)
-                van_cost = fmt_num(van_cost) if van_cost is not None else None
-                cb = (f"{van_cost} -> {cur_cost}"
-                      if van_cost is not None and van_cost != cur_cost
-                      else cur_cost)
-                out.append("```")
-                out.append(add_at_column("Base Cost", COL_VALUES, cb))
-                out.append("```")
 
             def block(title: str, items: list) -> None:
                 if not items:
@@ -400,7 +368,6 @@ def main() -> int:
     print(f"Wrote README to: {args.out}")
     print(f"  Schools        : {len(groups)}")
     print(f"  Multi-effect   : {len(multi)}")
-    print(f"  Effects w/ cost: {sum(1 for s in groups for fx in groups[s] if fx_meta.get(fx))}")
     print(f"  Vanilla matched: {len(van_by_id)} of {len(needed_ids)} needed ids")
     return 0
 

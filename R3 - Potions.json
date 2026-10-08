@@ -1701,9 +1701,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
-        "min_magnitude": 6,
-        "max_magnitude": 6
+        "duration": 9,
+        "min_magnitude": 3,
+        "max_magnitude": 3
       }
     ],
     "data": {
@@ -1727,9 +1727,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
       }
     ],
     "data": {
@@ -2397,7 +2397,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
+        "duration": 45,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
@@ -2579,9 +2579,9 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
-        "min_magnitude": 8,
-        "max_magnitude": 8
+        "duration": 12,
+        "min_magnitude": 4,
+        "max_magnitude": 4
       }
     ],
     "data": {
@@ -4731,7 +4731,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 18,
+        "duration": 30,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
@@ -4757,7 +4757,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 24,
+        "duration": 45,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
@@ -7487,7 +7487,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 30,
+        "duration": 300,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
@@ -7513,7 +7513,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 30,
+        "duration": 300,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
@@ -7799,7 +7799,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 30,
+        "duration": 60,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
@@ -7825,7 +7825,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 45,
+        "duration": 90,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
@@ -7851,7 +7851,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 60,
+        "duration": 120,
         "min_magnitude": 1,
         "max_magnitude": 1
       }
