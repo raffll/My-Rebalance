@@ -625,7 +625,7 @@ detect enchantment                          10/10s -> 50/10s                    
 
 *Tamriel Data*
 ```
-T_Com_Mys_Insight                           150/10s -> 50/10s [75 -> auto]      Greater Detect Enchantment -> Detect Enchantment
+T_Com_Mys_Insight                           150/10s [75 -> 15]                  Greater Detect Enchantment
 ```
 
 ------------------------------------------------------------

@@ -2769,7 +2769,7 @@
     "type": "Spell",
     "flags": "",
     "id": "T_Com_Mys_Insight",
-    "name": "Detect Enchantment",
+    "name": "Greater Detect Enchantment",
     "effects": [
       {
         "magic_effect": "DetectEnchantment",
@@ -2778,14 +2778,14 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 10,
-        "min_magnitude": 50,
-        "max_magnitude": 50
+        "min_magnitude": 150,
+        "max_magnitude": 150
       }
     ],
     "data": {
       "spell_type": "Spell",
-      "cost": 25,
-      "flags": "AUTO_CALCULATE"
+      "cost": 15,
+      "flags": ""
     }
   },
   {
