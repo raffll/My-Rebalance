@@ -65,6 +65,24 @@ the **opposite direction** to keep their effective cost roughly the same:
   each affected spell with its vanilla values and propose new values for approval.
   Only apply after confirmation.
 
+### Magnitude Cap (100)
+
+After compensation, a spell's **magnitude must never exceed 100**. The cap
+applies to the compensated magnitude (both `min` and `max`).
+
+- When compensation would push a magnitude above 100, cap it at **100** and push
+  the leftover compensation factor into **duration** instead, so the overall
+  `mag × dur` target is preserved.
+- Example: base cost ÷4 needs `mag × dur ×4`. A vanilla 40-magnitude effect
+  scaled ×4 would be 160 (over the cap). Instead cap magnitude at 100 and move
+  the remaining factor to duration. Prefer keeping magnitude at a round value
+  (per the Value Rounding Rule) and absorbing the remainder in duration.
+- For a min-max range, cap each end at 100 independently; if `max` hits the cap,
+  put the overflow for both ends into the shared duration.
+- The cap is a ceiling only — it never raises a magnitude. Magnitudes already at
+  or below 100 after compensation are unchanged.
+- Durations have no cap, so they can always absorb the overflow.
+
 ## Potions
 
 Potion mag/dur values come from the tier table in `potion-tiers.md` — never

@@ -104,6 +104,10 @@ Alchemy                                     5
 Light Armor                                 10
 Marksman                                    15
 Sneak                                       10
+```
+
+*Height*
+```
 Female Height                               1.0 -> 0.92
 ```
 

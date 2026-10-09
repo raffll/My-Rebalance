@@ -11,6 +11,29 @@ sEffectSlowFall                             SlowFall -> Slowfall
 
 ------------------------------------------------------------
 
+## Starting Spells
+
+A new character begins knowing these spells (PC_START_SPELL flag). Values and cost are the current R3 records; spells the ESP does not override keep vanilla values.
+
+```
+Alteration    First Barrier                 Shield 10/30s [auto]
+Alteration    Water Walking                 Water Walking 60s [auto]
+Conjuration   Bound Dagger                  Bound Dagger 60s [auto]
+Conjuration   Summon Ancestral Ghost        Summon Ghost 60s [auto]
+Destruction   Fire Bite                     Fire Damage 15-30/1s/Touch [auto]
+Destruction   Weariness                     Drain Fatigue 10-100/20s/Target [auto]
+Illusion      Chameleon                     Chameleon 10/30s [auto]
+Illusion      Sanctuary                     Sanctuary 10/30s [auto]
+Mysticism     Detect Enchantment            Detect Enchantment 50/10s [auto]
+Mysticism     Tap Energy                    Absorb Fatigue 20/3s/Target [auto]
+Restoration   Hearth Heal                   Restore Health 20-80/1s [auto]
+Restoration   Skylamp's Shadow              Fortify Attribute: Speed 5-20/30s [auto]
+```
+
+Removed from the vanilla start set: Detect Creature, Exhausting Touch, Feet of Notorgo, Shield.
+
+------------------------------------------------------------
+
 ## Alteration
 
 ------------------------------------------------------------
@@ -22,23 +45,23 @@ Base Cost                                   1.0 -> 0.1
 ```
 
 ```
-burden                                      20/10s -> 50/40s                    Burden
-burden touch                                20/10s -> 50/40s                    Burden Touch
-weary                                       30-60/10s -> 60-120/50s             Weary
-great burden of sin                         40/10s -> 80-120/100s               Great Burden of Sin
-heavy burden                                40/10s -> 100/40s                   Heavy Burden
-heavy burden touch                          40/10s -> 100/40s                   Heavy Burden Touch
-burden of sin                               40-60/20s -> 80/50s                 Burden of Sin
-cruel weary                                 50-70/10s -> 100-140/50s            Cruel Weary
-crushing burden                             60/10s -> 150/40s                   Crushing Burden
-crushing burden touch                       60/10s -> 150/40s                   Crushing Burden Touch
-crushing burden of sin                      60-80/30s -> 120-160/150s           Crushing Burden of Sin
-dire weary                                  60-90/10s -> 120-180/50s            Dire Weary
+burden                                      20/10s -> 20/100s                   Burden
+burden touch                                20/10s -> 20/100s                   Burden Touch
+weary                                       30-60/10s -> 30-60/100s             Weary
+great burden of sin                         40/10s -> 40/100s                   Great Burden of Sin -> Burden of Sin
+heavy burden                                40/10s -> 40/100s                   Heavy Burden
+heavy burden touch                          40/10s -> 40/100s                   Heavy Burden Touch
+burden of sin                               40-60/20s -> 40-60/200s             Burden of Sin -> Great Burden of Sin
+cruel weary                                 50-70/10s -> 50-70/100s             Cruel Weary
+crushing burden                             60/10s -> 60/100s                   Crushing Burden
+crushing burden touch                       60/10s -> 60/100s                   Crushing Burden Touch
+crushing burden of sin                      60-80/30s -> 60-80/300s             Crushing Burden of Sin
+dire weary                                  60-90/10s -> 60-90/100s             Dire Weary
 ```
 
 *Tamriel Data*
 ```
-T_Com_Alt_WeightOfGuilt                     500/3s -> 5000/3s                   Weight of Guilt
+T_Com_Alt_WeightOfGuilt                     500/3s -> 500/30s                   Weight of Guilt
 ```
 
 ------------------------------------------------------------

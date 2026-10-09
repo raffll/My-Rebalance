@@ -1662,9 +1662,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 3,
-        "min_magnitude": 5000,
-        "max_magnitude": 5000
+        "duration": 30,
+        "min_magnitude": 500,
+        "max_magnitude": 500
       }
     ],
     "data": {
@@ -2478,9 +2478,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 40,
-        "min_magnitude": 50,
-        "max_magnitude": 50
+        "duration": 100,
+        "min_magnitude": 20,
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -2493,7 +2493,7 @@
     "type": "Spell",
     "flags": "",
     "id": "burden of sin",
-    "name": "Burden of Sin",
+    "name": "Great Burden of Sin",
     "effects": [
       {
         "magic_effect": "Burden",
@@ -2501,9 +2501,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 50,
-        "min_magnitude": 80,
-        "max_magnitude": 80
+        "duration": 200,
+        "min_magnitude": 40,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -2524,9 +2524,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 40,
-        "min_magnitude": 50,
-        "max_magnitude": 50
+        "duration": 100,
+        "min_magnitude": 20,
+        "max_magnitude": 20
       }
     ],
     "data": {
@@ -2616,9 +2616,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 50,
-        "min_magnitude": 100,
-        "max_magnitude": 140
+        "duration": 100,
+        "min_magnitude": 50,
+        "max_magnitude": 70
       }
     ],
     "data": {
@@ -2639,9 +2639,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 40,
-        "min_magnitude": 150,
-        "max_magnitude": 150
+        "duration": 100,
+        "min_magnitude": 60,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -2662,9 +2662,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 150,
-        "min_magnitude": 120,
-        "max_magnitude": 160
+        "duration": 300,
+        "min_magnitude": 60,
+        "max_magnitude": 80
       }
     ],
     "data": {
@@ -2685,9 +2685,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 40,
-        "min_magnitude": 150,
-        "max_magnitude": 150
+        "duration": 100,
+        "min_magnitude": 60,
+        "max_magnitude": 60
       }
     ],
     "data": {
@@ -2869,9 +2869,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 50,
-        "min_magnitude": 120,
-        "max_magnitude": 180
+        "duration": 100,
+        "min_magnitude": 60,
+        "max_magnitude": 90
       }
     ],
     "data": {
@@ -3505,7 +3505,7 @@
     "type": "Spell",
     "flags": "",
     "id": "great burden of sin",
-    "name": "Great Burden of Sin",
+    "name": "Burden of Sin",
     "effects": [
       {
         "magic_effect": "Burden",
@@ -3514,8 +3514,8 @@
         "range": "OnTarget",
         "area": 0,
         "duration": 100,
-        "min_magnitude": 80,
-        "max_magnitude": 120
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -3717,9 +3717,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 40,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 100,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -3740,9 +3740,9 @@
         "attribute": "None",
         "range": "OnTouch",
         "area": 0,
-        "duration": 40,
-        "min_magnitude": 100,
-        "max_magnitude": 100
+        "duration": 100,
+        "min_magnitude": 40,
+        "max_magnitude": 40
       }
     ],
     "data": {
@@ -5396,9 +5396,9 @@
         "attribute": "None",
         "range": "OnTarget",
         "area": 0,
-        "duration": 50,
-        "min_magnitude": 60,
-        "max_magnitude": 120
+        "duration": 100,
+        "min_magnitude": 30,
+        "max_magnitude": 60
       }
     ],
     "data": {

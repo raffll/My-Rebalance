@@ -232,11 +232,16 @@ def main() -> int:
         else:
             header(f"### {cur_name}")
 
-        # Skill bonuses + height, once, with vanilla -> current (races only).
+        # Skill bonuses and height, once each, with vanilla -> current (races
+        # only). Height goes in its own labeled section so it is not mixed in
+        # with the skill-bonus block.
         if kind == "Race":
-            sl = skill_lines(o, vo) + height_lines(o, vo)
+            sl = skill_lines(o, vo)
             if sl:
                 plain_block(sl)
+            hl = height_lines(o, vo)
+            if hl:
+                labeled_block("Height", hl)
 
         van_spells_lines = spell_block_lines(vo, vanilla=True) if vo else []
         cur_spells_lines = spell_block_lines(o, vanilla=False)

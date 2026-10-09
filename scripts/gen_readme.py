@@ -254,8 +254,13 @@ def main() -> int:
     print(f"Loading masters from: {args.master_dir}")
     van_by_id: dict[str, dict] = {}
     fx_van_cost: dict[str, float] = {}
+    fx_van_school: dict[str, str] = {}  # effect_id -> vanilla school
     # effect_id -> display name, from the sEffect<effect_id> GMSTs in masters.
     effect_names: dict[str, str] = {}
+    # Every vanilla Spell carrying PC_START_SPELL, keyed by lower-case id
+    # (first master wins). Used to build the Starting Spells section, which
+    # must include start spells the ESP never overrides.
+    van_start_by_id: dict[str, dict] = {}
     for name in MASTER_FILES:
         path = os.path.join(args.master_dir, name)
         if not os.path.exists(path):
@@ -271,10 +276,19 @@ def main() -> int:
             if o.get("type") == "MagicEffect" and o.get("effect_id"):
                 if o["effect_id"] not in fx_van_cost:
                     fx_van_cost[o["effect_id"]] = (o.get("data") or {}).get("base_cost")
+                if o["effect_id"] not in fx_van_school:
+                    fx_van_school[o["effect_id"]] = (o.get("data") or {}).get("school")
                 continue
             rid = o.get("id")
             if not rid:
                 continue
+            # Collect every vanilla PC-start spell (first master wins).
+            if o.get("type") == "Spell":
+                flags = (o.get("data") or {}).get("flags") or ""
+                if "PC_START_SPELL" in flags:
+                    ks = rid.lower().strip()
+                    if ks not in van_start_by_id:
+                        van_start_by_id[ks] = o
             # sEffect<Name> GMSTs hold the in-game display name of each effect.
             if o.get("type") == "GameSetting" and rid.startswith("sEffect"):
                 key = rid[len("sEffect"):]
@@ -420,6 +434,82 @@ def main() -> int:
 
     def effect_base_name(fx: str) -> str:
         return effect_names.get(fx, split_camel(fx))
+
+    # -- Starting Spells -----------------------------------------------------
+    # A character begins with every spell whose data.flags has PC_START_SPELL.
+    # The R3 set = vanilla start spells, with the ESP's overrides applied:
+    #   * an ESP override that still has the flag  -> kept (shown with changes)
+    #   * an ESP override that dropped the flag    -> removed from the set
+    #   * a brand-new ESP spell with the flag      -> added to the set
+    # Vanilla start spells the ESP never touches stay in with vanilla values.
+    def has_start_flag(obj: dict) -> bool:
+        return "PC_START_SPELL" in ((obj.get("data") or {}).get("flags") or "")
+
+    esp_by_id = {
+        (o.get("id") or "").lower().strip(): o
+        for o in data if o.get("type") == "Spell" and o.get("id")
+    }
+    esp_start_ids = {k for k, o in esp_by_id.items() if has_start_flag(o)}
+    # Final R3 start set and the record that supplies each one's values.
+    start_ids = set(van_start_by_id) | esp_start_ids
+    start_removed = []  # (name) vanilla start spells R3 drops the flag from
+    start_records: dict[str, dict] = {}
+    for k in start_ids:
+        esp = esp_by_id.get(k)
+        if esp is not None:
+            if has_start_flag(esp):
+                start_records[k] = esp
+            else:
+                start_removed.append(esp.get("name") or k)
+        else:
+            start_records[k] = van_start_by_id[k]
+
+    def school_of(fx: str) -> str:
+        """School for an effect: ESP metadata first, else the vanilla master
+        MagicEffect (effects the ESP doesn't override aren't in fx_meta)."""
+        s = fx_meta.get(fx, {}).get("school")
+        if not s:
+            s = fx_van_school.get(fx)
+        return s or "Misc"
+
+    def start_sort_key(obj: dict):
+        effs = obj.get("effects") or []
+        fx = effs[0].get("magic_effect", "") if effs else ""
+        return (school_of(fx), obj.get("name") or "")
+
+    if start_records:
+        header("## Starting Spells")
+        out.append("A new character begins knowing these spells "
+                   "(PC_START_SPELL flag). Values and cost are the current R3 "
+                   "records; spells the ESP does not override keep vanilla "
+                   "values.")
+        out.append("")
+        out.append("```")
+        for obj in sorted(start_records.values(), key=start_sort_key):
+            effs = obj.get("effects") or []
+            fx = effs[0].get("magic_effect", "") if effs else ""
+            school = school_of(fx)
+            parts = []
+            for e in effs:
+                nm = effect_display_name(e)
+                # Show Touch/Target range; suppress the default Self to match
+                # the README's convention elsewhere.
+                show_range = e.get("range", "") in ("OnTouch", "OnTarget")
+                vals = format_effect(e, show_area=True, show_range=show_range)
+                parts.append(f"{nm} {vals}")
+            vals_seg = " + ".join(parts)
+            cost = cost_label(obj)
+            if cost:
+                vals_seg = f"{vals_seg} [{cost}]"
+            line = add_at_column(f"{school}", 14, obj.get("name") or "")
+            line = add_at_column(line, COL_VALUES, vals_seg)
+            out.append(line)
+        out.append("```")
+        if start_removed:
+            out.append("")
+            out.append("Removed from the vanilla start set: "
+                       + ", ".join(sorted(start_removed)) + ".")
+        out.append("")
 
     for school in sorted(groups):
         header(f"## {school}")

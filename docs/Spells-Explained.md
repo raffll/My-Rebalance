@@ -19,23 +19,23 @@ Base Cost                                   1.0 -> 0.1
 ```
 
 ```
-burden                                      20/10s -> 50/40s                    Burden                                                                mag x2.5, dur x4 = x10 compensated ✓
-burden touch                                20/10s -> 50/40s                    Burden Touch                                                          mag x2.5, dur x4 = x10 compensated ✓
-weary                                       30-60/10s -> 60-120/50s             Weary                                                                 mag x2, dur x5 = x10 compensated ✓
-great burden of sin                         40/10s -> 80-120/100s               Great Burden of Sin                                                   mag x2.5, dur x10 = x25 ✗ (expected x10)
-heavy burden                                40/10s -> 100/40s                   Heavy Burden                                                          mag x2.5, dur x4 = x10 compensated ✓
-heavy burden touch                          40/10s -> 100/40s                   Heavy Burden Touch                                                    mag x2.5, dur x4 = x10 compensated ✓
-burden of sin                               40-60/20s -> 80/50s                 Burden of Sin                                                         mag x1.5, dur x2.5 = x4 ✗ (expected x10)
-cruel weary                                 50-70/10s -> 100-140/50s            Cruel Weary                                                           mag x2, dur x5 = x10 compensated ✓
-crushing burden                             60/10s -> 150/40s                   Crushing Burden                                                       mag x2.5, dur x4 = x10 compensated ✓
-crushing burden touch                       60/10s -> 150/40s                   Crushing Burden Touch                                                 mag x2.5, dur x4 = x10 compensated ✓
-crushing burden of sin                      60-80/30s -> 120-160/150s           Crushing Burden of Sin                                                mag x2, dur x5 = x10 compensated ✓
-dire weary                                  60-90/10s -> 120-180/50s            Dire Weary                                                            mag x2, dur x5 = x10 compensated ✓
+burden                                      20/10s -> 20/100s                   Burden                                                                mag x1, dur x10 = x10 compensated ✓
+burden touch                                20/10s -> 20/100s                   Burden Touch                                                          mag x1, dur x10 = x10 compensated ✓
+weary                                       30-60/10s -> 30-60/100s             Weary                                                                 mag x1, dur x10 = x10 compensated ✓
+great burden of sin                         40/10s -> 40/100s                   Great Burden of Sin -> Burden of Sin                                  mag x1, dur x10 = x10 compensated ✓; renamed
+heavy burden                                40/10s -> 40/100s                   Heavy Burden                                                          mag x1, dur x10 = x10 compensated ✓
+heavy burden touch                          40/10s -> 40/100s                   Heavy Burden Touch                                                    mag x1, dur x10 = x10 compensated ✓
+burden of sin                               40-60/20s -> 40-60/200s             Burden of Sin -> Great Burden of Sin                                  mag x1, dur x10 = x10 compensated ✓; renamed
+cruel weary                                 50-70/10s -> 50-70/100s             Cruel Weary                                                           mag x1, dur x10 = x10 compensated ✓
+crushing burden                             60/10s -> 60/100s                   Crushing Burden                                                       mag x1, dur x10 = x10 compensated ✓
+crushing burden touch                       60/10s -> 60/100s                   Crushing Burden Touch                                                 mag x1, dur x10 = x10 compensated ✓
+crushing burden of sin                      60-80/30s -> 60-80/300s             Crushing Burden of Sin                                                mag x1, dur x10 = x10 compensated ✓
+dire weary                                  60-90/10s -> 60-90/100s             Dire Weary                                                            mag x1, dur x10 = x10 compensated ✓
 ```
 
 *Tamriel Data*
 ```
-T_Com_Alt_WeightOfGuilt                     500/3s -> 5000/3s                   Weight of Guilt                                                       mag x10, dur x1 = x10 compensated ✓
+T_Com_Alt_WeightOfGuilt                     500/3s -> 500/30s                   Weight of Guilt                                                       mag x1, dur x10 = x10 compensated ✓
 ```
 
 ------------------------------------------------------------
