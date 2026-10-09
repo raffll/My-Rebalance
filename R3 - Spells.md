@@ -73,16 +73,16 @@ Base Cost                                   1.0 -> 0.1
 ```
 
 ```
-feather                                     20/10s -> 40/50s                    Feather
-strong feather                              50/10s -> 100/50s                   Strong Feather
-ulms juicedaw's feather                     50/10s -> 250/20s                   Ulms's Juicedaw's Feather -> Ulms' Juicedaw Feather
-great feather                               100/10s -> 200/50s                  Great Feather
+feather                                     20/10s -> 20/100s                   Feather
+strong feather                              50/10s -> 50/100s                   Strong Feather
+ulms juicedaw's feather                     50/10s -> 50/100s                   Ulms's Juicedaw's Feather -> Ulms' Juicedaw Feather
+great feather                               100/10s -> 100/100s                 Great Feather
 ```
 
 *Tamriel Data*
 ```
-T_Imp_Alt_UlmsJuicedawsFeather              50/10s -> 500/10s                   Zenithar's Arms
-T_Com_Alt_Fling                             500/3s -> 5000/3s                   Fling
+T_Imp_Alt_UlmsJuicedawsFeather              50/10s -> 50/100s                   Zenithar's Arms
+T_Com_Alt_Fling                             500/3s -> 500/30s                   Fling
 ```
 
 ------------------------------------------------------------

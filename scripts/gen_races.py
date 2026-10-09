@@ -28,16 +28,18 @@ GROUP_ORDER = ["Abilities", "Powers", "Spells"]
 
 
 def eff_value(eff: dict, is_ability: bool = False) -> str:
-    mn = int(eff.get("min_magnitude", 0))
-    mx = int(eff.get("max_magnitude", 0))
-    dur = int(eff.get("duration", 0))
     area = int(eff.get("area", 0))
-    mag = f"{mn}" if mn == mx else f"{mn}-{mx}"
-    # Abilities are always-on: duration is meaningless, show magnitude only.
-    if is_ability:
-        v = mag
+    fx = eff.get("magic_effect", "") or ""
+    # Abilities are always-on: duration is meaningless. Show magnitude only for
+    # effects that have a magnitude; otherwise fall back to the shared renderer.
+    if is_ability and gc.effect_uses_magnitude(fx):
+        mn = int(eff.get("min_magnitude", 0))
+        mx = int(eff.get("max_magnitude", 0))
+        v = f"{mn}" if mn == mx else f"{mn}-{mx}"
     else:
-        v = f"{mag}/{dur}s" if dur > 0 else mag
+        # Shared axis-aware renderer: axis-only effects (Water Breathing ->
+        # "120s", not "1/120s") match spells/potions/core exactly.
+        v = gc.format_effect_values(eff)
     if area > 0:
         v = f"{v}/{area}ft"
     return v

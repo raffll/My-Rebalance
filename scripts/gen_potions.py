@@ -32,7 +32,7 @@ Output structure
 
 Effects whose school cannot be resolved from the masters fall back to "Misc".
 
-Line format matches gen_readme.py (name col, values col 44, id col 80).
+Line format matches gen_spells.py (name col, values col 44, id col 80).
 """
 from __future__ import annotations
 
@@ -65,7 +65,7 @@ STREAM_THRESHOLD = 50 * 1024 * 1024  # 50 MB
 
 
 # ---------------------------------------------------------------------------
-# Formatting helpers (mirrors gen_readme.py)
+# Formatting helpers (mirrors gen_spells.py)
 # ---------------------------------------------------------------------------
 def fmt_num(v) -> str:
     return str(v)

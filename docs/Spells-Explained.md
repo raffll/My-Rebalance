@@ -47,16 +47,16 @@ Base Cost                                   1.0 -> 0.1
 ```
 
 ```
-feather                                     20/10s -> 40/50s                    Feather                                                               mag x2, dur x5 = x10 compensated ✓
-strong feather                              50/10s -> 100/50s                   Strong Feather                                                        mag x2, dur x5 = x10 compensated ✓
-ulms juicedaw's feather                     50/10s -> 250/20s                   Ulms's Juicedaw's Feather -> Ulms' Juicedaw Feather                   mag x5, dur x2 = x10 compensated ✓; renamed
-great feather                               100/10s -> 200/50s                  Great Feather                                                         mag x2, dur x5 = x10 compensated ✓
+feather                                     20/10s -> 20/100s                   Feather                                                               mag x1, dur x10 = x10 compensated ✓
+strong feather                              50/10s -> 50/100s                   Strong Feather                                                        mag x1, dur x10 = x10 compensated ✓
+ulms juicedaw's feather                     50/10s -> 50/100s                   Ulms's Juicedaw's Feather -> Ulms' Juicedaw Feather                   mag x1, dur x10 = x10 compensated ✓; renamed
+great feather                               100/10s -> 100/100s                 Great Feather                                                         mag x1, dur x10 = x10 compensated ✓
 ```
 
 *Tamriel Data*
 ```
-T_Imp_Alt_UlmsJuicedawsFeather              50/10s -> 500/10s                   Zenithar's Arms                                                       mag x10, dur x1 = x10 compensated ✓
-T_Com_Alt_Fling                             500/3s -> 5000/3s                   Fling                                                                 mag x10, dur x1 = x10 compensated ✓
+T_Imp_Alt_UlmsJuicedawsFeather              50/10s -> 50/100s                   Zenithar's Arms                                                       mag x1, dur x10 = x10 compensated ✓
+T_Com_Alt_Fling                             500/3s -> 500/30s                   Fling                                                                 mag x1, dur x10 = x10 compensated ✓
 ```
 
 ------------------------------------------------------------
@@ -67,13 +67,6 @@ T_Com_Alt_Fling                             500/3s -> 5000/3s                   
 fire_fathasa_unique                         1-10/10s                            Fire Barrier -> Fathasa's Fire Barrier                                renamed
 fierce fire shield                          5-11/10s -> 5-10/10s                Fierce Fire Shield                                                    rounded
 strong fire shield                          12/30s -> 15/30s                    Strong Fire Shield                                                    rescaled mag x1
-```
-
-*Tamriel Data*
-```
-T_Com_Alt_DaedraFireEye                                                         Fire Eye                                                              rounded
-    Fire Shield                             10-23/20s -> 10-25/20s
-    Night Eye                               20/20s
 ```
 
 ------------------------------------------------------------
@@ -122,9 +115,6 @@ Base Cost                                   2.0 -> 1.0
 
 *Tamriel Data*
 ```
-T_Com_Alt_Falling1stBarrier                                                     Falling First Barrier                                                 mag x2, dur x1 = x2 compensated ✓
-    Shield                                  8/40s -> 16/40s
-    Shield                                  5/20s -> 10/20s
 T_Nor_Alt_TsunsWard                         20/20s -> 40/20s                    Tsun's Ward                                                           mag x2, dur x1 = x2 compensated ✓
 T_Com_Alt_ForceWall                         50/5s -> 100/5s                     Force Wall                                                            mag x2, dur x1 = x2 compensated ✓
 ```
@@ -162,31 +152,7 @@ Base Cost                                   4.0 -> 2.0
 ```
 fleabite                                    1-10/1s -> 1-20/1s                  Fleabite                                                              mag x2, dur x1 = x2 compensated ✓
 doze                                        1-20/1s -> 1-40/1s                  Doze                                                                  mag x2, dur x1 = x2 compensated ✓
-Aryon_rest                                                                      Aryon's Rest                                                          mag x1, dur x1 = x1 ✗ (expected x2)
-    Damage Fatigue                          10/10s
-    Burden                                  10/10s -> 100/10s
 hornhand                                    15-36/1s -> 30-70/1s                Hornhand                                                              mag x2, dur x1 = x2 compensated ✓
-hand of odros                                                                   Hand of Odros                                                         mag x1, dur x1 = x1 ✗ (expected x2); rounding ✗ (3-6)
-    Damage Fatigue                          60/1s
-    Absorb Attribute: Agility               3-6/120s
-    Burden                                  30-40/60s -> 300-400/60s
-wrath of odros                                                                  Wrath of Odros                                                        mag x1, dur x1 = x1 ✗ (expected x2)
-    Damage Fatigue                          60/1s
-    Absorb Attribute: Agility               3/120s
-    Burden                                  20-30/50s -> 200-300/50s
-```
-
-------------------------------------------------------------
-
-### Damage Health
-
-```
-black hand                                                                      Black Hand                                                            rounded
-    Damage Health                           5-12/1s -> 5-10/1s
-    Poison                                  5-12/1s -> 5-10/1s
-stormhand                                                                       Stormhand                                                             rounded
-    Damage Health                           5-12/1s -> 5-10/1s
-    Shock Damage                            5-12/1s -> 5-10/1s
 ```
 
 ------------------------------------------------------------
@@ -215,27 +181,13 @@ Base Cost                                   6.0 -> 0.6
 ```
 
 ```
-bm_draugr_curse                             [200 -> auto]                       Eddard's Wrath                                                        mag x10, dur x1 = x10 compensated ✓
-    Disintegrate Armor                      4-9/15s -> 40-90/15s
-    Disintegrate Weapon                     4-9/15s -> 40-90/15s
 disintegrate armor                          6-25/1s -> 60-250/1s                Disintegrate Armor                                                    mag x10, dur x1 = x10 compensated ✓
 armor eater                                 10-30/1s -> 200-600/1s              Armor Eater                                                           mag x20, dur x1 = x20 ✗ (expected x10)
 ```
 
 *Tamriel Data*
 ```
-T_Rea_Des_ShadowRust                                                            Shadow Rust                                                           mag x10, dur x1 = x10 compensated ✓
-    Disintegrate Armor                      1-5/20s -> 10-50/20s
-    Burden                                  1-15/20s -> 10-150/20s
-T_Com_Trp_Acid                                                                  Acid Trap                                                             mag x1, dur x10 = x10 compensated ✓; rounding ✗ (2-4)
-    Disintegrate Armor                      20-40/1s -> 20-40/10s
-    Disintegrate Weapon                     20-40/1s -> 20-40/5s
-    Poison                                  2-4/5s
 T_Com_Des_FractureArmor                     100/2s -> 1000/2s                   Fracture Armor                                                        mag x10, dur x1 = x10 compensated ✓
-T_Com_Trp_AcidMaster                                                            Master Acid Trap                                                      mag x1, dur x10 = x10 compensated ✓
-    Disintegrate Armor                      150-300/1s -> 150-300/10s
-    Disintegrate Weapon                     150-300/1s -> 150-300/5s
-    Poison                                  10-20/5s
 ```
 
 ------------------------------------------------------------
@@ -311,9 +263,6 @@ magicka leech                               6-15/60s -> 5-15/60s                
 
 *Tamriel Data*
 ```
-T_Rea_Mys_SoulWither                                                            Dhamcka's Soul-Withering                                              mag x10, dur x1 = x10 compensated ✓
-    Drain Magicka                           1/30s -> 10/30s
-    Soul Trap                               1/30s
 T_Com_Des_RageOfMagnus                      60/10s -> 300/20s                   Rage of Magnus                                                        mag x5, dur x2 = x10 compensated ✓
 ```
 
@@ -339,9 +288,6 @@ Base Cost                                   5.0 -> 8.0
 ```
 
 ```
-brittlewind                                                                     Brittlewind                                                           no-scale
-    Frost Damage                            10/10s
-    Disintegrate Armor                      20/10s -> 200/10s
 god's frost                                 11-60/10s -> 10-60/10s              God's Frost                                                           no-scale
 ```
 
@@ -424,9 +370,6 @@ dire weakness to shock                      2-60/10s -> 1-60/10s                
 ```
 crying eye                                  1-10/5s -> 1-10/20s                 Crying Eye                                                            rescaled dur x4
 erelvam's wild sty                          1-40/10s -> 1-40/20s                Erelvam's Wild Sty                                                    rescaled dur x2
-heavy_eyes_unique                                                               Harthoon's Heavy Eyes                                                 changed
-    Blind                                   100/10s
-    Burden                                  100/10s -> 1000/10s
 ```
 
 ------------------------------------------------------------
@@ -468,9 +411,6 @@ Base Cost                                   40.0 -> 80.0
 
 ```
 scrib_paralysis                             6s -> 12s [auto -> 6]               Paralysis                                                             mag x1, dur x2 = x2 ✗ (expected /2)
-BM_paralyze_hirc                            [46 -> 50]                          Hunter's Venom                                                        mag x1, dur x1 = x1 ✗ (expected /2)
-    Paralyze                                10s
-    Burden                                  50/10s -> 500/10s
 ```
 
 *Tamriel Data*
@@ -880,4 +820,64 @@ balyna's soothing balm                      3-12/1s -> 5-10/1s                  
 balyna's efficacious balm                   3-22/1s -> 5-20/1s                  Balyna's Efficacious Balm                                             rounded
 balyna's perfect balm                       3-30/1s -> 5-30/1s                  Balyna's Perfect Balm                                                 rounded
 heal companion                              6-15/1s -> 5-15/1s                  Heal Companion                                                        rounded
+```
+
+------------------------------------------------------------
+
+## Multi-Effect Spells
+
+```
+bm_draugr_curse                             [200 -> auto]                       Eddard's Wrath                                                        mag x10, dur x1 = x10 compensated ✓
+    Disintegrate Armor                      4-9/15s -> 40-90/15s
+    Disintegrate Weapon                     4-9/15s -> 40-90/15s
+black hand                                                                      Black Hand                                                            rounded
+    Damage Health                           5-12/1s -> 5-10/1s
+    Poison                                  5-12/1s -> 5-10/1s
+stormhand                                                                       Stormhand                                                             rounded
+    Damage Health                           5-12/1s -> 5-10/1s
+    Shock Damage                            5-12/1s -> 5-10/1s
+Aryon_rest                                                                      Aryon's Rest                                                          mag x1, dur x1 = x1 ✗ (expected x2)
+    Damage Fatigue                          10/10s
+    Burden                                  10/10s -> 100/10s
+brittlewind                                                                     Brittlewind                                                           no-scale
+    Frost Damage                            10/10s
+    Disintegrate Armor                      20/10s -> 200/10s
+BM_paralyze_hirc                            [46 -> 50]                          Hunter's Venom                                                        mag x1, dur x1 = x1 ✗ (expected /2)
+    Paralyze                                10s
+    Burden                                  50/10s -> 500/10s
+hand of odros                                                                   Hand of Odros                                                         mag x1, dur x1 = x1 ✗ (expected x2); rounding ✗ (3-6)
+    Damage Fatigue                          60/1s
+    Absorb Attribute: Agility               3-6/120s
+    Burden                                  30-40/60s -> 300-400/60s
+wrath of odros                                                                  Wrath of Odros                                                        mag x1, dur x1 = x1 ✗ (expected x2)
+    Damage Fatigue                          60/1s
+    Absorb Attribute: Agility               3/120s
+    Burden                                  20-30/50s -> 200-300/50s
+heavy_eyes_unique                                                               Harthoon's Heavy Eyes                                                 changed
+    Blind                                   100/10s
+    Burden                                  100/10s -> 1000/10s
+```
+
+*Tamriel Data*
+```
+T_Rea_Mys_SoulWither                                                            Dhamcka's Soul-Withering                                              mag x10, dur x1 = x10 compensated ✓
+    Drain Magicka                           1/30s -> 10/30s
+    Soul Trap                               1/30s
+T_Rea_Des_ShadowRust                                                            Shadow Rust                                                           mag x10, dur x1 = x10 compensated ✓
+    Disintegrate Armor                      1-5/20s -> 10-50/20s
+    Burden                                  1-15/20s -> 10-150/20s
+T_Com_Alt_Falling1stBarrier                                                     Falling First Barrier                                                 mag x2, dur x1 = x2 compensated ✓
+    Shield                                  8/40s -> 16/40s
+    Shield                                  5/20s -> 10/20s
+T_Com_Alt_DaedraFireEye                                                         Fire Eye                                                              rounded
+    Fire Shield                             10-23/20s -> 10-25/20s
+    Night Eye                               20/20s
+T_Com_Trp_Acid                                                                  Acid Trap                                                             mag x1, dur x10 = x10 compensated ✓; rounding ✗ (2-4)
+    Disintegrate Armor                      20-40/1s -> 20-40/10s
+    Disintegrate Weapon                     20-40/1s -> 20-40/5s
+    Poison                                  2-4/5s
+T_Com_Trp_AcidMaster                                                            Master Acid Trap                                                      mag x1, dur x10 = x10 compensated ✓
+    Disintegrate Armor                      150-300/1s -> 150-300/10s
+    Disintegrate Weapon                     150-300/1s -> 150-300/5s
+    Poison                                  10-20/5s
 ```

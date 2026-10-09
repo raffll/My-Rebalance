@@ -1,7 +1,7 @@
 # Spell Value Rules
 
 The README files (`R3 - *.md`) are **generated from the ESP JSON** by the
-scripts in `scripts/` (`gen_readme.py`, `gen_core.py`, ...). Do not hand-edit
+scripts in `scripts/` (`gen_spells.py`, `gen_core.py`, ...). Do not hand-edit
 them. Edit the JSON, then regenerate.
 
 These rules govern how values are **computed** when editing the JSON. They are

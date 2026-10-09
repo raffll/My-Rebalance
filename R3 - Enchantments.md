@@ -95,7 +95,7 @@ sc_tevralshawkshaw_en                       40-80/30s -> 100-200/60s            
 
 ```
 sc_balefulsuffering_en                      5/5s -> 50/5s                       Scroll of Baleful Suffering
-Crescent Moon                               5-30 -> 50-300/1s                   Daedric Crescent
+Crescent Moon                               5-30/0s -> 50-300/1s                Daedric Crescent
 ```
 
 ------------------------------------------------------------
@@ -132,8 +132,8 @@ sc_FiercelyRoastThyEnemy_en                 18-81/5s -> 20-80/5s                
 ## Paralyze
 
 ```
-Crescent Moon                               1/10s                               Daedric Crescent
-bm_hunterspear                              1/10s                               Spear of the Hunter
+Crescent Moon                               10s                                 Daedric Crescent
+bm_hunterspear                              10s                                 Spear of the Hunter
 ```
 
 ------------------------------------------------------------

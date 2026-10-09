@@ -21,7 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # README generators, in order.
 GENERATORS = [
     "gen_core.py",
-    "gen_readme.py",
+    "gen_spells.py",
     "gen_potions.py",
     "gen_creatures.py",
     "gen_enchantments.py",

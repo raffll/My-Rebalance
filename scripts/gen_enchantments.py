@@ -52,12 +52,10 @@ def is_td(idv: str) -> bool:
 
 
 def _one(eff, show_area) -> str:
-    mn = int(eff.get("min_magnitude", 0))
-    mx = int(eff.get("max_magnitude", 0))
-    dur = int(eff.get("duration", 0))
     area = int(eff.get("area", 0))
-    mag = f"{mn}" if mn == mx else f"{mn}-{mx}"
-    v = f"{mag}/{dur}s" if dur > 0 else mag
+    # Shared axis-aware renderer so axis-only effects (Water Breathing, Silence,
+    # Paralyze, Lock, Open...) render identically to spells/potions/core.
+    v = gc.format_effect_values(eff)
     if show_area and area > 0:
         v = f"{v}/{area}ft"
     return v

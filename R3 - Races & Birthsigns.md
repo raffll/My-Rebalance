@@ -75,7 +75,7 @@ Abilities
 
 Spells
     Water Breathing
-        Water Breathing                     1/120s
+        Water Breathing                     120s
 ```
 
 *Current*
@@ -90,7 +90,7 @@ Abilities
     Scales
         Resist Normal Weapons               25
     Amphibious
-        Water Breathing                     1
+        Water Breathing                     120s
         Swift Swim                          50
 ```
 
@@ -441,7 +441,7 @@ Powers
 ```
 Powers
     Moonshadow
-        Invisibility                        1/60s
+        Invisibility                        60s
 ```
 
 *Current*
@@ -496,7 +496,7 @@ Abilities
 ```
 Powers
     Tower Key
-        Open                                50/1s
+        Open                                50
 
 Spells
     Beggar's Nose

@@ -5,7 +5,7 @@ English explanation column saying which rule produced each spell's change.
 Same structure/format as R3 - Spells.md (school -> effect -> rows), but each row
 gets a 4th column: a short note on the rule applied (base-cost compensation,
 no-scale, rounding, cost recompute, rename, AUTO_CALCULATE violation, ...).
-This is a SEPARATE document; it does not touch R3 - Spells.md or gen_readme.py.
+This is a SEPARATE document; it does not touch R3 - Spells.md or gen_spells.py.
 
 Read-only on the data. Rules per docs/Spell-Rules-Reference.md.
 """
@@ -282,8 +282,10 @@ def main() -> int:
             return (0, mn, mx, obj.get("name", ""))
         return (0, dur, dur, obj.get("name", ""))
 
-    # Bucket CHANGED spells only, by school -> effect.
+    # Bucket CHANGED spells only. Single-effect spells go under school -> effect;
+    # multi-effect spells collect into a dedicated end section (like potions).
     groups: dict[str, dict[str, list]] = {}
+    multi: list = []
     changed_count = 0
     for o in spells:
         van = van_by_id.get((o.get("id") or "").lower().strip())
@@ -292,6 +294,9 @@ def main() -> int:
         changed_count += 1
         effs = o.get("effects") or []
         if not effs:
+            continue
+        if len(effs) > 1:
+            multi.append((o, van))
             continue
         fx = effs[0].get("magic_effect")
         school = fx_school.get(fx) or "Misc"
@@ -339,6 +344,23 @@ def main() -> int:
             block(None, [t for t in recs if not is_td(t[0])])
             block("Tamriel Data", [t for t in recs if is_td(t[0])])
             out.append("")
+
+    if multi:
+        header("## Multi-Effect Spells")
+
+        def multi_block(title, items):
+            if not items:
+                return
+            if title:
+                out.append(f"*{title}*")
+            out.append("```")
+            for o, van in sorted(items, key=lambda t: sort_key(t[0])):
+                out.extend(emit_record(o, van))
+            out.append("```")
+            out.append("")
+
+        multi_block(None, [t for t in multi if not is_td(t[0])])
+        multi_block("Tamriel Data", [t for t in multi if is_td(t[0])])
 
     out_dir = os.path.dirname(args.out)
     if out_dir and not os.path.exists(out_dir):
