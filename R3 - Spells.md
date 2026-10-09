@@ -660,7 +660,7 @@ llivam's reversal                           20-30/10s -> 20-30/40s              
 
 *Tamriel Data*
 ```
-T_Com_Mys_ReflectDamage                     1-5/50s -> 15/30s [76 -> 56]        Minor Reflect -> Reflect Damage
+T_Com_Mys_ReflectDamage                     1-5/50s -> 1-5/200s                 Minor Reflect
 T_Imp_Res_SothasMirror                      10/5s -> 40/5s                      St. Naharine's Shield
 T_Com_Mys_DistortedReflect                  20/15s -> 40/30s                    Distorted Reflection
 ```
@@ -831,9 +831,9 @@ Base Cost                                   2.0 -> 0.5
 
 ```
 variable resist magicka                     1-30/10s -> 1-30/40s                Variable Resist Magicka
-resist magicka                              10/5s -> 20/20s                     Resist Magicka
+resist magicka                              10/5s -> 10/20s                     Resist Magicka
 strong resist magicka                       20/10s -> 20/40s                    Strong Resist Magicka
-magickguard                                 20-40/10s -> 20-40/120s             Magickguard
+magickguard                                 20-40/10s -> 20-40/40s              Magickguard
 great resist magicka                        30/10s -> 30/40s                    Great Resist Magicka
 ```
 
@@ -890,14 +890,14 @@ Base Cost                                   1.0 -> 8.0
 ```
 
 ```
-restore agility                             5-20/30s -> 5-20/1s                 Restore Agility
-restore endurance                           5-20/30s -> 5-20/1s                 Restore Endurance
-restore intelligence                        5-20/30s -> 5-20/1s                 Restore Intelligence
-restore luck                                5-20/30s -> 5-20/1s                 Restore Luck
-restore personality                         5-20/30s -> 5-20/1s                 Restore Personality
-restore speed                               5-20/30s -> 5-20/1s                 Restore Speed
-restore strength                            5-20/30s -> 5-20/1s                 Restore Strength
-restore willpower                           5-20/30s -> 5-20/1s                 Restore Willpower
+restore agility                             5-20/30s -> 5-20/4s                 Restore Agility
+restore endurance                           5-20/30s -> 5-20/4s                 Restore Endurance
+restore intelligence                        5-20/30s -> 5-20/4s                 Restore Intelligence
+restore luck                                5-20/30s -> 5-20/4s                 Restore Luck
+restore personality                         5-20/30s -> 5-20/4s                 Restore Personality
+restore speed                               5-20/30s -> 5-20/4s                 Restore Speed
+restore strength                            5-20/30s -> 5-20/4s                 Restore Strength
+restore willpower                           5-20/30s -> 5-20/4s                 Restore Willpower
 ```
 
 ------------------------------------------------------------
@@ -915,7 +915,7 @@ stamina                                     10-30/30s -> 10-30/12s              
 
 *Tamriel Data*
 ```
-T_Com_Res_WeaponResartus                    42-78/30s -> 30-60/12s [90 -> 68]   Greater Stamina
+T_Com_Res_WeaponResartus                    42-78/30s -> 40-80/12s              Greater Stamina
 ```
 
 ------------------------------------------------------------

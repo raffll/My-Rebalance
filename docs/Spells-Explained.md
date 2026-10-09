@@ -557,7 +557,7 @@ strong reflect                              20-30/5s -> 20-30/20s               
 
 *Tamriel Data*
 ```
-T_Com_Mys_ReflectDamage                     1-5/50s -> 15/30s [76 -> 56]        Minor Reflect -> Reflect Damage                                       mag x5, dur /1.5 = x3 ✗ (expected x4); renamed
+T_Com_Mys_ReflectDamage                     1-5/50s -> 1-5/200s                 Minor Reflect                                                         mag x1, dur x4 = x4 compensated ✓
 T_Imp_Res_SothasMirror                      10/5s -> 40/5s                      St. Naharine's Shield                                                 mag x4, dur x1 = x4 compensated ✓
 T_Com_Mys_DistortedReflect                  20/15s -> 40/30s                    Distorted Reflection                                                  mag x2, dur x2 = x4 compensated ✓
 ```
@@ -728,9 +728,9 @@ Base Cost                                   2.0 -> 0.5
 
 ```
 variable resist magicka                     1-30/10s -> 1-30/40s                Variable Resist Magicka                                               mag x1, dur x4 = x4 compensated ✓
-resist magicka                              10/5s -> 20/20s                     Resist Magicka                                                        mag x2, dur x4 = x8 ✗ (expected x4)
+resist magicka                              10/5s -> 10/20s                     Resist Magicka                                                        mag x1, dur x4 = x4 compensated ✓
 strong resist magicka                       20/10s -> 20/40s                    Strong Resist Magicka                                                 mag x1, dur x4 = x4 compensated ✓
-magickguard                                 20-40/10s -> 20-40/120s             Magickguard                                                           mag x1, dur x12 = x12 ✗ (expected x4)
+magickguard                                 20-40/10s -> 20-40/40s              Magickguard                                                           mag x1, dur x4 = x4 compensated ✓
 great resist magicka                        30/10s -> 30/40s                    Great Resist Magicka                                                  mag x1, dur x4 = x4 compensated ✓
 ```
 
@@ -783,14 +783,14 @@ Base Cost                                   1.0 -> 8.0
 ```
 
 ```
-restore agility                             5-20/30s -> 5-20/1s                 Restore Agility                                                       mag x1, dur /30 = /30 ✗ (expected /8)
-restore endurance                           5-20/30s -> 5-20/1s                 Restore Endurance                                                     mag x1, dur /30 = /30 ✗ (expected /8)
-restore intelligence                        5-20/30s -> 5-20/1s                 Restore Intelligence                                                  mag x1, dur /30 = /30 ✗ (expected /8)
-restore luck                                5-20/30s -> 5-20/1s                 Restore Luck                                                          mag x1, dur /30 = /30 ✗ (expected /8)
-restore personality                         5-20/30s -> 5-20/1s                 Restore Personality                                                   mag x1, dur /30 = /30 ✗ (expected /8)
-restore speed                               5-20/30s -> 5-20/1s                 Restore Speed                                                         mag x1, dur /30 = /30 ✗ (expected /8)
-restore strength                            5-20/30s -> 5-20/1s                 Restore Strength                                                      mag x1, dur /30 = /30 ✗ (expected /8)
-restore willpower                           5-20/30s -> 5-20/1s                 Restore Willpower                                                     mag x1, dur /30 = /30 ✗ (expected /8)
+restore agility                             5-20/30s -> 5-20/4s                 Restore Agility                                                       mag x1, dur /8 = /8 compensated ✓
+restore endurance                           5-20/30s -> 5-20/4s                 Restore Endurance                                                     mag x1, dur /8 = /8 compensated ✓
+restore intelligence                        5-20/30s -> 5-20/4s                 Restore Intelligence                                                  mag x1, dur /8 = /8 compensated ✓
+restore luck                                5-20/30s -> 5-20/4s                 Restore Luck                                                          mag x1, dur /8 = /8 compensated ✓
+restore personality                         5-20/30s -> 5-20/4s                 Restore Personality                                                   mag x1, dur /8 = /8 compensated ✓
+restore speed                               5-20/30s -> 5-20/4s                 Restore Speed                                                         mag x1, dur /8 = /8 compensated ✓
+restore strength                            5-20/30s -> 5-20/4s                 Restore Strength                                                      mag x1, dur /8 = /8 compensated ✓
+restore willpower                           5-20/30s -> 5-20/4s                 Restore Willpower                                                     mag x1, dur /8 = /8 compensated ✓
 ```
 
 ------------------------------------------------------------
@@ -808,7 +808,7 @@ stamina                                     10-30/30s -> 10-30/12s              
 
 *Tamriel Data*
 ```
-T_Com_Res_WeaponResartus                    42-78/30s -> 30-60/12s [90 -> 68]   Greater Stamina                                                       mag /1.5, dur /2.5 = /3 ✗ (expected /2.5)
+T_Com_Res_WeaponResartus                    42-78/30s -> 40-80/12s              Greater Stamina                                                       mag x1, dur /2.5 = /2.5 compensated ✓
 ```
 
 ------------------------------------------------------------

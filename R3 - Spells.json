@@ -1861,7 +1861,7 @@
     "type": "Spell",
     "flags": "",
     "id": "T_Com_Mys_ReflectDamage",
-    "name": "Reflect Damage",
+    "name": "Minor Reflect",
     "effects": [
       {
         "magic_effect": "Reflect",
@@ -1869,14 +1869,14 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 30,
-        "min_magnitude": 15,
-        "max_magnitude": 15
+        "duration": 200,
+        "min_magnitude": 1,
+        "max_magnitude": 5
       }
     ],
     "data": {
       "spell_type": "Spell",
-      "cost": 56,
+      "cost": 76,
       "flags": ""
     }
   },
@@ -1893,13 +1893,13 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 12,
-        "min_magnitude": 30,
-        "max_magnitude": 60
+        "min_magnitude": 40,
+        "max_magnitude": 80
       }
     ],
     "data": {
       "spell_type": "Spell",
-      "cost": 68,
+      "cost": 90,
       "flags": ""
     }
   },
@@ -3878,7 +3878,7 @@
         "attribute": "None",
         "range": "OnSelf",
         "area": 0,
-        "duration": 120,
+        "duration": 40,
         "min_magnitude": 20,
         "max_magnitude": 40
       }
@@ -4086,8 +4086,8 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 20,
-        "min_magnitude": 20,
-        "max_magnitude": 20
+        "min_magnitude": 10,
+        "max_magnitude": 10
       }
     ],
     "data": {
@@ -4292,7 +4292,7 @@
         "attribute": "Agility",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
@@ -4315,7 +4315,7 @@
         "attribute": "Endurance",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
@@ -4338,7 +4338,7 @@
         "attribute": "Intelligence",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
@@ -4361,7 +4361,7 @@
         "attribute": "Luck",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
@@ -4384,7 +4384,7 @@
         "attribute": "Personality",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
@@ -4407,7 +4407,7 @@
         "attribute": "Speed",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
@@ -4430,7 +4430,7 @@
         "attribute": "Strength",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
@@ -4453,7 +4453,7 @@
         "attribute": "Willpower",
         "range": "OnSelf",
         "area": 0,
-        "duration": 1,
+        "duration": 4,
         "min_magnitude": 5,
         "max_magnitude": 20
       }
