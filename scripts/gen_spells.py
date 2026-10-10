@@ -93,7 +93,7 @@ def format_effect(eff: dict, show_area: bool = True, show_range: bool = True) ->
     area = int(eff.get("area", 0))
     # Base magnitude/duration, with the unused axis omitted per effect flags.
     v = gc.format_effect_values(eff)
-    if show_area and area > 0:
+    if show_area:
         v = f"{v}/{area}ft"
     if show_range:
         label = RANGE_LABEL.get(eff.get("range", ""), eff.get("range", ""))
@@ -474,15 +474,39 @@ def main() -> int:
     def start_display_name(rec: dict) -> str:
         return (rec.get("name") or rec.get("id") or "")
 
-    def start_first_effect_values(rec: dict) -> str:
-        """First effect rendered: show Touch/Target range (suppress default
-        OnSelf), show area when present."""
-        effects = rec.get("effects") or []
-        if not effects:
-            return ""
-        e = effects[0]
-        show_range = e.get("range", "") in ("OnTouch", "OnTarget")
-        return format_effect(e, show_area=True, show_range=show_range)
+    def start_pair_values(rem: dict | None, add: dict | None) -> str:
+        """Render the paired "removed -> added" value token for the first effect
+        of each side, symmetric per the steering rule: magnitude/duration always
+        on both sides; range, area (ft), and cost each shown on BOTH sides when
+        they differ between the two sides and on NEITHER side when equal. Token
+        order per side: mag/dur/ft/range [cost]."""
+        rem_eff = (rem.get("effects") or [None])[0] if rem else None
+        add_eff = (add.get("effects") or [None])[0] if add else None
+
+        # Compare axes between the two sides; show on both or neither.
+        if rem_eff is not None and add_eff is not None:
+            show_range = rem_eff.get("range", "") != add_eff.get("range", "")
+            show_area = int(rem_eff.get("area", 0)) != int(add_eff.get("area", 0))
+        else:
+            show_range = False
+            show_area = False
+
+        rem_tok = (format_effect(rem_eff, show_area=show_area, show_range=show_range)
+                   if rem_eff is not None else "")
+        add_tok = (format_effect(add_eff, show_area=show_area, show_range=show_range)
+                   if add_eff is not None else "")
+
+        # Cost axis: compute each side's spell cost; show the bracket on both
+        # sides when they differ, on neither when equal (or either missing).
+        rem_cost = cost_label(rem)
+        add_cost = cost_label(add)
+        if rem_cost is not None and add_cost is not None and rem_cost != add_cost:
+            if rem_tok:
+                rem_tok = f"{rem_tok} [{rem_cost}]"
+            if add_tok:
+                add_tok = f"{add_tok} [{add_cost}]"
+
+        return f"{rem_tok} -> {add_tok}"
 
     if removed or added:
         header("## Starting Spells")
@@ -494,12 +518,10 @@ def main() -> int:
             add = added_sorted[i] if i < len(added_sorted) else None
             rem_id = rem.get("id") if rem else ""
             add_id = add.get("id") if add else ""
-            rem_vals = start_first_effect_values(rem) if rem else ""
-            add_vals = start_first_effect_values(add) if add else ""
             rem_name = start_display_name(rem) if rem else ""
             add_name = start_display_name(add) if add else ""
             id_seg = f"{rem_id} -> {add_id}"
-            values_seg = f"{rem_vals} -> {add_vals}"
+            values_seg = start_pair_values(rem, add)
             name_seg = f"{rem_name} -> {add_name}"
             line = add_at_column(id_seg, COL_VALUES, values_seg)
             line = add_at_column(line, COL_ID, name_seg)

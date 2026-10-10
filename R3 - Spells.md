@@ -15,9 +15,9 @@ sEffectSlowFall                             SlowFall -> Slowfall
 
 ```
 detect_creature -> detect enchantment       50-150/5s -> 50/10s                 Detect Creature -> Detect Enchantment
-exhausting touch -> first barrier           5-20/60s/Touch -> 10/30s            Exhausting Touch -> First Barrier
+exhausting touch -> first barrier           5-20/60s/Touch -> 10/30s/Self       Exhausting Touch -> First Barrier
 feet of notorgo -> skylamp's shadow         10/90s -> 5-20/30s                  Feet of Notorgo -> Skylamp's Shadow
-shield -> weariness                         5/30s -> 10-100/20s/Target          Shield -> Weariness
+shield -> weariness                         5/30s/Self -> 10-100/20s/Target     Shield -> Weariness
 ```
 
 ------------------------------------------------------------
