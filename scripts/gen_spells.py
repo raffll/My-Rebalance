@@ -79,61 +79,6 @@ def add_at_column(base: str, col: int, segment: str) -> str:
     return base + segment
 
 
-# Range value -> short label used in the README (Self is the default and is
-# never shown; only Touch/Target appear when the range changed).
-RANGE_LABEL = {"OnTouch": "Touch", "OnTarget": "Target", "OnSelf": "Self"}
-
-
-def format_effect(eff: dict, show_area: bool = True, show_range: bool = True) -> str:
-    """Render an effect's values. Magnitude/duration come from the shared
-    axis-aware renderer, so an effect with no magnitude shows duration only
-    (Silence -> "18s") and an effect with no duration shows magnitude only
-    (Damage Health -> "5"). Area and range are only appended when the caller
-    asks (i.e. when they changed)."""
-    area = int(eff.get("area", 0))
-    # Base magnitude/duration, with the unused axis omitted per effect flags.
-    v = gc.format_effect_values(eff)
-    if show_area:
-        v = f"{v}/{area}ft"
-    if show_range:
-        label = RANGE_LABEL.get(eff.get("range", ""), eff.get("range", ""))
-        if label:
-            v = f"{v}/{label}"
-    return v
-
-
-def format_effect_pair(eff: dict, van_eff: dict | None) -> str:
-    """Render one effect as "vanilla -> current", showing area and range only
-    when they changed. Magnitude/duration always shown."""
-    cur_area = int(eff.get("area", 0))
-    van_area = int(van_eff.get("area", 0)) if van_eff is not None else None
-    area_changed = van_area is not None and van_area != cur_area
-    show_area = area_changed if van_eff is not None else cur_area > 0
-
-    cur_range = eff.get("range", "")
-    van_range = van_eff.get("range", "") if van_eff is not None else None
-    range_changed = van_range is not None and van_range != cur_range
-    show_range = range_changed if van_eff is not None else False
-
-    cur = format_effect(eff, show_area=show_area, show_range=show_range)
-    van = (format_effect(van_eff, show_area=show_area, show_range=show_range)
-           if van_eff is not None else None)
-    if van is not None and van != cur:
-        return f"{van} -> {cur}"
-    return cur
-
-
-def format_value_rows(obj: dict, vanilla: dict | None) -> list[str]:
-    """One "vanilla -> current" string per effect, matched positionally."""
-    effects = obj.get("effects") or []
-    van_effects = (vanilla or {}).get("effects") or []
-    rows = []
-    for i, eff in enumerate(effects):
-        van_eff = van_effects[i] if i < len(van_effects) else None
-        rows.append(format_effect_pair(eff, van_eff))
-    return rows
-
-
 def cost_label(obj: dict | None) -> str | None:
     """Spell cost as a string: "auto" when AUTO_CALCULATE, else the numeric
     cost. Returns None when the record has no spell cost (e.g. potions)."""
@@ -159,11 +104,6 @@ def format_cost_bracket(obj: dict, vanilla: dict | None) -> str:
     if van is not None and van != cur:
         return f"[{van} -> {cur}]"
     return ""
-
-
-def is_td(obj: dict) -> bool:
-    rid = obj.get("id") or ""
-    return rid.startswith("T_")
 
 
 # ---------------------------------------------------------------------------
@@ -326,7 +266,7 @@ def main() -> int:
 
     def emit_record(obj: dict) -> list[str]:
         van = van_by_id.get((obj.get("id") or "").lower().strip())
-        rows = format_value_rows(obj, van)
+        rows = gc.format_value_rows(obj, van)
 
         cur_name = obj.get("name") or "(unnamed)"
         van_name = van.get("name") if van else None
@@ -491,9 +431,9 @@ def main() -> int:
             show_range = False
             show_area = False
 
-        rem_tok = (format_effect(rem_eff, show_area=show_area, show_range=show_range)
+        rem_tok = (gc.format_effect(rem_eff, show_area=show_area, show_range=show_range)
                    if rem_eff is not None else "")
-        add_tok = (format_effect(add_eff, show_area=show_area, show_range=show_range)
+        add_tok = (gc.format_effect(add_eff, show_area=show_area, show_range=show_range)
                    if add_eff is not None else "")
 
         # Cost axis: compute each side's spell cost; show the bracket on both
@@ -564,9 +504,9 @@ def main() -> int:
 
             # Vanilla records: "Vanilla" label. TD records: "Tamriel Data" label.
             block("Vanilla",
-                  [r for r in recs if r.get("type") == "Spell" and not is_td(r)])
+                  [r for r in recs if r.get("type") == "Spell" and not gc.is_td(r)])
             block("Tamriel Data",
-                  [r for r in recs if r.get("type") == "Spell" and is_td(r)])
+                  [r for r in recs if r.get("type") == "Spell" and gc.is_td(r)])
 
             out.append("")
 
@@ -585,9 +525,9 @@ def main() -> int:
             out.append("")
 
         multi_block("Vanilla",
-                    [r for r in multi if r.get("type") == "Spell" and not is_td(r)])
+                    [r for r in multi if r.get("type") == "Spell" and not gc.is_td(r)])
         multi_block("Tamriel Data",
-                    [r for r in multi if r.get("type") == "Spell" and is_td(r)])
+                    [r for r in multi if r.get("type") == "Spell" and gc.is_td(r)])
 
     out_dir = os.path.dirname(args.out)
     if out_dir and not os.path.exists(out_dir):

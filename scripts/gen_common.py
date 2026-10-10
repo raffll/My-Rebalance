@@ -109,6 +109,68 @@ def format_effect_values(eff: dict) -> str:
     return "-"             # neither axis (Mark/Recall/Intervention, Cure*)
 
 
+# Range value -> short label used in the README (Self is the default and is
+# never shown; only Touch/Target appear when the range changed).
+RANGE_LABEL = {"OnTouch": "Touch", "OnTarget": "Target", "OnSelf": "Self"}
+
+
+def format_effect(eff: dict, show_area: bool = True, show_range: bool = True) -> str:
+    """Render an effect's values. Magnitude/duration come from the shared
+    axis-aware renderer, so an effect with no magnitude shows duration only
+    (Silence -> "18s") and an effect with no duration shows magnitude only
+    (Damage Health -> "5"). Area and range are only appended when the caller
+    asks (i.e. when they changed)."""
+    area = int(eff.get("area", 0))
+    # Base magnitude/duration, with the unused axis omitted per effect flags.
+    v = format_effect_values(eff)
+    if show_area:
+        v = f"{v}/{area}ft"
+    if show_range:
+        label = RANGE_LABEL.get(eff.get("range", ""), eff.get("range", ""))
+        if label:
+            v = f"{v}/{label}"
+    return v
+
+
+def format_effect_pair(eff: dict, van_eff: dict | None) -> str:
+    """Render one effect as "vanilla -> current", showing area and range only
+    when they changed. Magnitude/duration always shown."""
+    cur_area = int(eff.get("area", 0))
+    van_area = int(van_eff.get("area", 0)) if van_eff is not None else None
+    area_changed = van_area is not None and van_area != cur_area
+    show_area = area_changed if van_eff is not None else cur_area > 0
+
+    cur_range = eff.get("range", "")
+    van_range = van_eff.get("range", "") if van_eff is not None else None
+    range_changed = van_range is not None and van_range != cur_range
+    show_range = range_changed if van_eff is not None else False
+
+    cur = format_effect(eff, show_area=show_area, show_range=show_range)
+    van = (format_effect(van_eff, show_area=show_area, show_range=show_range)
+           if van_eff is not None else None)
+    if van is not None and van != cur:
+        return f"{van} -> {cur}"
+    return cur
+
+
+def format_value_rows(obj: dict, vanilla: dict | None) -> list[str]:
+    """One "vanilla -> current" string per effect, matched positionally."""
+    effects = obj.get("effects") or []
+    van_effects = (vanilla or {}).get("effects") or []
+    rows = []
+    for i, eff in enumerate(effects):
+        van_eff = van_effects[i] if i < len(van_effects) else None
+        rows.append(format_effect_pair(eff, van_eff))
+    return rows
+
+
+def is_td(obj_or_id) -> bool:
+    """True for Tamriel Data records (id starts with "T_"). Accepts either a
+    record dict or a bare id string."""
+    rid = obj_or_id.get("id", "") if isinstance(obj_or_id, dict) else (obj_or_id or "")
+    return rid.startswith("T_")
+
+
 def fmt_num(v) -> str:
     """Render a number as-is from JSON (floats stay floats)."""
     return str(v)
