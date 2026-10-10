@@ -10,12 +10,11 @@ Sources
   SCHOOL (for the "## <School>" header), and sEffect* GMSTs for effect display
   names.
 
-OWNER DECISION: the Potions README shows NO "Base Cost" line. R3 - Potions.json
-contains no MagicEffect records, so there is no base-cost change in this plugin
-to document; base-cost changes are documented in R3 - Spells.md where the
-MagicEffects live. This generator therefore does not read R3 - Spells.json and
-does not compute or emit any Base Cost line. It only needs each effect's school
-and display name, both read from the vanilla masters (read-only).
+The Potions README shows NO "Base Cost" line (R3 - Potions.json contains no
+MagicEffect records; base-cost changes live in R3 - Spells.md). It does show an
+always-present per-effect "Tier" line derived from the effect's R3 base cost,
+read from R3 - Spells.json (--spells-json). Each effect's school and display name
+come from the vanilla masters (read-only).
 
 Master lookup order (first hit wins):
     Morrowind -> Tribunal -> Bloodmoon -> Patch for Purists
@@ -26,11 +25,10 @@ Output structure
     # Title
     ## <School>                         one per magic-effect school
       ### <Effect>                      one per effect used by single-effect records
-        *Potions*                       single-effect Alchemy, non-TD
-        *Potions - Tamriel Data*        single-effect Alchemy, id starts T_
+        Tier                            always-present tier column from base cost
+        *Vanilla*                       single-effect Alchemy, non-TD
+        *Tamriel Data*                  single-effect Alchemy, id starts T_
     ## Multi-Effect Potions             every potion with 2+ effects
-
-Effects whose school cannot be resolved from the masters fall back to "Misc".
 
 Line format matches gen_spells.py (name col, values col 44, id col 80).
 """
@@ -60,97 +58,29 @@ MASTER_FILES = [
     "Cyr_Main.json",
 ]
 
-# Files at/above this size are read with the streaming decoder.
-STREAM_THRESHOLD = 50 * 1024 * 1024  # 50 MB
-
 
 # ---------------------------------------------------------------------------
-# Formatting helpers (mirrors gen_spells.py)
+# Potion Tier column from an effect's R3 base cost.
+# Geometric-midpoint half-open ranges (see context.json tier_boundaries).
+# Duration-only effects divide the base cost by 40 first.
 # ---------------------------------------------------------------------------
-def fmt_num(v) -> str:
-    return str(v)
-
-
-def add_at_column(base: str, col: int, segment: str) -> str:
-    if not segment:
-        return base
-    if len(base) < col:
-        base += " " * (col - len(base))
+def tier_column(base_cost: float, uses_magnitude: bool) -> str:
+    v = base_cost if uses_magnitude else base_cost / 40.0
+    if v >= 6.32:
+        col = 8
+    elif v >= 3.16:
+        col = 5
+    elif v >= 1.41:
+        col = 2
+    elif v >= 0.71:
+        col = 1
+    elif v >= 0.32:
+        col = 0.5
+    elif v >= 0.14:
+        col = 0.2
     else:
-        base += " "
-    return base + segment
-
-
-RANGE_LABEL = {"OnTouch": "Touch", "OnTarget": "Target", "OnSelf": "Self"}
-
-
-def format_effect(eff: dict, show_area: bool = True, show_range: bool = True) -> str:
-    area = int(eff.get("area", 0))
-    v = gc.format_effect_values(eff)
-    if show_area and area > 0:
-        v = f"{v}/{area}ft"
-    if show_range:
-        label = RANGE_LABEL.get(eff.get("range", ""), eff.get("range", ""))
-        if label:
-            v = f"{v}/{label}"
-    return v
-
-
-def format_effect_pair(eff: dict, van_eff: dict | None) -> str:
-    cur_area = int(eff.get("area", 0))
-    van_area = int(van_eff.get("area", 0)) if van_eff is not None else None
-    area_changed = van_area is not None and van_area != cur_area
-    show_area = area_changed if van_eff is not None else cur_area > 0
-
-    cur_range = eff.get("range", "")
-    van_range = van_eff.get("range", "") if van_eff is not None else None
-    range_changed = van_range is not None and van_range != cur_range
-    show_range = range_changed if van_eff is not None else False
-
-    cur = format_effect(eff, show_area=show_area, show_range=show_range)
-    van = (format_effect(van_eff, show_area=show_area, show_range=show_range)
-           if van_eff is not None else None)
-    if van is not None and van != cur:
-        return f"{van} -> {cur}"
-    return cur
-
-
-def format_value_rows(obj: dict, vanilla: dict | None) -> list[str]:
-    effects = obj.get("effects") or []
-    van_effects = (vanilla or {}).get("effects") or []
-    rows = []
-    for i, eff in enumerate(effects):
-        van_eff = van_effects[i] if i < len(van_effects) else None
-        rows.append(format_effect_pair(eff, van_eff))
-    return rows
-
-
-def is_td(obj: dict) -> bool:
-    rid = obj.get("id") or ""
-    return rid.startswith("T_")
-
-
-# ---------------------------------------------------------------------------
-# Streaming reader for large master files.
-# ---------------------------------------------------------------------------
-def iter_json_array(path: str):
-    decoder = json.JSONDecoder()
-    with open(path, "r", encoding="utf-8") as f:
-        buf = f.read()
-    i = 0
-    n = len(buf)
-    while i < n and buf[i] in " \t\r\n":
-        i += 1
-    if i < n and buf[i] == "[":
-        i += 1
-    while i < n:
-        while i < n and buf[i] in " \t\r\n,":
-            i += 1
-        if i >= n or buf[i] == "]":
-            break
-        obj, end = decoder.raw_decode(buf, i)
-        yield obj
-        i = end
+        col = 0.1
+    return {8: "8", 5: "5", 2: "2", 1: "1", 0.5: "0.5", 0.2: "0.2", 0.1: "0.1"}[col]
 
 
 # ---------------------------------------------------------------------------
@@ -164,6 +94,9 @@ def main() -> int:
                     help="Output README path.")
     ap.add_argument("--master-dir", default="C:/OMEN/Morrowind/tes3conv",
                     help="Directory holding the master JSONs.")
+    ap.add_argument("--spells-json", default="R3 - Spells.json",
+                    help="Spells ESP JSON path (source of MagicEffect base costs "
+                         "used for the per-effect Tier line).")
     args = ap.parse_args()
 
     if not os.path.exists(args.json):
@@ -173,6 +106,21 @@ def main() -> int:
     print(f"Loading ESP JSON: {args.json}")
     with open(args.json, "r", encoding="utf-8") as f:
         data = json.load(f)
+
+    # R3 base cost per effect, from the Spells ESP JSON (MagicEffect records).
+    # Used for the always-present Tier line on each "### <Effect>" subsection.
+    fx_base_cost: dict[str, float] = {}
+    if os.path.exists(args.spells_json):
+        print(f"Loading spells JSON: {args.spells_json}")
+        for o in gc.read_records(args.spells_json):
+            if not isinstance(o, dict):
+                continue
+            if o.get("type") == "MagicEffect" and o.get("effect_id"):
+                cost = (o.get("data") or {}).get("base_cost")
+                if cost is not None and o["effect_id"] not in fx_base_cost:
+                    fx_base_cost[o["effect_id"]] = cost
+    else:
+        print(f"  (skip, not found) {args.spells_json}", file=sys.stderr)
 
     # Collect the ids we need vanilla data for: Alchemy ids.
     needed_ids: set[str] = set()
@@ -189,6 +137,7 @@ def main() -> int:
     print(f"Loading masters from: {args.master_dir}")
     van_by_id: dict[str, dict] = {}
     fx_school: dict[str, str] = {}
+    fx_van_cost: dict[str, float] = {}  # vanilla base cost, Tier fallback
     effect_names: dict[str, str] = {}
     for name in MASTER_FILES:
         path = os.path.join(args.master_dir, name)
@@ -196,9 +145,7 @@ def main() -> int:
             print(f"  (skip, not found) {name}")
             continue
         print(f"  reading {name}")
-        size = os.path.getsize(path)
-        records = iter_json_array(path) if size >= STREAM_THRESHOLD else json.load(open(path, "r", encoding="utf-8"))
-        for o in records:
+        for o in gc.read_records(path):
             if not isinstance(o, dict):
                 continue
             if o.get("type") == "MagicEffect" and o.get("effect_id"):
@@ -206,6 +153,10 @@ def main() -> int:
                     sch = (o.get("data") or {}).get("school")
                     if sch:
                         fx_school[o["effect_id"]] = sch
+                if o["effect_id"] not in fx_van_cost:
+                    cost = (o.get("data") or {}).get("base_cost")
+                    if cost is not None:
+                        fx_van_cost[o["effect_id"]] = cost
                 continue
             rid = o.get("id")
             if not rid:
@@ -240,9 +191,26 @@ def main() -> int:
             target = split_camel(attr)
         return f"{base}: {target}" if target else base
 
+    def school_of(fx: str) -> str:
+        """School for an effect: vanilla master MagicEffect school first, else
+        'Misc' as a last resort (mirrors gen_spells.py; potions carry no ESP
+        MagicEffect metadata so there is no fx_meta layer)."""
+        return fx_school.get(fx) or "Misc"
+
+    def tier_label(fx: str) -> str | None:
+        """Tier column string for an effect from its R3 base cost (fallback to
+        the vanilla master base cost). Duration-only effects divide by 40 first.
+        Returns None when no base cost is available anywhere."""
+        cost = fx_base_cost.get(fx)
+        if cost is None:
+            cost = fx_van_cost.get(fx)
+        if cost is None:
+            return None
+        return tier_column(cost, gc.effect_uses_magnitude(fx))
+
     def emit_record(obj: dict) -> list[str]:
         van = van_by_id.get((obj.get("id") or "").lower().strip())
-        rows = format_value_rows(obj, van)
+        rows = gc.format_value_rows(obj, van)
 
         cur_name = obj.get("name") or "(unnamed)"
         van_name = van.get("name") if van else None
@@ -254,20 +222,20 @@ def main() -> int:
         # Single-effect (or no effects): one line.
         if len(rows) <= 1:
             vals = rows[0] if rows else ""
-            line = add_at_column(id_col, COL_VALUES, vals)
-            line = add_at_column(line, COL_ID, name_seg)
+            line = gc.add_at_column(id_col, COL_VALUES, vals)
+            line = gc.add_at_column(line, COL_ID, name_seg)
             return [line]
 
         # Multi-effect: first row carries id and name; each effect its own row.
         lines = []
-        first = add_at_column(id_col, COL_VALUES, "")
-        first = add_at_column(first, COL_ID, name_seg)
+        first = gc.add_at_column(id_col, COL_VALUES, "")
+        first = gc.add_at_column(first, COL_ID, name_seg)
         lines.append(first)
         effects = obj.get("effects") or []
         for i, r in enumerate(rows):
             fx_name = effect_display_name(effects[i]) if i < len(effects) else ""
             label = f"{EFFECT_INDENT}{fx_name}"
-            lines.append(add_at_column(label, COL_VALUES, r))
+            lines.append(gc.add_at_column(label, COL_VALUES, r))
         return lines
 
     def sort_key(obj: dict):
@@ -297,7 +265,7 @@ def main() -> int:
             multi.append(o)
             continue
         fx = effects[0].get("magic_effect")
-        school = fx_school.get(fx, "Misc")
+        school = school_of(fx)
         groups.setdefault(school, {}).setdefault(fx, []).append(o)
 
     # Build output.
@@ -321,22 +289,31 @@ def main() -> int:
             recs = groups[school][fx]
             header(f"### {effect_base_name(fx)}")
 
+            # Always-present Tier line (same position spells uses for Base Cost).
+            tier = tier_label(fx)
+            if tier is not None:
+                out.append("```")
+                out.append(gc.add_at_column("Tier", COL_VALUES, tier))
+                out.append("```")
+
             def block(title: str | None, items: list) -> None:
                 if not items:
                     return
-                if title:
+                # Exactly one blank line before each block.
+                if out and out[-1] != "":
                     out.append("")
+                if title:
                     out.append(f"*{title}*")
                 out.append("```")
                 for r in sorted(items, key=sort_key):
                     out.extend(emit_record(r))
                 out.append("```")
 
-            # Vanilla records: no label. TD records: "Tamriel Data" label.
-            block(None,
-                  [r for r in recs if r.get("type") == "Alchemy" and not is_td(r)])
+            # Vanilla records: "Vanilla" label. TD records: "Tamriel Data" label.
+            block("Vanilla",
+                  [r for r in recs if r.get("type") == "Alchemy" and not gc.is_td(r)])
             block("Tamriel Data",
-                  [r for r in recs if r.get("type") == "Alchemy" and is_td(r)])
+                  [r for r in recs if r.get("type") == "Alchemy" and gc.is_td(r)])
 
             out.append("")
 
@@ -354,10 +331,10 @@ def main() -> int:
             out.append("```")
             out.append("")
 
-        multi_block(None,
-                    [r for r in multi if r.get("type") == "Alchemy" and not is_td(r)])
+        multi_block("Vanilla",
+                    [r for r in multi if r.get("type") == "Alchemy" and not gc.is_td(r)])
         multi_block("Tamriel Data",
-                    [r for r in multi if r.get("type") == "Alchemy" and is_td(r)])
+                    [r for r in multi if r.get("type") == "Alchemy" and gc.is_td(r)])
 
     out_dir = os.path.dirname(args.out)
     if out_dir and not os.path.exists(out_dir):

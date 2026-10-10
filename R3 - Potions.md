@@ -9,6 +9,11 @@
 ### Burden
 
 ```
+Tier                                        0.1
+```
+
+*Vanilla*
+```
 p_burden_b                                  5/8s -> 60/180s                     Bargain Potion of Burden
 p_burden_c                                  8/15s -> 80/240s                    Cheap Potion of Burden
 p_burden_s                                  10/30s -> 100/300s                  Standard Potion of Burden
@@ -26,6 +31,11 @@ T_Nor_Potion_Burden_Q                       15/45s -> 150/450s                  
 
 ### Feather
 
+```
+Tier                                        0.1
+```
+
+*Vanilla*
 ```
 p_feather_b                                 5/8s -> 60/180s                     Bargain Potion of Feather
 p_feather_c                                 8/15s -> 80/240s                    Cheap Potion of Feather
@@ -45,6 +55,11 @@ T_Nor_Potion_Feather_Q                      15/45s -> 150/450s                  
 ### Fire Shield
 
 ```
+Tier                                        2
+```
+
+*Vanilla*
+```
 p_fire_shield_b                             5/8s -> 3/9s                        Bargain Potion of Fire Shield -> Bargain Fire Shield
 p_fire_shield_c                             8/15s -> 4/12s                      Cheap Potion of Fire Shield -> Cheap Fire Shield
 p_fire_shield_s                             10/30s -> 6/18s                     Standard Potion of Fire Shield -> Standard Fire Shield
@@ -62,6 +77,11 @@ T_Nor_Potion_ShieldFire_Q                   15/45s -> 8/24s                     
 
 ### Frost Shield
 
+```
+Tier                                        2
+```
+
+*Vanilla*
 ```
 p_frost_shield_b                            5/8s -> 3/9s                        Bargain Potion of Frost Shield -> Bargain Frost Shield
 p_frost_shield_c                            8/15s -> 4/12s                      Cheap Potion of Frost Shield -> Cheap Frost Shield
@@ -81,6 +101,11 @@ T_Nor_Potion_ShieldFrost_Q                  15/45s -> 8/24s                     
 ### Jump
 
 ```
+Tier                                        2
+```
+
+*Vanilla*
+```
 p_jump_b                                    5/8s -> 3/9s                        Bargain Potion of Jump
 p_jump_c                                    8/15s -> 4/12s                      Cheap Potion of Jump
 ```
@@ -94,6 +119,11 @@ T_Nor_Potion_Jump_C                         8/15s -> 4/12s                      
 
 ### Levitate
 
+```
+Tier                                        2
+```
+
+*Vanilla*
 ```
 p_levitation_b                              5/30s -> 3/9s                       Bargain Rising Force Potion
 p_levitation_c                              8/15s -> 4/12s                      Cheap Rising Force Potion
@@ -112,6 +142,11 @@ T_Nor_Potion_Levitation_C                   8/15s -> 4/12s                      
 ### Lightning Shield
 
 ```
+Tier                                        2
+```
+
+*Vanilla*
+```
 p_lightning shield_b                        5/8s -> 3/9s                        Bargain Lightning Shield
 p_lightning shield_c                        8/15s -> 4/12s                      Cheap Lightning Shield
 p_lightning shield_s                        10/30s -> 6/18s                     Standard Lightning Shield
@@ -129,6 +164,9 @@ T_Nor_Potion_ShieldLightning_Q              15/45s -> 8/24s                     
 
 ### Shield
 
+```
+Tier                                        1
+```
 
 *Tamriel Data*
 ```
@@ -141,6 +179,11 @@ T_Com_Potion_Shield_C                       8/15s -> 8/24s                      
 ### SlowFall
 
 ```
+Tier                                        2
+```
+
+*Vanilla*
+```
 p_slowfall_s                                10/15s -> 6/18s                     Potion of Slowfalling -> Potion of Slowfall
 ```
 
@@ -148,6 +191,11 @@ p_slowfall_s                                10/15s -> 6/18s                     
 
 ### Swift Swim
 
+```
+Tier                                        0.5
+```
+
+*Vanilla*
 ```
 p_swift_swim_b                              1/8s -> 10/30s                      Bargain Potion of Swift Swim
 p_swift_swim_c                              8/15s -> 15/45s                     Cheap Potion of Swift Swim
@@ -165,6 +213,11 @@ T_Nor_Potion_SwiftSwim_C                    8/15s -> 15/45s                     
 ### Water Breathing
 
 ```
+Tier                                        0.1
+```
+
+*Vanilla*
+```
 p_water_breathing_s                         15s -> 300s                         Potion of Water Breathing
 ```
 
@@ -172,6 +225,11 @@ p_water_breathing_s                         15s -> 300s                         
 
 ### Water Walking
 
+```
+Tier                                        0.1
+```
+
+*Vanilla*
 ```
 p_water_walking_s                           15s -> 300s                         Potion of Water Walking
 ```
@@ -184,6 +242,9 @@ p_water_walking_s                           15s -> 300s                         
 
 ### Damage Attribute
 
+```
+Tier                                        8
+```
 
 *Tamriel Data*
 ```
@@ -201,6 +262,9 @@ T_Com_Poison_DamageWill_B                   5/0s -> 6/0s                        
 
 ### Damage Fatigue
 
+```
+Tier                                        2
+```
 
 *Tamriel Data*
 ```
@@ -211,6 +275,9 @@ T_Com_Poison_DamageFatigue_B                5/0s -> 6/0s                        
 
 ### Damage Health
 
+```
+Tier                                        8
+```
 
 *Tamriel Data*
 ```
@@ -221,6 +288,9 @@ T_Com_Poison_DamageHealth_B                 5/0s -> 6/0s                        
 
 ### Damage Magicka
 
+```
+Tier                                        5
+```
 
 *Tamriel Data*
 ```
@@ -231,6 +301,9 @@ T_Com_Poison_DamageMagicka_B                5/0s -> 6/0s                        
 
 ### Drain Attribute
 
+```
+Tier                                        1
+```
 
 *Tamriel Data*
 ```
@@ -260,6 +333,9 @@ T_Com_Poison_DrainWill_C                    8/15s -> 8/24s                      
 
 ### Blind
 
+```
+Tier                                        1
+```
 
 *Tamriel Data*
 ```
@@ -271,6 +347,11 @@ T_Com_Poison_Blind_C                        8/15s -> 8/24s                      
 
 ### Chameleon
 
+```
+Tier                                        1
+```
+
+*Vanilla*
 ```
 p_chameleon_b                               5/8s -> 6/18s                       Bargain Potion of Shadow
 p_chameleon_c                               8/15s -> 8/24s                      Cheap Potion of Shadow
@@ -285,6 +366,11 @@ T_Nor_Potion_Chameleon_C                    8/15s -> 8/24s                      
 
 ### Invisibility
 
+```
+Tier                                        0.5
+```
+
+*Vanilla*
 ```
 p_invisibility_b                            8s -> 30s                           Bargain Potion of Invisibility -> Bargain Invisibility
 p_invisibility_c                            15s -> 45s                          Cheap Potion of Invisibility -> Cheap Invisibility
@@ -302,6 +388,11 @@ T_Nor_Potion_Invisibility_C                 15s -> 45s                          
 
 ### Light
 
+```
+Tier                                        0.2
+```
+
+*Vanilla*
 ```
 p_light_b                                   5/8s -> 20/60s                      Bargain Potion of Light
 p_light_c                                   8/15s -> 30/90s                     Cheap Potion of Light
@@ -321,6 +412,11 @@ T_Nor_Potion_Light_Q                        15/45s -> 60/180s                   
 ### Night Eye
 
 ```
+Tier                                        0.2
+```
+
+*Vanilla*
+```
 p_night-eye_b                               5/8s -> 20/60s                      Bargain Potion of Night-Eye
 p_night-eye_c                               8/15s -> 30/90s                     Cheap Potion of Night-Eye
 p_night-eye_s                               10/30s -> 40/120s                   Standard Potion of Night-Eye
@@ -339,6 +435,11 @@ T_Nor_Potion_NightEye_Q                     15/45s -> 60/180s                   
 ### Paralyze
 
 ```
+Tier                                        2
+```
+
+*Vanilla*
+```
 p_paralyze_b                                8s -> 9s                            Bargain Potion of Paralyze
 p_paralyze_c                                15s -> 12s                          Cheap Potion of Paralyze
 p_paralyze_s                                30s -> 18s                          Standard Potion of Paralyze
@@ -356,6 +457,9 @@ T_Nor_Potion_Paralyze_Q                     45s -> 24s                          
 
 ### Sanctuary
 
+```
+Tier                                        1
+```
 
 *Tamriel Data*
 ```
@@ -367,6 +471,11 @@ T_Com_Potion_Sanctuary_C                    8/15s -> 8/24s                      
 
 ### Silence
 
+```
+Tier                                        1
+```
+
+*Vanilla*
 ```
 p_silence_b                                 8s -> 18s                           Bargain Potion of Silence
 p_silence_c                                 15s -> 24s                          Cheap Potion of Silence
@@ -385,6 +494,9 @@ T_Nor_Potion_Silence_Q                      45s                                 
 
 ### Sound
 
+```
+Tier                                        1
+```
 
 *Tamriel Data*
 ```
@@ -404,6 +516,11 @@ T_Com_Poison_Sound_E                        20/60s                              
 ### Detect Animal
 
 ```
+Tier                                        0.2
+```
+
+*Vanilla*
+```
 p_detect_creatures_s                        10/15s -> 40/120s                   Potion of Detect Creatures
 ```
 
@@ -416,6 +533,11 @@ T_Com_Potion_Detect_Humanoid_S              10/15s -> 40/120s                   
 
 ### Detect Enchantment
 
+```
+Tier                                        0.2
+```
+
+*Vanilla*
 ```
 p_detect_enchantment_s                      10/15s -> 40/120s                   Potion of Detect Enchantments -> Potion of Detect Enchantment
 ```
@@ -430,6 +552,11 @@ T_Com_Potion_Detect_Enemy_S                 10/15s -> 40/120s                   
 ### Detect Key
 
 ```
+Tier                                        0.2
+```
+
+*Vanilla*
+```
 p_detect_key_s                              10/15s -> 40/120s                   Potion of Detect Key
 ```
 
@@ -443,6 +570,11 @@ T_Com_Potion_Detect_Invisib_S               10/15s -> 40/120s                   
 ### Dispel
 
 ```
+Tier                                        5
+```
+
+*Vanilla*
+```
 p_dispel_s                                  10 -> 100                           Potion of Dispel
 ```
 
@@ -450,6 +582,11 @@ p_dispel_s                                  10 -> 100                           
 
 ### Reflect
 
+```
+Tier                                        2
+```
+
+*Vanilla*
 ```
 p_reflection_b                              5/8s -> 3/9s                        Bargain Potion of Reflection
 p_reflection_c                              8/15s -> 4/12s                      Cheap Potion of Reflection
@@ -469,6 +606,11 @@ T_Nor_Potion_Reflection_C                   8/15s -> 4/12s                      
 
 ### Spell Absorption
 
+```
+Tier                                        2
+```
+
+*Vanilla*
 ```
 p_spell_absorption_b                        5/8s -> 3/9s                        Bargain Spell Absorption
 p_spell_absorption_c                        8/15s -> 4/12s                      Cheap Spell Absorption
@@ -490,6 +632,9 @@ T_Nor_Potion_SpellAbsorbtion_C              8/15s -> 4/12s                      
 
 ### Fortify Attack
 
+```
+Tier                                        1
+```
 
 *Tamriel Data*
 ```
@@ -501,6 +646,11 @@ T_Com_Potion_FortifyAttack_C                8/15s -> 8/24s                      
 
 ### Fortify Attribute
 
+```
+Tier                                        1
+```
+
+*Vanilla*
 ```
 p_fortify_agility_b                         5/8s -> 6/18s                       Bargain Fortify Agility
 p_fortify_endurance_b                       5/8s -> 6/18s                       Bargain Fortify Endurance
@@ -539,6 +689,11 @@ T_Nor_Potion_FortifyWillpow_C               8/15s -> 8/24s                      
 ### Fortify Fatigue
 
 ```
+Tier                                        0.2
+```
+
+*Vanilla*
+```
 p_fortify_fatigue_b                         5/8s -> 20/60s                      Bargain Fortify Fatigue
 p_fortify_fatigue_c                         8/15s -> 30/90s                     Cheap Fortify Fatigue
 p_fortify_fatigue_s                         10/30s -> 40/120s                   Standard Fortify Fatigue Potion -> Standard Fortify Fatigue
@@ -556,6 +711,11 @@ T_Nor_Potion_FortifyFatigue_C               8/15s -> 30/90s                     
 ### Fortify Health
 
 ```
+Tier                                        1
+```
+
+*Vanilla*
+```
 p_fortify_health_b                          5/8s -> 6/18s                       Bargain Fortify Health Potion -> Bargain Fortify Health
 p_fortify_health_c                          8/15s -> 8/24s                      Cheap Potion of Fortify Health -> Cheap Fortify Health
 p_fortify_health_s                          10/30s                              Standard Fortify Health Potion -> Standard Fortify Health
@@ -571,6 +731,11 @@ T_Nor_Potion_FortifyHealth_C                8/15s -> 8/24s                      
 ### Fortify Magicka
 
 ```
+Tier                                        1
+```
+
+*Vanilla*
+```
 p_fortify_magicka_b                         5/8s -> 6/18s                       Bargain Fortify Magicka
 p_fortify_magicka_c                         8/15s -> 8/24s                      Cheap Potion of Fortify Magicka -> Cheap Fortify Magicka
 p_fortify_magicka_s                         10/30s                              Standard Fortify Magicka Potion -> Standard Fortify Magicka
@@ -585,6 +750,9 @@ T_Nor_Potion_FortifyMagicka_C               8/15s -> 8/24s                      
 
 ### Resist Blight Disease
 
+```
+Tier                                        0.2
+```
 
 *Tamriel Data*
 ```
@@ -596,6 +764,11 @@ T_Com_Potion_BlightResistance_C             8/15s -> 30/90s                     
 
 ### Resist Common Disease
 
+```
+Tier                                        0.1
+```
+
+*Vanilla*
 ```
 p_disease_resistance_b                      5/8s -> 60/180s                     Bargain Disease Resistance
 p_disease_resistance_c                      8/15s -> 80/240s                    Cheap Disease Resistance
@@ -613,6 +786,11 @@ T_Nor_Potion_ResistDesease_C                8/15s -> 80/240s                    
 
 ### Resist Fire
 
+```
+Tier                                        0.5
+```
+
+*Vanilla*
 ```
 p_fire_resistance_b                         5/8s -> 10/30s                      Bargain Fire Resistance
 p_fire_resistance_c                         8/15s -> 15/45s                     Cheap Fire Resistance
@@ -632,6 +810,11 @@ T_Nor_Potion_ResistFire_Q                   15/45s -> 30/90s                    
 ### Resist Frost
 
 ```
+Tier                                        0.5
+```
+
+*Vanilla*
+```
 p_frost_resistance_b                        5/8s -> 10/30s                      Bargain Frost Resistance
 p_frost_resistance_c                        8/15s -> 15/45s                     Cheap Frost Resistance
 p_frost_resistance_s                        10/30s -> 20/60s                    Standard Resist Frost Potion -> Standard Frost Resistance
@@ -650,6 +833,11 @@ T_Nor_Potion_ResistFrost_Q                  15/45s -> 30/90s                    
 ### Resist Magicka
 
 ```
+Tier                                        0.5
+```
+
+*Vanilla*
+```
 p_magicka_resistance_b                      5/8s -> 10/30s                      Bargain Magicka Resistance
 p_magicka_resistance_c                      8/15s -> 15/45s                     Cheap Magicka Resistance
 p_magicka_resistance_s                      10/30s -> 20/60s                    Standard Magicka Resistance
@@ -667,6 +855,9 @@ T_Nor_Potion_ResistMagicka_Q                15/45s -> 30/90s                    
 
 ### Resist Paralysis
 
+```
+Tier                                        0.2
+```
 
 *Tamriel Data*
 ```
@@ -678,6 +869,11 @@ T_Com_Potion_ResistParalysis_C              8/15s -> 30/90s                     
 
 ### Resist Poison
 
+```
+Tier                                        0.5
+```
+
+*Vanilla*
 ```
 p_poison_resistance_b                       5/8s -> 10/30s                      Bargain Poison Resistance
 p_poison_resistance_c                       8/15s -> 15/45s                     Cheap Poison Resistance
@@ -697,6 +893,11 @@ T_Nor_Potion_ResistPoison_Q                 15/45s -> 30/90s                    
 ### Resist Shock
 
 ```
+Tier                                        0.5
+```
+
+*Vanilla*
+```
 p_shock_resistance_b                        5/8s -> 10/30s                      Bargain Shock Resistance
 p_shock_resistance_c                        8/15s -> 15/45s                     Cheap Shock Resistance
 p_shock_resistance_s                        10/30s -> 20/60s                    Standard Shock Resistance
@@ -714,6 +915,11 @@ T_Nor_Potion_ResistShock_Q                  15/45s -> 30/90s                    
 
 ### Restore Attribute
 
+```
+Tier                                        8
+```
+
+*Vanilla*
 ```
 p_restore_agility_b                         5/0s -> 1/3s                        Bargain Restore Agility
 p_restore_endurance_b                       5/0s -> 1/3s                        Bargain Restore Endurance
@@ -762,6 +968,11 @@ p_restore_willpower_e                       20/0s -> 6/18s                      
 ### Restore Fatigue
 
 ```
+Tier                                        2
+```
+
+*Vanilla*
+```
 p_restore_fatigue_b                         5/5s -> 3/9s                        Bargain Restore Fatigue
 p_restore_fatigue_c                         10/5s -> 4/12s                      Cheap Restore Fatigue
 p_restore_fatigue_s                         20/5s -> 6/18s                      Standard Restore Fatigue
@@ -773,6 +984,11 @@ p_restore_fatigue_e                         80/5s -> 10/30s                     
 
 ### Restore Health
 
+```
+Tier                                        5
+```
+
+*Vanilla*
 ```
 p_restore_health_b                          1/5s -> 2/6s                        Bargain Restore Health
 p_restore_health_c                          2/5s -> 3/9s                        Cheap Restore Health
@@ -786,6 +1002,11 @@ p_restore_health_e                          40/5s -> 8/24s                      
 ### Restore Magicka
 
 ```
+Tier                                        5
+```
+
+*Vanilla*
+```
 p_restore_magicka_b                         1/5s -> 2/6s                        Bargain Restore Magicka
 p_restore_magicka_c                         2/5s -> 3/9s                        Cheap Restore Magicka
 p_restore_magicka_s                         10/5s -> 4/12s                      Standard Restore Magicka Potion -> Standard Restore Magicka
@@ -797,6 +1018,7 @@ p_restore_magicka_e                         40/5s -> 8/24s                      
 
 ## Multi-Effect Potions
 
+*Vanilla*
 ```
 p_drain_agility_q                                                               Spoiled SlowFall Potion -> Spoiled Slowfall Potion
     Drain Attribute: Agility                15/40s

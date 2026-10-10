@@ -1,0 +1,30 @@
+{
+  "id": "FEAT-002",
+  "type": "feat",
+  "description": "Bring R3 - Potions.md to the finalized Spells layout: switch gen_potions.py to the shared gen_common.py helpers (removing its divergent `if show_area and area > 0:` copies), label non-TD blocks `*Vanilla*`, replace the bogus `## Misc` bucketing with a school_of(fx) resolver, and add an always-present `Tier` line to every `### <Effect>` subsection computed from the effect's R3 base cost in R3 - Spells.json. Depends on FEAT-001 (shared helpers must exist).",
+  "status": "completed",
+  "steps": [
+    "Read context.json and this FEAT file FIRST. Confirm FEAT-001 landed the shared helpers in gen_common.py.",
+    "In scripts/gen_potions.py delete the local fmt_num, add_at_column, RANGE_LABEL, format_effect, format_effect_pair, format_value_rows, is_td, iter_json_array and repoint call sites to gc.* (gc.add_at_column, gc.format_value_rows, gc.is_td, gc.fmt_num). Replace the inline `iter_json_array(path) if size >= STREAM_THRESHOLD else json.load(...)` master read with `gc.read_records(path)`.",
+    "Label non-TD blocks `*Vanilla*`: change the single-effect `block(None, [... non-TD ...])` to `block(\"Vanilla\", ...)` and the `## Multi-Effect Potions` `multi_block(None, ...)` to `multi_block(\"Vanilla\", ...)`. TD blocks keep `Tamriel Data`. Align block() spacing to the spells pattern so a blank-line separator precedes BOTH labelled and unlabelled blocks and there are never double blank lines.",
+    "Add `school_of(fx)` mirroring gen_spells.py (vanilla master MagicEffect school first via fx_school, then 'Misc' last resort) and replace `school = fx_school.get(fx, 'Misc')` with `school = school_of(fx)`.",
+    "Add `--spells-json` arg defaulting to `R3 - Spells.json`. Load it once and build fx_base_cost: effect_id -> data.base_cost over records with type=='MagicEffect'.",
+    "Add a tier resolver: given fx, read base cost from fx_base_cost (fallback to vanilla master base cost captured in the master loop as fx_van_cost; if still missing, skip the line gracefully). If gc.effect_uses_magnitude(fx) is False (duration-only), divide base cost by 40 first. Map the resulting value to a column via half-open geometric-midpoint ranges: >=6.32->8; 3.16..<6.32->5; 1.41..<3.16->2; 0.71..<1.41->1; 0.32..<0.71->0.5; 0.14..<0.32->0.2; <0.14->0.1. Render the column with a fixed string map {8:'8',5:'5',2:'2',1:'1',0.5:'0.5',0.2:'0.2',0.1:'0.1'}.",
+    "Emit the Tier line ALWAYS (even tier 1) in the same position spells uses for Base Cost: immediately after the `### <Effect>` header, inside a ``` fence, as gc.add_at_column('Tier', COL_VALUES, <col-string>). Do NOT print the base cost value itself.",
+    "Regenerate potions and verify labels, no ## Misc, Tier lines, and no double blank lines."
+  ],
+  "acceptance_criteria": [
+    "gen_potions.py imports and uses gc.format_value_rows / gc.format_effect_pair / gc.is_td / gc.add_at_column and no longer defines local copies with the `area > 0` guard.",
+    "R3 - Potions.md labels non-TD single-effect and multi-effect blocks `*Vanilla*` and keeps `*Tamriel Data*` for TD blocks.",
+    "R3 - Potions.md contains no `## Misc` section (every potion effect resolves to a real school).",
+    "Every `### <Effect>` subsection in R3 - Potions.md has exactly one always-present `Tier <col>` line; Burden/Feather show `Tier 0.1`, Fire Shield `Tier 2`, Shield `Tier 1`, Swift Swim `Tier 0.5`, Fortify Fatigue `Tier 0.2`, Silence `Tier 1`, Paralyze `Tier 2`.",
+    "R3 - Potions.md has no double blank lines (no `\\n\\n\\n` run)."
+  ],
+  "verification": [
+    "python \"scripts/gen_potions.py\" --master-dir \"d:\\tes3conv\"   (exit 0)",
+    "python -c \"import re; t=open('R3 - Potions.md',encoding='utf-8').read(); import sys; ok = ('*Vanilla*' in t) and (not re.search(r'^## Misc$', t, re.M)) and ('Tier' in t) and ('\\n\\n\\n' not in t); sys.exit(0 if ok else 1)\"",
+    "python -c \"import re; t=open('R3 - Potions.md',encoding='utf-8').read(); import sys; blocks={m.group(1):m.group(2) for m in re.finditer(r'### ([^\\n]+)\\n```\\n(Tier [^\\n]+)', t)}; print(blocks.get('Burden'), blocks.get('Fire Shield'), blocks.get('Silence'), blocks.get('Paralyze'))\"   (spot-check the Tier columns are 0.1 / 2 / 1 / 2)"
+  ],
+  "blocked_reason": null,
+  "findings": "gen_potions.py now uses the shared gc.* helpers (format_value_rows, format_effect_pair via format_value_rows, is_td, add_at_column, fmt_num via gc, read_records) and no longer defines the divergent local copies with the `area > 0` guard. Removed local fmt_num/add_at_column/RANGE_LABEL/format_effect/format_effect_pair/format_value_rows/is_td/iter_json_array and the STREAM_THRESHOLD constant. Non-TD single-effect and multi-effect blocks are labelled *Vanilla*; TD blocks keep *Tamriel Data*. block() now mirrors gen_spells.py spacing (one blank line before each block only when needed, never a double blank). Added school_of(fx) resolving vanilla master MagicEffect school first, then 'Misc' last resort (no ESP fx_meta layer for potions), which removes the bogus ## Misc section. Added --spells-json (default 'R3 - Spells.json'); builds fx_base_cost (effect_id -> data.base_cost) over MagicEffect records, with fx_van_cost (vanilla master base cost) as fallback. tier_column() maps base cost via the geometric-midpoint half-open ranges; duration-only effects (gc.effect_uses_magnitude False) divide base cost by 40 first. An always-present `Tier <col>` line is emitted inside a ``` fence immediately after each ### <Effect> header, in the position spells uses for Base Cost. Verified: exit 0; 49 effect headers / 49 Tier lines; Burden 0.1, Feather 0.1, Fire Shield 2, Shield 1, Swift Swim 0.5, Fortify Fatigue 0.2, Silence 1, Paralyze 2; no ## Misc; no double blank lines; *Vanilla* and *Tamriel Data* both present. For later steps: gen_enchantments.py should follow the same block()-spacing pattern and *Vanilla* labelling; it has no Tier/cost line per plan."
+}
