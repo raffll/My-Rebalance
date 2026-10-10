@@ -13,24 +13,36 @@ sEffectSlowFall                             SlowFall -> Slowfall
 
 ## Starting Spells
 
-A new character begins knowing these spells (PC_START_SPELL flag). Values and cost are the current R3 records; spells the ESP does not override keep vanilla values.
+This section shows how R3 changes the starting spell set, as per-school replacements (removed -> added); start spells R3 leaves unchanged are omitted. Pairings are positional and alphabetical within each school, not a literal claim that one spell replaced another.
+
+------------------------------------------------------------
+
+### Alteration
 
 ```
-Alteration    First Barrier                 Shield 10/30s [auto]
-Alteration    Water Walking                 Water Walking 60s [auto]
-Conjuration   Bound Dagger                  Bound Dagger 60s [auto]
-Conjuration   Summon Ancestral Ghost        Summon Ghost 60s [auto]
-Destruction   Fire Bite                     Fire Damage 15-30/1s/Touch [auto]
-Destruction   Weariness                     Drain Fatigue 10-100/20s/Target [auto]
-Illusion      Chameleon                     Chameleon 10/30s [auto]
-Illusion      Sanctuary                     Sanctuary 10/30s [auto]
-Mysticism     Detect Enchantment            Detect Enchantment 50/10s [auto]
-Mysticism     Tap Energy                    Absorb Fatigue 20/3s/Target [auto]
-Restoration   Hearth Heal                   Restore Health 20-80/1s [auto]
-Restoration   Skylamp's Shadow              Fortify Attribute: Speed 5-20/30s [auto]
+Shield -> First Barrier                     Shield 10/30s [auto]
 ```
+------------------------------------------------------------
 
-Removed from the vanilla start set: Detect Creature, Exhausting Touch, Feet of Notorgo, Shield.
+### Destruction
+
+```
+Exhausting Touch -> Weariness               Drain Fatigue 10-100/20s/Target [auto]
+```
+------------------------------------------------------------
+
+### Mysticism
+
+```
+Detect Creature -> Detect Enchantment       Detect Enchantment 50/10s [auto]
+```
+------------------------------------------------------------
+
+### Restoration
+
+```
+Feet of Notorgo -> Skylamp's Shadow         Fortify Attribute: Speed 5-20/30s [auto]
+```
 
 ------------------------------------------------------------
 
@@ -491,7 +503,7 @@ Base Cost                                   1.0
 
 *Vanilla*
 ```
-shadow form                                 6-15/30s -> 12-30/30s               Shadow Form
+shadow form                                 6-15/30s -> 10-30/30s               Shadow Form
 ```
 
 ------------------------------------------------------------
