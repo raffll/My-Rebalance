@@ -385,6 +385,14 @@ def main() -> int:
         # Duration-only effect: sort by duration (magnitude is a fixed 1).
         return (0, dur, dur, 0, obj.get("name", ""))
 
+    def school_of(fx: str) -> str:
+        """School for an effect: ESP metadata first, else the vanilla master
+        MagicEffect (effects the ESP doesn't override aren't in fx_meta)."""
+        s = fx_meta.get(fx, {}).get("school")
+        if not s:
+            s = fx_van_school.get(fx)
+        return s or "Misc"
+
     # Bucket records.
     groups: dict[str, dict[str, list]] = {}
     multi: list = []
@@ -402,7 +410,7 @@ def main() -> int:
             multi.append(o)
             continue
         fx = effects[0].get("magic_effect")
-        school = fx_meta.get(fx, {}).get("school", "Misc")
+        school = school_of(fx)
         groups.setdefault(school, {}).setdefault(fx, []).append(o)
 
     # Build output.
@@ -464,14 +472,6 @@ def main() -> int:
         else:
             start_records[k] = van_start_by_id[k]
 
-    def school_of(fx: str) -> str:
-        """School for an effect: ESP metadata first, else the vanilla master
-        MagicEffect (effects the ESP doesn't override aren't in fx_meta)."""
-        s = fx_meta.get(fx, {}).get("school")
-        if not s:
-            s = fx_van_school.get(fx)
-        return s or "Misc"
-
     def start_sort_key(obj: dict):
         effs = obj.get("effects") or []
         fx = effs[0].get("magic_effect", "") if effs else ""
@@ -519,13 +519,14 @@ def main() -> int:
             header(f"### {effect_base_name(fx)}")
 
             meta = fx_meta.get(fx)
-            if meta:
-                cur_cost = fmt_num(meta["base_cost"])
-                van_cost = fx_van_cost.get(fx)
-                van_cost = fmt_num(van_cost) if van_cost is not None else None
-                cb = (f"{van_cost} -> {cur_cost}"
-                      if van_cost is not None and van_cost != cur_cost
-                      else cur_cost)
+            cur_cost = fmt_num(meta["base_cost"]) if meta else None
+            van_cost = fx_van_cost.get(fx)
+            van_cost = fmt_num(van_cost) if van_cost is not None else None
+            if cur_cost is not None and van_cost is not None and van_cost != cur_cost:
+                cb = f"{van_cost} -> {cur_cost}"
+            else:
+                cb = cur_cost if cur_cost is not None else van_cost
+            if cb is not None:
                 out.append("```")
                 out.append(add_at_column("Base Cost", COL_VALUES, cb))
                 out.append("```")
@@ -543,8 +544,8 @@ def main() -> int:
                     out.extend(emit_record(r))
                 out.append("```")
 
-            # Vanilla records: no label. TD records: "Tamriel Data" label.
-            block(None,
+            # Vanilla records: "Vanilla" label. TD records: "Tamriel Data" label.
+            block("Vanilla",
                   [r for r in recs if r.get("type") == "Spell" and not is_td(r)])
             block("Tamriel Data",
                   [r for r in recs if r.get("type") == "Spell" and is_td(r)])
@@ -565,7 +566,7 @@ def main() -> int:
             out.append("```")
             out.append("")
 
-        multi_block(None,
+        multi_block("Vanilla",
                     [r for r in multi if r.get("type") == "Spell" and not is_td(r)])
         multi_block("Tamriel Data",
                     [r for r in multi if r.get("type") == "Spell" and is_td(r)])

@@ -44,6 +44,7 @@ Removed from the vanilla start set: Detect Creature, Exhausting Touch, Feet of N
 Base Cost                                   1.0 -> 0.1
 ```
 
+*Vanilla*
 ```
 burden                                      20/10s -> 20/100s                   Burden
 burden touch                                20/10s -> 20/100s                   Burden Touch
@@ -72,6 +73,7 @@ T_Com_Alt_WeightOfGuilt                     500/3s -> 500/30s                   
 Base Cost                                   1.0 -> 0.1
 ```
 
+*Vanilla*
 ```
 feather                                     20/10s -> 20/100s                   Feather
 strong feather                              50/10s -> 50/100s                   Strong Feather
@@ -93,6 +95,7 @@ T_Com_Alt_Fling                             500/3s -> 500/30s                   
 Base Cost                                   3.0
 ```
 
+*Vanilla*
 ```
 fire_fathasa_unique                         1-10/10s                            Fire Barrier -> Fathasa's Fire Barrier
 fire barrier                                1-10/10s                            Fire Barrier
@@ -109,6 +112,7 @@ strong fire shield                          12/30s -> 15/30s                    
 Base Cost                                   3.0
 ```
 
+*Vanilla*
 ```
 frost barrier                               3/10s -> 1-10/10s                   Frost Barrier
 fierce frost shield                         5-11/10s -> 5-10/10s                Fierce Frost Shield
@@ -125,6 +129,7 @@ strong frost shield                         12/30s -> 15/30s                    
 Base Cost                                   3.0
 ```
 
+*Vanilla*
 ```
 shock barrier                               1-10/10s                            Shock Barrier
 shock shield                                3/20s                               Shock Shield -> Lightning Shield
@@ -160,6 +165,7 @@ T_Com_Alt_DalgorsEntwining                  100 [8 -> 96]                       
 Base Cost                                   2.0 -> 1.0
 ```
 
+*Vanilla*
 ```
 shield                                      5/30s                               Shield
 first barrier                               10/30s                              First Barrier
@@ -179,6 +185,7 @@ T_Com_Alt_ForceWall                         50/5s -> 100/5s                     
 Base Cost                                   2.0 -> 0.5
 ```
 
+*Vanilla*
 ```
 buoyancy                                    1/20s -> 20/20s                     Buoyancy
 Swimmer's_Blessing                          5/30s -> 50/30s                     Swimmer's Blessing
@@ -201,6 +208,7 @@ T_Com_Alt_DreughsGrace                      30/20s -> 120/20s                   
 Base Cost                                   4.0 -> 2.0
 ```
 
+*Vanilla*
 ```
 fleabite                                    1-10/1s -> 1-20/1s                  Fleabite
 doze                                        1-20/1s -> 1-40/1s                  Doze
@@ -215,6 +223,7 @@ hornhand                                    15-36/1s -> 30-70/1s                
 Base Cost                                   8.0 -> 4.0
 ```
 
+*Vanilla*
 ```
 soulpinch                                   1-20/1s -> 1-40/1s                  Soulpinch
 ```
@@ -232,6 +241,7 @@ T_Com_Des_Magefire                          10-30/1s -> 10-30/2s                
 Base Cost                                   6.0 -> 0.6
 ```
 
+*Vanilla*
 ```
 disintegrate armor                          6-25/1s -> 60-250/1s                Disintegrate Armor
 armor eater                                 10-30/1s -> 200-600/1s              Armor Eater
@@ -250,6 +260,7 @@ T_Com_Des_FractureArmor                     100/2s -> 1000/2s                   
 Base Cost                                   6.0 -> 1.2
 ```
 
+*Vanilla*
 ```
 disintegrate weapon                         6-25/1s -> 30-125/1s                Disintegrate Weapon
 weapon eater                                6-25/1s -> 100-300/1s               Weapon Eater
@@ -263,12 +274,26 @@ T_Rea_Des_SteelEater                        5-30/3s -> 25-150/3s                
 
 ------------------------------------------------------------
 
+### Drain Attribute
+
+```
+Base Cost                                   1.0
+```
+
+*Vanilla*
+```
+blood despair                               7-14/60s -> 5-15/60s                Blood Despair
+```
+
+------------------------------------------------------------
+
 ### Drain Fatigue
 
 ```
 Base Cost                                   2.0 -> 0.2
 ```
 
+*Vanilla*
 ```
 weariness                                   1-10/1s -> 10-100/20s               Weariness
 sleep                                       5-15/30s -> 25-75/60s               Sleep
@@ -287,12 +312,26 @@ T_Com_Des_Duck                              200/2s -> 2000/2s                   
 
 ------------------------------------------------------------
 
+### Drain Health
+
+```
+Base Cost                                   4.0
+```
+
+*Vanilla*
+```
+ash feast                                   3/30s -> 30/3s                      Ash Feast
+```
+
+------------------------------------------------------------
+
 ### Drain Magicka
 
 ```
 Base Cost                                   4.0 -> 0.4
 ```
 
+*Vanilla*
 ```
 magicka leech                               6-15/60s -> 5-15/60s                Magicka Leech
 ```
@@ -310,6 +349,7 @@ T_Com_Des_RageOfMagnus                      60/10s -> 300/20s                   
 Base Cost                                   5.0 -> 8.0
 ```
 
+*Vanilla*
 ```
 cruel firebloom                             10-16/1s -> 10-15/1s                Cruel Firebloom
 god's fire                                  11-60/10s -> 10-60/10s              God's Fire
@@ -323,6 +363,7 @@ god's fire                                  11-60/10s -> 10-60/10s              
 Base Cost                                   5.0 -> 8.0
 ```
 
+*Vanilla*
 ```
 god's frost                                 11-60/10s -> 10-60/10s              God's Frost
 ```
@@ -335,6 +376,7 @@ god's frost                                 11-60/10s -> 10-60/10s              
 Base Cost                                   9.0 -> 8.0
 ```
 
+*Vanilla*
 ```
 poison_powerful                             2-15/10s -> 1-15/10s                Toxic Cloud
 poison                                      2-20/1s -> 1-20/1s                  Poison
@@ -348,6 +390,7 @@ poison                                      2-20/1s -> 1-20/1s                  
 Base Cost                                   7.0 -> 8.0
 ```
 
+*Vanilla*
 ```
 lightning storm                             2-10/10s -> 1-10/10s                Lightning Storm
 spark                                       2-20/1s -> 1-20/1s                  Spark
@@ -357,7 +400,99 @@ shockball                                   2-40/1s -> 1-20/1s                  
 
 ------------------------------------------------------------
 
+### Weakness to Fire
+
+```
+Base Cost                                   2.0
+```
+
+*Vanilla*
+```
+dire weakness to fire                       2-60/10s -> 1-60/10s                Dire Weakness to Fire
+```
+
+------------------------------------------------------------
+
+### Weakness to Frost
+
+```
+Base Cost                                   2.0
+```
+
+*Vanilla*
+```
+dire weakness to frost                      2-60/10s -> 1-60/10s                Dire Weakness to Frost
+```
+
+------------------------------------------------------------
+
+### Weakness to Magicka
+
+```
+Base Cost                                   2.0
+```
+
+*Vanilla*
+```
+dire weakness to magicka                    2-60/10s -> 1-60/10s                Dire Weakness to Magicka
+```
+
+------------------------------------------------------------
+
+### Weakness to Poison
+
+```
+Base Cost                                   2.0
+```
+
+*Vanilla*
+```
+dire weakness to poison                     2-60/10s -> 1-60/10s                Dire Weakness to Poison
+```
+
+------------------------------------------------------------
+
+### Weakness to Shock
+
+```
+Base Cost                                   2.0
+```
+
+*Vanilla*
+```
+dire weakness to shock                      2-60/10s -> 1-60/10s                Dire Weakness to Shock
+```
+
+------------------------------------------------------------
+
 ## Illusion
+
+------------------------------------------------------------
+
+### Blind
+
+```
+Base Cost                                   1.0
+```
+
+*Vanilla*
+```
+crying eye                                  1-10/5s -> 1-10/20s                 Crying Eye
+erelvam's wild sty                          1-40/10s -> 1-40/20s                Erelvam's Wild Sty
+```
+
+------------------------------------------------------------
+
+### Chameleon
+
+```
+Base Cost                                   1.0
+```
+
+*Vanilla*
+```
+shadow form                                 6-15/30s -> 12-30/30s               Shadow Form
+```
 
 ------------------------------------------------------------
 
@@ -374,12 +509,26 @@ T_Com_Ilu_AlluringSpeech                    15-20/20s [80 -> 40]                
 
 ------------------------------------------------------------
 
+### Invisibility
+
+```
+Base Cost                                   20.0
+```
+
+*Vanilla*
+```
+invisibility                                30s -> 60s                          Invisibility
+```
+
+------------------------------------------------------------
+
 ### Paralyze
 
 ```
 Base Cost                                   40.0 -> 80.0
 ```
 
+*Vanilla*
 ```
 paralysis                                   5s                                  Paralysis
 scrib_paralysis                             6s -> 12s [auto -> 6]               Paralysis
@@ -393,12 +542,27 @@ T_Com_Ilu_LivingStatue                      20s [30 -> 60]                      
 
 ------------------------------------------------------------
 
+### Sanctuary
+
+```
+Base Cost                                   1.0
+```
+
+*Vanilla*
+```
+sotha's grace                               1-20/5s -> 1-20/10s                 Sotha's Grace
+father's hand                               1-40/5s -> 1-40/10s                 Father's Hand
+```
+
+------------------------------------------------------------
+
 ### Silence
 
 ```
 Base Cost                                   40.0
 ```
 
+*Vanilla*
 ```
 silence                                     5s                                  Silence
 far silence                                 10s                                 Far Silence
@@ -412,6 +576,7 @@ far silence                                 10s                                 
 Base Cost                                   3.0 -> 1.0
 ```
 
+*Vanilla*
 ```
 wild earwig                                 1-30/5s -> 1-90/5s                  Wild Earwig
 dire noise                                  2-60/5s -> 1-60/15s                 Dire Noise
@@ -429,138 +594,20 @@ T_Com_Ilu_Voices                            50/20s -> 50/60s [100 -> 50]        
 
 ------------------------------------------------------------
 
-## Misc
+## Mysticism
 
 ------------------------------------------------------------
 
 ### Absorb Attribute
 
 ```
+Base Cost                                   2.0
+```
+
+*Vanilla*
+```
 absorb intelligence [ranged]                5-51/30s -> 5-50/30s                Absorb Intelligence [Ranged]
 ```
-
-------------------------------------------------------------
-
-### Absorb Skill
-
-*Tamriel Data*
-```
-T_Nor_Mys_JogvirsSwordhand                  20/30s                              Jogvir's Sword Hand
-```
-
-------------------------------------------------------------
-
-### Blind
-
-```
-crying eye                                  1-10/5s -> 1-10/20s                 Crying Eye
-erelvam's wild sty                          1-40/10s -> 1-40/20s                Erelvam's Wild Sty
-```
-
-------------------------------------------------------------
-
-### Chameleon
-
-```
-shadow form                                 6-15/30s -> 12-30/30s               Shadow Form
-```
-
-------------------------------------------------------------
-
-### Drain Attribute
-
-```
-blood despair                               7-14/60s -> 5-15/60s                Blood Despair
-```
-
-------------------------------------------------------------
-
-### Drain Health
-
-```
-ash feast                                   3/30s -> 30/3s                      Ash Feast
-```
-
-------------------------------------------------------------
-
-### Fortify Attribute
-
-```
-skylamp's shadow                            5-20/30s                            Skylamp's Shadow
-feet of notorgo                             10/90s                              Feet of Notorgo
-```
-
-------------------------------------------------------------
-
-### Invisibility
-
-```
-invisibility                                30s -> 60s                          Invisibility
-```
-
-------------------------------------------------------------
-
-### Restore Health
-
-```
-balyna's soothing balm                      3-12/1s -> 5-10/1s                  Balyna's Soothing Balm
-balyna's efficacious balm                   3-22/1s -> 5-20/1s                  Balyna's Efficacious Balm
-balyna's perfect balm                       3-30/1s -> 5-30/1s                  Balyna's Perfect Balm
-heal companion                              6-15/1s -> 5-15/1s                  Heal Companion
-```
-
-------------------------------------------------------------
-
-### Sanctuary
-
-```
-sotha's grace                               1-20/5s -> 1-20/10s                 Sotha's Grace
-father's hand                               1-40/5s -> 1-40/10s                 Father's Hand
-```
-
-------------------------------------------------------------
-
-### Weakness to Fire
-
-```
-dire weakness to fire                       2-60/10s -> 1-60/10s                Dire Weakness to Fire
-```
-
-------------------------------------------------------------
-
-### Weakness to Frost
-
-```
-dire weakness to frost                      2-60/10s -> 1-60/10s                Dire Weakness to Frost
-```
-
-------------------------------------------------------------
-
-### Weakness to Magicka
-
-```
-dire weakness to magicka                    2-60/10s -> 1-60/10s                Dire Weakness to Magicka
-```
-
-------------------------------------------------------------
-
-### Weakness to Poison
-
-```
-dire weakness to poison                     2-60/10s -> 1-60/10s                Dire Weakness to Poison
-```
-
-------------------------------------------------------------
-
-### Weakness to Shock
-
-```
-dire weakness to shock                      2-60/10s -> 1-60/10s                Dire Weakness to Shock
-```
-
-------------------------------------------------------------
-
-## Mysticism
 
 ------------------------------------------------------------
 
@@ -570,6 +617,7 @@ dire weakness to shock                      2-60/10s -> 1-60/10s                
 Base Cost                                   4.0 -> 6.0
 ```
 
+*Vanilla*
 ```
 absorb fatigue                              5-20/30s -> 5-20/3s                 Absorb Fatigue
 absorb fatigue [ranged]                     5-20/30s -> 5-20/3s                 Absorb Fatigue [Ranged]
@@ -585,6 +633,7 @@ Tap Energy                                  20/30s -> 20/3s                     
 Base Cost                                   8.0 -> 16.0
 ```
 
+*Vanilla*
 ```
 absorb health                               5-52/1s -> 5-50/1s                  Absorb Health
 ```
@@ -596,12 +645,26 @@ T_Com_Mys_Lifesteal                         40/1s [24 -> 48]                    
 
 ------------------------------------------------------------
 
+### Absorb Skill
+
+```
+Base Cost                                   2.0
+```
+
+*Tamriel Data*
+```
+T_Nor_Mys_JogvirsSwordhand                  20/30s                              Jogvir's Sword Hand
+```
+
+------------------------------------------------------------
+
 ### Detect Animal
 
 ```
 Base Cost                                   0.75 -> 0.15
 ```
 
+*Vanilla*
 ```
 detect_creature                             50-150/5s                           Detect Creature
 ```
@@ -619,6 +682,7 @@ T_Com_Mys_DetectHumanoid                    100-300/5s [38 -> 8]                
 Base Cost                                   1.0 -> 0.2
 ```
 
+*Vanilla*
 ```
 detect enchantment                          10/10s -> 50/10s                    Detect Enchantment
 ```
@@ -636,6 +700,7 @@ T_Com_Mys_Insight                           150/10s [75 -> 15]                  
 Base Cost                                   1.0 -> 0.2
 ```
 
+*Vanilla*
 ```
 tevral's hawkshaw                           10/10s -> 50/10s                    Tevral's Hawkshaw
 detect_key                                  50/5s -> 250/5s                     Detect Key
@@ -649,6 +714,7 @@ detect_key                                  50/5s -> 250/5s                     
 Base Cost                                   10.0 -> 2.5
 ```
 
+*Vanilla*
 ```
 wild reflect                                1-40/10s -> 1-40/40s                Wild Reflect
 sotha's mirror                              10/5s -> 10/20s                     Sotha's Mirror
@@ -673,6 +739,7 @@ T_Com_Mys_DistortedReflect                  20/15s -> 40/30s                    
 Base Cost                                   10.0 -> 2.5
 ```
 
+*Vanilla*
 ```
 wild spelldrinker                           1-40/5s -> 1-40/20s                 Wild Spelldrinker
 spell absorption                            10/5s -> 10/20s                     Spell Absorption
@@ -693,12 +760,27 @@ T_Imp_Mys_VivecsFeast                       10/5s -> 40/5s                      
 
 ------------------------------------------------------------
 
+### Fortify Attribute
+
+```
+Base Cost                                   1.0
+```
+
+*Vanilla*
+```
+skylamp's shadow                            5-20/30s                            Skylamp's Shadow
+feet of notorgo                             10/90s                              Feet of Notorgo
+```
+
+------------------------------------------------------------
+
 ### Fortify Fatigue
 
 ```
 Base Cost                                   0.5 -> 0.25
 ```
 
+*Vanilla*
 ```
 vigor                                       5-20/30s -> 10-40/30s               Vigor
 ```
@@ -711,6 +793,7 @@ vigor                                       5-20/30s -> 10-40/30s               
 Base Cost                                   1.0 -> 4.0
 ```
 
+*Vanilla*
 ```
 masterful balanced armor                    15/60s -> 15/15s                    Masterful Balanced Armor
 masterful deep biting                       15/60s -> 15/15s                    Masterful Deep Biting
@@ -758,6 +841,7 @@ T_Com_Res_DeftSecurity                      15/30s [23 -> 92]                   
 Base Cost                                   5.0 -> 0.25
 ```
 
+*Vanilla*
 ```
 poet's whim                                 1-30/10s -> 1-30/200s [auto -> 39]  Poet's Whim
 vivec's mercy                               20/10s -> 50/80s [auto -> 50]       Vivec's Mercy
@@ -772,6 +856,7 @@ shield of the armiger                       30/10s -> 100/60s [auto -> 75]      
 Base Cost                                   2.0 -> 0.1
 ```
 
+*Vanilla*
 ```
 variable resist common disease              1-30/10s -> 1-30/200s [auto -> 16]  Variable Resist Common Disease
 resist common disease                       10/5s -> 50/20s [auto -> 5]         Resist Common Disease
@@ -792,6 +877,7 @@ T_Imp_Res_SerynsBlessing                    20/10s -> 100/40s                   
 Base Cost                                   2.0 -> 0.5
 ```
 
+*Vanilla*
 ```
 variable resist fire                        1-30/10s -> 1-30/40s                Variable Resist Fire
 resist fire                                 10/5s -> 10/20s                     Resist Fire
@@ -808,6 +894,7 @@ great resist fire                           30/10s -> 30/40s                    
 Base Cost                                   2.0 -> 0.5
 ```
 
+*Vanilla*
 ```
 variable resist frost                       1-30/10s -> 1-30/40s                Variable Resist Frost
 resist frost                                10/5s -> 10/20s                     Resist Frost
@@ -829,6 +916,7 @@ T_Nor_Res_WinteryMantle                     20/60s -> 80/60s                    
 Base Cost                                   2.0 -> 0.5
 ```
 
+*Vanilla*
 ```
 variable resist magicka                     1-30/10s -> 1-30/40s                Variable Resist Magicka
 resist magicka                              10/5s -> 10/20s                     Resist Magicka
@@ -845,6 +933,7 @@ great resist magicka                        30/10s -> 30/40s                    
 Base Cost                                   0.2
 ```
 
+*Vanilla*
 ```
 resist paralysis                            50/30s [300 -> auto]                Resist Paralysis
 ```
@@ -857,6 +946,7 @@ resist paralysis                            50/30s [300 -> auto]                
 Base Cost                                   2.0 -> 0.5
 ```
 
+*Vanilla*
 ```
 variable resist poison                      1-30/10s -> 1-30/40s                Variable Resist Poison
 resist poison                               20/5s -> 20/20s                     Resist Poison
@@ -873,6 +963,7 @@ greater resist poison                       30/10s -> 30/40s                    
 Base Cost                                   2.0 -> 0.5
 ```
 
+*Vanilla*
 ```
 variable resist shock                       1-30/10s -> 1-30/40s                Variable Resist Shock
 resist shock                                20/5s -> 20/20s                     Resist Shock
@@ -889,6 +980,7 @@ great resist shock                          30/10s -> 30/40s                    
 Base Cost                                   1.0 -> 8.0
 ```
 
+*Vanilla*
 ```
 restore agility                             5-20/30s -> 5-20/4s                 Restore Agility
 restore endurance                           5-20/30s -> 5-20/4s                 Restore Endurance
@@ -908,6 +1000,7 @@ restore willpower                           5-20/30s -> 5-20/4s                 
 Base Cost                                   1.0 -> 2.5
 ```
 
+*Vanilla*
 ```
 rest of st. merris                          1-10/20s -> 1-10/8s                 Rest of St. Merris -> Rest of St. Meris
 stamina                                     10-30/30s -> 10-30/12s              Stamina
@@ -920,8 +1013,25 @@ T_Com_Res_WeaponResartus                    42-78/30s -> 40-80/12s              
 
 ------------------------------------------------------------
 
+### Restore Health
+
+```
+Base Cost                                   5.0
+```
+
+*Vanilla*
+```
+balyna's soothing balm                      3-12/1s -> 5-10/1s                  Balyna's Soothing Balm
+balyna's efficacious balm                   3-22/1s -> 5-20/1s                  Balyna's Efficacious Balm
+balyna's perfect balm                       3-30/1s -> 5-30/1s                  Balyna's Perfect Balm
+heal companion                              6-15/1s -> 5-15/1s                  Heal Companion
+```
+
+------------------------------------------------------------
+
 ## Multi-Effect Spells
 
+*Vanilla*
 ```
 bm_draugr_curse                             [200 -> auto]                       Eddard's Wrath
     Disintegrate Armor                      4-9/15s -> 40-90/15s
