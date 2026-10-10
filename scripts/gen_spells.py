@@ -443,15 +443,16 @@ def main() -> int:
     def effect_base_name(fx: str) -> str:
         return effect_names.get(fx, split_camel(fx))
 
-    # -- Starting Spells -----------------------------------------------------
-    # Shows how R3 changes the vanilla starting-spell set, as per-school
-    # deltas only:
-    #   * REMOVED = a vanilla start spell the ESP overrides and drops the flag.
-    #   * ADDED   = an ESP start spell with no vanilla counterpart.
-    # Within each school, REMOVED and ADDED are sorted alphabetically and zipped
-    # positionally into "removed -> added" replacement pairs; leftovers become
-    # pure removals / pure additions. Vanilla start spells R3 leaves unchanged
-    # are not shown.
+    # -- Starting Spells -------------------------------------------------
+    # A single flat fenced block of paired one-line entries. Each line pairs a
+    # REMOVED vanilla start spell with an ADDED R3 start spell across three
+    # columns:
+    #   <removed id> -> <added id>   <removed vals> -> <added vals>   <removed name> -> <added name>
+    #   * REMOVED = a vanilla start spell (in van_start_by_id) that the ESP
+    #               overrides (in esp_by_id) with the start flag dropped.
+    #   * ADDED   = an esp_start_ids spell with no vanilla counterpart.
+    # Removed and added lists are each sorted alphabetically by display name,
+    # then zipped positionally. Uneven counts leave the missing side blank.
     def has_start_flag(obj: dict) -> bool:
         return "PC_START_SPELL" in ((obj.get("data") or {}).get("flags") or "")
 
@@ -461,75 +462,49 @@ def main() -> int:
     }
     esp_start_ids = {k for k, o in esp_by_id.items() if has_start_flag(o)}
 
-    # REMOVED: vanilla start spells whose flag the ESP override drops.
-    removed_ids = [
-        k for k in van_start_by_id
+    # REMOVED: vanilla start spells whose flag the ESP override drops
+    # (vanilla records, from van_start_by_id).
+    removed = [
+        van_start_by_id[k] for k in van_start_by_id
         if k in esp_by_id and not has_start_flag(esp_by_id[k])
     ]
-    # ADDED: ESP start spells with no vanilla counterpart.
-    added_ids = [k for k in esp_start_ids if k not in van_start_by_id]
+    # ADDED: ESP start spells with no vanilla counterpart (ESP records).
+    added = [esp_by_id[k] for k in esp_start_ids if k not in van_start_by_id]
 
-    def start_name(rec: dict, key: str) -> str:
-        return rec.get("name") or key
+    def start_display_name(rec: dict) -> str:
+        return (rec.get("name") or rec.get("id") or "")
 
-    def start_school(rec: dict) -> str:
-        effs = rec.get("effects") or []
-        fx = effs[0].get("magic_effect", "") if effs else ""
-        return school_of(fx)
+    def start_first_effect_values(rec: dict) -> str:
+        """First effect rendered: show Touch/Target range (suppress default
+        OnSelf), show area when present."""
+        effects = rec.get("effects") or []
+        if not effects:
+            return ""
+        e = effects[0]
+        show_range = e.get("range", "") in ("OnTouch", "OnTarget")
+        return format_effect(e, show_area=True, show_range=show_range)
 
-    def added_summary(rec: dict) -> str:
-        parts = []
-        for e in rec.get("effects") or []:
-            nm = effect_display_name(e)
-            # Show Touch/Target range; suppress the default Self to match the
-            # README's convention elsewhere.
-            show_range = e.get("range", "") in ("OnTouch", "OnTarget")
-            vals = format_effect(e, show_area=True, show_range=show_range)
-            parts.append(f"{nm} {vals}")
-        seg = " + ".join(parts)
-        cost = cost_label(rec)
-        if cost:
-            seg = f"{seg} [{cost}]"
-        return seg
-
-    # Bucket REMOVED (vanilla records) and ADDED (ESP records) by school.
-    rem_by_school: dict[str, list] = {}
-    for k in removed_ids:
-        rec = van_start_by_id[k]
-        rem_by_school.setdefault(start_school(rec), []).append((start_name(rec, k), rec))
-    add_by_school: dict[str, list] = {}
-    for k in added_ids:
-        rec = esp_by_id[k]
-        add_by_school.setdefault(start_school(rec), []).append((start_name(rec, k), rec))
-
-    start_schools = sorted(set(rem_by_school) | set(add_by_school))
-    if start_schools:
+    if removed or added:
         header("## Starting Spells")
-        out.append("This section shows how R3 changes the starting spell set, "
-                   "as per-school replacements (removed -> added); start spells "
-                   "R3 leaves unchanged are omitted. Pairings are positional "
-                   "and alphabetical within each school, not a literal claim "
-                   "that one spell replaced another.")
-        out.append("")
-        for school in start_schools:
-            rem = sorted(rem_by_school.get(school, []), key=lambda t: t[0].lower())
-            add = sorted(add_by_school.get(school, []), key=lambda t: t[0].lower())
-            header(f"### {school}")
-            out.append("```")
-            n = min(len(rem), len(add))
-            for i in range(n):
-                rem_name = rem[i][0]
-                add_name, add_rec = add[i]
-                line = add_at_column(f"{rem_name} -> {add_name}",
-                                     COL_VALUES, added_summary(add_rec))
-                out.append(line)
-            for rem_name, _ in rem[n:]:
-                out.append(f"{rem_name} (removed)")
-            for add_name, add_rec in add[n:]:
-                line = add_at_column(f"(added) {add_name}",
-                                     COL_VALUES, added_summary(add_rec))
-                out.append(line)
-            out.append("```")
+        removed_sorted = sorted(removed, key=lambda r: start_display_name(r).lower())
+        added_sorted = sorted(added, key=lambda r: start_display_name(r).lower())
+        out.append("```")
+        for i in range(max(len(removed_sorted), len(added_sorted))):
+            rem = removed_sorted[i] if i < len(removed_sorted) else None
+            add = added_sorted[i] if i < len(added_sorted) else None
+            rem_id = rem.get("id") if rem else ""
+            add_id = add.get("id") if add else ""
+            rem_vals = start_first_effect_values(rem) if rem else ""
+            add_vals = start_first_effect_values(add) if add else ""
+            rem_name = start_display_name(rem) if rem else ""
+            add_name = start_display_name(add) if add else ""
+            id_seg = f"{rem_id} -> {add_id}"
+            values_seg = f"{rem_vals} -> {add_vals}"
+            name_seg = f"{rem_name} -> {add_name}"
+            line = add_at_column(id_seg, COL_VALUES, values_seg)
+            line = add_at_column(line, COL_ID, name_seg)
+            out.append(line)
+        out.append("```")
         out.append("")
 
     for school in sorted(groups):

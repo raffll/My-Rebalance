@@ -13,35 +13,11 @@ sEffectSlowFall                             SlowFall -> Slowfall
 
 ## Starting Spells
 
-This section shows how R3 changes the starting spell set, as per-school replacements (removed -> added); start spells R3 leaves unchanged are omitted. Pairings are positional and alphabetical within each school, not a literal claim that one spell replaced another.
-
-------------------------------------------------------------
-
-### Alteration
-
 ```
-Shield -> First Barrier                     Shield 10/30s [auto]
-```
-------------------------------------------------------------
-
-### Destruction
-
-```
-Exhausting Touch -> Weariness               Drain Fatigue 10-100/20s/Target [auto]
-```
-------------------------------------------------------------
-
-### Mysticism
-
-```
-Detect Creature -> Detect Enchantment       Detect Enchantment 50/10s [auto]
-```
-------------------------------------------------------------
-
-### Restoration
-
-```
-Feet of Notorgo -> Skylamp's Shadow         Fortify Attribute: Speed 5-20/30s [auto]
+detect_creature -> detect enchantment       50-150/5s -> 50/10s                 Detect Creature -> Detect Enchantment
+exhausting touch -> first barrier           5-20/60s/Touch -> 10/30s            Exhausting Touch -> First Barrier
+feet of notorgo -> skylamp's shadow         10/90s -> 5-20/30s                  Feet of Notorgo -> Skylamp's Shadow
+shield -> weariness                         5/30s -> 10-100/20s/Target          Shield -> Weariness
 ```
 
 ------------------------------------------------------------
