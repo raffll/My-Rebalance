@@ -1,6 +1,11 @@
-# Markdown Tables — Readable Formatting
+# General Rules
 
-When writing markdown tables, always pad cells with spaces so columns align visually in source view.
+Project-agnostic conventions that apply to any project.
+
+## Markdown Tables
+
+When writing markdown tables, always pad cells with spaces so columns align
+visually in source view.
 
 Rules:
 - Pad each cell so the column has a consistent width (align the `|` delimiters vertically).
@@ -10,6 +15,7 @@ Rules:
 - The header separator row dashes should match the column width.
 
 Example:
+
 ```
 | Scroll                   | Src | Price | Cost | Ratio |
 |--------------------------|:---:|------:|-----:|------:|
@@ -18,6 +24,7 @@ Example:
 ```
 
 Do NOT write compressed tables like:
+
 ```
 |Scroll|Src|Price|Cost|Ratio|
 |---|:---:|---:|---:|---:|

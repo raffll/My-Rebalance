@@ -377,7 +377,7 @@ erelvam's wild sty                          1-40/10s -> 1-40/20s                
 ### Chameleon
 
 ```
-shadow form                                 6-15/30s -> 12-30/30s               Shadow Form                                                           rescaled mag x2; rounding ✗ (12-30)
+shadow form                                 6-15/30s -> 10-30/30s               Shadow Form                                                           rescaled mag x2
 ```
 
 ------------------------------------------------------------

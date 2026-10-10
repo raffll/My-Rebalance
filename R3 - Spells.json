@@ -4500,7 +4500,7 @@
         "range": "OnSelf",
         "area": 0,
         "duration": 30,
-        "min_magnitude": 12,
+        "min_magnitude": 10,
         "max_magnitude": 30
       }
     ],

@@ -1,7 +1,5 @@
 # TODO
 
-Female Height                               1.0 -> 0.92 <- this shoould be separate section
-
 ## Summon Base Costs — Rebalance
 
 | Creature            | Current | Proposed | Rationale                                          |
