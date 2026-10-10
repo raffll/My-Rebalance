@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """Enchantments README generator.
 
-Enchanting records have no name field, so display names are mapped from id via
-a baked-in table (NAME_MAP). Records are grouped by effect: a multi-effect
-enchantment appears once under each of its effects' sections, showing that
-effect's value.
+Enchanting records have no name field, so display names are mapped from the id:
+first from the item/scroll names that carry the enchant (item_names), falling
+back to a baked-in table (NAME_MAP).
 
-Layout matches Spells & Potions:
-    ## <Effect>
-      <non-TD enchantments>
-      *Tamriel Data*  (id starts with T_)
-Line: id (col 0) - vanilla -> current (col 44) - name (col 80)
-Output: R3 - Enchantments.md
+Layout mirrors Spells & Potions:
+    ## <School>                         one per magic-effect school
+      ### <Effect>                      one per effect used by single-effect records
+        *Vanilla*                       single-effect Enchanting, non-TD
+        *Tamriel Data*                  single-effect Enchanting, id starts T_
+    ## Multi-Effect Enchantments        every enchant with 2+ effects, once
+
+There is NO Base Cost / Tier line. Line: id (col 0) - vanilla -> current
+(col 44) - name (col 80). Output: R3 - Enchantments.md
 """
 from __future__ import annotations
 
@@ -22,6 +24,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gen_common as gc
+
+COL_VALUES = 44
+COL_ID = 80
+EFFECT_INDENT = "    "  # indent before "effect N" rows on multi-effect records
+DIVIDER = "-" * 60
 
 # Enchanting id -> display name (names are not stored on Enchanting records).
 NAME_MAP = {
@@ -47,32 +54,6 @@ NAME_MAP = {
 }
 
 
-def is_td(idv: str) -> bool:
-    return (idv or "").startswith("T_")
-
-
-def _one(eff, show_area) -> str:
-    area = int(eff.get("area", 0))
-    # Shared axis-aware renderer so axis-only effects (Water Breathing, Silence,
-    # Paralyze, Lock, Open...) render identically to spells/potions/core.
-    v = gc.format_effect_values(eff)
-    if show_area and area > 0:
-        v = f"{v}/{area}ft"
-    return v
-
-
-def value_pair(eff, veff) -> str:
-    """"vanilla -> current" for one effect; area shown only when it changed."""
-    cur_area = int(eff.get("area", 0))
-    van_area = int(veff.get("area", 0)) if veff is not None else None
-    area_changed = van_area is not None and van_area != cur_area
-    show_area = area_changed if veff is not None else cur_area > 0
-
-    cur = _one(eff, show_area)
-    van = _one(veff, show_area) if veff is not None else None
-    return f"{van} -> {cur}" if van is not None and van != cur else cur
-
-
 def main() -> int:
     ap = argparse.ArgumentParser(description="Enchantments README generator.")
     ap.add_argument("--json", default="R3 - Enchantments.json")
@@ -85,30 +66,55 @@ def main() -> int:
 
     ench = [o for o in data if o.get("type") == "Enchanting"]
     needed = {o["id"].lower().strip() for o in ench if o.get("id")}
-    van_by_id, effect_names = gc.load_vanilla(args.master_dir, needed, want_effect_names=True)
 
-    # Build enchant_id (lower) -> ordered unique list of item names that carry
-    # it, scanning masters in order (first occurrence wins the ordering).
+    # Load vanilla records, MagicEffect SCHOOL (effect_id -> school) for the
+    # "## <School>" header, and sEffect* GMSTs (effect display names). We scan
+    # the masters once here (gc.load_vanilla does not return schools).
+    print(f"Loading masters from: {args.master_dir}")
+    van_by_id: dict[str, dict] = {}
+    fx_school: dict[str, str] = {}
+    effect_names: dict[str, str] = {}
+    # enchant_id (lower) -> ordered unique list of item names that carry it.
     item_names: dict[str, list] = {}
     for mname in gc.MASTER_FILES:
         mpath = os.path.join(args.master_dir, mname)
         if not os.path.exists(mpath):
+            print(f"  (skip, not found) {mname}")
             continue
+        print(f"  reading {mname}")
         for o in gc.read_records(mpath):
             if not isinstance(o, dict):
                 continue
+            if o.get("type") == "MagicEffect" and o.get("effect_id"):
+                if o["effect_id"] not in fx_school:
+                    sch = (o.get("data") or {}).get("school")
+                    if sch:
+                        fx_school[o["effect_id"]] = sch
+                continue
+            rid = o.get("id")
+            # sEffect<Name> GMSTs hold the in-game display name of each effect.
+            if o.get("type") == "GameSetting" and isinstance(rid, str) \
+                    and rid.startswith("sEffect"):
+                key = rid[len("sEffect"):]
+                if key not in effect_names:
+                    val = (o.get("value") or {}).get("data")
+                    if isinstance(val, str) and val:
+                        effect_names[key] = val
+            # Items/scrolls carrying one of our enchants supply its display name.
             en = o.get("enchanting")
-            if not en:
+            if en:
+                k = en.lower().strip()
+                if k in needed:
+                    name = (o.get("name") or "").strip()
+                    if name:
+                        lst = item_names.setdefault(k, [])
+                        if name not in lst:
+                            lst.append(name)
+            if not rid:
                 continue
-            k = en.lower().strip()
-            if k not in needed:
-                continue
-            name = (o.get("name") or "").strip()
-            if not name:
-                continue
-            lst = item_names.setdefault(k, [])
-            if name not in lst:
-                lst.append(name)
+            k = rid.lower().strip()
+            if k in needed and k not in van_by_id:
+                van_by_id[k] = o
 
     def effect_display(fx):
         return effect_names.get(fx, gc.split_camel(fx))
@@ -119,73 +125,133 @@ def main() -> int:
             return ", ".join(names)
         return NAME_MAP.get(idv) or NAME_MAP.get((idv or "").lower()) or idv
 
-    # Build: effect_display_name -> list of (enchant, effect_index).
-    sections: dict[str, list] = {}
-    for o in ench:
-        van = van_by_id.get((o.get("id") or "").lower().strip())
+    def school_of(fx: str) -> str:
+        """School for an effect: vanilla master MagicEffect school first, else
+        'Misc' as a last resort (enchants carry no ESP MagicEffect metadata)."""
+        return fx_school.get(fx) or "Misc"
+
+    def emit_record(obj: dict) -> list[str]:
+        van = van_by_id.get((obj.get("id") or "").lower().strip())
+        rows = gc.format_value_rows(obj, van)
+
+        id_col = obj.get("id") or ""
+        name_seg = display_name(id_col)
+
+        # Single-effect (or no effects): one line.
+        if len(rows) <= 1:
+            vals = rows[0] if rows else ""
+            line = gc.add_at_column(id_col, COL_VALUES, vals)
+            line = gc.add_at_column(line, COL_ID, name_seg)
+            return [line]
+
+        # Multi-effect: first row carries id and name; each effect its own row.
+        lines = []
+        first = gc.add_at_column(id_col, COL_VALUES, "")
+        first = gc.add_at_column(first, COL_ID, name_seg)
+        lines.append(first)
+        effects = obj.get("effects") or []
+        for i, r in enumerate(rows):
+            fx_name = effect_display(effects[i].get("magic_effect", "")) if i < len(effects) else ""
+            label = f"{EFFECT_INDENT}{fx_name}"
+            lines.append(gc.add_at_column(label, COL_VALUES, r))
+        return lines
+
+    def sort_key(obj: dict):
+        """Sort by the vanilla first-effect's min then max magnitude, duration
+        as tiebreaker. Records with no vanilla counterpart sort last; name is
+        the final tiebreaker."""
+        van = van_by_id.get((obj.get("id") or "").lower().strip())
         veffs = (van or {}).get("effects") or []
-        for i, eff in enumerate(o.get("effects") or []):
-            fx = eff.get("magic_effect", "")
-            name = effect_display(fx)
-            sections.setdefault(name, []).append((o, i, veffs[i] if i < len(veffs) else None))
+        if not veffs:
+            return (1, 0, 0, 0, display_name(obj.get("id", "")))
+        e0 = veffs[0]
+        fx = e0.get("magic_effect", "") or ""
+        mn = int(e0.get("min_magnitude", 0))
+        mx = int(e0.get("max_magnitude", 0))
+        dur = int(e0.get("duration", 0))
+        if gc.effect_uses_magnitude(fx):
+            return (0, mn, mx, dur, display_name(obj.get("id", "")))
+        return (0, dur, dur, 0, display_name(obj.get("id", "")))
 
+    # Bucket records: single-effect into groups[school][fx], 2+ effects into
+    # a single `multi` list (listed once, not per effect).
+    groups: dict[str, dict[str, list]] = {}
+    multi: list = []
+    for o in ench:
+        effects = o.get("effects") or []
+        if not effects:
+            continue
+        if len(effects) > 1:
+            multi.append(o)
+            continue
+        fx = effects[0].get("magic_effect")
+        school = school_of(fx)
+        groups.setdefault(school, {}).setdefault(fx, []).append(o)
+
+    # Build output.
     out: list[str] = []
-    out.append("# Remastered Rebalance Redux - Enchantments")
-    out.append("")
 
-    def header(text):
-        out.append(gc.DIVIDER)
+    def header(text: str) -> None:
+        out.append(DIVIDER)
         out.append("")
         out.append(text)
         out.append("")
 
-    def line_for(o, i, veff):
-        eff = (o.get("effects") or [])[i]
-        vb = value_pair(eff, veff)
-        idv = o.get("id", "")
-        line = gc.add_at_column(idv, gc.COL_VALUES, vb)
-        return gc.add_at_column(line, gc.COL_ID, display_name(idv))
+    out.append("# Remastered Rebalance Redux - Enchantments")
+    out.append("")
 
-    def sort_key(t):
-        """Sort by vanilla min magnitude, then max (ascending). Entries with no
-        vanilla effect sort last; name is the final tiebreaker."""
-        o, i, veff = t
-        if veff is not None:
-            return (0, int(veff.get("min_magnitude", 0)),
-                    int(veff.get("max_magnitude", 0)), display_name(o.get("id", "")))
-        return (1, 0, 0, display_name(o.get("id", "")))
+    for school in sorted(groups):
+        header(f"## {school}")
+        for fx in sorted(groups[school], key=effect_display):
+            recs = groups[school][fx]
+            header(f"### {effect_display(fx)}")
 
-    def block(items):
-        if not items:
-            return
-        out.append("```")
-        for (o, i, veff) in sorted(items, key=sort_key):
-            out.append(line_for(o, i, veff))
-        out.append("```")
+            def block(title: str | None, items: list) -> None:
+                if not items:
+                    return
+                # Exactly one blank line before each block.
+                if out and out[-1] != "":
+                    out.append("")
+                if title:
+                    out.append(f"*{title}*")
+                out.append("```")
+                for r in sorted(items, key=sort_key):
+                    out.extend(emit_record(r))
+                out.append("```")
 
-    for effect_name in sorted(sections):
-        items = sections[effect_name]
-        header(f"## {effect_name}")
-        non_td = [t for t in items if not is_td(t[0].get("id", ""))]
-        td = [t for t in items if is_td(t[0].get("id", ""))]
-        block(non_td)
-        if td:
-            if non_td:
-                out.append("")
-            out.append("*Tamriel Data*")
-            block(td)
-        out.append("")
+            # Non-TD records: "Vanilla" label. TD records: "Tamriel Data" label.
+            block("Vanilla", [r for r in recs if not gc.is_td(r)])
+            block("Tamriel Data", [r for r in recs if gc.is_td(r)])
 
-    while out and out[-1] == "":
-        out.pop()
+            out.append("")
+
+    if multi:
+        header("## Multi-Effect Enchantments")
+
+        def multi_block(title: str | None, items: list) -> None:
+            if not items:
+                return
+            if title:
+                out.append(f"*{title}*")
+            out.append("```")
+            for r in sorted(items, key=sort_key):
+                out.extend(emit_record(r))
+            out.append("```")
+            out.append("")
+
+        multi_block("Vanilla", [r for r in multi if not gc.is_td(r)])
+        multi_block("Tamriel Data", [r for r in multi if gc.is_td(r)])
+
     out_dir = os.path.dirname(args.out)
     if out_dir and not os.path.exists(out_dir):
         os.makedirs(out_dir, exist_ok=True)
+    while out and out[-1] == "":
+        out.pop()
     with open(args.out, "w", encoding="utf-8", newline="\r\n") as f:
         f.write("\n".join(out))
 
     print(f"Wrote {args.out}")
-    print(f"  Enchantments: {len(ench)}  effect sections: {len(sections)}")
+    print(f"  Enchantments: {len(ench)}  schools: {len(groups)}  multi-effect: {len(multi)}")
     print(f"  Vanilla matched: {len(van_by_id)} of {len(needed)}")
     return 0
 
