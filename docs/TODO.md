@@ -89,6 +89,22 @@ the Neloth writ (`CS_WritNeloth`). Reference:
 
 ------------------------------------------------------------
 
+## Hand changes from main
+
+`main` (commit `8af8af0`) had hand-edited spells and potions in ESPs. 3.0 uses
+rules instead, so these are not carried over and most are not wanted. The full
+list, with what 3.0 gives instead, is in `docs/todo/Main-Hand-Changes.md`:
+
+- Starting spells: main swapped four (Detect Creature, Exhausting Touch, Feet of
+  Notorgo, Shield). Lua could do it (spell records have a starter flag).
+- 99 spells where main's magnitude, duration or range differ from the 3.0 rule
+  (37 of them not in the buyable list).
+- 10 spells switched between autocalc and a fixed cost.
+- 3 spell renames not in `names.lua`.
+- 6 multi-effect potions tiered by hand (the tier rule skips them).
+
+------------------------------------------------------------
+
 ## Tools and docs when a plugin returns
 
 - Add its section to `docs/README.md` (plugin table) and write the README by
