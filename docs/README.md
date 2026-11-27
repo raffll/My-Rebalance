@@ -2,7 +2,7 @@
 
 The idea is to make more options usable, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, spells, potions, lockpicking, traps, alchemy, enchanting, and many more!
 
-Every change is listed in detail in the generated reference files (`R3 - *.md`). This page is just the overview of *what* changed and *why*.
+Every change is listed in detail in the reference files in `docs/` (`R3 - *.md`). This page is just the overview of *what* changed and *why*.
 
 ## Core
 
@@ -33,49 +33,32 @@ Every change is listed in detail in the generated reference files (`R3 - *.md`).
   - Armorer governed by Endurance.
   - Endurance grants less health per level.
 
+Lua plugin plus a small ESP (merchant gold, Morag Tong writs, guard greeting).
+
 Details: `R3 - Core.md`
 
 ## Spells & Potions
 
-- Balance shifted from damage-dealing to disable and defense spells.
-- Casters will use Burden, Drain Fatigue, and Paralyze first — you can prepare with cheap Resist or Feather.
-- Potions are scaled by a tier system determined by the spell effect's base cost.
-- Exclusive potion is equivalent to a self-made potion with 100 Alchemy and mortar quality 1.
-- Spells are scaled inversely to base cost changes (base cost ÷2 → spell mag×dur ×2).
-- Exceptions to spell scaling:
-  - Duplicate spells (consolidated or removed).
-  - Spells that are too powerful or too weak for their tier.
-- Elemental damage (Fire, Frost, Shock, Poison) does not get spell compensation — base cost change affects cost directly.
-- All spell magnitudes rounded to multiples of 5 (minimum floor is 1).
-- Tamriel Data spells and potions follow the same rules.
+Lua plugins: they work from the base costs the load order provides, so they
+follow other mods.
 
-### Potion Tiers
+- **R3 - Spells**: new effect base costs. Balance shifted from damage-dealing to
+  disable and defense spells: casters will use Burden, Drain Fatigue and Paralyze
+  first, and you can prepare with cheap Resist or Feather.
+  - Buyable spells are compensated by duration when the base cost change is a
+    whole multiple (base cost /10 -> duration x10) and gives whole seconds.
+  - Otherwise the spell keeps its values and its cost follows the new base cost
+    (elemental damage, Lock/Open, rounding cases).
+  - Old R3 spell names (Shock/Lightning Shield swap, Weak Frost Shield...).
+- **R3 - Rounding**: magnitude ranges of buyable spells rounded to 1 or multiples
+  of 5.
+- **R3 - Potions**: graded potions (Bargain to Exclusive) set to a tier table
+  chosen from the effect base cost; Exclusive equals a self-made potion with 100
+  Alchemy and mortar quality 1. Old R3 potion names. Multi-effect potions keep
+  their values.
+- Tamriel Data and Tamriel Rebuilt spells and potions follow the same rules.
 
-Potion magnitude/duration is set by a tier, chosen from the effect's R3 base cost
-(the column headers). Vanilla potion values are tier 1 (base cost 1); a higher or
-lower base cost shifts the potion up or down the table. Base cost above 8 uses tier 8.
-Duration-only effects (Paralyze, Silence) use the duration column of the matching tier.
-
-| Mag | Dur |  8  |  5  |  2  |  1  | 0.5 | 0.2 | 0.1 |
-|----:|----:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|   1 |   3 |  ●  |     |     |     |     |     |     |
-|   2 |   6 |  ●  |  ●  |     |     |     |     |     |
-|   3 |   9 |  ●  |  ●  |  ●  |     |     |     |     |
-|   4 |  12 |  ●  |  ●  |  ●  |     |     |     |     |
-|   6 |  18 |  ●  |  ●  |  ●  |  ●  |     |     |     |
-|   8 |  24 |     |  ●  |  ●  |  ●  |     |     |     |
-|  10 |  30 |     |     |  ●  |  ●  |  ●  |     |     |
-|  15 |  45 |     |     |     |  ●  |  ●  |     |     |
-|  20 |  60 |     |     |     |  ●  |  ●  |  ●  |     |
-|  30 |  90 |     |     |     |     |  ●  |  ●  |     |
-|  40 | 120 |     |     |     |     |  ●  |  ●  |     |
-|  60 | 180 |     |     |     |     |     |  ●  |  ●  |
-|  80 | 240 |     |     |     |     |     |  ●  |  ●  |
-| 100 | 300 |     |     |     |     |     |     |  ●  |
-| 150 | 450 |     |     |     |     |     |     |  ●  |
-| 200 | 600 |     |     |     |     |     |     |  ●  |
-
-Details: `R3 - Spells & Potions.md`
+Details: `R3 - Spells.md`, `R3 - Rounding.md`, `R3 - Potions.md`
 
 ## Enchantments
 
@@ -106,4 +89,4 @@ Details: `R3 - Factions.md`
 
 ## Optional
 
-Separate plugins for standalone tweaks (barter reset delay, charge messagebox, Morag Tong). See `optional/R3 - Optional.md`.
+Separate plugins for standalone tweaks (barter reset delay, charge messagebox, Morag Tong). See `R3 - Optional.md`.

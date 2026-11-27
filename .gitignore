@@ -6,5 +6,6 @@ meta.ini
 tes3conv.exe
 /tes3conv
 build/Remastered Rebalance Redux.7z
-/scripts/__pycache__
+/tools/__pycache__
+/.agents
 /.agents

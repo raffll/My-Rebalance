@@ -8,7 +8,7 @@
       "matcher": "\\.json$",
       "action": {
         "type": "command",
-        "command": "python scripts/strip_bom.py"
+        "command": "python tools/strip_bom.py"
       }
     }
   ]
