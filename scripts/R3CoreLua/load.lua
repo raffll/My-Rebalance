@@ -140,7 +140,7 @@ local function onContentFilesLoaded()
         content.gameSettings.records.fBarterGoldResetDelay = hours
         applied = applied + 1
     end)
-    if setting(settings.HIDE_NO_CHARGE, false) then
+    if setting(settings.HIDE_NO_CHARGE, true) then
         try('GMST', data.HIDDEN_MESSAGE, function()
             content.gameSettings.records[data.HIDDEN_MESSAGE] = ''
             applied = applied + 1

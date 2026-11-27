@@ -30,7 +30,7 @@ local special = {
     },
     [settings.HIDE_NO_CHARGE] = {
         renderer = 'checkbox', name = 'hide_no_charge_name', description = 'hide_no_charge_description',
-        default = false,
+        default = true,
     },
 }
 

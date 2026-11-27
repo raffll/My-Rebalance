@@ -294,7 +294,7 @@ enchantment point lowers the chance by 0.6% instead of 3%. Only when enchanting
 yourself; enchanter services always succeed.
 [`mwmechanics/enchanting.cpp`]
 
-Setting: Hide "Not Enough Charge" (Yes/No, default No).
+Setting: Hide "Not Enough Charge" (Yes/No, default Yes).
 
 ```
 sMagicInsufficientCharge                    "Item does not have enough charge." -> ""
