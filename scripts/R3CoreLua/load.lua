@@ -91,7 +91,7 @@ local function onContentFilesLoaded()
     end)
     if setting(settings.HIDE_NO_CHARGE, false) then
         try('GMST', data.HIDDEN_MESSAGE, function()
-            content.gameSettings.records[data.HIDDEN_MESSAGE] = 0
+            content.gameSettings.records[data.HIDDEN_MESSAGE] = ''
             applied = applied + 1
         end)
     end

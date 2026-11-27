@@ -34,9 +34,12 @@ M.WALK_SPEED_DEFAULT = 'plus25'
 -- Merchant gold reset (menu choice): fBarterGoldResetDelay, in hours.
 M.BARTER_RESET = { hour = 1, day = 24, month = 720 }
 M.BARTER_RESET_DEFAULT = 'month'
--- Message hidden by the menu option: GMST id. A GMST that is not a string has no
--- string subrecord, so the message text is empty and the box is not shown (same
--- as the old optional ESP, which stored a float). An empty string would not hide it.
+-- Message hidden by the menu option: GMST id, set to an empty string. The engine
+-- shows "#{sMagicInsufficientCharge}"; a string GMST is replaced by its text, so
+-- the box gets no text and a display time of 0 (length x time per character) and
+-- is removed on the next frame. Any non-string value (number, or no value at all)
+-- makes the engine print the tag name "sMagicInsufficientCharge" instead.
+-- [mwgui/windowmanagerimp.cpp onRetrieveTag, mwgui/messagebox.cpp]
 M.HIDDEN_MESSAGE = 'sMagicInsufficientCharge'
 -- Skill id -> { governing attribute, skill gain per use type }.
 M.SKILLS = {

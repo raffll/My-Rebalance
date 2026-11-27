@@ -271,7 +271,7 @@ yourself; enchanter services always succeed.
 
 ## Spell Effect Base Costs
 
-Options > Scripts > R3 - Core > "R3 spell effect base costs" (on by default).
+Options > Scripts > R3 - Core > "Rebalanced spell costs" (on by default).
 The setting is read once at startup, so restart the game after changing it.
 - **On**: the 38 effects below get the R3 base cost.
 - **Off**: vanilla base costs are kept. R3 - Spells sees no difference and
@@ -330,16 +330,17 @@ duration and fixed cost of buyable spells that are not autocalc. List
 
 ## Magic
 
-Options > Scripts > R3 - Core > Hide "not enough charge" message (off by
-default). Read once at startup, so restart the game after changing it.
+Options > Scripts > R3 - Core > Hide "not enough charge" (off by default). Read once at startup, so restart the game after changing it.
 
 ```
-sMagicInsufficientCharge                    "Item does not have enough charge." -> (none)
+sMagicInsufficientCharge                    "Item does not have enough charge." -> ""
 ```
 
-On: using an enchanted item without enough charge shows no message box. The
-setting is replaced by a value that is not a string, so the game has no text to
-show; an empty string would not hide it.
+On: using an enchanted item without enough charge shows no message (the failure
+sound still plays). The message box gets an empty text, so its display time
+(text length x time per character) is 0 and it is removed on the next frame. A
+non-string value would not hide it: the engine then prints the setting name.
+[`mwgui/windowmanagerimp.cpp`, `mwgui/messagebox.cpp`]
 
 ```
 fElementalShieldMult                        0.1 -> 1
