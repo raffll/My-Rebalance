@@ -60,17 +60,68 @@ end
 local function baseCostsEnabled()
     return setting(settings.BASE_COSTS, true)
 end
-local function onContentFilesLoaded()
-    for id, v in pairs(data.GMSTS) do
+local function setGmsts(values)
+    for id, v in pairs(values) do
         try('GMST', id, function()
             content.gameSettings.records[id] = v
             applied = applied + 1
         end)
     end
-    apply(content.skills, 'skill', data.SKILLS, function(rec, v)
-        rec.attribute = v.attribute
-        rec.skillGain = v.skillGain
-    end)
+end
+-- One value group from data.GROUPS.
+local function applyGroup(g)
+    if g.gmsts then setGmsts(g.gmsts) end
+    if g.skills then
+        apply(content.skills, 'skill', g.skills, function(rec, v)
+            rec.attribute = v.attribute
+            rec.skillGain = v.skillGain
+        end)
+    end
+    if g.effects then
+        apply(content.magicEffects, 'effect', g.effects, function(rec, v)
+            rec.baseCost = v
+        end)
+    end
+    if g.spells then
+        apply(content.spells, 'spell', g.spells, function(rec, v)
+            setEffects(rec.effects, v.effects)
+            rec.cost = v.cost
+        end)
+    end
+    if g.enchantments then
+        apply(content.enchantments, 'enchantment', g.enchantments, function(rec, v)
+            setEffects(rec.effects, v.effects)
+            rec.cost = v.cost
+            rec.charge = v.charge
+        end)
+    end
+    if g.books then
+        apply(content.books, 'book', g.books, function(rec, v)
+            rec.value = v
+        end)
+    end
+    if g.apparatuses then
+        apply(content.apparatuses, 'apparatus', g.apparatuses, function(rec, v)
+            rec.value = v
+        end)
+    end
+end
+local function onContentFilesLoaded()
+    local toggled = {}
+    for _, key in ipairs(settings.TOGGLES) do toggled[key] = true end
+    local off = {}
+    local open12 = false
+    for _, g in ipairs(data.GROUPS) do
+        if toggled[g.key] and not setting(g.key, true) then
+            off[#off + 1] = g.key
+        else
+            applyGroup(g)
+            if g.effects and g.effects.open then open12 = true end
+        end
+    end
+    if #off > 0 then
+        log('off in the menu, vanilla values kept: %s', table.concat(off, ', '))
+    end
     local speed = setting(settings.WALK_SPEED, data.WALK_SPEED_DEFAULT)
     local mult = data.WALK_SPEED_MULT[speed] or data.WALK_SPEED_MULT[data.WALK_SPEED_DEFAULT]
     if mult == 1 then
@@ -100,23 +151,9 @@ local function onContentFilesLoaded()
             rec.baseCost = v
         end)
     else
-        log('spell effect base costs: disabled in the menu, vanilla values kept')
+        log('spell effect base costs: off in the menu, vanilla values kept%s',
+            open12 and ' (Open 12 kept: Harder Locks is on)' or '')
     end
-    apply(content.spells, 'spell', data.SPELLS, function(rec, v)
-        setEffects(rec.effects, v.effects)
-        rec.cost = v.cost
-    end)
-    apply(content.enchantments, 'enchantment', data.ENCHANTMENTS, function(rec, v)
-        setEffects(rec.effects, v.effects)
-        rec.cost = v.cost
-        rec.charge = v.charge
-    end)
-    apply(content.books, 'book', data.BOOKS, function(rec, v)
-        rec.value = v
-    end)
-    apply(content.apparatuses, 'apparatus', data.APPARATUSES, function(rec, v)
-        rec.value = v
-    end)
     log('%d values applied, %d records not found, %d failed', applied, missing, failed)
 end
 

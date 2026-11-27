@@ -1,10 +1,10 @@
 # Remastered Rebalance Redux - Core
 
 Core game settings and records. `R3 - Core.omwscripts` sets the values at
-startup (absolute values, overriding the load order). The spell effect base
-costs, the movement speed, the merchant gold reset and the "not enough charge"
-message have menu settings (see Spell Effect Base Costs, Movement, Barter and
-Magic). Records Lua cannot
+startup (absolute values, overriding the load order). Some sections have a
+setting in Options > Scripts > R3 - Core, named under the section heading;
+settings are read at startup, so restart the game after changing them. Off
+keeps the values the load order provides. Records Lua cannot
 change stay in `R3 - Core.esp`, marked *(ESP)*: merchant gold, the Morag Tong writ
 script and the guard greeting. Enable both. Formulas below are taken from the
 OpenMW source (file names in brackets).
@@ -12,6 +12,8 @@ OpenMW source (file names in brackets).
 ------------------------------------------------------------
 
 ## Health
+
+Setting: Slower Health Gain (Yes/No, default Yes).
 
 ```
 fLevelUpHealthEndMult                       0.1 -> 0.05
@@ -25,6 +27,8 @@ level, R3 5% (60 Endurance: 6 -> 3 per level). Not retroactive; starting health
 ------------------------------------------------------------
 
 ## Skills
+
+Setting: Skill Changes (Yes/No, default Yes).
 
 *Armorer*
 ```
@@ -49,8 +53,7 @@ Skill experience per successful soul gem recharge, x0.4.
 
 ## Movement
 
-Options > Scripts > R3 - Core > "Movement speed": Vanilla, +25% or +50%
-(default +25%). Read once at startup, so restart the game after changing it.
+Setting: Movement Speed (Vanilla, +25% or +50%, default +25%).
 
 ```
                                             Vanilla     +25%        +50%
@@ -71,8 +74,7 @@ as the load order provides them.
 
 ## Barter
 
-Options > Scripts > R3 - Core > "Merchant gold reset": Hour, Day or Month
-(default Month). Read once at startup, so restart the game after changing it.
+Setting: Merchant Gold Reset (Hour, Day or Month, default Month).
 
 ```
                                             Hour        Day         Month
@@ -94,6 +96,8 @@ The two richest merchants keep 10% of their gold.
 
 ## Travel
 
+Setting: Pricier Guild Travel (Yes/No, default Yes).
+
 ```
 fMagesGuildTravel                           10 -> 50
 ```
@@ -105,6 +109,9 @@ before followers and the barter adjustment. Silt strider and boat prices
 ------------------------------------------------------------
 
 ## Crime
+
+Setting: Harsher Crime (Yes/No, default Yes). Covers the Lua values only:
+the guard greeting and Morag Tong writs below stay in the ESP.
 
 ```
 iCrimeKilling                               1000 -> 5000
@@ -145,6 +152,8 @@ should equal one assault and one murder: R3 1000 + 5000 = 6000.
 
 ## Pickpocket
 
+Setting: Easier Pickpocket (Yes/No, default Yes).
+
 ```
 iPickMaxChance                              75 -> 100
 fPickPocketMod                              0.3 -> 0.001
@@ -161,6 +170,9 @@ Success chance = 2 x thief term - victim term, where each term is
 ------------------------------------------------------------
 
 ## Lockpicking
+
+Setting: Harder Locks (Yes/No, default Yes). Open 12 also applies when
+Rebalanced Spell Costs is on.
 
 ```
 fPickLockMult                               -1 -> -1.25
@@ -196,6 +208,8 @@ sc_ekashslocksplitter_en                    100 -> 80-100                       
 
 ## Traps
 
+Setting: Harder Traps (Yes/No, default Yes).
+
 ```
 fTrapCostMult                               0 -> -0.75
 ```
@@ -227,6 +241,8 @@ Stored trap spell costs, which the disarm penalty now reads (Master Fire Trap:
 
 ## Alchemy
 
+Setting: Alchemy Changes (Yes/No, default Yes).
+
 ```
 fPotionStrengthMult                         0.5 -> 0.25
 ```
@@ -250,6 +266,8 @@ Secret Master's apparatus x5.
 
 ## Enchant
 
+Setting: Enchanting Changes (Yes/No, default Yes).
+
 ```
 fMagicItemRechargePerSecond                 0.05 -> 0
 ```
@@ -271,8 +289,7 @@ yourself; enchanter services always succeed.
 
 ## Spell Effect Base Costs
 
-Options > Scripts > R3 - Core > "Rebalanced spell costs" (on by default).
-The setting is read once at startup, so restart the game after changing it.
+Setting: Rebalanced Spell Costs (Yes/No, default Yes).
 - **On**: the 38 effects below get the R3 base cost.
 - **Off**: vanilla base costs are kept. R3 - Spells sees no difference and
   converts nothing; R3 - Rounding and R3 - Potions work from the vanilla costs.
@@ -330,7 +347,7 @@ duration and fixed cost of buyable spells that are not autocalc. List
 
 ## Magic
 
-Options > Scripts > R3 - Core > Hide "not enough charge" (off by default). Read once at startup, so restart the game after changing it.
+Setting: Hide "Not Enough Charge" (Yes/No, default No).
 
 ```
 sMagicInsufficientCharge                    "Item does not have enough charge." -> ""
@@ -341,6 +358,8 @@ sound still plays). The message box gets an empty text, so its display time
 (text length x time per character) is 0 and it is removed on the next frame. A
 non-string value would not hide it: the engine then prints the setting name.
 [`mwgui/windowmanagerimp.cpp`, `mwgui/messagebox.cpp`]
+
+Setting: Stronger Elemental Shields (Yes/No, default Yes).
 
 ```
 fElementalShieldMult                        0.1 -> 1

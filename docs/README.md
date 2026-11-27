@@ -30,9 +30,9 @@ each has its own README in `docs/` with the exact rules and values.
   including Tamriel Data and Tamriel Rebuilt content.
 - **ESP plugins** cover records Lua cannot change (creatures, scripts,
   dialogue) and hand-tuned records.
-- A plugin is on when it is enabled in the content list. The only settings are
-  the R3 - Core options: spell effect base costs, movement speed, merchant
-  gold reset and hiding the "not enough charge" message (Options > Scripts).
+- A plugin is on when it is enabled in the content list. R3 - Core has
+  settings in Options > Scripts (spell costs, movement speed, merchant gold
+  reset, several gameplay sections); see its README.
   Changes apply at startup.
 
 ------------------------------------------------------------

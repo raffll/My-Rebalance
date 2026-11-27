@@ -11,42 +11,44 @@ I.Settings.registerPage {
     description = 'page_description',
 }
 
+-- Special settings; every other key in settings.ORDER is a Yes/No group
+-- (settings.TOGGLES, default Yes).
+local special = {
+    [settings.BASE_COSTS] = {
+        renderer = 'checkbox', name = 'base_costs_name', description = 'base_costs_description',
+        default = true,
+    },
+    [settings.WALK_SPEED] = {
+        renderer = 'select', name = 'walk_speed_name', description = 'walk_speed_description',
+        argument = { l10n = 'R3Core', items = { 'vanilla', 'plus25', 'plus50' } },
+        default = data.WALK_SPEED_DEFAULT,
+    },
+    [settings.BARTER_RESET] = {
+        renderer = 'select', name = 'barter_reset_name', description = 'barter_reset_description',
+        argument = { l10n = 'R3Core', items = { 'hour', 'day', 'month' } },
+        default = data.BARTER_RESET_DEFAULT,
+    },
+    [settings.HIDE_NO_CHARGE] = {
+        renderer = 'checkbox', name = 'hide_no_charge_name', description = 'hide_no_charge_description',
+        default = false,
+    },
+}
+
+local list = {}
+for _, key in ipairs(settings.ORDER) do
+    local s = special[key] or {
+        renderer = 'checkbox', name = key .. '_name', description = key .. '_description',
+        default = true,
+    }
+    s.key = key
+    list[#list + 1] = s
+end
+
 I.Settings.registerGroup {
     key = settings.GROUP,
     page = settings.PAGE,
     l10n = 'R3Core',
     name = 'group_name',
     permanentStorage = true,
-    settings = {
-        {
-            key = settings.BASE_COSTS,
-            renderer = 'checkbox',
-            name = 'base_costs_name',
-            description = 'base_costs_description',
-            default = true,
-        },
-        {
-            key = settings.WALK_SPEED,
-            renderer = 'select',
-            argument = { l10n = 'R3Core', items = { 'vanilla', 'plus25', 'plus50' } },
-            name = 'walk_speed_name',
-            description = 'walk_speed_description',
-            default = data.WALK_SPEED_DEFAULT,
-        },
-        {
-            key = settings.BARTER_RESET,
-            renderer = 'select',
-            argument = { l10n = 'R3Core', items = { 'hour', 'day', 'month' } },
-            name = 'barter_reset_name',
-            description = 'barter_reset_description',
-            default = data.BARTER_RESET_DEFAULT,
-        },
-        {
-            key = settings.HIDE_NO_CHARGE,
-            renderer = 'checkbox',
-            name = 'hide_no_charge_name',
-            description = 'hide_no_charge_description',
-            default = false,
-        },
-    },
+    settings = list,
 }
