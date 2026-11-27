@@ -24,7 +24,7 @@ M.BARTER_RESET_DEFAULT = 'month'
 M.HIDDEN_MESSAGE = 'sMagicInsufficientCharge'
 
 -- Magic effect id -> base cost (Rebalanced Spell Costs setting). Open 12 is also
--- in the lockpicking group, so it applies when either setting is on.
+-- in the openSpells group, so it applies when either setting is on.
 M.EFFECTS = {
     ["absorbfatigue"] = 6,
     ["absorbhealth"] = 16,
@@ -113,10 +113,13 @@ M.GROUPS = {
         },
     },
     { -- [Lockpicking]
-        key = "lockpicking",
+        key = "locks",
         gmsts = {
             fPickLockMult = -1.25,
         },
+    },
+    { -- [Lockpicking]
+        key = "openSpells",
         effects = {
             ["open"] = 12,
         },
@@ -152,10 +155,13 @@ M.GROUPS = {
         },
     },
     { -- [Alchemy]
-        key = "alchemy",
+        key = "weakerPotions",
         gmsts = {
             fPotionStrengthMult = 0.25,
         },
+    },
+    { -- [Alchemy]
+        key = "masterApparatus",
         apparatuses = {
             ["apparatus_sm_alembic_01"] = 8000,  -- Secret Master's Alembic
             ["apparatus_sm_calcinator_01"] = 16000,  -- Secret Master's Calcinator
@@ -164,10 +170,15 @@ M.GROUPS = {
         },
     },
     { -- [Enchant]
-        key = "enchanting",
+        key = "noRecharge",
+        gmsts = {
+            fMagicItemRechargePerSecond = 0,
+        },
+    },
+    { -- [Enchant]
+        key = "selfEnchant",
         gmsts = {
             fEnchantmentChanceMult = 0.6,
-            fMagicItemRechargePerSecond = 0,
         },
     },
     { -- [Magic]

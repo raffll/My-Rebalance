@@ -152,7 +152,7 @@ local function onContentFilesLoaded()
         end)
     else
         log('spell effect base costs: off in the menu, vanilla values kept%s',
-            open12 and ' (Open 12 kept: Harder Locks is on)' or '')
+            open12 and ' (Open 12 kept: Open Spell Changes is on)' or '')
     end
     log('%d values applied, %d records not found, %d failed', applied, missing, failed)
 end

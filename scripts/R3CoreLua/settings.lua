@@ -9,13 +9,14 @@ local M = {
     HIDE_NO_CHARGE = 'hideNoChargeMessage',
     -- Value groups in data.lua with a Yes/No setting. The setting
     -- key is the group key.
-    TOGGLES = { 'health', 'skills', 'travel', 'crime', 'pickpocket', 'lockpicking', 'traps',
-        'alchemy', 'enchanting', 'shields' },
+    TOGGLES = { 'health', 'skills', 'travel', 'crime', 'pickpocket', 'locks', 'openSpells',
+        'traps', 'weakerPotions', 'masterApparatus', 'noRecharge', 'selfEnchant', 'shields' },
 }
 -- Menu order (by importance).
 M.ORDER = {
     'health', M.BARTER_RESET, M.WALK_SPEED, M.BASE_COSTS,
-    'alchemy', 'enchanting', 'crime', 'lockpicking', 'traps', 'pickpocket',
+    'weakerPotions', 'masterApparatus', 'noRecharge', 'selfEnchant', 'crime',
+    'locks', 'openSpells', 'traps', 'pickpocket',
     'shields', 'skills', 'travel', M.HIDE_NO_CHARGE,
 }
 return M

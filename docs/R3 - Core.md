@@ -172,8 +172,7 @@ Success chance = 2 x thief term - victim term, where each term is
 
 ## Lockpicking
 
-Setting: Harder Locks (Yes/No, default Yes). Open 12 also applies when
-Rebalanced Spell Costs is on.
+Setting: Harder Locks (Yes/No, default Yes).
 
 ```
 fPickLockMult                               -1 -> -1.25
@@ -182,6 +181,9 @@ fPickLockMult                               -1 -> -1.25
 Chance = (0.2 Agility + 0.1 Luck + Security) x pick quality x fatigue +
 `fPickLockMult` x lock level. Each lock level now costs 1.25% instead of 1%;
 a level 80 lock: -80 -> -100. [`mwmechanics/security.cpp`]
+
+Setting: Open Spell Changes (Yes/No, default Yes), for the Open values below.
+Open 12 also applies when Rebalanced Spell Costs is on.
 
 *Spell Effects*
 ```
@@ -242,7 +244,7 @@ Stored trap spell costs, which the disarm penalty now reads (Master Fire Trap:
 
 ## Alchemy
 
-Setting: Alchemy Changes (Yes/No, default Yes).
+Setting: Weaker Potions (Yes/No, default Yes).
 
 ```
 fPotionStrengthMult                         0.5 -> 0.25
@@ -254,6 +256,8 @@ and the potion value follows it. Player-made potions are half as strong and
 worth half as much. [`mwmechanics/alchemy.cpp`]
 
 *Apparatus Prices*
+
+Setting: Pricier Master Apparatus (Yes/No, default Yes).
 ```
 apparatus_sm_mortar_01                      6000 -> 30000                       Secret Master's Mortar & Pestle
 apparatus_sm_alembic_01                     1600 -> 8000                        Secret Master's Alembic
@@ -267,7 +271,7 @@ Secret Master's apparatus x5.
 
 ## Enchant
 
-Setting: Enchanting Changes (Yes/No, default Yes).
+Setting: No Item Recharge (Yes/No, default Yes).
 
 ```
 fMagicItemRechargePerSecond                 0.05 -> 0
@@ -275,6 +279,8 @@ fMagicItemRechargePerSecond                 0.05 -> 0
 
 Enchanted items no longer recharge over time; only soul gems (or a recharge
 service) refill them. [`mwmechanics/recharge.cpp`]
+
+Setting: Easier Self-Enchanting (Yes/No, default Yes).
 
 ```
 fEnchantmentChanceMult                      3 -> 0.6
