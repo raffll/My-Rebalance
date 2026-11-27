@@ -7,7 +7,7 @@ Writes the same lowercase id list to:
 - scripts/R3SpellsLua/spells.lua
 - scripts/R3RoundingLua/spells.lua
 
-The R3 base costs are not generated: they live in scripts/R3SpellsLua/costs.lua.
+The R3 base costs are not generated: they live in scripts/R3CoreLua/data.lua (EFFECTS).
 
 Usage:
   python tools/gen_spells.py

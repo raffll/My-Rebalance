@@ -3,7 +3,9 @@
 Sets graded potions (Bargain, Cheap, Standard, Quality, Exclusive) to fixed
 magnitude/duration tiers at startup. The tier column comes from the effect base
 cost loaded at that moment, so results follow whatever the load order provides.
-When R3 - Spells loads before R3 - Potions, the R3 base costs are used.
+With R3 - Core enabled before this plugin and its base cost toggle on, the R3
+base costs are used; otherwise the vanilla ones. A warning is logged when
+R3 - Core loads after R3 - Potions.
 
 ------------------------------------------------------------
 

@@ -1,1 +1,2 @@
+MENU: scripts/R3CoreLua/menu.lua
 LOAD: scripts/R3CoreLua/load.lua

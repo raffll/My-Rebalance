@@ -10,6 +10,7 @@ Project rules for R3 (OpenMW). Plugin-specific math lives in
 | root                   | plugins: `R3 - *.omwscripts` (+ `.omwscripts.esp` MO2 stub), `R3 - *.esp` + `.json` |
 | `optional/`            | optional ESP plugins + JSON                                                         |
 | `scripts/R3<Name>Lua/` | Lua plugin code and data (OpenMW loads Lua from `scripts/`)                         |
+| `l10n/R3Core/`         | menu text for the Core settings page                                                |
 | `tools/`               | Python generators, checks and build scripts                                         |
 | `docs/`                | every README (`R3 - *.md`); generated analysis docs are not committed               |
 | `.kiro/steering/`      | these rules                                                                         |
@@ -24,25 +25,32 @@ Never put Python or other non-Lua files under `scripts/`.
 change the OpenMW Lua content API can make (`openmw.content`: game settings,
 skills, magic effects, spells, enchantments, potions, books, apparatus, ...).
 
-- One `LOAD:` script per plugin, working in `onContentFilesLoaded`. No menus,
-  no settings: a plugin is on when its `.omwscripts` is enabled.
+- One `LOAD:` script per plugin, working in `onContentFilesLoaded`. A plugin is
+  on when its `.omwscripts` is enabled. The only settings are the Core menu options
+  (spell effect base costs, movement speed, merchant gold reset, hidden
+  "not enough charge" message; `R3CoreLua/menu.lua`, read by `load.lua` from
+  `storage.playerSection`; applies after a restart).
 - **Dynamic** plugins (Spells, Rounding, Potions) read the base costs and
-  records the load order provides. Never assume vanilla values or the presence
-  of another R3 plugin; any load order must give a sensible result.
-- **Absolute** plugin (Core) sets the R3 value outright.
+  records from the game, never from another R3 plugin's files. They must work
+  with R3 - Core enabled or not (vanilla base costs then); a missing plugin
+  must never break them. Spells and Potions need Core listed before them and
+  log a warning otherwise.
+- **Absolute** plugin (Core) sets the R3 value outright, including all spell
+  effect base costs (`R3CoreLua/data.lua`, `EFFECTS`).
 - Wrap each record change in `pcall`, count results, and end with one log line
   `[R3 - <Name>] ...` (applied / renamed / failed).
 - Record ids are lowercase in data tables; ranges use `content.RANGE`.
-- Data files: hand-maintained (`R3CoreLua/data.lua`, `R3SpellsLua/costs.lua`,
+- Data files: hand-maintained (`R3CoreLua/data.lua`, `R3SpellsLua/vanilla.lua`,
   `names.lua`) or generated (`spells.lua` by `tools/gen_spells.py`; never edit
   generated files by hand).
 - Check every Lua file with `luac -p` before finishing.
 
 ### ESP plugins
 
-`R3 - Creatures`, `R3 - Enchantments`, `R3 - Factions`, `R3 - Races &
-Birthsigns`, `optional/*`, and `R3 - Core.esp` for the records Lua cannot reach
-(creatures, NPCs, scripts, dialogue). New changes go to Lua when possible.
+`optional/*` and `R3 - Core.esp` for the records Lua cannot reach (creatures,
+NPCs, scripts, dialogue). New changes go to Lua when possible. Enchantments,
+Creatures, Factions and Races & Birthsigns are removed until ported to Lua; see
+`docs/TODO.md`.
 
 - Edit the JSON (root or `optional/`), then build: `python tools/build_esps.py`
   (tes3conv `"in.json" "out.esp" --overwrite`).
@@ -67,8 +75,8 @@ All READMEs are in `docs/`.
 - **Lua plugin READMEs** are hand-written. Dynamic plugins describe rules, not
   per-record results (results depend on the load order). Core lists its
   absolute values and marks ESP-only records *(ESP)*.
-- **Value lists in Lua READMEs mirror the data files**: Spells Base Costs
-  (`costs.lua`), Spells and Potions Names (`names.lua`), Core values
+- **Value lists in Lua READMEs mirror the data files**: Core Spell Effect Base Costs
+  (`R3CoreLua/data.lua`, with the vanilla value from `R3SpellsLua/vanilla.lua`), Spells and Potions Names (`names.lua`), Core values
   (`R3CoreLua/data.lua`). Update the README in the same change as the data.
 - **ESP plugin READMEs** are generated from the JSON by `tools/gen_*.py`
   (`python tools/gen_all.py`); edit the JSON or the generator, not the README.

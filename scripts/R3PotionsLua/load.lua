@@ -2,6 +2,7 @@
 -- using the effect base costs from the loaded content files, and applies the
 -- R3 potion names (names.lua).
 local content = require('openmw.content')
+local core = require('openmw.core')
 local tiers = require('scripts.R3PotionsLua.tiers')
 local names = require('scripts.R3PotionsLua.names')
 
@@ -9,7 +10,19 @@ local function log(fmt, ...)
     print(('[R3 - Potions] ' .. fmt):format(...))
 end
 
+-- Tiers follow the effect base cost, which R3 - Core sets. Warn when it is enabled
+-- after this plugin: the tiers would use vanilla costs.
+local function warnIfCoreLater()
+    pcall(function()
+        local files = core.contentFiles
+        local c, s = files.indexOf('R3 - Core.omwscripts'), files.indexOf('R3 - Potions.omwscripts')
+        if c and s and c > s then
+            log('WARNING: R3 - Core.omwscripts loads after R3 - Potions.omwscripts; move it before')
+        end
+    end)
+end
 local function onContentFilesLoaded()
+    warnIfCoreLater()
 
     local changed, failed = 0, 0
     for _, potion in pairs(content.potions.records) do

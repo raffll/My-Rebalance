@@ -3,15 +3,10 @@ local M = {}
 
 -- GMST id -> value.
 M.GMSTS = {
-    fBarterGoldResetDelay = 720,
     fEnchantmentChanceMult = 0.6,
     fLevelUpHealthEndMult = 0.05,
     fMagesGuildTravel = 50,
     fMagicItemRechargePerSecond = 0,
-    fMaxWalkSpeed = 250,
-    fMaxWalkSpeedCreature = 375,
-    fMinWalkSpeed = 125,
-    fMinWalkSpeedCreature = 6.25,
     fPickLockMult = -1.25,
     fPickPocketMod = 0.001,
     fPotionStrengthMult = 0.25,
@@ -26,15 +21,70 @@ M.GMSTS = {
     sEffectSlowFall = "Slowfall",
 }
 
+-- Movement speed (menu choice, menu.lua): vanilla GMST values and the multiplier
+-- of each choice. "vanilla" leaves the GMSTs as the load order provides them.
+M.WALK_SPEED = {
+    fMinWalkSpeed = 100,
+    fMaxWalkSpeed = 200,
+    fMinWalkSpeedCreature = 5,
+    fMaxWalkSpeedCreature = 300,
+}
+M.WALK_SPEED_MULT = { vanilla = 1, plus25 = 1.25, plus50 = 1.5 }
+M.WALK_SPEED_DEFAULT = 'plus25'
+-- Merchant gold reset (menu choice): fBarterGoldResetDelay, in hours.
+M.BARTER_RESET = { hour = 1, day = 24, month = 720 }
+M.BARTER_RESET_DEFAULT = 'month'
+-- Message hidden by the menu option: GMST id. A GMST that is not a string has no
+-- string subrecord, so the message text is empty and the box is not shown (same
+-- as the old optional ESP, which stored a float). An empty string would not hide it.
+M.HIDDEN_MESSAGE = 'sMagicInsufficientCharge'
 -- Skill id -> { governing attribute, skill gain per use type }.
 M.SKILLS = {
     armorer = { attribute = "endurance", skillGain = { 1, 1, 1, 1 } },
     enchant = { attribute = "intelligence", skillGain = { 2, 0.1, 5, 0 } },
 }
 
--- Magic effect id -> base cost.
+-- Magic effect id -> base cost (R3 spell effect base costs; menu toggle in
+-- menu.lua). Open is 12 for the effect itself and for the Open spells below.
 M.EFFECTS = {
-    open = 12,
+    ["absorbfatigue"] = 6,
+    ["absorbhealth"] = 16,
+    ["burden"] = 0.1,
+    ["charm"] = 2.5,
+    ["damageattribute"] = 24,
+    ["damagefatigue"] = 2,
+    ["damagemagicka"] = 4,
+    ["detectanimal"] = 0.15,
+    ["detectenchantment"] = 0.2,
+    ["detectkey"] = 0.2,
+    ["disintegratearmor"] = 0.6,
+    ["disintegrateweapon"] = 1.2,
+    ["drainfatigue"] = 0.2,
+    ["drainmagicka"] = 0.4,
+    ["feather"] = 0.1,
+    ["firedamage"] = 8,
+    ["fortifyfatigue"] = 0.25,
+    ["fortifyskill"] = 4,
+    ["frostdamage"] = 8,
+    ["lock"] = 24,
+    ["open"] = 12,
+    ["paralyze"] = 80,
+    ["poison"] = 8,
+    ["reflect"] = 2.5,
+    ["resistblightdisease"] = 0.25,
+    ["resistcommondisease"] = 0.1,
+    ["resistfire"] = 0.5,
+    ["resistfrost"] = 0.5,
+    ["resistmagicka"] = 0.5,
+    ["resistpoison"] = 0.5,
+    ["resistshock"] = 0.5,
+    ["restoreattribute"] = 8,
+    ["restorefatigue"] = 2.5,
+    ["shield"] = 1,
+    ["shockdamage"] = 8,
+    ["sound"] = 1,
+    ["spellabsorption"] = 2.5,
+    ["swiftswim"] = 0.5,
 }
 
 -- Spell id -> { cost, effects (per index) }.

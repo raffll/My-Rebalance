@@ -1,8 +1,11 @@
 # Remastered Rebalance Redux - Core
 
 Core game settings and records. `R3 - Core.omwscripts` sets the values at
-startup (absolute values, overriding the load order). Records Lua cannot change
-stay in `R3 - Core.esp`, marked *(ESP)*: merchant gold, the Morag Tong writ
+startup (absolute values, overriding the load order). The spell effect base
+costs, the movement speed, the merchant gold reset and the "not enough charge"
+message have menu settings (see Spell Effect Base Costs, Movement, Barter and
+Magic). Records Lua cannot
+change stay in `R3 - Core.esp`, marked *(ESP)*: merchant gold, the Morag Tong writ
 script and the guard greeting. Enable both. Formulas below are taken from the
 OpenMW source (file names in brackets).
 
@@ -46,29 +49,38 @@ Skill experience per successful soul gem recharge, x0.4.
 
 ## Movement
 
+Options > Scripts > R3 - Core > "Movement speed": Vanilla, +25% or +50%
+(default +25%). Read once at startup, so restart the game after changing it.
+
 ```
-fMinWalkSpeed                               100 -> 125
-fMaxWalkSpeed                               200 -> 250
-fMinWalkSpeedCreature                       5 -> 6.25
-fMaxWalkSpeedCreature                       300 -> 375
+                                            Vanilla     +25%        +50%
+fMinWalkSpeed                               100         125         150
+fMaxWalkSpeed                               200         250         300
+fMinWalkSpeedCreature                       5           6.25        7.5
+fMaxWalkSpeedCreature                       300         375         450
 ```
 
-Walk speed = min + Speed / 100 x (max - min). Both ends x1.25, so every NPC,
-the player and every creature walk 25% faster at any Speed. Running and
-swimming build on walk speed, so they are 25% faster too; levitation speed has
-its own settings and is unchanged.
+Walk speed = min + Speed / 100 x (max - min). Both ends are multiplied, so every
+NPC, the player and every creature walk 25% (or 50%) faster at any Speed.
+Running and swimming build on walk speed, so they are faster too; levitation
+speed has its own settings and is unchanged. Vanilla leaves the four settings
+as the load order provides them.
 [`mwclass/npc.cpp`, `mwclass/creature.cpp`]
 
 ------------------------------------------------------------
 
 ## Barter
 
+Options > Scripts > R3 - Core > "Merchant gold reset": Hour, Day or Month
+(default Month). Read once at startup, so restart the game after changing it.
+
 ```
-fBarterGoldResetDelay                       24 -> 720
+                                            Hour        Day         Month
+fBarterGoldResetDelay                       1           24          720
 ```
 
-Hours before a merchant's gold returns to its base amount: 1 day -> 30 days.
-Selling drains merchants for a month. [`mwgui/dialogue.cpp`]
+Hours before a merchant's gold returns to its base amount. Day is the vanilla
+value. With Month, selling drains merchants for 30 days. [`mwgui/dialogue.cpp`]
 
 *Merchants Gold (ESP)*
 ```
@@ -257,7 +269,77 @@ yourself; enchanter services always succeed.
 
 ------------------------------------------------------------
 
+## Spell Effect Base Costs
+
+Options > Scripts > R3 - Core > "R3 spell effect base costs" (on by default).
+The setting is read once at startup, so restart the game after changing it.
+- **On**: the 38 effects below get the R3 base cost.
+- **Off**: vanilla base costs are kept. R3 - Spells sees no difference and
+  converts nothing; R3 - Rounding and R3 - Potions work from the vanilla costs.
+
+```
+Absorb Fatigue                              4 -> 6
+Absorb Health                               8 -> 16
+Burden                                      1 -> 0.1
+Charm                                       5 -> 2.5
+Damage Attribute                            8 -> 24
+Damage Fatigue                              4 -> 2
+Damage Magicka                              8 -> 4
+Detect Animal                               0.75 -> 0.15
+Detect Enchantment                          1 -> 0.2
+Detect Key                                  1 -> 0.2
+Disintegrate Armor                          6 -> 0.6
+Disintegrate Weapon                         6 -> 1.2
+Drain Fatigue                               2 -> 0.2
+Drain Magicka                               4 -> 0.4
+Feather                                     1 -> 0.1
+Fire Damage                                 5 -> 8
+Fortify Fatigue                             0.5 -> 0.25
+Fortify Skill                               1 -> 4
+Frost Damage                                5 -> 8
+Lock                                        2 -> 24
+Open                                        6 -> 12
+Paralyze                                    40 -> 80
+Poison                                      9 -> 8
+Reflect                                     10 -> 2.5
+Resist Blight Disease                       5 -> 0.25
+Resist Common Disease                       2 -> 0.1
+Resist Fire                                 2 -> 0.5
+Resist Frost                                2 -> 0.5
+Resist Magicka                              2 -> 0.5
+Resist Poison                               2 -> 0.5
+Resist Shock                                2 -> 0.5
+Restore Attribute                           1 -> 8
+Restore Fatigue                             1 -> 2.5
+Shield                                      2 -> 1
+Shock Damage                                7 -> 8
+Sound                                       3 -> 1
+Spell Absorption                            10 -> 2.5
+Swift Swim                                  2 -> 0.5
+```
+
+The base cost scales the magicka cost of every spell, scroll and enchantment
+that uses the effect: cost = (average magnitude x 0.1 x duration + 0.05 x area)
+x base cost x `fEffectCostMult`, x1.5 on target. [`mwmechanics/spellutil.cpp`]
+Autocalc spells follow the new base costs at once. R3 - Spells adjusts the
+duration and fixed cost of buyable spells that are not autocalc. List
+`R3 - Core.omwscripts` before `R3 - Spells.omwscripts` and
+`R3 - Potions.omwscripts` so they see the costs Core sets.
+
+------------------------------------------------------------
+
 ## Magic
+
+Options > Scripts > R3 - Core > Hide "not enough charge" message (off by
+default). Read once at startup, so restart the game after changing it.
+
+```
+sMagicInsufficientCharge                    "Item does not have enough charge." -> (none)
+```
+
+On: using an enchanted item without enough charge shows no message box. The
+setting is replaced by a value that is not a string, so the game has no text to
+show; an empty string would not hide it.
 
 ```
 fElementalShieldMult                        0.1 -> 1

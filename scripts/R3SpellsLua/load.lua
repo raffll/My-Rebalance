@@ -1,18 +1,22 @@
--- Applies the R3 spell effect base costs at startup and converts buyable spells.
+-- Converts buyable spells to the effect base costs the game has at startup.
 -- Rules: .kiro/steering/spell-conversion-rules.md
 --
--- factor = loaded base cost / R3 base cost, per effect.
+-- The base costs are not set here: R3 - Core sets them (menu toggle) or they stay
+-- vanilla. Buyable spells were authored against vanilla, so per effect:
+-- factor = vanilla base cost (vanilla.lua) / base cost in the game.
+-- Factor 1 (Core off or absent) changes nothing.
 -- 1. Whole change (base cost x or / a whole number) and duration x factor is a
 --    whole number of seconds (at least 1): the duration is multiplied by the
 --    factor. Otherwise the effect is kept as is.
 -- 2. Cost, for spells that are not autocalc (autocalc spells are priced by
 --    the engine from the base costs):
---      vanillaCalc = engine cost of the original spell at the loaded base costs
+--      vanillaCalc = engine cost of the original spell at the vanilla base costs
 --      actual      = stored spell cost
---      newCalc     = engine cost of the converted spell at the R3 base costs
+--      newCalc     = engine cost of the converted spell at the game's base costs
 --      compensated = actual * newCalc / vanillaCalc
 local content = require('openmw.content')
-local costs = require('scripts.R3SpellsLua.costs')
+local core = require('openmw.core')
+local vanilla = require('scripts.R3SpellsLua.vanilla')
 local spells = require('scripts.R3SpellsLua.spells')
 local names = require('scripts.R3SpellsLua.names')
 
@@ -78,18 +82,28 @@ local function show(tag)
     end
 end
 
+-- R3 - Core sets the base costs when it runs before this script. Warn when it is
+-- enabled after this plugin: the spells would then be left unconverted.
+local function warnIfCoreLater()
+    pcall(function()
+        local files = core.contentFiles
+        local c, s = files.indexOf('R3 - Core.omwscripts'), files.indexOf('R3 - Spells.omwscripts')
+        if c and s and c > s then
+            log('WARNING: R3 - Core.omwscripts loads after R3 - Spells.omwscripts; move it before')
+        end
+    end)
+end
 local function onContentFilesLoaded()
+    warnIfCoreLater()
     show('before')
 
-    -- Factor = base cost as loaded / R3 base cost, so it follows whatever the
-    -- load order provides (vanilla, another plugin, or already R3 = factor 1).
+    -- Factor = vanilla base cost / base cost in the game, per effect.
     local oldBase, factor = {}, {}
-    for id, cost in pairs(costs.COSTS) do
+    for id, cost in pairs(vanilla.VANILLA) do
         local effect = content.magicEffects.records[id]
-        if effect and effect.baseCost > 0 and not near(effect.baseCost, cost[2]) then
-            oldBase[id] = effect.baseCost
-            factor[id] = effect.baseCost / cost[2]
-            effect.baseCost = cost[2]
+        if effect and effect.baseCost > 0 and not near(effect.baseCost, cost) then
+            oldBase[id] = cost
+            factor[id] = cost / effect.baseCost
         end
     end
 

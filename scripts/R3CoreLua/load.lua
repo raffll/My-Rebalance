@@ -2,7 +2,9 @@
 -- Creature gold, the Morag Tong writ script and the guard greeting are not
 -- reachable from Lua and stay in R3 - Core.esp.
 local content = require('openmw.content')
+local storage = require('openmw.storage')
 local data = require('scripts.R3CoreLua.data')
+local settings = require('scripts.R3CoreLua.settings')
 
 local function log(fmt, ...)
     print(('[R3 - Core] ' .. fmt):format(...))
@@ -46,6 +48,18 @@ local function apply(store, kind, values, fn)
     end
 end
 
+-- Menu settings (menu.lua). Unset on the first start, before the menu script has
+-- registered its defaults: the default value.
+local function setting(key, default)
+    local ok, value = pcall(function()
+        return storage.playerSection(settings.GROUP):get(key)
+    end)
+    if ok and value ~= nil then return value end
+    return default
+end
+local function baseCostsEnabled()
+    return setting(settings.BASE_COSTS, true)
+end
 local function onContentFilesLoaded()
     for id, v in pairs(data.GMSTS) do
         try('GMST', id, function()
@@ -57,9 +71,37 @@ local function onContentFilesLoaded()
         rec.attribute = v.attribute
         rec.skillGain = v.skillGain
     end)
-    apply(content.magicEffects, 'effect', data.EFFECTS, function(rec, v)
-        rec.baseCost = v
+    local speed = setting(settings.WALK_SPEED, data.WALK_SPEED_DEFAULT)
+    local mult = data.WALK_SPEED_MULT[speed] or data.WALK_SPEED_MULT[data.WALK_SPEED_DEFAULT]
+    if mult == 1 then
+        log('movement speed: vanilla values kept')
+    else
+        for id, v in pairs(data.WALK_SPEED) do
+            try('GMST', id, function()
+                content.gameSettings.records[id] = v * mult
+                applied = applied + 1
+            end)
+        end
+    end
+    local reset = setting(settings.BARTER_RESET, data.BARTER_RESET_DEFAULT)
+    local hours = data.BARTER_RESET[reset] or data.BARTER_RESET[data.BARTER_RESET_DEFAULT]
+    try('GMST', 'fBarterGoldResetDelay', function()
+        content.gameSettings.records.fBarterGoldResetDelay = hours
+        applied = applied + 1
     end)
+    if setting(settings.HIDE_NO_CHARGE, false) then
+        try('GMST', data.HIDDEN_MESSAGE, function()
+            content.gameSettings.records[data.HIDDEN_MESSAGE] = 0
+            applied = applied + 1
+        end)
+    end
+    if baseCostsEnabled() then
+        apply(content.magicEffects, 'effect', data.EFFECTS, function(rec, v)
+            rec.baseCost = v
+        end)
+    else
+        log('spell effect base costs: disabled in the menu, vanilla values kept')
+    end
     apply(content.spells, 'spell', data.SPELLS, function(rec, v)
         setEffects(rec.effects, v.effects)
         rec.cost = v.cost

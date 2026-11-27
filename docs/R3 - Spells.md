@@ -1,53 +1,11 @@
 # Remastered Rebalance Redux - Spells
 
-Sets the R3 effect base costs at startup and converts buyable spells so they
-keep their value. Everything is computed from the base costs the load order
-provides, so results follow whatever other plugins change.
-
-------------------------------------------------------------
-
-## Base Costs
-
-```
-Absorb Fatigue                              6
-Absorb Health                               16
-Burden                                      0.1
-Charm                                       2.5
-Damage Attribute                            24
-Damage Fatigue                              2
-Damage Magicka                              4
-Detect Animal                               0.15
-Detect Enchantment                          0.2
-Detect Key                                  0.2
-Disintegrate Armor                          0.6
-Disintegrate Weapon                         1.2
-Drain Fatigue                               0.2
-Drain Magicka                               0.4
-Feather                                     0.1
-Fire Damage                                 8
-Fortify Fatigue                             0.25
-Fortify Skill                               4
-Frost Damage                                8
-Lock                                        24
-Open                                        12
-Paralyze                                    80
-Poison                                      8
-Reflect                                     2.5
-Resist Blight Disease                       0.25
-Resist Common Disease                       0.1
-Resist Fire                                 0.5
-Resist Frost                                0.5
-Resist Magicka                              0.5
-Resist Poison                               0.5
-Resist Shock                                0.5
-Restore Attribute                           8
-Restore Fatigue                             2.5
-Shield                                      1
-Shock Damage                                8
-Sound                                       1
-Spell Absorption                            2.5
-Swift Swim                                  0.5
-```
+Converts buyable spells at startup so they keep their value when the effect
+base costs change. The base costs are set by R3 - Core (menu toggle, see its
+README). This plugin reads them from the game and compares them with the
+vanilla costs the spells were made for. With R3 - Core off or not enabled the
+costs are vanilla, the factor is 1 and nothing changes. Enable
+`R3 - Core.omwscripts` before this plugin; a warning is logged if not.
 
 ------------------------------------------------------------
 
@@ -56,7 +14,7 @@ Swift Swim                                  0.5
 Per effect:
 
 ```
-factor = loaded base cost / R3 base cost
+factor = vanilla base cost / base cost in the game
 ```
 
 *Duration*
@@ -96,7 +54,7 @@ once over all effects.
 Buyable spells only: spells sold by a spell merchant in the Tamriel Rebuilt load
 order (vanilla, Tamriel Data, Tamriel Rebuilt, Project Cyrodiil, Skyrim: Home of
 the Nords) that use an effect listed above. Other spells keep their values;
-autocalc ones are still priced from the new base costs by the engine.
+autocalc ones are still priced from the base costs in the game by the engine.
 
 ------------------------------------------------------------
 

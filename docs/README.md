@@ -14,14 +14,10 @@ each has its own README in `docs/` with the exact rules and values.
 
 | Plugin                       | Type      | What it covers                                                                |
 |------------------------------|-----------|-------------------------------------------------------------------------------|
-| `R3 - Core`                  | Lua + ESP | game settings: movement, crime, barter, thievery, alchemy, enchanting, skills |
-| `R3 - Spells`                | Lua       | spell effect costs, with buyable spells adjusted to match                     |
+| `R3 - Core`                  | Lua + ESP | game settings and spell effect base costs (menu toggle)                       |
+| `R3 - Spells`                | Lua       | buyable spells adjusted to match the effect base costs                        |
 | `R3 - Rounding`              | Lua       | tidier spell magnitude ranges                                                 |
 | `R3 - Potions`               | Lua       | graded potions set to a consistent tier table                                 |
-| `R3 - Enchantments`          | ESP       | enchantments and scrolls kept in line with the spell changes                  |
-| `R3 - Creatures`             | ESP       | creatures that need more magicka for their spells                             |
-| `R3 - Races & Birthsigns`    | ESP       | races and birthsigns rebalanced so every choice is viable                     |
-| `R3 - Factions`              | ESP       | faction rank requirements                                                     |
 | `optional/R3 - Optional - *` | ESP       | small standalone tweaks                                                       |
 
 ------------------------------------------------------------
@@ -34,7 +30,9 @@ each has its own README in `docs/` with the exact rules and values.
   including Tamriel Data and Tamriel Rebuilt content.
 - **ESP plugins** cover records Lua cannot change (creatures, scripts,
   dialogue) and hand-tuned records.
-- No menus or settings: a plugin is on when it is enabled in the content list.
+- A plugin is on when it is enabled in the content list. The only settings are
+  the R3 - Core options: spell effect base costs, movement speed, merchant
+  gold reset and hiding the "not enough charge" message (Options > Scripts).
   Changes apply at startup.
 
 ------------------------------------------------------------
@@ -51,6 +49,7 @@ each has its own README in `docs/` with the exact rules and values.
 ## Installation
 
 Add the mod folder as a data path (or install it with Mod Organizer 2) and
-enable the plugins you want. Load `R3 - Spells.omwscripts` before
-`R3 - Potions.omwscripts`, so potion tiers use the new spell costs. Enable
+enable the plugins you want. Load `R3 - Core.omwscripts` before
+`R3 - Spells.omwscripts` and `R3 - Potions.omwscripts`, so they see the base
+costs Core sets. Enable
 `R3 - Core.esp` together with `R3 - Core.omwscripts`.

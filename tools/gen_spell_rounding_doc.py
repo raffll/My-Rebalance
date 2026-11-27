@@ -3,7 +3,7 @@
 
 Simulates scripts/R3SpellsLua/load.lua (rules in
 .kiro/steering/spell-conversion-rules.md) over the spells in
-scripts/R3SpellsLua/costs.lua and spells.lua, assuming the masters' (vanilla) base costs are
+scripts/R3CoreLua/data.lua (EFFECTS) and spells.lua, assuming the masters' (vanilla) base costs are
 the loaded ones. Writes docs/Spell-Duration-Conversion.md.
 
 Usage:
@@ -23,7 +23,7 @@ import gen_common as gc  # noqa: E402
 MASTERS = ["Morrowind.json", "Tribunal.json", "Bloodmoon.json", "Patch for Purists.json",
            "Tamriel_Data.json", "TR_Mainland.json", "TR_Factions.json", "Cyr_Main.json",
            "Sky_Main.json"]
-COSTS_LUA = os.path.join(MOD_DIR, "scripts", "R3SpellsLua", "costs.lua")
+COSTS_LUA = os.path.join(MOD_DIR, "scripts", "R3CoreLua", "data.lua")
 SPELLS_LUA = os.path.join(MOD_DIR, "scripts", "R3SpellsLua", "spells.lua")
 OUT = os.path.join(MOD_DIR, "docs", "Spell-Duration-Conversion.md")
 F_EFFECT_COST_MULT = 0.5
@@ -54,8 +54,8 @@ def effect_cost(e: dict, fx: str, base: float, dur: int) -> float:
 
 def main() -> int:
     text = open(COSTS_LUA, encoding="utf-8").read()
-    r3 = {k: float(v) for k, _, v in
-          re.findall(r'\["(\w+)"\] = \{ ([\d.]+), ([\d.]+) \}', text)}
+    block = text.split("M.EFFECTS = {", 1)[1].split("\n}", 1)[0]
+    r3 = {k: float(v) for k, v in re.findall(r'\["(\w+)"\] = ([\d.]+),', block)}
     ids = set(re.findall(r'^    "(.+)",$', open(SPELLS_LUA, encoding="utf-8").read(), re.M))
 
     base: dict[str, float] = {}

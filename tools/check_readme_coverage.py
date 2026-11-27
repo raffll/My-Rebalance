@@ -19,15 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # plugin JSON  ->  README
 PAIRS = [
-    ("R3 - Creatures.json", os.path.join("docs", "R3 - Creatures.md")),
-    ("R3 - Enchantments.json", os.path.join("docs", "R3 - Enchantments.md")),
-    ("R3 - Factions.json", os.path.join("docs", "R3 - Factions.md")),
-    ("R3 - Races & Birthsigns.json", os.path.join("docs", "R3 - Races & Birthsigns.md")),
     (os.path.join("optional", "R3 - Optional - Morag Tong Polished.json"),
-     os.path.join("docs", "R3 - Optional.md")),
-    (os.path.join("optional", "R3 - Optional - No Magic Insufficient Charge Messagebox.json"),
-     os.path.join("docs", "R3 - Optional.md")),
-    (os.path.join("optional", "R3 - Optional - One Hour Barter Gold Reset Delay.json"),
      os.path.join("docs", "R3 - Optional.md")),
 ]
 
