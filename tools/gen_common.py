@@ -48,7 +48,7 @@ STREAM_THRESHOLD = 50 * 1024 * 1024  # 50 MB
 # Per-effect axis flags (No Magnitude / No Duration).
 # Loaded from tools/effect_axis_flags.json so all generators share one source
 # of truth. tes3conv does not expose the engine MGEF flags, so they live in that
-# data file. See docs/Effect-Magnitude-Duration-Flags.md.
+# data file.
 # ---------------------------------------------------------------------------
 _AXIS_FLAGS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 "effect_axis_flags.json")

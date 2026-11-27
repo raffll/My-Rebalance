@@ -7,5 +7,8 @@ tes3conv.exe
 /tes3conv
 build/Remastered Rebalance Redux.7z
 /tools/__pycache__
+# Generated analysis docs (python tools/gen_spell_rounding_doc.py, gen_starting_spells_doc.py)
+/docs/Spell-Duration-Conversion.md
+/docs/Starting-Spells-Proposition.md
 /.agents
 /.agents

@@ -1,92 +1,56 @@
 # Remastered Rebalance Redux
 
-The idea is to make more options usable, especially for the fun of role-playing more specialized characters. This mod includes changes to spell effects, spells, potions, lockpicking, traps, alchemy, enchanting, and many more!
+A rebalance of Morrowind for OpenMW. The goal is to make more options worth
+using, so specialised characters are fun to play: disable and defence magic
+competes with raw damage, stealth and security skills stay useful at high
+levels, and crime, money and crafting carry real weight.
 
-Every change is listed in detail in the reference files in `docs/` (`R3 - *.md`). This page is just the overview of *what* changed and *why*.
+The mod is split into small plugins. Each one can be enabled on its own, and
+each has its own README in `docs/` with the exact rules and values.
 
-## Core
+------------------------------------------------------------
 
-- **Movement**
-  - Walk speed raised 25%.
-- **Crime**
-  - Much harsher bounties, for a more medieval justice system.
-  - Prison time is unchanged.
-- **Barter**
-  - Merchant gold restocks far more slowly to keep less money on the market.
-  - Creeper and Mudcrab no longer carry broken amounts of gold.
-- **Pickpocket**
-  - 100% max chance and a 300× smaller value penalty.
-  - A maxed thief can steal items worth up to ~15,500 gold.
-- **Lockpicking**
-  - Lockpicking and Open are harder.
-  - In vanilla the skill was pointless past 50 and magic trivialized locks.
-- **Traps**
-  - A real threat again.
-  - Vanilla left their cost at 0, so they were free to ignore.
-- **Alchemy**
-  - Homemade potion strength halved.
-  - Secret Master apparatus made rare and expensive.
-- **Enchanting**
-  - Far more reliable to enchant.
-  - Magic items no longer recharge on their own — soul gems required.
-- **Skills**
-  - Armorer governed by Endurance.
-  - Endurance grants less health per level.
+## Plugins
 
-Lua plugin plus a small ESP (merchant gold, Morag Tong writs, guard greeting).
+| Plugin                       | Type      | What it covers                                                                |
+|------------------------------|-----------|-------------------------------------------------------------------------------|
+| `R3 - Core`                  | Lua + ESP | game settings: movement, crime, barter, thievery, alchemy, enchanting, skills |
+| `R3 - Spells`                | Lua       | spell effect costs, with buyable spells adjusted to match                     |
+| `R3 - Rounding`              | Lua       | tidier spell magnitude ranges                                                 |
+| `R3 - Potions`               | Lua       | graded potions set to a consistent tier table                                 |
+| `R3 - Enchantments`          | ESP       | enchantments and scrolls kept in line with the spell changes                  |
+| `R3 - Creatures`             | ESP       | creatures that need more magicka for their spells                             |
+| `R3 - Races & Birthsigns`    | ESP       | races and birthsigns rebalanced so every choice is viable                     |
+| `R3 - Factions`              | ESP       | faction rank requirements                                                     |
+| `optional/R3 - Optional - *` | ESP       | small standalone tweaks                                                       |
 
-Details: `R3 - Core.md`
+------------------------------------------------------------
 
-## Spells & Potions
+## How it works
 
-Lua plugins: they work from the base costs the load order provides, so they
-follow other mods.
+- **Lua plugins** change records when the game starts, through the OpenMW Lua
+  content API. Spells, Rounding and Potions work from whatever the load order
+  provides, so other mods' spells and potions are treated by the same rules,
+  including Tamriel Data and Tamriel Rebuilt content.
+- **ESP plugins** cover records Lua cannot change (creatures, scripts,
+  dialogue) and hand-tuned records.
+- No menus or settings: a plugin is on when it is enabled in the content list.
+  Changes apply at startup.
 
-- **R3 - Spells**: new effect base costs. Balance shifted from damage-dealing to
-  disable and defense spells: casters will use Burden, Drain Fatigue and Paralyze
-  first, and you can prepare with cheap Resist or Feather.
-  - Buyable spells are compensated by duration when the base cost change is a
-    whole multiple (base cost /10 -> duration x10) and gives whole seconds.
-  - Otherwise the spell keeps its values and its cost follows the new base cost
-    (elemental damage, Lock/Open, rounding cases).
-  - Old R3 spell names (Shock/Lightning Shield swap, Weak Frost Shield...).
-- **R3 - Rounding**: magnitude ranges of buyable spells rounded to 1 or multiples
-  of 5.
-- **R3 - Potions**: graded potions (Bargain to Exclusive) set to a tier table
-  chosen from the effect base cost; Exclusive equals a self-made potion with 100
-  Alchemy and mortar quality 1. Old R3 potion names. Multi-effect potions keep
-  their values.
-- Tamriel Data and Tamriel Rebuilt spells and potions follow the same rules.
+------------------------------------------------------------
 
-Details: `R3 - Spells.md`, `R3 - Rounding.md`, `R3 - Potions.md`
+## Requirements
 
-## Enchantments
+- OpenMW with the `openmw.content` Lua package (development builds; written
+  against Lua API revision 166). Not for the original Morrowind engine.
+- Morrowind, Tribunal and Bloodmoon. Tamriel Data and Tamriel Rebuilt are
+  optional.
 
-- Mostly fine-tuned to stay consistent with the reworked spell/effect balance.
-- Elemental scroll damage kept close to vanilla (no spell compensation), like spells.
+------------------------------------------------------------
 
-Details: `R3 - Enchantments.md`
+## Installation
 
-## Creatures
-
-- Atronachs and Ascended Sleepers given more magicka to offset the increased cost of their elemental damage spells, so they can still cast as often.
-
-Details: `R3 - Creatures.md`
-
-## Races & Birthsigns
-
-- Every race rebalanced so they are all worth picking — no clearly dominant or weak choice.
-- Ability and power kits reworked for stronger, more distinct identity.
-- Province-accurate race names (Dunmer, Altmer, Orsimer, Bosmer).
-
-Details: `R3 - Races & Birthsigns.md`
-
-## Factions
-
-- Higher-rank attribute requirements raised slightly, making faction advancement a little more demanding.
-
-Details: `R3 - Factions.md`
-
-## Optional
-
-Separate plugins for standalone tweaks (barter reset delay, charge messagebox, Morag Tong). See `R3 - Optional.md`.
+Add the mod folder as a data path (or install it with Mod Organizer 2) and
+enable the plugins you want. Load `R3 - Spells.omwscripts` before
+`R3 - Potions.omwscripts`, so potion tiers use the new spell costs. Enable
+`R3 - Core.esp` together with `R3 - Core.omwscripts`.

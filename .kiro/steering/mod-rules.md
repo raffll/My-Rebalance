@@ -11,7 +11,7 @@ Project rules for R3 (OpenMW). Plugin-specific math lives in
 | `optional/`            | optional ESP plugins + JSON                                                         |
 | `scripts/R3<Name>Lua/` | Lua plugin code and data (OpenMW loads Lua from `scripts/`)                         |
 | `tools/`               | Python generators, checks and build scripts                                         |
-| `docs/`                | every README (`R3 - *.md`), `README.md` overview, analysis docs, `References/`      |
+| `docs/`                | every README (`R3 - *.md`); generated analysis docs are not committed               |
 | `.kiro/steering/`      | these rules                                                                         |
 
 Never put Python or other non-Lua files under `scripts/`.
@@ -67,13 +67,15 @@ All READMEs are in `docs/`.
 - **Lua plugin READMEs** are hand-written. Dynamic plugins describe rules, not
   per-record results (results depend on the load order). Core lists its
   absolute values and marks ESP-only records *(ESP)*.
+- **Value lists in Lua READMEs mirror the data files**: Spells Base Costs
+  (`costs.lua`), Spells and Potions Names (`names.lua`), Core values
+  (`R3CoreLua/data.lua`). Update the README in the same change as the data.
 - **ESP plugin READMEs** are generated from the JSON by `tools/gen_*.py`
   (`python tools/gen_all.py`); edit the JSON or the generator, not the README.
   Check with `python tools/check_readme_coverage.py`.
 - Layout: `# Remastered Rebalance Redux - <Name>`, short intro, sections
   separated by a 60-dash divider, values in code blocks aligned at column 44
   (name at 80), short prose under a block where the effect needs explaining.
-- Keep `docs/README.md` (overview: what changed and why) in sync.
 
 ### Effect value tokens (generated READMEs)
 
@@ -87,7 +89,7 @@ magnitude and duration are always shown.
 - `C:\OMEN\Morrowind\tes3conv\*.json`: read-only master references. Never edit.
   Full load order, later files win: Morrowind, Tribunal, Bloodmoon, Patch for
   Purists, Tamriel_Data, TR_Mainland, TR_Factions, Cyr_Main, Sky_Main.
-- `docs/References/`: vanilla and Tamriel Data tables; check these before the
-  large JSON files.
+  These are the only source for vanilla and Tamriel Data values; do not copy
+  them into docs.
 - OpenMW source: engine formulas and the Lua API (`apps/openmw/mwlua/`,
   `files/lua_api/`).
