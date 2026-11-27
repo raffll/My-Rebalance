@@ -52,7 +52,7 @@ end
 -- registered its defaults: the default value.
 local function setting(key, default)
     local ok, value = pcall(function()
-        return storage.playerSection(settings.GROUP):get(key)
+        return storage.playerSection(settings.SECTION[key]):get(key)
     end)
     if ok and value ~= nil then return value end
     return default

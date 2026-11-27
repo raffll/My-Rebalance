@@ -27,8 +27,9 @@ skills, magic effects, spells, enchantments, potions, books, apparatus, ...).
 - One `LOAD:` script per plugin, working in `onContentFilesLoaded`. A plugin is
   on when its `.omwscripts` is enabled. Only R3 - Core has settings
   (`R3CoreLua/menu.lua`; Yes/No groups are `settings.TOGGLES` over
-  `data.GROUPS`), read by `load.lua` from `storage.playerSection`; they apply
-  after a restart.
+  `data.GROUPS`; page headings are `settings.CATEGORIES`, one storage section
+  each), read by `load.lua` from `storage.playerSection`; they apply after a
+  restart.
 - **Dynamic** plugins (Spells, Rounding, Potions) read the base costs and
   records from the game, never from another R3 plugin's files. They must work
   with R3 - Core enabled or not (vanilla base costs then); a missing plugin

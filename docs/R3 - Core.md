@@ -2,7 +2,9 @@
 
 Core game settings and records. `R3 - Core.omwscripts` sets the values at
 startup (absolute values, overriding the load order). Some sections have a
-setting in Options > Scripts > R3 - Core, named under the section heading;
+setting in Options > Scripts > R3 - Core (grouped under Character, Movement,
+Barter & Travel, Crime, Thievery, Alchemy, Enchanting and Magic), named under
+the section heading;
 settings are read at startup, so restart the game after changing them. Off
 keeps the values the load order provides. Records Lua cannot change are in two
 ESP plugins, marked with their name: `R3 - Merchants.esp` (merchant gold) and
@@ -292,6 +294,18 @@ enchantment point lowers the chance by 0.6% instead of 3%. Only when enchanting
 yourself; enchanter services always succeed.
 [`mwmechanics/enchanting.cpp`]
 
+Setting: Hide "Not Enough Charge" (Yes/No, default No).
+
+```
+sMagicInsufficientCharge                    "Item does not have enough charge." -> ""
+```
+
+On: using an enchanted item without enough charge shows no message (the failure
+sound still plays). The message box gets an empty text, so its display time
+(text length x time per character) is 0 and it is removed on the next frame. A
+non-string value would not hide it: the engine then prints the setting name.
+[`mwgui/windowmanagerimp.cpp`, `mwgui/messagebox.cpp`]
+
 ------------------------------------------------------------
 
 ## Spell Effect Base Costs
@@ -353,18 +367,6 @@ duration and fixed cost of buyable spells that are not autocalc. List
 ------------------------------------------------------------
 
 ## Magic
-
-Setting: Hide "Not Enough Charge" (Yes/No, default No).
-
-```
-sMagicInsufficientCharge                    "Item does not have enough charge." -> ""
-```
-
-On: using an enchanted item without enough charge shows no message (the failure
-sound still plays). The message box gets an empty text, so its display time
-(text length x time per character) is 0 and it is removed on the next frame. A
-non-string value would not hide it: the engine then prints the setting name.
-[`mwgui/windowmanagerimp.cpp`, `mwgui/messagebox.cpp`]
 
 Setting: Stronger Elemental Shields (Yes/No, default Yes).
 

@@ -11,7 +11,7 @@ I.Settings.registerPage {
     description = 'page_description',
 }
 
--- Special settings; every other key in settings.ORDER is a Yes/No group
+-- Special settings; every other key in settings.CATEGORIES is a Yes/No group
 -- (settings.TOGGLES, default Yes).
 local special = {
     [settings.BASE_COSTS] = {
@@ -34,21 +34,23 @@ local special = {
     },
 }
 
-local list = {}
-for _, key in ipairs(settings.ORDER) do
-    local s = special[key] or {
-        renderer = 'checkbox', name = key .. '_name', description = key .. '_description',
-        default = true,
+for order, category in ipairs(settings.CATEGORIES) do
+    local list = {}
+    for _, key in ipairs(category.settings) do
+        local s = special[key] or {
+            renderer = 'checkbox', name = key .. '_name', description = key .. '_description',
+            default = true,
+        }
+        s.key = key
+        list[#list + 1] = s
+    end
+    I.Settings.registerGroup {
+        key = category.key,
+        page = settings.PAGE,
+        l10n = 'R3Core',
+        name = category.name,
+        order = order,
+        permanentStorage = true,
+        settings = list,
     }
-    s.key = key
-    list[#list + 1] = s
 end
-
-I.Settings.registerGroup {
-    key = settings.GROUP,
-    page = settings.PAGE,
-    l10n = 'R3Core',
-    name = 'group_name',
-    permanentStorage = true,
-    settings = list,
-}
