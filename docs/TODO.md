@@ -1,9 +1,10 @@
 # Remastered Rebalance Redux - TODO
 
-Four ESP plugins were removed from the mod until they are ported to Lua. Their
-JSON and ESP files are in git history (last commit that has them: `3ad4af2`,
-branch `3.0`). Their old READMEs, with every value, are kept in `docs/todo/`.
-Port each one as a Lua plugin following `.kiro/steering/mod-rules.md`
+Five plugins were removed from the mod until they are ported. Their JSON and
+ESP files are in git history on branch `3.0`: the four main plugins up to
+`3ad4af2`, Morag Tong Polished up to `2a19792`. Their old READMEs, with every
+value, are kept in `docs/todo/`. Port each one as a Lua plugin where the API
+allows it following `.kiro/steering/mod-rules.md`
 (one `LOAD:` script, `onContentFilesLoaded`, `pcall` per record, one log line).
 
 Before starting, check each record type against the `openmw.content` API of the
@@ -74,11 +75,25 @@ Reference: `docs/todo/R3 - Races & Birthsigns.md`.
 
 ------------------------------------------------------------
 
+## R3 - Optional - Morag Tong Polished
+
+Compatibility patch for the Morag Tong Polished mod: the `R3 - Crime` writ
+script (`BILL_MT_calc_legit_kills`, bounty removed per writ 1080 -> 6000) plus
+the Neloth writ (`CS_WritNeloth`). Reference:
+`docs/todo/R3 - Optional - Morag Tong Polished.md`.
+
+- API: blocked. Lua cannot change mwscript, so it stays an ESP.
+- It replaces the same script as `R3 - Crime.esp`; it must load after it, or
+  become an alternative version of `R3 - Crime` for Morag Tong Polished users.
+- The old ESP and JSON were in `optional/` (git history).
+
+------------------------------------------------------------
+
 ## Tools and docs when a plugin returns
 
 - Add its section to `docs/README.md` (plugin table) and write the README by
   hand (Lua plugin READMEs are hand-written).
 - Remove the matching `docs/todo/` file, and the old generator in `tools/`
   (`gen_enchantments.py`, `gen_factions.py`, `gen_creatures.py`,
-  `gen_races.py`) once nothing needs it. They are no longer run by
+  `gen_races.py`, `gen_optional.py`) once nothing needs it. They are no longer run by
   `gen_all.py` or checked by `check_readme_coverage.py`.

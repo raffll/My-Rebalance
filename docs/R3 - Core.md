@@ -4,9 +4,10 @@ Core game settings and records. `R3 - Core.omwscripts` sets the values at
 startup (absolute values, overriding the load order). Some sections have a
 setting in Options > Scripts > R3 - Core, named under the section heading;
 settings are read at startup, so restart the game after changing them. Off
-keeps the values the load order provides. Records Lua cannot
-change stay in `R3 - Core.esp`, marked *(ESP)*: merchant gold, the Morag Tong writ
-script and the guard greeting. Enable both. Formulas below are taken from the
+keeps the values the load order provides. Records Lua cannot change are in two
+ESP plugins, marked with their name: `R3 - Merchants.esp` (merchant gold) and
+`R3 - Crime.esp` (guard greeting, Morag Tong writs). Enable them for the full
+R3 values, or leave them out for vanilla. Formulas below are taken from the
 OpenMW source (file names in brackets).
 
 ------------------------------------------------------------
@@ -84,7 +85,7 @@ fBarterGoldResetDelay                       1           24          720
 Hours before a merchant's gold returns to its base amount. Day is the vanilla
 value. With Month, selling drains merchants for 30 days. [`mwgui/dialogue.cpp`]
 
-*Merchants Gold (ESP)*
+*Merchants Gold (R3 - Merchants)*
 ```
 scamp_creeper                               5000 -> 500                         Creeper
 mudcrab_unique                              10000 -> 1000                       Mudcrab
@@ -110,8 +111,8 @@ before followers and the barter adjustment. Silt strider and boat prices
 
 ## Crime
 
-Setting: Harsher Crime (Yes/No, default Yes). Covers the Lua values only:
-the guard greeting and Morag Tong writs below stay in the ESP.
+Setting: Harsher Crime (Yes/No, default Yes). The guard greeting and Morag
+Tong writs below are in `R3 - Crime.esp`: turn both off together.
 
 ```
 iCrimeKilling                               1000 -> 5000
@@ -132,15 +133,15 @@ Days in prison = bounty / `iDaysinPrisonMod` (at least 1). Bounty 1000:
 10 days -> 2 days. With the higher bounties, prison time per crime stays close
 to vanilla: one murder is 10 days in both. [`mwworld/worldimp.cpp`]
 
-*Guard Greeting (ESP)*
+*Guard Greeting (R3 - Crime)*
 ```
 58028831233554797                           5000 -> 20000
 ```
 
-Guards attack on sight ("You've earned a death warrant...") from crime level
-20000 instead of 5000, i.e. after 4 murders instead of 5.
+Guards attack on sight ("You've earned a death warrant...", topic Greeting 0)
+from crime level 20000 instead of 5000, i.e. after 4 murders instead of 5.
 
-*Morag Tong Writs (ESP)*
+*Morag Tong Writs (R3 - Crime)*
 ```
 BILL_MT_calc_legit_kills                    -1080 -> -6000
 ```

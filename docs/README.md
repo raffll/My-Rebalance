@@ -14,11 +14,12 @@ each has its own README in `docs/` with the exact rules and values.
 
 | Plugin                       | Type      | What it covers                                                                |
 |------------------------------|-----------|-------------------------------------------------------------------------------|
-| `R3 - Core`                  | Lua + ESP | game settings and spell effect base costs (menu toggle)                       |
+| `R3 - Core`                  | Lua       | game settings and spell effect base costs (menu toggle)                       |
 | `R3 - Spells`                | Lua       | buyable spells adjusted to match the effect base costs                        |
 | `R3 - Rounding`              | Lua       | tidier spell magnitude ranges                                                 |
 | `R3 - Potions`               | Lua       | graded potions set to a consistent tier table                                 |
-| `optional/R3 - Optional - *` | ESP       | small standalone tweaks                                                       |
+| `R3 - Crime`                 | ESP       | guard greeting and Morag Tong writs for the higher bounties                   |
+| `R3 - Merchants`             | ESP       | less gold for the two richest merchants                                       |
 
 ------------------------------------------------------------
 
@@ -51,5 +52,4 @@ each has its own README in `docs/` with the exact rules and values.
 Add the mod folder as a data path (or install it with Mod Organizer 2) and
 enable the plugins you want. Load `R3 - Core.omwscripts` before
 `R3 - Spells.omwscripts` and `R3 - Potions.omwscripts`, so they see the base
-costs Core sets. Enable
-`R3 - Core.esp` together with `R3 - Core.omwscripts`.
+costs Core sets.

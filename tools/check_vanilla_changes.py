@@ -11,7 +11,7 @@ your tuning still makes sense against the new baseline.
 
 Usage:
   python tools/check_vanilla_changes.py                       # Core
-  python tools/check_vanilla_changes.py --esp "R3 - Core.json"
+  python tools/check_vanilla_changes.py --esp "R3 - Crime.json"
   python tools/check_vanilla_changes.py --backup <dir>        # pick a backup
 """
 from __future__ import annotations
@@ -93,7 +93,7 @@ def brief(o: dict) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Report upstream vanilla changes to records your ESP modifies.")
-    ap.add_argument("--esp", default="R3 - Core.json")
+    ap.add_argument("--esp", default="R3 - Crime.json")
     ap.add_argument("--tes3", default=gc.DEFAULT_MASTER_DIR)
     ap.add_argument("--backup", default=None,
                     help="Backup JSON dir (defaults to the newest under tes3conv/_backup_json).")

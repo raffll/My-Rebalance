@@ -1,4 +1,4 @@
--- R3 - Core values (absolute). Source: R3 - Core.json before the move to Lua.
+-- R3 - Core values (absolute). Source: the old R3 - Core.esp before the move to Lua.
 local M = {}
 
 

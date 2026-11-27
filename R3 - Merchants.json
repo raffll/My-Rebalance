@@ -1,0 +1,233 @@
+[
+  {
+    "type": "Header",
+    "flags": "",
+    "version": 1.3,
+    "file_type": "Esp",
+    "author": "",
+    "description": "",
+    "num_objects": 2,
+    "masters": [
+      [
+        "Morrowind.esm",
+        79837557
+      ],
+      [
+        "Tribunal.esm",
+        4565686
+      ],
+      [
+        "Bloodmoon.esm",
+        9631798
+      ]
+    ]
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "mudcrab_unique",
+    "name": "Mudcrab",
+    "script": "",
+    "mesh": "r\\CaveMudcrab.NIF",
+    "inventory": [
+      [
+        2,
+        "random_crab_meat"
+      ],
+      [
+        -2,
+        "Potion_Local_Brew_01"
+      ],
+      [
+        -3,
+        "potion_local_liquor_01"
+      ],
+      [
+        -2,
+        "potion_comberry_wine_01"
+      ],
+      [
+        -3,
+        "potion_comberry_brandy_01"
+      ]
+    ],
+    "spells": [],
+    "ai_data": {
+      "hello": 0,
+      "fight": 50,
+      "flee": 30,
+      "alarm": 0,
+      "services": "BARTERS_WEAPONS | BARTERS_ARMOR | BARTERS_ALCHEMY | 0xa00000"
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 512,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 20,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "mudcrab",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Normal",
+      "level": 1,
+      "strength": 15,
+      "intelligence": 15,
+      "willpower": 0,
+      "agility": 15,
+      "speed": 6,
+      "endurance": 15,
+      "personality": 75,
+      "luck": 50,
+      "health": 20,
+      "magicka": 5,
+      "fatigue": 400,
+      "soul": 5,
+      "combat": 30,
+      "magic": 90,
+      "stealth": 20,
+      "attack1": [
+        1,
+        5
+      ],
+      "attack2": [
+        1,
+        5
+      ],
+      "attack3": [
+        1,
+        5
+      ],
+      "gold": 1000
+    }
+  },
+  {
+    "type": "Creature",
+    "flags": "",
+    "id": "scamp_creeper",
+    "name": "Creeper",
+    "script": "scampScript",
+    "mesh": "r\\Scamp_Fetch.NIF",
+    "inventory": [
+      [
+        1,
+        "iron shortsword"
+      ],
+      [
+        1,
+        "random_scamp_skin"
+      ],
+      [
+        1,
+        "Potion_Local_Brew_01"
+      ],
+      [
+        1,
+        "potion_skooma_01"
+      ],
+      [
+        1,
+        "potion_local_liquor_01"
+      ],
+      [
+        1,
+        "Potion_Cyro_Whiskey_01"
+      ],
+      [
+        1,
+        "potion_cyro_brandy_01"
+      ],
+      [
+        1,
+        "potion_comberry_wine_01"
+      ],
+      [
+        1,
+        "potion_comberry_brandy_01"
+      ],
+      [
+        1,
+        "potion_ancient_brandy"
+      ],
+      [
+        1,
+        "misc_de_drum_02"
+      ]
+    ],
+    "spells": [
+      "immune to normal weapons"
+    ],
+    "ai_data": {
+      "hello": 50,
+      "fight": 0,
+      "flee": 100,
+      "alarm": 0,
+      "services": "BARTERS_WEAPONS | BARTERS_ARMOR | BARTERS_MISC_ITEMS | BARTERS_ENCHANTED_ITEMS | BARTERS_ALCHEMY | 0xa00000"
+    },
+    "ai_packages": [
+      {
+        "type": "Wander",
+        "distance": 0,
+        "duration": 5,
+        "game_hour": 0,
+        "idle2": 50,
+        "idle3": 50,
+        "idle4": 0,
+        "idle5": 0,
+        "idle6": 0,
+        "idle7": 0,
+        "idle8": 0,
+        "idle9": 0,
+        "reset": 1
+      }
+    ],
+    "travel_destinations": [],
+    "sound": "scamp",
+    "creature_flags": "IS_BASE | WALKS",
+    "blood_type": 0,
+    "data": {
+      "creature_type": "Daedra",
+      "level": 5,
+      "strength": 20,
+      "intelligence": 20,
+      "willpower": 70,
+      "agility": 20,
+      "speed": 6,
+      "endurance": 20,
+      "personality": 20,
+      "luck": 20,
+      "health": 60,
+      "magicka": 100,
+      "fatigue": 400,
+      "soul": 10,
+      "combat": 60,
+      "magic": 30,
+      "stealth": 40,
+      "attack1": [
+        1,
+        20
+      ],
+      "attack2": [
+        1,
+        20
+      ],
+      "attack3": [
+        1,
+        20
+      ],
+      "gold": 500
+    }
+  }
+]

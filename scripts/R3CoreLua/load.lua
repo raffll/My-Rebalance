@@ -1,6 +1,6 @@
 -- Applies the R3 - Core values at startup (absolute values from data.lua).
--- Creature gold, the Morag Tong writ script and the guard greeting are not
--- reachable from Lua and stay in R3 - Core.esp.
+-- Creature gold (R3 - Merchants.esp), the Morag Tong writ script and the guard
+-- greeting (R3 - Crime.esp) are not reachable from Lua.
 local content = require('openmw.content')
 local storage = require('openmw.storage')
 local data = require('scripts.R3CoreLua.data')

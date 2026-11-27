@@ -8,7 +8,6 @@ Project rules for R3 (OpenMW). Plugin-specific math lives in
 | Path                   | Contents                                                                            |
 |------------------------|-------------------------------------------------------------------------------------|
 | root                   | plugins: `R3 - *.omwscripts` (+ `.omwscripts.esp` MO2 stub), `R3 - *.esp` + `.json` |
-| `optional/`            | optional ESP plugins + JSON                                                         |
 | `scripts/R3<Name>Lua/` | Lua plugin code and data (OpenMW loads Lua from `scripts/`)                         |
 | `l10n/R3Core/`         | menu text for the Core settings page                                                |
 | `tools/`               | Python generators, checks and build scripts                                         |
@@ -47,12 +46,14 @@ skills, magic effects, spells, enchantments, potions, books, apparatus, ...).
 
 ### ESP plugins
 
-`optional/*` and `R3 - Core.esp` for the records Lua cannot reach (creatures,
-NPCs, scripts, dialogue). New changes go to Lua when possible. Enchantments,
-Creatures, Factions and Races & Birthsigns are removed until ported to Lua; see
+`R3 - Crime` and `R3 - Merchants` for the records Lua cannot
+reach (creatures, NPCs, scripts, dialogue). Their values are documented in the
+R3 - Core README (hand-written, marked with the plugin name). New changes go to Lua when possible. Enchantments,
+Creatures, Factions, Races & Birthsigns and Morag Tong Polished are removed
+until ported; see
 `docs/TODO.md`.
 
-- Edit the JSON (root or `optional/`), then build: `python tools/build_esps.py`
+- Edit the JSON (root), then build: `python tools/build_esps.py`
   (tes3conv `"in.json" "out.esp" --overwrite`).
 - JSON must be UTF-8 without BOM (tes3conv rejects a BOM).
 - Masters: only what the records need. Plugins must load on vanilla Morrowind +

@@ -20,7 +20,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 # README generators, in order.
 GENERATORS = [
-    "gen_optional.py",
 ]
 
 

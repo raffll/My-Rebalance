@@ -19,8 +19,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # plugin JSON  ->  README
 PAIRS = [
-    (os.path.join("optional", "R3 - Optional - Morag Tong Polished.json"),
-     os.path.join("docs", "R3 - Optional.md")),
+    ("R3 - Crime.json", os.path.join("docs", "R3 - Core.md")),
+    ("R3 - Merchants.json", os.path.join("docs", "R3 - Core.md")),
 ]
 
 # Record types we expect NOT to appear by id in a README (structural/header
