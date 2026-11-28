@@ -8,10 +8,11 @@ Project rules for R3 (OpenMW). Plugin-specific math lives in
 | Path                   | Contents                                                                            |
 |------------------------|-------------------------------------------------------------------------------------|
 | root                   | plugins: `R3 - *.omwscripts` (+ `.omwscripts.esp` MO2 stub), `R3 - *.esp` + `.json` |
+| root                   | `README.md` (overview)                                                              |
 | `scripts/R3<Name>Lua/` | Lua plugin code and data (OpenMW loads Lua from `scripts/`)                         |
 | `l10n/R3Core/`         | menu text for the Core settings page                                                |
 | `tools/`               | Python generators, checks and build scripts                                         |
-| `docs/`                | every README (`R3 - *.md`); generated analysis docs are not committed               |
+| `docs/`                | plugin READMEs (`R3 - *.md`), TODO; generated analysis docs are not committed       |
 | `.kiro/steering/`      | these rules                                                                         |
 
 Never put Python or other non-Lua files under `scripts/`.
@@ -69,7 +70,8 @@ until ported; see
 
 ## 3. READMEs
 
-All READMEs are in `docs/`.
+The overview `README.md` is in the repo root (hand-written). Plugin READMEs are
+in `docs/`.
 
 - **Explain what a change does in game**, with the mechanism and formula taken
   from the OpenMW source (`C:\OMEN\Morrowind\sources\openmw`), naming the source

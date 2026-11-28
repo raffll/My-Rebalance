@@ -107,7 +107,7 @@ list, with what 3.0 gives instead, is in `docs/todo/Main-Hand-Changes.md`:
 
 ## Tools and docs when a plugin returns
 
-- Add its section to `docs/README.md` (plugin table) and write the README by
+- Add its section to `README.md` (repo root) and write the README by
   hand (Lua plugin READMEs are hand-written).
 - Remove the matching `docs/todo/` file, and the old generator in `tools/`
   (`gen_enchantments.py`, `gen_factions.py`, `gen_creatures.py`,
